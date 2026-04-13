@@ -1,0 +1,1182 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Matemática Olímpica",
+    "section": "",
+    "text": "Descripción\nEste sitio es una guía de estudio para la preparación en olimpiadas matemáticas, organizado siguiendo los capítulos del libro clásico de la Sociedad de Matemáticas de Chile (Somachi):\nCubre los temas fundamentales de competencia: teoría de números, inducción matemática, combinatoria, análisis elemental y geometría clásica. Cada capítulo incluye teoría con demostraciones, ejemplos resueltos y problemas de práctica con soluciones.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Bienvenidos al curso!</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#descripción",
+    "href": "index.html#descripción",
+    "title": "Matemática Olímpica",
+    "section": "",
+    "text": "Matemática y Olimpíadas, Somachi, Santiago 1994.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Bienvenidos al curso!</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#capítulos",
+    "href": "index.html#capítulos",
+    "title": "Matemática Olímpica",
+    "section": "Capítulos",
+    "text": "Capítulos\n\n\n\n\n\n\n\n\n#\nTema\nContenidos clave\n\n\n\n\n0\nHistoria\nLa IMO, la OMC y el contexto chileno\n\n\nI\nTeoría de Números\nDivisibilidad, primos, congruencias, aritmética modular\n\n\nII\nInducción Matemática\nProgresiones, Fibonacci, inducción fuerte\n\n\nIII\nCombinatoria\nConteo, permutaciones, Binomio de Newton, Palomar\n\n\nIV\nAnálisis\nRacionales, reales, series, bases numéricas\n\n\nV\nGeometría\nTriángulos, círculos, Ptolomeo, Ceva, Menelao\n\n\nVI\nProblemas Resueltos\nSoluciones detalladas paso a paso\n\n\nVII\nProblemas Propuestos\nPara practicar por tu cuenta",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Bienvenidos al curso!</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#referencia-principal",
+    "href": "index.html#referencia-principal",
+    "title": "Matemática Olímpica",
+    "section": "Referencia principal",
+    "text": "Referencia principal\n\n\n\n\n\n\nLibro base\n\n\n\nMatemática y Olimpíadas Sociedad de Matemáticas de Chile (Somachi), Santiago 1994.\nDisponible en: www.olimpiadadematematica.cl",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Bienvenidos al curso!</span>"
+    ]
+  },
+  {
+    "objectID": "material/00_historia/index.html",
+    "href": "material/00_historia/index.html",
+    "title": "Historia de las Olimpiadas Matemáticas",
+    "section": "",
+    "text": "Presentación\nEste capítulo introductorio sitúa al estudiante en el contexto de las competencias matemáticas a nivel mundial y nacional. Antes de entrar en la teoría y los problemas, es fundamental entender de dónde vienen estas olimpiadas, qué representan y cómo Chile participa en ellas.",
+    "crumbs": [
+      "Historia",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Historia de las Olimpiadas Matemáticas</span>"
+    ]
+  },
+  {
+    "objectID": "material/00_historia/index.html#contenidos",
+    "href": "material/00_historia/index.html#contenidos",
+    "title": "Historia de las Olimpiadas Matemáticas",
+    "section": "Contenidos",
+    "text": "Contenidos\n\n\n\nSección\nTema\n\n\n\n\nLa IMO y otras competencias\nHistoria de la Olimpiada Internacional de Matemáticas desde 1959, la Putnam y la Iberoamericana\n\n\nLa OMC en Chile\nLa Olimpiada Nacional de Matemáticas: Somachi, historia y organización actual\n\n\nMedallistas chilenos\nParticipantes y medallistas chilenos destacados en la IMO",
+    "crumbs": [
+      "Historia",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Historia de las Olimpiadas Matemáticas</span>"
+    ]
+  },
+  {
+    "objectID": "material/00_historia/index.html#por-qué-estudiar-historia",
+    "href": "material/00_historia/index.html#por-qué-estudiar-historia",
+    "title": "Historia de las Olimpiadas Matemáticas",
+    "section": "¿Por qué estudiar historia?",
+    "text": "¿Por qué estudiar historia?\nConocer la historia de las olimpiadas te ayuda a:\n\nEntender el nivel de dificultad esperado en cada competencia\nConocer los tipos de problemas que se han pedido históricamente\nEncontrar motivación en los logros de otros estudiantes chilenos\nConectar los temas matemáticos con su desarrollo histórico\n\n\n\n\n\n\n\nLibro base\n\n\n\nEste capítulo es una introducción propia, no tiene correspondencia directa con el libro Matemática y Olimpíadas (Somachi, 1994). Los capítulos siguientes sí siguen fielmente el contenido del libro.",
+    "crumbs": [
+      "Historia",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Historia de las Olimpiadas Matemáticas</span>"
+    ]
+  },
+  {
+    "objectID": "material/00_historia/01_mundial.html",
+    "href": "material/00_historia/01_mundial.html",
+    "title": "La IMO y otras competencias internacionales",
+    "section": "",
+    "text": "La Olimpiada Internacional de Matemáticas (IMO)\nLa Olimpiada Internacional de Matemáticas (IMO, por sus siglas en inglés) es la competencia matemática más prestigiosa del mundo para estudiantes de enseñanza media. Fue fundada en 1959 por iniciativa de Rumania y se celebra anualmente en un país diferente.",
+    "crumbs": [
+      "Historia",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>La IMO y otras competencias internacionales</span>"
+    ]
+  },
+  {
+    "objectID": "material/00_historia/01_mundial.html#la-olimpiada-internacional-de-matemáticas-imo",
+    "href": "material/00_historia/01_mundial.html#la-olimpiada-internacional-de-matemáticas-imo",
+    "title": "La IMO y otras competencias internacionales",
+    "section": "",
+    "text": "Definición: IMO\n\n\n\nLa IMO reúne a equipos de hasta seis estudiantes por país, quienes deben resolver seis problemas en dos días (tres problemas por día, cuatro horas y media cada día). Los problemas abarcan álgebra, combinatoria, geometría y teoría de números.\n\n\n\nHistoria resumida\n\n\n\n\n\n\n\nPeríodo\nHitos\n\n\n\n\n1959–1966\nEdiciones solo entre países del bloque socialista (Rumania, Hungría, URSS, etc.)\n\n\n1967–1980\nApertura progresiva a países occidentales y latinoamericanos\n\n\n1981–2000\nExpansión global; se consolidan las grandes potencias matemáticas (China, EE. UU., URSS/Rusia)\n\n\n2001–hoy\nMás de 100 países participantes; Chile participa regularmente desde 2005\n\n\n\n\n\nFormato del examen\nCada problema tiene un valor de 7 puntos, para un total de 42 puntos:\n\nMedalla de oro: típicamente 28–42 puntos (aproximadamente el 8% superior)\nMedalla de plata: típicamente 19–27 puntos\nMedalla de bronce: típicamente 12–18 puntos\nMención honorífica: solución perfecta en al menos un problema, sin medalla\n\n\n\n\n\n\n\nConsejo\n\n\n\nLos problemas 1 y 4 suelen ser los más accesibles, mientras que los problemas 3 y 6 son los más difíciles. Dominar los primeros es el objetivo inicial para cualquier participante.\n\n\n\n\nPaíses destacados históricamente\n\nChina: potencia dominante desde los años 80; múltiples primeros puestos\nEstados Unidos: campeón en varias ocasiones; programa de entrenamiento muy sólido\nRusia/URSS: tradición histórica de excelencia matemática\nCorea del Sur, Rumania, Vietnam: fuerzas emergentes con medallas consistentes\nBrasil: el país latinoamericano con mejor desempeño histórico en la región",
+    "crumbs": [
+      "Historia",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>La IMO y otras competencias internacionales</span>"
+    ]
+  },
+  {
+    "objectID": "material/00_historia/01_mundial.html#la-competencia-putnam",
+    "href": "material/00_historia/01_mundial.html#la-competencia-putnam",
+    "title": "La IMO y otras competencias internacionales",
+    "section": "La Competencia Putnam",
+    "text": "La Competencia Putnam\nLa William Lowell Putnam Mathematical Competition es la competencia universitaria más importante de América del Norte, organizada por la Mathematical Association of America (MAA) desde 1938.\n\n\n\n\n\n\nDato\n\n\n\nLa Putnam es famosa por su dificultad extrema: la mediana histórica de puntaje es frecuentemente 0 o 1 punto sobre 120. Resolverla bien requiere creatividad matemática de alto nivel.\n\n\nAunque no es directamente relevante para la OMC, muchos problemas de la Putnam tienen estructura similar a los de olimpiadas y constituyen excelente material de estudio avanzado.",
+    "crumbs": [
+      "Historia",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>La IMO y otras competencias internacionales</span>"
+    ]
+  },
+  {
+    "objectID": "material/00_historia/01_mundial.html#la-olimpiada-iberoamericana-de-matemáticas-oim",
+    "href": "material/00_historia/01_mundial.html#la-olimpiada-iberoamericana-de-matemáticas-oim",
+    "title": "La IMO y otras competencias internacionales",
+    "section": "La Olimpiada Iberoamericana de Matemáticas (OIM)",
+    "text": "La Olimpiada Iberoamericana de Matemáticas (OIM)\nLa OIM se celebra desde 1985 y reúne a países hispanohablantes y lusófonos de Iberoamérica y la Península Ibérica. Es un paso natural entre las olimpiadas nacionales y la IMO.\n\n\n\n\n\n\nFormato de la OIM\n\n\n\n\nParticipan países de América Latina, España y Portugal\nDos días de competencia, tres problemas cada día\nTemas: álgebra, combinatoria, geometría, teoría de números\nChile participa regularmente y ha obtenido medallas\n\n\n\nLa OIM utiliza problemas de nivel intermedio entre una olimpiada nacional y la IMO, lo que la convierte en una referencia excelente para preparación.",
+    "crumbs": [
+      "Historia",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>La IMO y otras competencias internacionales</span>"
+    ]
+  },
+  {
+    "objectID": "material/00_historia/01_mundial.html#otras-competencias-relevantes",
+    "href": "material/00_historia/01_mundial.html#otras-competencias-relevantes",
+    "title": "La IMO y otras competencias internacionales",
+    "section": "Otras competencias relevantes",
+    "text": "Otras competencias relevantes\n\n\n\nCompetencia\nÁmbito\nDesde\n\n\n\n\nUSAMO (EE. UU.)\nNacional, nivel olímpico\n1972\n\n\nAPMO (Asia-Pacífico)\nRegional\n1989\n\n\nOlimpiada Cono Sur\nSudamérica\n1989\n\n\nOlimpiada Matemática Rioplatense\nArgentina, Chile, Uruguay\n1997\n\n\nOlimpiada Matemática Chilena (OMC)\nNacional\n1981\n\n\n\n\n\n\n\n\n\nPara el estudiante chileno\n\n\n\nEl camino natural de preparación es: OMC → OIM → IMO. Este material está diseñado principalmente para la OMC, pero los temas cubiertos son igualmente válidos para la OIM y sirven de base para la IMO.",
+    "crumbs": [
+      "Historia",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>La IMO y otras competencias internacionales</span>"
+    ]
+  },
+  {
+    "objectID": "material/00_historia/02_chile.html",
+    "href": "material/00_historia/02_chile.html",
+    "title": "La OMC en Chile",
+    "section": "",
+    "text": "La Olimpiada Nacional de Matemáticas de Chile (OMC)\nLa Olimpiada Nacional de Matemáticas de Chile (OMC) es organizada por la Sociedad de Matemáticas de Chile (Somachi) y se celebra desde 1981. Es la principal competencia matemática para estudiantes de enseñanza básica y media en el país.",
+    "crumbs": [
+      "Historia",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>La OMC en Chile</span>"
+    ]
+  },
+  {
+    "objectID": "material/00_historia/02_chile.html#la-olimpiada-nacional-de-matemáticas-de-chile-omc",
+    "href": "material/00_historia/02_chile.html#la-olimpiada-nacional-de-matemáticas-de-chile-omc",
+    "title": "La OMC en Chile",
+    "section": "",
+    "text": "Somachi\n\n\n\nLa Sociedad de Matemáticas de Chile (Somachi) fue fundada en 1968 y es la institución responsable de la promoción de las matemáticas en Chile, tanto a nivel de investigación como de educación. Es miembro de la International Mathematical Union (IMU).\nSitio web: www.olimpiadadematematica.cl",
+    "crumbs": [
+      "Historia",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>La OMC en Chile</span>"
+    ]
+  },
+  {
+    "objectID": "material/00_historia/02_chile.html#historia-de-la-omc",
+    "href": "material/00_historia/02_chile.html#historia-de-la-omc",
+    "title": "La OMC en Chile",
+    "section": "Historia de la OMC",
+    "text": "Historia de la OMC\n\nPrimeros años (1981–1990)\nLa OMC nació con el objetivo de identificar y estimular a los jóvenes con talento matemático en Chile. Inicialmente participaban principalmente estudiantes de la Región Metropolitana, pero rápidamente se expandió a otras regiones.\nEl libro Matemática y Olimpíadas (Somachi, 1994) fue publicado precisamente como apoyo a la preparación de estudiantes para estas competencias, y es la referencia principal de este sitio.\n\n\nExpansión y consolidación (1991–2010)\nDurante este período, la OMC amplió su alcance regional y comenzó a seleccionar representantes para competencias internacionales. Chile empezó a participar en la Olimpiada Iberoamericana de Matemáticas (OIM) y, posteriormente, en la IMO.\n\n\nÉpoca actual (2011–presente)\nHoy la OMC tiene dos categorías principales:\n\n\n\n\n\n\n\n\nCategoría\nNivel\nDescripción\n\n\n\n\nBásica\n7° y 8° básico\nPrimera experiencia competitiva\n\n\nMedia\n1° a 4° medio\nSelección para representación internacional\n\n\n\nLa categoría Media es la que alimenta la selección chilena para la OIM y la IMO.",
+    "crumbs": [
+      "Historia",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>La OMC en Chile</span>"
+    ]
+  },
+  {
+    "objectID": "material/00_historia/02_chile.html#organización-actual",
+    "href": "material/00_historia/02_chile.html#organización-actual",
+    "title": "La OMC en Chile",
+    "section": "Organización actual",
+    "text": "Organización actual\n\nEtapas de la competencia\n\n\n\n\n\n\nEtapas de la OMC (categoría Media)\n\n\n\n\nEtapa comunal: prueba escrita en el establecimiento o sede comunal\nEtapa regional: los mejores de cada región compiten regionalmente\nEtapa nacional: final con los mejores de cada región\nSelección nacional: los mejores del nacional integran la preselección para competencias internacionales\n\n\n\n\n\nFormato del examen nacional\n\nDuración: 3 a 4 horas\nNúmero de problemas: 5 a 6\nTemas: los mismos del libro Somachi (teoría de números, inducción, combinatoria, análisis y geometría)\nNo se permite el uso de calculadora",
+    "crumbs": [
+      "Historia",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>La OMC en Chile</span>"
+    ]
+  },
+  {
+    "objectID": "material/00_historia/02_chile.html#preparación-recomendada",
+    "href": "material/00_historia/02_chile.html#preparación-recomendada",
+    "title": "La OMC en Chile",
+    "section": "Preparación recomendada",
+    "text": "Preparación recomendada\nPara rendir bien en la OMC, se recomienda:\n\nDominar la teoría de los cinco capítulos del libro Somachi\nPracticar problemas de olimpiadas anteriores (disponibles en el sitio de Somachi)\nParticipar en círculos matemáticos o grupos de estudio organizados por colegios o universidades regionales\nResolver problemas de la OIM y Cono Sur para preparación adicional\n\n\n\n\n\n\n\nMaterial de estudio\n\n\n\nEste sitio cubre en detalle los cinco capítulos temáticos del libro Somachi. Cada capítulo incluye teoría, ejemplos resueltos y problemas de práctica con soluciones para que puedas estudiar de forma autónoma.",
+    "crumbs": [
+      "Historia",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>La OMC en Chile</span>"
+    ]
+  },
+  {
+    "objectID": "material/00_historia/02_chile.html#recursos-oficiales",
+    "href": "material/00_historia/02_chile.html#recursos-oficiales",
+    "title": "La OMC en Chile",
+    "section": "Recursos oficiales",
+    "text": "Recursos oficiales\n\nSomachi: www.olimpiadadematematica.cl — Problemas de años anteriores, convocatorias\nIMU Chile: información sobre la representación en IMO\nRedes universitarias: varias universidades chilenas organizan talleres de preparación (U. de Chile, PUC, USACH, UTFSM, entre otras)",
+    "crumbs": [
+      "Historia",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>La OMC en Chile</span>"
+    ]
+  },
+  {
+    "objectID": "material/00_historia/03_medallistas.html",
+    "href": "material/00_historia/03_medallistas.html",
+    "title": "Medallistas y participantes chilenos en la IMO",
+    "section": "",
+    "text": "Chile en la IMO\nChile comenzó a participar en la Olimpiada Internacional de Matemáticas (IMO) en la edición de 2005 (Mérida, México). Desde entonces, ha enviado equipos con regularidad y ha obtenido diversas distinciones.",
+    "crumbs": [
+      "Historia",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Medallistas y participantes chilenos en la IMO</span>"
+    ]
+  },
+  {
+    "objectID": "material/00_historia/03_medallistas.html#chile-en-la-imo",
+    "href": "material/00_historia/03_medallistas.html#chile-en-la-imo",
+    "title": "Medallistas y participantes chilenos en la IMO",
+    "section": "",
+    "text": "Contexto\n\n\n\nLa selección chilena para la IMO se elige de los mejores participantes en la OMC y la OIM. El equipo está formado por hasta 6 estudiantes, acompañados de un líder y un observador de la Somachi.",
+    "crumbs": [
+      "Historia",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Medallistas y participantes chilenos en la IMO</span>"
+    ]
+  },
+  {
+    "objectID": "material/00_historia/03_medallistas.html#participaciones-y-resultados",
+    "href": "material/00_historia/03_medallistas.html#participaciones-y-resultados",
+    "title": "Medallistas y participantes chilenos en la IMO",
+    "section": "Participaciones y resultados",
+    "text": "Participaciones y resultados\nA continuación se presentan algunas de las participaciones más destacadas del equipo chileno en la IMO:\n\n\n\nAño\nSede\nMedallas/Menciones chilenas\n\n\n\n\n2005\nMérida, México\nPrimera participación\n\n\n2007\nHanói, Vietnam\nMención honorífica\n\n\n2010\nAstana, Kazajistán\nMención honorífica\n\n\n2013\nSanta Marta, Colombia\nMedalla de bronce\n\n\n2015\nChiang Mai, Tailandia\nMención honorífica\n\n\n2018\nCluj-Napoca, Rumania\nMedalla de bronce\n\n\n2019\nBath, Reino Unido\nMedalla de bronce\n\n\n2022\nOslo, Noruega\nMención honorífica\n\n\n2023\nChiba, Japón\nParticipación oficial\n\n\n2024\nBath, Reino Unido\nParticipación oficial\n\n\n\n\n\n\n\n\n\nNota de precisión\n\n\n\nLos datos presentados son referenciales. Para la lista oficial y completa de resultados, consulta el sitio www.imo-official.org y el registro de Somachi en www.olimpiadadematematica.cl.",
+    "crumbs": [
+      "Historia",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Medallistas y participantes chilenos en la IMO</span>"
+    ]
+  },
+  {
+    "objectID": "material/00_historia/03_medallistas.html#sobre-la-selección-chilena",
+    "href": "material/00_historia/03_medallistas.html#sobre-la-selección-chilena",
+    "title": "Medallistas y participantes chilenos en la IMO",
+    "section": "Sobre la selección chilena",
+    "text": "Sobre la selección chilena\nEl proceso de selección es riguroso y tiene varias etapas:\n\nOMC nacional: los mejores resultados en la olimpiada nacional\nEntrenamiento intensivo: campamentos matemáticos organizados por Somachi\nOIM: participación en la Olimpiada Iberoamericana como entrenamiento\nSelección final: pruebas de selección para definir los 6 miembros del equipo IMO\n\n\n\n\n\n\n\nMotivación\n\n\n\nLlegar a representar a Chile en la IMO requiere años de preparación constante. Sin embargo, el proceso de preparación en sí mismo transforma la forma de pensar matemáticamente, independientemente de si se llega o no a la competencia final.\nEl objetivo de este material es exactamente eso: ayudarte a desarrollar el pensamiento matemático de competencia.",
+    "crumbs": [
+      "Historia",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Medallistas y participantes chilenos en la IMO</span>"
+    ]
+  },
+  {
+    "objectID": "material/00_historia/03_medallistas.html#chile-en-la-oim",
+    "href": "material/00_historia/03_medallistas.html#chile-en-la-oim",
+    "title": "Medallistas y participantes chilenos en la IMO",
+    "section": "Chile en la OIM",
+    "text": "Chile en la OIM\nEn la Olimpiada Iberoamericana de Matemáticas (OIM), Chile tiene una participación más extensa y ha logrado mejores resultados relativos, obteniendo medallas de plata y bronce en varias ediciones. La OIM es considerada el principal trampolín para la formación de olimpistas chilenos de alto nivel.",
+    "crumbs": [
+      "Historia",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Medallistas y participantes chilenos en la IMO</span>"
+    ]
+  },
+  {
+    "objectID": "material/00_historia/03_medallistas.html#inspiración-el-camino-de-un-olimpista",
+    "href": "material/00_historia/03_medallistas.html#inspiración-el-camino-de-un-olimpista",
+    "title": "Medallistas y participantes chilenos en la IMO",
+    "section": "Inspiración: el camino de un olimpista",
+    "text": "Inspiración: el camino de un olimpista\nEl recorrido típico de un estudiante chileno que llega a competir internacionalmente:\n\nPrimer contacto en 7° u 8° básico con la OMC categoría básica\nPreparación sistemática durante enseñanza media, leyendo libros como este\nParticipación en la OMC categoría media desde 1° medio\nSelección regional y nacional tras constante mejora\nCampamentos Somachi con entrenamiento especializado\nOIM como primer escenario internacional\nIMO para los más destacados\n\n\n\n\n\n\n\nMensaje\n\n\n\nCada medallista empezó en el mismo punto que tú: con ganas de entender matemáticas más profundamente. La diferencia la hace la constancia en el estudio y la práctica sistemática de problemas.",
+    "crumbs": [
+      "Historia",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Medallistas y participantes chilenos en la IMO</span>"
+    ]
+  },
+  {
+    "objectID": "material/01_teoria_numeros/index.html",
+    "href": "material/01_teoria_numeros/index.html",
+    "title": "Capítulo I: Teoría de Números",
+    "section": "",
+    "text": "Presentación\nLa teoría de números estudia las propiedades aritméticas de los enteros. En olimpiadas es una de las áreas más frecuentes porque combina ideas simples con argumentos muy creativos.\nAntes de cada definición importante conviene preguntarse por qué surgió el concepto. La divisibilidad nació al intentar entender cuándo una cantidad puede descomponerse exactamente; las congruencias, en cambio, aparecieron al estudiar restos y periodicidad.",
+    "crumbs": [
+      "Capítulo I: Teoría de Números"
+    ]
+  },
+  {
+    "objectID": "material/01_teoria_numeros/index.html#objetivos-del-capítulo",
+    "href": "material/01_teoria_numeros/index.html#objetivos-del-capítulo",
+    "title": "Capítulo I: Teoría de Números",
+    "section": "Objetivos del capítulo",
+    "text": "Objetivos del capítulo\n\nReconocer y usar criterios de divisibilidad.\nCalcular \\(\\gcd(a,b)\\) y \\(\\operatorname{mcm}(a,b)\\) con soltura.\nTrabajar con números primos y factorización.\nResolver congruencias y ecuaciones diofánticas elementales.",
+    "crumbs": [
+      "Capítulo I: Teoría de Números"
+    ]
+  },
+  {
+    "objectID": "material/01_teoria_numeros/index.html#contenidos",
+    "href": "material/01_teoria_numeros/index.html#contenidos",
+    "title": "Capítulo I: Teoría de Números",
+    "section": "Contenidos",
+    "text": "Contenidos\n\n\n\nSección\nEnfoque\n\n\n\n\nTeoría\nDefiniciones, teoremas y demostraciones fundamentales\n\n\nEjemplos\nModelos de resolución paso a paso\n\n\nProblemas\nPráctica guiada y problemas de competencias\n\n\n\n\n\n\n\n\n\nReferencia\n\n\n\nEste capítulo sigue el espíritu del Capítulo I de Matemática y Olimpíadas (Somachi, 1994), ampliando explicaciones intermedias para un primer curso de entrenamiento olímpico.",
+    "crumbs": [
+      "Capítulo I: Teoría de Números"
+    ]
+  },
+  {
+    "objectID": "material/01_teoria_numeros/01_teoria.html",
+    "href": "material/01_teoria_numeros/01_teoria.html",
+    "title": "Teoría: divisibilidad, primos y congruencias",
+    "section": "",
+    "text": "Divisibilidad\nLa primera idea natural en aritmética es decidir cuándo un entero contiene a otro una cantidad exacta de veces.\nDe la definición se deducen propiedades básicas:",
+    "crumbs": [
+      "Capítulo I: Teoría de Números",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Teoría: divisibilidad, primos y congruencias</span>"
+    ]
+  },
+  {
+    "objectID": "material/01_teoria_numeros/01_teoria.html#divisibilidad",
+    "href": "material/01_teoria_numeros/01_teoria.html#divisibilidad",
+    "title": "Teoría: divisibilidad, primos y congruencias",
+    "section": "",
+    "text": "Definición: divisibilidad\n\n\n\nSean \\(a,b \\in \\mathbb{Z}\\) con \\(a \\neq 0\\). Decimos que \\(a\\) divide a \\(b\\) y escribimos \\(a \\mid b\\) si existe \\(k \\in \\mathbb{Z}\\) tal que \\(b = ak\\).\n\n\n\n\nSi \\(a \\mid b\\) y \\(a \\mid c\\), entonces \\(a \\mid (b+c)\\) y \\(a \\mid (b-c)\\).\nSi \\(a \\mid b\\), entonces \\(a \\mid bc\\) para todo \\(c \\in \\mathbb{Z}\\).\nSi \\(a \\mid b\\) y \\(b \\mid c\\), entonces \\(a \\mid c\\).\n\n\n\n\n\n\n\nTeorema: algoritmo de la división\n\n\n\nDados enteros \\(a\\) y \\(b&gt;0\\), existen únicos enteros \\(q\\) y \\(r\\) tales que\n\\[a=bq+r, \\qquad 0 \\le r &lt; b.\\]\nDemostración: consideremos el conjunto de números de la forma \\(a-bq\\) que son no negativos. Por el principio del buen orden tiene un mínimo, que llamamos \\(r\\). Si \\(r \\ge b\\), entonces \\(r-b\\) sería un no negativo más pequeño de la misma forma, lo que es imposible. La unicidad se prueba comparando dos expresiones posibles.",
+    "crumbs": [
+      "Capítulo I: Teoría de Números",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Teoría: divisibilidad, primos y congruencias</span>"
+    ]
+  },
+  {
+    "objectID": "material/01_teoria_numeros/01_teoria.html#máximo-común-divisor-y-mínimo-común-múltiplo",
+    "href": "material/01_teoria_numeros/01_teoria.html#máximo-común-divisor-y-mínimo-común-múltiplo",
+    "title": "Teoría: divisibilidad, primos y congruencias",
+    "section": "Máximo común divisor y mínimo común múltiplo",
+    "text": "Máximo común divisor y mínimo común múltiplo\n\n\n\n\n\n\nDefinición: máximo común divisor\n\n\n\nEl máximo común divisor de \\(a\\) y \\(b\\), denotado \\(\\gcd(a,b)\\), es el mayor entero positivo que divide simultáneamente a \\(a\\) y a \\(b\\).\n\n\nEl algoritmo de Euclides se basa en la observación\n\\[\\gcd(a,b)=\\gcd(b,r), \\quad \\text{si } a=bq+r.\\]\n\n\n\n\n\n\nIdentidad de Bézout\n\n\n\nExisten enteros \\(x,y\\) tales que\n\\[ax+by=\\gcd(a,b).\\]",
+    "crumbs": [
+      "Capítulo I: Teoría de Números",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Teoría: divisibilidad, primos y congruencias</span>"
+    ]
+  },
+  {
+    "objectID": "material/01_teoria_numeros/01_teoria.html#números-primos",
+    "href": "material/01_teoria_numeros/01_teoria.html#números-primos",
+    "title": "Teoría: divisibilidad, primos y congruencias",
+    "section": "Números primos",
+    "text": "Números primos\n\n\n\n\n\n\nDefinición: número primo\n\n\n\nUn entero \\(p&gt;1\\) es primo si sus únicos divisores positivos son \\(1\\) y \\(p\\). Si un entero mayor que \\(1\\) no es primo, se llama compuesto.\n\n\n\n\n\n\n\n\nTeorema: infinitud de los primos\n\n\n\nExisten infinitos números primos.\nDemostración: si existieran solo finitos primos \\(p_1,\\dots,p_n\\), entonces\n\\[N=p_1p_2\\cdots p_n+1\\]\nno sería divisible por ninguno de ellos, contradicción.\n\n\n\n\n\n\n\n\nTeorema fundamental de la aritmética\n\n\n\nTodo entero \\(n&gt;1\\) puede expresarse de manera única, salvo orden, como producto de primos.",
+    "crumbs": [
+      "Capítulo I: Teoría de Números",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Teoría: divisibilidad, primos y congruencias</span>"
+    ]
+  },
+  {
+    "objectID": "material/01_teoria_numeros/01_teoria.html#congruencias",
+    "href": "material/01_teoria_numeros/01_teoria.html#congruencias",
+    "title": "Teoría: divisibilidad, primos y congruencias",
+    "section": "Congruencias",
+    "text": "Congruencias\n\n\n\n\n\n\nDefinición: congruencia módulo \\(n\\)\n\n\n\nSean \\(a,b \\in \\mathbb{Z}\\) y \\(n \\ge 2\\). Decimos que\n\\[a \\equiv b \\pmod{n}\\]\nsi \\(n \\mid (a-b)\\).\n\n\nLas congruencias respetan suma, resta y producto.\n\n\n\n\n\n\nTeorema: inverso modular\n\n\n\nEl entero \\(a\\) tiene inverso módulo \\(n\\) si y solo si \\(\\gcd(a,n)=1\\).\nDemostración: si \\(\\gcd(a,n)=1\\), por Bézout existen \\(x,y\\) tales que \\(ax+ny=1\\). Reduciendo módulo \\(n\\) obtenemos \\(ax \\equiv 1 \\pmod{n}\\).",
+    "crumbs": [
+      "Capítulo I: Teoría de Números",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Teoría: divisibilidad, primos y congruencias</span>"
+    ]
+  },
+  {
+    "objectID": "material/01_teoria_numeros/01_teoria.html#ecuaciones-diofánticas-lineales",
+    "href": "material/01_teoria_numeros/01_teoria.html#ecuaciones-diofánticas-lineales",
+    "title": "Teoría: divisibilidad, primos y congruencias",
+    "section": "Ecuaciones diofánticas lineales",
+    "text": "Ecuaciones diofánticas lineales\n\n\n\n\n\n\nTeorema: ecuación \\(ax+by=c\\)\n\n\n\nLa ecuación lineal\n\\[ax+by=c\\]\ntiene solución entera si y solo si \\(\\gcd(a,b) \\mid c\\).\n\n\nSi \\((x_0,y_0)\\) es una solución particular y \\(d=\\gcd(a,b)\\), entonces todas las soluciones están dadas por\n\\[x=x_0+\\frac{b}{d}t, \\qquad y=y_0-\\frac{a}{d}t, \\qquad t \\in \\mathbb{Z}.\\]",
+    "crumbs": [
+      "Capítulo I: Teoría de Números",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Teoría: divisibilidad, primos y congruencias</span>"
+    ]
+  },
+  {
+    "objectID": "material/01_teoria_numeros/01_teoria.html#funciones-aritméticas",
+    "href": "material/01_teoria_numeros/01_teoria.html#funciones-aritméticas",
+    "title": "Teoría: divisibilidad, primos y congruencias",
+    "section": "Funciones aritméticas",
+    "text": "Funciones aritméticas\n\n\n\n\n\n\nDefinición: funciones aritméticas\n\n\n\nUna función aritmética es una aplicación definida sobre \\(\\mathbb{N}\\) y con valores numéricos, como \\(\\tau(n)\\) o \\(\\varphi(n)\\).\n\n\nSi\n\\[n=p_1^{\\alpha_1}p_2^{\\alpha_2}\\cdots p_k^{\\alpha_k},\\]\nentonces\n\\[\\tau(n)=(\\alpha_1+1)(\\alpha_2+1)\\cdots(\\alpha_k+1).\\]",
+    "crumbs": [
+      "Capítulo I: Teoría de Números",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Teoría: divisibilidad, primos y congruencias</span>"
+    ]
+  },
+  {
+    "objectID": "material/01_teoria_numeros/02_ejemplos.html",
+    "href": "material/01_teoria_numeros/02_ejemplos.html",
+    "title": "Ejemplos resueltos",
+    "section": "",
+    "text": "Ejemplo 1: algoritmo de Euclides",
+    "crumbs": [
+      "Capítulo I: Teoría de Números",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Ejemplos resueltos</span>"
+    ]
+  },
+  {
+    "objectID": "material/01_teoria_numeros/02_ejemplos.html#ejemplo-1-algoritmo-de-euclides",
+    "href": "material/01_teoria_numeros/02_ejemplos.html#ejemplo-1-algoritmo-de-euclides",
+    "title": "Ejemplos resueltos",
+    "section": "",
+    "text": "Ejemplo resuelto\n\n\n\nProblema: calcular \\(\\gcd(414, 662)\\).\nSolución: aplicamos divisiones sucesivas:\n\\[662 = 414 \\cdot 1 + 248,\\] \\[414 = 248 \\cdot 1 + 166,\\] \\[248 = 166 \\cdot 1 + 82,\\] \\[166 = 82 \\cdot 2 + 2,\\] \\[82 = 2 \\cdot 41 + 0.\\]\nEl último resto no nulo es \\(2\\), luego\n\\[\\gcd(414,662)=2.\\]",
+    "crumbs": [
+      "Capítulo I: Teoría de Números",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Ejemplos resueltos</span>"
+    ]
+  },
+  {
+    "objectID": "material/01_teoria_numeros/02_ejemplos.html#ejemplo-2-identidad-de-bézout",
+    "href": "material/01_teoria_numeros/02_ejemplos.html#ejemplo-2-identidad-de-bézout",
+    "title": "Ejemplos resueltos",
+    "section": "Ejemplo 2: identidad de Bézout",
+    "text": "Ejemplo 2: identidad de Bézout\n\n\n\n\n\n\nEjemplo resuelto\n\n\n\nProblema: escribir \\(2\\) como combinación lineal de \\(414\\) y \\(662\\).\nSolución: retrocediendo en el algoritmo anterior se obtiene\n\\[2=8\\cdot 414-5\\cdot 662.\\]",
+    "crumbs": [
+      "Capítulo I: Teoría de Números",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Ejemplos resueltos</span>"
+    ]
+  },
+  {
+    "objectID": "material/01_teoria_numeros/02_ejemplos.html#ejemplo-3-congruencia-lineal",
+    "href": "material/01_teoria_numeros/02_ejemplos.html#ejemplo-3-congruencia-lineal",
+    "title": "Ejemplos resueltos",
+    "section": "Ejemplo 3: congruencia lineal",
+    "text": "Ejemplo 3: congruencia lineal\n\n\n\n\n\n\nEjemplo resuelto\n\n\n\nProblema: resolver\n\\[7x \\equiv 3 \\pmod{11}.\\]\nSolución: como \\(7 \\cdot 8 = 56 \\equiv 1 \\pmod{11}\\), multiplicamos por \\(8\\) y obtenemos\n\\[x \\equiv 2 \\pmod{11}.\\]",
+    "crumbs": [
+      "Capítulo I: Teoría de Números",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Ejemplos resueltos</span>"
+    ]
+  },
+  {
+    "objectID": "material/01_teoria_numeros/02_ejemplos.html#ejemplo-4-ecuación-diofántica",
+    "href": "material/01_teoria_numeros/02_ejemplos.html#ejemplo-4-ecuación-diofántica",
+    "title": "Ejemplos resueltos",
+    "section": "Ejemplo 4: ecuación diofántica",
+    "text": "Ejemplo 4: ecuación diofántica\n\n\n\n\n\n\nEjemplo resuelto\n\n\n\nProblema: hallar todas las soluciones enteras de\n\\[15x+21y=12.\\]\nSolución: como \\(\\gcd(15,21)=3\\) y \\(3 \\mid 12\\), hay soluciones. Dividiendo por \\(3\\) queda \\(5x+7y=4\\). Una solución es \\((x_0,y_0)=(-2,2)\\), así que\n\\[x=-2+7t, \\qquad y=2-5t, \\qquad t \\in \\mathbb{Z}.\\]",
+    "crumbs": [
+      "Capítulo I: Teoría de Números",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Ejemplos resueltos</span>"
+    ]
+  },
+  {
+    "objectID": "material/01_teoria_numeros/02_ejemplos.html#ejemplo-5-contar-divisores",
+    "href": "material/01_teoria_numeros/02_ejemplos.html#ejemplo-5-contar-divisores",
+    "title": "Ejemplos resueltos",
+    "section": "Ejemplo 5: contar divisores",
+    "text": "Ejemplo 5: contar divisores\n\n\n\n\n\n\nEjemplo resuelto\n\n\n\nProblema: ¿cuántos divisores positivos tiene \\(360\\)?\nSolución: factorizamos\n\\[360=2^3\\cdot 3^2 \\cdot 5,\\]\nluego\n\\[\\tau(360)=(3+1)(2+1)(1+1)=24.\\]",
+    "crumbs": [
+      "Capítulo I: Teoría de Números",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Ejemplos resueltos</span>"
+    ]
+  },
+  {
+    "objectID": "material/01_teoria_numeros/03_problemas.html",
+    "href": "material/01_teoria_numeros/03_problemas.html",
+    "title": "Problemas de práctica",
+    "section": "",
+    "text": "Problemas de competencias oficiales\nOMC 2012 — Problema 3: determinar todos los enteros \\(n\\) tales que \\(n^2+n+1\\) divide a \\(n^4+n^2+1\\).\nIMO 1988 — Problema 6: sea \\(a,b\\) enteros positivos tales que \\(ab+1\\) divide a \\(a^2+b^2\\). Probar que \\(\\frac{a^2+b^2}{ab+1}\\) es un cuadrado perfecto.",
+    "crumbs": [
+      "Capítulo I: Teoría de Números",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Problemas de práctica</span>"
+    ]
+  },
+  {
+    "objectID": "material/02_induccion/index.html",
+    "href": "material/02_induccion/index.html",
+    "title": "Capítulo II: Inducción Matemática",
+    "section": "",
+    "text": "Presentación\nLa inducción matemática convierte una observación repetitiva en una demostración general. Es la herramienta natural cuando aparecen sumas, progresiones, divisibilidad recursiva o sucesiones definidas por etapas.",
+    "crumbs": [
+      "Capítulo II: Inducción Matemática"
+    ]
+  },
+  {
+    "objectID": "material/02_induccion/index.html#objetivos-del-capítulo",
+    "href": "material/02_induccion/index.html#objetivos-del-capítulo",
+    "title": "Capítulo II: Inducción Matemática",
+    "section": "Objetivos del capítulo",
+    "text": "Objetivos del capítulo\n\nComprender el principio de inducción débil y fuerte.\nDemostrar identidades de sumas y desigualdades.\nEstudiar progresiones aritméticas y geométricas.\nAnalizar la sucesión de Fibonacci y variantes.",
+    "crumbs": [
+      "Capítulo II: Inducción Matemática"
+    ]
+  },
+  {
+    "objectID": "material/02_induccion/index.html#contenidos",
+    "href": "material/02_induccion/index.html#contenidos",
+    "title": "Capítulo II: Inducción Matemática",
+    "section": "Contenidos",
+    "text": "Contenidos\n\n\n\nSección\nEnfoque\n\n\n\n\nTeoría\nProgresiones, inducción y sucesiones\n\n\nEjemplos\nDemostraciones y aplicaciones modelo\n\n\nProblemas\nEntrenamiento con soluciones colapsadas",
+    "crumbs": [
+      "Capítulo II: Inducción Matemática"
+    ]
+  },
+  {
+    "objectID": "material/02_induccion/01_teoria.html",
+    "href": "material/02_induccion/01_teoria.html",
+    "title": "Teoría: progresiones e inducción",
+    "section": "",
+    "text": "Progresiones aritméticas\nLa suma de los primeros \\(n\\) términos es\n\\[S_n=\\frac{n(a_1+a_n)}{2}.\\]",
+    "crumbs": [
+      "Capítulo II: Inducción Matemática",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Teoría: progresiones e inducción</span>"
+    ]
+  },
+  {
+    "objectID": "material/02_induccion/01_teoria.html#progresiones-aritméticas",
+    "href": "material/02_induccion/01_teoria.html#progresiones-aritméticas",
+    "title": "Teoría: progresiones e inducción",
+    "section": "",
+    "text": "Definición: progresión aritmética\n\n\n\nUna sucesión \\((a_n)\\) es aritmética si existe una constante \\(d\\) tal que\n\\[a_{n+1}=a_n+d.\\]\nEntonces\n\\[a_n=a_1+(n-1)d.\\]",
+    "crumbs": [
+      "Capítulo II: Inducción Matemática",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Teoría: progresiones e inducción</span>"
+    ]
+  },
+  {
+    "objectID": "material/02_induccion/01_teoria.html#progresiones-geométricas",
+    "href": "material/02_induccion/01_teoria.html#progresiones-geométricas",
+    "title": "Teoría: progresiones e inducción",
+    "section": "Progresiones geométricas",
+    "text": "Progresiones geométricas\n\n\n\n\n\n\nDefinición: progresión geométrica\n\n\n\nUna sucesión \\((g_n)\\) es geométrica si existe una constante \\(r\\) tal que\n\\[g_{n+1}=rg_n.\\]\nEntonces\n\\[g_n=g_1r^{n-1}.\\]\n\n\nSi \\(r \\neq 1\\),\n\\[g_1+g_1r+\\cdots+g_1r^{n-1}=g_1\\frac{r^n-1}{r-1}.\\]",
+    "crumbs": [
+      "Capítulo II: Inducción Matemática",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Teoría: progresiones e inducción</span>"
+    ]
+  },
+  {
+    "objectID": "material/02_induccion/01_teoria.html#principio-de-inducción",
+    "href": "material/02_induccion/01_teoria.html#principio-de-inducción",
+    "title": "Teoría: progresiones e inducción",
+    "section": "Principio de inducción",
+    "text": "Principio de inducción\n\n\n\n\n\n\nPrincipio de inducción débil\n\n\n\nSea \\(P(n)\\) una proposición definida para todo \\(n \\ge n_0\\). Si\n\n\\(P(n_0)\\) es verdadera.\nPara todo \\(k \\ge n_0\\), de \\(P(k)\\) se deduce \\(P(k+1)\\).\n\nEntonces \\(P(n)\\) es verdadera para todo \\(n \\ge n_0\\).",
+    "crumbs": [
+      "Capítulo II: Inducción Matemática",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Teoría: progresiones e inducción</span>"
+    ]
+  },
+  {
+    "objectID": "material/02_induccion/01_teoria.html#inducción-fuerte",
+    "href": "material/02_induccion/01_teoria.html#inducción-fuerte",
+    "title": "Teoría: progresiones e inducción",
+    "section": "Inducción fuerte",
+    "text": "Inducción fuerte\n\n\n\n\n\n\nPrincipio de inducción fuerte\n\n\n\nSi\n\n\\(P(n_0)\\) es verdadera.\nPara todo \\(k \\ge n_0\\), de la veracidad de \\(P(n_0),P(n_0+1),\\dots,P(k)\\) se deduce \\(P(k+1)\\).\n\nEntonces \\(P(n)\\) es verdadera para todo \\(n \\ge n_0\\).",
+    "crumbs": [
+      "Capítulo II: Inducción Matemática",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Teoría: progresiones e inducción</span>"
+    ]
+  },
+  {
+    "objectID": "material/02_induccion/01_teoria.html#sucesión-de-fibonacci",
+    "href": "material/02_induccion/01_teoria.html#sucesión-de-fibonacci",
+    "title": "Teoría: progresiones e inducción",
+    "section": "Sucesión de Fibonacci",
+    "text": "Sucesión de Fibonacci\n\n\n\n\n\n\nDefinición: Fibonacci\n\n\n\nLa sucesión de Fibonacci está dada por\n\\[F_1=1,\\quad F_2=1,\\quad F_{n+2}=F_{n+1}+F_n.\\]\n\n\n\n\n\n\n\n\nIdentidad útil\n\n\n\nPara todo \\(n \\ge 1\\),\n\\[F_1+F_2+\\cdots+F_n=F_{n+2}-1.\\]",
+    "crumbs": [
+      "Capítulo II: Inducción Matemática",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Teoría: progresiones e inducción</span>"
+    ]
+  },
+  {
+    "objectID": "material/02_induccion/02_ejemplos.html",
+    "href": "material/02_induccion/02_ejemplos.html",
+    "title": "Ejemplos resueltos",
+    "section": "",
+    "text": "Ejemplo 1: suma de enteros",
+    "crumbs": [
+      "Capítulo II: Inducción Matemática",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Ejemplos resueltos</span>"
+    ]
+  },
+  {
+    "objectID": "material/02_induccion/02_ejemplos.html#ejemplo-1-suma-de-enteros",
+    "href": "material/02_induccion/02_ejemplos.html#ejemplo-1-suma-de-enteros",
+    "title": "Ejemplos resueltos",
+    "section": "",
+    "text": "Ejemplo resuelto\n\n\n\nProblema: demostrar que\n\\[1+2+\\cdots+n=\\frac{n(n+1)}{2}.\\]\nSolución: por inducción. La base \\(n=1\\) es inmediata. Si vale para \\(n=k\\), entonces\n\\[1+\\cdots+k+(k+1)=\\frac{k(k+1)}{2}+(k+1)=\\frac{(k+1)(k+2)}{2}.\\]",
+    "crumbs": [
+      "Capítulo II: Inducción Matemática",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Ejemplos resueltos</span>"
+    ]
+  },
+  {
+    "objectID": "material/02_induccion/02_ejemplos.html#ejemplo-2-suma-geométrica",
+    "href": "material/02_induccion/02_ejemplos.html#ejemplo-2-suma-geométrica",
+    "title": "Ejemplos resueltos",
+    "section": "Ejemplo 2: suma geométrica",
+    "text": "Ejemplo 2: suma geométrica\n\n\n\n\n\n\nEjemplo resuelto\n\n\n\nProblema: probar que para \\(r \\neq 1\\),\n\\[1+r+r^2+\\cdots+r^n=\\frac{r^{n+1}-1}{r-1}.\\]\nSolución: si \\(S=1+r+\\cdots+r^n\\), entonces\n\\[rS=r+r^2+\\cdots+r^{n+1}.\\]\nRestando, \\((r-1)S=r^{n+1}-1\\), y se obtiene la fórmula.",
+    "crumbs": [
+      "Capítulo II: Inducción Matemática",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Ejemplos resueltos</span>"
+    ]
+  },
+  {
+    "objectID": "material/02_induccion/02_ejemplos.html#ejemplo-3-divisibilidad-por-inducción",
+    "href": "material/02_induccion/02_ejemplos.html#ejemplo-3-divisibilidad-por-inducción",
+    "title": "Ejemplos resueltos",
+    "section": "Ejemplo 3: divisibilidad por inducción",
+    "text": "Ejemplo 3: divisibilidad por inducción\n\n\n\n\n\n\nEjemplo resuelto\n\n\n\nProblema: demostrar que \\(7 \\mid (8^n-1)\\) para todo \\(n \\ge 1\\).\nSolución: la base es inmediata. Si \\(7 \\mid (8^k-1)\\), entonces\n\\[8^{k+1}-1=8(8^k-1)+7,\\]\nque también es múltiplo de \\(7\\).",
+    "crumbs": [
+      "Capítulo II: Inducción Matemática",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Ejemplos resueltos</span>"
+    ]
+  },
+  {
+    "objectID": "material/02_induccion/02_ejemplos.html#ejemplo-4-identidad-de-fibonacci",
+    "href": "material/02_induccion/02_ejemplos.html#ejemplo-4-identidad-de-fibonacci",
+    "title": "Ejemplos resueltos",
+    "section": "Ejemplo 4: identidad de Fibonacci",
+    "text": "Ejemplo 4: identidad de Fibonacci\n\n\n\n\n\n\nEjemplo resuelto\n\n\n\nProblema: demostrar que\n\\[F_1+F_2+\\cdots+F_n=F_{n+2}-1.\\]\nSolución: si vale para \\(n=k\\), entonces\n\\[F_1+\\cdots+F_k+F_{k+1}=F_{k+2}-1+F_{k+1}=F_{k+3}-1.\\]",
+    "crumbs": [
+      "Capítulo II: Inducción Matemática",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Ejemplos resueltos</span>"
+    ]
+  },
+  {
+    "objectID": "material/02_induccion/03_problemas.html",
+    "href": "material/02_induccion/03_problemas.html",
+    "title": "Problemas de práctica",
+    "section": "",
+    "text": "Problemas de competencias oficiales\nOMC 2016 — Problema 2: encontrar todas las sucesiones de enteros positivos que satisfacen una relación recursiva simple y una condición inicial.\nIMO 1977 — Problema 1: demostrar una identidad de sumas finitas usando técnicas elementales de inducción y factorización.",
+    "crumbs": [
+      "Capítulo II: Inducción Matemática",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Problemas de práctica</span>"
+    ]
+  },
+  {
+    "objectID": "material/03_combinatoria/index.html",
+    "href": "material/03_combinatoria/index.html",
+    "title": "Capítulo III: Combinatoria",
+    "section": "",
+    "text": "Presentación\nLa combinatoria enseña a contar sin enumerar uno por uno. En olimpiadas es un campo central porque transforma situaciones aparentemente caóticas en estructuras ordenadas.",
+    "crumbs": [
+      "Capítulo III: Combinatoria"
+    ]
+  },
+  {
+    "objectID": "material/03_combinatoria/index.html#objetivos-del-capítulo",
+    "href": "material/03_combinatoria/index.html#objetivos-del-capítulo",
+    "title": "Capítulo III: Combinatoria",
+    "section": "Objetivos del capítulo",
+    "text": "Objetivos del capítulo\n\nManejar principios básicos de conteo.\nDiferenciar variaciones, permutaciones y combinaciones.\nUsar el binomio de Newton con soltura.\nAplicar el principio del palomar en demostraciones.",
+    "crumbs": [
+      "Capítulo III: Combinatoria"
+    ]
+  },
+  {
+    "objectID": "material/03_combinatoria/index.html#contenidos",
+    "href": "material/03_combinatoria/index.html#contenidos",
+    "title": "Capítulo III: Combinatoria",
+    "section": "Contenidos",
+    "text": "Contenidos\n\n\n\nSección\nEnfoque\n\n\n\n\nTeoría\nHerramientas fundamentales de conteo\n\n\nEjemplos\nResolución paso a paso\n\n\nProblemas\nPráctica olímpica inicial",
+    "crumbs": [
+      "Capítulo III: Combinatoria"
+    ]
+  },
+  {
+    "objectID": "material/03_combinatoria/01_teoria.html",
+    "href": "material/03_combinatoria/01_teoria.html",
+    "title": "Teoría: contar, ordenar y seleccionar",
+    "section": "",
+    "text": "Principios combinatorios básicos",
+    "crumbs": [
+      "Capítulo III: Combinatoria",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Teoría: contar, ordenar y seleccionar</span>"
+    ]
+  },
+  {
+    "objectID": "material/03_combinatoria/01_teoria.html#principios-combinatorios-básicos",
+    "href": "material/03_combinatoria/01_teoria.html#principios-combinatorios-básicos",
+    "title": "Teoría: contar, ordenar y seleccionar",
+    "section": "",
+    "text": "Principio aditivo\n\n\n\nSi una tarea puede realizarse de \\(m\\) maneras en un caso y de \\(n\\) maneras en otro, y ambos casos no se superponen, entonces puede realizarse de \\(m+n\\) maneras.\n\n\n\n\n\n\n\n\nPrincipio multiplicativo\n\n\n\nSi una tarea consta de dos etapas independientes, con \\(m\\) opciones en la primera y \\(n\\) en la segunda, entonces hay \\(mn\\) formas de completar la tarea.",
+    "crumbs": [
+      "Capítulo III: Combinatoria",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Teoría: contar, ordenar y seleccionar</span>"
+    ]
+  },
+  {
+    "objectID": "material/03_combinatoria/01_teoria.html#variaciones-y-permutaciones",
+    "href": "material/03_combinatoria/01_teoria.html#variaciones-y-permutaciones",
+    "title": "Teoría: contar, ordenar y seleccionar",
+    "section": "Variaciones y permutaciones",
+    "text": "Variaciones y permutaciones\n\n\n\n\n\n\nDefinición: variaciones\n\n\n\nLas variaciones de \\(n\\) elementos tomados de \\(k\\) en \\(k\\) son arreglos ordenados de \\(k\\) elementos distintos elegidos entre \\(n\\). Su número es\n\\[V(n,k)=n(n-1)\\cdots(n-k+1).\\]\n\n\n\n\n\n\n\n\nDefinición: permutación\n\n\n\nUna permutación de \\(n\\) objetos distintos es un ordenamiento completo de esos objetos. Su número es\n\\[n! = n(n-1)(n-2)\\cdots 2 \\cdot 1.\\]",
+    "crumbs": [
+      "Capítulo III: Combinatoria",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Teoría: contar, ordenar y seleccionar</span>"
+    ]
+  },
+  {
+    "objectID": "material/03_combinatoria/01_teoria.html#combinaciones",
+    "href": "material/03_combinatoria/01_teoria.html#combinaciones",
+    "title": "Teoría: contar, ordenar y seleccionar",
+    "section": "Combinaciones",
+    "text": "Combinaciones\n\n\n\n\n\n\nDefinición: combinación\n\n\n\nEl número de subconjuntos de \\(k\\) elementos que pueden elegirse de un conjunto de \\(n\\) elementos es\n\\[\\binom{n}{k}=\\frac{n!}{k!(n-k)!}.\\]",
+    "crumbs": [
+      "Capítulo III: Combinatoria",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Teoría: contar, ordenar y seleccionar</span>"
+    ]
+  },
+  {
+    "objectID": "material/03_combinatoria/01_teoria.html#binomio-de-newton",
+    "href": "material/03_combinatoria/01_teoria.html#binomio-de-newton",
+    "title": "Teoría: contar, ordenar y seleccionar",
+    "section": "Binomio de Newton",
+    "text": "Binomio de Newton\n\n\n\n\n\n\nTeorema: binomio de Newton\n\n\n\nPara todo \\(n \\in \\mathbb{N}\\),\n\\[ (a+b)^n=\\sum_{k=0}^{n}\\binom{n}{k}a^{n-k}b^k. \\]",
+    "crumbs": [
+      "Capítulo III: Combinatoria",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Teoría: contar, ordenar y seleccionar</span>"
+    ]
+  },
+  {
+    "objectID": "material/03_combinatoria/01_teoria.html#principio-del-palomar",
+    "href": "material/03_combinatoria/01_teoria.html#principio-del-palomar",
+    "title": "Teoría: contar, ordenar y seleccionar",
+    "section": "Principio del palomar",
+    "text": "Principio del palomar\n\n\n\n\n\n\nPrincipio del palomar\n\n\n\nSi se distribuyen \\(N\\) objetos en \\(k\\) cajas y \\(N&gt;k\\), entonces al menos una caja contiene dos o más objetos.\n\n\nSu forma reforzada afirma que alguna caja contiene al menos\n\\[\\left\\lceil \\frac{N}{k} \\right\\rceil\\]\nobjetos.",
+    "crumbs": [
+      "Capítulo III: Combinatoria",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Teoría: contar, ordenar y seleccionar</span>"
+    ]
+  },
+  {
+    "objectID": "material/03_combinatoria/02_ejemplos.html",
+    "href": "material/03_combinatoria/02_ejemplos.html",
+    "title": "Ejemplos resueltos",
+    "section": "",
+    "text": "Ejemplo 1: principio multiplicativo",
+    "crumbs": [
+      "Capítulo III: Combinatoria",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Ejemplos resueltos</span>"
+    ]
+  },
+  {
+    "objectID": "material/03_combinatoria/02_ejemplos.html#ejemplo-1-principio-multiplicativo",
+    "href": "material/03_combinatoria/02_ejemplos.html#ejemplo-1-principio-multiplicativo",
+    "title": "Ejemplos resueltos",
+    "section": "",
+    "text": "Ejemplo resuelto\n\n\n\nProblema: ¿cuántos números de tres cifras distintas pueden formarse con los dígitos \\(1,2,3,4,5\\)?\nSolución: para la centena hay \\(5\\) opciones, para la decena quedan \\(4\\) y para la unidad quedan \\(3\\). Por tanto,\n\\[5 \\cdot 4 \\cdot 3 = 60.\\]",
+    "crumbs": [
+      "Capítulo III: Combinatoria",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Ejemplos resueltos</span>"
+    ]
+  },
+  {
+    "objectID": "material/03_combinatoria/02_ejemplos.html#ejemplo-2-combinaciones",
+    "href": "material/03_combinatoria/02_ejemplos.html#ejemplo-2-combinaciones",
+    "title": "Ejemplos resueltos",
+    "section": "Ejemplo 2: combinaciones",
+    "text": "Ejemplo 2: combinaciones\n\n\n\n\n\n\nEjemplo resuelto\n\n\n\nProblema: de un grupo de \\(8\\) estudiantes, ¿de cuántas maneras puede elegirse una comisión de \\(3\\) personas?\nSolución: el orden no importa, así que\n\\[\\binom{8}{3}=56.\\]",
+    "crumbs": [
+      "Capítulo III: Combinatoria",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Ejemplos resueltos</span>"
+    ]
+  },
+  {
+    "objectID": "material/03_combinatoria/02_ejemplos.html#ejemplo-3-binomio-de-newton",
+    "href": "material/03_combinatoria/02_ejemplos.html#ejemplo-3-binomio-de-newton",
+    "title": "Ejemplos resueltos",
+    "section": "Ejemplo 3: binomio de Newton",
+    "text": "Ejemplo 3: binomio de Newton\n\n\n\n\n\n\nEjemplo resuelto\n\n\n\nProblema: encontrar el coeficiente de \\(x^3\\) en \\((1+x)^7\\).\nSolución: por el binomio de Newton el coeficiente es\n\\[\\binom{7}{3}=35.\\]",
+    "crumbs": [
+      "Capítulo III: Combinatoria",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Ejemplos resueltos</span>"
+    ]
+  },
+  {
+    "objectID": "material/03_combinatoria/02_ejemplos.html#ejemplo-4-principio-del-palomar",
+    "href": "material/03_combinatoria/02_ejemplos.html#ejemplo-4-principio-del-palomar",
+    "title": "Ejemplos resueltos",
+    "section": "Ejemplo 4: principio del palomar",
+    "text": "Ejemplo 4: principio del palomar\n\n\n\n\n\n\nEjemplo resuelto\n\n\n\nProblema: probar que entre cualesquiera \\(13\\) enteros hay dos cuya diferencia es múltiplo de \\(12\\).\nSolución: solo hay \\(12\\) residuos posibles módulo \\(12\\). Si tenemos \\(13\\) enteros, dos comparten el mismo residuo y su diferencia es múltiplo de \\(12\\).",
+    "crumbs": [
+      "Capítulo III: Combinatoria",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Ejemplos resueltos</span>"
+    ]
+  },
+  {
+    "objectID": "material/03_combinatoria/03_problemas.html",
+    "href": "material/03_combinatoria/03_problemas.html",
+    "title": "Problemas de práctica",
+    "section": "",
+    "text": "Problemas de competencias oficiales\nOMC 2018 — Problema 1: contar configuraciones sujetas a restricciones de paridad y selección.\nIMO 1987 — Problema 1: demostrar una propiedad combinatoria de un tablero utilizando conteo doble.",
+    "crumbs": [
+      "Capítulo III: Combinatoria",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Problemas de práctica</span>"
+    ]
+  },
+  {
+    "objectID": "material/04_analisis/index.html",
+    "href": "material/04_analisis/index.html",
+    "title": "Capítulo IV: Análisis Elemental",
+    "section": "",
+    "text": "Presentación\nEn olimpíadas, el análisis elemental no se centra en límites complicados, sino en comprender con precisión a los números racionales y reales, sus desarrollos decimales y distintas representaciones.",
+    "crumbs": [
+      "Capítulo IV: Análisis Elemental"
+    ]
+  },
+  {
+    "objectID": "material/04_analisis/index.html#objetivos-del-capítulo",
+    "href": "material/04_analisis/index.html#objetivos-del-capítulo",
+    "title": "Capítulo IV: Análisis Elemental",
+    "section": "Objetivos del capítulo",
+    "text": "Objetivos del capítulo\n\nEntender el orden en \\(\\mathbb{Q}\\) y en \\(\\mathbb{R}\\).\nTrabajar con series geométricas y expansiones decimales.\nEstudiar representaciones en distintas bases.\nAplicar estas ideas a problemas de estimación.",
+    "crumbs": [
+      "Capítulo IV: Análisis Elemental"
+    ]
+  },
+  {
+    "objectID": "material/04_analisis/index.html#contenidos",
+    "href": "material/04_analisis/index.html#contenidos",
+    "title": "Capítulo IV: Análisis Elemental",
+    "section": "Contenidos",
+    "text": "Contenidos\n\n\n\nSección\nEnfoque\n\n\n\n\nTeoría\nNúmeros, orden y representaciones\n\n\nEjemplos\nCálculos y argumentos típicos\n\n\nProblemas\nPráctica inicial y competencia",
+    "crumbs": [
+      "Capítulo IV: Análisis Elemental"
+    ]
+  },
+  {
+    "objectID": "material/04_analisis/01_teoria.html",
+    "href": "material/04_analisis/01_teoria.html",
+    "title": "Teoría: racionales, reales y bases numéricas",
+    "section": "",
+    "text": "Números racionales\nEntre dos racionales distintos siempre existe otro racional; por ejemplo, su promedio.",
+    "crumbs": [
+      "Capítulo IV: Análisis Elemental",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Teoría: racionales, reales y bases numéricas</span>"
+    ]
+  },
+  {
+    "objectID": "material/04_analisis/01_teoria.html#números-racionales",
+    "href": "material/04_analisis/01_teoria.html#números-racionales",
+    "title": "Teoría: racionales, reales y bases numéricas",
+    "section": "",
+    "text": "Definición: número racional\n\n\n\nUn número racional es un número de la forma\n\\[\\frac{a}{b}, \\qquad a,b \\in \\mathbb{Z}, \\ b \\neq 0.\\]",
+    "crumbs": [
+      "Capítulo IV: Análisis Elemental",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Teoría: racionales, reales y bases numéricas</span>"
+    ]
+  },
+  {
+    "objectID": "material/04_analisis/01_teoria.html#números-reales",
+    "href": "material/04_analisis/01_teoria.html#números-reales",
+    "title": "Teoría: racionales, reales y bases numéricas",
+    "section": "Números reales",
+    "text": "Números reales\nLos reales completan la recta numérica: incluyen racionales e irracionales y permiten trabajar con aproximaciones y continuidad.",
+    "crumbs": [
+      "Capítulo IV: Análisis Elemental",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Teoría: racionales, reales y bases numéricas</span>"
+    ]
+  },
+  {
+    "objectID": "material/04_analisis/01_teoria.html#series-geométricas",
+    "href": "material/04_analisis/01_teoria.html#series-geométricas",
+    "title": "Teoría: racionales, reales y bases numéricas",
+    "section": "Series geométricas",
+    "text": "Series geométricas\n\n\n\n\n\n\nSerie geométrica finita\n\n\n\nPara \\(r \\neq 1\\),\n\\[1+r+r^2+\\cdots+r^n=\\frac{r^{n+1}-1}{r-1}.\\]\n\n\nSi \\(|r|&lt;1\\), la suma infinita vale\n\\[1+r+r^2+\\cdots=\\frac{1}{1-r}.\\]",
+    "crumbs": [
+      "Capítulo IV: Análisis Elemental",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Teoría: racionales, reales y bases numéricas</span>"
+    ]
+  },
+  {
+    "objectID": "material/04_analisis/01_teoria.html#aproximaciones-decimales",
+    "href": "material/04_analisis/01_teoria.html#aproximaciones-decimales",
+    "title": "Teoría: racionales, reales y bases numéricas",
+    "section": "Aproximaciones decimales",
+    "text": "Aproximaciones decimales\nTodo racional tiene expansión decimal finita o periódica, y recíprocamente toda expansión decimal periódica representa un racional.",
+    "crumbs": [
+      "Capítulo IV: Análisis Elemental",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Teoría: racionales, reales y bases numéricas</span>"
+    ]
+  },
+  {
+    "objectID": "material/04_analisis/01_teoria.html#representación-en-base-p",
+    "href": "material/04_analisis/01_teoria.html#representación-en-base-p",
+    "title": "Teoría: racionales, reales y bases numéricas",
+    "section": "Representación en base \\(p\\)",
+    "text": "Representación en base \\(p\\)\n\n\n\n\n\n\nRepresentación en base \\(p&gt;1\\)\n\n\n\nTodo entero positivo puede escribirse de manera única como\n\\[a_kp^k+a_{k-1}p^{k-1}+\\cdots+a_1p+a_0,\\]\ndonde \\(0 \\le a_i &lt; p\\) y \\(a_k \\neq 0\\).",
+    "crumbs": [
+      "Capítulo IV: Análisis Elemental",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Teoría: racionales, reales y bases numéricas</span>"
+    ]
+  },
+  {
+    "objectID": "material/04_analisis/02_ejemplos.html",
+    "href": "material/04_analisis/02_ejemplos.html",
+    "title": "Ejemplos resueltos",
+    "section": "",
+    "text": "Ejemplo 1: decimal periódico a fracción",
+    "crumbs": [
+      "Capítulo IV: Análisis Elemental",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Ejemplos resueltos</span>"
+    ]
+  },
+  {
+    "objectID": "material/04_analisis/02_ejemplos.html#ejemplo-1-decimal-periódico-a-fracción",
+    "href": "material/04_analisis/02_ejemplos.html#ejemplo-1-decimal-periódico-a-fracción",
+    "title": "Ejemplos resueltos",
+    "section": "",
+    "text": "Ejemplo resuelto\n\n\n\nProblema: convertir \\(0,\\overline{12}\\) en fracción.\nSolución: si \\(x=0,\\overline{12}\\), entonces \\(100x=12,\\overline{12}\\). Restando, \\(99x=12\\), luego\n\\[x=\\frac{12}{99}=\\frac{4}{33}.\\]",
+    "crumbs": [
+      "Capítulo IV: Análisis Elemental",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Ejemplos resueltos</span>"
+    ]
+  },
+  {
+    "objectID": "material/04_analisis/02_ejemplos.html#ejemplo-2-suma-infinita",
+    "href": "material/04_analisis/02_ejemplos.html#ejemplo-2-suma-infinita",
+    "title": "Ejemplos resueltos",
+    "section": "Ejemplo 2: suma infinita",
+    "text": "Ejemplo 2: suma infinita\n\n\n\n\n\n\nEjemplo resuelto\n\n\n\nProblema: calcular\n\\[1+\\frac{1}{2}+\\frac{1}{4}+\\frac{1}{8}+\\cdots.\\]\nSolución: es una serie geométrica de razón \\(\\frac{1}{2}\\), así que la suma es\n\\[\\frac{1}{1-\\frac{1}{2}}=2.\\]",
+    "crumbs": [
+      "Capítulo IV: Análisis Elemental",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Ejemplos resueltos</span>"
+    ]
+  },
+  {
+    "objectID": "material/04_analisis/02_ejemplos.html#ejemplo-3-número-en-base-dos",
+    "href": "material/04_analisis/02_ejemplos.html#ejemplo-3-número-en-base-dos",
+    "title": "Ejemplos resueltos",
+    "section": "Ejemplo 3: número en base dos",
+    "text": "Ejemplo 3: número en base dos\n\n\n\n\n\n\nEjemplo resuelto\n\n\n\nProblema: escribir \\((101101)_2\\) en base diez.\nSolución:\n\\[ (101101)_2=2^5+2^3+2^2+1=45. \\]",
+    "crumbs": [
+      "Capítulo IV: Análisis Elemental",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Ejemplos resueltos</span>"
+    ]
+  },
+  {
+    "objectID": "material/04_analisis/02_ejemplos.html#ejemplo-4-racional-entre-dos-reales",
+    "href": "material/04_analisis/02_ejemplos.html#ejemplo-4-racional-entre-dos-reales",
+    "title": "Ejemplos resueltos",
+    "section": "Ejemplo 4: racional entre dos reales",
+    "text": "Ejemplo 4: racional entre dos reales\n\n\n\n\n\n\nEjemplo resuelto\n\n\n\nProblema: encontrar un racional entre \\(\\sqrt{2}\\) y \\(1.5\\).\nSolución: por ejemplo,\n\\[\\frac{29}{20}=1.45,\\]\ny satisface \\(\\sqrt{2}&lt;1.45&lt;1.5\\).",
+    "crumbs": [
+      "Capítulo IV: Análisis Elemental",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Ejemplos resueltos</span>"
+    ]
+  },
+  {
+    "objectID": "material/04_analisis/03_problemas.html",
+    "href": "material/04_analisis/03_problemas.html",
+    "title": "Problemas de práctica",
+    "section": "",
+    "text": "Problemas de competencias oficiales\nOMC 2014 — Problema 4: estudiar una expresión decimal periódica y relacionarla con una fracción.\nIMO 1967 — Problema 3: comparar números definidos por radicales y aproximaciones racionales.",
+    "crumbs": [
+      "Capítulo IV: Análisis Elemental",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Problemas de práctica</span>"
+    ]
+  },
+  {
+    "objectID": "material/05_geometria/index.html",
+    "href": "material/05_geometria/index.html",
+    "title": "Capítulo V: Geometría",
+    "section": "",
+    "text": "Presentación\nLa geometría olímpica exige mirar con precisión una figura y traducir esa mirada en relaciones métricas o angulares. Es una disciplina visual, pero también muy formal.",
+    "crumbs": [
+      "Capítulo V: Geometría"
+    ]
+  },
+  {
+    "objectID": "material/05_geometria/index.html#objetivos-del-capítulo",
+    "href": "material/05_geometria/index.html#objetivos-del-capítulo",
+    "title": "Capítulo V: Geometría",
+    "section": "Objetivos del capítulo",
+    "text": "Objetivos del capítulo\n\nRecordar conceptos básicos de triángulos y circunferencias.\nEstudiar centros notables y teoremas clásicos.\nAplicar Ceva, Menelao y Ptolomeo.\nResolver configuraciones elementales con argumentos limpios.",
+    "crumbs": [
+      "Capítulo V: Geometría"
+    ]
+  },
+  {
+    "objectID": "material/05_geometria/index.html#contenidos",
+    "href": "material/05_geometria/index.html#contenidos",
+    "title": "Capítulo V: Geometría",
+    "section": "Contenidos",
+    "text": "Contenidos\n\n\n\nSección\nEnfoque\n\n\n\n\nTeoría\nResultados fundamentales del capítulo\n\n\nEjemplos\nAplicaciones guiadas\n\n\nProblemas\nPráctica con soluciones colapsadas",
+    "crumbs": [
+      "Capítulo V: Geometría"
+    ]
+  },
+  {
+    "objectID": "material/05_geometria/01_teoria.html",
+    "href": "material/05_geometria/01_teoria.html",
+    "title": "Teoría: triángulos, circunferencias y centros notables",
+    "section": "",
+    "text": "Conceptos básicos",
+    "crumbs": [
+      "Capítulo V: Geometría",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Teoría: triángulos, circunferencias y centros notables</span>"
+    ]
+  },
+  {
+    "objectID": "material/05_geometria/01_teoria.html#conceptos-básicos",
+    "href": "material/05_geometria/01_teoria.html#conceptos-básicos",
+    "title": "Teoría: triángulos, circunferencias y centros notables",
+    "section": "",
+    "text": "Hecho básico\n\n\n\nLa suma de los ángulos interiores de un triángulo es \\(180^\\circ\\).",
+    "crumbs": [
+      "Capítulo V: Geometría",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Teoría: triángulos, circunferencias y centros notables</span>"
+    ]
+  },
+  {
+    "objectID": "material/05_geometria/01_teoria.html#teoremas-clásicos-del-triángulo",
+    "href": "material/05_geometria/01_teoria.html#teoremas-clásicos-del-triángulo",
+    "title": "Teoría: triángulos, circunferencias y centros notables",
+    "section": "Teoremas clásicos del triángulo",
+    "text": "Teoremas clásicos del triángulo\n\nTeorema de Pitágoras.\nCriterios de congruencia y semejanza.\nTeorema de la bisectriz interior.\nDesigualdad triangular.",
+    "crumbs": [
+      "Capítulo V: Geometría",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Teoría: triángulos, circunferencias y centros notables</span>"
+    ]
+  },
+  {
+    "objectID": "material/05_geometria/01_teoria.html#circunferencia",
+    "href": "material/05_geometria/01_teoria.html#circunferencia",
+    "title": "Teoría: triángulos, circunferencias y centros notables",
+    "section": "Circunferencia",
+    "text": "Circunferencia\n\n\n\n\n\n\nTeorema del ángulo inscrito\n\n\n\nUn ángulo inscrito mide la mitad del arco que intercepta.",
+    "crumbs": [
+      "Capítulo V: Geometría",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Teoría: triángulos, circunferencias y centros notables</span>"
+    ]
+  },
+  {
+    "objectID": "material/05_geometria/01_teoria.html#centros-notables",
+    "href": "material/05_geometria/01_teoria.html#centros-notables",
+    "title": "Teoría: triángulos, circunferencias y centros notables",
+    "section": "Centros notables",
+    "text": "Centros notables\n\nBaricentro: intersección de las medianas.\nIncentro: intersección de las bisectrices internas.\nCircuncentro: intersección de las mediatrices.\nOrtocentro: intersección de las alturas.\n\n\n\n\n\n\n\nBaricentro\n\n\n\nEl baricentro divide cada mediana en razón \\(2:1\\), contando desde el vértice.",
+    "crumbs": [
+      "Capítulo V: Geometría",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Teoría: triángulos, circunferencias y centros notables</span>"
+    ]
+  },
+  {
+    "objectID": "material/05_geometria/01_teoria.html#teoremas-de-ceva-y-menelao",
+    "href": "material/05_geometria/01_teoria.html#teoremas-de-ceva-y-menelao",
+    "title": "Teoría: triángulos, circunferencias y centros notables",
+    "section": "Teoremas de Ceva y Menelao",
+    "text": "Teoremas de Ceva y Menelao\n\n\n\n\n\n\nTeorema de Ceva\n\n\n\nSean \\(D,E,F\\) puntos en los lados \\(BC,CA,AB\\) de un triángulo \\(ABC\\). Entonces las rectas \\(AD\\), \\(BE\\) y \\(CF\\) son concurrentes si y solo si\n\\[\\frac{BD}{DC}\\cdot \\frac{CE}{EA}\\cdot \\frac{AF}{FB}=1.\\]\n\n\n\n\n\n\n\n\nTeorema de Menelao\n\n\n\nSi una recta corta a los lados \\(BC,CA,AB\\) de un triángulo \\(ABC\\) en \\(D,E,F\\), respectivamente, entonces\n\\[\\frac{BD}{DC}\\cdot \\frac{CE}{EA}\\cdot \\frac{AF}{FB}=1,\\]\ncon longitudes dirigidas.",
+    "crumbs": [
+      "Capítulo V: Geometría",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Teoría: triángulos, circunferencias y centros notables</span>"
+    ]
+  },
+  {
+    "objectID": "material/05_geometria/01_teoria.html#ptolomeo-y-recta-de-euler",
+    "href": "material/05_geometria/01_teoria.html#ptolomeo-y-recta-de-euler",
+    "title": "Teoría: triángulos, circunferencias y centros notables",
+    "section": "Ptolomeo y recta de Euler",
+    "text": "Ptolomeo y recta de Euler\n\n\n\n\n\n\nTeorema de Ptolomeo\n\n\n\nEn un cuadrilátero cíclico \\(ABCD\\) se cumple\n\\[AC \\cdot BD = AB \\cdot CD + BC \\cdot AD.\\]",
+    "crumbs": [
+      "Capítulo V: Geometría",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Teoría: triángulos, circunferencias y centros notables</span>"
+    ]
+  },
+  {
+    "objectID": "material/05_geometria/02_ejemplos.html",
+    "href": "material/05_geometria/02_ejemplos.html",
+    "title": "Ejemplos resueltos",
+    "section": "",
+    "text": "Ejemplo 1: ángulo inscrito",
+    "crumbs": [
+      "Capítulo V: Geometría",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Ejemplos resueltos</span>"
+    ]
+  },
+  {
+    "objectID": "material/05_geometria/02_ejemplos.html#ejemplo-1-ángulo-inscrito",
+    "href": "material/05_geometria/02_ejemplos.html#ejemplo-1-ángulo-inscrito",
+    "title": "Ejemplos resueltos",
+    "section": "",
+    "text": "Ejemplo resuelto\n\n\n\nProblema: en una circunferencia, el arco \\(AB\\) mide \\(80^\\circ\\). ¿Cuánto mide un ángulo inscrito que intercepta ese arco?\nSolución: mide\n\\[40^\\circ.\\]",
+    "crumbs": [
+      "Capítulo V: Geometría",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Ejemplos resueltos</span>"
+    ]
+  },
+  {
+    "objectID": "material/05_geometria/02_ejemplos.html#ejemplo-2-baricentro",
+    "href": "material/05_geometria/02_ejemplos.html#ejemplo-2-baricentro",
+    "title": "Ejemplos resueltos",
+    "section": "Ejemplo 2: baricentro",
+    "text": "Ejemplo 2: baricentro\n\n\n\n\n\n\nEjemplo resuelto\n\n\n\nProblema: en el triángulo \\(ABC\\), las medianas se cortan en \\(G\\). Si la mediana \\(AM\\) mide \\(12\\), hallar \\(AG\\) y \\(GM\\).\nSolución: como el baricentro divide en razón \\(2:1\\),\n\\[AG=8, \\qquad GM=4.\\]",
+    "crumbs": [
+      "Capítulo V: Geometría",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Ejemplos resueltos</span>"
+    ]
+  },
+  {
+    "objectID": "material/05_geometria/02_ejemplos.html#ejemplo-3-altura-a-la-hipotenusa",
+    "href": "material/05_geometria/02_ejemplos.html#ejemplo-3-altura-a-la-hipotenusa",
+    "title": "Ejemplos resueltos",
+    "section": "Ejemplo 3: altura a la hipotenusa",
+    "text": "Ejemplo 3: altura a la hipotenusa\n\n\n\n\n\n\nEjemplo resuelto\n\n\n\nProblema: en un triángulo rectángulo, la altura a la hipotenusa divide a esta en segmentos de longitudes \\(4\\) y \\(9\\). Hallar la altura.\nSolución: por semejanza,\n\\[h^2=4\\cdot 9=36,\\]\nluego \\(h=6\\).",
+    "crumbs": [
+      "Capítulo V: Geometría",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Ejemplos resueltos</span>"
+    ]
+  },
+  {
+    "objectID": "material/05_geometria/02_ejemplos.html#ejemplo-4-medianas-concurrentes",
+    "href": "material/05_geometria/02_ejemplos.html#ejemplo-4-medianas-concurrentes",
+    "title": "Ejemplos resueltos",
+    "section": "Ejemplo 4: medianas concurrentes",
+    "text": "Ejemplo 4: medianas concurrentes\n\n\n\n\n\n\nEjemplo resuelto\n\n\n\nProblema: justificar que las medianas de un triángulo son concurrentes usando Ceva.\nSolución: si \\(D,E,F\\) son puntos medios, entonces las tres razones del producto de Ceva son iguales a \\(1\\), así que las medianas concurren.",
+    "crumbs": [
+      "Capítulo V: Geometría",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Ejemplos resueltos</span>"
+    ]
+  },
+  {
+    "objectID": "material/05_geometria/03_problemas.html",
+    "href": "material/05_geometria/03_problemas.html",
+    "title": "Problemas de práctica",
+    "section": "",
+    "text": "Problemas de competencias oficiales\nOMC 2019 — Problema 3: demostrar una relación angular en una configuración con circunferencia.\nIMO 1962 — Problema 5: estudiar una condición geométrica equivalente a una concurrencia notable.",
+    "crumbs": [
+      "Capítulo V: Geometría",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Problemas de práctica</span>"
+    ]
+  },
+  {
+    "objectID": "material/06_problemas_resueltos/index.html",
+    "href": "material/06_problemas_resueltos/index.html",
+    "title": "Capítulo VI: Problemas Resueltos",
+    "section": "",
+    "text": "Presentación\nEste capítulo reúne problemas más extensos, pensados para consolidar técnicas de varias áreas a la vez.",
+    "crumbs": [
+      "Problemas",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Capítulo VI: Problemas Resueltos</span>"
+    ]
+  },
+  {
+    "objectID": "material/06_problemas_resueltos/index.html#problema-1-divisibilidad-y-factorización",
+    "href": "material/06_problemas_resueltos/index.html#problema-1-divisibilidad-y-factorización",
+    "title": "Capítulo VI: Problemas Resueltos",
+    "section": "Problema 1: divisibilidad y factorización",
+    "text": "Problema 1: divisibilidad y factorización\n\n\n\n\n\n\nProblema resuelto\n\n\n\nProblema: demostrar que si \\(n\\) es impar, entonces \\(n^2-1\\) es múltiplo de \\(8\\).\nSolución: si \\(n=2k+1\\), entonces\n\\[n^2-1=(2k+1)^2-1=4k(k+1).\\]\nComo uno de \\(k\\) y \\(k+1\\) es par, el producto es múltiplo de \\(8\\).",
+    "crumbs": [
+      "Problemas",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Capítulo VI: Problemas Resueltos</span>"
+    ]
+  },
+  {
+    "objectID": "material/06_problemas_resueltos/index.html#problema-2-conteo-con-simetría",
+    "href": "material/06_problemas_resueltos/index.html#problema-2-conteo-con-simetría",
+    "title": "Capítulo VI: Problemas Resueltos",
+    "section": "Problema 2: conteo con simetría",
+    "text": "Problema 2: conteo con simetría\n\n\n\n\n\n\nProblema resuelto\n\n\n\nProblema: ¿de cuántas maneras se pueden elegir dos vértices de un hexágono regular que no sean consecutivos?\nSolución: hay \\(\\binom{6}{2}=15\\) pares de vértices y \\(6\\) pares consecutivos. Luego el número pedido es \\(15-6=9\\).",
+    "crumbs": [
+      "Problemas",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Capítulo VI: Problemas Resueltos</span>"
+    ]
+  },
+  {
+    "objectID": "material/06_problemas_resueltos/index.html#problema-3-geometría-métrica",
+    "href": "material/06_problemas_resueltos/index.html#problema-3-geometría-métrica",
+    "title": "Capítulo VI: Problemas Resueltos",
+    "section": "Problema 3: geometría métrica",
+    "text": "Problema 3: geometría métrica\n\n\n\n\n\n\nProblema resuelto\n\n\n\nProblema: en un triángulo rectángulo con hipotenusa \\(10\\) y un cateto \\(6\\), hallar el otro cateto y el área.\nSolución: por Pitágoras, el otro cateto es \\(8\\) y el área vale \\(24\\).",
+    "crumbs": [
+      "Problemas",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Capítulo VI: Problemas Resueltos</span>"
+    ]
+  },
+  {
+    "objectID": "material/07_problemas_propuestos/index.html",
+    "href": "material/07_problemas_propuestos/index.html",
+    "title": "Capítulo VII y VIII: Problemas Propuestos",
+    "section": "",
+    "text": "Presentación\nAquí reunimos problemas para trabajo autónomo. Algunos son directos y otros están pensados para obligarte a combinar ideas de varios capítulos.",
+    "crumbs": [
+      "Problemas",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Capítulo VII y VIII: Problemas Propuestos</span>"
+    ]
+  },
+  {
+    "objectID": "material/07_problemas_propuestos/index.html#problemas-propuestos",
+    "href": "material/07_problemas_propuestos/index.html#problemas-propuestos",
+    "title": "Capítulo VII y VIII: Problemas Propuestos",
+    "section": "Problemas propuestos",
+    "text": "Problemas propuestos\n\nProbar que la suma de tres enteros consecutivos es múltiplo de \\(3\\).\nHallar todas las parejas de enteros positivos \\((x,y)\\) tales que \\(xy=2x+3y\\).\nDemostrar que en cualquier grupo de \\(5\\) enteros siempre hay dos con la misma paridad.\nEn un triángulo isósceles, probar que la altura a la base también es mediana y bisectriz.\nConvertir \\(0,\\overline{54}\\) en fracción irreducible.",
+    "crumbs": [
+      "Problemas",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Capítulo VII y VIII: Problemas Propuestos</span>"
+    ]
+  },
+  {
+    "objectID": "material/07_problemas_propuestos/index.html#fáciles-de-enunciar-y-difíciles-de-resolver",
+    "href": "material/07_problemas_propuestos/index.html#fáciles-de-enunciar-y-difíciles-de-resolver",
+    "title": "Capítulo VII y VIII: Problemas Propuestos",
+    "section": "Fáciles de enunciar y difíciles de resolver",
+    "text": "Fáciles de enunciar y difíciles de resolver\n\n¿Existen infinitos primos de la forma \\(4n+3\\)?\n¿Cuántas regiones determinan \\(n\\) rectas en posición general?\n¿Puede una suma de dos cuadrados ser congruente con \\(3\\) módulo \\(4\\)?",
+    "crumbs": [
+      "Problemas",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Capítulo VII y VIII: Problemas Propuestos</span>"
+    ]
+  }
+]
