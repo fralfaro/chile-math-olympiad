@@ -1,0 +1,59 @@
+---
+title: "Teoría: triángulos, circunferencias y centros notables"
+---
+
+## Conceptos básicos
+
+::: {.callout-note title="Hecho básico"}
+La suma de los ángulos interiores de un triángulo es $180^\circ$.
+:::
+
+## Teoremas clásicos del triángulo
+
+- Teorema de Pitágoras.
+- Criterios de congruencia y semejanza.
+- Teorema de la bisectriz interior.
+- Desigualdad triangular.
+
+## Circunferencia
+
+::: {.callout-note title="Teorema del ángulo inscrito"}
+Un ángulo inscrito mide la mitad del arco que intercepta.
+:::
+
+## Centros notables
+
+- **Baricentro:** intersección de las medianas.
+- **Incentro:** intersección de las bisectrices internas.
+- **Circuncentro:** intersección de las mediatrices.
+- **Ortocentro:** intersección de las alturas.
+
+::: {.callout-note title="Baricentro"}
+El baricentro divide cada mediana en razón $2:1$, contando desde el vértice.
+:::
+
+## Teoremas de Ceva y Menelao
+
+::: {.callout-tip title="Teorema de Ceva"}
+Sean $D,E,F$ puntos en los lados $BC,CA,AB$ de un triángulo $ABC$. Entonces las
+rectas $AD$, $BE$ y $CF$ son concurrentes si y solo si
+
+$$\frac{BD}{DC}\cdot \frac{CE}{EA}\cdot \frac{AF}{FB}=1.$$
+:::
+
+::: {.callout-tip title="Teorema de Menelao"}
+Si una recta corta a los lados $BC,CA,AB$ de un triángulo $ABC$ en $D,E,F$,
+respectivamente, entonces
+
+$$\frac{BD}{DC}\cdot \frac{CE}{EA}\cdot \frac{AF}{FB}=1,$$
+
+con longitudes dirigidas.
+:::
+
+## Ptolomeo y recta de Euler
+
+::: {.callout-note title="Teorema de Ptolomeo"}
+En un cuadrilátero cíclico $ABCD$ se cumple
+
+$$AC \cdot BD = AB \cdot CD + BC \cdot AD.$$
+:::

@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git mv:*)",
+      "Bash(git rm:*)",
+      "Bash(rm -rf material/00_intro material/01_github material/02_colab material/03_latex material/04_quarto)",
+      "Bash(mkdir -p material/00_historia material/01_teoria_numeros material/02_induccion material/03_combinatoria material/04_analisis material/05_geometria material/06_problemas_resueltos material/07_problemas_propuestos)",
+      "Bash(rm -rf slides/00_intro slides/01_github slides/02_colab slides/03_latex slides/04_quarto slides/.quarto)",
+      "Bash(mkdir -p slides/00_historia slides/01_teoria_numeros slides/02_induccion slides/03_combinatoria slides/04_analisis slides/05_geometria slides/06_problemas_resueltos slides/07_problemas_propuestos)"
+    ]
+  }
+}

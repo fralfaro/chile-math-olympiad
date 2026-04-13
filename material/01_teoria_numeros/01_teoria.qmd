@@ -1,0 +1,118 @@
+---
+title: "Teoría: divisibilidad, primos y congruencias"
+---
+
+## Divisibilidad
+
+La primera idea natural en aritmética es decidir cuándo un entero contiene a
+otro una cantidad exacta de veces.
+
+::: {.callout-note title="Definición: divisibilidad"}
+Sean $a,b \in \mathbb{Z}$ con $a \neq 0$. Decimos que $a$ divide a $b$ y
+escribimos $a \mid b$ si existe $k \in \mathbb{Z}$ tal que $b = ak$.
+:::
+
+De la definición se deducen propiedades básicas:
+
+- Si $a \mid b$ y $a \mid c$, entonces $a \mid (b+c)$ y $a \mid (b-c)$.
+- Si $a \mid b$, entonces $a \mid bc$ para todo $c \in \mathbb{Z}$.
+- Si $a \mid b$ y $b \mid c$, entonces $a \mid c$.
+
+::: {.callout-tip title="Teorema: algoritmo de la división"}
+Dados enteros $a$ y $b>0$, existen únicos enteros $q$ y $r$ tales que
+
+$$a=bq+r, \qquad 0 \le r < b.$$
+
+**Demostración:** consideremos el conjunto de números de la forma $a-bq$ que son
+no negativos. Por el principio del buen orden tiene un mínimo, que llamamos $r$.
+Si $r \ge b$, entonces $r-b$ sería un no negativo más pequeño de la misma forma,
+lo que es imposible. La unicidad se prueba comparando dos expresiones posibles.
+:::
+
+## Máximo común divisor y mínimo común múltiplo
+
+::: {.callout-note title="Definición: máximo común divisor"}
+El máximo común divisor de $a$ y $b$, denotado $\gcd(a,b)$, es el mayor entero
+positivo que divide simultáneamente a $a$ y a $b$.
+:::
+
+El algoritmo de Euclides se basa en la observación
+
+$$\gcd(a,b)=\gcd(b,r), \quad \text{si } a=bq+r.$$
+
+::: {.callout-tip title="Identidad de Bézout"}
+Existen enteros $x,y$ tales que
+
+$$ax+by=\gcd(a,b).$$
+:::
+
+## Números primos
+
+::: {.callout-note title="Definición: número primo"}
+Un entero $p>1$ es **primo** si sus únicos divisores positivos son $1$ y $p$.
+Si un entero mayor que $1$ no es primo, se llama **compuesto**.
+:::
+
+::: {.callout-tip title="Teorema: infinitud de los primos"}
+Existen infinitos números primos.
+
+**Demostración:** si existieran solo finitos primos $p_1,\dots,p_n$, entonces
+
+$$N=p_1p_2\cdots p_n+1$$
+
+no sería divisible por ninguno de ellos, contradicción.
+:::
+
+::: {.callout-tip title="Teorema fundamental de la aritmética"}
+Todo entero $n>1$ puede expresarse de manera única, salvo orden, como producto
+de primos.
+:::
+
+## Congruencias
+
+::: {.callout-note title="Definición: congruencia módulo $n$"}
+Sean $a,b \in \mathbb{Z}$ y $n \ge 2$. Decimos que
+
+$$a \equiv b \pmod{n}$$
+
+si $n \mid (a-b)$.
+:::
+
+Las congruencias respetan suma, resta y producto.
+
+::: {.callout-tip title="Teorema: inverso modular"}
+El entero $a$ tiene inverso módulo $n$ si y solo si $\gcd(a,n)=1$.
+
+**Demostración:** si $\gcd(a,n)=1$, por Bézout existen $x,y$ tales que
+$ax+ny=1$. Reduciendo módulo $n$ obtenemos $ax \equiv 1 \pmod{n}$.
+:::
+
+## Ecuaciones diofánticas lineales
+
+::: {.callout-note title="Teorema: ecuación $ax+by=c$"}
+La ecuación lineal
+
+$$ax+by=c$$
+
+tiene solución entera si y solo si $\gcd(a,b) \mid c$.
+:::
+
+Si $(x_0,y_0)$ es una solución particular y $d=\gcd(a,b)$, entonces todas las
+soluciones están dadas por
+
+$$x=x_0+\frac{b}{d}t, \qquad y=y_0-\frac{a}{d}t, \qquad t \in \mathbb{Z}.$$
+
+## Funciones aritméticas
+
+::: {.callout-note title="Definición: funciones aritméticas"}
+Una función aritmética es una aplicación definida sobre $\mathbb{N}$ y con valores
+numéricos, como $\tau(n)$ o $\varphi(n)$.
+:::
+
+Si
+
+$$n=p_1^{\alpha_1}p_2^{\alpha_2}\cdots p_k^{\alpha_k},$$
+
+entonces
+
+$$\tau(n)=(\alpha_1+1)(\alpha_2+1)\cdots(\alpha_k+1).$$

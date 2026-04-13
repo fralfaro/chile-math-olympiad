@@ -1,0 +1,48 @@
+---
+title: "Ejemplos resueltos"
+---
+
+## Ejemplo 1: decimal periódico a fracción
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** convertir $0,\overline{12}$ en fracción.
+
+**Solución:** si $x=0,\overline{12}$, entonces $100x=12,\overline{12}$.
+Restando, $99x=12$, luego
+
+$$x=\frac{12}{99}=\frac{4}{33}.$$
+:::
+
+## Ejemplo 2: suma infinita
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** calcular
+
+$$1+\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\cdots.$$
+
+**Solución:** es una serie geométrica de razón $\frac{1}{2}$, así que la suma es
+
+$$\frac{1}{1-\frac{1}{2}}=2.$$
+:::
+
+## Ejemplo 3: número en base dos
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** escribir $(101101)_2$ en base diez.
+
+**Solución:**
+
+$$ (101101)_2=2^5+2^3+2^2+1=45. $$
+:::
+
+## Ejemplo 4: racional entre dos reales
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** encontrar un racional entre $\sqrt{2}$ y $1.5$.
+
+**Solución:** por ejemplo,
+
+$$\frac{29}{20}=1.45,$$
+
+y satisface $\sqrt{2}<1.45<1.5$.
+:::

@@ -1,0 +1,8 @@
+---
+title: "Inducción"
+format: revealjs
+---
+
+## Placeholder
+
+Presentación pendiente para inducción matemática.

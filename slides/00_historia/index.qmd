@@ -1,0 +1,8 @@
+---
+title: "Historia"
+format: revealjs
+---
+
+## Placeholder
+
+Presentación pendiente para la sección de historia.

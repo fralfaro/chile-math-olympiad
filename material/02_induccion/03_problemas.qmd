@@ -1,0 +1,50 @@
+---
+title: "Problemas de práctica"
+---
+
+**Problema 1.** Demostrar por inducción que
+
+$$1^2+2^2+\cdots+n^2=\frac{n(n+1)(2n+1)}{6}.$$
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+Se verifica la base y luego se suma $(k+1)^2$ a la hipótesis inductiva hasta
+obtener
+
+$$\frac{(k+1)(k+2)(2k+3)}{6}.$$
+:::
+
+**Problema 2.** Probar que $6 \mid (n^3-n)$ para todo entero $n$.
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+Se factoriza
+
+$$n^3-n=n(n-1)(n+1).$$
+
+Son tres enteros consecutivos; uno es par y uno es múltiplo de $3$.
+:::
+
+**Problema 3.** Demostrar que todo entero $n \ge 2$ puede escribirse como
+producto de números primos.
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+Se usa inducción fuerte. Si $n$ es compuesto, se escribe como producto de dos
+enteros menores y se aplica la hipótesis a ambos.
+:::
+
+**Problema 4.** Probar que
+
+$$F_1+F_3+\cdots+F_{2n-1}=F_{2n}.$$
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+Si vale para $n=k$, al sumar $F_{2k+1}$ resulta
+
+$$F_{2k}+F_{2k+1}=F_{2k+2}.$$
+:::
+
+## Problemas de competencias oficiales
+
+**OMC 2016 — Problema 2:** encontrar todas las sucesiones de enteros positivos
+que satisfacen una relación recursiva simple y una condición inicial.
+
+**IMO 1977 — Problema 1:** demostrar una identidad de sumas finitas usando
+técnicas elementales de inducción y factorización.

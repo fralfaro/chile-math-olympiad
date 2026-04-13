@@ -1,0 +1,24 @@
+---
+title: "Capítulo IV: Análisis Elemental"
+---
+
+## Presentación
+
+En olimpíadas, el análisis elemental no se centra en límites complicados, sino
+en comprender con precisión a los números racionales y reales, sus desarrollos
+decimales y distintas representaciones.
+
+## Objetivos del capítulo
+
+- Entender el orden en $\mathbb{Q}$ y en $\mathbb{R}$.
+- Trabajar con series geométricas y expansiones decimales.
+- Estudiar representaciones en distintas bases.
+- Aplicar estas ideas a problemas de estimación.
+
+## Contenidos
+
+| Sección | Enfoque |
+|---|---|
+| [Teoría](01_teoria.qmd) | Números, orden y representaciones |
+| [Ejemplos](02_ejemplos.qmd) | Cálculos y argumentos típicos |
+| [Problemas](03_problemas.qmd) | Práctica inicial y competencia |

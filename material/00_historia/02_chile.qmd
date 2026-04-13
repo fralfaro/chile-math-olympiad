@@ -1,0 +1,99 @@
+---
+title: "La OMC en Chile"
+---
+
+## La Olimpiada Nacional de Matemáticas de Chile (OMC)
+
+La **Olimpiada Nacional de Matemáticas de Chile** (OMC) es organizada por la
+**Sociedad de Matemáticas de Chile (Somachi)** y se celebra desde 1981. Es la
+principal competencia matemática para estudiantes de enseñanza básica y media
+en el país.
+
+::: {.callout-note title="Somachi"}
+La **Sociedad de Matemáticas de Chile (Somachi)** fue fundada en 1968 y es la
+institución responsable de la promoción de las matemáticas en Chile, tanto a
+nivel de investigación como de educación. Es miembro de la International
+Mathematical Union (IMU).
+
+Sitio web: [www.olimpiadadematematica.cl](https://www.olimpiadadematematica.cl)
+:::
+
+---
+
+## Historia de la OMC
+
+### Primeros años (1981–1990)
+
+La OMC nació con el objetivo de identificar y estimular a los jóvenes con talento
+matemático en Chile. Inicialmente participaban principalmente estudiantes de la
+Región Metropolitana, pero rápidamente se expandió a otras regiones.
+
+El libro *Matemática y Olimpíadas* (Somachi, 1994) fue publicado precisamente como
+apoyo a la preparación de estudiantes para estas competencias, y es la referencia
+principal de este sitio.
+
+### Expansión y consolidación (1991–2010)
+
+Durante este período, la OMC amplió su alcance regional y comenzó a seleccionar
+representantes para competencias internacionales. Chile empezó a participar en la
+Olimpiada Iberoamericana de Matemáticas (OIM) y, posteriormente, en la IMO.
+
+### Época actual (2011–presente)
+
+Hoy la OMC tiene dos categorías principales:
+
+| Categoría | Nivel | Descripción |
+|---|---|---|
+| **Básica** | 7° y 8° básico | Primera experiencia competitiva |
+| **Media** | 1° a 4° medio | Selección para representación internacional |
+
+La categoría Media es la que alimenta la selección chilena para la OIM y la IMO.
+
+---
+
+## Organización actual
+
+### Etapas de la competencia
+
+::: {.callout-note title="Etapas de la OMC (categoría Media)"}
+1. **Etapa comunal:** prueba escrita en el establecimiento o sede comunal
+2. **Etapa regional:** los mejores de cada región compiten regionalmente
+3. **Etapa nacional:** final con los mejores de cada región
+4. **Selección nacional:** los mejores del nacional integran la preselección para
+   competencias internacionales
+:::
+
+### Formato del examen nacional
+
+- Duración: 3 a 4 horas
+- Número de problemas: 5 a 6
+- Temas: los mismos del libro Somachi (teoría de números, inducción, combinatoria,
+  análisis y geometría)
+- No se permite el uso de calculadora
+
+---
+
+## Preparación recomendada
+
+Para rendir bien en la OMC, se recomienda:
+
+1. **Dominar la teoría** de los cinco capítulos del libro Somachi
+2. **Practicar problemas** de olimpiadas anteriores (disponibles en el sitio de Somachi)
+3. **Participar en círculos matemáticos** o grupos de estudio organizados por colegios
+   o universidades regionales
+4. **Resolver problemas de la OIM y Cono Sur** para preparación adicional
+
+::: {.callout-tip title="Material de estudio"}
+Este sitio cubre en detalle los cinco capítulos temáticos del libro Somachi.
+Cada capítulo incluye teoría, ejemplos resueltos y problemas de práctica con
+soluciones para que puedas estudiar de forma autónoma.
+:::
+
+---
+
+## Recursos oficiales
+
+- **Somachi:** [www.olimpiadadematematica.cl](https://www.olimpiadadematematica.cl) — Problemas de años anteriores, convocatorias
+- **IMU Chile:** información sobre la representación en IMO
+- **Redes universitarias:** varias universidades chilenas organizan talleres de preparación
+  (U. de Chile, PUC, USACH, UTFSM, entre otras)

@@ -1,0 +1,61 @@
+---
+title: "Teoría: contar, ordenar y seleccionar"
+---
+
+## Principios combinatorios básicos
+
+::: {.callout-note title="Principio aditivo"}
+Si una tarea puede realizarse de $m$ maneras en un caso y de $n$ maneras en otro,
+y ambos casos no se superponen, entonces puede realizarse de $m+n$ maneras.
+:::
+
+::: {.callout-note title="Principio multiplicativo"}
+Si una tarea consta de dos etapas independientes, con $m$ opciones en la primera
+y $n$ en la segunda, entonces hay $mn$ formas de completar la tarea.
+:::
+
+## Variaciones y permutaciones
+
+::: {.callout-note title="Definición: variaciones"}
+Las variaciones de $n$ elementos tomados de $k$ en $k$ son arreglos ordenados de
+$k$ elementos distintos elegidos entre $n$. Su número es
+
+$$V(n,k)=n(n-1)\cdots(n-k+1).$$
+:::
+
+::: {.callout-note title="Definición: permutación"}
+Una permutación de $n$ objetos distintos es un ordenamiento completo de esos
+objetos. Su número es
+
+$$n! = n(n-1)(n-2)\cdots 2 \cdot 1.$$
+:::
+
+## Combinaciones
+
+::: {.callout-note title="Definición: combinación"}
+El número de subconjuntos de $k$ elementos que pueden elegirse de un conjunto de
+$n$ elementos es
+
+$$\binom{n}{k}=\frac{n!}{k!(n-k)!}.$$
+:::
+
+## Binomio de Newton
+
+::: {.callout-tip title="Teorema: binomio de Newton"}
+Para todo $n \in \mathbb{N}$,
+
+$$ (a+b)^n=\sum_{k=0}^{n}\binom{n}{k}a^{n-k}b^k. $$
+:::
+
+## Principio del palomar
+
+::: {.callout-note title="Principio del palomar"}
+Si se distribuyen $N$ objetos en $k$ cajas y $N>k$, entonces al menos una caja
+contiene dos o más objetos.
+:::
+
+Su forma reforzada afirma que alguna caja contiene al menos
+
+$$\left\lceil \frac{N}{k} \right\rceil$$
+
+objetos.

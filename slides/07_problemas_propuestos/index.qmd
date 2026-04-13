@@ -1,0 +1,8 @@
+---
+title: "Problemas Propuestos"
+format: revealjs
+---
+
+## Placeholder
+
+Presentación pendiente para problemas propuestos.

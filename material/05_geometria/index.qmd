@@ -1,0 +1,24 @@
+---
+title: "Capítulo V: Geometría"
+---
+
+## Presentación
+
+La geometría olímpica exige mirar con precisión una figura y traducir esa mirada
+en relaciones métricas o angulares. Es una disciplina visual, pero también muy
+formal.
+
+## Objetivos del capítulo
+
+- Recordar conceptos básicos de triángulos y circunferencias.
+- Estudiar centros notables y teoremas clásicos.
+- Aplicar Ceva, Menelao y Ptolomeo.
+- Resolver configuraciones elementales con argumentos limpios.
+
+## Contenidos
+
+| Sección | Enfoque |
+|---|---|
+| [Teoría](01_teoria.qmd) | Resultados fundamentales del capítulo |
+| [Ejemplos](02_ejemplos.qmd) | Aplicaciones guiadas |
+| [Problemas](03_problemas.qmd) | Práctica con soluciones colapsadas |

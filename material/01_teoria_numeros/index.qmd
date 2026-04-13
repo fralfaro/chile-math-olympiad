@@ -1,0 +1,35 @@
+---
+title: "Capítulo I: Teoría de Números"
+---
+
+## Presentación
+
+La teoría de números estudia las propiedades aritméticas de los enteros. En
+olimpiadas es una de las áreas más frecuentes porque combina ideas simples con
+argumentos muy creativos.
+
+Antes de cada definición importante conviene preguntarse por qué surgió el
+concepto. La divisibilidad nació al intentar entender cuándo una cantidad puede
+descomponerse exactamente; las congruencias, en cambio, aparecieron al estudiar
+restos y periodicidad.
+
+## Objetivos del capítulo
+
+- Reconocer y usar criterios de divisibilidad.
+- Calcular $\gcd(a,b)$ y $\operatorname{mcm}(a,b)$ con soltura.
+- Trabajar con números primos y factorización.
+- Resolver congruencias y ecuaciones diofánticas elementales.
+
+## Contenidos
+
+| Sección | Enfoque |
+|---|---|
+| [Teoría](01_teoria.qmd) | Definiciones, teoremas y demostraciones fundamentales |
+| [Ejemplos](02_ejemplos.qmd) | Modelos de resolución paso a paso |
+| [Problemas](03_problemas.qmd) | Práctica guiada y problemas de competencias |
+
+::: {.callout-note title="Referencia"}
+Este capítulo sigue el espíritu del Capítulo I de *Matemática y Olimpíadas*
+(Somachi, 1994), ampliando explicaciones intermedias para un primer curso de
+entrenamiento olímpico.
+:::

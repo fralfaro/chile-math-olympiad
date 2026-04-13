@@ -1,0 +1,72 @@
+---
+title: "Teoría: progresiones e inducción"
+---
+
+## Progresiones aritméticas
+
+::: {.callout-note title="Definición: progresión aritmética"}
+Una sucesión $(a_n)$ es aritmética si existe una constante $d$ tal que
+
+$$a_{n+1}=a_n+d.$$
+
+Entonces
+
+$$a_n=a_1+(n-1)d.$$
+:::
+
+La suma de los primeros $n$ términos es
+
+$$S_n=\frac{n(a_1+a_n)}{2}.$$
+
+## Progresiones geométricas
+
+::: {.callout-note title="Definición: progresión geométrica"}
+Una sucesión $(g_n)$ es geométrica si existe una constante $r$ tal que
+
+$$g_{n+1}=rg_n.$$
+
+Entonces
+
+$$g_n=g_1r^{n-1}.$$
+:::
+
+Si $r \neq 1$,
+
+$$g_1+g_1r+\cdots+g_1r^{n-1}=g_1\frac{r^n-1}{r-1}.$$
+
+## Principio de inducción
+
+::: {.callout-note title="Principio de inducción débil"}
+Sea $P(n)$ una proposición definida para todo $n \ge n_0$. Si
+
+1. $P(n_0)$ es verdadera.
+2. Para todo $k \ge n_0$, de $P(k)$ se deduce $P(k+1)$.
+
+Entonces $P(n)$ es verdadera para todo $n \ge n_0$.
+:::
+
+## Inducción fuerte
+
+::: {.callout-note title="Principio de inducción fuerte"}
+Si
+
+1. $P(n_0)$ es verdadera.
+2. Para todo $k \ge n_0$, de la veracidad de
+   $P(n_0),P(n_0+1),\dots,P(k)$ se deduce $P(k+1)$.
+
+Entonces $P(n)$ es verdadera para todo $n \ge n_0$.
+:::
+
+## Sucesión de Fibonacci
+
+::: {.callout-note title="Definición: Fibonacci"}
+La sucesión de Fibonacci está dada por
+
+$$F_1=1,\quad F_2=1,\quad F_{n+2}=F_{n+1}+F_n.$$
+:::
+
+::: {.callout-tip title="Identidad útil"}
+Para todo $n \ge 1$,
+
+$$F_1+F_2+\cdots+F_n=F_{n+2}-1.$$
+:::

@@ -1,0 +1,41 @@
+---
+title: "Problemas de práctica"
+---
+
+**Problema 1.** Probar que los ángulos de la base de un triángulo isósceles son
+iguales.
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+Se comparan triángulos congruentes construidos sobre los lados iguales, o se usa
+simetría. Resulta $\angle B=\angle C$.
+:::
+
+**Problema 2.** Demostrar que la mediatriz de un segmento es el lugar geométrico
+de los puntos equidistantes de sus extremos.
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+Un punto en la mediatriz forma dos triángulos congruentes con los extremos, y la
+recíproca se obtiene invirtiendo el argumento.
+:::
+
+**Problema 3.** En un triángulo rectángulo de catetos $3$ y $4$, hallar el radio
+de la circunferencia inscrita.
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+La hipotenusa es $5$ y el área es $6$. Como $A=rs$ con semiperímetro $s=6$,
+resulta $r=1$.
+:::
+
+**Problema 4.** Probar que en todo triángulo las tres medianas son concurrentes.
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+Se aplica Ceva a los puntos medios de los tres lados.
+:::
+
+## Problemas de competencias oficiales
+
+**OMC 2019 — Problema 3:** demostrar una relación angular en una configuración
+con circunferencia.
+
+**IMO 1962 — Problema 5:** estudiar una condición geométrica equivalente a una
+concurrencia notable.

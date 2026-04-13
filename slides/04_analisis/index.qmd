@@ -1,0 +1,8 @@
+---
+title: "Análisis"
+format: revealjs
+---
+
+## Placeholder
+
+Presentación pendiente para análisis elemental.

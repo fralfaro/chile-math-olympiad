@@ -1,0 +1,46 @@
+---
+title: "Teoría: racionales, reales y bases numéricas"
+---
+
+## Números racionales
+
+::: {.callout-note title="Definición: número racional"}
+Un número racional es un número de la forma
+
+$$\frac{a}{b}, \qquad a,b \in \mathbb{Z}, \ b \neq 0.$$
+:::
+
+Entre dos racionales distintos siempre existe otro racional; por ejemplo, su
+promedio.
+
+## Números reales
+
+Los reales completan la recta numérica: incluyen racionales e irracionales y
+permiten trabajar con aproximaciones y continuidad.
+
+## Series geométricas
+
+::: {.callout-note title="Serie geométrica finita"}
+Para $r \neq 1$,
+
+$$1+r+r^2+\cdots+r^n=\frac{r^{n+1}-1}{r-1}.$$
+:::
+
+Si $|r|<1$, la suma infinita vale
+
+$$1+r+r^2+\cdots=\frac{1}{1-r}.$$
+
+## Aproximaciones decimales
+
+Todo racional tiene expansión decimal finita o periódica, y recíprocamente toda
+expansión decimal periódica representa un racional.
+
+## Representación en base $p$
+
+::: {.callout-note title="Representación en base $p>1$"}
+Todo entero positivo puede escribirse de manera única como
+
+$$a_kp^k+a_{k-1}p^{k-1}+\cdots+a_1p+a_0,$$
+
+donde $0 \le a_i < p$ y $a_k \neq 0$.
+:::

@@ -1,0 +1,33 @@
+---
+title: "Historia de las Olimpiadas Matemáticas"
+---
+
+## Presentación
+
+Este capítulo introductorio sitúa al estudiante en el contexto de las competencias
+matemáticas a nivel mundial y nacional. Antes de entrar en la teoría y los problemas,
+es fundamental entender de dónde vienen estas olimpiadas, qué representan y cómo
+Chile participa en ellas.
+
+## Contenidos
+
+| Sección | Tema |
+|---|---|
+| [La IMO y otras competencias](01_mundial.qmd) | Historia de la Olimpiada Internacional de Matemáticas desde 1959, la Putnam y la Iberoamericana |
+| [La OMC en Chile](02_chile.qmd) | La Olimpiada Nacional de Matemáticas: Somachi, historia y organización actual |
+| [Medallistas chilenos](03_medallistas.qmd) | Participantes y medallistas chilenos destacados en la IMO |
+
+## ¿Por qué estudiar historia?
+
+Conocer la historia de las olimpiadas te ayuda a:
+
+- Entender el nivel de dificultad esperado en cada competencia
+- Conocer los tipos de problemas que se han pedido históricamente
+- Encontrar motivación en los logros de otros estudiantes chilenos
+- Conectar los temas matemáticos con su desarrollo histórico
+
+::: {.callout-note title="Libro base"}
+Este capítulo es una introducción propia, no tiene correspondencia directa con el
+libro *Matemática y Olimpíadas* (Somachi, 1994). Los capítulos siguientes sí siguen
+fielmente el contenido del libro.
+:::

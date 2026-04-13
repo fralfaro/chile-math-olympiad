@@ -1,0 +1,48 @@
+---
+title: "Ejemplos resueltos"
+---
+
+## Ejemplo 1: ángulo inscrito
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** en una circunferencia, el arco $AB$ mide $80^\circ$. ¿Cuánto mide
+un ángulo inscrito que intercepta ese arco?
+
+**Solución:** mide
+
+$$40^\circ.$$
+:::
+
+## Ejemplo 2: baricentro
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** en el triángulo $ABC$, las medianas se cortan en $G$. Si la mediana
+$AM$ mide $12$, hallar $AG$ y $GM$.
+
+**Solución:** como el baricentro divide en razón $2:1$,
+
+$$AG=8, \qquad GM=4.$$
+:::
+
+## Ejemplo 3: altura a la hipotenusa
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** en un triángulo rectángulo, la altura a la hipotenusa divide a esta
+en segmentos de longitudes $4$ y $9$. Hallar la altura.
+
+**Solución:** por semejanza,
+
+$$h^2=4\cdot 9=36,$$
+
+luego $h=6$.
+:::
+
+## Ejemplo 4: medianas concurrentes
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** justificar que las medianas de un triángulo son concurrentes usando
+Ceva.
+
+**Solución:** si $D,E,F$ son puntos medios, entonces las tres razones del producto
+de Ceva son iguales a $1$, así que las medianas concurren.
+:::

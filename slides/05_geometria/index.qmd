@@ -1,0 +1,8 @@
+---
+title: "Geometría"
+format: revealjs
+---
+
+## Placeholder
+
+Presentación pendiente para geometría.

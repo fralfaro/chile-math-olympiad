@@ -1,0 +1,54 @@
+---
+title: "Ejemplos resueltos"
+---
+
+## Ejemplo 1: suma de enteros
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** demostrar que
+
+$$1+2+\cdots+n=\frac{n(n+1)}{2}.$$
+
+**Solución:** por inducción. La base $n=1$ es inmediata. Si vale para $n=k$,
+entonces
+
+$$1+\cdots+k+(k+1)=\frac{k(k+1)}{2}+(k+1)=\frac{(k+1)(k+2)}{2}.$$
+:::
+
+## Ejemplo 2: suma geométrica
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** probar que para $r \neq 1$,
+
+$$1+r+r^2+\cdots+r^n=\frac{r^{n+1}-1}{r-1}.$$
+
+**Solución:** si $S=1+r+\cdots+r^n$, entonces
+
+$$rS=r+r^2+\cdots+r^{n+1}.$$
+
+Restando, $(r-1)S=r^{n+1}-1$, y se obtiene la fórmula.
+:::
+
+## Ejemplo 3: divisibilidad por inducción
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** demostrar que $7 \mid (8^n-1)$ para todo $n \ge 1$.
+
+**Solución:** la base es inmediata. Si $7 \mid (8^k-1)$, entonces
+
+$$8^{k+1}-1=8(8^k-1)+7,$$
+
+que también es múltiplo de $7$.
+:::
+
+## Ejemplo 4: identidad de Fibonacci
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** demostrar que
+
+$$F_1+F_2+\cdots+F_n=F_{n+2}-1.$$
+
+**Solución:** si vale para $n=k$, entonces
+
+$$F_1+\cdots+F_k+F_{k+1}=F_{k+2}-1+F_{k+1}=F_{k+3}-1.$$
+:::

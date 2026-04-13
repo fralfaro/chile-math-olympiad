@@ -1,0 +1,55 @@
+---
+title: "Problemas de práctica"
+---
+
+**Problema 1.** Probar que si $a \mid b$ y $b \mid a$ con $a,b>0$, entonces $a=b$.
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+De $a \mid b$ existe $m$ con $b=am$. De $b \mid a$ existe $n$ con $a=bn$.
+Sustituyendo resulta $a=amn$, luego $mn=1$. Como $m,n$ son enteros positivos,
+se obtiene $m=n=1$ y por tanto $a=b$.
+:::
+
+**Problema 2.** Hallar el residuo de $3^{100}$ al dividir por $7$.
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+Como $3^6 \equiv 1 \pmod{7}$ y $100=6\cdot 16+4$, se tiene
+
+$$3^{100}\equiv 3^4=81 \equiv 4 \pmod{7}.$$
+:::
+
+**Problema 3.** Resolver en enteros
+
+$$12x+18y=30.$$
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+Tenemos $\gcd(12,18)=6$ y $6 \mid 30$. Al dividir por $6$ queda
+
+$$2x+3y=5.$$
+
+Una solución es $(1,1)$, y todas las soluciones son
+
+$$x=1+3t, \qquad y=1-2t, \qquad t \in \mathbb{Z}.$$
+:::
+
+**Problema 4.** Demostrar que el producto de cuatro enteros consecutivos más $1$
+siempre es un cuadrado perfecto.
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+Se tiene
+
+$$n(n+1)(n+2)(n+3)+1=[n(n+3)][(n+1)(n+2)]+1.$$
+
+Si $m=n^2+3n$, entonces la expresión vale
+
+$$m(m+2)+1=(m+1)^2.$$
+:::
+
+## Problemas de competencias oficiales
+
+**OMC 2012 — Problema 3:** determinar todos los enteros $n$ tales que
+$n^2+n+1$ divide a $n^4+n^2+1$.
+
+**IMO 1988 — Problema 6:** sea $a,b$ enteros positivos tales que
+$ab+1$ divide a $a^2+b^2$. Probar que $\frac{a^2+b^2}{ab+1}$ es un cuadrado
+perfecto.

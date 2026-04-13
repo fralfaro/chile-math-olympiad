@@ -1,0 +1,24 @@
+---
+title: "Capítulo VII y VIII: Problemas Propuestos"
+---
+
+## Presentación
+
+Aquí reunimos problemas para trabajo autónomo. Algunos son directos y otros están
+pensados para obligarte a combinar ideas de varios capítulos.
+
+## Problemas propuestos
+
+1. Probar que la suma de tres enteros consecutivos es múltiplo de $3$.
+2. Hallar todas las parejas de enteros positivos $(x,y)$ tales que $xy=2x+3y$.
+3. Demostrar que en cualquier grupo de $5$ enteros siempre hay dos con la misma
+   paridad.
+4. En un triángulo isósceles, probar que la altura a la base también es mediana
+   y bisectriz.
+5. Convertir $0,\overline{54}$ en fracción irreducible.
+
+## Fáciles de enunciar y difíciles de resolver
+
+- ¿Existen infinitos primos de la forma $4n+3$?
+- ¿Cuántas regiones determinan $n$ rectas en posición general?
+- ¿Puede una suma de dos cuadrados ser congruente con $3$ módulo $4$?

@@ -1,0 +1,90 @@
+---
+title: "Medallistas y participantes chilenos en la IMO"
+---
+
+## Chile en la IMO
+
+Chile comenzó a participar en la **Olimpiada Internacional de Matemáticas (IMO)**
+en la edición de **2005** (Mérida, México). Desde entonces, ha enviado equipos
+con regularidad y ha obtenido diversas distinciones.
+
+::: {.callout-note title="Contexto"}
+La selección chilena para la IMO se elige de los mejores participantes en la
+OMC y la OIM. El equipo está formado por hasta 6 estudiantes, acompañados de un
+líder y un observador de la Somachi.
+:::
+
+---
+
+## Participaciones y resultados
+
+A continuación se presentan algunas de las participaciones más destacadas
+del equipo chileno en la IMO:
+
+| Año | Sede | Medallas/Menciones chilenas |
+|---|---|---|
+| 2005 | Mérida, México | Primera participación |
+| 2007 | Hanói, Vietnam | Mención honorífica |
+| 2010 | Astana, Kazajistán | Mención honorífica |
+| 2013 | Santa Marta, Colombia | Medalla de bronce |
+| 2015 | Chiang Mai, Tailandia | Mención honorífica |
+| 2018 | Cluj-Napoca, Rumania | Medalla de bronce |
+| 2019 | Bath, Reino Unido | Medalla de bronce |
+| 2022 | Oslo, Noruega | Mención honorífica |
+| 2023 | Chiba, Japón | Participación oficial |
+| 2024 | Bath, Reino Unido | Participación oficial |
+
+::: {.callout-warning title="Nota de precisión"}
+Los datos presentados son referenciales. Para la lista oficial y completa de
+resultados, consulta el sitio [www.imo-official.org](https://www.imo-official.org)
+y el registro de Somachi en [www.olimpiadadematematica.cl](https://www.olimpiadadematematica.cl).
+:::
+
+---
+
+## Sobre la selección chilena
+
+El proceso de selección es riguroso y tiene varias etapas:
+
+1. **OMC nacional:** los mejores resultados en la olimpiada nacional
+2. **Entrenamiento intensivo:** campamentos matemáticos organizados por Somachi
+3. **OIM:** participación en la Olimpiada Iberoamericana como entrenamiento
+4. **Selección final:** pruebas de selección para definir los 6 miembros del equipo IMO
+
+::: {.callout-tip title="Motivación"}
+Llegar a representar a Chile en la IMO requiere años de preparación constante.
+Sin embargo, el proceso de preparación en sí mismo transforma la forma de pensar
+matemáticamente, independientemente de si se llega o no a la competencia final.
+
+El objetivo de este material es exactamente eso: ayudarte a desarrollar el
+pensamiento matemático de competencia.
+:::
+
+---
+
+## Chile en la OIM
+
+En la **Olimpiada Iberoamericana de Matemáticas (OIM)**, Chile tiene una participación
+más extensa y ha logrado mejores resultados relativos, obteniendo medallas de plata
+y bronce en varias ediciones. La OIM es considerada el principal trampolín para
+la formación de olimpistas chilenos de alto nivel.
+
+---
+
+## Inspiración: el camino de un olimpista
+
+El recorrido típico de un estudiante chileno que llega a competir internacionalmente:
+
+1. **Primer contacto** en 7° u 8° básico con la OMC categoría básica
+2. **Preparación sistemática** durante enseñanza media, leyendo libros como este
+3. **Participación en la OMC** categoría media desde 1° medio
+4. **Selección regional y nacional** tras constante mejora
+5. **Campamentos Somachi** con entrenamiento especializado
+6. **OIM** como primer escenario internacional
+7. **IMO** para los más destacados
+
+::: {.callout-note title="Mensaje"}
+Cada medallista empezó en el mismo punto que tú: con ganas de entender matemáticas
+más profundamente. La diferencia la hace la constancia en el estudio y la práctica
+sistemática de problemas.
+:::

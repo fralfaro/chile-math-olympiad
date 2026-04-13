@@ -1,0 +1,39 @@
+project:
+  type: website
+  output-dir: ../docs/slides
+  render:
+    - "00_historia/*.qmd"
+    - "01_teoria_numeros/*.qmd"
+    - "02_induccion/*.qmd"
+    - "03_combinatoria/*.qmd"
+    - "04_analisis/*.qmd"
+    - "05_geometria/*.qmd"
+    - "06_problemas_resueltos/*.qmd"
+    - "07_problemas_propuestos/*.qmd"
+
+website:
+  title: "Presentaciones - Matematica Olimpica"
+
+format:
+  revealjs:
+    theme: [default]
+    slide-number: true
+    progress: true
+    history: false
+    transition: fade
+    transition-speed: fast
+    incremental: false
+    fig-align: center
+    highlight-style: github
+    code-block-bg: true
+    center: false
+    width: 1280
+    height: 720
+    margin: 0.08
+    footer: "Matematica Olimpica 2026"
+
+execute:
+  echo: false
+  warning: false
+
+lang: es

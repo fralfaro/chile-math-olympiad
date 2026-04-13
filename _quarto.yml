@@ -1,0 +1,73 @@
+project:
+  type: book
+  output-dir: docs
+  render:
+    - "index.qmd"
+    - "material/00_historia/*.qmd"
+    - "material/01_teoria_numeros/*.qmd"
+    - "material/02_induccion/*.qmd"
+    - "material/03_combinatoria/*.qmd"
+    - "material/04_analisis/*.qmd"
+    - "material/05_geometria/*.qmd"
+    - "material/06_problemas_resueltos/*.qmd"
+    - "material/07_problemas_propuestos/*.qmd"
+
+book:
+  title: "Matemática Olímpica"
+  subtitle: "Preparación para la Olimpiada Nacional de Matemáticas de Chile"
+  author: "Francisco Alfaro Medina"
+  date: "2026"
+  repo-url: "https://github.com/fralfaro/chile-math-olympiad"
+  favicon: "assets/img/favicon.png"
+  sidebar:
+    logo: "assets/img/logo.png"
+
+  chapters:
+    - index.qmd
+    - part: "Historia"
+      chapters:
+        - material/00_historia/index.qmd
+        - material/00_historia/01_mundial.qmd
+        - material/00_historia/02_chile.qmd
+        - material/00_historia/03_medallistas.qmd
+    - part: material/01_teoria_numeros/index.qmd
+      chapters:
+        - material/01_teoria_numeros/01_teoria.qmd
+        - material/01_teoria_numeros/02_ejemplos.qmd
+        - material/01_teoria_numeros/03_problemas.qmd
+    - part: material/02_induccion/index.qmd
+      chapters:
+        - material/02_induccion/01_teoria.qmd
+        - material/02_induccion/02_ejemplos.qmd
+        - material/02_induccion/03_problemas.qmd
+    - part: material/03_combinatoria/index.qmd
+      chapters:
+        - material/03_combinatoria/01_teoria.qmd
+        - material/03_combinatoria/02_ejemplos.qmd
+        - material/03_combinatoria/03_problemas.qmd
+    - part: material/04_analisis/index.qmd
+      chapters:
+        - material/04_analisis/01_teoria.qmd
+        - material/04_analisis/02_ejemplos.qmd
+        - material/04_analisis/03_problemas.qmd
+    - part: material/05_geometria/index.qmd
+      chapters:
+        - material/05_geometria/01_teoria.qmd
+        - material/05_geometria/02_ejemplos.qmd
+        - material/05_geometria/03_problemas.qmd
+    - part: "Problemas"
+      chapters:
+        - material/06_problemas_resueltos/index.qmd
+        - material/07_problemas_propuestos/index.qmd
+
+lang: es
+
+format:
+  html:
+    theme:
+      light: [flatly, light.scss]
+      dark: [darkly, dark.scss]
+    number-sections: false
+    toc: true
+    page-layout: full
+    html-math-method: mathjax

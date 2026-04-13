@@ -1,0 +1,71 @@
+---
+title: "Ejemplos resueltos"
+---
+
+## Ejemplo 1: algoritmo de Euclides
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** calcular $\gcd(414, 662)$.
+
+**Solución:** aplicamos divisiones sucesivas:
+
+$$662 = 414 \cdot 1 + 248,$$
+$$414 = 248 \cdot 1 + 166,$$
+$$248 = 166 \cdot 1 + 82,$$
+$$166 = 82 \cdot 2 + 2,$$
+$$82 = 2 \cdot 41 + 0.$$
+
+El último resto no nulo es $2$, luego
+
+$$\gcd(414,662)=2.$$
+:::
+
+## Ejemplo 2: identidad de Bézout
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** escribir $2$ como combinación lineal de $414$ y $662$.
+
+**Solución:** retrocediendo en el algoritmo anterior se obtiene
+
+$$2=8\cdot 414-5\cdot 662.$$
+:::
+
+## Ejemplo 3: congruencia lineal
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** resolver
+
+$$7x \equiv 3 \pmod{11}.$$
+
+**Solución:** como $7 \cdot 8 = 56 \equiv 1 \pmod{11}$, multiplicamos por $8$ y
+obtenemos
+
+$$x \equiv 2 \pmod{11}.$$
+:::
+
+## Ejemplo 4: ecuación diofántica
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** hallar todas las soluciones enteras de
+
+$$15x+21y=12.$$
+
+**Solución:** como $\gcd(15,21)=3$ y $3 \mid 12$, hay soluciones. Dividiendo por
+$3$ queda $5x+7y=4$. Una solución es $(x_0,y_0)=(-2,2)$, así que
+
+$$x=-2+7t, \qquad y=2-5t, \qquad t \in \mathbb{Z}.$$
+:::
+
+## Ejemplo 5: contar divisores
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** ¿cuántos divisores positivos tiene $360$?
+
+**Solución:** factorizamos
+
+$$360=2^3\cdot 3^2 \cdot 5,$$
+
+luego
+
+$$\tau(360)=(3+1)(2+1)(1+1)=24.$$
+:::

@@ -1,0 +1,24 @@
+---
+title: "Capítulo II: Inducción Matemática"
+---
+
+## Presentación
+
+La inducción matemática convierte una observación repetitiva en una demostración
+general. Es la herramienta natural cuando aparecen sumas, progresiones,
+divisibilidad recursiva o sucesiones definidas por etapas.
+
+## Objetivos del capítulo
+
+- Comprender el principio de inducción débil y fuerte.
+- Demostrar identidades de sumas y desigualdades.
+- Estudiar progresiones aritméticas y geométricas.
+- Analizar la sucesión de Fibonacci y variantes.
+
+## Contenidos
+
+| Sección | Enfoque |
+|---|---|
+| [Teoría](01_teoria.qmd) | Progresiones, inducción y sucesiones |
+| [Ejemplos](02_ejemplos.qmd) | Demostraciones y aplicaciones modelo |
+| [Problemas](03_problemas.qmd) | Entrenamiento con soluciones colapsadas |

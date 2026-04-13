@@ -1,0 +1,37 @@
+---
+title: "Bienvenidos al curso!"
+---
+
+## Descripción
+
+Este sitio es una guía de estudio para la preparación en **olimpiadas matemáticas**,
+organizado siguiendo los capítulos del libro clásico de la Sociedad de Matemáticas
+de Chile (Somachi):
+
+> *Matemática y Olimpíadas*, Somachi, Santiago 1994.
+
+Cubre los temas fundamentales de competencia: teoría de números, inducción matemática,
+combinatoria, análisis elemental y geometría clásica. Cada capítulo incluye teoría
+con demostraciones, ejemplos resueltos y problemas de práctica con soluciones.
+
+## Capítulos
+
+| # | Tema | Contenidos clave |
+|---|---|---|
+| 0 | Historia | La IMO, la OMC y el contexto chileno |
+| I | Teoría de Números | Divisibilidad, primos, congruencias, aritmética modular |
+| II | Inducción Matemática | Progresiones, Fibonacci, inducción fuerte |
+| III | Combinatoria | Conteo, permutaciones, Binomio de Newton, Palomar |
+| IV | Análisis | Racionales, reales, series, bases numéricas |
+| V | Geometría | Triángulos, círculos, Ptolomeo, Ceva, Menelao |
+| VI | Problemas Resueltos | Soluciones detalladas paso a paso |
+| VII | Problemas Propuestos | Para practicar por tu cuenta |
+
+## Referencia principal
+
+::: {.callout-note title="Libro base"}
+**Matemática y Olimpíadas**
+Sociedad de Matemáticas de Chile (Somachi), Santiago 1994.
+
+Disponible en: [www.olimpiadadematematica.cl](https://www.olimpiadadematematica.cl)
+:::

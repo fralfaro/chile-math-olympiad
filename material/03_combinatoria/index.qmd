@@ -1,0 +1,24 @@
+---
+title: "Capítulo III: Combinatoria"
+---
+
+## Presentación
+
+La combinatoria enseña a contar sin enumerar uno por uno. En olimpiadas es un
+campo central porque transforma situaciones aparentemente caóticas en estructuras
+ordenadas.
+
+## Objetivos del capítulo
+
+- Manejar principios básicos de conteo.
+- Diferenciar variaciones, permutaciones y combinaciones.
+- Usar el binomio de Newton con soltura.
+- Aplicar el principio del palomar en demostraciones.
+
+## Contenidos
+
+| Sección | Enfoque |
+|---|---|
+| [Teoría](01_teoria.qmd) | Herramientas fundamentales de conteo |
+| [Ejemplos](02_ejemplos.qmd) | Resolución paso a paso |
+| [Problemas](03_problemas.qmd) | Práctica olímpica inicial |

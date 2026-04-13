@@ -1,0 +1,46 @@
+---
+title: "Problemas de práctica"
+---
+
+**Problema 1.** ¿Cuántas diagonales tiene un polígono convexo de $n$ lados?
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+Hay $\binom{n}{2}$ pares de vértices y $n$ de ellos forman lados. Por tanto,
+
+$$\binom{n}{2}-n=\frac{n(n-3)}{2}.$$
+:::
+
+**Problema 2.** Demostrar que de cualquier conjunto de $6$ personas siempre hay
+tres que se conocen mutuamente o tres que no se conocen mutuamente.
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+Es el caso clásico $R(3,3)=6$. Se fija una persona y se aplica palomar sobre sus
+cinco relaciones posibles.
+:::
+
+**Problema 3.** Calcular
+
+$$\sum_{k=0}^{n}\binom{n}{k}.$$
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+Usando $(1+1)^n$ se obtiene
+
+$$\sum_{k=0}^{n}\binom{n}{k}=2^n.$$
+:::
+
+**Problema 4.** Probar que entre cualesquiera $n+1$ enteros elegidos del conjunto
+$\{1,2,\dots,2n\}$ hay dos coprimos entre sí.
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+Se agrupa en parejas consecutivas $(1,2),(3,4),\dots,(2n-1,2n)$. Por palomar,
+dos elegidos quedan en la misma pareja y por tanto son consecutivos, luego
+coprimos.
+:::
+
+## Problemas de competencias oficiales
+
+**OMC 2018 — Problema 1:** contar configuraciones sujetas a restricciones de
+paridad y selección.
+
+**IMO 1987 — Problema 1:** demostrar una propiedad combinatoria de un tablero
+utilizando conteo doble.

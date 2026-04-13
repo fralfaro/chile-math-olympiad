@@ -1,0 +1,102 @@
+---
+title: "La IMO y otras competencias internacionales"
+---
+
+## La Olimpiada Internacional de Matemáticas (IMO)
+
+La **Olimpiada Internacional de Matemáticas** (IMO, por sus siglas en inglés) es la
+competencia matemática más prestigiosa del mundo para estudiantes de enseñanza media.
+Fue fundada en 1959 por iniciativa de Rumania y se celebra anualmente en un país
+diferente.
+
+::: {.callout-note title="Definición: IMO"}
+La IMO reúne a equipos de hasta seis estudiantes por país, quienes deben resolver
+seis problemas en dos días (tres problemas por día, cuatro horas y media cada día).
+Los problemas abarcan álgebra, combinatoria, geometría y teoría de números.
+:::
+
+### Historia resumida
+
+| Período | Hitos |
+|---|---|
+| 1959–1966 | Ediciones solo entre países del bloque socialista (Rumania, Hungría, URSS, etc.) |
+| 1967–1980 | Apertura progresiva a países occidentales y latinoamericanos |
+| 1981–2000 | Expansión global; se consolidan las grandes potencias matemáticas (China, EE. UU., URSS/Rusia) |
+| 2001–hoy | Más de 100 países participantes; Chile participa regularmente desde 2005 |
+
+### Formato del examen
+
+Cada problema tiene un valor de **7 puntos**, para un total de **42 puntos**:
+
+- **Medalla de oro:** típicamente 28–42 puntos (aproximadamente el 8% superior)
+- **Medalla de plata:** típicamente 19–27 puntos
+- **Medalla de bronce:** típicamente 12–18 puntos
+- **Mención honorífica:** solución perfecta en al menos un problema, sin medalla
+
+::: {.callout-tip title="Consejo"}
+Los problemas 1 y 4 suelen ser los más accesibles, mientras que los problemas 3 y 6
+son los más difíciles. Dominar los primeros es el objetivo inicial para cualquier
+participante.
+:::
+
+### Países destacados históricamente
+
+- **China:** potencia dominante desde los años 80; múltiples primeros puestos
+- **Estados Unidos:** campeón en varias ocasiones; programa de entrenamiento muy sólido
+- **Rusia/URSS:** tradición histórica de excelencia matemática
+- **Corea del Sur, Rumania, Vietnam:** fuerzas emergentes con medallas consistentes
+- **Brasil:** el país latinoamericano con mejor desempeño histórico en la región
+
+---
+
+## La Competencia Putnam
+
+La **William Lowell Putnam Mathematical Competition** es la competencia universitaria
+más importante de América del Norte, organizada por la Mathematical Association of
+America (MAA) desde 1938.
+
+::: {.callout-note title="Dato"}
+La Putnam es famosa por su dificultad extrema: la mediana histórica de puntaje
+es frecuentemente 0 o 1 punto sobre 120. Resolverla bien requiere creatividad
+matemática de alto nivel.
+:::
+
+Aunque no es directamente relevante para la OMC, muchos problemas de la Putnam
+tienen estructura similar a los de olimpiadas y constituyen excelente material
+de estudio avanzado.
+
+---
+
+## La Olimpiada Iberoamericana de Matemáticas (OIM)
+
+La **OIM** se celebra desde 1985 y reúne a países hispanohablantes y lusófonos de
+Iberoamérica y la Península Ibérica. Es un paso natural entre las olimpiadas nacionales
+y la IMO.
+
+::: {.callout-note title="Formato de la OIM"}
+- Participan países de América Latina, España y Portugal
+- Dos días de competencia, tres problemas cada día
+- Temas: álgebra, combinatoria, geometría, teoría de números
+- Chile participa regularmente y ha obtenido medallas
+:::
+
+La OIM utiliza problemas de nivel intermedio entre una olimpiada nacional y la IMO,
+lo que la convierte en una referencia excelente para preparación.
+
+---
+
+## Otras competencias relevantes
+
+| Competencia | Ámbito | Desde |
+|---|---|---|
+| USAMO (EE. UU.) | Nacional, nivel olímpico | 1972 |
+| APMO (Asia-Pacífico) | Regional | 1989 |
+| Olimpiada Cono Sur | Sudamérica | 1989 |
+| Olimpiada Matemática Rioplatense | Argentina, Chile, Uruguay | 1997 |
+| Olimpiada Matemática Chilena (OMC) | Nacional | 1981 |
+
+::: {.callout-tip title="Para el estudiante chileno"}
+El camino natural de preparación es: **OMC → OIM → IMO**.
+Este material está diseñado principalmente para la OMC, pero los temas cubiertos
+son igualmente válidos para la OIM y sirven de base para la IMO.
+:::

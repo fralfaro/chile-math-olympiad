@@ -1,0 +1,39 @@
+---
+title: "Capítulo VI: Problemas Resueltos"
+---
+
+## Presentación
+
+Este capítulo reúne problemas más extensos, pensados para consolidar técnicas de
+varias áreas a la vez.
+
+## Problema 1: divisibilidad y factorización
+
+::: {.callout-warning title="Problema resuelto"}
+**Problema:** demostrar que si $n$ es impar, entonces $n^2-1$ es múltiplo de $8$.
+
+**Solución:** si $n=2k+1$, entonces
+
+$$n^2-1=(2k+1)^2-1=4k(k+1).$$
+
+Como uno de $k$ y $k+1$ es par, el producto es múltiplo de $8$.
+:::
+
+## Problema 2: conteo con simetría
+
+::: {.callout-warning title="Problema resuelto"}
+**Problema:** ¿de cuántas maneras se pueden elegir dos vértices de un hexágono
+regular que no sean consecutivos?
+
+**Solución:** hay $\binom{6}{2}=15$ pares de vértices y $6$ pares consecutivos.
+Luego el número pedido es $15-6=9$.
+:::
+
+## Problema 3: geometría métrica
+
+::: {.callout-warning title="Problema resuelto"}
+**Problema:** en un triángulo rectángulo con hipotenusa $10$ y un cateto $6$,
+hallar el otro cateto y el área.
+
+**Solución:** por Pitágoras, el otro cateto es $8$ y el área vale $24$.
+:::

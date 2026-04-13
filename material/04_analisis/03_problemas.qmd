@@ -1,0 +1,47 @@
+---
+title: "Problemas de práctica"
+---
+
+**Problema 1.** Convertir $0,\overline{142857}$ en fracción irreducible.
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+Si $x=0,\overline{142857}$, entonces $10^6x=142857,\overline{142857}$.
+Restando se obtiene $999999x=142857$, luego
+
+$$x=\frac{142857}{999999}=\frac{1}{7}.$$
+:::
+
+**Problema 2.** Probar que la suma de una serie geométrica infinita con
+$|r|<1$ es $\frac{a}{1-r}$.
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+La suma parcial es
+
+$$S_n=a\frac{1-r^{n+1}}{1-r}.$$
+
+Como $r^{n+1}\to 0$, se obtiene el resultado.
+:::
+
+**Problema 3.** Escribir $100$ en base $3$.
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+Dividiendo sucesivamente por $3$ se obtienen restos $1,0,2,0,1$, luego
+
+$$100=(10201)_3.$$
+:::
+
+**Problema 4.** Demostrar que entre dos números reales distintos siempre existe
+un número irracional.
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+Tomando un racional $q$ del intervalo y perturbándolo con $\frac{\sqrt{2}}{n}$
+para $n$ grande, se obtiene un irracional dentro del mismo intervalo.
+:::
+
+## Problemas de competencias oficiales
+
+**OMC 2014 — Problema 4:** estudiar una expresión decimal periódica y relacionarla
+con una fracción.
+
+**IMO 1967 — Problema 3:** comparar números definidos por radicales y
+aproximaciones racionales.

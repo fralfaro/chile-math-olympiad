@@ -1,0 +1,8 @@
+---
+title: "Problemas Resueltos"
+format: revealjs
+---
+
+## Placeholder
+
+Presentación pendiente para problemas resueltos.

@@ -1,0 +1,46 @@
+---
+title: "Ejemplos resueltos"
+---
+
+## Ejemplo 1: principio multiplicativo
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** ¿cuántos números de tres cifras distintas pueden formarse con los
+dígitos $1,2,3,4,5$?
+
+**Solución:** para la centena hay $5$ opciones, para la decena quedan $4$ y para
+la unidad quedan $3$. Por tanto,
+
+$$5 \cdot 4 \cdot 3 = 60.$$
+:::
+
+## Ejemplo 2: combinaciones
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** de un grupo de $8$ estudiantes, ¿de cuántas maneras puede elegirse
+una comisión de $3$ personas?
+
+**Solución:** el orden no importa, así que
+
+$$\binom{8}{3}=56.$$
+:::
+
+## Ejemplo 3: binomio de Newton
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** encontrar el coeficiente de $x^3$ en $(1+x)^7$.
+
+**Solución:** por el binomio de Newton el coeficiente es
+
+$$\binom{7}{3}=35.$$
+:::
+
+## Ejemplo 4: principio del palomar
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** probar que entre cualesquiera $13$ enteros hay dos cuya diferencia
+es múltiplo de $12$.
+
+**Solución:** solo hay $12$ residuos posibles módulo $12$. Si tenemos $13$
+enteros, dos comparten el mismo residuo y su diferencia es múltiplo de $12$.
+:::
