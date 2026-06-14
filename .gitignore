@@ -213,3 +213,7 @@ _site
 estructura_capacitacion.md
 **/*.quarto_ipynb
 docs/
+
+# Archivos locales no versionados
+LibroONM.pdf
+SKILLS.md
