@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -42,14 +42,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-d94f5170875b5f4e5e85b640af280440.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-8643a97c649ad291516e98d9f79c0f71.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-d94f5170875b5f4e5e85b640af280440.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-6d55e81a42a89dd3690061c0dc3512a0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-e28859dc7ca6002e82041f7faca5f3dd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-6d55e81a42a89dd3690061c0dc3512a0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -511,11 +511,18 @@ window.Quarto = {
     <h2 id="toc-title">Tabla de contenidos</h2>
    
   <ul>
-  <li><a href="#principios-combinatorios-básicos" id="toc-principios-combinatorios-básicos" class="nav-link active" data-scroll-target="#principios-combinatorios-básicos">Principios combinatorios básicos</a></li>
-  <li><a href="#variaciones-y-permutaciones" id="toc-variaciones-y-permutaciones" class="nav-link" data-scroll-target="#variaciones-y-permutaciones">Variaciones y permutaciones</a></li>
+  <li><a href="#introducción" id="toc-introducción" class="nav-link active" data-scroll-target="#introducción">Introducción</a></li>
+  <li><a href="#conceptos-previos" id="toc-conceptos-previos" class="nav-link" data-scroll-target="#conceptos-previos">Conceptos previos</a></li>
+  <li><a href="#principios-de-la-suma-y-del-producto" id="toc-principios-de-la-suma-y-del-producto" class="nav-link" data-scroll-target="#principios-de-la-suma-y-del-producto">Principios de la suma y del producto</a></li>
+  <li><a href="#variaciones-con-y-sin-repetición" id="toc-variaciones-con-y-sin-repetición" class="nav-link" data-scroll-target="#variaciones-con-y-sin-repetición">Variaciones (con y sin repetición)</a></li>
+  <li><a href="#permutaciones-lineales-cíclicas-y-con-repetición" id="toc-permutaciones-lineales-cíclicas-y-con-repetición" class="nav-link" data-scroll-target="#permutaciones-lineales-cíclicas-y-con-repetición">Permutaciones (lineales, cíclicas y con repetición)</a></li>
   <li><a href="#combinaciones" id="toc-combinaciones" class="nav-link" data-scroll-target="#combinaciones">Combinaciones</a></li>
-  <li><a href="#binomio-de-newton" id="toc-binomio-de-newton" class="nav-link" data-scroll-target="#binomio-de-newton">Binomio de Newton</a></li>
-  <li><a href="#principio-del-palomar" id="toc-principio-del-palomar" class="nav-link" data-scroll-target="#principio-del-palomar">Principio del palomar</a></li>
+  <li><a href="#binomio-de-newton-e-identidades-binomiales" id="toc-binomio-de-newton-e-identidades-binomiales" class="nav-link" data-scroll-target="#binomio-de-newton-e-identidades-binomiales">Binomio de Newton e identidades binomiales</a></li>
+  <li><a href="#lema-de-burnside-y-fórmula-de-pólya" id="toc-lema-de-burnside-y-fórmula-de-pólya" class="nav-link" data-scroll-target="#lema-de-burnside-y-fórmula-de-pólya">Lema de Burnside y fórmula de Pólya</a></li>
+  <li><a href="#principio-del-palomar-pigeonhole" id="toc-principio-del-palomar-pigeonhole" class="nav-link" data-scroll-target="#principio-del-palomar-pigeonhole">Principio del palomar (Pigeonhole)</a></li>
+  <li><a href="#problemas-resueltos" id="toc-problemas-resueltos" class="nav-link" data-scroll-target="#problemas-resueltos">Problemas resueltos</a></li>
+  <li><a href="#ejercicios-propuestos" id="toc-ejercicios-propuestos" class="nav-link" data-scroll-target="#ejercicios-propuestos">Ejercicios propuestos</a></li>
+  <li><a href="#referencias-del-capítulo" id="toc-referencias-del-capítulo" class="nav-link" data-scroll-target="#referencias-del-capítulo">Referencias del capítulo</a></li>
   </ul>
 </nav>
     </div>
@@ -542,68 +549,180 @@ window.Quarto = {
 </header>
 
 
-<section id="principios-combinatorios-básicos" class="level2">
-<h2 class="anchored" data-anchor-id="principios-combinatorios-básicos">Principios combinatorios básicos</h2>
-<div class="callout callout-style-default callout-note callout-titled" title="Principio aditivo">
+<section id="introducción" class="level2">
+<h2 class="anchored" data-anchor-id="introducción">Introducción</h2>
+<p>Contar parece trivial hasta que los objetos se cuentan por millones. La combinatoria nos da reglas que reducen un conteo enorme a un puñado de multiplicaciones. La estrategia general es siempre la misma: <strong>descomponer</strong> una configuración complicada en decisiones sucesivas o independientes, contar cada decisión por separado y combinar los resultados con dos principios elementales. A partir de ahí construiremos variaciones, permutaciones, combinaciones, el binomio de Newton, el conteo de configuraciones simétricas (Burnside) y el principio del palomar.</p>
+</section>
+<section id="conceptos-previos" class="level2">
+<h2 class="anchored" data-anchor-id="conceptos-previos">Conceptos previos</h2>
+<ul>
+<li>Conjuntos finitos y cardinalidad <span class="math inline">\(|A|\)</span>.</li>
+<li>Funciones inyectivas, sobreyectivas y biyectivas.</li>
+<li>Factorial <span class="math inline">\(n!\)</span> y sumatoria <span class="math inline">\(\sum\)</span>.</li>
+<li>Nociones mínimas de grupo (para la sección de Burnside).</li>
+</ul>
+</section>
+<section id="principios-de-la-suma-y-del-producto" class="level2">
+<h2 class="anchored" data-anchor-id="principios-de-la-suma-y-del-producto">Principios de la suma y del producto</h2>
+<p>Toda la combinatoria enumerativa descansa sobre dos ideas: cuando las opciones son <strong>alternativas excluyentes</strong> se suman, y cuando son <strong>etapas sucesivas</strong> se multiplican.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Definición: principio de la suma">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Nota</span>Principio aditivo
+<span class="screen-reader-only">Nota</span>Definición: principio de la suma
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Si una tarea puede realizarse de <span class="math inline">\(m\)</span> maneras en un caso y de <span class="math inline">\(n\)</span> maneras en otro, y ambos casos no se superponen, entonces puede realizarse de <span class="math inline">\(m+n\)</span> maneras.</p>
+<p>Si una tarea puede realizarse de <span class="math inline">\(m\)</span> maneras en un caso y de <span class="math inline">\(n\)</span> maneras en otro, y ambos casos son <strong>mutuamente excluyentes</strong> (no se superponen), entonces la tarea puede realizarse de <span class="math inline">\(m+n\)</span> maneras. En general, si <span class="math inline">\(A_1,\dots,A_r\)</span> son conjuntos finitos disjuntos dos a dos, entonces</p>
+<p><span class="math display">\[\left| \bigcup_{i=1}^{r} A_i \right| = \sum_{i=1}^{r} |A_i|.\]</span></p>
 </div>
 </div>
-<div class="callout callout-style-default callout-note callout-titled" title="Principio multiplicativo">
+<div class="callout callout-style-default callout-note callout-titled" title="Definición: principio del producto">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Nota</span>Principio multiplicativo
+<span class="screen-reader-only">Nota</span>Definición: principio del producto
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Si una tarea consta de dos etapas independientes, con <span class="math inline">\(m\)</span> opciones en la primera y <span class="math inline">\(n\)</span> en la segunda, entonces hay <span class="math inline">\(mn\)</span> formas de completar la tarea.</p>
+<p>Si una tarea consta de etapas sucesivas e independientes, con <span class="math inline">\(n_1\)</span> opciones en la primera, <span class="math inline">\(n_2\)</span> en la segunda, …, <span class="math inline">\(n_r\)</span> en la <span class="math inline">\(r\)</span>-ésima, entonces el número total de formas de completar la tarea es</p>
+<p><span class="math display">\[n_1 \cdot n_2 \cdots n_r = \prod_{i=1}^{r} n_i.\]</span></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Teorema: número de funciones y de subconjuntos">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Teorema: número de funciones y de subconjuntos
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Sean <span class="math inline">\(A\)</span> y <span class="math inline">\(B\)</span> conjuntos finitos con <span class="math inline">\(|A| = k\)</span> y <span class="math inline">\(|B| = n\)</span>. Entonces:</p>
+<ol type="1">
+<li>El número de funciones <span class="math inline">\(f : A \to B\)</span> es <span class="math inline">\(n^k\)</span>.</li>
+<li>El número de subconjuntos de un conjunto de <span class="math inline">\(n\)</span> elementos es <span class="math inline">\(2^n\)</span>.</li>
+</ol>
+<p><strong>Demostración:</strong> Para (1), cada uno de los <span class="math inline">\(k\)</span> elementos de <span class="math inline">\(A\)</span> debe asignarse a alguno de los <span class="math inline">\(n\)</span> elementos de <span class="math inline">\(B\)</span>, y estas elecciones son independientes. Por el principio del producto hay <span class="math inline">\(\underbrace{n \cdot n \cdots n}_{k} = n^k\)</span> funciones.</p>
+<p>Para (2), elegir un subconjunto <span class="math inline">\(S \subseteq B\)</span> equivale a decidir, para cada elemento de <span class="math inline">\(B\)</span>, si pertenece o no a <span class="math inline">\(S\)</span>: dos opciones por elemento, <span class="math inline">\(n\)</span> elementos independientes. Por el principio del producto hay <span class="math inline">\(2^n\)</span> subconjuntos. Equivale a contar las funciones <span class="math inline">\(B \to \{0,1\}\)</span> (funciones indicadoras), que por (1) son <span class="math inline">\(2^n\)</span>. <span class="math inline">\(\blacksquare\)</span></p>
 </div>
 </div>
 </section>
-<section id="variaciones-y-permutaciones" class="level2">
-<h2 class="anchored" data-anchor-id="variaciones-y-permutaciones">Variaciones y permutaciones</h2>
-<div class="callout callout-style-default callout-note callout-titled" title="Definición: variaciones">
+<section id="variaciones-con-y-sin-repetición" class="level2">
+<h2 class="anchored" data-anchor-id="variaciones-con-y-sin-repetición">Variaciones (con y sin repetición)</h2>
+<p>Cuando el <strong>orden importa</strong> pero no usamos todos los elementos, hablamos de variaciones.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Definición: variaciones sin repetición">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Nota</span>Definición: variaciones
+<span class="screen-reader-only">Nota</span>Definición: variaciones sin repetición
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Las variaciones de <span class="math inline">\(n\)</span> elementos tomados de <span class="math inline">\(k\)</span> en <span class="math inline">\(k\)</span> son arreglos ordenados de <span class="math inline">\(k\)</span> elementos distintos elegidos entre <span class="math inline">\(n\)</span>. Su número es</p>
-<p><span class="math display">\[V(n,k)=n(n-1)\cdots(n-k+1).\]</span></p>
+<p>Las <strong>variaciones</strong> de <span class="math inline">\(n\)</span> elementos tomados de <span class="math inline">\(k\)</span> en <span class="math inline">\(k\)</span> son los arreglos <strong>ordenados</strong> de <span class="math inline">\(k\)</span> elementos <strong>distintos</strong> elegidos entre <span class="math inline">\(n\)</span>. Su número es</p>
+<p><span class="math display">\[V(n,k) = n(n-1)(n-2)\cdots(n-k+1) = \frac{n!}{(n-k)!}, \qquad 0 \le k \le n.\]</span></p>
 </div>
 </div>
-<div class="callout callout-style-default callout-note callout-titled" title="Definición: permutación">
+<div class="callout callout-style-default callout-note callout-titled" title="Definición: variaciones con repetición">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Nota</span>Definición: permutación
+<span class="screen-reader-only">Nota</span>Definición: variaciones con repetición
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Una permutación de <span class="math inline">\(n\)</span> objetos distintos es un ordenamiento completo de esos objetos. Su número es</p>
-<p><span class="math display">\[n! = n(n-1)(n-2)\cdots 2 \cdot 1.\]</span></p>
+<p>Las <strong>variaciones con repetición</strong> de <span class="math inline">\(n\)</span> elementos tomados de <span class="math inline">\(k\)</span> en <span class="math inline">\(k\)</span> son los arreglos ordenados de <span class="math inline">\(k\)</span> elementos elegidos entre <span class="math inline">\(n\)</span>, donde <strong>se permite repetir</strong>. Su número es</p>
+<p><span class="math display">\[VR(n,k) = n^k.\]</span></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Teorema: fórmula de las variaciones sin repetición">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Teorema: fórmula de las variaciones sin repetición
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>El número de variaciones de <span class="math inline">\(n\)</span> elementos tomados de <span class="math inline">\(k\)</span> en <span class="math inline">\(k\)</span> es <span class="math inline">\(V(n,k) = \frac{n!}{(n-k)!}\)</span>.</p>
+<p><strong>Demostración:</strong> Construimos un arreglo ordenado eligiendo posición a posición. Para la primera posición hay <span class="math inline">\(n\)</span> candidatos; elegido uno, para la segunda quedan <span class="math inline">\(n-1\)</span>; para la tercera <span class="math inline">\(n-2\)</span>, y así hasta la <span class="math inline">\(k\)</span>-ésima posición, donde quedan <span class="math inline">\(n-(k-1) = n-k+1\)</span> candidatos. Por el principio del producto,</p>
+<p><span class="math display">\[V(n,k) = n(n-1)\cdots(n-k+1) = \frac{n(n-1)\cdots(n-k+1)\,(n-k)!}{(n-k)!} = \frac{n!}{(n-k)!}. \qquad \blacksquare\]</span></p>
+</div>
+</div>
+</section>
+<section id="permutaciones-lineales-cíclicas-y-con-repetición" class="level2">
+<h2 class="anchored" data-anchor-id="permutaciones-lineales-cíclicas-y-con-repetición">Permutaciones (lineales, cíclicas y con repetición)</h2>
+<p>Una permutación es un caso particular de variación en el que usamos <strong>todos</strong> los elementos. Distinguimos tres situaciones según cómo se disponen y si hay repetidos.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Definición: permutación lineal">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Definición: permutación lineal
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Una <strong>permutación</strong> de <span class="math inline">\(n\)</span> objetos distintos es un ordenamiento completo de esos objetos en fila. Su número es</p>
+<p><span class="math display">\[P(n) = n! = n(n-1)(n-2)\cdots 2 \cdot 1, \qquad 0! = 1.\]</span></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Definición: permutación cíclica">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Definición: permutación cíclica
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Una <strong>permutación cíclica</strong> de <span class="math inline">\(n\)</span> objetos distintos es un ordenamiento alrededor de un círculo, donde dos disposiciones que se obtienen por rotación se consideran iguales. Su número es</p>
+<p><span class="math display">\[(n-1)!.\]</span></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Definición: permutación con repetición">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Definición: permutación con repetición
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Si tenemos <span class="math inline">\(n\)</span> objetos de los cuales hay <span class="math inline">\(n_1\)</span> iguales de un tipo, <span class="math inline">\(n_2\)</span> de otro, …, <span class="math inline">\(n_r\)</span> del último (con <span class="math inline">\(n_1 + n_2 + \cdots + n_r = n\)</span>), el número de ordenamientos <strong>distinguibles</strong> es el <strong>coeficiente multinomial</strong></p>
+<p><span class="math display">\[\binom{n}{n_1, n_2, \dots, n_r} = \frac{n!}{n_1!\, n_2! \cdots n_r!}.\]</span></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Teorema: número de permutaciones cíclicas">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Teorema: número de permutaciones cíclicas
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>El número de disposiciones distintas de <span class="math inline">\(n\)</span> objetos distintos alrededor de un círculo, identificando rotaciones, es <span class="math inline">\((n-1)!\)</span>.</p>
+<p><strong>Demostración:</strong> Hay <span class="math inline">\(n!\)</span> ordenamientos lineales. Al cerrar la fila en círculo, cada disposición circular puede leerse comenzando por cualquiera de sus <span class="math inline">\(n\)</span> posiciones, de modo que cada configuración circular corresponde exactamente a <span class="math inline">\(n\)</span> ordenamientos lineales (sus <span class="math inline">\(n\)</span> rotaciones). Por tanto el número de disposiciones circulares es <span class="math inline">\(\frac{n!}{n} = (n-1)!\)</span>. <span class="math inline">\(\blacksquare\)</span></p>
 </div>
 </div>
 </section>
 <section id="combinaciones" class="level2">
 <h2 class="anchored" data-anchor-id="combinaciones">Combinaciones</h2>
+<p>Cuando el <strong>orden no importa</strong> y elegimos un subconjunto, hablamos de combinaciones.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Definición: combinación">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -614,13 +733,60 @@ window.Quarto = {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>El número de subconjuntos de <span class="math inline">\(k\)</span> elementos que pueden elegirse de un conjunto de <span class="math inline">\(n\)</span> elementos es</p>
-<p><span class="math display">\[\binom{n}{k}=\frac{n!}{k!(n-k)!}.\]</span></p>
+<p>El número de subconjuntos de <span class="math inline">\(k\)</span> elementos que pueden elegirse de un conjunto de <span class="math inline">\(n\)</span> elementos (sin importar el orden) es el <strong>coeficiente binomial</strong></p>
+<p><span class="math display">\[\binom{n}{k} = \frac{n!}{k!\,(n-k)!}, \qquad 0 \le k \le n.\]</span></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Definición: combinaciones con repetición">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Definición: combinaciones con repetición
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>El número de formas de elegir <span class="math inline">\(k\)</span> elementos de entre <span class="math inline">\(n\)</span> tipos, permitiendo repetición y sin importar el orden (las llamadas <strong>combinaciones con repetición</strong>), es</p>
+<p><span class="math display">\[\binom{n+k-1}{k}.\]</span></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Teorema: relación entre combinaciones y variaciones">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Teorema: relación entre combinaciones y variaciones
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Se cumple <span class="math inline">\(V(n,k) = \binom{n}{k} \cdot k!\)</span>, y por tanto <span class="math inline">\(\binom{n}{k} = \frac{n!}{k!\,(n-k)!}\)</span>.</p>
+<p><strong>Demostración:</strong> Formar un arreglo ordenado de <span class="math inline">\(k\)</span> elementos distintos de un total de <span class="math inline">\(n\)</span> puede hacerse en dos etapas: primero elegir <strong>qué</strong> <span class="math inline">\(k\)</span> elementos usamos (<span class="math inline">\(\binom{n}{k}\)</span> formas) y luego <strong>ordenarlos</strong> (<span class="math inline">\(k!\)</span> formas). Por el principio del producto, <span class="math inline">\(V(n,k) = \binom{n}{k}\cdot k!\)</span>. Despejando y usando <span class="math inline">\(V(n,k) = \frac{n!}{(n-k)!}\)</span>,</p>
+<p><span class="math display">\[\binom{n}{k} = \frac{V(n,k)}{k!} = \frac{n!}{k!\,(n-k)!}. \qquad \blacksquare\]</span></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled" title="Ejemplo resuelto">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>Ejemplo resuelto
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Problema:</strong> Una clase de <span class="math inline">\(10\)</span> estudiantes debe formar una delegación de <span class="math inline">\(4\)</span> y, dentro de ella, elegir un vocero. ¿De cuántas maneras puede hacerse?</p>
+<p><strong>Estrategia:</strong> Separar la elección en dos etapas y aplicar el principio del producto: primero el subconjunto (orden irrelevante, combinación), luego el cargo (una posición distinguida).</p>
+<p><strong>Solución:</strong> Elegir los <span class="math inline">\(4\)</span> integrantes se hace de <span class="math inline">\(\binom{10}{4} = 210\)</span> formas; elegir el vocero entre ellos, de <span class="math inline">\(4\)</span> formas. Por el principio del producto,</p>
+<p><span class="math display">\[\binom{10}{4} \cdot 4 = 210 \cdot 4 = 840.\]</span></p>
+<p>Hay <span class="math inline">\(840\)</span> delegaciones posibles con vocero designado.</p>
 </div>
 </div>
 </section>
-<section id="binomio-de-newton" class="level2">
-<h2 class="anchored" data-anchor-id="binomio-de-newton">Binomio de Newton</h2>
+<section id="binomio-de-newton-e-identidades-binomiales" class="level2">
+<h2 class="anchored" data-anchor-id="binomio-de-newton-e-identidades-binomiales">Binomio de Newton e identidades binomiales</h2>
+<p>Los coeficientes binomiales aparecen al desarrollar potencias de un binomio y satisfacen identidades elegantes que son auténticas armas olímpicas.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Teorema: binomio de Newton">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -631,29 +797,239 @@ window.Quarto = {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Para todo <span class="math inline">\(n \in \mathbb{N}\)</span>,</p>
-<p><span class="math display">\[ (a+b)^n=\sum_{k=0}^{n}\binom{n}{k}a^{n-k}b^k. \]</span></p>
+<p>Para todo <span class="math inline">\(n \in \mathbb{N}\)</span> y todos <span class="math inline">\(a, b\)</span>,</p>
+<p><span class="math display">\[(a+b)^n = \sum_{k=0}^{n} \binom{n}{k} a^{n-k} b^{k}.\]</span></p>
+<p><strong>Demostración:</strong> Al expandir <span class="math inline">\((a+b)^n = \underbrace{(a+b)(a+b)\cdots(a+b)}_{n}\)</span>, cada término del desarrollo se obtiene eligiendo, en cada uno de los <span class="math inline">\(n\)</span> factores, o bien <span class="math inline">\(a\)</span> o bien <span class="math inline">\(b\)</span>. Un término de la forma <span class="math inline">\(a^{n-k}b^{k}\)</span> surge cada vez que elegimos <span class="math inline">\(b\)</span> en exactamente <span class="math inline">\(k\)</span> de los <span class="math inline">\(n\)</span> factores; el número de maneras de hacer esa elección es <span class="math inline">\(\binom{n}{k}\)</span>. Sumando sobre todos los valores posibles de <span class="math inline">\(k\)</span> se obtiene la fórmula. <span class="math inline">\(\blacksquare\)</span></p>
 </div>
 </div>
-</section>
-<section id="principio-del-palomar" class="level2">
-<h2 class="anchored" data-anchor-id="principio-del-palomar">Principio del palomar</h2>
-<div class="callout callout-style-default callout-note callout-titled" title="Principio del palomar">
+<div class="callout callout-style-default callout-tip callout-titled" title="Teorema: regla de Pascal">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Nota</span>Principio del palomar
+<span class="screen-reader-only">Tip</span>Teorema: regla de Pascal
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Si se distribuyen <span class="math inline">\(N\)</span> objetos en <span class="math inline">\(k\)</span> cajas y <span class="math inline">\(N&gt;k\)</span>, entonces al menos una caja contiene dos o más objetos.</p>
+<p>Para <span class="math inline">\(1 \le k \le n\)</span>,</p>
+<p><span class="math display">\[\binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}.\]</span></p>
+<p><strong>Demostración (combinatoria):</strong> Contemos los subconjuntos de tamaño <span class="math inline">\(k\)</span> de <span class="math inline">\(\{1,2,\dots,n\}\)</span>. Fijemos el elemento <span class="math inline">\(n\)</span>. Hay dos clases disjuntas de subconjuntos: los que <strong>contienen</strong> a <span class="math inline">\(n\)</span> (basta completar con <span class="math inline">\(k-1\)</span> elementos de los <span class="math inline">\(n-1\)</span> restantes: <span class="math inline">\(\binom{n-1}{k-1}\)</span> formas) y los que <strong>no contienen</strong> a <span class="math inline">\(n\)</span> (se eligen <span class="math inline">\(k\)</span> de los <span class="math inline">\(n-1\)</span> restantes: <span class="math inline">\(\binom{n-1}{k}\)</span> formas). Por el principio de la suma, el total es <span class="math inline">\(\binom{n-1}{k-1} + \binom{n-1}{k}\)</span>, que es <span class="math inline">\(\binom{n}{k}\)</span>. <span class="math inline">\(\blacksquare\)</span></p>
 </div>
 </div>
-<p>Su forma reforzada afirma que alguna caja contiene al menos</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Teorema: suma de una fila del triángulo de Pascal">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Teorema: suma de una fila del triángulo de Pascal
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Para todo <span class="math inline">\(n \ge 0\)</span>,</p>
+<p><span class="math display">\[\sum_{k=0}^{n} \binom{n}{k} = 2^{n}.\]</span></p>
+<p><strong>Demostración:</strong> Evaluamos el binomio de Newton con <span class="math inline">\(a = b = 1\)</span>:</p>
+<p><span class="math display">\[2^{n} = (1+1)^{n} = \sum_{k=0}^{n} \binom{n}{k} 1^{n-k} 1^{k} = \sum_{k=0}^{n} \binom{n}{k}.\]</span></p>
+<p>Alternativamente, ambos lados cuentan el número total de subconjuntos de un conjunto de <span class="math inline">\(n\)</span> elementos: la izquierda agrupándolos por tamaño <span class="math inline">\(k\)</span>, la derecha por el principio de elegir/descartar cada elemento. <span class="math inline">\(\blacksquare\)</span></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Teorema: identidad de Vandermonde">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Teorema: identidad de Vandermonde
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Para enteros no negativos <span class="math inline">\(m, n, r\)</span>,</p>
+<p><span class="math display">\[\binom{m+n}{r} = \sum_{k=0}^{r} \binom{m}{k}\binom{n}{r-k}.\]</span></p>
+<p><strong>Demostración (doble conteo):</strong> Tenemos un grupo con <span class="math inline">\(m\)</span> mujeres y <span class="math inline">\(n\)</span> hombres, <span class="math inline">\(m+n\)</span> personas en total, y queremos formar un comité de <span class="math inline">\(r\)</span>. Por la derecha, contamos directamente: <span class="math inline">\(\binom{m+n}{r}\)</span>. Por la izquierda, clasificamos los comités según cuántas mujeres <span class="math inline">\(k\)</span> contienen (<span class="math inline">\(0 \le k \le r\)</span>): elegir <span class="math inline">\(k\)</span> mujeres de <span class="math inline">\(m\)</span> y <span class="math inline">\(r-k\)</span> hombres de <span class="math inline">\(n\)</span> da <span class="math inline">\(\binom{m}{k}\binom{n}{r-k}\)</span> comités, y sumamos sobre <span class="math inline">\(k\)</span>. Ambos conteos cuentan lo mismo, luego son iguales. <span class="math inline">\(\blacksquare\)</span></p>
+</div>
+</div>
+</section>
+<section id="lema-de-burnside-y-fórmula-de-pólya" class="level2">
+<h2 class="anchored" data-anchor-id="lema-de-burnside-y-fórmula-de-pólya">Lema de Burnside y fórmula de Pólya</h2>
+<p>A veces dos configuraciones que parecen distintas son “la misma” salvo una simetría: collares que solo difieren por una rotación, o coloreos de un dado que coinciden al girarlo. Para contar configuraciones <strong>distintas salvo simetría</strong> modelamos las simetrías como un <strong>grupo</strong> <span class="math inline">\(G\)</span> que <strong>actúa</strong> sobre el conjunto <span class="math inline">\(X\)</span> de configuraciones. Dos configuraciones son equivalentes si una se obtiene de la otra por algún elemento de <span class="math inline">\(G\)</span>; las clases de equivalencia se llaman <strong>órbitas</strong>.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Definición: acción de grupo, órbita y puntos fijos">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Definición: acción de grupo, órbita y puntos fijos
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Un <strong>grupo</strong> <span class="math inline">\(G\)</span> <strong>actúa</strong> sobre un conjunto <span class="math inline">\(X\)</span> si a cada <span class="math inline">\(g \in G\)</span> se le asocia una permutación de <span class="math inline">\(X\)</span> tal que la identidad actúa trivialmente y la composición es compatible con el producto del grupo. Para <span class="math inline">\(g \in G\)</span>, el conjunto de <strong>puntos fijos</strong> es</p>
+<p><span class="math display">\[\mathrm{Fij}(g) = \{ x \in X : g \cdot x = x \}.\]</span></p>
+<p>La <strong>órbita</strong> de <span class="math inline">\(x\)</span> es <span class="math inline">\(\{ g \cdot x : g \in G \}\)</span>. El número de órbitas es el número de configuraciones distintas salvo la simetría dada por <span class="math inline">\(G\)</span>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Teorema: Lema de Burnside (conteo de órbitas)">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Teorema: Lema de Burnside (conteo de órbitas)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Si un grupo finito <span class="math inline">\(G\)</span> actúa sobre un conjunto finito <span class="math inline">\(X\)</span>, el número de órbitas es el promedio del número de puntos fijos de los elementos de <span class="math inline">\(G\)</span>:</p>
+<p><span class="math display">\[\#\text{órbitas} = \frac{1}{|G|} \sum_{g \in G} |\mathrm{Fij}(g)|.\]</span></p>
+<p><strong>Demostración:</strong> Contamos de dos formas el conjunto de pares <span class="math inline">\(P = \{ (g, x) \in G \times X : g \cdot x = x \}\)</span>.</p>
+<p>Sumando primero sobre <span class="math inline">\(g\)</span>: <span class="math inline">\(\displaystyle |P| = \sum_{g \in G} |\mathrm{Fij}(g)|\)</span>.</p>
+<p>Sumando primero sobre <span class="math inline">\(x\)</span>, y llamando <span class="math inline">\(\mathrm{Est}(x) = \{ g : g\cdot x = x \}\)</span> al estabilizador: <span class="math inline">\(\displaystyle |P| = \sum_{x \in X} |\mathrm{Est}(x)|\)</span>.</p>
+<p>Por el <strong>teorema órbita-estabilizador</strong>, <span class="math inline">\(|\mathrm{Est}(x)| = |G| / |\text{órbita de } x|\)</span>. Si una órbita <span class="math inline">\(\mathcal{O}\)</span> tiene <span class="math inline">\(|\mathcal{O}|\)</span> elementos, cada uno aporta <span class="math inline">\(|G|/|\mathcal{O}|\)</span>, de modo que toda la órbita aporta <span class="math inline">\(|\mathcal{O}|\cdot \frac{|G|}{|\mathcal{O}|} = |G|\)</span>. Por tanto</p>
+<p><span class="math display">\[\sum_{x \in X} |\mathrm{Est}(x)| = |G| \cdot \#\text{órbitas}.\]</span></p>
+<p>Igualando las dos expresiones de <span class="math inline">\(|P|\)</span> y dividiendo por <span class="math inline">\(|G|\)</span> se obtiene la fórmula. <span class="math inline">\(\blacksquare\)</span></p>
+</div>
+</div>
+<p>La <strong>fórmula de Pólya</strong> refina el lema de Burnside: cuando coloreamos las posiciones de una figura con <span class="math inline">\(c\)</span> colores y el grupo de simetrías <span class="math inline">\(G\)</span> actúa, el número de coloreos distintos es</p>
+<p><span class="math display">\[\frac{1}{|G|} \sum_{g \in G} c^{\,\ell(g)},\]</span></p>
+<p>donde <span class="math inline">\(\ell(g)\)</span> es el número de <strong>ciclos</strong> en que <span class="math inline">\(g\)</span> descompone las posiciones (cada ciclo debe pintarse de un único color para quedar fijo). Es exactamente Burnside aplicado al conjunto de coloreos.</p>
+<div class="callout callout-style-default callout-warning callout-titled" title="Ejemplo resuelto">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>Ejemplo resuelto
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Problema:</strong> ¿Cuántos collares distintos pueden formarse con <span class="math inline">\(4\)</span> cuentas en círculo si cada cuenta puede ser de <span class="math inline">\(2\)</span> colores y solo consideramos rotaciones?</p>
+<p><strong>Estrategia:</strong> El grupo es el de rotaciones del cuadrado, <span class="math inline">\(G = \{r_0, r_1, r_2,
+r_3\}\)</span> con <span class="math inline">\(|G| = 4\)</span>. Aplicamos Pólya contando los ciclos de cada rotación.</p>
+<p><strong>Solución:</strong> Las rotaciones de <span class="math inline">\(4\)</span> posiciones se descomponen en ciclos así: <span class="math inline">\(r_0\)</span> (identidad) deja <span class="math inline">\(4\)</span> ciclos; <span class="math inline">\(r_1\)</span> y <span class="math inline">\(r_3\)</span> (giro de una posición) forman un único ciclo de longitud <span class="math inline">\(4\)</span>, es decir <span class="math inline">\(1\)</span> ciclo; <span class="math inline">\(r_2\)</span> (giro de dos posiciones) forma <span class="math inline">\(2\)</span> ciclos de longitud <span class="math inline">\(2\)</span>. Con <span class="math inline">\(c = 2\)</span> colores,</p>
+<p><span class="math display">\[\frac{1}{4}\left( 2^{4} + 2^{1} + 2^{2} + 2^{1} \right) = \frac{16 + 2 + 4 + 2}{4} = \frac{24}{4} = 6.\]</span></p>
+<p>Hay <span class="math inline">\(6\)</span> collares distintos.</p>
+</div>
+</div>
+</section>
+<section id="principio-del-palomar-pigeonhole" class="level2">
+<h2 class="anchored" data-anchor-id="principio-del-palomar-pigeonhole">Principio del palomar (Pigeonhole)</h2>
+<p>Quizás el principio más simple de enunciar y más fértil para demostrar: si hay más palomas que palomares, algún palomar aloja a más de una paloma.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Definición: principio del palomar (forma simple)">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Definición: principio del palomar (forma simple)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Si se distribuyen <span class="math inline">\(N\)</span> objetos en <span class="math inline">\(k\)</span> cajas y <span class="math inline">\(N &gt; k\)</span>, entonces al menos una caja contiene <strong>dos o más</strong> objetos.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Teorema: principio del palomar generalizado">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Teorema: principio del palomar generalizado
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Si se distribuyen <span class="math inline">\(N\)</span> objetos en <span class="math inline">\(k\)</span> cajas, entonces al menos una caja contiene al menos</p>
 <p><span class="math display">\[\left\lceil \frac{N}{k} \right\rceil\]</span></p>
 <p>objetos.</p>
+<p><strong>Demostración:</strong> Razonamos por contradicción. Supongamos que <strong>toda</strong> caja contiene a lo sumo <span class="math inline">\(\left\lceil \frac{N}{k} \right\rceil - 1\)</span> objetos. Como <span class="math inline">\(\lceil N/k \rceil &lt; \frac{N}{k} + 1\)</span>, se tiene <span class="math inline">\(\lceil N/k \rceil - 1 &lt; \frac{N}{k}\)</span>. Entonces el total de objetos sería a lo sumo</p>
+<p><span class="math display">\[k \left( \left\lceil \tfrac{N}{k} \right\rceil - 1 \right) &lt; k \cdot \frac{N}{k} = N,\]</span></p>
+<p>es decir, <strong>menos</strong> de <span class="math inline">\(N\)</span> objetos, contradiciendo que hay exactamente <span class="math inline">\(N\)</span>. Por tanto alguna caja contiene al menos <span class="math inline">\(\lceil N/k \rceil\)</span> objetos. <span class="math inline">\(\blacksquare\)</span></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled" title="Ejemplo resuelto">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>Ejemplo resuelto
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Problema:</strong> Demostrar que entre cualesquiera <span class="math inline">\(13\)</span> enteros hay dos cuya diferencia es múltiplo de <span class="math inline">\(12\)</span>.</p>
+<p><strong>Estrategia:</strong> Usar las clases de residuo módulo <span class="math inline">\(12\)</span> como cajas y los enteros como objetos.</p>
+<p><strong>Solución:</strong> Al dividir por <span class="math inline">\(12\)</span> solo hay <span class="math inline">\(12\)</span> residuos posibles <span class="math inline">\(\{0, 1, \dots, 11\}\)</span>, que tomamos como <span class="math inline">\(12\)</span> cajas. Distribuimos los <span class="math inline">\(13\)</span> enteros según su residuo. Como <span class="math inline">\(13 &gt; 12\)</span>, por el principio del palomar dos enteros caen en la misma caja, es decir, son congruentes módulo <span class="math inline">\(12\)</span>. Su diferencia es entonces un múltiplo de <span class="math inline">\(12\)</span>. <span class="math inline">\(\blacksquare\)</span></p>
+</div>
+</div>
+</section>
+<section id="problemas-resueltos" class="level2">
+<h2 class="anchored" data-anchor-id="problemas-resueltos">Problemas resueltos</h2>
+<div class="callout callout-style-default callout-warning callout-titled" title="Ejemplo resuelto">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>Ejemplo resuelto
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Problema:</strong> ¿De cuántas maneras pueden sentarse <span class="math inline">\(6\)</span> personas alrededor de una mesa redonda si dos disposiciones se consideran iguales cuando una es rotación de la otra?</p>
+<p><strong>Estrategia:</strong> Es un conteo de permutaciones cíclicas.</p>
+<p><strong>Solución:</strong> Por el teorema de permutaciones cíclicas, el número es</p>
+<p><span class="math display">\[(6-1)! = 5! = 120.\]</span></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled" title="Ejemplo resuelto">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>Ejemplo resuelto
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Problema:</strong> Hallar el coeficiente del término en <span class="math inline">\(x^{2}y^{3}\)</span> del desarrollo de <span class="math inline">\((2x + 3y)^{5}\)</span>.</p>
+<p><strong>Estrategia:</strong> Aplicar el binomio de Newton con <span class="math inline">\(a = 2x\)</span>, <span class="math inline">\(b = 3y\)</span> y aislar el término con exponentes <span class="math inline">\(2\)</span> y <span class="math inline">\(3\)</span>.</p>
+<p><strong>Solución:</strong> El término general es <span class="math inline">\(\binom{5}{k}(2x)^{5-k}(3y)^{k}\)</span>. Para obtener <span class="math inline">\(x^{2}y^{3}\)</span> necesitamos <span class="math inline">\(k = 3\)</span>:</p>
+<p><span class="math display">\[\binom{5}{3}(2x)^{2}(3y)^{3} = 10 \cdot 4x^{2} \cdot 27 y^{3} = 1080\, x^{2} y^{3}.\]</span></p>
+<p>El coeficiente buscado es <span class="math inline">\(1080\)</span>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled" title="Ejemplo resuelto">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>Ejemplo resuelto
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Problema:</strong> ¿Cuántas “palabras” distintas (no necesariamente con sentido) pueden formarse reordenando las letras de <strong>MATEMATICA</strong>?</p>
+<p><strong>Estrategia:</strong> Es una permutación con repetición; contamos las letras repetidas.</p>
+<p><strong>Solución:</strong> La palabra tiene <span class="math inline">\(10\)</span> letras: <span class="math inline">\(A\)</span> aparece <span class="math inline">\(3\)</span> veces, <span class="math inline">\(M\)</span> aparece <span class="math inline">\(2\)</span> veces, <span class="math inline">\(T\)</span> aparece <span class="math inline">\(2\)</span> veces, y <span class="math inline">\(E, I, C\)</span> una vez cada una. Por la fórmula del coeficiente multinomial,</p>
+<p><span class="math display">\[\frac{10!}{3!\,2!\,2!} = \frac{3\,628\,800}{6 \cdot 2 \cdot 2} = \frac{3\,628\,800}{24} = 151\,200.\]</span></p>
+</div>
+</div>
+</section>
+<section id="ejercicios-propuestos" class="level2">
+<h2 class="anchored" data-anchor-id="ejercicios-propuestos">Ejercicios propuestos</h2>
+<p><strong>Ejercicio 1 (⭐).</strong> ¿Cuántos números de cuatro cifras pueden formarse con los dígitos <span class="math inline">\(0,1,\dots,9\)</span> si la primera cifra no puede ser <span class="math inline">\(0\)</span> y se permite repetir?</p>
+<p><strong>Ejercicio 2 (⭐).</strong> ¿De cuántas formas pueden ordenarse en una fila <span class="math inline">\(3\)</span> libros de álgebra y <span class="math inline">\(4\)</span> de geometría si los de cada materia deben quedar juntos?</p>
+<p><strong>Ejercicio 3 (⭐⭐).</strong> Demostrar, mediante un argumento combinatorio (doble conteo), la identidad <span class="math inline">\(\displaystyle k\binom{n}{k} = n\binom{n-1}{k-1}\)</span>.</p>
+<p><strong>Ejercicio 4 (⭐⭐).</strong> ¿Cuántos collares distintos de <span class="math inline">\(6\)</span> cuentas en círculo pueden formarse con <span class="math inline">\(3\)</span> colores si solo se consideran iguales las rotaciones? (Sugerencia: fórmula de Pólya sobre el grupo cíclico de <span class="math inline">\(6\)</span> rotaciones.)</p>
+<p><strong>Ejercicio 5 (⭐⭐⭐).</strong> Probar que si se eligen <span class="math inline">\(51\)</span> números del conjunto <span class="math inline">\(\{1,2,\dots,100\}\)</span>, entonces necesariamente hay dos de ellos tales que uno divide al otro. (Sugerencia: escribir cada número como <span class="math inline">\(2^{a}\cdot m\)</span> con <span class="math inline">\(m\)</span> impar y aplicar palomar a la parte impar.)</p>
+<p><strong>Ejercicio 6 (🏆).</strong> Sea <span class="math inline">\(n \ge 2\)</span>. Demostrar que en cualquier subconjunto de <span class="math inline">\(n+1\)</span> elementos de <span class="math inline">\(\{1, 2, \dots, 2n\}\)</span> existen dos elementos coprimos y, por separado, dos elementos uno múltiplo del otro.</p>
+</section>
+<section id="referencias-del-capítulo" class="level2">
+<h2 class="anchored" data-anchor-id="referencias-del-capítulo">Referencias del capítulo</h2>
+<ul>
+<li><strong>Sociedad de Matemáticas de Chile (Somachi) (1994).</strong> <em>Matemática y Olimpíadas</em>, Capítulo III “Elementos de Combinatoria”, §III.5. Fuente primaria del repositorio; de aquí provienen los principios de conteo y los ejemplos base.</li>
+<li><strong>Andreescu, T. &amp; Feng, Z. (2004).</strong> <em>A Path to Combinatorics for Undergraduates</em>. Birkhäuser. Excelente puente entre el conteo elemental y el nivel olímpico; trata variaciones, combinaciones e identidades binomiales con numerosos problemas resueltos.</li>
+<li><strong>Stanley, R. (2011).</strong> <em>Enumerative Combinatorics, Vol. 1</em> (2ª ed.). Cambridge University Press. Referencia de fondo para el conteo riguroso, el doble conteo y los coeficientes multinomiales.</li>
+<li><strong>van Lint, J. H. &amp; Wilson, R. M. (2001).</strong> <em>A Course in Combinatorics</em> (2ª ed.). Cambridge University Press. Tratamiento claro del Lema de Burnside y la teoría de conteo de Pólya bajo acciones de grupo.</li>
+<li><strong>Engel, A. (1998).</strong> <em>Problem Solving Strategies</em>. Springer. Clásico olímpico con un capítulo dedicado al principio del palomar y sus aplicaciones a teoría de números y combinatoria.</li>
+</ul>
 
 
 </section>

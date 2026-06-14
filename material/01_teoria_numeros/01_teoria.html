@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Teoría: divisibilidad, primos y congruencias – Matemática Olímpica</title>
+<title>6&nbsp; Teoría: divisibilidad, primos y congruencias – Matemática Olímpica</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -42,14 +42,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-d94f5170875b5f4e5e85b640af280440.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-8643a97c649ad291516e98d9f79c0f71.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-d94f5170875b5f4e5e85b640af280440.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-6d55e81a42a89dd3690061c0dc3512a0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-e28859dc7ca6002e82041f7faca5f3dd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-6d55e81a42a89dd3690061c0dc3512a0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -511,12 +511,19 @@ window.Quarto = {
     <h2 id="toc-title">Tabla de contenidos</h2>
    
   <ul>
-  <li><a href="#divisibilidad" id="toc-divisibilidad" class="nav-link active" data-scroll-target="#divisibilidad">Divisibilidad</a></li>
-  <li><a href="#máximo-común-divisor-y-mínimo-común-múltiplo" id="toc-máximo-común-divisor-y-mínimo-común-múltiplo" class="nav-link" data-scroll-target="#máximo-común-divisor-y-mínimo-común-múltiplo">Máximo común divisor y mínimo común múltiplo</a></li>
-  <li><a href="#números-primos" id="toc-números-primos" class="nav-link" data-scroll-target="#números-primos">Números primos</a></li>
-  <li><a href="#congruencias" id="toc-congruencias" class="nav-link" data-scroll-target="#congruencias">Congruencias</a></li>
-  <li><a href="#ecuaciones-diofánticas-lineales" id="toc-ecuaciones-diofánticas-lineales" class="nav-link" data-scroll-target="#ecuaciones-diofánticas-lineales">Ecuaciones diofánticas lineales</a></li>
-  <li><a href="#funciones-aritméticas" id="toc-funciones-aritméticas" class="nav-link" data-scroll-target="#funciones-aritméticas">Funciones aritméticas</a></li>
+  <li><a href="#introducción" id="toc-introducción" class="nav-link active" data-scroll-target="#introducción"><span class="header-section-number">6.1</span> Introducción</a></li>
+  <li><a href="#conceptos-previos" id="toc-conceptos-previos" class="nav-link" data-scroll-target="#conceptos-previos"><span class="header-section-number">6.2</span> Conceptos previos</a></li>
+  <li><a href="#divisibilidad" id="toc-divisibilidad" class="nav-link" data-scroll-target="#divisibilidad"><span class="header-section-number">6.3</span> Divisibilidad</a></li>
+  <li><a href="#algoritmo-de-la-división" id="toc-algoritmo-de-la-división" class="nav-link" data-scroll-target="#algoritmo-de-la-división"><span class="header-section-number">6.4</span> Algoritmo de la división</a></li>
+  <li><a href="#máximo-común-divisor-y-algoritmo-de-euclides" id="toc-máximo-común-divisor-y-algoritmo-de-euclides" class="nav-link" data-scroll-target="#máximo-común-divisor-y-algoritmo-de-euclides"><span class="header-section-number">6.5</span> Máximo común divisor y algoritmo de Euclides</a></li>
+  <li><a href="#números-coprimos-e-identidad-de-bézout" id="toc-números-coprimos-e-identidad-de-bézout" class="nav-link" data-scroll-target="#números-coprimos-e-identidad-de-bézout"><span class="header-section-number">6.6</span> Números coprimos e identidad de Bézout</a></li>
+  <li><a href="#números-primos-y-teorema-fundamental-de-la-aritmética" id="toc-números-primos-y-teorema-fundamental-de-la-aritmética" class="nav-link" data-scroll-target="#números-primos-y-teorema-fundamental-de-la-aritmética"><span class="header-section-number">6.7</span> Números primos y Teorema Fundamental de la Aritmética</a></li>
+  <li><a href="#congruencias-y-aritmética-modular" id="toc-congruencias-y-aritmética-modular" class="nav-link" data-scroll-target="#congruencias-y-aritmética-modular"><span class="header-section-number">6.8</span> Congruencias y aritmética modular</a></li>
+  <li><a href="#pequeño-teorema-de-fermat-y-teorema-de-wilson" id="toc-pequeño-teorema-de-fermat-y-teorema-de-wilson" class="nav-link" data-scroll-target="#pequeño-teorema-de-fermat-y-teorema-de-wilson"><span class="header-section-number">6.9</span> Pequeño Teorema de Fermat y Teorema de Wilson</a></li>
+  <li><a href="#ecuaciones-diofánticas-lineales" id="toc-ecuaciones-diofánticas-lineales" class="nav-link" data-scroll-target="#ecuaciones-diofánticas-lineales"><span class="header-section-number">6.10</span> Ecuaciones diofánticas lineales</a></li>
+  <li><a href="#funciones-aritméticas" id="toc-funciones-aritméticas" class="nav-link" data-scroll-target="#funciones-aritméticas"><span class="header-section-number">6.11</span> Funciones aritméticas</a></li>
+  <li><a href="#ejercicios-propuestos" id="toc-ejercicios-propuestos" class="nav-link" data-scroll-target="#ejercicios-propuestos"><span class="header-section-number">6.12</span> Ejercicios propuestos</a></li>
+  <li><a href="#referencias-del-capítulo" id="toc-referencias-del-capítulo" class="nav-link" data-scroll-target="#referencias-del-capítulo"><span class="header-section-number">6.13</span> Referencias del capítulo</a></li>
   </ul>
 </nav>
     </div>
@@ -527,6 +534,7 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../material/01_teoria_numeros/index.html">Capítulo I: Teoría de Números</a></li><li class="breadcrumb-item"><a href="../../material/01_teoria_numeros/01_teoria.html"><span class="chapter-title">Teoría: divisibilidad, primos y congruencias</span></a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title"><span class="chapter-title">Teoría: divisibilidad, primos y congruencias</span></h1>
+<p class="subtitle lead">Divisibilidad, máximo común divisor, primos y aritmética modular</p>
 </div>
 
 
@@ -543,9 +551,24 @@ window.Quarto = {
 </header>
 
 
-<section id="divisibilidad" class="level2">
-<h2 class="anchored" data-anchor-id="divisibilidad">Divisibilidad</h2>
-<p>La primera idea natural en aritmética es decidir cuándo un entero contiene a otro una cantidad exacta de veces.</p>
+<section id="introducción" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="introducción"><span class="header-section-number">6.1</span> Introducción</h2>
+<p>La teoría de números es, en cierto sentido, la rama más antigua de la matemática: ya los griegos estudiaban primos y divisibilidad. Sin embargo, sigue siendo una fuente inagotable de problemas difíciles y bellos, y por eso ocupa un lugar central en toda olimpiada.</p>
+<p>En este desarrollo construimos las herramientas paso a paso. Comenzamos por la divisibilidad, la relación más elemental entre enteros, y de ella derivamos el algoritmo de la división. Sobre esa base levantamos el máximo común divisor, el algoritmo de Euclides y la identidad de Bézout, que son el motor de casi todos los argumentos posteriores. Luego estudiamos los números primos y el Teorema Fundamental de la Aritmética, que nos da una “estructura atómica” de los enteros. Con las congruencias entramos en la aritmética modular, lenguaje natural para hablar de restos, y culminamos con los teoremas de Fermat y Wilson, las ecuaciones diofánticas y las funciones aritméticas.</p>
+<p>Cada definición se acompaña de una motivación, y cada teorema importante incluye su demostración: en olimpiada no basta saber qué es cierto, hay que saber por qué.</p>
+</section>
+<section id="conceptos-previos" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="conceptos-previos"><span class="header-section-number">6.2</span> Conceptos previos</h2>
+<p>Para seguir este capítulo conviene recordar:</p>
+<ul>
+<li>Las operaciones y el orden en <span class="math inline">\(\mathbb{Z}\)</span>.</li>
+<li>El <strong>principio del buen orden</strong>: todo subconjunto no vacío de <span class="math inline">\(\mathbb{N}\)</span> tiene un mínimo. Lo usaremos repetidamente.</li>
+<li>Manipulación algebraica básica (factorización, productos notables).</li>
+</ul>
+</section>
+<section id="divisibilidad" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="divisibilidad"><span class="header-section-number">6.3</span> Divisibilidad</h2>
+<p>La primera idea natural en aritmética es decidir cuándo un entero contiene a otro una cantidad exacta de veces. Esta relación, la divisibilidad, es la base de todo lo que sigue.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Definición: divisibilidad">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -556,33 +579,59 @@ window.Quarto = {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Sean <span class="math inline">\(a,b \in \mathbb{Z}\)</span> con <span class="math inline">\(a \neq 0\)</span>. Decimos que <span class="math inline">\(a\)</span> divide a <span class="math inline">\(b\)</span> y escribimos <span class="math inline">\(a \mid b\)</span> si existe <span class="math inline">\(k \in \mathbb{Z}\)</span> tal que <span class="math inline">\(b = ak\)</span>.</p>
+<p>Sean <span class="math inline">\(a,b \in \mathbb{Z}\)</span> con <span class="math inline">\(a \neq 0\)</span>. Decimos que <span class="math inline">\(a\)</span> <strong>divide</strong> a <span class="math inline">\(b\)</span> y escribimos <span class="math inline">\(a \mid b\)</span> si existe <span class="math inline">\(k \in \mathbb{Z}\)</span> tal que <span class="math inline">\(b = ak\)</span>. Si <span class="math inline">\(a\)</span> no divide a <span class="math inline">\(b\)</span>, escribimos <span class="math inline">\(a \nmid b\)</span>.</p>
+<p>En tal caso <span class="math inline">\(a\)</span> es un <strong>divisor</strong> (o factor) de <span class="math inline">\(b\)</span>, y <span class="math inline">\(b\)</span> es un <strong>múltiplo</strong> de <span class="math inline">\(a\)</span>.</p>
 </div>
 </div>
-<p>De la definición se deducen propiedades básicas:</p>
-<ul>
-<li>Si <span class="math inline">\(a \mid b\)</span> y <span class="math inline">\(a \mid c\)</span>, entonces <span class="math inline">\(a \mid (b+c)\)</span> y <span class="math inline">\(a \mid (b-c)\)</span>.</li>
-<li>Si <span class="math inline">\(a \mid b\)</span>, entonces <span class="math inline">\(a \mid bc\)</span> para todo <span class="math inline">\(c \in \mathbb{Z}\)</span>.</li>
-<li>Si <span class="math inline">\(a \mid b\)</span> y <span class="math inline">\(b \mid c\)</span>, entonces <span class="math inline">\(a \mid c\)</span>.</li>
-</ul>
-<div class="callout callout-style-default callout-tip callout-titled" title="Teorema: algoritmo de la división">
+<p>De la definición se deducen propiedades básicas que usaremos sin mencionar.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Teorema I.1: propiedades de la divisibilidad">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Teorema: algoritmo de la división
+<span class="screen-reader-only">Tip</span>Teorema I.1: propiedades de la divisibilidad
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Dados enteros <span class="math inline">\(a\)</span> y <span class="math inline">\(b&gt;0\)</span>, existen únicos enteros <span class="math inline">\(q\)</span> y <span class="math inline">\(r\)</span> tales que</p>
-<p><span class="math display">\[a=bq+r, \qquad 0 \le r &lt; b.\]</span></p>
-<p><strong>Demostración:</strong> consideremos el conjunto de números de la forma <span class="math inline">\(a-bq\)</span> que son no negativos. Por el principio del buen orden tiene un mínimo, que llamamos <span class="math inline">\(r\)</span>. Si <span class="math inline">\(r \ge b\)</span>, entonces <span class="math inline">\(r-b\)</span> sería un no negativo más pequeño de la misma forma, lo que es imposible. La unicidad se prueba comparando dos expresiones posibles.</p>
+<p>Sean <span class="math inline">\(a,b,c \in \mathbb{Z}\)</span> con los divisores distintos de cero. Entonces:</p>
+<ol type="1">
+<li><span class="math inline">\(a \mid a\)</span> (reflexividad) y <span class="math inline">\(1 \mid b\)</span> para todo <span class="math inline">\(b\)</span>.</li>
+<li>Si <span class="math inline">\(a \mid b\)</span> y <span class="math inline">\(b \mid c\)</span>, entonces <span class="math inline">\(a \mid c\)</span> (transitividad).</li>
+<li>Si <span class="math inline">\(a \mid b\)</span> y <span class="math inline">\(a \mid c\)</span>, entonces <span class="math inline">\(a \mid (bx+cy)\)</span> para todo <span class="math inline">\(x,y \in \mathbb{Z}\)</span>.</li>
+<li>Si <span class="math inline">\(a \mid b\)</span> y <span class="math inline">\(b \mid a\)</span> con <span class="math inline">\(a,b&gt;0\)</span>, entonces <span class="math inline">\(a=b\)</span>.</li>
+<li>Si <span class="math inline">\(a \mid b\)</span> y <span class="math inline">\(b \neq 0\)</span>, entonces <span class="math inline">\(|a| \le |b|\)</span>.</li>
+</ol>
+<p><strong>Demostración:</strong> las propiedades 1 y 2 son inmediatas: si <span class="math inline">\(b=am\)</span> y <span class="math inline">\(c=bn\)</span>, entonces <span class="math inline">\(c=a(mn)\)</span>. Para la propiedad 3, escribimos <span class="math inline">\(b=am_1\)</span> y <span class="math inline">\(c=am_2\)</span>; entonces <span class="math inline">\(bx+cy=a(m_1x+m_2y)\)</span>, que es múltiplo de <span class="math inline">\(a\)</span>. Para la 4: de <span class="math inline">\(b=am\)</span> y <span class="math inline">\(a=bn\)</span> se sigue <span class="math inline">\(a=amn\)</span>, luego <span class="math inline">\(mn=1\)</span> con <span class="math inline">\(m,n\)</span> enteros positivos, así <span class="math inline">\(m=n=1\)</span> y <span class="math inline">\(a=b\)</span>. Para la 5: si <span class="math inline">\(b=ak\)</span> con <span class="math inline">\(b \neq 0\)</span>, entonces <span class="math inline">\(k \neq 0\)</span>, luego <span class="math inline">\(|k| \ge 1\)</span> y <span class="math inline">\(|b|=|a||k| \ge |a|\)</span>.</p>
 </div>
 </div>
 </section>
-<section id="máximo-común-divisor-y-mínimo-común-múltiplo" class="level2">
-<h2 class="anchored" data-anchor-id="máximo-común-divisor-y-mínimo-común-múltiplo">Máximo común divisor y mínimo común múltiplo</h2>
+<section id="algoritmo-de-la-división" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="algoritmo-de-la-división"><span class="header-section-number">6.4</span> Algoritmo de la división</h2>
+<p>Cuando una división no es exacta, queda un resto. Formalizar esta idea —y asegurar que el cociente y el resto son <strong>únicos</strong>— es el cimiento del algoritmo de Euclides y de toda la aritmética modular.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Teorema I.2: algoritmo de la división">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Teorema I.2: algoritmo de la división
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Dados enteros <span class="math inline">\(a\)</span> y <span class="math inline">\(b&gt;0\)</span>, existen únicos enteros <span class="math inline">\(q\)</span> (cociente) y <span class="math inline">\(r\)</span> (resto) tales que</p>
+<p><span class="math display">\[a=bq+r, \qquad 0 \le r &lt; b.\]</span></p>
+<p><strong>Demostración:</strong> consideremos el conjunto</p>
+<p><span class="math display">\[S=\{a-bq : q \in \mathbb{Z},\; a-bq \ge 0\}.\]</span></p>
+<p><span class="math inline">\(S\)</span> es no vacío (tomando <span class="math inline">\(q\)</span> suficientemente negativo, <span class="math inline">\(a-bq\)</span> es positivo) y está formado por enteros no negativos. Por el principio del buen orden, <span class="math inline">\(S\)</span> tiene un mínimo <span class="math inline">\(r=a-bq\)</span>. Afirmamos que <span class="math inline">\(r&lt;b\)</span>: si fuera <span class="math inline">\(r \ge b\)</span>, entonces <span class="math inline">\(a-b(q+1)=r-b \ge 0\)</span> pertenecería a <span class="math inline">\(S\)</span> y sería menor que <span class="math inline">\(r\)</span>, contradicción. Esto prueba la existencia.</p>
+<p>Para la unicidad, supongamos <span class="math inline">\(a=bq_1+r_1=bq_2+r_2\)</span> con <span class="math inline">\(0 \le r_1,r_2 &lt; b\)</span>. Restando, <span class="math inline">\(b(q_1-q_2)=r_2-r_1\)</span>, de modo que <span class="math inline">\(b \mid (r_2-r_1)\)</span>. Pero <span class="math inline">\(|r_2-r_1|&lt;b\)</span>, así que <span class="math inline">\(r_2-r_1=0\)</span>, es decir <span class="math inline">\(r_1=r_2\)</span>, y por tanto <span class="math inline">\(q_1=q_2\)</span>.</p>
+</div>
+</div>
+<p>Los <strong>criterios de divisibilidad</strong> que se aprenden en el colegio (por <span class="math inline">\(2\)</span>, <span class="math inline">\(3\)</span>, <span class="math inline">\(5\)</span>, <span class="math inline">\(9\)</span>, <span class="math inline">\(11\)</span>) son consecuencias directas de mirar el resto al dividir; los reencontraremos al estudiar congruencias.</p>
+</section>
+<section id="máximo-común-divisor-y-algoritmo-de-euclides" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="máximo-común-divisor-y-algoritmo-de-euclides"><span class="header-section-number">6.5</span> Máximo común divisor y algoritmo de Euclides</h2>
+<p>Entre todos los divisores comunes de dos enteros, el mayor de ellos concentra toda la información sobre cómo se relacionan aritméticamente. Es la cantidad más importante de este capítulo.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Definición: máximo común divisor">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -593,28 +642,139 @@ window.Quarto = {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>El máximo común divisor de <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span>, denotado <span class="math inline">\(\gcd(a,b)\)</span>, es el mayor entero positivo que divide simultáneamente a <span class="math inline">\(a\)</span> y a <span class="math inline">\(b\)</span>.</p>
+<p>El <strong>máximo común divisor</strong> de <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span> (no ambos nulos), denotado <span class="math inline">\(\gcd(a,b)\)</span>, es el mayor entero positivo que divide simultáneamente a <span class="math inline">\(a\)</span> y a <span class="math inline">\(b\)</span>. Cuando no haya ambigüedad usaremos la notación del libro base, <span class="math inline">\((a;b)\)</span>.</p>
 </div>
 </div>
-<p>El algoritmo de Euclides se basa en la observación</p>
-<p><span class="math display">\[\gcd(a,b)=\gcd(b,r), \quad \text{si } a=bq+r.\]</span></p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Identidad de Bézout">
+<div class="callout callout-style-default callout-note callout-titled" title="Definición: mínimo común múltiplo">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Identidad de Bézout
+<span class="screen-reader-only">Nota</span>Definición: mínimo común múltiplo
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Existen enteros <span class="math inline">\(x,y\)</span> tales que</p>
-<p><span class="math display">\[ax+by=\gcd(a,b).\]</span></p>
+<p>El <strong>mínimo común múltiplo</strong> de <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span> (ambos no nulos), denotado <span class="math inline">\(\operatorname{mcm}(a,b)\)</span>, es el menor entero positivo que es múltiplo de <span class="math inline">\(a\)</span> y de <span class="math inline">\(b\)</span> a la vez.</p>
+</div>
+</div>
+<p>El cálculo eficiente del máximo común divisor se basa en una observación simple pero poderosa.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Teorema I.3: lema de Euclides para el MCD">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Teorema I.3: lema de Euclides para el MCD
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Si <span class="math inline">\(a=bq+r\)</span>, entonces</p>
+<p><span class="math display">\[\gcd(a,b)=\gcd(b,r).\]</span></p>
+<p><strong>Demostración:</strong> sea <span class="math inline">\(d=\gcd(a,b)\)</span> y <span class="math inline">\(e=\gcd(b,r)\)</span>. Como <span class="math inline">\(d \mid a\)</span> y <span class="math inline">\(d \mid b\)</span>, de <span class="math inline">\(r=a-bq\)</span> se sigue <span class="math inline">\(d \mid r\)</span>; luego <span class="math inline">\(d\)</span> es divisor común de <span class="math inline">\(b\)</span> y <span class="math inline">\(r\)</span>, así <span class="math inline">\(d \le e\)</span>. Recíprocamente, como <span class="math inline">\(e \mid b\)</span> y <span class="math inline">\(e \mid r\)</span>, de <span class="math inline">\(a=bq+r\)</span> se sigue <span class="math inline">\(e \mid a\)</span>; luego <span class="math inline">\(e\)</span> es divisor común de <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span>, así <span class="math inline">\(e \le d\)</span>. Por tanto <span class="math inline">\(d=e\)</span>.</p>
+</div>
+</div>
+<p>Aplicando este lema repetidamente obtenemos el <strong>algoritmo de Euclides</strong>: se divide, se reemplaza el par <span class="math inline">\((a,b)\)</span> por <span class="math inline">\((b,r)\)</span> y se repite hasta que el resto sea cero. El último resto no nulo es el máximo común divisor.</p>
+<div class="callout callout-style-default callout-warning callout-titled" title="Ejemplo resuelto">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>Ejemplo resuelto
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Problema:</strong> calcular <span class="math inline">\(\gcd(1071,462)\)</span> con el algoritmo de Euclides.</p>
+<p><strong>Estrategia:</strong> aplicar el algoritmo de la división sucesivamente hasta llegar a resto <span class="math inline">\(0\)</span>; el último resto no nulo es el MCD.</p>
+<p><strong>Solución:</strong></p>
+<p><span class="math display">\[
+\begin{align*}
+1071 &amp;= 2 \cdot 462 + 147,\\
+462  &amp;= 3 \cdot 147 + 21,\\
+147  &amp;= 7 \cdot 21 + 0.
+\end{align*}
+\]</span></p>
+<p>El último resto no nulo es <span class="math inline">\(21\)</span>, así que <span class="math inline">\(\gcd(1071,462)=21\)</span>.</p>
+</div>
+</div>
+<p>El máximo común divisor y el mínimo común múltiplo están ligados por una identidad fundamental.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Teorema I.4: relación entre MCD y MCM">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Teorema I.4: relación entre MCD y MCM
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Para enteros positivos <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span>,</p>
+<p><span class="math display">\[\gcd(a,b)\cdot \operatorname{mcm}(a,b)=ab.\]</span></p>
+<p><strong>Demostración:</strong> sea <span class="math inline">\(d=\gcd(a,b)\)</span> y escribamos <span class="math inline">\(a=da'\)</span>, <span class="math inline">\(b=db'\)</span> con <span class="math inline">\(\gcd(a',b')=1\)</span>. Un múltiplo común de <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span> debe ser múltiplo de <span class="math inline">\(da'\)</span> y de <span class="math inline">\(db'\)</span>; como <span class="math inline">\(a'\)</span> y <span class="math inline">\(b'\)</span> son coprimos, el menor de tales múltiplos positivos es <span class="math inline">\(da'b'\)</span>. Entonces</p>
+<p><span class="math display">\[\operatorname{mcm}(a,b)=da'b'=\frac{(da')(db')}{d}=\frac{ab}{d},\]</span></p>
+<p>de donde <span class="math inline">\(d \cdot \operatorname{mcm}(a,b)=ab\)</span>.</p>
 </div>
 </div>
 </section>
-<section id="números-primos" class="level2">
-<h2 class="anchored" data-anchor-id="números-primos">Números primos</h2>
+<section id="números-coprimos-e-identidad-de-bézout" class="level2" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="números-coprimos-e-identidad-de-bézout"><span class="header-section-number">6.6</span> Números coprimos e identidad de Bézout</h2>
+<p>Cuando dos enteros no comparten más divisor común que el <span class="math inline">\(1\)</span>, se comportan de forma especialmente cómoda. Este caso es tan importante que merece un nombre.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Definición: números coprimos">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Definición: números coprimos
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Dos enteros <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span> son <strong>coprimos</strong> (o primos entre sí) si <span class="math inline">\(\gcd(a,b)=1\)</span>.</p>
+</div>
+</div>
+<p>El resultado siguiente, conocido como identidad de Bézout, es probablemente la herramienta más utilizada en olimpiada para problemas de divisibilidad.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Teorema I.5: identidad de Bézout">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Teorema I.5: identidad de Bézout
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Para enteros <span class="math inline">\(a,b\)</span> no ambos nulos, existen enteros <span class="math inline">\(x,y\)</span> tales que</p>
+<p><span class="math display">\[ax+by=\gcd(a,b).\]</span></p>
+<p>Además, <span class="math inline">\(\gcd(a,b)\)</span> es el menor entero positivo que puede escribirse en la forma <span class="math inline">\(ax+by\)</span>.</p>
+<p><strong>Demostración:</strong> sea</p>
+<p><span class="math display">\[S=\{ax+by : x,y \in \mathbb{Z},\; ax+by&gt;0\}.\]</span></p>
+<p><span class="math inline">\(S\)</span> es no vacío (por ejemplo <span class="math inline">\(a^2+b^2&gt;0\)</span> está en <span class="math inline">\(S\)</span>). Por el principio del buen orden, <span class="math inline">\(S\)</span> tiene un mínimo <span class="math inline">\(d=ax_0+by_0\)</span>. Veamos que <span class="math inline">\(d \mid a\)</span>: por el algoritmo de la división, <span class="math inline">\(a=dq+r\)</span> con <span class="math inline">\(0 \le r &lt; d\)</span>; entonces</p>
+<p><span class="math display">\[r=a-dq=a-(ax_0+by_0)q=a(1-x_0q)+b(-y_0q),\]</span></p>
+<p>que es de la forma <span class="math inline">\(ax+by\)</span>. Si <span class="math inline">\(r&gt;0\)</span>, sería un elemento de <span class="math inline">\(S\)</span> menor que <span class="math inline">\(d\)</span>, contradicción; luego <span class="math inline">\(r=0\)</span> y <span class="math inline">\(d \mid a\)</span>. Análogamente <span class="math inline">\(d \mid b\)</span>, así que <span class="math inline">\(d\)</span> es divisor común. Por otro lado, todo divisor común de <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span> divide a <span class="math inline">\(ax_0+by_0=d\)</span>, luego <span class="math inline">\(d=\gcd(a,b)\)</span>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Corolario I.6: lema de Euclides">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Corolario I.6: lema de Euclides
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Si <span class="math inline">\(a \mid bc\)</span> y <span class="math inline">\(\gcd(a,b)=1\)</span>, entonces <span class="math inline">\(a \mid c\)</span>.</p>
+<p><strong>Demostración:</strong> por Bézout existen <span class="math inline">\(x,y\)</span> con <span class="math inline">\(ax+by=1\)</span>. Multiplicando por <span class="math inline">\(c\)</span>,</p>
+<p><span class="math display">\[acx+bcy=c.\]</span></p>
+<p>Como <span class="math inline">\(a \mid acx\)</span> (evidente) y <span class="math inline">\(a \mid bcy\)</span> (porque <span class="math inline">\(a \mid bc\)</span>), se sigue que <span class="math inline">\(a\)</span> divide a la suma <span class="math inline">\(c\)</span>.</p>
+</div>
+</div>
+<p>Este corolario es la pieza clave para demostrar la unicidad de la factorización.</p>
+</section>
+<section id="números-primos-y-teorema-fundamental-de-la-aritmética" class="level2" data-number="6.7">
+<h2 data-number="6.7" class="anchored" data-anchor-id="números-primos-y-teorema-fundamental-de-la-aritmética"><span class="header-section-number">6.7</span> Números primos y Teorema Fundamental de la Aritmética</h2>
+<p>Los números primos son los “ladrillos” con que se construyen todos los enteros. Entender su comportamiento es entender la aritmética entera.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Definición: número primo">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -625,41 +785,48 @@ window.Quarto = {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Un entero <span class="math inline">\(p&gt;1\)</span> es <strong>primo</strong> si sus únicos divisores positivos son <span class="math inline">\(1\)</span> y <span class="math inline">\(p\)</span>. Si un entero mayor que <span class="math inline">\(1\)</span> no es primo, se llama <strong>compuesto</strong>.</p>
+<p>Un entero <span class="math inline">\(p&gt;1\)</span> es <strong>primo</strong> si sus únicos divisores positivos son <span class="math inline">\(1\)</span> y <span class="math inline">\(p\)</span>. Un entero mayor que <span class="math inline">\(1\)</span> que no es primo se llama <strong>compuesto</strong>.</p>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled" title="Teorema: infinitud de los primos">
+<div class="callout callout-style-default callout-tip callout-titled" title="Teorema I.7: infinitud de los primos (Euclides)">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Teorema: infinitud de los primos
+<span class="screen-reader-only">Tip</span>Teorema I.7: infinitud de los primos (Euclides)
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <p>Existen infinitos números primos.</p>
-<p><strong>Demostración:</strong> si existieran solo finitos primos <span class="math inline">\(p_1,\dots,p_n\)</span>, entonces</p>
-<p><span class="math display">\[N=p_1p_2\cdots p_n+1\]</span></p>
-<p>no sería divisible por ninguno de ellos, contradicción.</p>
+<p><strong>Demostración:</strong> supongamos, por reducción al absurdo, que solo hubiera finitos primos <span class="math inline">\(p_1,p_2,\dots,p_n\)</span>. Consideremos</p>
+<p><span class="math display">\[N=p_1p_2\cdots p_n+1.\]</span></p>
+<p>Como <span class="math inline">\(N&gt;1\)</span>, tiene al menos un divisor primo <span class="math inline">\(p\)</span>. Pero <span class="math inline">\(p\)</span> debe ser alguno de los <span class="math inline">\(p_i\)</span>, y entonces <span class="math inline">\(p \mid N\)</span> y <span class="math inline">\(p \mid p_1\cdots p_n\)</span>, de donde <span class="math inline">\(p \mid (N-p_1\cdots p_n)=1\)</span>, lo cual es imposible. La contradicción muestra que los primos son infinitos.</p>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled" title="Teorema fundamental de la aritmética">
+<div class="callout callout-style-default callout-tip callout-titled" title="Teorema I.8: Teorema Fundamental de la Aritmética">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Teorema fundamental de la aritmética
+<span class="screen-reader-only">Tip</span>Teorema I.8: Teorema Fundamental de la Aritmética
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Todo entero <span class="math inline">\(n&gt;1\)</span> puede expresarse de manera única, salvo orden, como producto de primos.</p>
+<p>Todo entero <span class="math inline">\(n&gt;1\)</span> se expresa de manera <strong>única</strong>, salvo el orden de los factores, como producto de primos:</p>
+<p><span class="math display">\[n=p_1^{\alpha_1}p_2^{\alpha_2}\cdots p_k^{\alpha_k}.\]</span></p>
+<p><strong>Demostración:</strong> la <em>existencia</em> se prueba por inducción fuerte. Si <span class="math inline">\(n\)</span> es primo, ya está. Si es compuesto, <span class="math inline">\(n=ab\)</span> con <span class="math inline">\(1&lt;a,b&lt;n\)</span>; por hipótesis inductiva <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span> son productos de primos, y por tanto <span class="math inline">\(n\)</span> también.</p>
+<p>Para la <em>unicidad</em>, supongamos dos factorizaciones de <span class="math inline">\(n\)</span> en primos. Tomemos un primo <span class="math inline">\(p\)</span> de la primera. Como <span class="math inline">\(p \mid n\)</span>, <span class="math inline">\(p\)</span> divide al producto de los primos de la segunda factorización; por el lema de Euclides (Corolario I.6, aplicado repetidamente), <span class="math inline">\(p\)</span> divide a alguno de esos primos, y al ser ambos primos, coincide con él. Cancelamos ese factor en ambos lados y repetimos. Concluimos que las dos factorizaciones tienen exactamente los mismos primos con los mismos exponentes.</p>
 </div>
 </div>
+<p>Una consecuencia útil: si <span class="math inline">\(n=p_1^{\alpha_1}\cdots p_k^{\alpha_k}\)</span> y <span class="math inline">\(m=p_1^{\beta_1}\cdots p_k^{\beta_k}\)</span> (admitiendo exponentes nulos), entonces</p>
+<p><span class="math display">\[\gcd(n,m)=\prod_i p_i^{\min(\alpha_i,\beta_i)}, \qquad
+\operatorname{mcm}(n,m)=\prod_i p_i^{\max(\alpha_i,\beta_i)}.\]</span></p>
 </section>
-<section id="congruencias" class="level2">
-<h2 class="anchored" data-anchor-id="congruencias">Congruencias</h2>
+<section id="congruencias-y-aritmética-modular" class="level2" data-number="6.8">
+<h2 data-number="6.8" class="anchored" data-anchor-id="congruencias-y-aritmética-modular"><span class="header-section-number">6.8</span> Congruencias y aritmética modular</h2>
+<p>Muchas veces no nos interesa el valor exacto de un número, sino solo su resto al dividir por cierto módulo. Las congruencias, introducidas por Gauss, son el lenguaje preciso para hablar de esto.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Definición: congruencia módulo $n$">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -670,66 +837,192 @@ window.Quarto = {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Sean <span class="math inline">\(a,b \in \mathbb{Z}\)</span> y <span class="math inline">\(n \ge 2\)</span>. Decimos que</p>
-<p><span class="math display">\[a \equiv b \pmod{n}\]</span></p>
-<p>si <span class="math inline">\(n \mid (a-b)\)</span>.</p>
+<p>Sean <span class="math inline">\(a,b \in \mathbb{Z}\)</span> y <span class="math inline">\(n \ge 2\)</span>. Decimos que <span class="math inline">\(a\)</span> es <strong>congruente</strong> con <span class="math inline">\(b\)</span> módulo <span class="math inline">\(n\)</span>, y escribimos</p>
+<p><span class="math display">\[a \equiv b \pmod{n},\]</span></p>
+<p>si <span class="math inline">\(n \mid (a-b)\)</span>; equivalentemente, si <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span> dejan el mismo resto al dividir por <span class="math inline">\(n\)</span>.</p>
 </div>
 </div>
-<p>Las congruencias respetan suma, resta y producto.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Teorema: inverso modular">
+<div class="callout callout-style-default callout-tip callout-titled" title="Teorema I.9: propiedades de las congruencias">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Teorema: inverso modular
+<span class="screen-reader-only">Tip</span>Teorema I.9: propiedades de las congruencias
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>El entero <span class="math inline">\(a\)</span> tiene inverso módulo <span class="math inline">\(n\)</span> si y solo si <span class="math inline">\(\gcd(a,n)=1\)</span>.</p>
-<p><strong>Demostración:</strong> si <span class="math inline">\(\gcd(a,n)=1\)</span>, por Bézout existen <span class="math inline">\(x,y\)</span> tales que <span class="math inline">\(ax+ny=1\)</span>. Reduciendo módulo <span class="math inline">\(n\)</span> obtenemos <span class="math inline">\(ax \equiv 1 \pmod{n}\)</span>.</p>
+<p>Las congruencias módulo <span class="math inline">\(n\)</span> forman una relación de equivalencia y son compatibles con las operaciones. Si <span class="math inline">\(a \equiv b \pmod{n}\)</span> y <span class="math inline">\(c \equiv d \pmod{n}\)</span>, entonces:</p>
+<ol type="1">
+<li><span class="math inline">\(a+c \equiv b+d \pmod{n}\)</span>,</li>
+<li><span class="math inline">\(a-c \equiv b-d \pmod{n}\)</span>,</li>
+<li><span class="math inline">\(ac \equiv bd \pmod{n}\)</span>,</li>
+<li><span class="math inline">\(a^m \equiv b^m \pmod{n}\)</span> para todo <span class="math inline">\(m \ge 1\)</span>.</li>
+</ol>
+<p><strong>Demostración:</strong> por hipótesis <span class="math inline">\(n \mid (a-b)\)</span> y <span class="math inline">\(n \mid (c-d)\)</span>. Para la suma, <span class="math inline">\((a+c)-(b+d)=(a-b)+(c-d)\)</span> es múltiplo de <span class="math inline">\(n\)</span>. Para el producto,</p>
+<p><span class="math display">\[ac-bd=ac-bc+bc-bd=c(a-b)+b(c-d),\]</span></p>
+<p>que es múltiplo de <span class="math inline">\(n\)</span>. Las propiedades 2 y 4 se siguen de las anteriores (la 4 por inducción sobre <span class="math inline">\(m\)</span>).</p>
+</div>
+</div>
+<p>Una advertencia importante: <strong>no siempre se puede cancelar</strong>. De <span class="math inline">\(ac \equiv bc \pmod{n}\)</span> solo podemos deducir <span class="math inline">\(a \equiv b \pmod{n}\)</span> cuando <span class="math inline">\(\gcd(c,n)=1\)</span>. Esto motiva la noción de inverso.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Teorema I.10: inverso modular">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Teorema I.10: inverso modular
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>El entero <span class="math inline">\(a\)</span> tiene inverso módulo <span class="math inline">\(n\)</span> (esto es, existe <span class="math inline">\(x\)</span> con <span class="math inline">\(ax \equiv 1 \pmod{n}\)</span>) si y solo si <span class="math inline">\(\gcd(a,n)=1\)</span>.</p>
+<p><strong>Demostración:</strong> si <span class="math inline">\(\gcd(a,n)=1\)</span>, por Bézout existen <span class="math inline">\(x,y\)</span> con <span class="math inline">\(ax+ny=1\)</span>; reduciendo módulo <span class="math inline">\(n\)</span> obtenemos <span class="math inline">\(ax \equiv 1 \pmod{n}\)</span>. Recíprocamente, si <span class="math inline">\(ax \equiv 1 \pmod{n}\)</span>, entonces <span class="math inline">\(ax-1=ny\)</span> para algún <span class="math inline">\(y\)</span>, es decir <span class="math inline">\(ax-ny=1\)</span>; todo divisor común de <span class="math inline">\(a\)</span> y <span class="math inline">\(n\)</span> divide a <span class="math inline">\(1\)</span>, luego <span class="math inline">\(\gcd(a,n)=1\)</span>.</p>
 </div>
 </div>
 </section>
-<section id="ecuaciones-diofánticas-lineales" class="level2">
-<h2 class="anchored" data-anchor-id="ecuaciones-diofánticas-lineales">Ecuaciones diofánticas lineales</h2>
-<div class="callout callout-style-default callout-note callout-titled" title="Teorema: ecuación $ax+by=c$">
+<section id="pequeño-teorema-de-fermat-y-teorema-de-wilson" class="level2" data-number="6.9">
+<h2 data-number="6.9" class="anchored" data-anchor-id="pequeño-teorema-de-fermat-y-teorema-de-wilson"><span class="header-section-number">6.9</span> Pequeño Teorema de Fermat y Teorema de Wilson</h2>
+<p>Dos resultados clásicos describen el comportamiento de las potencias y los factoriales módulo un primo. Son armas frecuentes en problemas de competencia.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Teorema I.11: Pequeño Teorema de Fermat">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Nota</span>Teorema: ecuación <span class="math inline">\(ax+by=c\)</span>
+<span class="screen-reader-only">Tip</span>Teorema I.11: Pequeño Teorema de Fermat
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>La ecuación lineal</p>
+<p>Si <span class="math inline">\(p\)</span> es primo y <span class="math inline">\(p \nmid a\)</span>, entonces</p>
+<p><span class="math display">\[a^{p-1} \equiv 1 \pmod{p}.\]</span></p>
+<p>En general, para todo entero <span class="math inline">\(a\)</span>, <span class="math inline">\(a^{p} \equiv a \pmod{p}\)</span>.</p>
+<p><strong>Demostración:</strong> consideremos los múltiplos <span class="math inline">\(a,2a,3a,\dots,(p-1)a\)</span> módulo <span class="math inline">\(p\)</span>. Como <span class="math inline">\(\gcd(a,p)=1\)</span>, ninguno es <span class="math inline">\(\equiv 0\)</span>, y dos de ellos no pueden ser congruentes entre sí (si <span class="math inline">\(ia \equiv ja \pmod p\)</span> con <span class="math inline">\(0&lt;i&lt;j&lt;p\)</span>, al cancelar <span class="math inline">\(a\)</span> resultaría <span class="math inline">\(i \equiv j\)</span>, imposible). Por tanto <span class="math inline">\(\{a,2a,\dots,(p-1)a\}\)</span> es, módulo <span class="math inline">\(p\)</span>, una reordenación de <span class="math inline">\(\{1,2,\dots,p-1\}\)</span>. Multiplicando todos,</p>
+<p><span class="math display">\[a^{p-1}(p-1)! \equiv (p-1)! \pmod{p}.\]</span></p>
+<p>Como <span class="math inline">\(\gcd((p-1)!,p)=1\)</span>, cancelamos <span class="math inline">\((p-1)!\)</span> y obtenemos <span class="math inline">\(a^{p-1} \equiv 1 \pmod{p}\)</span>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Teorema I.12: Teorema de Wilson">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Teorema I.12: Teorema de Wilson
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Un entero <span class="math inline">\(p&gt;1\)</span> es primo si y solo si</p>
+<p><span class="math display">\[(p-1)! \equiv -1 \pmod{p}.\]</span></p>
+<p><strong>Demostración (de la implicación principal):</strong> sea <span class="math inline">\(p\)</span> primo. Para cada <span class="math inline">\(a \in \{1,\dots,p-1\}\)</span> existe un único inverso <span class="math inline">\(a^{-1}\)</span> en ese conjunto. Los únicos elementos que son su propio inverso son los que cumplen <span class="math inline">\(a^2 \equiv 1 \pmod p\)</span>, es decir <span class="math inline">\(a \equiv 1\)</span> o <span class="math inline">\(a \equiv p-1\)</span>. Los demás <span class="math inline">\(p-3\)</span> elementos se emparejan en pares <span class="math inline">\(\{a,a^{-1}\}\)</span> cuyo producto es <span class="math inline">\(\equiv 1\)</span>. Por tanto</p>
+<p><span class="math display">\[(p-1)! \equiv 1 \cdot (p-1) \cdot 1 \equiv -1 \pmod{p}.\]</span></p>
+</div>
+</div>
+</section>
+<section id="ecuaciones-diofánticas-lineales" class="level2" data-number="6.10">
+<h2 data-number="6.10" class="anchored" data-anchor-id="ecuaciones-diofánticas-lineales"><span class="header-section-number">6.10</span> Ecuaciones diofánticas lineales</h2>
+<p>Las ecuaciones diofánticas piden soluciones <strong>enteras</strong>. El caso lineal en dos variables se resuelve por completo gracias a Bézout.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Teorema I.13: ecuación $ax+by=c$">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Teorema I.13: ecuación <span class="math inline">\(ax+by=c\)</span>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Sean <span class="math inline">\(a,b,c \in \mathbb{Z}\)</span> con <span class="math inline">\(a,b\)</span> no ambos nulos, y <span class="math inline">\(d=\gcd(a,b)\)</span>. La ecuación</p>
 <p><span class="math display">\[ax+by=c\]</span></p>
-<p>tiene solución entera si y solo si <span class="math inline">\(\gcd(a,b) \mid c\)</span>.</p>
-</div>
-</div>
-<p>Si <span class="math inline">\((x_0,y_0)\)</span> es una solución particular y <span class="math inline">\(d=\gcd(a,b)\)</span>, entonces todas las soluciones están dadas por</p>
+<p>tiene soluciones enteras si y solo si <span class="math inline">\(d \mid c\)</span>. En tal caso, si <span class="math inline">\((x_0,y_0)\)</span> es una solución particular, todas las soluciones son</p>
 <p><span class="math display">\[x=x_0+\frac{b}{d}t, \qquad y=y_0-\frac{a}{d}t, \qquad t \in \mathbb{Z}.\]</span></p>
+<p><strong>Demostración:</strong> como todo valor de <span class="math inline">\(ax+by\)</span> es múltiplo de <span class="math inline">\(d\)</span>, si hay solución entonces <span class="math inline">\(d \mid c\)</span>. Recíprocamente, si <span class="math inline">\(d \mid c\)</span>, por Bézout existen <span class="math inline">\(x_1,y_1\)</span> con <span class="math inline">\(ax_1+by_1=d\)</span>; multiplicando por <span class="math inline">\(c/d\)</span> obtenemos una solución particular. Si <span class="math inline">\((x,y)\)</span> y <span class="math inline">\((x_0,y_0)\)</span> son soluciones, restando se tiene <span class="math inline">\(a(x-x_0)=-b(y-y_0)\)</span>; dividiendo por <span class="math inline">\(d\)</span> y usando <span class="math inline">\(\gcd(a/d,b/d)=1\)</span> con el lema de Euclides, se llega a la forma general indicada.</p>
+</div>
+</div>
 </section>
-<section id="funciones-aritméticas" class="level2">
-<h2 class="anchored" data-anchor-id="funciones-aritméticas">Funciones aritméticas</h2>
-<div class="callout callout-style-default callout-note callout-titled" title="Definición: funciones aritméticas">
+<section id="funciones-aritméticas" class="level2" data-number="6.11">
+<h2 data-number="6.11" class="anchored" data-anchor-id="funciones-aritméticas"><span class="header-section-number">6.11</span> Funciones aritméticas</h2>
+<p>Asociar a cada entero un número que mida alguna de sus propiedades (cuántos divisores tiene, cuánto suman, cuántos enteros le son coprimos) da lugar a las funciones aritméticas, omnipresentes en olimpiada.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Definición: funciones aritméticas $\tau$, $\sigma$ y $\varphi$">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Nota</span>Definición: funciones aritméticas
+<span class="screen-reader-only">Nota</span>Definición: funciones aritméticas <span class="math inline">\(\tau\)</span>, <span class="math inline">\(\sigma\)</span> y <span class="math inline">\(\varphi\)</span>
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Una función aritmética es una aplicación definida sobre <span class="math inline">\(\mathbb{N}\)</span> y con valores numéricos, como <span class="math inline">\(\tau(n)\)</span> o <span class="math inline">\(\varphi(n)\)</span>.</p>
+<p>Sea <span class="math inline">\(n \ge 1\)</span> un entero.</p>
+<ul>
+<li><span class="math inline">\(\tau(n)\)</span> es el número de divisores positivos de <span class="math inline">\(n\)</span>.</li>
+<li><span class="math inline">\(\sigma(n)\)</span> es la suma de los divisores positivos de <span class="math inline">\(n\)</span>.</li>
+<li><span class="math inline">\(\varphi(n)\)</span>, la <strong>función de Euler</strong>, es la cantidad de enteros en <span class="math inline">\(\{1,2,\dots,n\}\)</span> que son coprimos con <span class="math inline">\(n\)</span>.</li>
+</ul>
 </div>
 </div>
-<p>Si</p>
-<p><span class="math display">\[n=p_1^{\alpha_1}p_2^{\alpha_2}\cdots p_k^{\alpha_k},\]</span></p>
-<p>entonces</p>
-<p><span class="math display">\[\tau(n)=(\alpha_1+1)(\alpha_2+1)\cdots(\alpha_k+1).\]</span></p>
+<p>A partir de la factorización <span class="math inline">\(n=p_1^{\alpha_1}\cdots p_k^{\alpha_k}\)</span>, estas funciones se calculan explícitamente.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Teorema I.14: fórmulas para $\tau$, $\sigma$ y $\varphi$">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Teorema I.14: fórmulas para <span class="math inline">\(\tau\)</span>, <span class="math inline">\(\sigma\)</span> y <span class="math inline">\(\varphi\)</span>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Si <span class="math inline">\(n=p_1^{\alpha_1}p_2^{\alpha_2}\cdots p_k^{\alpha_k}\)</span>, entonces</p>
+<p><span class="math display">\[
+\begin{align*}
+\tau(n)    &amp;= (\alpha_1+1)(\alpha_2+1)\cdots(\alpha_k+1),\\[2pt]
+\sigma(n)  &amp;= \prod_{i=1}^{k}\frac{p_i^{\alpha_i+1}-1}{p_i-1},\\[2pt]
+\varphi(n) &amp;= n\prod_{i=1}^{k}\left(1-\frac{1}{p_i}\right)
+            = \prod_{i=1}^{k} p_i^{\alpha_i-1}(p_i-1).
+\end{align*}
+\]</span></p>
+<p><strong>Demostración (de <span class="math inline">\(\tau\)</span>):</strong> un divisor de <span class="math inline">\(n\)</span> tiene la forma <span class="math inline">\(p_1^{e_1}\cdots p_k^{e_k}\)</span> con <span class="math inline">\(0 \le e_i \le \alpha_i\)</span>. Hay <span class="math inline">\(\alpha_i+1\)</span> opciones para cada exponente <span class="math inline">\(e_i\)</span>, y por la regla del producto el total de divisores es <span class="math inline">\(\prod_i(\alpha_i+1)\)</span>. Las fórmulas de <span class="math inline">\(\sigma\)</span> y <span class="math inline">\(\varphi\)</span> se obtienen de manera análoga usando que las tres funciones son <strong>multiplicativas</strong>: si <span class="math inline">\(\gcd(m,n)=1\)</span>, entonces <span class="math inline">\(f(mn)=f(m)f(n)\)</span>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Teorema I.15: Teorema de Euler">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Teorema I.15: Teorema de Euler
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Si <span class="math inline">\(\gcd(a,n)=1\)</span>, entonces</p>
+<p><span class="math display">\[a^{\varphi(n)} \equiv 1 \pmod{n}.\]</span></p>
+<p>Este resultado generaliza el Pequeño Teorema de Fermat, que corresponde al caso <span class="math inline">\(n=p\)</span> primo, donde <span class="math inline">\(\varphi(p)=p-1\)</span>.</p>
+<p><strong>Demostración:</strong> sean <span class="math inline">\(r_1,\dots,r_{\varphi(n)}\)</span> los enteros entre <span class="math inline">\(1\)</span> y <span class="math inline">\(n\)</span> coprimos con <span class="math inline">\(n\)</span>. Como <span class="math inline">\(\gcd(a,n)=1\)</span>, los productos <span class="math inline">\(ar_1,\dots,ar_{\varphi(n)}\)</span> son, módulo <span class="math inline">\(n\)</span>, una reordenación de los mismos <span class="math inline">\(r_i\)</span>. Multiplicando todos,</p>
+<p><span class="math display">\[a^{\varphi(n)}\prod_i r_i \equiv \prod_i r_i \pmod{n};\]</span></p>
+<p>como <span class="math inline">\(\prod_i r_i\)</span> es coprimo con <span class="math inline">\(n\)</span>, lo cancelamos y queda <span class="math inline">\(a^{\varphi(n)} \equiv 1 \pmod{n}\)</span>.</p>
+</div>
+</div>
+</section>
+<section id="ejercicios-propuestos" class="level2" data-number="6.12">
+<h2 data-number="6.12" class="anchored" data-anchor-id="ejercicios-propuestos"><span class="header-section-number">6.12</span> Ejercicios propuestos</h2>
+<ol type="1">
+<li><strong>(⭐)</strong> Determina todos los divisores positivos de <span class="math inline">\(84\)</span> y verifica que su cantidad coincide con <span class="math inline">\(\tau(84)\)</span>.</li>
+<li><strong>(⭐)</strong> Calcula <span class="math inline">\(\gcd(252,198)\)</span> y <span class="math inline">\(\operatorname{mcm}(252,198)\)</span>, y comprueba que su producto es <span class="math inline">\(252 \cdot 198\)</span>.</li>
+<li><strong>(⭐⭐)</strong> Halla enteros <span class="math inline">\(x,y\)</span> tales que <span class="math inline">\(252x+198y=\gcd(252,198)\)</span>.</li>
+<li><strong>(⭐⭐)</strong> Demuestra que para todo entero <span class="math inline">\(n\)</span>, el número <span class="math inline">\(n^3-n\)</span> es divisible por <span class="math inline">\(6\)</span>.</li>
+<li><strong>(⭐⭐)</strong> Encuentra el resto de <span class="math inline">\(2^{1000}\)</span> al dividir por <span class="math inline">\(13\)</span> usando el Pequeño Teorema de Fermat.</li>
+<li><strong>(⭐⭐⭐)</strong> Demuestra que si <span class="math inline">\(p\)</span> es primo y <span class="math inline">\(p \nmid a\)</span>, entonces <span class="math inline">\(a^{p^2} \equiv a^{p} \pmod{p}\)</span>.</li>
+<li><strong>(⭐⭐⭐)</strong> Prueba que <span class="math inline">\(\varphi(n)\)</span> es par para todo <span class="math inline">\(n&gt;2\)</span>.</li>
+</ol>
+</section>
+<section id="referencias-del-capítulo" class="level2" data-number="6.13">
+<h2 data-number="6.13" class="anchored" data-anchor-id="referencias-del-capítulo"><span class="header-section-number">6.13</span> Referencias del capítulo</h2>
+<ul>
+<li><strong>Somachi (1994). <em>Matemática y Olimpíadas</em>, Cap. I.</strong> Libro base del repositorio; presenta la divisibilidad, el algoritmo de Euclides, las congruencias y las funciones aritméticas con enfoque olímpico chileno.</li>
+<li><strong>Hardy, G. H. &amp; Wright, E. M. (2008). <em>An Introduction to the Theory of Numbers</em> (6ª ed.). Oxford University Press.</strong> Tratado clásico y exhaustivo; excelente para profundizar en primos y funciones aritméticas (Caps. 1–5).</li>
+<li><strong>Niven, I.; Zuckerman, H. S. &amp; Montgomery, H. L. (1991). <em>An Introduction to the Theory of Numbers</em> (5ª ed.). Wiley.</strong> Texto introductorio muy claro; buen tratamiento de congruencias y la función <span class="math inline">\(\varphi\)</span> (Cap. 2).</li>
+<li><strong>Engel, A. (1998). <em>Problem Solving Strategies</em>. Springer.</strong> Clásico olímpico; el capítulo de teoría de números reúne técnicas y problemas de competencia con sus soluciones.</li>
+<li><strong>Andreescu, T. &amp; Gelca, R. (2009). <em>Mathematical Olympiad Challenges</em> (2ª ed.). Birkhäuser.</strong> Amplia colección de problemas de divisibilidad, congruencias y diofánticas con dificultad creciente.</li>
+</ul>
 
 
 </section>

@@ -6,8 +6,8 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-acf12a64177840b8d86f2d4f01b2e9fb.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.9.37">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-de63f62b328812d8e578a4d74e282472.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.38">
 
   <title>Presentaciones - Matematica Olimpica – Problemas Resueltos</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -135,12 +135,260 @@
 </div>
 
 </section>
-<section id="placeholder" class="slide level2">
-<h2>Placeholder</h2>
-<p>Presentación pendiente para problemas resueltos.</p>
-
+<section id="resolver-paso-a-paso" class="slide level2">
+<h2>Resolver, paso a paso</h2>
+<p>En esta sesión recorremos <strong>cinco problemas</strong> representativos, uno por cada gran área del libro.</p>
+<div class="fragment">
+<p>La idea no es solo ver la respuesta, sino el <strong>proceso completo</strong>:</p>
+<ul>
+<li>explorar el enunciado,</li>
+<li>elegir una estrategia (y entender por qué),</li>
+<li>redactar una solución rigurosa.</li>
+</ul>
+</div>
+<div class="fragment">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p>Intenta cada problema por tu cuenta <strong>antes</strong> de pasar al slide de la solución.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section>
+<section id="problema-1-teoría-de-números" class="title-slide slide level1 center">
+<h1>Problema 1 — Teoría de Números</h1>
 
 </section>
+<section id="enunciado-y-estrategia" class="slide level2">
+<h2>Enunciado y estrategia</h2>
+<div title="Problema 1">
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Problema 1</strong></p>
+</div>
+<div class="callout-content">
+<p>Hallar todos los enteros positivos <span class="math inline">\(n\)</span> tales que <span class="math inline">\(n+1 \mid n^2+1\)</span>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="fragment">
+<p><strong>Estrategia.</strong> Reducir <span class="math inline">\(n^2+1\)</span> módulo <span class="math inline">\(n+1\)</span>. Como <span class="math inline">\(n \equiv -1 \pmod{n+1}\)</span>, el resto se vuelve un número fijo y el problema se traduce en una condición de divisibilidad simple.</p>
+</div>
+</section>
+<section id="solución" class="slide level2">
+<h2>Solución</h2>
+<p>Trabajamos módulo <span class="math inline">\(n+1\)</span>. Observamos que <span class="math inline">\(n \equiv -1 \pmod{n+1}\)</span>.</p>
+<div class="fragment">
+<p>Entonces <span class="math display">\[n^2+1 \equiv (-1)^2 + 1 = 2 \pmod{n+1}.\]</span></p>
+</div>
+<div class="fragment">
+<p>Luego <span class="math inline">\(n+1 \mid n^2+1\)</span> <strong>si y solo si</strong> <span class="math inline">\(n+1 \mid 2\)</span>, es decir <span class="math inline">\(n+1 \in \{1, 2\}\)</span>.</p>
+</div>
+<div class="fragment">
+<p>Como <span class="math inline">\(n\)</span> es entero positivo, la única solución es <span class="math display">\[n = 1.\]</span> En efecto, <span class="math inline">\(n^2+1 = 2\)</span> y <span class="math inline">\(n+1 = 2 \mid 2\)</span>. <span class="math inline">\(\blacksquare\)</span></p>
+</div>
+</section></section>
+<section>
+<section id="problema-2-inducción" class="title-slide slide level1 center">
+<h1>Problema 2 — Inducción</h1>
+
+</section>
+<section id="enunciado-y-estrategia-1" class="slide level2">
+<h2>Enunciado y estrategia</h2>
+<div title="Problema 2">
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Problema 2</strong></p>
+</div>
+<div class="callout-content">
+<p>Demostrar que <span class="math inline">\(\displaystyle\sum_{k=1}^{n} k^2 = \frac{n(n+1)(2n+1)}{6}\)</span> para todo <span class="math inline">\(n \geq 1\)</span>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="fragment">
+<p><strong>Estrategia.</strong> Inducción sobre <span class="math inline">\(n\)</span>. En el paso inductivo, sumar <span class="math inline">\((n+1)^2\)</span> y <strong>factorizar primero</strong> <span class="math inline">\((n+1)\)</span>, luego el cuadrático restante.</p>
+</div>
+</section>
+<section id="solución-1" class="slide level2">
+<h2>Solución</h2>
+<p><strong>Caso base</strong> (<span class="math inline">\(n=1\)</span>): el lado izquierdo es <span class="math inline">\(1^2 = 1\)</span> y el derecho <span class="math inline">\(\frac{1 \cdot 2 \cdot 3}{6} = 1\)</span>. Coincide.</p>
+<div class="fragment">
+<p><strong>Paso inductivo.</strong> Suponemos la fórmula para <span class="math inline">\(n\)</span> y sumamos <span class="math inline">\((n+1)^2\)</span>: <span class="math display">\[\begin{align*}
+\sum_{k=1}^{n+1} k^2 &amp;= \frac{n(n+1)(2n+1)}{6} + (n+1)^2 \\
+&amp;= \frac{(n+1)\big[\, n(2n+1) + 6(n+1) \,\big]}{6}.
+\end{align*}\]</span></p>
+</div>
+<div class="fragment">
+<p>Factorizando <span class="math inline">\(2n^2+7n+6 = (n+2)(2n+3)\)</span>: <span class="math display">\[\sum_{k=1}^{n+1} k^2 = \frac{(n+1)(n+2)(2n+3)}{6},\]</span> que es la fórmula en <span class="math inline">\(n+1\)</span>, pues <span class="math inline">\(2(n+1)+1 = 2n+3\)</span>. <span class="math inline">\(\blacksquare\)</span></p>
+</div>
+</section></section>
+<section>
+<section id="problema-3-combinatoria" class="title-slide slide level1 center">
+<h1>Problema 3 — Combinatoria</h1>
+
+</section>
+<section id="enunciado-y-estrategia-2" class="slide level2">
+<h2>Enunciado y estrategia</h2>
+<div title="Problema 3">
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Problema 3</strong></p>
+</div>
+<div class="callout-content">
+<p>Demostrar la <strong>identidad de Pascal</strong> <span class="math display">\[\binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}, \qquad 1 \leq k \leq n-1.\]</span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="fragment">
+<p><strong>Estrategia.</strong> Argumento combinatorio (doble conteo): fijar un elemento y clasificar los subconjuntos según lo contengan o no.</p>
+</div>
+</section>
+<section id="solución-2" class="slide level2">
+<h2>Solución</h2>
+<p><span class="math inline">\(\binom{n}{k}\)</span> cuenta los subconjuntos de tamaño <span class="math inline">\(k\)</span> de <span class="math inline">\(X = \{x_1, \dots, x_n\}\)</span>. Fijamos <span class="math inline">\(x_n\)</span>.</p>
+<div class="fragment">
+<p><strong>Caso A — contienen a <span class="math inline">\(x_n\)</span>:</strong> elegimos los <span class="math inline">\(k-1\)</span> restantes entre <span class="math inline">\(n-1\)</span> elementos. Hay <span class="math inline">\(\binom{n-1}{k-1}\)</span>.</p>
+</div>
+<div class="fragment">
+<p><strong>Caso B — no contienen a <span class="math inline">\(x_n\)</span>:</strong> los <span class="math inline">\(k\)</span> elementos salen de los otros <span class="math inline">\(n-1\)</span>. Hay <span class="math inline">\(\binom{n-1}{k}\)</span>.</p>
+</div>
+<div class="fragment">
+<p>Las dos clases son <strong>disjuntas</strong> y cubren todos los subconjuntos. Por la regla de la suma, <span class="math display">\[\binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}. \qquad \blacksquare\]</span></p>
+</div>
+</section></section>
+<section>
+<section id="problema-4-análisis" class="title-slide slide level1 center">
+<h1>Problema 4 — Análisis</h1>
+
+</section>
+<section id="enunciado-y-estrategia-3" class="slide level2">
+<h2>Enunciado y estrategia</h2>
+<div title="Problema 4">
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Problema 4</strong></p>
+</div>
+<div class="callout-content">
+<p>Demostrar que <span class="math inline">\(\sqrt{2}\)</span> es irracional.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="fragment">
+<p><strong>Estrategia.</strong> Reducción al absurdo: suponer <span class="math inline">\(\sqrt{2} = p/q\)</span> irreducible y llegar a que <span class="math inline">\(p\)</span> y <span class="math inline">\(q\)</span> son ambos pares, contradiciendo <span class="math inline">\(\gcd(p,q)=1\)</span>.</p>
+</div>
+</section>
+<section id="solución-3" class="slide level2">
+<h2>Solución</h2>
+<p>Supongamos <span class="math inline">\(\sqrt{2} = \dfrac{p}{q}\)</span> con <span class="math inline">\(\gcd(p,q)=1\)</span>. Elevando al cuadrado: <span class="math display">\[p^2 = 2q^2.\]</span></p>
+<div class="fragment">
+<p>Entonces <span class="math inline">\(p^2\)</span> es par <span class="math inline">\(\Rightarrow\)</span> <span class="math inline">\(p\)</span> es par. Escribimos <span class="math inline">\(p = 2m\)</span>: <span class="math display">\[4m^2 = 2q^2 \;\Longrightarrow\; q^2 = 2m^2.\]</span></p>
+</div>
+<div class="fragment">
+<p>Luego <span class="math inline">\(q^2\)</span> es par <span class="math inline">\(\Rightarrow\)</span> <span class="math inline">\(q\)</span> es par. Así <span class="math inline">\(2 \mid p\)</span> y <span class="math inline">\(2 \mid q\)</span>, contradiciendo <span class="math inline">\(\gcd(p,q)=1\)</span>.</p>
+</div>
+<div class="fragment">
+<p>La contradicción prueba que <span class="math inline">\(\sqrt{2}\)</span> es <strong>irracional</strong>. <span class="math inline">\(\blacksquare\)</span></p>
+</div>
+</section></section>
+<section>
+<section id="problema-5-geometría" class="title-slide slide level1 center">
+<h1>Problema 5 — Geometría</h1>
+
+</section>
+<section id="enunciado-y-estrategia-4" class="slide level2">
+<h2>Enunciado y estrategia</h2>
+<div title="Problema 5">
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Problema 5</strong></p>
+</div>
+<div class="callout-content">
+<p>Demostrar que en cualquier triángulo la suma de los ángulos interiores es <span class="math inline">\(180^\circ\)</span>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="fragment">
+<p><strong>Estrategia.</strong> Trazar por un vértice una recta paralela al lado opuesto y usar <strong>ángulos alternos internos</strong>.</p>
+</div>
+</section>
+<section id="solución-4" class="slide level2">
+<h2>Solución</h2>
+<p>Sea <span class="math inline">\(ABC\)</span> con ángulos <span class="math inline">\(\alpha, \beta, \gamma\)</span> en <span class="math inline">\(A, B, C\)</span>. Trazamos por <span class="math inline">\(A\)</span> una recta <span class="math inline">\(\ell \parallel BC\)</span>.</p>
+<div class="fragment">
+<p>Con <span class="math inline">\(AB\)</span> transversal: el ángulo de <span class="math inline">\(\ell\)</span> con <span class="math inline">\(AB\)</span> (lado de <span class="math inline">\(B\)</span>) vale <span class="math inline">\(\beta\)</span> (alternos internos).</p>
+</div>
+<div class="fragment">
+<p>Con <span class="math inline">\(AC\)</span> transversal: el ángulo de <span class="math inline">\(\ell\)</span> con <span class="math inline">\(AC\)</span> (lado de <span class="math inline">\(C\)</span>) vale <span class="math inline">\(\gamma\)</span>.</p>
+</div>
+<div class="fragment">
+<p>En el vértice <span class="math inline">\(A\)</span>, los ángulos <span class="math inline">\(\beta\)</span>, <span class="math inline">\(\alpha\)</span> y <span class="math inline">\(\gamma\)</span> se disponen sobre <span class="math inline">\(\ell\)</span> formando un ángulo llano: <span class="math display">\[\alpha + \beta + \gamma = 180^\circ. \qquad \blacksquare\]</span></p>
+</div>
+</section></section>
+<section>
+<section id="cierre" class="title-slide slide level1 center">
+<h1>Cierre</h1>
+
+</section>
+<section id="técnicas-clave-aprendidas" class="slide level2">
+<h2>Técnicas clave aprendidas</h2>
+<ul>
+<li><strong>Reducir módulo el divisor:</strong> convierte una divisibilidad en una condición sobre un resto fijo.</li>
+<li><strong>Inducción con factorización:</strong> en el paso inductivo, factoriza primero el término común.</li>
+<li><strong>Doble conteo:</strong> fijar un elemento y separar en casos demuestra identidades combinatorias.</li>
+<li><strong>Reducción al absurdo:</strong> muy potente para resultados de irracionalidad.</li>
+<li><strong>Construcciones auxiliares:</strong> una paralela bien trazada revela ángulos iguales.</li>
+</ul>
+<div class="fragment">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p>El verdadero aprendizaje ocurre <strong>durante la búsqueda</strong>, no al leer la respuesta. ¡A practicar!</p>
+</div>
+</div>
+</div>
+
+
+</div>
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">

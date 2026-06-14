@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -42,14 +42,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-d94f5170875b5f4e5e85b640af280440.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-8643a97c649ad291516e98d9f79c0f71.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-d94f5170875b5f4e5e85b640af280440.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-6d55e81a42a89dd3690061c0dc3512a0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-e28859dc7ca6002e82041f7faca5f3dd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-6d55e81a42a89dd3690061c0dc3512a0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -78,6 +78,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -484,7 +513,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#la-olimpiada-internacional-de-matemáticas-imo" id="toc-la-olimpiada-internacional-de-matemáticas-imo" class="nav-link active" data-scroll-target="#la-olimpiada-internacional-de-matemáticas-imo">La Olimpiada Internacional de Matemáticas (IMO)</a>
   <ul class="collapse">
-  <li><a href="#historia-resumida" id="toc-historia-resumida" class="nav-link" data-scroll-target="#historia-resumida">Historia resumida</a></li>
+  <li><a href="#historia-y-crecimiento" id="toc-historia-y-crecimiento" class="nav-link" data-scroll-target="#historia-y-crecimiento">Historia y crecimiento</a></li>
   <li><a href="#formato-del-examen" id="toc-formato-del-examen" class="nav-link" data-scroll-target="#formato-del-examen">Formato del examen</a></li>
   <li><a href="#países-destacados-históricamente" id="toc-países-destacados-históricamente" class="nav-link" data-scroll-target="#países-destacados-históricamente">Países destacados históricamente</a></li>
   </ul></li>
@@ -519,7 +548,8 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="la-olimpiada-internacional-de-matemáticas-imo" class="level2">
 <h2 class="anchored" data-anchor-id="la-olimpiada-internacional-de-matemáticas-imo">La Olimpiada Internacional de Matemáticas (IMO)</h2>
-<p>La <strong>Olimpiada Internacional de Matemáticas</strong> (IMO, por sus siglas en inglés) es la competencia matemática más prestigiosa del mundo para estudiantes de enseñanza media. Fue fundada en 1959 por iniciativa de Rumania y se celebra anualmente en un país diferente.</p>
+<p>La <strong>Olimpiada Internacional de Matemáticas</strong> (IMO, por sus siglas en inglés) es la competencia matemática más prestigiosa del mundo para estudiantes de enseñanza media. Fue fundada en 1959 por iniciativa de Rumania y se celebra anualmente en un país diferente. Es la más antigua de las olimpiadas científicas internacionales y sirve de modelo a todas las demás.</p>
+<p>La primera edición, en 1959, se realizó en la ciudad rumana de <strong>Brașov</strong> y reunió a apenas siete países, todos del bloque socialista de Europa del Este. Lo que comenzó como un encuentro regional se transformó, a lo largo de seis décadas, en un evento con más de un centenar de países participantes y cientos de concursantes cada año.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Definición: IMO">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -533,8 +563,9 @@ ul.task-list li input[type="checkbox"] {
 <p>La IMO reúne a equipos de hasta seis estudiantes por país, quienes deben resolver seis problemas en dos días (tres problemas por día, cuatro horas y media cada día). Los problemas abarcan álgebra, combinatoria, geometría y teoría de números.</p>
 </div>
 </div>
-<section id="historia-resumida" class="level3">
-<h3 class="anchored" data-anchor-id="historia-resumida">Historia resumida</h3>
+<section id="historia-y-crecimiento" class="level3">
+<h3 class="anchored" data-anchor-id="historia-y-crecimiento">Historia y crecimiento</h3>
+<p>La IMO se interrumpió solo una vez, en 1980, año en que ningún país asumió la organización. Salvo esa excepción, se ha celebrado de forma ininterrumpida cada año desde 1959, lo que la convierte en una de las competencias internacionales más estables del mundo.</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 50%">
@@ -549,32 +580,50 @@ ul.task-list li input[type="checkbox"] {
 <tbody>
 <tr class="odd">
 <td>1959–1966</td>
-<td>Ediciones solo entre países del bloque socialista (Rumania, Hungría, URSS, etc.)</td>
+<td>Ediciones casi exclusivamente entre países del bloque socialista (Rumania, Hungría, URSS, Bulgaria, Polonia, etc.)</td>
 </tr>
 <tr class="even">
-<td>1967–1980</td>
-<td>Apertura progresiva a países occidentales y latinoamericanos</td>
+<td>1967–1979</td>
+<td>Apertura progresiva a países occidentales; el Reino Unido, Francia y otros se incorporan</td>
 </tr>
 <tr class="odd">
-<td>1981–2000</td>
-<td>Expansión global; se consolidan las grandes potencias matemáticas (China, EE. UU., URSS/Rusia)</td>
+<td>1980</td>
+<td>Única edición no realizada en la historia de la IMO</td>
 </tr>
 <tr class="even">
+<td>1981–2000</td>
+<td>Expansión global; ingreso de EE. UU., China y muchos más; se consolidan las grandes potencias</td>
+</tr>
+<tr class="odd">
 <td>2001–hoy</td>
-<td>Más de 100 países participantes; Chile participa regularmente desde 2005</td>
+<td>Más de 100 países y alrededor de 600 participantes por edición</td>
 </tr>
 </tbody>
 </table>
+<div class="callout callout-style-default callout-tip callout-titled" title="📖 Una competencia que cruzó la Guerra Fría">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>📖 Una competencia que cruzó la Guerra Fría
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Durante sus primeras décadas, la IMO fue uno de los pocos espacios donde estudiantes de Oriente y Occidente competían en igualdad de condiciones, en plena Guerra Fría. La matemática funcionaba como un lenguaje neutral que unía a jóvenes de sistemas políticos opuestos en torno a la misma pasión por resolver problemas.</p>
+</div>
+</div>
 </section>
 <section id="formato-del-examen" class="level3">
 <h3 class="anchored" data-anchor-id="formato-del-examen">Formato del examen</h3>
 <p>Cada problema tiene un valor de <strong>7 puntos</strong>, para un total de <strong>42 puntos</strong>:</p>
 <ul>
-<li><strong>Medalla de oro:</strong> típicamente 28–42 puntos (aproximadamente el 8% superior)</li>
-<li><strong>Medalla de plata:</strong> típicamente 19–27 puntos</li>
-<li><strong>Medalla de bronce:</strong> típicamente 12–18 puntos</li>
-<li><strong>Mención honorífica:</strong> solución perfecta en al menos un problema, sin medalla</li>
+<li><strong>Medalla de oro:</strong> los participantes con mejor puntaje (aproximadamente el 1/12 superior, es decir cerca del 8%).</li>
+<li><strong>Medalla de plata:</strong> el siguiente grupo (aproximadamente el 2/12 siguiente).</li>
+<li><strong>Medalla de bronce:</strong> el siguiente grupo (aproximadamente el 3/12 siguiente).</li>
+<li><strong>Mención honorífica:</strong> para quien, sin obtener medalla, resuelve perfectamente al menos un problema (7 puntos en él).</li>
 </ul>
+<p>Por reglamento, a lo sumo la mitad de los concursantes obtiene alguna medalla, y estas se reparten en una proporción aproximada de <span class="math inline">\(1:2:3\)</span> entre oro, plata y bronce. Los puntos de corte exactos cambian cada año según la dificultad de la prueba.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Consejo">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -585,44 +634,74 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Los problemas 1 y 4 suelen ser los más accesibles, mientras que los problemas 3 y 6 son los más difíciles. Dominar los primeros es el objetivo inicial para cualquier participante.</p>
+<p>Los problemas 1 y 4 suelen ser los más accesibles, mientras que los problemas 3 y 6 son los más difíciles. Dominar los primeros es el objetivo inicial para cualquier participante, ya que aseguran una base de puntaje antes de atacar los más exigentes.</p>
 </div>
 </div>
 </section>
 <section id="países-destacados-históricamente" class="level3">
 <h3 class="anchored" data-anchor-id="países-destacados-históricamente">Países destacados históricamente</h3>
 <ul>
-<li><strong>China:</strong> potencia dominante desde los años 80; múltiples primeros puestos</li>
-<li><strong>Estados Unidos:</strong> campeón en varias ocasiones; programa de entrenamiento muy sólido</li>
-<li><strong>Rusia/URSS:</strong> tradición histórica de excelencia matemática</li>
-<li><strong>Corea del Sur, Rumania, Vietnam:</strong> fuerzas emergentes con medallas consistentes</li>
-<li><strong>Brasil:</strong> el país latinoamericano con mejor desempeño histórico en la región</li>
+<li><strong>China:</strong> potencia dominante desde fines de los años 80; ha encabezado el medallero por equipos en numerosas ocasiones.</li>
+<li><strong>Estados Unidos:</strong> campeón en varias ediciones; cuenta con un programa de entrenamiento muy sólido y masivo.</li>
+<li><strong>Rusia/URSS:</strong> larga tradición de excelencia matemática y de formación olímpica.</li>
+<li><strong>Corea del Sur, Rumania, Vietnam:</strong> fuerzas consistentes que disputan los primeros lugares.</li>
+<li><strong>Brasil:</strong> históricamente el país latinoamericano con mejor desempeño en la región, con medallas de oro a su haber.</li>
 </ul>
-<hr>
-</section>
-</section>
-<section id="la-competencia-putnam" class="level2">
-<h2 class="anchored" data-anchor-id="la-competencia-putnam">La Competencia Putnam</h2>
-<p>La <strong>William Lowell Putnam Mathematical Competition</strong> es la competencia universitaria más importante de América del Norte, organizada por la Mathematical Association of America (MAA) desde 1938.</p>
-<div class="callout callout-style-default callout-note callout-titled" title="Dato">
+<div class="callout callout-style-default callout-tip callout-titled" title="📖 El problema 6 de 1988 y un récord juvenil">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Nota</span>Dato
+<span class="screen-reader-only">Tip</span>📖 El problema 6 de 1988 y un récord juvenil
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>La Putnam es famosa por su dificultad extrema: la mediana histórica de puntaje es frecuentemente 0 o 1 punto sobre 120. Resolverla bien requiere creatividad matemática de alto nivel.</p>
+<p>El célebre <strong>Problema 6 de la IMO 1988</strong> pedía demostrar que, si <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span> son enteros positivos tales que <span class="math inline">\(ab + 1\)</span> divide a <span class="math inline">\(a^2 + b^2\)</span>, entonces <span class="math inline">\(\frac{a^2 + b^2}{ab + 1}\)</span> es un cuadrado perfecto. Su elegante solución mediante la técnica del <strong>descenso de Vieta</strong> (o <em>Vieta jumping</em>) lo volvió legendario entre los olimpistas. Por otro lado, varios participantes han ganado medallas de oro siendo muy jóvenes, lo que muestra que el talento matemático puede manifestarse temprano si se cultiva con dedicación.</p>
 </div>
 </div>
-<p>Aunque no es directamente relevante para la OMC, muchos problemas de la Putnam tienen estructura similar a los de olimpiadas y constituyen excelente material de estudio avanzado.</p>
+<hr>
+</section>
+</section>
+<section id="la-competencia-putnam" class="level2">
+<h2 class="anchored" data-anchor-id="la-competencia-putnam">La Competencia Putnam</h2>
+<p>La <strong>William Lowell Putnam Mathematical Competition</strong> es la competencia universitaria más importante de Estados Unidos y Canadá, organizada por la <em>Mathematical Association of America</em> (MAA) desde 1938. Está dirigida a estudiantes de pregrado y se rinde el primer sábado de diciembre.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Formato de la Putnam">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Formato de la Putnam
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Dos sesiones de tres horas (mañana y tarde), con seis problemas cada una: 12 en total.</li>
+<li>Cada problema vale 10 puntos, para un máximo de <strong>120 puntos</strong>.</li>
+<li>Es una competencia individual, aunque también se reconoce a las mejores instituciones.</li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="📖 Una dificultad legendaria">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>📖 Una dificultad legendaria
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>La Putnam es famosa por su dificultad extrema: pese a que la rinden algunos de los mejores estudiantes universitarios de Norteamérica, la <strong>mediana de puntaje es con frecuencia 0 o 1 punto sobre 120</strong>. Obtener un puntaje de dos dígitos ya ubica al participante muy por encima del promedio. Cada año se reconoce a los cinco mejores como <em>Putnam Fellows</em>, y varios de ellos se han convertido luego en matemáticos de renombre, incluyendo futuros medallistas Fields.</p>
+</div>
+</div>
+<p>Aunque no es directamente relevante para la OMC, muchos problemas de la Putnam tienen estructura similar a los de olimpiadas y constituyen excelente material de estudio avanzado para quienes ya dominan lo básico.</p>
 <hr>
 </section>
 <section id="la-olimpiada-iberoamericana-de-matemáticas-oim" class="level2">
 <h2 class="anchored" data-anchor-id="la-olimpiada-iberoamericana-de-matemáticas-oim">La Olimpiada Iberoamericana de Matemáticas (OIM)</h2>
-<p>La <strong>OIM</strong> se celebra desde 1985 y reúne a países hispanohablantes y lusófonos de Iberoamérica y la Península Ibérica. Es un paso natural entre las olimpiadas nacionales y la IMO.</p>
+<p>La <strong>Olimpiada Iberoamericana de Matemáticas (OIM)</strong> se celebra desde <strong>1985</strong> y reúne a países hispanohablantes y lusófonos de Iberoamérica junto con España y Portugal. Su primera edición se realizó en Colombia. Es un paso natural entre las olimpiadas nacionales y la IMO, tanto por su nivel como por su carácter formativo.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Formato de la OIM">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -634,19 +713,38 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li>Participan países de América Latina, España y Portugal</li>
-<li>Dos días de competencia, tres problemas cada día</li>
-<li>Temas: álgebra, combinatoria, geometría, teoría de números</li>
-<li>Chile participa regularmente y ha obtenido medallas</li>
+<li>Participan países de América Latina, además de España y Portugal.</li>
+<li>Dos días de competencia, con tres problemas cada día (seis en total).</li>
+<li>Temas: álgebra, combinatoria, geometría y teoría de números.</li>
+<li>A diferencia de la IMO, cada país envía equipos de hasta <strong>cuatro</strong> estudiantes.</li>
+<li>Chile participa regularmente y ha obtenido medallas.</li>
 </ul>
 </div>
 </div>
-<p>La OIM utiliza problemas de nivel intermedio entre una olimpiada nacional y la IMO, lo que la convierte en una referencia excelente para preparación.</p>
+<p>La OIM utiliza problemas de nivel intermedio entre una olimpiada nacional y la IMO, lo que la convierte en una referencia excelente para la preparación. Una particularidad de la OIM es la <strong>Copa Puerto Rico</strong>, premio que reconoce al país que muestra el mayor progreso relativo respecto de su participación del año anterior, incentivando así a los equipos en desarrollo.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="📖 Una olimpiada en español y portugués">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>📖 Una olimpiada en español y portugués
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>La OIM es de las pocas competencias internacionales de primer nivel en las que los enunciados oficiales se entregan en <strong>español y portugués</strong>, las lenguas de la región. Para el estudiante chileno, esto significa enfrentar problemas de altísimo nivel sin la barrera del idioma, lo que la vuelve un escenario internacional especialmente cercano.</p>
+</div>
+</div>
 <hr>
 </section>
 <section id="otras-competencias-relevantes" class="level2">
 <h2 class="anchored" data-anchor-id="otras-competencias-relevantes">Otras competencias relevantes</h2>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
 <thead>
 <tr class="header">
 <th>Competencia</th>
@@ -667,21 +765,22 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 <tr class="odd">
 <td>Olimpiada Cono Sur</td>
-<td>Sudamérica</td>
+<td>Sudamérica (estudiantes más jóvenes)</td>
 <td>1989</td>
 </tr>
 <tr class="even">
 <td>Olimpiada Matemática Rioplatense</td>
-<td>Argentina, Chile, Uruguay</td>
-<td>1997</td>
+<td>Argentina, Chile, Uruguay y otros</td>
+<td>1994</td>
 </tr>
 <tr class="odd">
-<td>Olimpiada Matemática Chilena (OMC)</td>
-<td>Nacional</td>
+<td>Olimpiada Nacional de Matemáticas (OMC)</td>
+<td>Nacional, Chile</td>
 <td>1981</td>
 </tr>
 </tbody>
 </table>
+<p>La <strong>Olimpiada Cono Sur</strong> merece una mención especial para el estudiante chileno: está orientada a participantes más jóvenes (hasta cierta edad límite) y suele ser el primer contacto internacional de muchos olimpistas de la región, antes de la OIM.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Para el estudiante chileno">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -692,7 +791,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>El camino natural de preparación es: <strong>OMC → OIM → IMO</strong>. Este material está diseñado principalmente para la OMC, pero los temas cubiertos son igualmente válidos para la OIM y sirven de base para la IMO.</p>
+<p>El camino natural de preparación es: <strong>OMC → Cono Sur / OIM → IMO</strong>. Este material está diseñado principalmente para la OMC, pero los temas cubiertos son igualmente válidos para la OIM y sirven de base para la IMO.</p>
 </div>
 </div>
 

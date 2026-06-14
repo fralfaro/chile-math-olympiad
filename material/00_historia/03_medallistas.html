@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -42,14 +42,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-d94f5170875b5f4e5e85b640af280440.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-8643a97c649ad291516e98d9f79c0f71.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-d94f5170875b5f4e5e85b640af280440.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-6d55e81a42a89dd3690061c0dc3512a0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-e28859dc7ca6002e82041f7faca5f3dd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-6d55e81a42a89dd3690061c0dc3512a0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -78,6 +78,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -483,9 +512,13 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#chile-en-la-imo" id="toc-chile-en-la-imo" class="nav-link active" data-scroll-target="#chile-en-la-imo">Chile en la IMO</a></li>
-  <li><a href="#participaciones-y-resultados" id="toc-participaciones-y-resultados" class="nav-link" data-scroll-target="#participaciones-y-resultados">Participaciones y resultados</a></li>
+  <li><a href="#qué-significan-las-medallas-y-menciones" id="toc-qué-significan-las-medallas-y-menciones" class="nav-link" data-scroll-target="#qué-significan-las-medallas-y-menciones">¿Qué significan las medallas y menciones?</a>
+  <ul class="collapse">
+  <li><a href="#el-significado-de-cada-distinción-para-chile" id="toc-el-significado-de-cada-distinción-para-chile" class="nav-link" data-scroll-target="#el-significado-de-cada-distinción-para-chile">El significado de cada distinción para Chile</a></li>
+  </ul></li>
+  <li><a href="#la-evolución-del-desempeño-chileno" id="toc-la-evolución-del-desempeño-chileno" class="nav-link" data-scroll-target="#la-evolución-del-desempeño-chileno">La evolución del desempeño chileno</a></li>
   <li><a href="#sobre-la-selección-chilena" id="toc-sobre-la-selección-chilena" class="nav-link" data-scroll-target="#sobre-la-selección-chilena">Sobre la selección chilena</a></li>
-  <li><a href="#chile-en-la-oim" id="toc-chile-en-la-oim" class="nav-link" data-scroll-target="#chile-en-la-oim">Chile en la OIM</a></li>
+  <li><a href="#chile-en-la-iberoamericana-oim" id="toc-chile-en-la-iberoamericana-oim" class="nav-link" data-scroll-target="#chile-en-la-iberoamericana-oim">Chile en la Iberoamericana (OIM)</a></li>
   <li><a href="#inspiración-el-camino-de-un-olimpista" id="toc-inspiración-el-camino-de-un-olimpista" class="nav-link" data-scroll-target="#inspiración-el-camino-de-un-olimpista">Inspiración: el camino de un olimpista</a></li>
   </ul>
 </nav>
@@ -515,7 +548,7 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="chile-en-la-imo" class="level2">
 <h2 class="anchored" data-anchor-id="chile-en-la-imo">Chile en la IMO</h2>
-<p>Chile comenzó a participar en la <strong>Olimpiada Internacional de Matemáticas (IMO)</strong> en la edición de <strong>2005</strong> (Mérida, México). Desde entonces, ha enviado equipos con regularidad y ha obtenido diversas distinciones.</p>
+<p>Chile ha participado en la <strong>Olimpiada Internacional de Matemáticas (IMO)</strong> enviando equipos formados por estudiantes de enseñanza media, seleccionados a partir de su desempeño en la olimpiada nacional y en las competencias internacionales de entrenamiento. Representar al país en la IMO es el logro más alto al que puede aspirar un olimpista chileno.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Contexto">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -526,98 +559,116 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>La selección chilena para la IMO se elige de los mejores participantes en la OMC y la OIM. El equipo está formado por hasta 6 estudiantes, acompañados de un líder y un observador de la Somachi.</p>
+<p>La selección chilena para la IMO se elige entre los mejores participantes de la OMC y la Iberoamericana. El equipo está formado por <strong>hasta seis estudiantes</strong>, acompañados de un líder (<em>team leader</em>) y un líder adjunto u observador, encargados de defender los puntajes de sus alumnos ante el jurado internacional.</p>
 </div>
 </div>
-<hr>
-</section>
-<section id="participaciones-y-resultados" class="level2">
-<h2 class="anchored" data-anchor-id="participaciones-y-resultados">Participaciones y resultados</h2>
-<p>A continuación se presentan algunas de las participaciones más destacadas del equipo chileno en la IMO:</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Año</th>
-<th>Sede</th>
-<th>Medallas/Menciones chilenas</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>2005</td>
-<td>Mérida, México</td>
-<td>Primera participación</td>
-</tr>
-<tr class="even">
-<td>2007</td>
-<td>Hanói, Vietnam</td>
-<td>Mención honorífica</td>
-</tr>
-<tr class="odd">
-<td>2010</td>
-<td>Astana, Kazajistán</td>
-<td>Mención honorífica</td>
-</tr>
-<tr class="even">
-<td>2013</td>
-<td>Santa Marta, Colombia</td>
-<td>Medalla de bronce</td>
-</tr>
-<tr class="odd">
-<td>2015</td>
-<td>Chiang Mai, Tailandia</td>
-<td>Mención honorífica</td>
-</tr>
-<tr class="even">
-<td>2018</td>
-<td>Cluj-Napoca, Rumania</td>
-<td>Medalla de bronce</td>
-</tr>
-<tr class="odd">
-<td>2019</td>
-<td>Bath, Reino Unido</td>
-<td>Medalla de bronce</td>
-</tr>
-<tr class="even">
-<td>2022</td>
-<td>Oslo, Noruega</td>
-<td>Mención honorífica</td>
-</tr>
-<tr class="odd">
-<td>2023</td>
-<td>Chiba, Japón</td>
-<td>Participación oficial</td>
-</tr>
-<tr class="even">
-<td>2024</td>
-<td>Bath, Reino Unido</td>
-<td>Participación oficial</td>
-</tr>
-</tbody>
-</table>
-<div class="callout callout-style-default callout-warning callout-titled" title="Nota de precisión">
+<div class="callout callout-style-default callout-warning callout-titled" title="⚠️ Sobre los datos de esta página">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Advertencia</span>Nota de precisión
+<span class="screen-reader-only">Advertencia</span>⚠️ Sobre los datos de esta página
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Los datos presentados son referenciales. Para la lista oficial y completa de resultados, consulta el sitio <a href="https://www.imo-official.org">www.imo-official.org</a> y el registro de Somachi en <a href="https://www.olimpiadadematematica.cl">www.olimpiadadematematica.cl</a>.</p>
+<p>Esta página describe la trayectoria chilena en términos <strong>generales y verificables</strong>, sin atribuir medallas a nombres, años o sedes específicas. El palmarés exacto de Chile —participantes, puntajes, medallas y menciones honoríficas año por año— está disponible de forma oficial y actualizada en el sitio de la IMO. <strong>No tomes como definitivo ningún dato puntual que no provenga de esa fuente.</strong></p>
+</div>
+</div>
+<hr>
+</section>
+<section id="qué-significan-las-medallas-y-menciones" class="level2">
+<h2 class="anchored" data-anchor-id="qué-significan-las-medallas-y-menciones">¿Qué significan las medallas y menciones?</h2>
+<p>En la IMO, cada participante compite de manera <strong>individual</strong>: las medallas se otorgan a personas, no a países (aunque informalmente se comparen los puntajes por equipos). La cantidad de medallas se decide cada año en función de los puntajes obtenidos, según estas reglas generales:</p>
+<ul>
+<li><strong>Medalla de oro, plata y bronce:</strong> se reparten de modo que, a lo más, <strong>la mitad</strong> de todos los concursantes obtenga alguna medalla. La proporción aproximada entre oro, plata y bronce es de <span class="math inline">\(1:2:3\)</span>.</li>
+<li><strong>Mención honorífica:</strong> se otorga a quien <strong>no</strong> obtiene medalla pero resuelve de forma perfecta al menos un problema (es decir, logra los 7 puntos en algún problema).</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="📖 Por qué una mención honorífica ya es un gran logro">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>📖 Por qué una mención honorífica ya es un gran logro
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Resolver perfectamente <strong>un solo</strong> problema de la IMO no es poca cosa: los seis problemas de cada edición están entre los más difíciles que se plantean a estudiantes de enseñanza media en todo el mundo. Por eso, para un país en desarrollo olímpico, una mención honorífica representa un avance real y un motivo legítimo de orgullo.</p>
+</div>
+</div>
+<section id="el-significado-de-cada-distinción-para-chile" class="level3">
+<h3 class="anchored" data-anchor-id="el-significado-de-cada-distinción-para-chile">El significado de cada distinción para Chile</h3>
+<p>Para un país como Chile, cuyo programa olímpico es más joven que el de las grandes potencias, conviene entender las distinciones en una escala de progreso:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Distinción</th>
+<th>Qué representa en el camino de un país</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Participación oficial</strong></td>
+<td>El estudiante rinde la prueba completa de la IMO; ya es parte de un grupo muy selecto.</td>
+</tr>
+<tr class="even">
+<td><strong>Mención honorífica</strong></td>
+<td>Al menos un problema resuelto de forma perfecta; primer gran hito competitivo.</td>
+</tr>
+<tr class="odd">
+<td><strong>Medalla de bronce</strong></td>
+<td>Desempeño que supera el umbral de medalla; consolidación del nivel.</td>
+</tr>
+<tr class="even">
+<td><strong>Medalla de plata u oro</strong></td>
+<td>Resultado de élite mundial; meta de largo plazo de cualquier programa.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+</section>
+<section id="la-evolución-del-desempeño-chileno" class="level2">
+<h2 class="anchored" data-anchor-id="la-evolución-del-desempeño-chileno">La evolución del desempeño chileno</h2>
+<p>Más que centrarse en resultados aislados, conviene mirar la <strong>tendencia</strong>. La historia olímpica chilena puede describirse, de forma general y verificable, en estas etapas:</p>
+<ol type="1">
+<li><strong>Incorporación internacional.</strong> Tras consolidar su olimpiada nacional, Chile comenzó a enviar equipos a competencias internacionales, primero regionales y iberoamericanas, y luego a la IMO.</li>
+<li><strong>Aprendizaje y primeras distinciones.</strong> En las primeras participaciones, el objetivo fue ganar experiencia frente al altísimo nivel mundial; las primeras distinciones individuales (menciones honoríficas) marcaron avances importantes.</li>
+<li><strong>Consolidación gradual.</strong> Con un sistema de entrenamiento más estable —campamentos, profesores entrenadores y material de estudio—, el rendimiento del país ha tendido a hacerse más sostenido en el tiempo.</li>
+</ol>
+<p>Esta evolución refleja un fenómeno común en el mundo olímpico: <strong>los resultados son fruto de la continuidad del programa</strong>, no de talentos aislados. Cuando un país sostiene sus campamentos y su comunidad de entrenadores año tras año, los logros aparecen con el tiempo.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="📖 ¿Dónde ver el palmarés oficial?">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>📖 ¿Dónde ver el palmarés oficial?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>El sitio oficial de la IMO mantiene el registro completo de <strong>todos</strong> los países y participantes desde 1959: años, sedes, puntajes individuales, medallas y menciones. Es la fuente definitiva para conocer la trayectoria exacta de Chile:</p>
+<ul>
+<li><strong>IMO oficial:</strong> <a href="https://www.imo-official.org">www.imo-official.org</a> — busca a Chile en la sección de países (<em>country results</em>).</li>
+<li><strong>Somachi:</strong> <a href="https://www.olimpiadadematematica.cl">www.olimpiadadematematica.cl</a> — información nacional, convocatorias y problemas.</li>
+</ul>
 </div>
 </div>
 <hr>
 </section>
 <section id="sobre-la-selección-chilena" class="level2">
 <h2 class="anchored" data-anchor-id="sobre-la-selección-chilena">Sobre la selección chilena</h2>
-<p>El proceso de selección es riguroso y tiene varias etapas:</p>
+<p>El proceso de selección es riguroso y consta de varias etapas:</p>
 <ol type="1">
-<li><strong>OMC nacional:</strong> los mejores resultados en la olimpiada nacional</li>
-<li><strong>Entrenamiento intensivo:</strong> campamentos matemáticos organizados por Somachi</li>
-<li><strong>OIM:</strong> participación en la Olimpiada Iberoamericana como entrenamiento</li>
-<li><strong>Selección final:</strong> pruebas de selección para definir los 6 miembros del equipo IMO</li>
+<li><strong>OMC nacional:</strong> los mejores resultados en la olimpiada nacional.</li>
+<li><strong>Entrenamiento intensivo:</strong> campamentos matemáticos de preparación.</li>
+<li><strong>Competencias internacionales de entrenamiento:</strong> participación en la Iberoamericana y la Cono Sur como rodaje frente a problemas de nivel internacional.</li>
+<li><strong>Selección final:</strong> pruebas de selección para definir el equipo que viaja a la IMO.</li>
 </ol>
 <div class="callout callout-style-default callout-tip callout-titled" title="Motivación">
 <div class="callout-header d-flex align-content-center">
@@ -630,27 +681,28 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="callout-body-container callout-body">
 <p>Llegar a representar a Chile en la IMO requiere años de preparación constante. Sin embargo, el proceso de preparación en sí mismo transforma la forma de pensar matemáticamente, independientemente de si se llega o no a la competencia final.</p>
-<p>El objetivo de este material es exactamente eso: ayudarte a desarrollar el pensamiento matemático de competencia.</p>
+<p>El objetivo de este material es exactamente ese: ayudarte a desarrollar el pensamiento matemático de competencia.</p>
 </div>
 </div>
 <hr>
 </section>
-<section id="chile-en-la-oim" class="level2">
-<h2 class="anchored" data-anchor-id="chile-en-la-oim">Chile en la OIM</h2>
-<p>En la <strong>Olimpiada Iberoamericana de Matemáticas (OIM)</strong>, Chile tiene una participación más extensa y ha logrado mejores resultados relativos, obteniendo medallas de plata y bronce en varias ediciones. La OIM es considerada el principal trampolín para la formación de olimpistas chilenos de alto nivel.</p>
+<section id="chile-en-la-iberoamericana-oim" class="level2">
+<h2 class="anchored" data-anchor-id="chile-en-la-iberoamericana-oim">Chile en la Iberoamericana (OIM)</h2>
+<p>En la <strong>Olimpiada Iberoamericana de Matemáticas (OIM)</strong>, Chile tiene una participación más extensa y resultados relativos más favorables que en la IMO, lo cual es esperable: la OIM agrupa a países de un nivel más comparable y plantea problemas de exigencia intermedia entre una olimpiada nacional y la IMO. Por eso se la considera el principal <strong>trampolín</strong> para la formación de olimpistas chilenos de alto nivel.</p>
+<p>Al igual que con la IMO, el detalle de medallas y puntajes por edición debe consultarse en las fuentes oficiales de la OIM y de la Somachi, en lugar de darse por conocido de memoria.</p>
 <hr>
 </section>
 <section id="inspiración-el-camino-de-un-olimpista" class="level2">
 <h2 class="anchored" data-anchor-id="inspiración-el-camino-de-un-olimpista">Inspiración: el camino de un olimpista</h2>
 <p>El recorrido típico de un estudiante chileno que llega a competir internacionalmente:</p>
 <ol type="1">
-<li><strong>Primer contacto</strong> en 7° u 8° básico con la OMC categoría básica</li>
-<li><strong>Preparación sistemática</strong> durante enseñanza media, leyendo libros como este</li>
-<li><strong>Participación en la OMC</strong> categoría media desde 1° medio</li>
-<li><strong>Selección regional y nacional</strong> tras constante mejora</li>
-<li><strong>Campamentos Somachi</strong> con entrenamiento especializado</li>
-<li><strong>OIM</strong> como primer escenario internacional</li>
-<li><strong>IMO</strong> para los más destacados</li>
+<li><strong>Primer contacto</strong> en los últimos años de enseñanza básica con la OMC.</li>
+<li><strong>Preparación sistemática</strong> durante la enseñanza media, leyendo libros como este.</li>
+<li><strong>Participación en la OMC</strong> de enseñanza media, mejorando edición tras edición.</li>
+<li><strong>Selección regional y nacional</strong> tras una mejora constante.</li>
+<li><strong>Campamentos de entrenamiento</strong> con preparación especializada.</li>
+<li><strong>Iberoamericana / Cono Sur</strong> como primer escenario internacional.</li>
+<li><strong>IMO</strong> para los más destacados.</li>
 </ol>
 <div class="callout callout-style-default callout-note callout-titled" title="Mensaje">
 <div class="callout-header d-flex align-content-center">

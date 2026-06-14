@@ -6,10 +6,10 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-acf12a64177840b8d86f2d4f01b2e9fb.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.9.37">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-de63f62b328812d8e578a4d74e282472.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.38">
 
-  <title>Presentaciones - Matematica Olimpica – Inducción</title>
+  <title>Presentaciones - Matematica Olimpica – Inducción Matemática</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -129,18 +129,278 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Inducción</h1>
+  <h1 class="title">Inducción Matemática</h1>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="placeholder" class="slide level2">
-<h2>Placeholder</h2>
-<p>Presentación pendiente para inducción matemática.</p>
-
+<section>
+<section id="inducción-matemática" class="title-slide slide level1 center">
+<h1>Inducción Matemática</h1>
+<p><strong>Capítulo II — Olimpiadas Matemáticas</strong></p>
+<p><em>Cómo demostrar infinitas afirmaciones con un argumento finito.</em></p>
+</section>
+<section id="motivación-el-dominó-infinito" class="slide level2">
+<h2>Motivación: el dominó infinito</h2>
+<p>Imagina una fila infinita de fichas de dominó. ¿Cómo garantizar que <strong>todas</strong> caerán?</p>
+<div class="fragment">
+<p>Basta con dos cosas:</p>
+<ol type="1">
+<li>La <strong>primera</strong> ficha cae.</li>
+<li>Cada ficha, al caer, <strong>empuja a la siguiente</strong>.</li>
+</ol>
+</div>
+<div class="fragment">
+<p>Esa es exactamente la idea de la inducción matemática.</p>
+</div>
+</section>
+<section id="el-problema-de-fondo" class="slide level2">
+<h2>El problema de fondo</h2>
+<p>Muchas afirmaciones tienen la forma:</p>
+<p><span class="math display">\[\text{"para todo } n \in \mathbb{N}, \text{ ocurre } P(n)\text{"}.\]</span></p>
+<div class="fragment">
+<p>No podemos verificarlas una por una: los naturales son <strong>infinitos</strong>.</p>
+<p>La inducción nos da una estrategia finita para cubrir infinitos casos.</p>
+</div>
+</section></section>
+<section>
+<section id="fundamentos" class="title-slide slide level1 center">
+<h1>Fundamentos</h1>
 
 </section>
+<section id="principio-del-buen-orden" class="slide level2">
+<h2>Principio del Buen Orden</h2>
+<div title="Principio del Buen Orden (PBO)">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Principio del Buen Orden (PBO)</strong></p>
+</div>
+<div class="callout-content">
+<p>Todo subconjunto <strong>no vacío</strong> <span class="math inline">\(S \subseteq \mathbb{N}\)</span> posee un elemento mínimo: existe <span class="math inline">\(m \in S\)</span> con <span class="math inline">\(m \le s\)</span> para todo <span class="math inline">\(s \in S\)</span>.</p>
+</div>
+</div>
+</div>
+</div>
+<p>No se puede “descender” infinitamente dentro de <span class="math inline">\(\mathbb{N}\)</span>.</p>
+<p>Es el axioma sobre el que descansa toda la inducción.</p>
+</section>
+<section id="inducción-débil" class="slide level2">
+<h2>Inducción débil</h2>
+<div title="Principio de inducción débil">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Principio de inducción débil</strong></p>
+</div>
+<div class="callout-content">
+<p>Sea <span class="math inline">\(P(n)\)</span> definida para <span class="math inline">\(n \ge n_0\)</span>. Si</p>
+<ol type="1">
+<li><strong>Paso base:</strong> <span class="math inline">\(P(n_0)\)</span> es verdadera, y</li>
+<li><strong>Paso inductivo:</strong> <span class="math inline">\(P(k) \Rightarrow P(k+1)\)</span> para todo <span class="math inline">\(k \ge n_0\)</span>,</li>
+</ol>
+<p>entonces <span class="math inline">\(P(n)\)</span> es verdadera para todo <span class="math inline">\(n \ge n_0\)</span>.</p>
+</div>
+</div>
+</div>
+</div>
+<p>A “<span class="math inline">\(P(k)\)</span> es verdadera” se le llama <strong>hipótesis inductiva (HI)</strong>.</p>
+</section>
+<section id="el-caso-base-no-es-opcional" class="slide level2">
+<h2>El caso base no es opcional</h2>
+<p>Sin el paso base, el paso inductivo solo encadena afirmaciones que <strong>podrían ser todas falsas</strong>.</p>
+<div class="fragment">
+<p>Es la primera ficha de dominó: si nadie la empuja, ninguna cae.</p>
+<p>Verificarlo es lo primero que debes hacer siempre.</p>
+</div>
+</section>
+<section id="inducción-fuerte" class="slide level2">
+<h2>Inducción fuerte</h2>
+<div title="Principio de inducción fuerte">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Principio de inducción fuerte</strong></p>
+</div>
+<div class="callout-content">
+<p>Si <span class="math inline">\(P(n_0)\)</span> es verdadera y, para todo <span class="math inline">\(k \ge n_0\)</span>,</p>
+<p><span class="math display">\[P(n_0), P(n_0+1), \dots, P(k) \ \Rightarrow\ P(k+1),\]</span></p>
+<p>entonces <span class="math inline">\(P(n)\)</span> vale para todo <span class="math inline">\(n \ge n_0\)</span>.</p>
+</div>
+</div>
+</div>
+</div>
+<p>Útil cuando para probar <span class="math inline">\(P(k+1)\)</span> necesitamos <strong>toda la historia previa</strong>, no solo <span class="math inline">\(P(k)\)</span>.</p>
+</section>
+<section id="variantes-útiles" class="slide level2">
+<h2>Variantes útiles</h2>
+<ul>
+<li><strong>Paso base múltiple:</strong> si la recurrencia usa los <span class="math inline">\(j\)</span> términos previos (ej. <span class="math inline">\(a_n = a_{n-1}+a_{n-2}\)</span>), se verifican <span class="math inline">\(j\)</span> casos base.</li>
+</ul>
+<div class="fragment">
+<ul>
+<li><strong>Inducción hacia atrás (Cauchy):</strong> se prueba <span class="math inline">\(P(n)\)</span> para infinitos valores (ej. <span class="math inline">\(n = 2^m\)</span>) y luego <span class="math inline">\(P(n) \Rightarrow P(n-1)\)</span>.</li>
+</ul>
+</div>
+<div class="fragment">
+<p>Esta última es la base de la demostración clásica de <strong>AM–GM</strong>.</p>
+</div>
+</section></section>
+<section>
+<section id="aplicaciones" class="title-slide slide level1 center">
+<h1>Aplicaciones</h1>
+
+</section>
+<section id="progresión-aritmética" class="slide level2">
+<h2>Progresión aritmética</h2>
+<div title="Definición">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Definición</strong></p>
+</div>
+<div class="callout-content">
+<p><span class="math inline">\((a_n)\)</span> es aritmética si <span class="math inline">\(a_{n+1} = a_n + d\)</span>, con diferencia común <span class="math inline">\(d\)</span>. Término general: <span class="math inline">\(a_n = a_1 + (n-1)d\)</span>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="fragment">
+<p>Suma de los primeros <span class="math inline">\(n\)</span> términos (truco de Gauss):</p>
+<p><span class="math display">\[S_n = \sum_{k=1}^{n} a_k = \frac{n\,(a_1 + a_n)}{2}.\]</span></p>
+</div>
+</section>
+<section id="progresión-geométrica" class="slide level2">
+<h2>Progresión geométrica</h2>
+<div title="Definición">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Definición</strong></p>
+</div>
+<div class="callout-content">
+<p><span class="math inline">\((g_n)\)</span> es geométrica si <span class="math inline">\(g_{n+1} = r\,g_n\)</span>, con razón <span class="math inline">\(r \neq 0\)</span>. Término general: <span class="math inline">\(g_n = g_1 r^{n-1}\)</span>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="fragment">
+<p>Suma geométrica finita (para <span class="math inline">\(r \neq 1\)</span>):</p>
+<p><span class="math display">\[\sum_{k=0}^{n-1} g_1 r^{k} = g_1\,\frac{r^{n}-1}{r-1}.\]</span></p>
+</div>
+</section>
+<section id="la-sucesión-de-fibonacci" class="slide level2">
+<h2>La sucesión de Fibonacci</h2>
+<div title="Definición">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Definición</strong></p>
+</div>
+<div class="callout-content">
+<p><span class="math display">\[F_1 = 1,\quad F_2 = 1,\quad F_{n+2} = F_{n+1} + F_n.\]</span></p>
+</div>
+</div>
+</div>
+</div>
+<p>Primeros términos: <span class="math inline">\(1, 1, 2, 3, 5, 8, 13, 21, 34, \dots\)</span></p>
+<div class="fragment">
+<p>Un terreno de juego ideal para la inducción: infinidad de identidades elegantes, como la suma <span class="math inline">\(\sum_{k=1}^{n} F_k = F_{n+2} - 1\)</span>.</p>
+</div>
+</section></section>
+<section>
+<section id="ejemplos-resueltos" class="title-slide slide level1 center">
+<h1>Ejemplos resueltos</h1>
+
+</section>
+<section id="ejemplo-1-problema-y-estrategia" class="slide level2">
+<h2>Ejemplo 1 — Problema y estrategia</h2>
+<p><strong>Problema:</strong> Demostrar que la suma de los primeros <span class="math inline">\(n\)</span> impares es un cuadrado:</p>
+<p><span class="math display">\[\sum_{k=1}^{n} (2k-1) = n^2, \qquad n \ge 1.\]</span></p>
+<div class="fragment">
+<p><strong>Estrategia:</strong> Inducción débil sobre <span class="math inline">\(n\)</span>, sumando el siguiente impar a la HI.</p>
+</div>
+</section>
+<section id="ejemplo-1-solución" class="slide level2">
+<h2>Ejemplo 1 — Solución</h2>
+<p><strong>Base.</strong> <span class="math inline">\(n=1\)</span>: <span class="math inline">\(\ 2\cdot 1 - 1 = 1 = 1^2\)</span>. Verdadero.</p>
+<div class="fragment">
+<p><strong>Paso inductivo.</strong> Supongamos <span class="math inline">\(\displaystyle\sum_{k=1}^{n} (2k-1) = n^2\)</span> (HI). Entonces</p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[\sum_{k=1}^{n+1}(2k-1) = \underbrace{n^2}_{\text{HI}} + \big(2(n+1)-1\big) = n^2 + 2n + 1.\]</span></p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[= (n+1)^2. \qquad \blacksquare\]</span></p>
+</div>
+</section>
+<section id="ejemplo-2-problema-y-estrategia" class="slide level2">
+<h2>Ejemplo 2 — Problema y estrategia</h2>
+<p><strong>Problema:</strong> La sucesión <span class="math inline">\(a_1 = 1\)</span>, <span class="math inline">\(a_2 = 3\)</span>, <span class="math inline">\(\ a_{n+2} = 3a_{n+1} - 2a_n\)</span> cumple</p>
+<p><span class="math display">\[a_n = 2^n - 1 \quad \text{para todo } n \ge 1.\]</span></p>
+<div class="fragment">
+<p><strong>Estrategia:</strong> La recurrencia usa <strong>dos</strong> términos previos: verificamos dos casos base y aplicamos inducción fuerte con paso base múltiple.</p>
+</div>
+</section>
+<section id="ejemplo-2-solución" class="slide level2">
+<h2>Ejemplo 2 — Solución</h2>
+<p><strong>Base.</strong> <span class="math inline">\(a_1 = 1 = 2^1 - 1\)</span> y <span class="math inline">\(a_2 = 3 = 2^2 - 1\)</span>. Verdadero.</p>
+<div class="fragment">
+<p><strong>Paso inductivo.</strong> Supongamos <span class="math inline">\(a_k = 2^k - 1\)</span> y <span class="math inline">\(a_{k+1} = 2^{k+1} - 1\)</span> (HI).</p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[a_{k+2} = 3(2^{k+1}-1) - 2(2^k - 1) = 3\cdot 2^{k+1} - 2^{k+1} - 1.\]</span></p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[= 2\cdot 2^{k+1} - 1 = 2^{k+2} - 1. \qquad \blacksquare\]</span></p>
+</div>
+</section></section>
+<section>
+<section id="cierre" class="title-slide slide level1 center">
+<h1>Cierre</h1>
+
+</section>
+<section id="ideas-clave" class="slide level2">
+<h2>Ideas clave</h2>
+<ul>
+<li>La inducción demuestra infinitas afirmaciones con un argumento finito.</li>
+<li>Toda inducción descansa en el <strong>Principio del Buen Orden</strong>.</li>
+<li>Siempre se necesitan <strong>paso base</strong> y <strong>paso inductivo</strong>: ninguno es opcional.</li>
+<li>La inducción <strong>fuerte</strong> usa todos los casos anteriores; las variantes (paso base múltiple, hacia atrás) se adaptan a cada recurrencia.</li>
+<li>Progresiones y Fibonacci son aplicaciones naturales.</li>
+</ul>
+</section>
+<section id="para-practicar" class="slide level2">
+<h2>Para practicar</h2>
+<ol type="1">
+<li>⭐ <span class="math inline">\(\displaystyle\sum_{k=1}^{n} k = \frac{n(n+1)}{2}\)</span>.</li>
+<li>⭐⭐ <span class="math inline">\(2^n &gt; n\)</span> para todo <span class="math inline">\(n \ge 1\)</span>.</li>
+<li>⭐⭐ <span class="math inline">\(\displaystyle\sum_{k=1}^{n} F_k^{\,2} = F_n\,F_{n+1}\)</span>.</li>
+<li>⭐⭐⭐ Desigualdad de Bernoulli: <span class="math inline">\((1+x)^n \ge 1 + nx\)</span> para <span class="math inline">\(x \ge -1\)</span>.</li>
+<li>🏆 Si <span class="math inline">\(a_1 = 1\)</span> y <span class="math inline">\(a_{n+1} = \sqrt{2 + a_n}\)</span>, probar que <span class="math inline">\(a_n &lt; 2\)</span> y que la sucesión es creciente.</li>
+</ol>
+
+
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">

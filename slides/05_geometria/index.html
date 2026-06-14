@@ -6,10 +6,10 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-acf12a64177840b8d86f2d4f01b2e9fb.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.9.37">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-de63f62b328812d8e578a4d74e282472.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.38">
 
-  <title>Presentaciones - Matematica Olimpica – Geometría</title>
+  <title>Presentaciones - Matematica Olimpica – Elementos de Geometría</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -129,18 +129,228 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Geometría</h1>
+  <h1 class="title">Elementos de Geometría</h1>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="placeholder" class="slide level2">
-<h2>Placeholder</h2>
-<p>Presentación pendiente para geometría.</p>
-
+<section id="geometría-sintética-del-plano" class="slide level2 center">
+<h2>Geometría sintética del plano</h2>
+<p>Triángulos, circunferencias y centros notables.</p>
+<p>El arte de <em>ver</em> la relación correcta: un ángulo que se repite, una circunferencia que pasa por cuatro puntos, tres cevianas que concurren.</p>
+<div class="fragment">
+<p>El reto rara vez está en la cuenta difícil, sino en elegir la herramienta adecuada.</p>
+</div>
+</section>
+<section id="un-problema-elegante" class="slide level2 center">
+<h2>Un problema elegante</h2>
+<div title="Problema (triángulo equilátero)">
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Problema (triángulo equilátero)</strong></p>
+</div>
+<div class="callout-content">
+<p>Sea <span class="math inline">\(\triangle ABC\)</span> equilátero inscrito en una circunferencia y <span class="math inline">\(P\)</span> un punto del arco <span class="math inline">\(BC\)</span> que no contiene a <span class="math inline">\(A\)</span>. Probar que <span class="math display">\[PA = PB + PC.\]</span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="fragment">
+<p>¿Cómo conectar tres distancias a los vértices con una sola igualdad? La clave estará en un cuadrilátero cíclico.</p>
+</div>
+</section>
+<section>
+<section id="conceptos-básicos" class="title-slide slide level1 center">
+<h1>Conceptos básicos</h1>
 
 </section>
+<section id="ángulos-y-persecución" class="slide level2 center">
+<h2>Ángulos y persecución</h2>
+<ul>
+<li>La suma de los ángulos interiores de un triángulo es <span class="math inline">\(180^\circ\)</span>.</li>
+<li>Entre dos paralelas cortadas por una transversal: los <strong>alternos internos</strong> y los <strong>correspondientes</strong> son iguales.</li>
+</ul>
+<div class="fragment">
+<p>Esta única propiedad es la base de casi toda la <em>persecución de ángulos</em> (angle chasing).</p>
+</div>
+</section>
+<section id="congruencia" class="slide level2 center">
+<h2>Congruencia</h2>
+<p>Dos triángulos son <strong>congruentes</strong> (<span class="math inline">\(\triangle ABC \cong \triangle A'B'C'\)</span>) si lados y ángulos correspondientes coinciden.</p>
+<p>Criterios clásicos:</p>
+<ul>
+<li><strong>LLL</strong> — los tres lados.</li>
+<li><strong>LAL</strong> — dos lados y el ángulo comprendido.</li>
+<li><strong>ALA</strong> — dos ángulos y el lado común.</li>
+</ul>
+</section>
+<section id="semejanza" class="slide level2 center">
+<h2>Semejanza</h2>
+<p>Dos triángulos son <strong>semejantes</strong> (<span class="math inline">\(\triangle ABC \sim \triangle A'B'C'\)</span>) si sus ángulos son iguales y sus lados proporcionales: <span class="math display">\[\frac{A'B'}{AB}=\frac{B'C'}{BC}=\frac{C'A'}{CA}=k.\]</span></p>
+<div class="fragment">
+<p>Criterios: <strong>AA</strong>, <strong>LAL</strong> proporcional y <strong>LLL</strong> proporcional. La razón <span class="math inline">\(k\)</span> controla las longitudes.</p>
+</div>
+</section></section>
+<section>
+<section id="pitágoras-y-tales" class="title-slide slide level1 center">
+<h1>Pitágoras y Tales</h1>
+
+</section>
+<section id="teorema-de-pitágoras" class="slide level2 center">
+<h2>Teorema de Pitágoras</h2>
+<p>En un triángulo rectángulo de catetos <span class="math inline">\(a,b\)</span> e hipotenusa <span class="math inline">\(c\)</span>: <span class="math display">\[a^2+b^2=c^2.\]</span></p>
+<div class="fragment">
+<p><strong>Idea (por áreas):</strong> cuatro copias del triángulo en un cuadrado de lado <span class="math inline">\(a+b\)</span> dejan al centro un cuadrado de lado <span class="math inline">\(c\)</span>. Igualando áreas, <span class="math inline">\((a+b)^2 = 2ab + c^2\)</span>.</p>
+</div>
+</section>
+<section id="teorema-de-tales" class="slide level2 center">
+<h2>Teorema de Tales</h2>
+<p>Si en <span class="math inline">\(\triangle ABC\)</span> una recta paralela a <span class="math inline">\(\overline{BC}\)</span> corta a <span class="math inline">\(\overline{AB}\)</span> en <span class="math inline">\(D\)</span> y a <span class="math inline">\(\overline{AC}\)</span> en <span class="math inline">\(E\)</span>: <span class="math display">\[\frac{AD}{DB}=\frac{AE}{EC}.\]</span></p>
+<div class="fragment">
+<p>Sale de la semejanza <span class="math inline">\(\triangle ADE \sim \triangle ABC\)</span> (criterio AA): las paralelas crean ángulos iguales.</p>
+</div>
+</section></section>
+<section>
+<section id="la-circunferencia" class="title-slide slide level1 center">
+<h1>La circunferencia</h1>
+
+</section>
+<section id="ángulo-inscrito" class="slide level2 center">
+<h2>Ángulo inscrito</h2>
+<p>Un ángulo <strong>inscrito</strong> mide la mitad del ángulo <strong>central</strong> que subtiende el mismo arco.</p>
+<div class="fragment">
+<p>Consecuencia decisiva: todos los ángulos inscritos que abarcan un mismo arco son <strong>iguales</strong>. Por eso aparecen igualdades de ángulos “gratis” en cada circunferencia.</p>
+</div>
+</section>
+<section id="cuadriláteros-cíclicos" class="slide level2 center">
+<h2>Cuadriláteros cíclicos</h2>
+<p>Un cuadrilátero convexo <span class="math inline">\(ABCD\)</span> es <strong>cíclico</strong> si y solo si sus ángulos opuestos son suplementarios: <span class="math display">\[\angle A + \angle C = 180^\circ.\]</span></p>
+<div class="fragment">
+<p>Equivalente útil: <span class="math inline">\(\angle ACB = \angle ADB\)</span> (ven el mismo segmento <span class="math inline">\(\overline{AB}\)</span> desde el mismo lado). Detectar un cíclico es la mitad del problema.</p>
+</div>
+</section></section>
+<section>
+<section id="puntos-notables" class="title-slide slide level1 center">
+<h1>Puntos notables</h1>
+
+</section>
+<section id="los-cuatro-centros" class="slide level2 center">
+<h2>Los cuatro centros</h2>
+<ul>
+<li><strong>Baricentro</strong> <span class="math inline">\(G\)</span>: corte de las <strong>medianas</strong>; divide cada una en razón <span class="math inline">\(2:1\)</span> desde el vértice.</li>
+<li><strong>Incentro</strong> <span class="math inline">\(I\)</span>: corte de las <strong>bisectrices internas</strong>; centro del incírculo.</li>
+<li><strong>Circuncentro</strong> <span class="math inline">\(O\)</span>: corte de las <strong>mediatrices</strong>; centro del circuncírculo.</li>
+<li><strong>Ortocentro</strong> <span class="math inline">\(H\)</span>: corte de las <strong>alturas</strong>.</li>
+</ul>
+</section>
+<section id="área-e-inradio" class="slide level2 center">
+<h2>Área e inradio</h2>
+<p>Si <span class="math inline">\([ABC]\)</span> es el área, <span class="math inline">\(s\)</span> el semiperímetro y <span class="math inline">\(r\)</span> el inradio: <span class="math display">\[[ABC] = r\,s.\]</span></p>
+<div class="fragment">
+<p>Se ve uniendo <span class="math inline">\(I\)</span> con los tres vértices: el triángulo queda partido en tres de bases <span class="math inline">\(a,b,c\)</span> y altura común <span class="math inline">\(r\)</span>.</p>
+</div>
+</section></section>
+<section>
+<section id="ceva-y-menelao" class="title-slide slide level1 center">
+<h1>Ceva y Menelao</h1>
+
+</section>
+<section id="teorema-de-ceva" class="slide level2 center">
+<h2>Teorema de Ceva</h2>
+<p>Para <span class="math inline">\(D,E,F\)</span> en los lados <span class="math inline">\(\overline{BC},\overline{CA},\overline{AB}\)</span> de <span class="math inline">\(\triangle ABC\)</span>, las cevianas <span class="math inline">\(AD,BE,CF\)</span> <strong>concurren</strong> si y solo si <span class="math display">\[\frac{BD}{DC}\cdot \frac{CE}{EA}\cdot \frac{AF}{FB}=1.\]</span></p>
+<p>La herramienta reina de los problemas de <strong>concurrencia</strong>.</p>
+</section>
+<section id="teorema-de-menelao" class="slide level2 center">
+<h2>Teorema de Menelao</h2>
+<p>Si una recta corta a los lados (o prolongaciones) en <span class="math inline">\(D,E,F\)</span>, con longitudes dirigidas: <span class="math display">\[\frac{BD}{DC}\cdot \frac{CE}{EA}\cdot \frac{AF}{FB}=-1.\]</span></p>
+<div class="fragment">
+<p>Mismo producto que Ceva, pero el <strong>signo</strong> <span class="math inline">\(-1\)</span> distingue <strong>colinealidad</strong> de concurrencia.</p>
+</div>
+</section></section>
+<section>
+<section id="ptolomeo-euler-y-nueve-puntos" class="title-slide slide level1 center">
+<h1>Ptolomeo, Euler y nueve puntos</h1>
+
+</section>
+<section id="teorema-de-ptolomeo" class="slide level2 center">
+<h2>Teorema de Ptolomeo</h2>
+<p>En un cuadrilátero cíclico <span class="math inline">\(ABCD\)</span>: <span class="math display">\[AC \cdot BD = AB \cdot CD + BC \cdot AD.\]</span></p>
+<div class="fragment">
+<p>En general vale la <strong>desigualdad</strong> <span class="math inline">\(AC\cdot BD \le AB\cdot CD + BC\cdot AD\)</span>, con igualdad si y solo si <span class="math inline">\(ABCD\)</span> es cíclico.</p>
+</div>
+</section>
+<section id="recta-de-euler-y-nueve-puntos" class="slide level2 center">
+<h2>Recta de Euler y nueve puntos</h2>
+<p>En todo triángulo no equilátero, <span class="math inline">\(H\)</span>, <span class="math inline">\(G\)</span> y <span class="math inline">\(O\)</span> son <strong>colineales</strong> (recta de Euler), con <span class="math display">\[HG = 2\,GO.\]</span></p>
+<div class="fragment">
+<p>La <strong>circunferencia de los nueve puntos</strong> pasa por los puntos medios de los lados, los pies de las alturas y los puntos medios de <span class="math inline">\(\overline{AH},\overline{BH},\overline{CH}\)</span>. Su centro <span class="math inline">\(N\)</span> es el punto medio de <span class="math inline">\(\overline{OH}\)</span> y su radio es <span class="math inline">\(R/2\)</span>.</p>
+</div>
+</section></section>
+<section>
+<section id="ejemplo-trabajado" class="title-slide slide level1 center">
+<h1>Ejemplo trabajado</h1>
+
+</section>
+<section id="problema-y-estrategia" class="slide level2 center">
+<h2>Problema y estrategia</h2>
+<div title="Problema">
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Problema</strong></p>
+</div>
+<div class="callout-content">
+<p><span class="math inline">\(\triangle ABC\)</span> equilátero inscrito en una circunferencia; <span class="math inline">\(P\)</span> está en el arco <span class="math inline">\(BC\)</span> que no contiene a <span class="math inline">\(A\)</span>. Probar que <span class="math inline">\(PA = PB + PC\)</span>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="fragment">
+<p><strong>Estrategia:</strong> el cuadrilátero <span class="math inline">\(ABPC\)</span> es <strong>cíclico</strong>. Aplicamos <strong>Ptolomeo</strong> y usamos que el triángulo es equilátero.</p>
+</div>
+</section>
+<section id="solución" class="slide level2 center">
+<h2>Solución</h2>
+<p>Por Ptolomeo en el cíclico <span class="math inline">\(ABPC\)</span>: <span class="math display">\[PA\cdot BC = PB\cdot AC + PC\cdot AB.\]</span></p>
+<div class="fragment">
+<p>Como <span class="math inline">\(\triangle ABC\)</span> es equilátero, <span class="math inline">\(AB=BC=CA=\ell\)</span>: <span class="math display">\[PA\cdot \ell = PB\cdot \ell + PC\cdot \ell.\]</span></p>
+</div>
+<div class="fragment">
+<p>Dividiendo por <span class="math inline">\(\ell\)</span>: <span class="math display">\[PA = PB + PC. \qquad \blacksquare\]</span></p>
+</div>
+</section>
+<section id="ideas-clave" class="slide level2 center">
+<h2>Ideas clave</h2>
+<ul>
+<li>La <strong>persecución de ángulos</strong> convierte una figura en igualdades.</li>
+<li>En una circunferencia, ángulos inscritos sobre un mismo arco son iguales.</li>
+<li>Detectar un <strong>cuadrilátero cíclico</strong> suele desbloquear el problema.</li>
+<li><strong>Ceva</strong> <span class="math inline">\(\Rightarrow\)</span> concurrencia; <strong>Menelao</strong> <span class="math inline">\(\Rightarrow\)</span> colinealidad.</li>
+<li><span class="math inline">\(H\)</span>, <span class="math inline">\(G\)</span>, <span class="math inline">\(O\)</span> viven en la <strong>recta de Euler</strong> con <span class="math inline">\(HG=2\,GO\)</span>.</li>
+</ul>
+</section>
+<section id="para-practicar" class="slide level2 center">
+<h2>Para practicar</h2>
+<ol type="1">
+<li>⭐ Mediana a la hipotenusa de un triángulo rectángulo de catetos <span class="math inline">\(5\)</span> y <span class="math inline">\(12\)</span>.</li>
+<li>⭐⭐ Con la bisectriz: si <span class="math inline">\(AB=6\)</span>, <span class="math inline">\(AC=4\)</span>, <span class="math inline">\(BC=8\)</span>, hallar <span class="math inline">\(BD\)</span> y <span class="math inline">\(DC\)</span>.</li>
+<li>⭐⭐⭐ Cevianas con <span class="math inline">\(\frac{BD}{DC}=2\)</span> y <span class="math inline">\(\frac{CE}{EA}=3\)</span>: hallar <span class="math inline">\(\frac{AF}{FB}\)</span>.</li>
+<li>🏆 Probar que el reflejo del ortocentro <span class="math inline">\(H\)</span> respecto de un lado está en el circuncírculo.</li>
+</ol>
+<div class="fragment">
+<p><em>¡A dibujar y a perseguir ángulos!</em></p>
+</div>
+
+
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">

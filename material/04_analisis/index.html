@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -42,14 +42,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-d94f5170875b5f4e5e85b640af280440.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-8643a97c649ad291516e98d9f79c0f71.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-d94f5170875b5f4e5e85b640af280440.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-6d55e81a42a89dd3690061c0dc3512a0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-e28859dc7ca6002e82041f7faca5f3dd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-6d55e81a42a89dd3690061c0dc3512a0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -513,7 +513,10 @@ window.Quarto = {
   <ul>
   <li><a href="#presentación" id="toc-presentación" class="nav-link active" data-scroll-target="#presentación">Presentación</a></li>
   <li><a href="#objetivos-del-capítulo" id="toc-objetivos-del-capítulo" class="nav-link" data-scroll-target="#objetivos-del-capítulo">Objetivos del capítulo</a></li>
+  <li><a href="#subtemas" id="toc-subtemas" class="nav-link" data-scroll-target="#subtemas">Subtemas</a></li>
+  <li><a href="#prerrequisitos" id="toc-prerrequisitos" class="nav-link" data-scroll-target="#prerrequisitos">Prerrequisitos</a></li>
   <li><a href="#contenidos" id="toc-contenidos" class="nav-link" data-scroll-target="#contenidos">Contenidos</a></li>
+  <li><a href="#referencia-al-libro-base" id="toc-referencia-al-libro-base" class="nav-link" data-scroll-target="#referencia-al-libro-base">Referencia al libro base</a></li>
   </ul>
 </nav>
     </div>
@@ -542,15 +545,40 @@ window.Quarto = {
 
 <section id="presentación" class="level2">
 <h2 class="anchored" data-anchor-id="presentación">Presentación</h2>
-<p>En olimpíadas, el análisis elemental no se centra en límites complicados, sino en comprender con precisión a los números racionales y reales, sus desarrollos decimales y distintas representaciones.</p>
+<p>En olimpíadas, el análisis elemental no se centra en límites complicados, sino en comprender con precisión a los números racionales y reales, sus desarrollos decimales y distintas representaciones. Muchos problemas que parecen difíciles se vuelven transparentes cuando entendemos bien qué es un número racional, por qué <span class="math inline">\(\sqrt{2}\)</span> no lo es, o cómo una suma infinita puede dar un valor finito.</p>
+<p>Este capítulo cubre la sección de análisis del libro base <em>Matemática y Olimpíadas</em> (Sociedad de Matemáticas de Chile, Somachi, 1994), enfatizando las herramientas que aparecen una y otra vez en competencias: densidad de <span class="math inline">\(\mathbb{Q}\)</span>, irracionalidad, series geométricas, expansiones decimales, representación en base <span class="math inline">\(p\)</span> y desigualdades clásicas como AM-GM.</p>
 </section>
 <section id="objetivos-del-capítulo" class="level2">
 <h2 class="anchored" data-anchor-id="objetivos-del-capítulo">Objetivos del capítulo</h2>
 <ul>
-<li>Entender el orden en <span class="math inline">\(\mathbb{Q}\)</span> y en <span class="math inline">\(\mathbb{R}\)</span>.</li>
-<li>Trabajar con series geométricas y expansiones decimales.</li>
-<li>Estudiar representaciones en distintas bases.</li>
-<li>Aplicar estas ideas a problemas de estimación.</li>
+<li>Entender el orden en <span class="math inline">\(\mathbb{Q}\)</span> y demostrar la densidad de los racionales.</li>
+<li>Demostrar la irracionalidad de <span class="math inline">\(\sqrt{2}\)</span> y reconocer el método.</li>
+<li>Comprender la completitud de <span class="math inline">\(\mathbb{R}\)</span> mediante supremo e ínfimo.</li>
+<li>Trabajar con series geométricas finitas e infinitas y el criterio <span class="math inline">\(|r|&lt;1\)</span>.</li>
+<li>Convertir entre expansiones decimales periódicas y fracciones.</li>
+<li>Estudiar la representación de un número en base <span class="math inline">\(p&gt;1\)</span>.</li>
+<li>Aplicar la desigualdad AM-GM a problemas de estimación y optimización.</li>
+</ul>
+</section>
+<section id="subtemas" class="level2">
+<h2 class="anchored" data-anchor-id="subtemas">Subtemas</h2>
+<ul>
+<li>Números racionales y su orden; densidad de <span class="math inline">\(\mathbb{Q}\)</span>.</li>
+<li>Irracionalidad: el caso de <span class="math inline">\(\sqrt{2}\)</span>.</li>
+<li>Números reales y completitud: supremo e ínfimo.</li>
+<li>Series geométricas (finita e infinita).</li>
+<li>Aproximaciones decimales y decimales periódicos.</li>
+<li>Representación de un número en base <span class="math inline">\(p&gt;1\)</span>.</li>
+<li>Desigualdades clásicas: la media aritmética y la media geométrica.</li>
+</ul>
+</section>
+<section id="prerrequisitos" class="level2">
+<h2 class="anchored" data-anchor-id="prerrequisitos">Prerrequisitos</h2>
+<ul>
+<li>Operaciones con fracciones y manejo algebraico básico.</li>
+<li>Nociones de divisibilidad y números primos (Capítulo I).</li>
+<li>Principio de inducción matemática (Capítulo II), útil para series y desigualdades.</li>
+<li>Familiaridad con el orden de los números y la recta numérica.</li>
 </ul>
 </section>
 <section id="contenidos" class="level2">
@@ -565,7 +593,7 @@ window.Quarto = {
 <tbody>
 <tr class="odd">
 <td><a href="../../material/04_analisis/01_teoria.html">Teoría</a></td>
-<td>Números, orden y representaciones</td>
+<td>Números, orden, completitud y representaciones</td>
 </tr>
 <tr class="even">
 <td><a href="../../material/04_analisis/02_ejemplos.html">Ejemplos</a></td>
@@ -577,6 +605,10 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
+</section>
+<section id="referencia-al-libro-base" class="level2">
+<h2 class="anchored" data-anchor-id="referencia-al-libro-base">Referencia al libro base</h2>
+<p>Este capítulo adapta y amplía el <strong>Capítulo IV — Elementos de Análisis</strong> de <em>Matemática y Olimpíadas</em> (Sociedad de Matemáticas de Chile, Somachi, 1994), en particular la sección §IV.4 de problemas resueltos.</p>
 
 
 </section>

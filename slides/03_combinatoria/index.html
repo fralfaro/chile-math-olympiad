@@ -6,10 +6,10 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-acf12a64177840b8d86f2d4f01b2e9fb.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.9.37">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-de63f62b328812d8e578a4d74e282472.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.38">
 
-  <title>Presentaciones - Matematica Olimpica – Combinatoria</title>
+  <title>Presentaciones - Matematica Olimpica – Elementos de Combinatoria</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -129,18 +129,188 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Combinatoria</h1>
+  <h1 class="title">Elementos de Combinatoria</h1>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="placeholder" class="slide level2">
-<h2>Placeholder</h2>
-<p>Presentación pendiente para combinatoria.</p>
-
+<section>
+<section id="combinatoria-contar-sin-enumerar" class="title-slide slide level1 center">
+<h1>Combinatoria: contar sin enumerar</h1>
+<p><strong>Capítulo III — Olimpiadas Matemáticas</strong></p>
+<p>Contar, ordenar y seleccionar.</p>
+<p>La idea central: <strong>descomponer</strong> una configuración complicada en decisiones simples y combinar los resultados.</p>
+</section>
+<section id="un-problema-para-empezar" class="slide level2">
+<h2>Un problema para empezar</h2>
+<blockquote>
+<p>Repartimos <span class="math inline">\(30\)</span> personas según su mes de nacimiento. ¿Podemos garantizar que <strong>al menos <span class="math inline">\(3\)</span></strong> nacieron el mismo mes?</p>
+</blockquote>
+<div class="fragment">
+<p>Sí, y no necesitamos conocer ningún cumpleaños.</p>
+</div>
+<div class="fragment">
+<p>Hay <span class="math inline">\(12\)</span> meses (cajas) y <span class="math inline">\(30\)</span> personas (objetos): algún mes alberga al menos <span class="math inline">\(\lceil 30/12 \rceil = 3\)</span> personas. Es el <strong>principio del palomar</strong>.</p>
+</div>
+</section></section>
+<section>
+<section id="los-dos-principios-fundamentales" class="title-slide slide level1 center">
+<h1>Los dos principios fundamentales</h1>
 
 </section>
+<section id="principio-de-la-suma" class="slide level2">
+<h2>Principio de la suma</h2>
+<p>Opciones que son <strong>alternativas excluyentes</strong> se <strong>suman</strong>.</p>
+<p>Si <span class="math inline">\(A_1,\dots,A_r\)</span> son conjuntos finitos disjuntos dos a dos:</p>
+<p><span class="math display">\[\left| \bigcup_{i=1}^{r} A_i \right| = \sum_{i=1}^{r} |A_i|.\]</span></p>
+<p><em>Ejemplo:</em> elegir un postre del menu, sea de los <span class="math inline">\(3\)</span> pasteles o de las <span class="math inline">\(2\)</span> frutas: <span class="math inline">\(3 + 2 = 5\)</span> opciones.</p>
+</section>
+<section id="principio-del-producto" class="slide level2">
+<h2>Principio del producto</h2>
+<p>Etapas <strong>sucesivas e independientes</strong> se <strong>multiplican</strong>.</p>
+<p>Con <span class="math inline">\(n_1\)</span> opciones en la primera etapa, <span class="math inline">\(n_2\)</span> en la segunda, …, <span class="math inline">\(n_r\)</span> en la <span class="math inline">\(r\)</span>-ésima:</p>
+<p><span class="math display">\[n_1 \cdot n_2 \cdots n_r = \prod_{i=1}^{r} n_i.\]</span></p>
+<p><em>Consecuencia:</em> hay <span class="math inline">\(n^k\)</span> funciones <span class="math inline">\(f:A\to B\)</span> con <span class="math inline">\(|A|=k\)</span>, <span class="math inline">\(|B|=n\)</span>, y <span class="math inline">\(2^n\)</span> subconjuntos de un conjunto de <span class="math inline">\(n\)</span> elementos.</p>
+</section></section>
+<section>
+<section id="ordenar-y-seleccionar" class="title-slide slide level1 center">
+<h1>Ordenar y seleccionar</h1>
+
+</section>
+<section id="variaciones" class="slide level2">
+<h2>Variaciones</h2>
+<p>El <strong>orden importa</strong> y no usamos todos los elementos.</p>
+<p><strong>Sin repetición</strong> (elementos distintos):</p>
+<p><span class="math display">\[V(n,k) = n(n-1)\cdots(n-k+1) = \frac{n!}{(n-k)!}.\]</span></p>
+<p><strong>Con repetición</strong> (se permite repetir):</p>
+<p><span class="math display">\[VR(n,k) = n^k.\]</span></p>
+</section>
+<section id="permutaciones-lineales" class="slide level2">
+<h2>Permutaciones lineales</h2>
+<p>Ordenamiento completo de <span class="math inline">\(n\)</span> objetos distintos en fila:</p>
+<p><span class="math display">\[P(n) = n! = n(n-1)\cdots 2 \cdot 1, \qquad 0! = 1.\]</span></p>
+<p>Es el caso <span class="math inline">\(k = n\)</span> de las variaciones: usamos <strong>todos</strong> los elementos.</p>
+</section>
+<section id="permutaciones-cíclicas-y-con-repetición" class="slide level2">
+<h2>Permutaciones cíclicas y con repetición</h2>
+<p><strong>Cíclicas</strong> (<span class="math inline">\(n\)</span> objetos en círculo, rotaciones iguales):</p>
+<p><span class="math display">\[(n-1)!.\]</span></p>
+<p><strong>Con repetición</strong> (<span class="math inline">\(n_1\)</span> iguales de un tipo, …, <span class="math inline">\(n_r\)</span> del último, <span class="math inline">\(\sum n_i = n\)</span>) — coeficiente multinomial:</p>
+<p><span class="math display">\[\binom{n}{n_1,\dots,n_r} = \frac{n!}{n_1!\,n_2!\cdots n_r!}.\]</span></p>
+</section>
+<section id="combinaciones" class="slide level2">
+<h2>Combinaciones</h2>
+<p>El <strong>orden no importa</strong>: elegimos un subconjunto de <span class="math inline">\(k\)</span> entre <span class="math inline">\(n\)</span>.</p>
+<p><span class="math display">\[\binom{n}{k} = \frac{n!}{k!\,(n-k)!}, \qquad 0 \le k \le n.\]</span></p>
+<p><strong>Con repetición</strong> (barras y estrellas), elegir <span class="math inline">\(k\)</span> entre <span class="math inline">\(n\)</span> tipos:</p>
+<p><span class="math display">\[\binom{n+k-1}{k}.\]</span></p>
+<p>Relación clave: <span class="math inline">\(V(n,k) = \binom{n}{k}\cdot k!\)</span>.</p>
+</section></section>
+<section>
+<section id="el-binomio-de-newton" class="title-slide slide level1 center">
+<h1>El binomio de Newton</h1>
+
+</section>
+<section id="desarrollo-del-binomio" class="slide level2">
+<h2>Desarrollo del binomio</h2>
+<p>Para todo <span class="math inline">\(n \in \mathbb{N}\)</span> y todos <span class="math inline">\(a, b\)</span>:</p>
+<p><span class="math display">\[(a+b)^n = \sum_{k=0}^{n} \binom{n}{k}\, a^{n-k} b^{k}.\]</span></p>
+<p>Cada término <span class="math inline">\(a^{n-k}b^k\)</span> surge al elegir <span class="math inline">\(b\)</span> en exactamente <span class="math inline">\(k\)</span> de los <span class="math inline">\(n\)</span> factores: hay <span class="math inline">\(\binom{n}{k}\)</span> maneras.</p>
+</section>
+<section id="identidades-binomiales-útiles" class="slide level2">
+<h2>Identidades binomiales útiles</h2>
+<p><strong>Regla de Pascal:</strong> <span class="math display">\[\binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}.\]</span></p>
+<p><strong>Suma de una fila:</strong> <span class="math display">\[\sum_{k=0}^{n} \binom{n}{k} = 2^{n}.\]</span></p>
+<p><strong>Vandermonde:</strong> <span class="math display">\[\binom{m+n}{r} = \sum_{k=0}^{r} \binom{m}{k}\binom{n}{r-k}.\]</span></p>
+</section></section>
+<section>
+<section id="ejemplo-el-binomio-en-acción" class="title-slide slide level1 center">
+<h1>Ejemplo: el binomio en acción</h1>
+
+</section>
+<section id="problema-y-estrategia" class="slide level2">
+<h2>Problema y estrategia</h2>
+<p><strong>Problema:</strong> hallar el coeficiente del término en <span class="math inline">\(x^{2}y^{3}\)</span> del desarrollo de <span class="math inline">\((2x + 3y)^{5}\)</span>.</p>
+<div class="fragment">
+<p><strong>Estrategia:</strong> aplicar el binomio de Newton con <span class="math inline">\(a = 2x\)</span>, <span class="math inline">\(b = 3y\)</span> y aislar el término con los exponentes pedidos.</p>
+</div>
+</section>
+<section id="solución-por-pasos" class="slide level2">
+<h2>Solución por pasos</h2>
+<p>El término general es <span class="math inline">\(\binom{5}{k}(2x)^{5-k}(3y)^{k}\)</span>.</p>
+<div class="fragment">
+<p>Para obtener <span class="math inline">\(x^{2}y^{3}\)</span> necesitamos <span class="math inline">\(k = 3\)</span>:</p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[\binom{5}{3}(2x)^{2}(3y)^{3} = 10 \cdot 4x^{2}\cdot 27 y^{3} = 1080\, x^{2}y^{3}.\]</span></p>
+</div>
+<div class="fragment">
+<p>El coeficiente buscado es <span class="math inline">\(\boxed{1080}\)</span>.</p>
+</div>
+</section></section>
+<section>
+<section id="el-principio-del-palomar" class="title-slide slide level1 center">
+<h1>El principio del palomar</h1>
+
+</section>
+<section id="enunciado" class="slide level2">
+<h2>Enunciado</h2>
+<p><strong>Forma simple:</strong> si se distribuyen <span class="math inline">\(N\)</span> objetos en <span class="math inline">\(k\)</span> cajas y <span class="math inline">\(N &gt; k\)</span>, alguna caja contiene <strong>dos o más</strong> objetos.</p>
+<p><strong>Forma generalizada:</strong> alguna caja contiene al menos</p>
+<p><span class="math display">\[\left\lceil \frac{N}{k} \right\rceil\]</span></p>
+<p>objetos. Simple de enunciar, pero sorprendentemente potente.</p>
+</section>
+<section id="ejemplo-del-palomar" class="slide level2">
+<h2>Ejemplo del palomar</h2>
+<p><strong>Problema:</strong> entre cualesquiera <span class="math inline">\(13\)</span> enteros, hay dos cuya diferencia es múltiplo de <span class="math inline">\(12\)</span>.</p>
+<div class="fragment">
+<p><strong>Estrategia:</strong> usar los residuos módulo <span class="math inline">\(12\)</span> como cajas.</p>
+</div>
+<div class="fragment">
+<p>Solo hay <span class="math inline">\(12\)</span> residuos <span class="math inline">\(\{0,1,\dots,11\}\)</span> y tenemos <span class="math inline">\(13\)</span> enteros. Como <span class="math inline">\(13 &gt; 12\)</span>, dos caen en la misma caja: son congruentes módulo <span class="math inline">\(12\)</span> y su diferencia es múltiplo de <span class="math inline">\(12\)</span>. <span class="math inline">\(\blacksquare\)</span></p>
+</div>
+</section></section>
+<section>
+<section id="contar-salvo-simetría" class="title-slide slide level1 center">
+<h1>Contar salvo simetría</h1>
+
+</section>
+<section id="lema-de-burnside" class="slide level2">
+<h2>Lema de Burnside</h2>
+<p>A veces dos configuraciones son “la misma” salvo una simetría (rotar un collar, girar un dado). Modelamos las simetrías como un grupo <span class="math inline">\(G\)</span> que actúa sobre el conjunto <span class="math inline">\(X\)</span>.</p>
+<p>El número de configuraciones distintas (órbitas) es el <strong>promedio de puntos fijos</strong>:</p>
+<p><span class="math display">\[\#\text{órbitas} = \frac{1}{|G|} \sum_{g \in G} |\mathrm{Fij}(g)|.\]</span></p>
+<p><em>Caso típico (Pólya):</em> collares de <span class="math inline">\(6\)</span> cuentas y <span class="math inline">\(2\)</span> colores bajo rotación dan <span class="math inline">\(\tfrac{1}{6}(2^6+2+2^2+2^3+2^2+2) = 14\)</span> collares.</p>
+</section></section>
+<section>
+<section id="cierre" class="title-slide slide level1 center">
+<h1>Cierre</h1>
+
+</section>
+<section id="ideas-clave" class="slide level2">
+<h2>Ideas clave</h2>
+<ul>
+<li><strong>Suma</strong> para alternativas excluyentes; <strong>producto</strong> para etapas sucesivas.</li>
+<li><strong>Orden importa</strong> <span class="math inline">\(\Rightarrow\)</span> variaciones / permutaciones; <strong>no importa</strong> <span class="math inline">\(\Rightarrow\)</span> combinaciones <span class="math inline">\(\binom{n}{k}\)</span>.</li>
+<li>El <strong>binomio de Newton</strong> y la regla de Pascal conectan álgebra y conteo.</li>
+<li>El <strong>palomar</strong> demuestra existencia sin construir el ejemplo.</li>
+<li><strong>Burnside/Pólya</strong> cuenta configuraciones distintas salvo simetría.</li>
+</ul>
+</section>
+<section id="problemas-para-practicar" class="slide level2">
+<h2>Problemas para practicar</h2>
+<ol type="1">
+<li>¿Cuántos números de <span class="math inline">\(4\)</span> cifras hay si la primera no es <span class="math inline">\(0\)</span> y se permite repetir?</li>
+<li>Demostrar por doble conteo que <span class="math inline">\(k\binom{n}{k} = n\binom{n-1}{k-1}\)</span>.</li>
+<li>¿Cuántos collares de <span class="math inline">\(6\)</span> cuentas con <span class="math inline">\(3\)</span> colores hay salvo rotación?</li>
+<li>Probar que al elegir <span class="math inline">\(51\)</span> números de <span class="math inline">\(\{1,\dots,100\}\)</span>, uno divide a otro.</li>
+<li>Reordenamientos distintos de las letras de <strong>MATEMATICA</strong>.</li>
+</ol>
+<p><em>¡A contar!</em></p>
+
+
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">

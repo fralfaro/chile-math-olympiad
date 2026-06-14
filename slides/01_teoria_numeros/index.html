@@ -6,8 +6,8 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-acf12a64177840b8d86f2d4f01b2e9fb.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.9.37">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-de63f62b328812d8e578a4d74e282472.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.38">
 
   <title>Presentaciones - Matematica Olimpica – Teoría de Números</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -135,12 +135,361 @@
 </div>
 
 </section>
-<section id="placeholder" class="slide level2">
-<h2>Placeholder</h2>
-<p>Presentación pendiente para teoría de números.</p>
-
+<section id="teoría-de-números" class="slide level2 center">
+<h2>Teoría de Números</h2>
+<p><strong>Divisibilidad, primos y congruencias</strong></p>
+<p>La rama más antigua de la matemática y, a la vez, una fuente inagotable de problemas olímpicos: fáciles de enunciar, difíciles de resolver.</p>
+<div class="fragment">
+<p><em>Matemática Olímpica — Capítulo I</em></p>
+</div>
+</section>
+<section id="por-qué-importa" class="slide level2 center">
+<h2>¿Por qué importa?</h2>
+<div title="Problema motivador">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Problema motivador</strong></p>
+</div>
+<div class="callout-content">
+<p>Halla las <strong>dos últimas cifras</strong> de <span class="math inline">\(7^{2024}\)</span>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="fragment">
+<p>No queremos calcular el número completo (¡tiene más de <span class="math inline">\(1700\)</span> dígitos!).</p>
+</div>
+<div class="fragment">
+<p>Solo nos interesa su resto módulo <span class="math inline">\(100\)</span>. La teoría de números nos dará el lenguaje y las herramientas para responder en pocas líneas.</p>
+</div>
+</section>
+<section>
+<section id="divisibilidad" class="title-slide slide level1 center">
+<h1>Divisibilidad</h1>
 
 </section>
+<section id="divisibilidad-1" class="slide level2">
+<h2>Divisibilidad</h2>
+<div title="Definición">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Definición</strong></p>
+</div>
+<div class="callout-content">
+<p>Sean <span class="math inline">\(a,b \in \mathbb{Z}\)</span> con <span class="math inline">\(a \neq 0\)</span>. Decimos que <span class="math inline">\(a \mid b\)</span> si existe <span class="math inline">\(k \in \mathbb{Z}\)</span> tal que <span class="math inline">\(b = ak\)</span>.</p>
+</div>
+</div>
+</div>
+</div>
+<p>Propiedades clave:</p>
+<ul>
+<li><span class="math inline">\(a \mid b\)</span> y <span class="math inline">\(b \mid c\)</span> <span class="math inline">\(\Rightarrow\)</span> <span class="math inline">\(a \mid c\)</span> (transitividad).</li>
+<li><span class="math inline">\(a \mid b\)</span> y <span class="math inline">\(a \mid c\)</span> <span class="math inline">\(\Rightarrow\)</span> <span class="math inline">\(a \mid (bx + cy)\)</span> para todo <span class="math inline">\(x,y \in \mathbb{Z}\)</span>.</li>
+</ul>
+</section>
+<section id="algoritmo-de-la-división" class="slide level2">
+<h2>Algoritmo de la división</h2>
+<div title="Teorema I.2">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Teorema I.2</strong></p>
+</div>
+<div class="callout-content">
+<p>Dados <span class="math inline">\(a \in \mathbb{Z}\)</span> y <span class="math inline">\(b &gt; 0\)</span>, existen <strong>únicos</strong> <span class="math inline">\(q, r \in \mathbb{Z}\)</span> tales que <span class="math display">\[a = bq + r, \qquad 0 \le r &lt; b.\]</span></p>
+</div>
+</div>
+</div>
+</div>
+<p>El resto <span class="math inline">\(r\)</span> es lo que sobra al repartir <span class="math inline">\(a\)</span> en grupos de <span class="math inline">\(b\)</span>. Es el cimiento de todo lo que sigue: Euclides y la aritmética modular.</p>
+</section></section>
+<section>
+<section id="mcd-y-euclides" class="title-slide slide level1 center">
+<h1>MCD y Euclides</h1>
+
+</section>
+<section id="máximo-común-divisor" class="slide level2">
+<h2>Máximo común divisor</h2>
+<p><span class="math inline">\(\gcd(a,b)\)</span> es el mayor entero positivo que divide a <span class="math inline">\(a\)</span> y a <span class="math inline">\(b\)</span> simultáneamente.</p>
+<div class="fragment">
+<div title="Lema de Euclides para el MCD">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Lema de Euclides para el MCD</strong></p>
+</div>
+<div class="callout-content">
+<p>Si <span class="math inline">\(a = bq + r\)</span>, entonces <span class="math display">\[\gcd(a,b) = \gcd(b,r).\]</span></p>
+</div>
+</div>
+</div>
+</div>
+<p>Esto permite reemplazar un par grande por uno más chico sin perder el MCD.</p>
+</div>
+</section>
+<section id="algoritmo-de-euclides" class="slide level2">
+<h2>Algoritmo de Euclides</h2>
+<p>Dividir, reemplazar <span class="math inline">\((a,b)\)</span> por <span class="math inline">\((b,r)\)</span> y repetir hasta resto <span class="math inline">\(0\)</span>. El último resto no nulo es el MCD.</p>
+<div class="fragment">
+<p><span class="math display">\[
+\begin{align*}
+1071 &amp;= 2 \cdot 462 + 147,\\
+462  &amp;= 3 \cdot 147 + 21,\\
+147  &amp;= 7 \cdot 21 + 0.
+\end{align*}
+\]</span></p>
+</div>
+<div class="fragment">
+<p>Luego <span class="math inline">\(\gcd(1071, 462) = 21\)</span>.</p>
+</div>
+</section>
+<section id="identidad-de-bézout" class="slide level2">
+<h2>Identidad de Bézout</h2>
+<div title="Teorema I.5">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Teorema I.5</strong></p>
+</div>
+<div class="callout-content">
+<p>Para <span class="math inline">\(a, b\)</span> no ambos nulos, existen <span class="math inline">\(x, y \in \mathbb{Z}\)</span> tales que <span class="math display">\[ax + by = \gcd(a,b).\]</span></p>
+</div>
+</div>
+</div>
+</div>
+<p>Además, <span class="math inline">\(\gcd(a,b)\)</span> es el <strong>menor</strong> entero positivo expresable como <span class="math inline">\(ax + by\)</span>. Es quizás la herramienta más usada en olimpiada.</p>
+</section></section>
+<section>
+<section id="primos" class="title-slide slide level1 center">
+<h1>Primos</h1>
+
+</section>
+<section id="números-primos-e-infinitud" class="slide level2">
+<h2>Números primos e infinitud</h2>
+<p>Un entero <span class="math inline">\(p &gt; 1\)</span> es <strong>primo</strong> si sus únicos divisores positivos son <span class="math inline">\(1\)</span> y <span class="math inline">\(p\)</span>.</p>
+<div class="fragment">
+<div title="Teorema I.7 (Euclides)">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Teorema I.7 (Euclides)</strong></p>
+</div>
+<div class="callout-content">
+<p>Existen <strong>infinitos</strong> primos.</p>
+</div>
+</div>
+</div>
+</div>
+<p><em>Idea:</em> si solo hubiera <span class="math inline">\(p_1,\dots,p_n\)</span>, entonces <span class="math inline">\(N = p_1 \cdots p_n + 1\)</span> no sería divisible por ninguno de ellos. Contradicción.</p>
+</div>
+</section>
+<section id="teorema-fundamental-de-la-aritmética" class="slide level2">
+<h2>Teorema Fundamental de la Aritmética</h2>
+<div title="TFA">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>TFA</strong></p>
+</div>
+<div class="callout-content">
+<p>Todo entero <span class="math inline">\(n &gt; 1\)</span> se escribe de forma <strong>única</strong> (salvo orden) como <span class="math display">\[n = p_1^{\alpha_1} p_2^{\alpha_2} \cdots p_k^{\alpha_k}.\]</span></p>
+</div>
+</div>
+</div>
+</div>
+<p>Los primos son los “átomos” de los enteros. De la factorización se leen directamente: <span class="math display">\[\gcd(n,m) = \prod_i p_i^{\min(\alpha_i,\beta_i)}, \quad
+\operatorname{mcm}(n,m) = \prod_i p_i^{\max(\alpha_i,\beta_i)}.\]</span></p>
+</section></section>
+<section>
+<section id="congruencias" class="title-slide slide level1 center">
+<h1>Congruencias</h1>
+
+</section>
+<section id="aritmética-modular" class="slide level2">
+<h2>Aritmética modular</h2>
+<div title="Definición">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Definición</strong></p>
+</div>
+<div class="callout-content">
+<p><span class="math inline">\(a \equiv b \pmod{n}\)</span> significa que <span class="math inline">\(n \mid (a - b)\)</span>; equivalentemente, <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span> dejan el mismo resto al dividir por <span class="math inline">\(n\)</span>.</p>
+</div>
+</div>
+</div>
+</div>
+<p>Las congruencias respetan suma, resta, producto y potencias: <span class="math display">\[a \equiv b,\; c \equiv d \pmod{n} \;\Rightarrow\; a + c \equiv b + d,\;\; ac \equiv bd.\]</span></p>
+</section>
+<section id="inverso-modular" class="slide level2">
+<h2>Inverso modular</h2>
+<p><strong>Cuidado:</strong> no siempre se puede cancelar. De <span class="math inline">\(ac \equiv bc \pmod n\)</span> solo deducimos <span class="math inline">\(a \equiv b\)</span> cuando <span class="math inline">\(\gcd(c,n) = 1\)</span>.</p>
+<div class="fragment">
+<div title="Teorema I.10">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Teorema I.10</strong></p>
+</div>
+<div class="callout-content">
+<p><span class="math inline">\(a\)</span> tiene inverso módulo <span class="math inline">\(n\)</span> (existe <span class="math inline">\(x\)</span> con <span class="math inline">\(ax \equiv 1 \pmod n\)</span>) si y solo si <span class="math inline">\(\gcd(a,n) = 1\)</span>.</p>
+</div>
+</div>
+</div>
+</div>
+<p>La demostración es Bézout: <span class="math inline">\(ax + ny = 1\)</span>.</p>
+</div>
+</section>
+<section id="pequeño-teorema-de-fermat" class="slide level2">
+<h2>Pequeño Teorema de Fermat</h2>
+<div title="Teorema I.11">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Teorema I.11</strong></p>
+</div>
+<div class="callout-content">
+<p>Si <span class="math inline">\(p\)</span> es primo y <span class="math inline">\(p \nmid a\)</span>, entonces <span class="math display">\[a^{p-1} \equiv 1 \pmod{p}.\]</span> En general, <span class="math inline">\(a^p \equiv a \pmod p\)</span> para todo <span class="math inline">\(a\)</span>.</p>
+</div>
+</div>
+</div>
+</div>
+<p>Permite reducir exponentes gigantes módulo <span class="math inline">\(p\)</span>. Su versión general es el <strong>Teorema de Euler</strong>: <span class="math inline">\(a^{\varphi(n)} \equiv 1 \pmod n\)</span> cuando <span class="math inline">\(\gcd(a,n)=1\)</span>.</p>
+</section></section>
+<section>
+<section id="ejemplo-resuelto" class="title-slide slide level1 center">
+<h1>Ejemplo resuelto</h1>
+
+</section>
+<section id="problema-y-estrategia" class="slide level2">
+<h2>Problema y estrategia</h2>
+<div title="Problema">
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Problema</strong></p>
+</div>
+<div class="callout-content">
+<p>Hallar el resto de <span class="math inline">\(3^{100}\)</span> al dividir por <span class="math inline">\(7\)</span>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="fragment">
+<p><strong>Estrategia:</strong> <span class="math inline">\(7\)</span> es primo y <span class="math inline">\(7 \nmid 3\)</span>, así que por el Pequeño Teorema de Fermat <span class="math inline">\(3^6 \equiv 1 \pmod 7\)</span>. Reducimos el exponente <span class="math inline">\(100\)</span> módulo <span class="math inline">\(6\)</span>.</p>
+</div>
+</section>
+<section id="solución" class="slide level2">
+<h2>Solución</h2>
+<p>Como <span class="math inline">\(3^6 \equiv 1 \pmod 7\)</span>, escribimos <span class="math inline">\(100 = 6 \cdot 16 + 4\)</span>.</p>
+<div class="fragment">
+<p><span class="math display">\[3^{100} = (3^6)^{16} \cdot 3^4 \equiv 1^{16} \cdot 3^4 \pmod 7.\]</span></p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[3^4 = 81 = 11 \cdot 7 + 4 \equiv 4 \pmod 7.\]</span></p>
+</div>
+<div class="fragment">
+<p>El resto es <span class="math inline">\(\boxed{4}\)</span>.</p>
+</div>
+</section></section>
+<section>
+<section id="diofánticas" class="title-slide slide level1 center">
+<h1>Diofánticas</h1>
+
+</section>
+<section id="ecuaciones-diofánticas-lineales" class="slide level2">
+<h2>Ecuaciones diofánticas lineales</h2>
+<div title="Teorema I.13">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Teorema I.13</strong></p>
+</div>
+<div class="callout-content">
+<p>La ecuación <span class="math inline">\(ax + by = c\)</span> tiene soluciones enteras si y solo si <span class="math inline">\(d = \gcd(a,b) \mid c\)</span>. Si <span class="math inline">\((x_0, y_0)\)</span> es una solución, todas son <span class="math display">\[x = x_0 + \tfrac{b}{d}\,t, \qquad y = y_0 - \tfrac{a}{d}\,t, \qquad t \in \mathbb{Z}.\]</span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="fragment">
+<p><em>Ejemplo:</em> <span class="math inline">\(15x + 21y = 12\)</span>. Como <span class="math inline">\(\gcd(15,21) = 3 \mid 12\)</span>, hay solución: <span class="math inline">\(x = -2 + 7t,\; y = 2 - 5t\)</span>.</p>
+</div>
+</section>
+<section id="ideas-clave" class="slide level2 center">
+<h2>Ideas clave</h2>
+<ul>
+<li><strong>Algoritmo de la división:</strong> todo se reduce a entender el resto.</li>
+<li><strong>Euclides + Bézout:</strong> el MCD y su escritura <span class="math inline">\(ax + by = \gcd(a,b)\)</span>.</li>
+<li><strong>TFA:</strong> los primos son los átomos de <span class="math inline">\(\mathbb{Z}\)</span>.</li>
+<li><strong>Congruencias:</strong> lenguaje de los restos; cuidado al cancelar.</li>
+<li><strong>Fermat / Euler:</strong> reducen exponentes enormes módulo <span class="math inline">\(n\)</span>.</li>
+</ul>
+</section>
+<section id="para-practicar" class="slide level2 center">
+<h2>Para practicar</h2>
+<div title="Problemas propuestos">
+<div class="callout callout-caution callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Problemas propuestos</strong></p>
+</div>
+<div class="callout-content">
+<ol type="1">
+<li>Demuestra que <span class="math inline">\(n^3 - n\)</span> es divisible por <span class="math inline">\(6\)</span> para todo <span class="math inline">\(n \in \mathbb{Z}\)</span>.</li>
+<li>Halla las dos últimas cifras de <span class="math inline">\(7^{2024}\)</span> (¡el problema inicial!).</li>
+<li>Prueba que <span class="math inline">\(n^4 + 4\)</span> es compuesto para todo entero <span class="math inline">\(n &gt; 1\)</span>.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="fragment">
+<p><strong>¡A resolver!</strong> <span class="math inline">\(\quad \gcd(\text{esfuerzo},\text{práctica}) = \text{éxito}.\)</span></p>
+
+
+</div>
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">

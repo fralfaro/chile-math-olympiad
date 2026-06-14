@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -42,14 +42,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-d94f5170875b5f4e5e85b640af280440.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-8643a97c649ad291516e98d9f79c0f71.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-d94f5170875b5f4e5e85b640af280440.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-6d55e81a42a89dd3690061c0dc3512a0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-e28859dc7ca6002e82041f7faca5f3dd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-6d55e81a42a89dd3690061c0dc3512a0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -512,8 +512,9 @@ window.Quarto = {
    
   <ul>
   <li><a href="#presentación" id="toc-presentación" class="nav-link active" data-scroll-target="#presentación">Presentación</a></li>
-  <li><a href="#objetivos-del-capítulo" id="toc-objetivos-del-capítulo" class="nav-link" data-scroll-target="#objetivos-del-capítulo">Objetivos del capítulo</a></li>
-  <li><a href="#contenidos" id="toc-contenidos" class="nav-link" data-scroll-target="#contenidos">Contenidos</a></li>
+  <li><a href="#objetivos-de-aprendizaje" id="toc-objetivos-de-aprendizaje" class="nav-link" data-scroll-target="#objetivos-de-aprendizaje">Objetivos de aprendizaje</a></li>
+  <li><a href="#subtemas" id="toc-subtemas" class="nav-link" data-scroll-target="#subtemas">Subtemas</a></li>
+  <li><a href="#prerrequisitos" id="toc-prerrequisitos" class="nav-link" data-scroll-target="#prerrequisitos">Prerrequisitos</a></li>
   </ul>
 </nav>
     </div>
@@ -542,20 +543,26 @@ window.Quarto = {
 
 <section id="presentación" class="level2">
 <h2 class="anchored" data-anchor-id="presentación">Presentación</h2>
-<p>La teoría de números estudia las propiedades aritméticas de los enteros. En olimpiadas es una de las áreas más frecuentes porque combina ideas simples con argumentos muy creativos.</p>
-<p>Antes de cada definición importante conviene preguntarse por qué surgió el concepto. La divisibilidad nació al intentar entender cuándo una cantidad puede descomponerse exactamente; las congruencias, en cambio, aparecieron al estudiar restos y periodicidad.</p>
+<p>La teoría de números estudia las propiedades aritméticas de los enteros. En olimpiadas es una de las áreas más frecuentes porque combina ideas simples con argumentos muy creativos. Problemas que se enuncian en una línea —“demuestra que <span class="math inline">\(n^4+4\)</span> nunca es primo para <span class="math inline">\(n&gt;1\)</span>”— pueden esconder razonamientos profundos y elegantes.</p>
+<p>Antes de cada definición importante conviene preguntarse por qué surgió el concepto. La divisibilidad nació al intentar entender cuándo una cantidad puede descomponerse exactamente; las congruencias, en cambio, aparecieron al estudiar restos y periodicidad. Esta motivación es la que convierte una técnica mecánica en una herramienta para resolver problemas.</p>
+<p>A lo largo del capítulo construiremos, de menor a mayor sofisticación, las herramientas centrales: divisibilidad, el algoritmo de la división, el máximo común divisor, los números primos, las congruencias y, finalmente, los grandes teoremas (Fermat, Wilson) y las funciones aritméticas.</p>
 </section>
-<section id="objetivos-del-capítulo" class="level2">
-<h2 class="anchored" data-anchor-id="objetivos-del-capítulo">Objetivos del capítulo</h2>
+<section id="objetivos-de-aprendizaje" class="level2">
+<h2 class="anchored" data-anchor-id="objetivos-de-aprendizaje">Objetivos de aprendizaje</h2>
+<p>Al terminar este capítulo, esperamos que seas capaz de:</p>
 <ul>
-<li>Reconocer y usar criterios de divisibilidad.</li>
-<li>Calcular <span class="math inline">\(\gcd(a,b)\)</span> y <span class="math inline">\(\operatorname{mcm}(a,b)\)</span> con soltura.</li>
-<li>Trabajar con números primos y factorización.</li>
-<li>Resolver congruencias y ecuaciones diofánticas elementales.</li>
+<li>Reconocer y aplicar la definición de divisibilidad y sus propiedades.</li>
+<li>Usar el algoritmo de la división y el algoritmo de Euclides con soltura.</li>
+<li>Calcular <span class="math inline">\(\gcd(a,b)\)</span> y <span class="math inline">\(\operatorname{mcm}(a,b)\)</span>, y expresarlos mediante la identidad de Bézout.</li>
+<li>Comprender el papel de los números primos y el Teorema Fundamental de la Aritmética.</li>
+<li>Operar con congruencias y resolver congruencias lineales.</li>
+<li>Aplicar el Pequeño Teorema de Fermat y el Teorema de Wilson.</li>
+<li>Resolver ecuaciones diofánticas lineales.</li>
+<li>Calcular las funciones aritméticas <span class="math inline">\(\tau(n)\)</span>, <span class="math inline">\(\sigma(n)\)</span> y <span class="math inline">\(\varphi(n)\)</span>.</li>
 </ul>
 </section>
-<section id="contenidos" class="level2">
-<h2 class="anchored" data-anchor-id="contenidos">Contenidos</h2>
+<section id="subtemas" class="level2">
+<h2 class="anchored" data-anchor-id="subtemas">Subtemas</h2>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -578,6 +585,27 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
+<p>En la teoría desarrollamos, en orden:</p>
+<ol type="1">
+<li>Divisibilidad.</li>
+<li>Algoritmo de la división.</li>
+<li>Máximo común divisor, mínimo común múltiplo y algoritmo de Euclides.</li>
+<li>Números coprimos e identidad de Bézout.</li>
+<li>Números primos y Teorema Fundamental de la Aritmética.</li>
+<li>Congruencias y aritmética modular.</li>
+<li>Pequeño Teorema de Fermat y Teorema de Wilson.</li>
+<li>Ecuaciones diofánticas lineales.</li>
+<li>Funciones aritméticas (<span class="math inline">\(\tau\)</span>, <span class="math inline">\(\sigma\)</span>, <span class="math inline">\(\varphi\)</span>).</li>
+</ol>
+</section>
+<section id="prerrequisitos" class="level2">
+<h2 class="anchored" data-anchor-id="prerrequisitos">Prerrequisitos</h2>
+<p>Para aprovechar este capítulo conviene manejar:</p>
+<ul>
+<li>Operaciones elementales con enteros en <span class="math inline">\(\mathbb{Z}\)</span>.</li>
+<li>Manipulación algebraica básica (factorización, productos notables).</li>
+<li>El principio del buen orden y la inducción matemática (Capítulo II), que usaremos en algunas demostraciones.</li>
+</ul>
 <div class="callout callout-style-default callout-note callout-titled" title="Referencia">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -588,7 +616,7 @@ window.Quarto = {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Este capítulo sigue el espíritu del Capítulo I de <em>Matemática y Olimpíadas</em> (Somachi, 1994), ampliando explicaciones intermedias para un primer curso de entrenamiento olímpico.</p>
+<p>Este capítulo sigue el espíritu del Capítulo I de <em>Matemática y Olimpíadas</em> (Somachi, 1994), ampliando las explicaciones intermedias y los ejemplos para un primer curso de entrenamiento olímpico. Las demostraciones se presentan completas para que sirvan también como modelo de redacción matemática.</p>
 </div>
 </div>
 

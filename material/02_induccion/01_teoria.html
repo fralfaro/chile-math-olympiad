@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Teoría: progresiones e inducción – Matemática Olímpica</title>
+<title>9&nbsp; Teoría: progresiones e inducción – Matemática Olímpica</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -42,14 +42,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-d94f5170875b5f4e5e85b640af280440.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-8643a97c649ad291516e98d9f79c0f71.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-d94f5170875b5f4e5e85b640af280440.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-6d55e81a42a89dd3690061c0dc3512a0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-e28859dc7ca6002e82041f7faca5f3dd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-6d55e81a42a89dd3690061c0dc3512a0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -511,11 +511,26 @@ window.Quarto = {
     <h2 id="toc-title">Tabla de contenidos</h2>
    
   <ul>
-  <li><a href="#progresiones-aritméticas" id="toc-progresiones-aritméticas" class="nav-link active" data-scroll-target="#progresiones-aritméticas">Progresiones aritméticas</a></li>
-  <li><a href="#progresiones-geométricas" id="toc-progresiones-geométricas" class="nav-link" data-scroll-target="#progresiones-geométricas">Progresiones geométricas</a></li>
-  <li><a href="#principio-de-inducción" id="toc-principio-de-inducción" class="nav-link" data-scroll-target="#principio-de-inducción">Principio de inducción</a></li>
-  <li><a href="#inducción-fuerte" id="toc-inducción-fuerte" class="nav-link" data-scroll-target="#inducción-fuerte">Inducción fuerte</a></li>
-  <li><a href="#sucesión-de-fibonacci" id="toc-sucesión-de-fibonacci" class="nav-link" data-scroll-target="#sucesión-de-fibonacci">Sucesión de Fibonacci</a></li>
+  <li><a href="#introducción" id="toc-introducción" class="nav-link active" data-scroll-target="#introducción"><span class="header-section-number">9.1</span> Introducción</a></li>
+  <li><a href="#conceptos-previos" id="toc-conceptos-previos" class="nav-link" data-scroll-target="#conceptos-previos"><span class="header-section-number">9.2</span> Conceptos previos</a></li>
+  <li><a href="#principio-del-buen-orden" id="toc-principio-del-buen-orden" class="nav-link" data-scroll-target="#principio-del-buen-orden"><span class="header-section-number">9.3</span> Principio del Buen Orden</a></li>
+  <li><a href="#principio-de-inducción" id="toc-principio-de-inducción" class="nav-link" data-scroll-target="#principio-de-inducción"><span class="header-section-number">9.4</span> Principio de inducción</a></li>
+  <li><a href="#inducción-fuerte" id="toc-inducción-fuerte" class="nav-link" data-scroll-target="#inducción-fuerte"><span class="header-section-number">9.5</span> Inducción fuerte</a></li>
+  <li><a href="#variantes-de-la-inducción" id="toc-variantes-de-la-inducción" class="nav-link" data-scroll-target="#variantes-de-la-inducción"><span class="header-section-number">9.6</span> Variantes de la inducción</a>
+  <ul class="collapse">
+  <li><a href="#inducción-con-paso-base-múltiple" id="toc-inducción-con-paso-base-múltiple" class="nav-link" data-scroll-target="#inducción-con-paso-base-múltiple"><span class="header-section-number">9.6.1</span> Inducción con paso base múltiple</a></li>
+  <li><a href="#inducción-hacia-atrás" id="toc-inducción-hacia-atrás" class="nav-link" data-scroll-target="#inducción-hacia-atrás"><span class="header-section-number">9.6.2</span> Inducción hacia atrás</a></li>
+  </ul></li>
+  <li><a href="#progresiones-aritméticas" id="toc-progresiones-aritméticas" class="nav-link" data-scroll-target="#progresiones-aritméticas"><span class="header-section-number">9.7</span> Progresiones aritméticas</a></li>
+  <li><a href="#progresiones-geométricas" id="toc-progresiones-geométricas" class="nav-link" data-scroll-target="#progresiones-geométricas"><span class="header-section-number">9.8</span> Progresiones geométricas</a></li>
+  <li><a href="#sucesión-de-fibonacci" id="toc-sucesión-de-fibonacci" class="nav-link" data-scroll-target="#sucesión-de-fibonacci"><span class="header-section-number">9.9</span> Sucesión de Fibonacci</a>
+  <ul class="collapse">
+  <li><a href="#suma-de-los-primeros-fibonacci" id="toc-suma-de-los-primeros-fibonacci" class="nav-link" data-scroll-target="#suma-de-los-primeros-fibonacci"><span class="header-section-number">9.9.1</span> Suma de los primeros Fibonacci</a></li>
+  <li><a href="#identidad-de-cassini" id="toc-identidad-de-cassini" class="nav-link" data-scroll-target="#identidad-de-cassini"><span class="header-section-number">9.9.2</span> Identidad de Cassini</a></li>
+  <li><a href="#fórmula-de-binet" id="toc-fórmula-de-binet" class="nav-link" data-scroll-target="#fórmula-de-binet"><span class="header-section-number">9.9.3</span> Fórmula de Binet</a></li>
+  </ul></li>
+  <li><a href="#ejercicios-propuestos" id="toc-ejercicios-propuestos" class="nav-link" data-scroll-target="#ejercicios-propuestos"><span class="header-section-number">9.10</span> Ejercicios propuestos</a></li>
+  <li><a href="#referencias-del-capítulo" id="toc-referencias-del-capítulo" class="nav-link" data-scroll-target="#referencias-del-capítulo"><span class="header-section-number">9.11</span> Referencias del capítulo</a></li>
   </ul>
 </nav>
     </div>
@@ -542,8 +557,192 @@ window.Quarto = {
 </header>
 
 
-<section id="progresiones-aritméticas" class="level2">
-<h2 class="anchored" data-anchor-id="progresiones-aritméticas">Progresiones aritméticas</h2>
+<section id="introducción" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="introducción"><span class="header-section-number">9.1</span> Introducción</h2>
+<p>Muchas afirmaciones matemáticas tienen la forma “para todo número natural <span class="math inline">\(n\)</span>, ocurre <span class="math inline">\(P(n)\)</span>”. No podemos verificarlas una por una porque los naturales son infinitos. La <strong>inducción matemática</strong> resuelve este problema: nos permite demostrar infinitas afirmaciones con un argumento finito. En esta sección partimos de la base lógica —el Principio del Buen Orden— y construimos sobre ella el principio de inducción y sus variantes, para luego aplicarlos a progresiones y a la sucesión de Fibonacci.</p>
+</section>
+<section id="conceptos-previos" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="conceptos-previos"><span class="header-section-number">9.2</span> Conceptos previos</h2>
+<ul>
+<li>Notación de sumatoria: <span class="math inline">\(\sum_{k=1}^{n} a_k = a_1 + a_2 + \cdots + a_n\)</span>.</li>
+<li>Divisibilidad: <span class="math inline">\(a \mid b\)</span> significa que existe <span class="math inline">\(c \in \mathbb{Z}\)</span> con <span class="math inline">\(b = ac\)</span>.</li>
+<li>Manipulación algebraica de fracciones y factorización.</li>
+</ul>
+</section>
+<section id="principio-del-buen-orden" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="principio-del-buen-orden"><span class="header-section-number">9.3</span> Principio del Buen Orden</h2>
+<p>Todo el edificio de la inducción descansa sobre una propiedad aparentemente modesta de los números naturales: no se puede “descender” infinitamente dentro de <span class="math inline">\(\mathbb{N}\)</span>.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Definición: Principio del Buen Orden (PBO)">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Definición: Principio del Buen Orden (PBO)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Todo subconjunto <strong>no vacío</strong> <span class="math inline">\(S \subseteq \mathbb{N}\)</span> posee un elemento mínimo; es decir, existe <span class="math inline">\(m \in S\)</span> tal que <span class="math inline">\(m \le s\)</span> para todo <span class="math inline">\(s \in S\)</span>.</p>
+</div>
+</div>
+<p>El PBO se toma como axioma de los naturales (o se deduce de los axiomas de Peano). De él se desprenden tanto la inducción débil como la fuerte, lo que muestra que todos estos principios son, en el fondo, equivalentes.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Teorema: el PBO implica la inducción">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Teorema: el PBO implica la inducción
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Si <span class="math inline">\(P(n_0)\)</span> es verdadera y <span class="math inline">\(P(k) \Rightarrow P(k+1)\)</span> para todo <span class="math inline">\(k \ge n_0\)</span>, entonces <span class="math inline">\(P(n)\)</span> es verdadera para todo <span class="math inline">\(n \ge n_0\)</span>.</p>
+<p><strong>Demostración:</strong> Supongamos, por contradicción, que el conjunto <span class="math display">\[S = \{\, n \ge n_0 : P(n) \text{ es falsa} \,\}\]</span> es no vacío. Por el PBO, <span class="math inline">\(S\)</span> tiene un mínimo <span class="math inline">\(m\)</span>. Como <span class="math inline">\(P(n_0)\)</span> es verdadera, <span class="math inline">\(m \neq n_0\)</span>, luego <span class="math inline">\(m &gt; n_0\)</span> y <span class="math inline">\(m - 1 \ge n_0\)</span>. Por minimalidad de <span class="math inline">\(m\)</span>, el número <span class="math inline">\(m-1\)</span> no está en <span class="math inline">\(S\)</span>, así que <span class="math inline">\(P(m-1)\)</span> es verdadera. Pero la hipótesis <span class="math inline">\(P(m-1) \Rightarrow P(m)\)</span> obligaría a que <span class="math inline">\(P(m)\)</span> fuese verdadera, contradiciendo <span class="math inline">\(m \in S\)</span>. Por lo tanto <span class="math inline">\(S\)</span> es vacío y <span class="math inline">\(P(n)\)</span> vale para todo <span class="math inline">\(n \ge n_0\)</span>. <span class="math inline">\(\blacksquare\)</span></p>
+</div>
+</div>
+</section>
+<section id="principio-de-inducción" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="principio-de-inducción"><span class="header-section-number">9.4</span> Principio de inducción</h2>
+<p>La técnica de las fichas de dominó: comprobamos el caso inicial (la primera ficha cae) y el paso inductivo (cada ficha empuja a la siguiente).</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Definición: Principio de inducción débil">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Definición: Principio de inducción débil
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Sea <span class="math inline">\(P(n)\)</span> una proposición definida para todo <span class="math inline">\(n \ge n_0\)</span>. Si</p>
+<ol type="1">
+<li><strong>Caso base:</strong> <span class="math inline">\(P(n_0)\)</span> es verdadera.</li>
+<li><strong>Paso inductivo:</strong> para todo <span class="math inline">\(k \ge n_0\)</span>, de <span class="math inline">\(P(k)\)</span> se deduce <span class="math inline">\(P(k+1)\)</span>.</li>
+</ol>
+<p>Entonces <span class="math inline">\(P(n)\)</span> es verdadera para todo <span class="math inline">\(n \ge n_0\)</span>.</p>
+</div>
+</div>
+<p>A la suposición “<span class="math inline">\(P(k)\)</span> es verdadera” se le llama <strong>hipótesis inductiva (HI)</strong>. El error más común es olvidar verificar el caso base: sin él, el paso inductivo solo encadena afirmaciones que podrían ser todas falsas.</p>
+<div class="callout callout-style-default callout-warning callout-titled" title="Ejemplo resuelto">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>Ejemplo resuelto
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Problema:</strong> Demostrar que <span class="math inline">\(\displaystyle \sum_{k=1}^{n} (2k-1) = n^2\)</span> para todo <span class="math inline">\(n \ge 1\)</span> (la suma de los primeros <span class="math inline">\(n\)</span> impares es un cuadrado perfecto).</p>
+<p><strong>Estrategia:</strong> Inducción débil sobre <span class="math inline">\(n\)</span>, sumando el siguiente impar a la HI.</p>
+<p><strong>Solución:</strong> <em>Base.</em> Para <span class="math inline">\(n=1\)</span>: <span class="math inline">\(2\cdot 1 - 1 = 1 = 1^2\)</span>. Verdadero.</p>
+<p><em>Paso inductivo.</em> Supongamos <span class="math inline">\(\sum_{k=1}^{k} (2k-1) = n^2\)</span> válido para <span class="math inline">\(n\)</span> (HI). Entonces <span class="math display">\[\sum_{k=1}^{n+1}(2k-1) = \underbrace{\sum_{k=1}^{n}(2k-1)}_{=\,n^2 \text{ por HI}} + \big(2(n+1)-1\big) = n^2 + 2n + 1 = (n+1)^2.\]</span> Por inducción, la identidad vale para todo <span class="math inline">\(n \ge 1\)</span>. <span class="math inline">\(\blacksquare\)</span></p>
+</div>
+</div>
+</section>
+<section id="inducción-fuerte" class="level2" data-number="9.5">
+<h2 data-number="9.5" class="anchored" data-anchor-id="inducción-fuerte"><span class="header-section-number">9.5</span> Inducción fuerte</h2>
+<p>A veces para probar <span class="math inline">\(P(k+1)\)</span> no basta con <span class="math inline">\(P(k)\)</span>: necesitamos varios (o todos) los casos anteriores. La inducción fuerte permite usar toda la historia previa.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Definición: Principio de inducción fuerte">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Definición: Principio de inducción fuerte
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Sea <span class="math inline">\(P(n)\)</span> una proposición definida para todo <span class="math inline">\(n \ge n_0\)</span>. Si</p>
+<ol type="1">
+<li><strong>Caso base:</strong> <span class="math inline">\(P(n_0)\)</span> es verdadera.</li>
+<li><strong>Paso inductivo:</strong> para todo <span class="math inline">\(k \ge n_0\)</span>, de la veracidad de <span class="math inline">\(P(n_0), P(n_0+1), \dots, P(k)\)</span> se deduce <span class="math inline">\(P(k+1)\)</span>.</li>
+</ol>
+<p>Entonces <span class="math inline">\(P(n)\)</span> es verdadera para todo <span class="math inline">\(n \ge n_0\)</span>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Teorema: todo entero $n \ge 2$ es producto de primos">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Teorema: todo entero <span class="math inline">\(n \ge 2\)</span> es producto de primos
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Para todo entero <span class="math inline">\(n \ge 2\)</span> existen primos <span class="math inline">\(p_1, p_2, \dots, p_r\)</span> (no necesariamente distintos) tales que <span class="math inline">\(n = p_1 p_2 \cdots p_r\)</span>.</p>
+<p><strong>Demostración:</strong> (inducción fuerte sobre <span class="math inline">\(n\)</span>). El caso base <span class="math inline">\(n=2\)</span> es directo: <span class="math inline">\(2\)</span> es primo. Sea <span class="math inline">\(n &gt; 2\)</span> y supongamos que todo entero <span class="math inline">\(m\)</span> con <span class="math inline">\(2 \le m &lt; n\)</span> es producto de primos (HI). Si <span class="math inline">\(n\)</span> es primo, ya está. Si <span class="math inline">\(n\)</span> es compuesto, existe una factorización <span class="math inline">\(n = a \cdot b\)</span> con <span class="math inline">\(2 \le a, b &lt; n\)</span>. Por la HI, tanto <span class="math inline">\(a\)</span> como <span class="math inline">\(b\)</span> son productos de primos; concatenando ambas factorizaciones obtenemos <span class="math inline">\(n\)</span> como producto de primos. <span class="math inline">\(\blacksquare\)</span></p>
+</div>
+</div>
+<p>Observemos que aquí la inducción débil no sirve: para factorizar <span class="math inline">\(n\)</span> usamos <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span>, que pueden estar muy por debajo de <span class="math inline">\(n-1\)</span>.</p>
+</section>
+<section id="variantes-de-la-inducción" class="level2" data-number="9.6">
+<h2 data-number="9.6" class="anchored" data-anchor-id="variantes-de-la-inducción"><span class="header-section-number">9.6</span> Variantes de la inducción</h2>
+<section id="inducción-con-paso-base-múltiple" class="level3" data-number="9.6.1">
+<h3 data-number="9.6.1" class="anchored" data-anchor-id="inducción-con-paso-base-múltiple"><span class="header-section-number">9.6.1</span> Inducción con paso base múltiple</h3>
+<p>Cuando una recurrencia depende de los <span class="math inline">\(j\)</span> términos anteriores (por ejemplo, <span class="math inline">\(a_{n} = a_{n-1} + a_{n-2}\)</span> depende de dos), conviene verificar <strong>varios</strong> casos base.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Definición: inducción con paso base múltiple">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Definición: inducción con paso base múltiple
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Sea <span class="math inline">\(P(n)\)</span> definida para <span class="math inline">\(n \ge n_0\)</span> y supongamos que el paso inductivo usa los <span class="math inline">\(j\)</span> casos inmediatamente anteriores. Si</p>
+<ol type="1">
+<li><span class="math inline">\(P(n_0), P(n_0+1), \dots, P(n_0+j-1)\)</span> son todos verdaderos, y</li>
+<li>para todo <span class="math inline">\(k \ge n_0+j-1\)</span>, de <span class="math inline">\(P(k-j+1), \dots, P(k)\)</span> se deduce <span class="math inline">\(P(k+1)\)</span>,</li>
+</ol>
+<p>entonces <span class="math inline">\(P(n)\)</span> es verdadera para todo <span class="math inline">\(n \ge n_0\)</span>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled" title="Ejemplo resuelto">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>Ejemplo resuelto
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Problema:</strong> La sucesión <span class="math inline">\(a_1 = 1\)</span>, <span class="math inline">\(a_2 = 3\)</span>, <span class="math inline">\(a_{n+2} = 3a_{n+1} - 2a_n\)</span> satisface <span class="math inline">\(a_n = 2^n - 1\)</span> para todo <span class="math inline">\(n \ge 1\)</span>.</p>
+<p><strong>Estrategia:</strong> La recurrencia usa dos términos previos; verificamos dos casos base y aplicamos inducción fuerte con paso base múltiple.</p>
+<p><strong>Solución:</strong> <em>Base.</em> <span class="math inline">\(a_1 = 1 = 2^1 - 1\)</span> y <span class="math inline">\(a_2 = 3 = 2^2 - 1\)</span>. Verdadero.</p>
+<p><em>Paso inductivo.</em> Supongamos <span class="math inline">\(a_k = 2^k - 1\)</span> y <span class="math inline">\(a_{k+1} = 2^{k+1} - 1\)</span> (HI). Entonces <span class="math display">\[a_{k+2} = 3a_{k+1} - 2a_k = 3(2^{k+1}-1) - 2(2^k - 1) = 3\cdot 2^{k+1} - 2^{k+1} - 1 = 2\cdot 2^{k+1} - 1 = 2^{k+2}-1.\]</span> Por inducción, <span class="math inline">\(a_n = 2^n - 1\)</span> para todo <span class="math inline">\(n \ge 1\)</span>. <span class="math inline">\(\blacksquare\)</span></p>
+</div>
+</div>
+</section>
+<section id="inducción-hacia-atrás" class="level3" data-number="9.6.2">
+<h3 data-number="9.6.2" class="anchored" data-anchor-id="inducción-hacia-atrás"><span class="header-section-number">9.6.2</span> Inducción hacia atrás</h3>
+<p>La técnica de Cauchy: se demuestra la propiedad para una sucesión infinita de valores (por ejemplo, las potencias de <span class="math inline">\(2\)</span>) y luego se “desciende” un paso para cubrir los huecos.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Definición: inducción hacia atrás (Cauchy)">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Definición: inducción hacia atrás (Cauchy)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Para probar <span class="math inline">\(P(n)\)</span> para todo <span class="math inline">\(n \ge 1\)</span>, basta mostrar que</p>
+<ol type="1">
+<li><span class="math inline">\(P(n)\)</span> vale para una sucesión no acotada de valores (típicamente <span class="math inline">\(n = 2^m\)</span>), y</li>
+<li><span class="math inline">\(P(n) \Rightarrow P(n-1)\)</span> (paso descendente).</li>
+</ol>
+<p>Entonces <span class="math inline">\(P(n)\)</span> vale para todo <span class="math inline">\(n\)</span>.</p>
+</div>
+</div>
+<p>Esta variante es la que se usa en la demostración clásica de la desigualdad <strong>media aritmética–media geométrica (AM–GM)</strong> para <span class="math inline">\(n\)</span> números.</p>
+</section>
+</section>
+<section id="progresiones-aritméticas" class="level2" data-number="9.7">
+<h2 data-number="9.7" class="anchored" data-anchor-id="progresiones-aritméticas"><span class="header-section-number">9.7</span> Progresiones aritméticas</h2>
 <div class="callout callout-style-default callout-note callout-titled" title="Definición: progresión aritmética">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -554,17 +753,35 @@ window.Quarto = {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Una sucesión <span class="math inline">\((a_n)\)</span> es aritmética si existe una constante <span class="math inline">\(d\)</span> tal que</p>
+<p>Una sucesión <span class="math inline">\((a_n)\)</span> es aritmética si existe una constante <span class="math inline">\(d\)</span> (la <strong>diferencia común</strong>) tal que</p>
 <p><span class="math display">\[a_{n+1}=a_n+d.\]</span></p>
-<p>Entonces</p>
+<p>Entonces el término general es</p>
 <p><span class="math display">\[a_n=a_1+(n-1)d.\]</span></p>
 </div>
 </div>
-<p>La suma de los primeros <span class="math inline">\(n\)</span> términos es</p>
-<p><span class="math display">\[S_n=\frac{n(a_1+a_n)}{2}.\]</span></p>
+<p>La suma de los primeros <span class="math inline">\(n\)</span> términos admite una fórmula cerrada elegante.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Teorema: suma de una progresión aritmética">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Teorema: suma de una progresión aritmética
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Si <span class="math inline">\((a_n)\)</span> es aritmética, entonces <span class="math display">\[S_n = \sum_{k=1}^{n} a_k = \frac{n(a_1+a_n)}{2}.\]</span></p>
+<p><strong>Demostración:</strong> Escribimos la suma en orden directo y luego invertido: <span class="math display">\[
+\begin{align*}
+S_n &amp;= a_1 + a_2 + \cdots + a_n, \\
+S_n &amp;= a_n + a_{n-1} + \cdots + a_1.
+\end{align*}
+\]</span> Sumando ambas igualdades término a término, cada par suma <span class="math inline">\(a_1 + a_n\)</span> (porque <span class="math inline">\(a_k + a_{n-k+1} = a_1 + a_n\)</span> es constante en una progresión aritmética), y hay <span class="math inline">\(n\)</span> pares: <span class="math display">\[2S_n = n\,(a_1 + a_n) \quad\Longrightarrow\quad S_n = \frac{n(a_1+a_n)}{2}.\]</span> Este es el famoso truco atribuido a Gauss. <span class="math inline">\(\blacksquare\)</span></p>
+</div>
+</div>
 </section>
-<section id="progresiones-geométricas" class="level2">
-<h2 class="anchored" data-anchor-id="progresiones-geométricas">Progresiones geométricas</h2>
+<section id="progresiones-geométricas" class="level2" data-number="9.8">
+<h2 data-number="9.8" class="anchored" data-anchor-id="progresiones-geométricas"><span class="header-section-number">9.8</span> Progresiones geométricas</h2>
 <div class="callout callout-style-default callout-note callout-titled" title="Definición: progresión geométrica">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -575,87 +792,147 @@ window.Quarto = {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Una sucesión <span class="math inline">\((g_n)\)</span> es geométrica si existe una constante <span class="math inline">\(r\)</span> tal que</p>
+<p>Una sucesión <span class="math inline">\((g_n)\)</span> es geométrica si existe una constante <span class="math inline">\(r \neq 0\)</span> (la <strong>razón</strong>) tal que</p>
 <p><span class="math display">\[g_{n+1}=rg_n.\]</span></p>
-<p>Entonces</p>
+<p>Entonces el término general es</p>
 <p><span class="math display">\[g_n=g_1r^{n-1}.\]</span></p>
 </div>
 </div>
-<p>Si <span class="math inline">\(r \neq 1\)</span>,</p>
-<p><span class="math display">\[g_1+g_1r+\cdots+g_1r^{n-1}=g_1\frac{r^n-1}{r-1}.\]</span></p>
-</section>
-<section id="principio-de-inducción" class="level2">
-<h2 class="anchored" data-anchor-id="principio-de-inducción">Principio de inducción</h2>
-<div class="callout callout-style-default callout-note callout-titled" title="Principio de inducción débil">
+<div class="callout callout-style-default callout-tip callout-titled" title="Teorema: suma geométrica finita">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Nota</span>Principio de inducción débil
+<span class="screen-reader-only">Tip</span>Teorema: suma geométrica finita
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Sea <span class="math inline">\(P(n)\)</span> una proposición definida para todo <span class="math inline">\(n \ge n_0\)</span>. Si</p>
+<p>Si <span class="math inline">\(r \neq 1\)</span>, la suma de los primeros <span class="math inline">\(n\)</span> términos es <span class="math display">\[\sum_{k=0}^{n-1} g_1 r^{k} = g_1 + g_1 r + \cdots + g_1 r^{n-1} = g_1\,\frac{r^{n}-1}{r-1}.\]</span></p>
+<p><strong>Demostración:</strong> Sea <span class="math inline">\(S = g_1(1 + r + \cdots + r^{n-1})\)</span> y llamemos <span class="math inline">\(T = 1 + r + \cdots + r^{n-1}\)</span>. Multiplicando por <span class="math inline">\(r\)</span>: <span class="math display">\[rT = r + r^2 + \cdots + r^{n}.\]</span> Restando <span class="math inline">\(T\)</span> de <span class="math inline">\(rT\)</span>, los términos intermedios se cancelan: <span class="math display">\[rT - T = r^{n} - 1 \quad\Longrightarrow\quad (r-1)T = r^{n}-1 \quad\Longrightarrow\quad T = \frac{r^{n}-1}{r-1}.\]</span> Multiplicando por <span class="math inline">\(g_1\)</span> se obtiene la fórmula. <span class="math inline">\(\blacksquare\)</span></p>
+</div>
+</div>
+<p>Cuando <span class="math inline">\(|r| &lt; 1\)</span> y <span class="math inline">\(n \to \infty\)</span>, el término <span class="math inline">\(r^n \to 0\)</span> y la serie geométrica <strong>infinita</strong> converge a <span class="math inline">\(\dfrac{g_1}{1-r}\)</span>. En este capítulo nos centramos en la serie finita; la infinita se trata con detalle en el <a href="../../material/04_analisis/index.html">Capítulo IV: Análisis</a>.</p>
+</section>
+<section id="sucesión-de-fibonacci" class="level2" data-number="9.9">
+<h2 data-number="9.9" class="anchored" data-anchor-id="sucesión-de-fibonacci"><span class="header-section-number">9.9</span> Sucesión de Fibonacci</h2>
+<p>La sucesión de Fibonacci es un terreno de juego ideal para la inducción: infinidad de identidades sorprendentes se demuestran con ella.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Definición: sucesión de Fibonacci">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Definición: sucesión de Fibonacci
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>La sucesión de Fibonacci <span class="math inline">\((F_n)\)</span> está dada por <span class="math display">\[F_1=1,\quad F_2=1,\quad F_{n+2}=F_{n+1}+F_n \ \ (n \ge 1).\]</span> Sus primeros términos son <span class="math inline">\(1, 1, 2, 3, 5, 8, 13, 21, 34, \dots\)</span></p>
+</div>
+</div>
+<section id="suma-de-los-primeros-fibonacci" class="level3" data-number="9.9.1">
+<h3 data-number="9.9.1" class="anchored" data-anchor-id="suma-de-los-primeros-fibonacci"><span class="header-section-number">9.9.1</span> Suma de los primeros Fibonacci</h3>
+<div class="callout callout-style-default callout-tip callout-titled" title="Teorema: suma de Fibonacci">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Teorema: suma de Fibonacci
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Para todo <span class="math inline">\(n \ge 1\)</span>, <span class="math display">\[\sum_{k=1}^{n} F_k = F_1+F_2+\cdots+F_n = F_{n+2}-1.\]</span></p>
+<p><strong>Demostración:</strong> (inducción débil). <em>Base.</em> <span class="math inline">\(n=1\)</span>: <span class="math inline">\(F_1 = 1 = 2 - 1 = F_3 - 1\)</span>. Verdadero.</p>
+<p><em>Paso inductivo.</em> Supongamos <span class="math inline">\(\sum_{k=1}^{n} F_k = F_{n+2}-1\)</span> (HI). Entonces <span class="math display">\[\sum_{k=1}^{n+1} F_k = (F_{n+2}-1) + F_{n+1} = (F_{n+1}+F_{n+2}) - 1 = F_{n+3}-1,\]</span> usando la recurrencia <span class="math inline">\(F_{n+1}+F_{n+2}=F_{n+3}\)</span>. <span class="math inline">\(\blacksquare\)</span></p>
+</div>
+</div>
+</section>
+<section id="identidad-de-cassini" class="level3" data-number="9.9.2">
+<h3 data-number="9.9.2" class="anchored" data-anchor-id="identidad-de-cassini"><span class="header-section-number">9.9.2</span> Identidad de Cassini</h3>
+<div class="callout callout-style-default callout-tip callout-titled" title="Teorema: identidad de Cassini">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Teorema: identidad de Cassini
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Para todo <span class="math inline">\(n \ge 1\)</span>, <span class="math display">\[F_{n-1}\,F_{n+1} - F_n^{\,2} = (-1)^{n},\]</span> con la convención <span class="math inline">\(F_0 = 0\)</span>.</p>
+<p><strong>Demostración:</strong> (inducción débil sobre <span class="math inline">\(n\)</span>). <em>Base.</em> <span class="math inline">\(n=1\)</span>: <span class="math inline">\(F_0 F_2 - F_1^2 = 0\cdot 1 - 1 = -1 = (-1)^1\)</span>. Verdadero.</p>
+<p><em>Paso inductivo.</em> Supongamos <span class="math inline">\(F_{n-1}F_{n+1} - F_n^2 = (-1)^n\)</span> (HI). Queremos <span class="math inline">\(F_n F_{n+2} - F_{n+1}^2 = (-1)^{n+1}\)</span>. Usando <span class="math inline">\(F_{n+2}=F_{n+1}+F_n\)</span>: <span class="math display">\[
+\begin{align*}
+F_n F_{n+2} - F_{n+1}^2 &amp;= F_n(F_{n+1}+F_n) - F_{n+1}^2 \\
+&amp;= F_n F_{n+1} + F_n^2 - F_{n+1}^2 \\
+&amp;= F_n^2 - F_{n+1}(F_{n+1}-F_n) \\
+&amp;= F_n^2 - F_{n+1}F_{n-1} \\
+&amp;= -\big(F_{n-1}F_{n+1} - F_n^2\big) \\
+&amp;= -(-1)^n = (-1)^{n+1}.
+\end{align*}
+\]</span> Por inducción, la identidad vale para todo <span class="math inline">\(n \ge 1\)</span>. <span class="math inline">\(\blacksquare\)</span></p>
+</div>
+</div>
+</section>
+<section id="fórmula-de-binet" class="level3" data-number="9.9.3">
+<h3 data-number="9.9.3" class="anchored" data-anchor-id="fórmula-de-binet"><span class="header-section-number">9.9.3</span> Fórmula de Binet</h3>
+<p>Una de las joyas de la teoría: una fórmula <em>cerrada</em> para <span class="math inline">\(F_n\)</span> usando el número áureo <span class="math inline">\(\varphi\)</span>.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Teorema: fórmula de Binet">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Teorema: fórmula de Binet
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Sean <span class="math inline">\(\varphi = \dfrac{1+\sqrt 5}{2}\)</span> y <span class="math inline">\(\psi = \dfrac{1-\sqrt 5}{2}\)</span> las dos raíces de <span class="math inline">\(x^2 = x + 1\)</span>. Entonces, para todo <span class="math inline">\(n \ge 1\)</span>, <span class="math display">\[F_n = \frac{\varphi^{\,n} - \psi^{\,n}}{\sqrt 5}.\]</span></p>
+<p><strong>Demostración:</strong> (inducción fuerte con paso base doble). Como <span class="math inline">\(\varphi\)</span> y <span class="math inline">\(\psi\)</span> satisfacen <span class="math inline">\(x^2 = x+1\)</span>, cumplen <span class="math inline">\(\varphi^{n+2} = \varphi^{n+1} + \varphi^{n}\)</span> y análogamente para <span class="math inline">\(\psi\)</span>.</p>
+<p><em>Base.</em> Para <span class="math inline">\(n=1\)</span>: <span class="math inline">\(\dfrac{\varphi - \psi}{\sqrt 5} = \dfrac{\sqrt 5}{\sqrt 5} = 1 = F_1\)</span>. Para <span class="math inline">\(n=2\)</span>: <span class="math inline">\(\varphi^2 - \psi^2 = (\varphi+\psi)(\varphi-\psi) = 1\cdot\sqrt 5\)</span>, luego <span class="math inline">\(\dfrac{\varphi^2-\psi^2}{\sqrt 5} = 1 = F_2\)</span>. Verdadero.</p>
+<p><em>Paso inductivo.</em> Supongamos la fórmula válida para <span class="math inline">\(n\)</span> y <span class="math inline">\(n+1\)</span> (HI). Entonces <span class="math display">\[
+\begin{align*}
+F_{n+2} &amp;= F_{n+1} + F_n = \frac{\varphi^{n+1}-\psi^{n+1}}{\sqrt 5} + \frac{\varphi^{n}-\psi^{n}}{\sqrt 5} \\
+&amp;= \frac{(\varphi^{n+1}+\varphi^{n}) - (\psi^{n+1}+\psi^{n})}{\sqrt 5} = \frac{\varphi^{n+2}-\psi^{n+2}}{\sqrt 5}.
+\end{align*}
+\]</span> Por inducción, la fórmula vale para todo <span class="math inline">\(n \ge 1\)</span>. <span class="math inline">\(\blacksquare\)</span></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled" title="⚠️ Error frecuente">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>⚠️ Error frecuente
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Aunque la fórmula de Binet contiene <span class="math inline">\(\sqrt 5\)</span>, el resultado <span class="math inline">\(F_n\)</span> es <strong>siempre un entero</strong>: los términos irracionales se cancelan. No conviene usarla para calcular <span class="math inline">\(F_n\)</span> numéricamente sin cuidado (los errores de redondeo se acumulan); su valor es teórico.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="ejercicios-propuestos" class="level2" data-number="9.10">
+<h2 data-number="9.10" class="anchored" data-anchor-id="ejercicios-propuestos"><span class="header-section-number">9.10</span> Ejercicios propuestos</h2>
 <ol type="1">
-<li><span class="math inline">\(P(n_0)\)</span> es verdadera.</li>
-<li>Para todo <span class="math inline">\(k \ge n_0\)</span>, de <span class="math inline">\(P(k)\)</span> se deduce <span class="math inline">\(P(k+1)\)</span>.</li>
+<li>⭐ Demostrar por inducción que <span class="math inline">\(\displaystyle \sum_{k=1}^{n} k = \frac{n(n+1)}{2}\)</span>.</li>
+<li>⭐ Probar que <span class="math inline">\(\displaystyle \sum_{k=1}^{n} k^3 = \left(\frac{n(n+1)}{2}\right)^2\)</span>.</li>
+<li>⭐⭐ Demostrar que <span class="math inline">\(2^n &gt; n\)</span> para todo <span class="math inline">\(n \ge 1\)</span>.</li>
+<li>⭐⭐ Probar la identidad <span class="math inline">\(\displaystyle \sum_{k=1}^{n} F_k^{\,2} = F_n\,F_{n+1}\)</span> para la sucesión de Fibonacci.</li>
+<li>⭐⭐⭐ Demostrar la <strong>desigualdad de Bernoulli</strong>: si <span class="math inline">\(x \ge -1\)</span>, entonces <span class="math inline">\((1+x)^n \ge 1 + nx\)</span> para todo <span class="math inline">\(n \ge 1\)</span>.</li>
+<li>🏆 Sea <span class="math inline">\((a_n)\)</span> definida por <span class="math inline">\(a_1 = 1\)</span> y <span class="math inline">\(a_{n+1} = \sqrt{2 + a_n}\)</span>. Probar por inducción que <span class="math inline">\(a_n &lt; 2\)</span> para todo <span class="math inline">\(n\)</span> y que la sucesión es creciente.</li>
 </ol>
-<p>Entonces <span class="math inline">\(P(n)\)</span> es verdadera para todo <span class="math inline">\(n \ge n_0\)</span>.</p>
-</div>
-</div>
 </section>
-<section id="inducción-fuerte" class="level2">
-<h2 class="anchored" data-anchor-id="inducción-fuerte">Inducción fuerte</h2>
-<div class="callout callout-style-default callout-note callout-titled" title="Principio de inducción fuerte">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Nota</span>Principio de inducción fuerte
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Si</p>
-<ol type="1">
-<li><span class="math inline">\(P(n_0)\)</span> es verdadera.</li>
-<li>Para todo <span class="math inline">\(k \ge n_0\)</span>, de la veracidad de <span class="math inline">\(P(n_0),P(n_0+1),\dots,P(k)\)</span> se deduce <span class="math inline">\(P(k+1)\)</span>.</li>
-</ol>
-<p>Entonces <span class="math inline">\(P(n)\)</span> es verdadera para todo <span class="math inline">\(n \ge n_0\)</span>.</p>
-</div>
-</div>
-</section>
-<section id="sucesión-de-fibonacci" class="level2">
-<h2 class="anchored" data-anchor-id="sucesión-de-fibonacci">Sucesión de Fibonacci</h2>
-<div class="callout callout-style-default callout-note callout-titled" title="Definición: Fibonacci">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Nota</span>Definición: Fibonacci
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>La sucesión de Fibonacci está dada por</p>
-<p><span class="math display">\[F_1=1,\quad F_2=1,\quad F_{n+2}=F_{n+1}+F_n.\]</span></p>
-</div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled" title="Identidad útil">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Identidad útil
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Para todo <span class="math inline">\(n \ge 1\)</span>,</p>
-<p><span class="math display">\[F_1+F_2+\cdots+F_n=F_{n+2}-1.\]</span></p>
-</div>
-</div>
+<section id="referencias-del-capítulo" class="level2" data-number="9.11">
+<h2 data-number="9.11" class="anchored" data-anchor-id="referencias-del-capítulo"><span class="header-section-number">9.11</span> Referencias del capítulo</h2>
+<ul>
+<li><strong>Sociedad de Matemáticas de Chile (Somachi) (1994).</strong> <em>Matemática y Olimpíadas.</em> Santiago. Capítulo II. Fuente base de este capítulo; desarrolla inducción, progresiones y Fibonacci a nivel escolar chileno.</li>
+<li><strong>Engel, A. (1998).</strong> <em>Problem Solving Strategies.</em> Springer. Clásico olímpico; el capítulo sobre inducción ofrece numerosos problemas graduados y la técnica de inducción hacia atrás de Cauchy.</li>
+<li><strong>Andreescu, T. &amp; Feng, Z. (2004).</strong> <em>A Path to Combinatorics for Undergraduates.</em> Birkhäuser. Excelente para identidades de sumas y recurrencias demostradas por inducción.</li>
+<li><strong>Larson, L. C. (1983).</strong> <em>Problem Solving Through Problems.</em> Springer. Incluye una sección dedicada al principio del buen orden y al descenso infinito.</li>
+</ul>
 
 
 </section>

@@ -1,58 +1,884 @@
 [
   {
-    "objectID": "07_problemas_propuestos/index.html#placeholder",
-    "href": "07_problemas_propuestos/index.html#placeholder",
+    "objectID": "07_problemas_propuestos/index.html#problemas-para-resolver-solo",
+    "href": "07_problemas_propuestos/index.html#problemas-para-resolver-solo",
     "title": "Problemas Propuestos",
-    "section": "Placeholder",
-    "text": "Placeholder\nPresentación pendiente para problemas propuestos."
+    "section": "Problemas para resolver solo",
+    "text": "Problemas para resolver solo\nA diferencia de los capítulos anteriores, estos problemas no traen solución.\nLa idea es que los uses para:\n\npracticar y equivocarte sin red de seguridad,\nvolver a intentar y consolidar técnicas,\nentrenar exactamente lo que enfrentarás en competencia.\n\n\nUn problema pensado a fondo, aunque “fallado”, enseña más que diez resueltos de memoria."
   },
   {
-    "objectID": "05_geometria/index.html#placeholder",
-    "href": "05_geometria/index.html#placeholder",
-    "title": "Geometría",
-    "section": "Placeholder",
-    "text": "Placeholder\nPresentación pendiente para geometría."
+    "objectID": "07_problemas_propuestos/index.html#los-niveles-de-dificultad",
+    "href": "07_problemas_propuestos/index.html#los-niveles-de-dificultad",
+    "title": "Problemas Propuestos",
+    "section": "Los niveles de dificultad",
+    "text": "Los niveles de dificultad\nCada problema lleva un indicador de nivel:\n\n⭐   Calentamiento — aplica directo una definición o un resultado.\n⭐⭐   Intermedio — combina dos ideas o un razonamiento no inmediato.\n⭐⭐⭐   Olímpico — nivel regional o nacional.\n🏆   Desafío — nivel IMO o Iberoamericana.\n\nTe recomendamos no saltar a los más difíciles: el calentamiento construye la intuición que luego necesitarás."
   },
   {
-    "objectID": "03_combinatoria/index.html#placeholder",
-    "href": "03_combinatoria/index.html#placeholder",
-    "title": "Combinatoria",
-    "section": "Placeholder",
-    "text": "Placeholder\nPresentación pendiente para combinatoria."
+    "objectID": "07_problemas_propuestos/index.html#primeros-pasos",
+    "href": "07_problemas_propuestos/index.html#primeros-pasos",
+    "title": "Problemas Propuestos",
+    "section": "⭐ Primeros pasos",
+    "text": "⭐ Primeros pasos\n\n(Números) Probar que la suma de tres enteros consecutivos es siempre múltiplo de \\(3\\).\n(Números) Hallar todas las parejas de enteros positivos \\((x, y)\\) tales que \\(xy = 2x + 3y\\).\n(Combinatoria) Demostrar que en cualquier grupo de \\(5\\) enteros siempre hay dos con la misma paridad."
   },
   {
-    "objectID": "01_teoria_numeros/index.html#placeholder",
-    "href": "01_teoria_numeros/index.html#placeholder",
+    "objectID": "07_problemas_propuestos/index.html#más-calentamiento",
+    "href": "07_problemas_propuestos/index.html#más-calentamiento",
+    "title": "Problemas Propuestos",
+    "section": "⭐ Más calentamiento",
+    "text": "⭐ Más calentamiento\n\n(Análisis) Convertir el decimal periódico \\(0,\\overline{54}\\) en una fracción irreducible.\n(Geometría) En un triángulo isósceles, probar que la altura trazada a la base es también mediana y bisectriz de ese vértice.\n(Números) Determinar el resto de dividir \\(7^{100}\\) por \\(5\\)."
+  },
+  {
+    "objectID": "07_problemas_propuestos/index.html#combinando-ideas",
+    "href": "07_problemas_propuestos/index.html#combinando-ideas",
+    "title": "Problemas Propuestos",
+    "section": "⭐⭐ Combinando ideas",
+    "text": "⭐⭐ Combinando ideas\n\n(Números) Demostrar que el producto de cuatro enteros consecutivos, aumentado en \\(1\\), es un cuadrado perfecto.\n(Inducción) Probar que \\(n^3 - n\\) es divisible por \\(6\\) para todo \\(n \\in \\mathbb{N}\\).\n(Combinatoria) ¿De cuántas maneras se pueden distribuir \\(10\\) caramelos idénticos entre \\(4\\) niños, si cada uno puede recibir cero o más?"
+  },
+  {
+    "objectID": "07_problemas_propuestos/index.html#un-paso-más",
+    "href": "07_problemas_propuestos/index.html#un-paso-más",
+    "title": "Problemas Propuestos",
+    "section": "⭐⭐ Un paso más",
+    "text": "⭐⭐ Un paso más\n\n(Análisis) Demostrar que \\(\\sqrt{2} + \\sqrt{3}\\) es irracional.\n(Geometría) En el triángulo \\(ABC\\), sea \\(M\\) el punto medio de \\(BC\\). Probar que \\[AB^2 + AC^2 = 2\\,AM^2 + \\tfrac{1}{2}\\,BC^2.\\]\n(Números) Hallar todos los enteros positivos \\(n\\) tales que \\(n + 1\\) divide a \\(n^2 + 1\\)."
+  },
+  {
+    "objectID": "07_problemas_propuestos/index.html#nivel-nacional",
+    "href": "07_problemas_propuestos/index.html#nivel-nacional",
+    "title": "Problemas Propuestos",
+    "section": "⭐⭐⭐ Nivel nacional",
+    "text": "⭐⭐⭐ Nivel nacional\n\n(Números) Determinar todos los enteros positivos \\(n\\) tales que \\(2^n + 1\\) es divisible por \\(3\\).\n(Combinatoria) En un torneo de \\(n\\) jugadores cada par juega una partida (sin empates). Probar que existe un jugador \\(J\\) tal que todo otro jugador perdió contra \\(J\\), o perdió contra alguien que perdió contra \\(J\\).\n(Geometría) Sea \\(ABC\\) un triángulo con \\(D\\), \\(E\\), \\(F\\) los pies de las alturas. Probar que \\(AD\\), \\(BE\\), \\(CF\\) concurren en un punto (el ortocentro)."
+  },
+  {
+    "objectID": "07_problemas_propuestos/index.html#olímpico-fino",
+    "href": "07_problemas_propuestos/index.html#olímpico-fino",
+    "title": "Problemas Propuestos",
+    "section": "⭐⭐⭐ Olímpico fino",
+    "text": "⭐⭐⭐ Olímpico fino\n\n(Análisis) Para reales positivos \\(a_1, \\ldots, a_n\\), demostrar la desigualdad AM-GM \\[\\frac{a_1 + \\cdots + a_n}{n} \\geq \\sqrt[n]{a_1 \\cdots a_n},\\] y determinar cuándo se alcanza la igualdad.\n(Números) Probar que los números de Fermat \\(F_n = 2^{2^n} + 1\\) y \\(F_m\\) son coprimos siempre que \\(m \\neq n\\).\n(Números) Hallar todas las soluciones enteras positivas de \\(x^2 - y^2 = 2024\\)."
+  },
+  {
+    "objectID": "07_problemas_propuestos/index.html#nivel-imo-ibero",
+    "href": "07_problemas_propuestos/index.html#nivel-imo-ibero",
+    "title": "Problemas Propuestos",
+    "section": "🏆 Nivel IMO / Ibero",
+    "text": "🏆 Nivel IMO / Ibero\n\n(Números) Determinar todos los pares de enteros positivos \\((a, b)\\) con \\(a \\neq b\\) tales que \\(a^b = b^a\\).\n(Geometría) Sea \\(ABC\\) un triángulo con incentro \\(I\\). La recta \\(AI\\) corta de nuevo a la circunferencia circunscrita en \\(M\\). Probar que \\[MB = MC = MI.\\]\n(Desigualdades) Para reales positivos \\(a, b, c\\) con \\(a + b + c = 3\\), demostrar que \\[\\frac{a}{b+c} + \\frac{b}{c+a} + \\frac{c}{a+b} \\geq \\frac{3}{2}.\\]"
+  },
+  {
+    "objectID": "07_problemas_propuestos/index.html#el-último-escalón",
+    "href": "07_problemas_propuestos/index.html#el-último-escalón",
+    "title": "Problemas Propuestos",
+    "section": "🏆 El último escalón",
+    "text": "🏆 El último escalón\n\n(Combinatoria) Sea \\(S\\) un conjunto de \\(n \\geq 2\\) puntos del plano, no todos colineales. Probar que existe una recta que pasa exactamente por dos puntos de \\(S\\) (Sylvester–Gallai).\n(Números) Sea \\(p\\) un primo impar. Probar que \\[1^{p-1} + 2^{p-1} + \\cdots + (p-1)^{p-1} \\equiv -1 \\pmod{p}.\\]\n(Funcional) Hallar todas las funciones \\(f : \\mathbb{R} \\to \\mathbb{R}\\) tales que para todos \\(x, y\\): \\[f(x+y) = f(x) + f(y) \\quad \\text{y} \\quad f(xy) = f(x)\\,f(y).\\]"
+  },
+  {
+    "objectID": "07_problemas_propuestos/index.html#la-matemática-está-viva",
+    "href": "07_problemas_propuestos/index.html#la-matemática-está-viva",
+    "title": "Problemas Propuestos",
+    "section": "La matemática está viva",
+    "text": "La matemática está viva\nLos siguientes no son ejercicios de práctica: son problemas cuyo enunciado se entiende con conocimientos elementales, pero cuya resolución ha desafiado a las mejores mentes de la historia.\nVarios siguen abiertos hoy. Están aquí para mostrarte que detrás de enunciados simples se esconden océanos de profundidad.\n\n¡Disfruta su belleza, pero no te frustres si no salen!"
+  },
+  {
+    "objectID": "07_problemas_propuestos/index.html#conjetura-de-collatz-3n1",
+    "href": "07_problemas_propuestos/index.html#conjetura-de-collatz-3n1",
+    "title": "Problemas Propuestos",
+    "section": "📖 Conjetura de Collatz (\\(3n+1\\))",
+    "text": "📖 Conjetura de Collatz (\\(3n+1\\))\nToma cualquier entero positivo \\(n\\). Si es par, divídelo por \\(2\\); si es impar, reemplázalo por \\(3n + 1\\). Repite.\nLa conjetura afirma que, partiendo de cualquier número, la sucesión llega al \\(1\\).\nPor ejemplo, desde \\(6\\): \\[6 \\to 3 \\to 10 \\to 5 \\to 16 \\to 8 \\to 4 \\to 2 \\to 1.\\]\nEstatus: abierto. Propuesta por Lothar Collatz en 1937; verificada por computadora para números enormes, pero sin demostración general."
+  },
+  {
+    "objectID": "07_problemas_propuestos/index.html#conjetura-de-goldbach",
+    "href": "07_problemas_propuestos/index.html#conjetura-de-goldbach",
+    "title": "Problemas Propuestos",
+    "section": "📖 Conjetura de Goldbach",
+    "text": "📖 Conjetura de Goldbach\nTodo número entero par mayor que \\(2\\) se puede escribir como suma de dos primos.\nPor ejemplo: \\[4 = 2 + 2, \\quad 10 = 3 + 7, \\quad 28 = 5 + 23.\\]\nEstatus: abierto. Formulada por Christian Goldbach en una carta a Euler en 1742; verificada computacionalmente para números muy grandes, pero sin demostración general."
+  },
+  {
+    "objectID": "07_problemas_propuestos/index.html#primos-gemelos",
+    "href": "07_problemas_propuestos/index.html#primos-gemelos",
+    "title": "Problemas Propuestos",
+    "section": "📖 Primos gemelos",
+    "text": "📖 Primos gemelos\nLos primos gemelos difieren en \\(2\\), como \\((3,5)\\), \\((11,13)\\) o \\((17,19)\\).\nLa conjetura afirma que existen infinitos pares de primos gemelos.\nEstatus: abierto. En 2013, Yitang Zhang probó que hay infinitos pares de primos a distancia acotada; el proyecto Polymath redujo esa cota a \\(246\\), pero el caso de la diferencia \\(2\\) sigue sin resolverse."
+  },
+  {
+    "objectID": "07_problemas_propuestos/index.html#números-perfectos-impares",
+    "href": "07_problemas_propuestos/index.html#números-perfectos-impares",
+    "title": "Problemas Propuestos",
+    "section": "📖 Números perfectos impares",
+    "text": "📖 Números perfectos impares\nUn número es perfecto si es igual a la suma de sus divisores propios: \\[6 = 1 + 2 + 3, \\qquad 28 = 1 + 2 + 4 + 7 + 14.\\]\nTodos los perfectos conocidos son pares. ¿Existe alguno impar?\nEstatus: abierto. No se conoce ninguno; se ha probado que, de existir, debe superar \\(10^{1500}\\), pero no se ha demostrado que sea imposible."
+  },
+  {
+    "objectID": "07_problemas_propuestos/index.html#atrévete-a-intentarlo",
+    "href": "07_problemas_propuestos/index.html#atrévete-a-intentarlo",
+    "title": "Problemas Propuestos",
+    "section": "Atrévete a intentarlo",
+    "text": "Atrévete a intentarlo\n\nLa práctica real es resolver sin solución a la vista: equivocarse es parte del camino.\nSube de nivel poco a poco: el calentamiento construye la intuición del desafío.\nLas grandes conjeturas nos recuerdan que la matemática sigue viva y espera nuevas ideas.\n\n\nEl próximo problema abierto podría empezar con una pregunta tuya. ¡A trabajar!"
+  },
+  {
+    "objectID": "05_geometria/index.html#geometría-sintética-del-plano",
+    "href": "05_geometria/index.html#geometría-sintética-del-plano",
+    "title": "Elementos de Geometría",
+    "section": "Geometría sintética del plano",
+    "text": "Geometría sintética del plano\nTriángulos, circunferencias y centros notables.\nEl arte de ver la relación correcta: un ángulo que se repite, una circunferencia que pasa por cuatro puntos, tres cevianas que concurren.\n\nEl reto rara vez está en la cuenta difícil, sino en elegir la herramienta adecuada."
+  },
+  {
+    "objectID": "05_geometria/index.html#un-problema-elegante",
+    "href": "05_geometria/index.html#un-problema-elegante",
+    "title": "Elementos de Geometría",
+    "section": "Un problema elegante",
+    "text": "Un problema elegante\n\n\n\n\n\n\n\nProblema (triángulo equilátero)\n\n\nSea \\(\\triangle ABC\\) equilátero inscrito en una circunferencia y \\(P\\) un punto del arco \\(BC\\) que no contiene a \\(A\\). Probar que \\[PA = PB + PC.\\]\n\n\n\n\n\n¿Cómo conectar tres distancias a los vértices con una sola igualdad? La clave estará en un cuadrilátero cíclico."
+  },
+  {
+    "objectID": "05_geometria/index.html#ángulos-y-persecución",
+    "href": "05_geometria/index.html#ángulos-y-persecución",
+    "title": "Elementos de Geometría",
+    "section": "Ángulos y persecución",
+    "text": "Ángulos y persecución\n\nLa suma de los ángulos interiores de un triángulo es \\(180^\\circ\\).\nEntre dos paralelas cortadas por una transversal: los alternos internos y los correspondientes son iguales.\n\n\nEsta única propiedad es la base de casi toda la persecución de ángulos (angle chasing)."
+  },
+  {
+    "objectID": "05_geometria/index.html#congruencia",
+    "href": "05_geometria/index.html#congruencia",
+    "title": "Elementos de Geometría",
+    "section": "Congruencia",
+    "text": "Congruencia\nDos triángulos son congruentes (\\(\\triangle ABC \\cong \\triangle A'B'C'\\)) si lados y ángulos correspondientes coinciden.\nCriterios clásicos:\n\nLLL — los tres lados.\nLAL — dos lados y el ángulo comprendido.\nALA — dos ángulos y el lado común."
+  },
+  {
+    "objectID": "05_geometria/index.html#semejanza",
+    "href": "05_geometria/index.html#semejanza",
+    "title": "Elementos de Geometría",
+    "section": "Semejanza",
+    "text": "Semejanza\nDos triángulos son semejantes (\\(\\triangle ABC \\sim \\triangle A'B'C'\\)) si sus ángulos son iguales y sus lados proporcionales: \\[\\frac{A'B'}{AB}=\\frac{B'C'}{BC}=\\frac{C'A'}{CA}=k.\\]\n\nCriterios: AA, LAL proporcional y LLL proporcional. La razón \\(k\\) controla las longitudes."
+  },
+  {
+    "objectID": "05_geometria/index.html#teorema-de-pitágoras",
+    "href": "05_geometria/index.html#teorema-de-pitágoras",
+    "title": "Elementos de Geometría",
+    "section": "Teorema de Pitágoras",
+    "text": "Teorema de Pitágoras\nEn un triángulo rectángulo de catetos \\(a,b\\) e hipotenusa \\(c\\): \\[a^2+b^2=c^2.\\]\n\nIdea (por áreas): cuatro copias del triángulo en un cuadrado de lado \\(a+b\\) dejan al centro un cuadrado de lado \\(c\\). Igualando áreas, \\((a+b)^2 = 2ab + c^2\\)."
+  },
+  {
+    "objectID": "05_geometria/index.html#teorema-de-tales",
+    "href": "05_geometria/index.html#teorema-de-tales",
+    "title": "Elementos de Geometría",
+    "section": "Teorema de Tales",
+    "text": "Teorema de Tales\nSi en \\(\\triangle ABC\\) una recta paralela a \\(\\overline{BC}\\) corta a \\(\\overline{AB}\\) en \\(D\\) y a \\(\\overline{AC}\\) en \\(E\\): \\[\\frac{AD}{DB}=\\frac{AE}{EC}.\\]\n\nSale de la semejanza \\(\\triangle ADE \\sim \\triangle ABC\\) (criterio AA): las paralelas crean ángulos iguales."
+  },
+  {
+    "objectID": "05_geometria/index.html#ángulo-inscrito",
+    "href": "05_geometria/index.html#ángulo-inscrito",
+    "title": "Elementos de Geometría",
+    "section": "Ángulo inscrito",
+    "text": "Ángulo inscrito\nUn ángulo inscrito mide la mitad del ángulo central que subtiende el mismo arco.\n\nConsecuencia decisiva: todos los ángulos inscritos que abarcan un mismo arco son iguales. Por eso aparecen igualdades de ángulos “gratis” en cada circunferencia."
+  },
+  {
+    "objectID": "05_geometria/index.html#cuadriláteros-cíclicos",
+    "href": "05_geometria/index.html#cuadriláteros-cíclicos",
+    "title": "Elementos de Geometría",
+    "section": "Cuadriláteros cíclicos",
+    "text": "Cuadriláteros cíclicos\nUn cuadrilátero convexo \\(ABCD\\) es cíclico si y solo si sus ángulos opuestos son suplementarios: \\[\\angle A + \\angle C = 180^\\circ.\\]\n\nEquivalente útil: \\(\\angle ACB = \\angle ADB\\) (ven el mismo segmento \\(\\overline{AB}\\) desde el mismo lado). Detectar un cíclico es la mitad del problema."
+  },
+  {
+    "objectID": "05_geometria/index.html#los-cuatro-centros",
+    "href": "05_geometria/index.html#los-cuatro-centros",
+    "title": "Elementos de Geometría",
+    "section": "Los cuatro centros",
+    "text": "Los cuatro centros\n\nBaricentro \\(G\\): corte de las medianas; divide cada una en razón \\(2:1\\) desde el vértice.\nIncentro \\(I\\): corte de las bisectrices internas; centro del incírculo.\nCircuncentro \\(O\\): corte de las mediatrices; centro del circuncírculo.\nOrtocentro \\(H\\): corte de las alturas."
+  },
+  {
+    "objectID": "05_geometria/index.html#área-e-inradio",
+    "href": "05_geometria/index.html#área-e-inradio",
+    "title": "Elementos de Geometría",
+    "section": "Área e inradio",
+    "text": "Área e inradio\nSi \\([ABC]\\) es el área, \\(s\\) el semiperímetro y \\(r\\) el inradio: \\[[ABC] = r\\,s.\\]\n\nSe ve uniendo \\(I\\) con los tres vértices: el triángulo queda partido en tres de bases \\(a,b,c\\) y altura común \\(r\\)."
+  },
+  {
+    "objectID": "05_geometria/index.html#teorema-de-ceva",
+    "href": "05_geometria/index.html#teorema-de-ceva",
+    "title": "Elementos de Geometría",
+    "section": "Teorema de Ceva",
+    "text": "Teorema de Ceva\nPara \\(D,E,F\\) en los lados \\(\\overline{BC},\\overline{CA},\\overline{AB}\\) de \\(\\triangle ABC\\), las cevianas \\(AD,BE,CF\\) concurren si y solo si \\[\\frac{BD}{DC}\\cdot \\frac{CE}{EA}\\cdot \\frac{AF}{FB}=1.\\]\nLa herramienta reina de los problemas de concurrencia."
+  },
+  {
+    "objectID": "05_geometria/index.html#teorema-de-menelao",
+    "href": "05_geometria/index.html#teorema-de-menelao",
+    "title": "Elementos de Geometría",
+    "section": "Teorema de Menelao",
+    "text": "Teorema de Menelao\nSi una recta corta a los lados (o prolongaciones) en \\(D,E,F\\), con longitudes dirigidas: \\[\\frac{BD}{DC}\\cdot \\frac{CE}{EA}\\cdot \\frac{AF}{FB}=-1.\\]\n\nMismo producto que Ceva, pero el signo \\(-1\\) distingue colinealidad de concurrencia."
+  },
+  {
+    "objectID": "05_geometria/index.html#teorema-de-ptolomeo",
+    "href": "05_geometria/index.html#teorema-de-ptolomeo",
+    "title": "Elementos de Geometría",
+    "section": "Teorema de Ptolomeo",
+    "text": "Teorema de Ptolomeo\nEn un cuadrilátero cíclico \\(ABCD\\): \\[AC \\cdot BD = AB \\cdot CD + BC \\cdot AD.\\]\n\nEn general vale la desigualdad \\(AC\\cdot BD \\le AB\\cdot CD + BC\\cdot AD\\), con igualdad si y solo si \\(ABCD\\) es cíclico."
+  },
+  {
+    "objectID": "05_geometria/index.html#recta-de-euler-y-nueve-puntos",
+    "href": "05_geometria/index.html#recta-de-euler-y-nueve-puntos",
+    "title": "Elementos de Geometría",
+    "section": "Recta de Euler y nueve puntos",
+    "text": "Recta de Euler y nueve puntos\nEn todo triángulo no equilátero, \\(H\\), \\(G\\) y \\(O\\) son colineales (recta de Euler), con \\[HG = 2\\,GO.\\]\n\nLa circunferencia de los nueve puntos pasa por los puntos medios de los lados, los pies de las alturas y los puntos medios de \\(\\overline{AH},\\overline{BH},\\overline{CH}\\). Su centro \\(N\\) es el punto medio de \\(\\overline{OH}\\) y su radio es \\(R/2\\)."
+  },
+  {
+    "objectID": "05_geometria/index.html#problema-y-estrategia",
+    "href": "05_geometria/index.html#problema-y-estrategia",
+    "title": "Elementos de Geometría",
+    "section": "Problema y estrategia",
+    "text": "Problema y estrategia\n\n\n\n\n\n\n\nProblema\n\n\n\\(\\triangle ABC\\) equilátero inscrito en una circunferencia; \\(P\\) está en el arco \\(BC\\) que no contiene a \\(A\\). Probar que \\(PA = PB + PC\\).\n\n\n\n\n\nEstrategia: el cuadrilátero \\(ABPC\\) es cíclico. Aplicamos Ptolomeo y usamos que el triángulo es equilátero."
+  },
+  {
+    "objectID": "05_geometria/index.html#solución",
+    "href": "05_geometria/index.html#solución",
+    "title": "Elementos de Geometría",
+    "section": "Solución",
+    "text": "Solución\nPor Ptolomeo en el cíclico \\(ABPC\\): \\[PA\\cdot BC = PB\\cdot AC + PC\\cdot AB.\\]\n\nComo \\(\\triangle ABC\\) es equilátero, \\(AB=BC=CA=\\ell\\): \\[PA\\cdot \\ell = PB\\cdot \\ell + PC\\cdot \\ell.\\]\n\n\nDividiendo por \\(\\ell\\): \\[PA = PB + PC. \\qquad \\blacksquare\\]"
+  },
+  {
+    "objectID": "05_geometria/index.html#ideas-clave",
+    "href": "05_geometria/index.html#ideas-clave",
+    "title": "Elementos de Geometría",
+    "section": "Ideas clave",
+    "text": "Ideas clave\n\nLa persecución de ángulos convierte una figura en igualdades.\nEn una circunferencia, ángulos inscritos sobre un mismo arco son iguales.\nDetectar un cuadrilátero cíclico suele desbloquear el problema.\nCeva \\(\\Rightarrow\\) concurrencia; Menelao \\(\\Rightarrow\\) colinealidad.\n\\(H\\), \\(G\\), \\(O\\) viven en la recta de Euler con \\(HG=2\\,GO\\)."
+  },
+  {
+    "objectID": "05_geometria/index.html#para-practicar",
+    "href": "05_geometria/index.html#para-practicar",
+    "title": "Elementos de Geometría",
+    "section": "Para practicar",
+    "text": "Para practicar\n\n⭐ Mediana a la hipotenusa de un triángulo rectángulo de catetos \\(5\\) y \\(12\\).\n⭐⭐ Con la bisectriz: si \\(AB=6\\), \\(AC=4\\), \\(BC=8\\), hallar \\(BD\\) y \\(DC\\).\n⭐⭐⭐ Cevianas con \\(\\frac{BD}{DC}=2\\) y \\(\\frac{CE}{EA}=3\\): hallar \\(\\frac{AF}{FB}\\).\n🏆 Probar que el reflejo del ortocentro \\(H\\) respecto de un lado está en el circuncírculo.\n\n\n¡A dibujar y a perseguir ángulos!"
+  },
+  {
+    "objectID": "03_combinatoria/index.html#un-problema-para-empezar",
+    "href": "03_combinatoria/index.html#un-problema-para-empezar",
+    "title": "Elementos de Combinatoria",
+    "section": "Un problema para empezar",
+    "text": "Un problema para empezar\n\nRepartimos \\(30\\) personas según su mes de nacimiento. ¿Podemos garantizar que al menos \\(3\\) nacieron el mismo mes?\n\n\nSí, y no necesitamos conocer ningún cumpleaños.\n\n\nHay \\(12\\) meses (cajas) y \\(30\\) personas (objetos): algún mes alberga al menos \\(\\lceil 30/12 \\rceil = 3\\) personas. Es el principio del palomar."
+  },
+  {
+    "objectID": "03_combinatoria/index.html#principio-de-la-suma",
+    "href": "03_combinatoria/index.html#principio-de-la-suma",
+    "title": "Elementos de Combinatoria",
+    "section": "Principio de la suma",
+    "text": "Principio de la suma\nOpciones que son alternativas excluyentes se suman.\nSi \\(A_1,\\dots,A_r\\) son conjuntos finitos disjuntos dos a dos:\n\\[\\left| \\bigcup_{i=1}^{r} A_i \\right| = \\sum_{i=1}^{r} |A_i|.\\]\nEjemplo: elegir un postre del menu, sea de los \\(3\\) pasteles o de las \\(2\\) frutas: \\(3 + 2 = 5\\) opciones."
+  },
+  {
+    "objectID": "03_combinatoria/index.html#principio-del-producto",
+    "href": "03_combinatoria/index.html#principio-del-producto",
+    "title": "Elementos de Combinatoria",
+    "section": "Principio del producto",
+    "text": "Principio del producto\nEtapas sucesivas e independientes se multiplican.\nCon \\(n_1\\) opciones en la primera etapa, \\(n_2\\) en la segunda, …, \\(n_r\\) en la \\(r\\)-ésima:\n\\[n_1 \\cdot n_2 \\cdots n_r = \\prod_{i=1}^{r} n_i.\\]\nConsecuencia: hay \\(n^k\\) funciones \\(f:A\\to B\\) con \\(|A|=k\\), \\(|B|=n\\), y \\(2^n\\) subconjuntos de un conjunto de \\(n\\) elementos."
+  },
+  {
+    "objectID": "03_combinatoria/index.html#variaciones",
+    "href": "03_combinatoria/index.html#variaciones",
+    "title": "Elementos de Combinatoria",
+    "section": "Variaciones",
+    "text": "Variaciones\nEl orden importa y no usamos todos los elementos.\nSin repetición (elementos distintos):\n\\[V(n,k) = n(n-1)\\cdots(n-k+1) = \\frac{n!}{(n-k)!}.\\]\nCon repetición (se permite repetir):\n\\[VR(n,k) = n^k.\\]"
+  },
+  {
+    "objectID": "03_combinatoria/index.html#permutaciones-lineales",
+    "href": "03_combinatoria/index.html#permutaciones-lineales",
+    "title": "Elementos de Combinatoria",
+    "section": "Permutaciones lineales",
+    "text": "Permutaciones lineales\nOrdenamiento completo de \\(n\\) objetos distintos en fila:\n\\[P(n) = n! = n(n-1)\\cdots 2 \\cdot 1, \\qquad 0! = 1.\\]\nEs el caso \\(k = n\\) de las variaciones: usamos todos los elementos."
+  },
+  {
+    "objectID": "03_combinatoria/index.html#permutaciones-cíclicas-y-con-repetición",
+    "href": "03_combinatoria/index.html#permutaciones-cíclicas-y-con-repetición",
+    "title": "Elementos de Combinatoria",
+    "section": "Permutaciones cíclicas y con repetición",
+    "text": "Permutaciones cíclicas y con repetición\nCíclicas (\\(n\\) objetos en círculo, rotaciones iguales):\n\\[(n-1)!.\\]\nCon repetición (\\(n_1\\) iguales de un tipo, …, \\(n_r\\) del último, \\(\\sum n_i = n\\)) — coeficiente multinomial:\n\\[\\binom{n}{n_1,\\dots,n_r} = \\frac{n!}{n_1!\\,n_2!\\cdots n_r!}.\\]"
+  },
+  {
+    "objectID": "03_combinatoria/index.html#combinaciones",
+    "href": "03_combinatoria/index.html#combinaciones",
+    "title": "Elementos de Combinatoria",
+    "section": "Combinaciones",
+    "text": "Combinaciones\nEl orden no importa: elegimos un subconjunto de \\(k\\) entre \\(n\\).\n\\[\\binom{n}{k} = \\frac{n!}{k!\\,(n-k)!}, \\qquad 0 \\le k \\le n.\\]\nCon repetición (barras y estrellas), elegir \\(k\\) entre \\(n\\) tipos:\n\\[\\binom{n+k-1}{k}.\\]\nRelación clave: \\(V(n,k) = \\binom{n}{k}\\cdot k!\\)."
+  },
+  {
+    "objectID": "03_combinatoria/index.html#desarrollo-del-binomio",
+    "href": "03_combinatoria/index.html#desarrollo-del-binomio",
+    "title": "Elementos de Combinatoria",
+    "section": "Desarrollo del binomio",
+    "text": "Desarrollo del binomio\nPara todo \\(n \\in \\mathbb{N}\\) y todos \\(a, b\\):\n\\[(a+b)^n = \\sum_{k=0}^{n} \\binom{n}{k}\\, a^{n-k} b^{k}.\\]\nCada término \\(a^{n-k}b^k\\) surge al elegir \\(b\\) en exactamente \\(k\\) de los \\(n\\) factores: hay \\(\\binom{n}{k}\\) maneras."
+  },
+  {
+    "objectID": "03_combinatoria/index.html#identidades-binomiales-útiles",
+    "href": "03_combinatoria/index.html#identidades-binomiales-útiles",
+    "title": "Elementos de Combinatoria",
+    "section": "Identidades binomiales útiles",
+    "text": "Identidades binomiales útiles\nRegla de Pascal: \\[\\binom{n}{k} = \\binom{n-1}{k-1} + \\binom{n-1}{k}.\\]\nSuma de una fila: \\[\\sum_{k=0}^{n} \\binom{n}{k} = 2^{n}.\\]\nVandermonde: \\[\\binom{m+n}{r} = \\sum_{k=0}^{r} \\binom{m}{k}\\binom{n}{r-k}.\\]"
+  },
+  {
+    "objectID": "03_combinatoria/index.html#problema-y-estrategia",
+    "href": "03_combinatoria/index.html#problema-y-estrategia",
+    "title": "Elementos de Combinatoria",
+    "section": "Problema y estrategia",
+    "text": "Problema y estrategia\nProblema: hallar el coeficiente del término en \\(x^{2}y^{3}\\) del desarrollo de \\((2x + 3y)^{5}\\).\n\nEstrategia: aplicar el binomio de Newton con \\(a = 2x\\), \\(b = 3y\\) y aislar el término con los exponentes pedidos."
+  },
+  {
+    "objectID": "03_combinatoria/index.html#solución-por-pasos",
+    "href": "03_combinatoria/index.html#solución-por-pasos",
+    "title": "Elementos de Combinatoria",
+    "section": "Solución por pasos",
+    "text": "Solución por pasos\nEl término general es \\(\\binom{5}{k}(2x)^{5-k}(3y)^{k}\\).\n\nPara obtener \\(x^{2}y^{3}\\) necesitamos \\(k = 3\\):\n\n\n\\[\\binom{5}{3}(2x)^{2}(3y)^{3} = 10 \\cdot 4x^{2}\\cdot 27 y^{3} = 1080\\, x^{2}y^{3}.\\]\n\n\nEl coeficiente buscado es \\(\\boxed{1080}\\)."
+  },
+  {
+    "objectID": "03_combinatoria/index.html#enunciado",
+    "href": "03_combinatoria/index.html#enunciado",
+    "title": "Elementos de Combinatoria",
+    "section": "Enunciado",
+    "text": "Enunciado\nForma simple: si se distribuyen \\(N\\) objetos en \\(k\\) cajas y \\(N &gt; k\\), alguna caja contiene dos o más objetos.\nForma generalizada: alguna caja contiene al menos\n\\[\\left\\lceil \\frac{N}{k} \\right\\rceil\\]\nobjetos. Simple de enunciar, pero sorprendentemente potente."
+  },
+  {
+    "objectID": "03_combinatoria/index.html#ejemplo-del-palomar",
+    "href": "03_combinatoria/index.html#ejemplo-del-palomar",
+    "title": "Elementos de Combinatoria",
+    "section": "Ejemplo del palomar",
+    "text": "Ejemplo del palomar\nProblema: entre cualesquiera \\(13\\) enteros, hay dos cuya diferencia es múltiplo de \\(12\\).\n\nEstrategia: usar los residuos módulo \\(12\\) como cajas.\n\n\nSolo hay \\(12\\) residuos \\(\\{0,1,\\dots,11\\}\\) y tenemos \\(13\\) enteros. Como \\(13 &gt; 12\\), dos caen en la misma caja: son congruentes módulo \\(12\\) y su diferencia es múltiplo de \\(12\\). \\(\\blacksquare\\)"
+  },
+  {
+    "objectID": "03_combinatoria/index.html#lema-de-burnside",
+    "href": "03_combinatoria/index.html#lema-de-burnside",
+    "title": "Elementos de Combinatoria",
+    "section": "Lema de Burnside",
+    "text": "Lema de Burnside\nA veces dos configuraciones son “la misma” salvo una simetría (rotar un collar, girar un dado). Modelamos las simetrías como un grupo \\(G\\) que actúa sobre el conjunto \\(X\\).\nEl número de configuraciones distintas (órbitas) es el promedio de puntos fijos:\n\\[\\#\\text{órbitas} = \\frac{1}{|G|} \\sum_{g \\in G} |\\mathrm{Fij}(g)|.\\]\nCaso típico (Pólya): collares de \\(6\\) cuentas y \\(2\\) colores bajo rotación dan \\(\\tfrac{1}{6}(2^6+2+2^2+2^3+2^2+2) = 14\\) collares."
+  },
+  {
+    "objectID": "03_combinatoria/index.html#ideas-clave",
+    "href": "03_combinatoria/index.html#ideas-clave",
+    "title": "Elementos de Combinatoria",
+    "section": "Ideas clave",
+    "text": "Ideas clave\n\nSuma para alternativas excluyentes; producto para etapas sucesivas.\nOrden importa \\(\\Rightarrow\\) variaciones / permutaciones; no importa \\(\\Rightarrow\\) combinaciones \\(\\binom{n}{k}\\).\nEl binomio de Newton y la regla de Pascal conectan álgebra y conteo.\nEl palomar demuestra existencia sin construir el ejemplo.\nBurnside/Pólya cuenta configuraciones distintas salvo simetría."
+  },
+  {
+    "objectID": "03_combinatoria/index.html#problemas-para-practicar",
+    "href": "03_combinatoria/index.html#problemas-para-practicar",
+    "title": "Elementos de Combinatoria",
+    "section": "Problemas para practicar",
+    "text": "Problemas para practicar\n\n¿Cuántos números de \\(4\\) cifras hay si la primera no es \\(0\\) y se permite repetir?\nDemostrar por doble conteo que \\(k\\binom{n}{k} = n\\binom{n-1}{k-1}\\).\n¿Cuántos collares de \\(6\\) cuentas con \\(3\\) colores hay salvo rotación?\nProbar que al elegir \\(51\\) números de \\(\\{1,\\dots,100\\}\\), uno divide a otro.\nReordenamientos distintos de las letras de MATEMATICA.\n\n¡A contar!"
+  },
+  {
+    "objectID": "01_teoria_numeros/index.html#teoría-de-números",
+    "href": "01_teoria_numeros/index.html#teoría-de-números",
     "title": "Teoría de Números",
-    "section": "Placeholder",
-    "text": "Placeholder\nPresentación pendiente para teoría de números."
+    "section": "Teoría de Números",
+    "text": "Teoría de Números\nDivisibilidad, primos y congruencias\nLa rama más antigua de la matemática y, a la vez, una fuente inagotable de problemas olímpicos: fáciles de enunciar, difíciles de resolver.\n\nMatemática Olímpica — Capítulo I"
   },
   {
-    "objectID": "00_historia/index.html#placeholder",
-    "href": "00_historia/index.html#placeholder",
-    "title": "Historia",
-    "section": "Placeholder",
-    "text": "Placeholder\nPresentación pendiente para la sección de historia."
+    "objectID": "01_teoria_numeros/index.html#por-qué-importa",
+    "href": "01_teoria_numeros/index.html#por-qué-importa",
+    "title": "Teoría de Números",
+    "section": "¿Por qué importa?",
+    "text": "¿Por qué importa?\n\n\n\n\n\n\n\nProblema motivador\n\n\nHalla las dos últimas cifras de \\(7^{2024}\\).\n\n\n\n\n\nNo queremos calcular el número completo (¡tiene más de \\(1700\\) dígitos!).\n\n\nSolo nos interesa su resto módulo \\(100\\). La teoría de números nos dará el lenguaje y las herramientas para responder en pocas líneas."
   },
   {
-    "objectID": "02_induccion/index.html#placeholder",
-    "href": "02_induccion/index.html#placeholder",
-    "title": "Inducción",
-    "section": "Placeholder",
-    "text": "Placeholder\nPresentación pendiente para inducción matemática."
+    "objectID": "01_teoria_numeros/index.html#divisibilidad-1",
+    "href": "01_teoria_numeros/index.html#divisibilidad-1",
+    "title": "Teoría de Números",
+    "section": "Divisibilidad",
+    "text": "Divisibilidad\n\n\n\n\n\n\n\nDefinición\n\n\nSean \\(a,b \\in \\mathbb{Z}\\) con \\(a \\neq 0\\). Decimos que \\(a \\mid b\\) si existe \\(k \\in \\mathbb{Z}\\) tal que \\(b = ak\\).\n\n\n\n\nPropiedades clave:\n\n\\(a \\mid b\\) y \\(b \\mid c\\) \\(\\Rightarrow\\) \\(a \\mid c\\) (transitividad).\n\\(a \\mid b\\) y \\(a \\mid c\\) \\(\\Rightarrow\\) \\(a \\mid (bx + cy)\\) para todo \\(x,y \\in \\mathbb{Z}\\)."
   },
   {
-    "objectID": "04_analisis/index.html#placeholder",
-    "href": "04_analisis/index.html#placeholder",
-    "title": "Análisis",
-    "section": "Placeholder",
-    "text": "Placeholder\nPresentación pendiente para análisis elemental."
+    "objectID": "01_teoria_numeros/index.html#algoritmo-de-la-división",
+    "href": "01_teoria_numeros/index.html#algoritmo-de-la-división",
+    "title": "Teoría de Números",
+    "section": "Algoritmo de la división",
+    "text": "Algoritmo de la división\n\n\n\n\n\n\n\nTeorema I.2\n\n\nDados \\(a \\in \\mathbb{Z}\\) y \\(b &gt; 0\\), existen únicos \\(q, r \\in \\mathbb{Z}\\) tales que \\[a = bq + r, \\qquad 0 \\le r &lt; b.\\]\n\n\n\n\nEl resto \\(r\\) es lo que sobra al repartir \\(a\\) en grupos de \\(b\\). Es el cimiento de todo lo que sigue: Euclides y la aritmética modular."
   },
   {
-    "objectID": "06_problemas_resueltos/index.html#placeholder",
-    "href": "06_problemas_resueltos/index.html#placeholder",
+    "objectID": "01_teoria_numeros/index.html#máximo-común-divisor",
+    "href": "01_teoria_numeros/index.html#máximo-común-divisor",
+    "title": "Teoría de Números",
+    "section": "Máximo común divisor",
+    "text": "Máximo común divisor\n\\(\\gcd(a,b)\\) es el mayor entero positivo que divide a \\(a\\) y a \\(b\\) simultáneamente.\n\n\n\n\n\n\n\n\nLema de Euclides para el MCD\n\n\nSi \\(a = bq + r\\), entonces \\[\\gcd(a,b) = \\gcd(b,r).\\]\n\n\n\n\nEsto permite reemplazar un par grande por uno más chico sin perder el MCD."
+  },
+  {
+    "objectID": "01_teoria_numeros/index.html#algoritmo-de-euclides",
+    "href": "01_teoria_numeros/index.html#algoritmo-de-euclides",
+    "title": "Teoría de Números",
+    "section": "Algoritmo de Euclides",
+    "text": "Algoritmo de Euclides\nDividir, reemplazar \\((a,b)\\) por \\((b,r)\\) y repetir hasta resto \\(0\\). El último resto no nulo es el MCD.\n\n\\[\n\\begin{align*}\n1071 &= 2 \\cdot 462 + 147,\\\\\n462  &= 3 \\cdot 147 + 21,\\\\\n147  &= 7 \\cdot 21 + 0.\n\\end{align*}\n\\]\n\n\nLuego \\(\\gcd(1071, 462) = 21\\)."
+  },
+  {
+    "objectID": "01_teoria_numeros/index.html#identidad-de-bézout",
+    "href": "01_teoria_numeros/index.html#identidad-de-bézout",
+    "title": "Teoría de Números",
+    "section": "Identidad de Bézout",
+    "text": "Identidad de Bézout\n\n\n\n\n\n\n\nTeorema I.5\n\n\nPara \\(a, b\\) no ambos nulos, existen \\(x, y \\in \\mathbb{Z}\\) tales que \\[ax + by = \\gcd(a,b).\\]\n\n\n\n\nAdemás, \\(\\gcd(a,b)\\) es el menor entero positivo expresable como \\(ax + by\\). Es quizás la herramienta más usada en olimpiada."
+  },
+  {
+    "objectID": "01_teoria_numeros/index.html#números-primos-e-infinitud",
+    "href": "01_teoria_numeros/index.html#números-primos-e-infinitud",
+    "title": "Teoría de Números",
+    "section": "Números primos e infinitud",
+    "text": "Números primos e infinitud\nUn entero \\(p &gt; 1\\) es primo si sus únicos divisores positivos son \\(1\\) y \\(p\\).\n\n\n\n\n\n\n\n\nTeorema I.7 (Euclides)\n\n\nExisten infinitos primos.\n\n\n\n\nIdea: si solo hubiera \\(p_1,\\dots,p_n\\), entonces \\(N = p_1 \\cdots p_n + 1\\) no sería divisible por ninguno de ellos. Contradicción."
+  },
+  {
+    "objectID": "01_teoria_numeros/index.html#teorema-fundamental-de-la-aritmética",
+    "href": "01_teoria_numeros/index.html#teorema-fundamental-de-la-aritmética",
+    "title": "Teoría de Números",
+    "section": "Teorema Fundamental de la Aritmética",
+    "text": "Teorema Fundamental de la Aritmética\n\n\n\n\n\n\n\nTFA\n\n\nTodo entero \\(n &gt; 1\\) se escribe de forma única (salvo orden) como \\[n = p_1^{\\alpha_1} p_2^{\\alpha_2} \\cdots p_k^{\\alpha_k}.\\]\n\n\n\n\nLos primos son los “átomos” de los enteros. De la factorización se leen directamente: \\[\\gcd(n,m) = \\prod_i p_i^{\\min(\\alpha_i,\\beta_i)}, \\quad\n\\operatorname{mcm}(n,m) = \\prod_i p_i^{\\max(\\alpha_i,\\beta_i)}.\\]"
+  },
+  {
+    "objectID": "01_teoria_numeros/index.html#aritmética-modular",
+    "href": "01_teoria_numeros/index.html#aritmética-modular",
+    "title": "Teoría de Números",
+    "section": "Aritmética modular",
+    "text": "Aritmética modular\n\n\n\n\n\n\n\nDefinición\n\n\n\\(a \\equiv b \\pmod{n}\\) significa que \\(n \\mid (a - b)\\); equivalentemente, \\(a\\) y \\(b\\) dejan el mismo resto al dividir por \\(n\\).\n\n\n\n\nLas congruencias respetan suma, resta, producto y potencias: \\[a \\equiv b,\\; c \\equiv d \\pmod{n} \\;\\Rightarrow\\; a + c \\equiv b + d,\\;\\; ac \\equiv bd.\\]"
+  },
+  {
+    "objectID": "01_teoria_numeros/index.html#inverso-modular",
+    "href": "01_teoria_numeros/index.html#inverso-modular",
+    "title": "Teoría de Números",
+    "section": "Inverso modular",
+    "text": "Inverso modular\nCuidado: no siempre se puede cancelar. De \\(ac \\equiv bc \\pmod n\\) solo deducimos \\(a \\equiv b\\) cuando \\(\\gcd(c,n) = 1\\).\n\n\n\n\n\n\n\n\nTeorema I.10\n\n\n\\(a\\) tiene inverso módulo \\(n\\) (existe \\(x\\) con \\(ax \\equiv 1 \\pmod n\\)) si y solo si \\(\\gcd(a,n) = 1\\).\n\n\n\n\nLa demostración es Bézout: \\(ax + ny = 1\\)."
+  },
+  {
+    "objectID": "01_teoria_numeros/index.html#pequeño-teorema-de-fermat",
+    "href": "01_teoria_numeros/index.html#pequeño-teorema-de-fermat",
+    "title": "Teoría de Números",
+    "section": "Pequeño Teorema de Fermat",
+    "text": "Pequeño Teorema de Fermat\n\n\n\n\n\n\n\nTeorema I.11\n\n\nSi \\(p\\) es primo y \\(p \\nmid a\\), entonces \\[a^{p-1} \\equiv 1 \\pmod{p}.\\] En general, \\(a^p \\equiv a \\pmod p\\) para todo \\(a\\).\n\n\n\n\nPermite reducir exponentes gigantes módulo \\(p\\). Su versión general es el Teorema de Euler: \\(a^{\\varphi(n)} \\equiv 1 \\pmod n\\) cuando \\(\\gcd(a,n)=1\\)."
+  },
+  {
+    "objectID": "01_teoria_numeros/index.html#problema-y-estrategia",
+    "href": "01_teoria_numeros/index.html#problema-y-estrategia",
+    "title": "Teoría de Números",
+    "section": "Problema y estrategia",
+    "text": "Problema y estrategia\n\n\n\n\n\n\n\nProblema\n\n\nHallar el resto de \\(3^{100}\\) al dividir por \\(7\\).\n\n\n\n\n\nEstrategia: \\(7\\) es primo y \\(7 \\nmid 3\\), así que por el Pequeño Teorema de Fermat \\(3^6 \\equiv 1 \\pmod 7\\). Reducimos el exponente \\(100\\) módulo \\(6\\)."
+  },
+  {
+    "objectID": "01_teoria_numeros/index.html#solución",
+    "href": "01_teoria_numeros/index.html#solución",
+    "title": "Teoría de Números",
+    "section": "Solución",
+    "text": "Solución\nComo \\(3^6 \\equiv 1 \\pmod 7\\), escribimos \\(100 = 6 \\cdot 16 + 4\\).\n\n\\[3^{100} = (3^6)^{16} \\cdot 3^4 \\equiv 1^{16} \\cdot 3^4 \\pmod 7.\\]\n\n\n\\[3^4 = 81 = 11 \\cdot 7 + 4 \\equiv 4 \\pmod 7.\\]\n\n\nEl resto es \\(\\boxed{4}\\)."
+  },
+  {
+    "objectID": "01_teoria_numeros/index.html#ecuaciones-diofánticas-lineales",
+    "href": "01_teoria_numeros/index.html#ecuaciones-diofánticas-lineales",
+    "title": "Teoría de Números",
+    "section": "Ecuaciones diofánticas lineales",
+    "text": "Ecuaciones diofánticas lineales\n\n\n\n\n\n\n\nTeorema I.13\n\n\nLa ecuación \\(ax + by = c\\) tiene soluciones enteras si y solo si \\(d = \\gcd(a,b) \\mid c\\). Si \\((x_0, y_0)\\) es una solución, todas son \\[x = x_0 + \\tfrac{b}{d}\\,t, \\qquad y = y_0 - \\tfrac{a}{d}\\,t, \\qquad t \\in \\mathbb{Z}.\\]\n\n\n\n\n\nEjemplo: \\(15x + 21y = 12\\). Como \\(\\gcd(15,21) = 3 \\mid 12\\), hay solución: \\(x = -2 + 7t,\\; y = 2 - 5t\\)."
+  },
+  {
+    "objectID": "01_teoria_numeros/index.html#ideas-clave",
+    "href": "01_teoria_numeros/index.html#ideas-clave",
+    "title": "Teoría de Números",
+    "section": "Ideas clave",
+    "text": "Ideas clave\n\nAlgoritmo de la división: todo se reduce a entender el resto.\nEuclides + Bézout: el MCD y su escritura \\(ax + by = \\gcd(a,b)\\).\nTFA: los primos son los átomos de \\(\\mathbb{Z}\\).\nCongruencias: lenguaje de los restos; cuidado al cancelar.\nFermat / Euler: reducen exponentes enormes módulo \\(n\\)."
+  },
+  {
+    "objectID": "01_teoria_numeros/index.html#para-practicar",
+    "href": "01_teoria_numeros/index.html#para-practicar",
+    "title": "Teoría de Números",
+    "section": "Para practicar",
+    "text": "Para practicar\n\n\n\n\n\n\n\nProblemas propuestos\n\n\n\nDemuestra que \\(n^3 - n\\) es divisible por \\(6\\) para todo \\(n \\in \\mathbb{Z}\\).\nHalla las dos últimas cifras de \\(7^{2024}\\) (¡el problema inicial!).\nPrueba que \\(n^4 + 4\\) es compuesto para todo entero \\(n &gt; 1\\).\n\n\n\n\n\n\n¡A resolver! \\(\\quad \\gcd(\\text{esfuerzo},\\text{práctica}) = \\text{éxito}.\\)"
+  },
+  {
+    "objectID": "00_historia/index.html#historia-de-las-olimpiadas-matemáticas",
+    "href": "00_historia/index.html#historia-de-las-olimpiadas-matemáticas",
+    "title": "Historia de las Olimpiadas Matemáticas",
+    "section": "Historia de las Olimpiadas Matemáticas",
+    "text": "Historia de las Olimpiadas Matemáticas\nDe Brașov a Chile: seis décadas de problemas\nUn recorrido por la IMO, la Putnam, la Iberoamericana y la olimpiada chilena."
+  },
+  {
+    "objectID": "00_historia/index.html#una-pregunta-para-empezar",
+    "href": "00_historia/index.html#una-pregunta-para-empezar",
+    "title": "Historia de las Olimpiadas Matemáticas",
+    "section": "Una pregunta para empezar",
+    "text": "Una pregunta para empezar\nUn estudiante de primero medio puede entender este problema:\n\nSi \\(a\\) y \\(b\\) son enteros positivos y \\(ab + 1\\) divide a \\(a^2 + b^2\\), demuestra que \\(\\dfrac{a^2 + b^2}{ab + 1}\\) es un cuadrado perfecto.\n\n\nFue el Problema 6 de la IMO 1988 y se volvió legendario.\nLas olimpiadas son justamente eso: fáciles de enunciar, difíciles de resolver."
+  },
+  {
+    "objectID": "00_historia/index.html#qué-es-una-olimpiada-matemática",
+    "href": "00_historia/index.html#qué-es-una-olimpiada-matemática",
+    "title": "Historia de las Olimpiadas Matemáticas",
+    "section": "¿Qué es una olimpiada matemática?",
+    "text": "¿Qué es una olimpiada matemática?\nUna competencia individual con pocos problemas (3 a 6), pero muy difíciles.\n\nNo se mide la velocidad de cálculo, sino la calidad del razonamiento.\nSe exige una demostración completa y rigurosa, no solo la respuesta.\nLas herramientas son el lápiz, el papel y las ideas: sin calculadora.\n\n\nCuatro grandes áreas: teoría de números, combinatoria, geometría y álgebra."
+  },
+  {
+    "objectID": "00_historia/index.html#la-olimpiada-internacional-imo",
+    "href": "00_historia/index.html#la-olimpiada-internacional-imo",
+    "title": "Historia de las Olimpiadas Matemáticas",
+    "section": "La Olimpiada Internacional (IMO)",
+    "text": "La Olimpiada Internacional (IMO)\nLa competencia matemática escolar más prestigiosa del mundo.\n\nFundada en 1959 por iniciativa de Rumania.\nPrimera edición en Brașov, con apenas siete países del bloque socialista.\nHoy reúne más de 100 países y cerca de 600 participantes por edición.\n\n\nEs la más antigua de las olimpiadas científicas internacionales y modelo de todas las demás."
+  },
+  {
+    "objectID": "00_historia/index.html#el-formato-de-la-imo",
+    "href": "00_historia/index.html#el-formato-de-la-imo",
+    "title": "Historia de las Olimpiadas Matemáticas",
+    "section": "El formato de la IMO",
+    "text": "El formato de la IMO\nEquipos de hasta seis estudiantes por país.\n\nSeis problemas en dos días: tres por día, \\(4{,}5\\) horas cada jornada.\nCada problema vale 7 puntos; máximo total: 42 puntos.\nLos problemas 1 y 4 suelen ser los más accesibles; 3 y 6, los más difíciles.\n\n\nA lo sumo la mitad de los concursantes obtiene medalla, en proporción aproximada \\(1:2:3\\) (oro : plata : bronce)."
+  },
+  {
+    "objectID": "00_historia/index.html#una-competencia-que-cruzó-la-guerra-fría",
+    "href": "00_historia/index.html#una-competencia-que-cruzó-la-guerra-fría",
+    "title": "Historia de las Olimpiadas Matemáticas",
+    "section": "Una competencia que cruzó la Guerra Fría",
+    "text": "Una competencia que cruzó la Guerra Fría\nDurante sus primeras décadas, la IMO fue uno de los pocos espacios donde estudiantes de Oriente y Occidente competían en igualdad de condiciones.\n\nLa matemática funcionó como un lenguaje neutral que unía a jóvenes de sistemas políticos opuestos en torno a la misma pasión: resolver problemas.\nSolo se interrumpió una vez, en 1980, cuando ningún país asumió la organización."
+  },
+  {
+    "objectID": "00_historia/index.html#la-competencia-putnam",
+    "href": "00_historia/index.html#la-competencia-putnam",
+    "title": "Historia de las Olimpiadas Matemáticas",
+    "section": "La Competencia Putnam",
+    "text": "La Competencia Putnam\nLa competencia universitaria más importante de EE. UU. y Canadá.\n\nOrganizada por la Mathematical Association of America desde 1938.\nDos sesiones de tres horas: 12 problemas, máximo 120 puntos.\n\n\nSu dificultad es legendaria: la mediana de puntaje es con frecuencia 0 o 1 punto sobre 120. Llegar a dos dígitos ya destaca al participante."
+  },
+  {
+    "objectID": "00_historia/index.html#la-olimpiada-iberoamericana-oim",
+    "href": "00_historia/index.html#la-olimpiada-iberoamericana-oim",
+    "title": "Historia de las Olimpiadas Matemáticas",
+    "section": "La Olimpiada Iberoamericana (OIM)",
+    "text": "La Olimpiada Iberoamericana (OIM)\nReúne a países de Iberoamérica junto con España y Portugal.\n\nSe celebra desde 1985; primera edición en Colombia.\nEquipos de hasta cuatro estudiantes (a diferencia de los seis de la IMO).\nEnunciados oficiales en español y portugués.\n\n\nEs un paso natural entre las olimpiadas nacionales y la IMO, tanto por su nivel intermedio como por su carácter formativo."
+  },
+  {
+    "objectID": "00_historia/index.html#la-omc-la-olimpiada-chilena",
+    "href": "00_historia/index.html#la-omc-la-olimpiada-chilena",
+    "title": "Historia de las Olimpiadas Matemáticas",
+    "section": "La OMC: la olimpiada chilena",
+    "text": "La OMC: la olimpiada chilena\nLa Olimpiada Nacional de Matemáticas de Chile existe desde 1981.\n\nLigada a la Sociedad de Matemática de Chile (Somachi), fundada en 1968.\nSostenida por universidades que aportan sedes, académicos y entrenadores.\nSu meta no es solo competir, sino despertar el gusto por la matemática.\n\n\nDe ese contexto nació, en 1994, el libro Matemática y Olimpíadas: la base de este sitio."
+  },
+  {
+    "objectID": "00_historia/index.html#cómo-se-organiza-la-omc",
+    "href": "00_historia/index.html#cómo-se-organiza-la-omc",
+    "title": "Historia de las Olimpiadas Matemáticas",
+    "section": "Cómo se organiza la OMC",
+    "text": "Cómo se organiza la OMC\nLa competencia avanza por etapas eliminatorias:\n\nEtapa local / comunal\nEtapa regional\nEtapa nacional\nSelección y entrenamiento para competencias internacionales\n\n\nEl camino natural del olimpista chileno: OMC → Cono Sur / OIM → IMO."
+  },
+  {
+    "objectID": "00_historia/index.html#chile-en-el-mundo",
+    "href": "00_historia/index.html#chile-en-el-mundo",
+    "title": "Historia de las Olimpiadas Matemáticas",
+    "section": "Chile en el mundo",
+    "text": "Chile en el mundo\nChile participa tanto en la IMO como en la Iberoamericana.\n\nEn la OIM tiene participación más extensa y mejores resultados relativos.\nEn la IMO envía equipos de hasta seis estudiantes con líder y observador.\n\n\n\n\n\n\n\n\n\n📖 El palmarés exacto\n\n\nEl registro oficial de Chile —años, puntajes, medallas y menciones— está en imo-official.org. Esa es la fuente definitiva."
+  },
+  {
+    "objectID": "00_historia/index.html#qué-significan-las-medallas",
+    "href": "00_historia/index.html#qué-significan-las-medallas",
+    "title": "Historia de las Olimpiadas Matemáticas",
+    "section": "¿Qué significan las medallas?",
+    "text": "¿Qué significan las medallas?\nEn la IMO se compite de forma individual; las medallas son para personas.\n\nOro, plata y bronce para a lo más la mitad de los concursantes.\nMención honorífica para quien resuelve un problema con puntaje perfecto.\n\n\nResolver perfectamente un solo problema de la IMO ya es un gran logro: están entre los más difíciles del mundo para estudiantes de enseñanza media."
+  },
+  {
+    "objectID": "00_historia/index.html#el-camino-de-un-olimpista",
+    "href": "00_historia/index.html#el-camino-de-un-olimpista",
+    "title": "Historia de las Olimpiadas Matemáticas",
+    "section": "El camino de un olimpista",
+    "text": "El camino de un olimpista\nCada medallista empezó en el mismo punto que tú: con ganas de entender.\n\n\nPrimer contacto con la OMC en la enseñanza básica.\nPreparación sistemática durante la enseñanza media.\nMejora edición tras edición hasta la selección nacional.\nCampamentos de entrenamiento.\nIberoamericana o Cono Sur, y luego la IMO para los más destacados.\n\n\n\nLa diferencia la hace la constancia, no el talento aislado."
+  },
+  {
+    "objectID": "00_historia/index.html#ideas-clave",
+    "href": "00_historia/index.html#ideas-clave",
+    "title": "Historia de las Olimpiadas Matemáticas",
+    "section": "Ideas clave",
+    "text": "Ideas clave\n\nLas olimpiadas nacieron en 1959 (IMO) y crecieron de 7 a más de 100 países.\nExisten escenarios para cada etapa: OMC, Cono Sur, OIM, IMO.\nLos problemas son fáciles de enunciar y difíciles de resolver.\nLo que se evalúa es el razonamiento riguroso, no el cálculo veloz.\nEn Chile, la Somachi y las universidades sostienen el programa desde 1981.\n\n\nAhora sigue tú: explora los capítulos de teoría de números, inducción, combinatoria, análisis y geometría. ¡La práctica constante es el camino!"
+  },
+  {
+    "objectID": "02_induccion/index.html#motivación-el-dominó-infinito",
+    "href": "02_induccion/index.html#motivación-el-dominó-infinito",
+    "title": "Inducción Matemática",
+    "section": "Motivación: el dominó infinito",
+    "text": "Motivación: el dominó infinito\nImagina una fila infinita de fichas de dominó. ¿Cómo garantizar que todas caerán?\n\nBasta con dos cosas:\n\nLa primera ficha cae.\nCada ficha, al caer, empuja a la siguiente.\n\n\n\nEsa es exactamente la idea de la inducción matemática."
+  },
+  {
+    "objectID": "02_induccion/index.html#el-problema-de-fondo",
+    "href": "02_induccion/index.html#el-problema-de-fondo",
+    "title": "Inducción Matemática",
+    "section": "El problema de fondo",
+    "text": "El problema de fondo\nMuchas afirmaciones tienen la forma:\n\\[\\text{\"para todo } n \\in \\mathbb{N}, \\text{ ocurre } P(n)\\text{\"}.\\]\n\nNo podemos verificarlas una por una: los naturales son infinitos.\nLa inducción nos da una estrategia finita para cubrir infinitos casos."
+  },
+  {
+    "objectID": "02_induccion/index.html#principio-del-buen-orden",
+    "href": "02_induccion/index.html#principio-del-buen-orden",
+    "title": "Inducción Matemática",
+    "section": "Principio del Buen Orden",
+    "text": "Principio del Buen Orden\n\n\n\n\n\n\n\nPrincipio del Buen Orden (PBO)\n\n\nTodo subconjunto no vacío \\(S \\subseteq \\mathbb{N}\\) posee un elemento mínimo: existe \\(m \\in S\\) con \\(m \\le s\\) para todo \\(s \\in S\\).\n\n\n\n\nNo se puede “descender” infinitamente dentro de \\(\\mathbb{N}\\).\nEs el axioma sobre el que descansa toda la inducción."
+  },
+  {
+    "objectID": "02_induccion/index.html#inducción-débil",
+    "href": "02_induccion/index.html#inducción-débil",
+    "title": "Inducción Matemática",
+    "section": "Inducción débil",
+    "text": "Inducción débil\n\n\n\n\n\n\n\nPrincipio de inducción débil\n\n\nSea \\(P(n)\\) definida para \\(n \\ge n_0\\). Si\n\nPaso base: \\(P(n_0)\\) es verdadera, y\nPaso inductivo: \\(P(k) \\Rightarrow P(k+1)\\) para todo \\(k \\ge n_0\\),\n\nentonces \\(P(n)\\) es verdadera para todo \\(n \\ge n_0\\).\n\n\n\n\nA “\\(P(k)\\) es verdadera” se le llama hipótesis inductiva (HI)."
+  },
+  {
+    "objectID": "02_induccion/index.html#el-caso-base-no-es-opcional",
+    "href": "02_induccion/index.html#el-caso-base-no-es-opcional",
+    "title": "Inducción Matemática",
+    "section": "El caso base no es opcional",
+    "text": "El caso base no es opcional\nSin el paso base, el paso inductivo solo encadena afirmaciones que podrían ser todas falsas.\n\nEs la primera ficha de dominó: si nadie la empuja, ninguna cae.\nVerificarlo es lo primero que debes hacer siempre."
+  },
+  {
+    "objectID": "02_induccion/index.html#inducción-fuerte",
+    "href": "02_induccion/index.html#inducción-fuerte",
+    "title": "Inducción Matemática",
+    "section": "Inducción fuerte",
+    "text": "Inducción fuerte\n\n\n\n\n\n\n\nPrincipio de inducción fuerte\n\n\nSi \\(P(n_0)\\) es verdadera y, para todo \\(k \\ge n_0\\),\n\\[P(n_0), P(n_0+1), \\dots, P(k) \\ \\Rightarrow\\ P(k+1),\\]\nentonces \\(P(n)\\) vale para todo \\(n \\ge n_0\\).\n\n\n\n\nÚtil cuando para probar \\(P(k+1)\\) necesitamos toda la historia previa, no solo \\(P(k)\\)."
+  },
+  {
+    "objectID": "02_induccion/index.html#variantes-útiles",
+    "href": "02_induccion/index.html#variantes-útiles",
+    "title": "Inducción Matemática",
+    "section": "Variantes útiles",
+    "text": "Variantes útiles\n\nPaso base múltiple: si la recurrencia usa los \\(j\\) términos previos (ej. \\(a_n = a_{n-1}+a_{n-2}\\)), se verifican \\(j\\) casos base.\n\n\n\nInducción hacia atrás (Cauchy): se prueba \\(P(n)\\) para infinitos valores (ej. \\(n = 2^m\\)) y luego \\(P(n) \\Rightarrow P(n-1)\\).\n\n\n\nEsta última es la base de la demostración clásica de AM–GM."
+  },
+  {
+    "objectID": "02_induccion/index.html#progresión-aritmética",
+    "href": "02_induccion/index.html#progresión-aritmética",
+    "title": "Inducción Matemática",
+    "section": "Progresión aritmética",
+    "text": "Progresión aritmética\n\n\n\n\n\n\n\nDefinición\n\n\n\\((a_n)\\) es aritmética si \\(a_{n+1} = a_n + d\\), con diferencia común \\(d\\). Término general: \\(a_n = a_1 + (n-1)d\\).\n\n\n\n\n\nSuma de los primeros \\(n\\) términos (truco de Gauss):\n\\[S_n = \\sum_{k=1}^{n} a_k = \\frac{n\\,(a_1 + a_n)}{2}.\\]"
+  },
+  {
+    "objectID": "02_induccion/index.html#progresión-geométrica",
+    "href": "02_induccion/index.html#progresión-geométrica",
+    "title": "Inducción Matemática",
+    "section": "Progresión geométrica",
+    "text": "Progresión geométrica\n\n\n\n\n\n\n\nDefinición\n\n\n\\((g_n)\\) es geométrica si \\(g_{n+1} = r\\,g_n\\), con razón \\(r \\neq 0\\). Término general: \\(g_n = g_1 r^{n-1}\\).\n\n\n\n\n\nSuma geométrica finita (para \\(r \\neq 1\\)):\n\\[\\sum_{k=0}^{n-1} g_1 r^{k} = g_1\\,\\frac{r^{n}-1}{r-1}.\\]"
+  },
+  {
+    "objectID": "02_induccion/index.html#la-sucesión-de-fibonacci",
+    "href": "02_induccion/index.html#la-sucesión-de-fibonacci",
+    "title": "Inducción Matemática",
+    "section": "La sucesión de Fibonacci",
+    "text": "La sucesión de Fibonacci\n\n\n\n\n\n\n\nDefinición\n\n\n\\[F_1 = 1,\\quad F_2 = 1,\\quad F_{n+2} = F_{n+1} + F_n.\\]\n\n\n\n\nPrimeros términos: \\(1, 1, 2, 3, 5, 8, 13, 21, 34, \\dots\\)\n\nUn terreno de juego ideal para la inducción: infinidad de identidades elegantes, como la suma \\(\\sum_{k=1}^{n} F_k = F_{n+2} - 1\\)."
+  },
+  {
+    "objectID": "02_induccion/index.html#ejemplo-1-problema-y-estrategia",
+    "href": "02_induccion/index.html#ejemplo-1-problema-y-estrategia",
+    "title": "Inducción Matemática",
+    "section": "Ejemplo 1 — Problema y estrategia",
+    "text": "Ejemplo 1 — Problema y estrategia\nProblema: Demostrar que la suma de los primeros \\(n\\) impares es un cuadrado:\n\\[\\sum_{k=1}^{n} (2k-1) = n^2, \\qquad n \\ge 1.\\]\n\nEstrategia: Inducción débil sobre \\(n\\), sumando el siguiente impar a la HI."
+  },
+  {
+    "objectID": "02_induccion/index.html#ejemplo-1-solución",
+    "href": "02_induccion/index.html#ejemplo-1-solución",
+    "title": "Inducción Matemática",
+    "section": "Ejemplo 1 — Solución",
+    "text": "Ejemplo 1 — Solución\nBase. \\(n=1\\): \\(\\ 2\\cdot 1 - 1 = 1 = 1^2\\). Verdadero.\n\nPaso inductivo. Supongamos \\(\\displaystyle\\sum_{k=1}^{n} (2k-1) = n^2\\) (HI). Entonces\n\n\n\\[\\sum_{k=1}^{n+1}(2k-1) = \\underbrace{n^2}_{\\text{HI}} + \\big(2(n+1)-1\\big) = n^2 + 2n + 1.\\]\n\n\n\\[= (n+1)^2. \\qquad \\blacksquare\\]"
+  },
+  {
+    "objectID": "02_induccion/index.html#ejemplo-2-problema-y-estrategia",
+    "href": "02_induccion/index.html#ejemplo-2-problema-y-estrategia",
+    "title": "Inducción Matemática",
+    "section": "Ejemplo 2 — Problema y estrategia",
+    "text": "Ejemplo 2 — Problema y estrategia\nProblema: La sucesión \\(a_1 = 1\\), \\(a_2 = 3\\), \\(\\ a_{n+2} = 3a_{n+1} - 2a_n\\) cumple\n\\[a_n = 2^n - 1 \\quad \\text{para todo } n \\ge 1.\\]\n\nEstrategia: La recurrencia usa dos términos previos: verificamos dos casos base y aplicamos inducción fuerte con paso base múltiple."
+  },
+  {
+    "objectID": "02_induccion/index.html#ejemplo-2-solución",
+    "href": "02_induccion/index.html#ejemplo-2-solución",
+    "title": "Inducción Matemática",
+    "section": "Ejemplo 2 — Solución",
+    "text": "Ejemplo 2 — Solución\nBase. \\(a_1 = 1 = 2^1 - 1\\) y \\(a_2 = 3 = 2^2 - 1\\). Verdadero.\n\nPaso inductivo. Supongamos \\(a_k = 2^k - 1\\) y \\(a_{k+1} = 2^{k+1} - 1\\) (HI).\n\n\n\\[a_{k+2} = 3(2^{k+1}-1) - 2(2^k - 1) = 3\\cdot 2^{k+1} - 2^{k+1} - 1.\\]\n\n\n\\[= 2\\cdot 2^{k+1} - 1 = 2^{k+2} - 1. \\qquad \\blacksquare\\]"
+  },
+  {
+    "objectID": "02_induccion/index.html#ideas-clave",
+    "href": "02_induccion/index.html#ideas-clave",
+    "title": "Inducción Matemática",
+    "section": "Ideas clave",
+    "text": "Ideas clave\n\nLa inducción demuestra infinitas afirmaciones con un argumento finito.\nToda inducción descansa en el Principio del Buen Orden.\nSiempre se necesitan paso base y paso inductivo: ninguno es opcional.\nLa inducción fuerte usa todos los casos anteriores; las variantes (paso base múltiple, hacia atrás) se adaptan a cada recurrencia.\nProgresiones y Fibonacci son aplicaciones naturales."
+  },
+  {
+    "objectID": "02_induccion/index.html#para-practicar",
+    "href": "02_induccion/index.html#para-practicar",
+    "title": "Inducción Matemática",
+    "section": "Para practicar",
+    "text": "Para practicar\n\n⭐ \\(\\displaystyle\\sum_{k=1}^{n} k = \\frac{n(n+1)}{2}\\).\n⭐⭐ \\(2^n &gt; n\\) para todo \\(n \\ge 1\\).\n⭐⭐ \\(\\displaystyle\\sum_{k=1}^{n} F_k^{\\,2} = F_n\\,F_{n+1}\\).\n⭐⭐⭐ Desigualdad de Bernoulli: \\((1+x)^n \\ge 1 + nx\\) para \\(x \\ge -1\\).\n🏆 Si \\(a_1 = 1\\) y \\(a_{n+1} = \\sqrt{2 + a_n}\\), probar que \\(a_n &lt; 2\\) y que la sucesión es creciente."
+  },
+  {
+    "objectID": "04_analisis/index.html#es-sqrt2-una-fracción",
+    "href": "04_analisis/index.html#es-sqrt2-una-fracción",
+    "title": "Elementos de Análisis",
+    "section": "¿Es \\(\\sqrt{2}\\) una fracción?",
+    "text": "¿Es \\(\\sqrt{2}\\) una fracción?\nLa diagonal de un cuadrado de lado \\(1\\) mide \\(\\sqrt{2}\\).\n¿Existen enteros \\(a, b\\) tales que \\[\\sqrt{2} = \\frac{a}{b}\\,?\\]\nEsta pregunta tan simple esconde una de las primeras grandes sorpresas de la matemática."
+  },
+  {
+    "objectID": "04_analisis/index.html#los-números-racionales",
+    "href": "04_analisis/index.html#los-números-racionales",
+    "title": "Elementos de Análisis",
+    "section": "Los números racionales",
+    "text": "Los números racionales\nUn racional es un número de la forma \\[\\frac{a}{b}, \\qquad a, b \\in \\mathbb{Z}, \\ b \\neq 0.\\]\nEl conjunto se denota \\(\\mathbb{Q}\\).\nSu orden se hereda de \\(\\mathbb{Z}\\): si \\(b, d &gt; 0\\), \\[\\frac{a}{b} &lt; \\frac{c}{d} \\iff ad &lt; bc.\\]"
+  },
+  {
+    "objectID": "04_analisis/index.html#mathbbq-es-denso-en-sí-mismo",
+    "href": "04_analisis/index.html#mathbbq-es-denso-en-sí-mismo",
+    "title": "Elementos de Análisis",
+    "section": "\\(\\mathbb{Q}\\) es denso en sí mismo",
+    "text": "\\(\\mathbb{Q}\\) es denso en sí mismo\nEntre dos racionales distintos \\(r &lt; s\\) siempre cabe otro.\nBasta tomar el promedio \\[m = \\frac{r+s}{2},\\]\nque cumple \\(r &lt; m &lt; s\\). Repitiendo, hay infinitos racionales entre \\(r\\) y \\(s\\)."
+  },
+  {
+    "objectID": "04_analisis/index.html#sqrt2-es-irracional",
+    "href": "04_analisis/index.html#sqrt2-es-irracional",
+    "title": "Elementos de Análisis",
+    "section": "\\(\\sqrt{2}\\) es irracional",
+    "text": "\\(\\sqrt{2}\\) es irracional\nSupongamos \\(\\sqrt{2} = \\dfrac{a}{b}\\) con \\(\\gcd(a,b)=1\\). Elevando al cuadrado: \\[a^2 = 2b^2.\\]\nEntonces \\(a\\) es par, \\(a = 2k\\), y \\(b^2 = 2k^2\\), así que \\(b\\) también es par.\nPero \\(a\\) y \\(b\\) pares contradice \\(\\gcd(a,b)=1\\). Luego \\(\\sqrt{2} \\notin \\mathbb{Q}\\). \\(\\blacksquare\\)"
+  },
+  {
+    "objectID": "04_analisis/index.html#cuidado-con-el-argumento-decimal",
+    "href": "04_analisis/index.html#cuidado-con-el-argumento-decimal",
+    "title": "Elementos de Análisis",
+    "section": "Cuidado con el argumento decimal",
+    "text": "Cuidado con el argumento decimal\n\n\n\n\n\n\n\nError frecuente\n\n\n\\(\\sqrt{2}\\) no es irracional “porque su decimal es infinito”.\nMuchos racionales tienen decimal infinito, como \\[\\tfrac{1}{3} = 0,\\overline{3}.\\]\nLo que caracteriza a un irracional es un decimal infinito no periódico. La irracionalidad se demuestra."
+  },
+  {
+    "objectID": "04_analisis/index.html#el-supremo",
+    "href": "04_analisis/index.html#el-supremo",
+    "title": "Elementos de Análisis",
+    "section": "El supremo",
+    "text": "El supremo\nLos racionales tienen “agujeros”: no contienen a \\(\\sqrt{2}\\). Los reales \\(\\mathbb{R}\\) los llenan.\nPara \\(A \\subseteq \\mathbb{R}\\) no vacío y acotado superiormente:\n\nuna cota superior \\(M\\) cumple \\(x \\le M\\) para todo \\(x \\in A\\);\nel supremo \\(\\sup A\\) es la menor de las cotas superiores."
+  },
+  {
+    "objectID": "04_analisis/index.html#axioma-de-completitud",
+    "href": "04_analisis/index.html#axioma-de-completitud",
+    "title": "Elementos de Análisis",
+    "section": "Axioma de completitud",
+    "text": "Axioma de completitud\nTodo \\(A \\subseteq \\mathbb{R}\\) no vacío y acotado superiormente posee un supremo en \\(\\mathbb{R}\\).\nEsto distingue \\(\\mathbb{R}\\) de \\(\\mathbb{Q}\\): el conjunto \\[A = \\{ x \\in \\mathbb{Q} : x^2 &lt; 2 \\}\\]\nes acotado, pero su supremo sería \\(\\sqrt{2}\\), que no está en \\(\\mathbb{Q}\\)."
+  },
+  {
+    "objectID": "04_analisis/index.html#serie-geométrica-finita",
+    "href": "04_analisis/index.html#serie-geométrica-finita",
+    "title": "Elementos de Análisis",
+    "section": "Serie geométrica finita",
+    "text": "Serie geométrica finita\nPara \\(r \\neq 1\\): \\[\\sum_{k=0}^{n} r^k = 1 + r + r^2 + \\cdots + r^n = \\frac{r^{n+1}-1}{r-1}.\\]\nIdea: si \\(S\\) es la suma, entonces \\(rS - S = r^{n+1} - 1\\), y se despeja \\(S\\)."
+  },
+  {
+    "objectID": "04_analisis/index.html#serie-geométrica-infinita",
+    "href": "04_analisis/index.html#serie-geométrica-infinita",
+    "title": "Elementos de Análisis",
+    "section": "Serie geométrica infinita",
+    "text": "Serie geométrica infinita\nSi \\(|r| &lt; 1\\), las potencias \\(r^{n+1} \\to 0\\) y la suma converge: \\[\\sum_{k=0}^{\\infty} a r^k = \\frac{a}{1-r}.\\]\n\n\n\n\n\n\n\nSolo si \\(|r| &lt; 1\\)\n\n\nCon \\(|r| \\ge 1\\) la serie no converge: los términos no tienden a \\(0\\)."
+  },
+  {
+    "objectID": "04_analisis/index.html#decimal-periódico-leftrightarrow-fracción",
+    "href": "04_analisis/index.html#decimal-periódico-leftrightarrow-fracción",
+    "title": "Elementos de Análisis",
+    "section": "Decimal periódico \\(\\leftrightarrow\\) fracción",
+    "text": "Decimal periódico \\(\\leftrightarrow\\) fracción\nUn real es racional si y solo si su decimal es finito o periódico.\nTruco: para \\(x = 0,\\overline{12}\\), multiplicar por \\(10^2\\) y restar: \\[100x = 12,\\overline{12} \\implies 99x = 12 \\implies x = \\frac{12}{99} = \\frac{4}{33}.\\]"
+  },
+  {
+    "objectID": "04_analisis/index.html#representación-en-base-p-1",
+    "href": "04_analisis/index.html#representación-en-base-p-1",
+    "title": "Elementos de Análisis",
+    "section": "Representación en base \\(p > 1\\)",
+    "text": "Representación en base \\(p &gt; 1\\)\nTodo entero \\(N \\ge 1\\) se escribe de forma única como \\[N = a_k p^k + \\cdots + a_1 p + a_0, \\qquad 0 \\le a_i &lt; p.\\]\nSe obtiene por divisiones sucesivas por \\(p\\); los restos, leídos de abajo hacia arriba, son los dígitos. Ejemplo: \\(45 = (101101)_2\\)."
+  },
+  {
+    "objectID": "04_analisis/index.html#media-aritmética-y-geométrica",
+    "href": "04_analisis/index.html#media-aritmética-y-geométrica",
+    "title": "Elementos de Análisis",
+    "section": "Media aritmética y geométrica",
+    "text": "Media aritmética y geométrica\nPara reales no negativos \\(x, y \\ge 0\\): \\[\\frac{x+y}{2} \\ge \\sqrt{xy},\\]\ncon igualdad si y solo si \\(x = y\\).\nIdea: parte de \\(\\left(\\sqrt{x}-\\sqrt{y}\\right)^2 \\ge 0\\) y desarrolla.\nEn general, \\(\\dfrac{x_1+\\cdots+x_n}{n} \\ge \\sqrt[n]{x_1 \\cdots x_n}\\)."
+  },
+  {
+    "objectID": "04_analisis/index.html#problema-y-estrategia",
+    "href": "04_analisis/index.html#problema-y-estrategia",
+    "title": "Elementos de Análisis",
+    "section": "Problema y estrategia",
+    "text": "Problema y estrategia\n\n\n\n\n\n\n\nProblema\n\n\nEntre todos los rectángulos de perímetro \\(20\\), ¿cuál tiene área máxima?\n\n\n\n\nEstrategia: los lados \\(x, y\\) cumplen \\(x + y = 10\\) (suma fija), y el área es \\(A = xy\\) (producto). AM-GM relaciona suma y producto."
+  },
+  {
+    "objectID": "04_analisis/index.html#solución-por-pasos",
+    "href": "04_analisis/index.html#solución-por-pasos",
+    "title": "Elementos de Análisis",
+    "section": "Solución por pasos",
+    "text": "Solución por pasos\nDe \\(2(x+y) = 20\\) obtenemos \\(x + y = 10\\).\n\nPor AM-GM, \\[\\sqrt{xy} \\le \\frac{x+y}{2} = 5 \\implies xy \\le 25.\\]\n\n\nLa igualdad ocurre cuando \\(x = y = 5\\).\n\n\nEl área máxima es \\(25\\), lograda por el cuadrado de lado \\(5\\). \\(\\blacksquare\\)"
+  },
+  {
+    "objectID": "04_analisis/index.html#ideas-clave",
+    "href": "04_analisis/index.html#ideas-clave",
+    "title": "Elementos de Análisis",
+    "section": "Ideas clave",
+    "text": "Ideas clave\n\nEntre dos racionales hay infinitos: \\(\\mathbb{Q}\\) es denso.\nLa irracionalidad se demuestra (reducción al absurdo), no se observa.\nLa completitud (supremo) distingue \\(\\mathbb{R}\\) de \\(\\mathbb{Q}\\).\nSerie geométrica infinita: \\(\\sum_{k=0}^{\\infty} a r^k = \\dfrac{a}{1-r}\\) solo si \\(|r|&lt;1\\).\nRacional \\(\\iff\\) decimal finito o periódico; AM-GM conecta sumas y productos."
+  },
+  {
+    "objectID": "04_analisis/index.html#para-practicar",
+    "href": "04_analisis/index.html#para-practicar",
+    "title": "Elementos de Análisis",
+    "section": "Para practicar",
+    "text": "Para practicar\n\nConvierte \\(0,\\overline{27}\\) en fracción irreducible.\nEscribe \\(200\\) en base \\(7\\) por divisiones sucesivas.\nDemuestra que \\(\\sqrt{3}\\) es irracional.\nPrueba que \\(x + \\dfrac{1}{x} \\ge 2\\) para todo \\(x &gt; 0\\).\n🏆 Demuestra que \\(\\log_2 3\\) es irracional."
+  },
+  {
+    "objectID": "06_problemas_resueltos/index.html#resolver-paso-a-paso",
+    "href": "06_problemas_resueltos/index.html#resolver-paso-a-paso",
     "title": "Problemas Resueltos",
-    "section": "Placeholder",
-    "text": "Placeholder\nPresentación pendiente para problemas resueltos."
+    "section": "Resolver, paso a paso",
+    "text": "Resolver, paso a paso\nEn esta sesión recorremos cinco problemas representativos, uno por cada gran área del libro.\n\nLa idea no es solo ver la respuesta, sino el proceso completo:\n\nexplorar el enunciado,\nelegir una estrategia (y entender por qué),\nredactar una solución rigurosa.\n\n\n\n\n\n\n\n\n\nTip\n\n\nIntenta cada problema por tu cuenta antes de pasar al slide de la solución."
+  },
+  {
+    "objectID": "06_problemas_resueltos/index.html#enunciado-y-estrategia",
+    "href": "06_problemas_resueltos/index.html#enunciado-y-estrategia",
+    "title": "Problemas Resueltos",
+    "section": "Enunciado y estrategia",
+    "text": "Enunciado y estrategia\n\n\n\n\n\n\n\nProblema 1\n\n\nHallar todos los enteros positivos \\(n\\) tales que \\(n+1 \\mid n^2+1\\).\n\n\n\n\n\nEstrategia. Reducir \\(n^2+1\\) módulo \\(n+1\\). Como \\(n \\equiv -1 \\pmod{n+1}\\), el resto se vuelve un número fijo y el problema se traduce en una condición de divisibilidad simple."
+  },
+  {
+    "objectID": "06_problemas_resueltos/index.html#solución",
+    "href": "06_problemas_resueltos/index.html#solución",
+    "title": "Problemas Resueltos",
+    "section": "Solución",
+    "text": "Solución\nTrabajamos módulo \\(n+1\\). Observamos que \\(n \\equiv -1 \\pmod{n+1}\\).\n\nEntonces \\[n^2+1 \\equiv (-1)^2 + 1 = 2 \\pmod{n+1}.\\]\n\n\nLuego \\(n+1 \\mid n^2+1\\) si y solo si \\(n+1 \\mid 2\\), es decir \\(n+1 \\in \\{1, 2\\}\\).\n\n\nComo \\(n\\) es entero positivo, la única solución es \\[n = 1.\\] En efecto, \\(n^2+1 = 2\\) y \\(n+1 = 2 \\mid 2\\). \\(\\blacksquare\\)"
+  },
+  {
+    "objectID": "06_problemas_resueltos/index.html#enunciado-y-estrategia-1",
+    "href": "06_problemas_resueltos/index.html#enunciado-y-estrategia-1",
+    "title": "Problemas Resueltos",
+    "section": "Enunciado y estrategia",
+    "text": "Enunciado y estrategia\n\n\n\n\n\n\n\nProblema 2\n\n\nDemostrar que \\(\\displaystyle\\sum_{k=1}^{n} k^2 = \\frac{n(n+1)(2n+1)}{6}\\) para todo \\(n \\geq 1\\).\n\n\n\n\n\nEstrategia. Inducción sobre \\(n\\). En el paso inductivo, sumar \\((n+1)^2\\) y factorizar primero \\((n+1)\\), luego el cuadrático restante."
+  },
+  {
+    "objectID": "06_problemas_resueltos/index.html#solución-1",
+    "href": "06_problemas_resueltos/index.html#solución-1",
+    "title": "Problemas Resueltos",
+    "section": "Solución",
+    "text": "Solución\nCaso base (\\(n=1\\)): el lado izquierdo es \\(1^2 = 1\\) y el derecho \\(\\frac{1 \\cdot 2 \\cdot 3}{6} = 1\\). Coincide.\n\nPaso inductivo. Suponemos la fórmula para \\(n\\) y sumamos \\((n+1)^2\\): \\[\\begin{align*}\n\\sum_{k=1}^{n+1} k^2 &= \\frac{n(n+1)(2n+1)}{6} + (n+1)^2 \\\\\n&= \\frac{(n+1)\\big[\\, n(2n+1) + 6(n+1) \\,\\big]}{6}.\n\\end{align*}\\]\n\n\nFactorizando \\(2n^2+7n+6 = (n+2)(2n+3)\\): \\[\\sum_{k=1}^{n+1} k^2 = \\frac{(n+1)(n+2)(2n+3)}{6},\\] que es la fórmula en \\(n+1\\), pues \\(2(n+1)+1 = 2n+3\\). \\(\\blacksquare\\)"
+  },
+  {
+    "objectID": "06_problemas_resueltos/index.html#enunciado-y-estrategia-2",
+    "href": "06_problemas_resueltos/index.html#enunciado-y-estrategia-2",
+    "title": "Problemas Resueltos",
+    "section": "Enunciado y estrategia",
+    "text": "Enunciado y estrategia\n\n\n\n\n\n\n\nProblema 3\n\n\nDemostrar la identidad de Pascal \\[\\binom{n}{k} = \\binom{n-1}{k-1} + \\binom{n-1}{k}, \\qquad 1 \\leq k \\leq n-1.\\]\n\n\n\n\n\nEstrategia. Argumento combinatorio (doble conteo): fijar un elemento y clasificar los subconjuntos según lo contengan o no."
+  },
+  {
+    "objectID": "06_problemas_resueltos/index.html#solución-2",
+    "href": "06_problemas_resueltos/index.html#solución-2",
+    "title": "Problemas Resueltos",
+    "section": "Solución",
+    "text": "Solución\n\\(\\binom{n}{k}\\) cuenta los subconjuntos de tamaño \\(k\\) de \\(X = \\{x_1, \\dots, x_n\\}\\). Fijamos \\(x_n\\).\n\nCaso A — contienen a \\(x_n\\): elegimos los \\(k-1\\) restantes entre \\(n-1\\) elementos. Hay \\(\\binom{n-1}{k-1}\\).\n\n\nCaso B — no contienen a \\(x_n\\): los \\(k\\) elementos salen de los otros \\(n-1\\). Hay \\(\\binom{n-1}{k}\\).\n\n\nLas dos clases son disjuntas y cubren todos los subconjuntos. Por la regla de la suma, \\[\\binom{n}{k} = \\binom{n-1}{k-1} + \\binom{n-1}{k}. \\qquad \\blacksquare\\]"
+  },
+  {
+    "objectID": "06_problemas_resueltos/index.html#enunciado-y-estrategia-3",
+    "href": "06_problemas_resueltos/index.html#enunciado-y-estrategia-3",
+    "title": "Problemas Resueltos",
+    "section": "Enunciado y estrategia",
+    "text": "Enunciado y estrategia\n\n\n\n\n\n\n\nProblema 4\n\n\nDemostrar que \\(\\sqrt{2}\\) es irracional.\n\n\n\n\n\nEstrategia. Reducción al absurdo: suponer \\(\\sqrt{2} = p/q\\) irreducible y llegar a que \\(p\\) y \\(q\\) son ambos pares, contradiciendo \\(\\gcd(p,q)=1\\)."
+  },
+  {
+    "objectID": "06_problemas_resueltos/index.html#solución-3",
+    "href": "06_problemas_resueltos/index.html#solución-3",
+    "title": "Problemas Resueltos",
+    "section": "Solución",
+    "text": "Solución\nSupongamos \\(\\sqrt{2} = \\dfrac{p}{q}\\) con \\(\\gcd(p,q)=1\\). Elevando al cuadrado: \\[p^2 = 2q^2.\\]\n\nEntonces \\(p^2\\) es par \\(\\Rightarrow\\) \\(p\\) es par. Escribimos \\(p = 2m\\): \\[4m^2 = 2q^2 \\;\\Longrightarrow\\; q^2 = 2m^2.\\]\n\n\nLuego \\(q^2\\) es par \\(\\Rightarrow\\) \\(q\\) es par. Así \\(2 \\mid p\\) y \\(2 \\mid q\\), contradiciendo \\(\\gcd(p,q)=1\\).\n\n\nLa contradicción prueba que \\(\\sqrt{2}\\) es irracional. \\(\\blacksquare\\)"
+  },
+  {
+    "objectID": "06_problemas_resueltos/index.html#enunciado-y-estrategia-4",
+    "href": "06_problemas_resueltos/index.html#enunciado-y-estrategia-4",
+    "title": "Problemas Resueltos",
+    "section": "Enunciado y estrategia",
+    "text": "Enunciado y estrategia\n\n\n\n\n\n\n\nProblema 5\n\n\nDemostrar que en cualquier triángulo la suma de los ángulos interiores es \\(180^\\circ\\).\n\n\n\n\n\nEstrategia. Trazar por un vértice una recta paralela al lado opuesto y usar ángulos alternos internos."
+  },
+  {
+    "objectID": "06_problemas_resueltos/index.html#solución-4",
+    "href": "06_problemas_resueltos/index.html#solución-4",
+    "title": "Problemas Resueltos",
+    "section": "Solución",
+    "text": "Solución\nSea \\(ABC\\) con ángulos \\(\\alpha, \\beta, \\gamma\\) en \\(A, B, C\\). Trazamos por \\(A\\) una recta \\(\\ell \\parallel BC\\).\n\nCon \\(AB\\) transversal: el ángulo de \\(\\ell\\) con \\(AB\\) (lado de \\(B\\)) vale \\(\\beta\\) (alternos internos).\n\n\nCon \\(AC\\) transversal: el ángulo de \\(\\ell\\) con \\(AC\\) (lado de \\(C\\)) vale \\(\\gamma\\).\n\n\nEn el vértice \\(A\\), los ángulos \\(\\beta\\), \\(\\alpha\\) y \\(\\gamma\\) se disponen sobre \\(\\ell\\) formando un ángulo llano: \\[\\alpha + \\beta + \\gamma = 180^\\circ. \\qquad \\blacksquare\\]"
+  },
+  {
+    "objectID": "06_problemas_resueltos/index.html#técnicas-clave-aprendidas",
+    "href": "06_problemas_resueltos/index.html#técnicas-clave-aprendidas",
+    "title": "Problemas Resueltos",
+    "section": "Técnicas clave aprendidas",
+    "text": "Técnicas clave aprendidas\n\nReducir módulo el divisor: convierte una divisibilidad en una condición sobre un resto fijo.\nInducción con factorización: en el paso inductivo, factoriza primero el término común.\nDoble conteo: fijar un elemento y separar en casos demuestra identidades combinatorias.\nReducción al absurdo: muy potente para resultados de irracionalidad.\nConstrucciones auxiliares: una paralela bien trazada revela ángulos iguales.\n\n\n\n\n\n\n\n\nTip\n\n\nEl verdadero aprendizaje ocurre durante la búsqueda, no al leer la respuesta. ¡A practicar!"
   }
 ]

@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Problemas de práctica – Matemática Olímpica</title>
+<title>11&nbsp; Problemas de práctica – Matemática Olímpica</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -42,14 +42,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-d94f5170875b5f4e5e85b640af280440.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-8643a97c649ad291516e98d9f79c0f71.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-d94f5170875b5f4e5e85b640af280440.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-6d55e81a42a89dd3690061c0dc3512a0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-e28859dc7ca6002e82041f7faca5f3dd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-6d55e81a42a89dd3690061c0dc3512a0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -511,7 +511,13 @@ window.Quarto = {
     <h2 id="toc-title">Tabla de contenidos</h2>
    
   <ul>
-  <li><a href="#problemas-de-competencias-oficiales" id="toc-problemas-de-competencias-oficiales" class="nav-link active" data-scroll-target="#problemas-de-competencias-oficiales">Problemas de competencias oficiales</a></li>
+  <li><a href="#sumas-e-identidades" id="toc-sumas-e-identidades" class="nav-link active" data-scroll-target="#sumas-e-identidades"><span class="header-section-number">11.1</span> Sumas e identidades</a></li>
+  <li><a href="#desigualdades" id="toc-desigualdades" class="nav-link" data-scroll-target="#desigualdades"><span class="header-section-number">11.2</span> Desigualdades</a></li>
+  <li><a href="#divisibilidad" id="toc-divisibilidad" class="nav-link" data-scroll-target="#divisibilidad"><span class="header-section-number">11.3</span> Divisibilidad</a></li>
+  <li><a href="#inducción-fuerte" id="toc-inducción-fuerte" class="nav-link" data-scroll-target="#inducción-fuerte"><span class="header-section-number">11.4</span> Inducción fuerte</a></li>
+  <li><a href="#fibonacci" id="toc-fibonacci" class="nav-link" data-scroll-target="#fibonacci"><span class="header-section-number">11.5</span> Fibonacci</a></li>
+  <li><a href="#progresiones" id="toc-progresiones" class="nav-link" data-scroll-target="#progresiones"><span class="header-section-number">11.6</span> Progresiones</a></li>
+  <li><a href="#problemas-de-competencias-oficiales" id="toc-problemas-de-competencias-oficiales" class="nav-link" data-scroll-target="#problemas-de-competencias-oficiales"><span class="header-section-number">11.7</span> Problemas de competencias oficiales</a></li>
   </ul>
 </nav>
     </div>
@@ -538,8 +544,10 @@ window.Quarto = {
 </header>
 
 
-<p><strong>Problema 1.</strong> Demostrar por inducción que</p>
-<p><span class="math display">\[1^2+2^2+\cdots+n^2=\frac{n(n+1)(2n+1)}{6}.\]</span></p>
+<p>Estos problemas refuerzan las técnicas del capítulo. Intenta resolver cada uno antes de abrir la solución colapsada. El nivel va de aplicación directa (⭐) a nivel olímpico (🏆).</p>
+<section id="sumas-e-identidades" class="level2" data-number="11.1">
+<h2 data-number="11.1" class="anchored" data-anchor-id="sumas-e-identidades"><span class="header-section-number">11.1</span> Sumas e identidades</h2>
+<p><strong>Problema 1.</strong> ⭐ Demostrar por inducción que <span class="math display">\[\sum_{k=1}^{n} k^2 = 1^2+2^2+\cdots+n^2=\frac{n(n+1)(2n+1)}{6}.\]</span></p>
 <div class="callout callout-style-default callout-caution callout-titled" title="Ver solución">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -552,12 +560,11 @@ window.Quarto = {
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Se verifica la base y luego se suma <span class="math inline">\((k+1)^2\)</span> a la hipótesis inductiva hasta obtener</p>
-<p><span class="math display">\[\frac{(k+1)(k+2)(2k+3)}{6}.\]</span></p>
+<p>Se verifica la base <span class="math inline">\(n=1\)</span> y luego se suma <span class="math inline">\((k+1)^2\)</span> a la hipótesis inductiva: <span class="math display">\[\frac{k(k+1)(2k+1)}{6} + (k+1)^2 = \frac{(k+1)\big[k(2k+1)+6(k+1)\big]}{6} = \frac{(k+1)(k+2)(2k+3)}{6},\]</span> que es la fórmula evaluada en <span class="math inline">\(k+1\)</span>. <span class="math inline">\(\blacksquare\)</span></p>
 </div>
 </div>
 </div>
-<p><strong>Problema 2.</strong> Probar que <span class="math inline">\(6 \mid (n^3-n)\)</span> para todo entero <span class="math inline">\(n\)</span>.</p>
+<p><strong>Problema 2.</strong> ⭐⭐ Demostrar que <span class="math display">\[\sum_{k=1}^{n} \frac{1}{k(k+1)} = \frac{n}{n+1}.\]</span></p>
 <div class="callout callout-style-default callout-caution callout-titled" title="Ver solución">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -570,13 +577,15 @@ window.Quarto = {
 </div>
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Se factoriza</p>
-<p><span class="math display">\[n^3-n=n(n-1)(n+1).\]</span></p>
-<p>Son tres enteros consecutivos; uno es par y uno es múltiplo de <span class="math inline">\(3\)</span>.</p>
+<p><em>Base.</em> <span class="math inline">\(n=1\)</span>: <span class="math inline">\(\frac{1}{1\cdot 2} = \frac{1}{2} = \frac{1}{2}\)</span>. Verdadero.</p>
+<p><em>Paso inductivo.</em> Por HI la suma hasta <span class="math inline">\(n\)</span> es <span class="math inline">\(\frac{n}{n+1}\)</span>. Entonces <span class="math display">\[\frac{n}{n+1} + \frac{1}{(n+1)(n+2)} = \frac{n(n+2)+1}{(n+1)(n+2)} = \frac{(n+1)^2}{(n+1)(n+2)} = \frac{n+1}{n+2}.\]</span> (También se resuelve por telescopaje: <span class="math inline">\(\frac{1}{k(k+1)} = \frac1k - \frac1{k+1}\)</span>.) <span class="math inline">\(\blacksquare\)</span></p>
 </div>
 </div>
 </div>
-<p><strong>Problema 3.</strong> Demostrar que todo entero <span class="math inline">\(n \ge 2\)</span> puede escribirse como producto de números primos.</p>
+</section>
+<section id="desigualdades" class="level2" data-number="11.2">
+<h2 data-number="11.2" class="anchored" data-anchor-id="desigualdades"><span class="header-section-number">11.2</span> Desigualdades</h2>
+<p><strong>Problema 3.</strong> ⭐⭐ Probar que <span class="math inline">\(n! &gt; 2^n\)</span> para todo <span class="math inline">\(n \ge 4\)</span>.</p>
 <div class="callout callout-style-default callout-caution callout-titled" title="Ver solución">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -589,12 +598,12 @@ window.Quarto = {
 </div>
 <div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Se usa inducción fuerte. Si <span class="math inline">\(n\)</span> es compuesto, se escribe como producto de dos enteros menores y se aplica la hipótesis a ambos.</p>
+<p><em>Base.</em> <span class="math inline">\(n=4\)</span>: <span class="math inline">\(4! = 24 &gt; 16 = 2^4\)</span>. Verdadero.</p>
+<p><em>Paso inductivo.</em> Supongamos <span class="math inline">\(k! &gt; 2^k\)</span> con <span class="math inline">\(k \ge 4\)</span>. Entonces <span class="math display">\[(k+1)! = (k+1)\,k! &gt; (k+1)\,2^k &gt; 2\cdot 2^k = 2^{k+1},\]</span> ya que <span class="math inline">\(k+1 \ge 5 &gt; 2\)</span>. <span class="math inline">\(\blacksquare\)</span></p>
 </div>
 </div>
 </div>
-<p><strong>Problema 4.</strong> Probar que</p>
-<p><span class="math display">\[F_1+F_3+\cdots+F_{2n-1}=F_{2n}.\]</span></p>
+<p><strong>Problema 4.</strong> ⭐⭐⭐ Demostrar que para todo <span class="math inline">\(n \ge 1\)</span>, <span class="math display">\[\sum_{k=1}^{n} \frac{1}{k^2} \le 2 - \frac{1}{n}.\]</span></p>
 <div class="callout callout-style-default callout-caution callout-titled" title="Ver solución">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -607,15 +616,157 @@ window.Quarto = {
 </div>
 <div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Si vale para <span class="math inline">\(n=k\)</span>, al sumar <span class="math inline">\(F_{2k+1}\)</span> resulta</p>
-<p><span class="math display">\[F_{2k}+F_{2k+1}=F_{2k+2}.\]</span></p>
+<p><em>Base.</em> <span class="math inline">\(n=1\)</span>: <span class="math inline">\(1 \le 2 - 1 = 1\)</span>. Igualdad, válido.</p>
+<p><em>Paso inductivo.</em> Por HI, <span class="math inline">\(\sum_{k=1}^{n}\frac1{k^2} \le 2 - \frac1n\)</span>. Basta ver que <span class="math display">\[\left(2 - \frac1n\right) + \frac{1}{(n+1)^2} \le 2 - \frac{1}{n+1}.\]</span> Esto equivale a <span class="math inline">\(\frac{1}{(n+1)^2} \le \frac1n - \frac1{n+1} = \frac{1}{n(n+1)}\)</span>, que es cierto porque <span class="math inline">\((n+1)^2 \ge n(n+1)\)</span>. <span class="math inline">\(\blacksquare\)</span></p>
 </div>
 </div>
 </div>
-<section id="problemas-de-competencias-oficiales" class="level2">
-<h2 class="anchored" data-anchor-id="problemas-de-competencias-oficiales">Problemas de competencias oficiales</h2>
-<p><strong>OMC 2016 — Problema 2:</strong> encontrar todas las sucesiones de enteros positivos que satisfacen una relación recursiva simple y una condición inicial.</p>
-<p><strong>IMO 1977 — Problema 1:</strong> demostrar una identidad de sumas finitas usando técnicas elementales de inducción y factorización.</p>
+</section>
+<section id="divisibilidad" class="level2" data-number="11.3">
+<h2 data-number="11.3" class="anchored" data-anchor-id="divisibilidad"><span class="header-section-number">11.3</span> Divisibilidad</h2>
+<p><strong>Problema 5.</strong> ⭐ Probar que <span class="math inline">\(6 \mid (n^3-n)\)</span> para todo entero <span class="math inline">\(n\)</span>.</p>
+<div class="callout callout-style-default callout-caution callout-titled" title="Ver solución">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Precaución</span>Ver solución
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Se factoriza <span class="math display">\[n^3-n=n(n-1)(n+1).\]</span> Son tres enteros consecutivos: entre ellos hay siempre un múltiplo de <span class="math inline">\(2\)</span> y uno de <span class="math inline">\(3\)</span>, luego el producto es divisible por <span class="math inline">\(6\)</span>. (También por inducción: <span class="math inline">\((n+1)^3-(n+1) = (n^3-n) + 3n(n+1)\)</span>, y <span class="math inline">\(3n(n+1)\)</span> es múltiplo de <span class="math inline">\(6\)</span>.) <span class="math inline">\(\blacksquare\)</span></p>
+</div>
+</div>
+</div>
+<p><strong>Problema 6.</strong> ⭐⭐ Demostrar que <span class="math inline">\(9 \mid (4^n + 6n - 1)\)</span> para todo <span class="math inline">\(n \ge 1\)</span>.</p>
+<div class="callout callout-style-default callout-caution callout-titled" title="Ver solución">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Precaución</span>Ver solución
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><em>Base.</em> <span class="math inline">\(n=1\)</span>: <span class="math inline">\(4 + 6 - 1 = 9\)</span>. Divisible por <span class="math inline">\(9\)</span>.</p>
+<p><em>Paso inductivo.</em> Supongamos <span class="math inline">\(9 \mid (4^k + 6k - 1)\)</span>. Entonces <span class="math display">\[4^{k+1} + 6(k+1) - 1 = 4\cdot 4^k + 6k + 5 = 4(4^k + 6k - 1) + (6 - 18k + 9) = 4(4^k+6k-1) + 9(1 - 2k).\]</span> Ambos sumandos son múltiplos de <span class="math inline">\(9\)</span>, luego la expresión también. <span class="math inline">\(\blacksquare\)</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="inducción-fuerte" class="level2" data-number="11.4">
+<h2 data-number="11.4" class="anchored" data-anchor-id="inducción-fuerte"><span class="header-section-number">11.4</span> Inducción fuerte</h2>
+<p><strong>Problema 7.</strong> ⭐⭐ Demostrar que todo entero <span class="math inline">\(n \ge 2\)</span> puede escribirse como producto de números primos.</p>
+<div class="callout callout-style-default callout-caution callout-titled" title="Ver solución">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Precaución</span>Ver solución
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Se usa inducción fuerte. La base <span class="math inline">\(n=2\)</span> es directa. Si <span class="math inline">\(n\)</span> es primo, listo. Si <span class="math inline">\(n\)</span> es compuesto, se escribe <span class="math inline">\(n = a\cdot b\)</span> con <span class="math inline">\(2 \le a, b &lt; n\)</span>; por hipótesis inductiva tanto <span class="math inline">\(a\)</span> como <span class="math inline">\(b\)</span> son productos de primos, y al concatenar se obtiene <span class="math inline">\(n\)</span> como producto de primos. <span class="math inline">\(\blacksquare\)</span></p>
+</div>
+</div>
+</div>
+<p><strong>Problema 8.</strong> ⭐⭐⭐ La sucesión cumple <span class="math inline">\(a_0 = 2\)</span>, <span class="math inline">\(a_1 = 3\)</span> y <span class="math inline">\(a_{n+1} = 3a_n - 2a_{n-1}\)</span>. Demostrar que <span class="math inline">\(a_n = 2^n + 1\)</span> para todo <span class="math inline">\(n \ge 0\)</span>.</p>
+<div class="callout callout-style-default callout-caution callout-titled" title="Ver solución">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Precaución</span>Ver solución
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Inducción fuerte con paso base doble. <em>Base.</em> <span class="math inline">\(a_0 = 2 = 2^0 + 1\)</span>, <span class="math inline">\(a_1 = 3 = 2^1 + 1\)</span>. Verdadero.</p>
+<p><em>Paso inductivo.</em> Supongamos <span class="math inline">\(a_{n-1} = 2^{n-1}+1\)</span> y <span class="math inline">\(a_n = 2^n + 1\)</span>. Entonces <span class="math display">\[a_{n+1} = 3(2^n+1) - 2(2^{n-1}+1) = 3\cdot 2^n - 2^n + 3 - 2 = 2\cdot 2^n + 1 = 2^{n+1}+1. \qquad \blacksquare\]</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="fibonacci" class="level2" data-number="11.5">
+<h2 data-number="11.5" class="anchored" data-anchor-id="fibonacci"><span class="header-section-number">11.5</span> Fibonacci</h2>
+<p><strong>Problema 9.</strong> ⭐⭐ Probar que <span class="math display">\[F_1+F_3+\cdots+F_{2n-1}=\sum_{k=1}^{n} F_{2k-1}=F_{2n}.\]</span></p>
+<div class="callout callout-style-default callout-caution callout-titled" title="Ver solución">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Precaución</span>Ver solución
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><em>Base.</em> <span class="math inline">\(n=1\)</span>: <span class="math inline">\(F_1 = 1 = F_2\)</span>. Verdadero.</p>
+<p><em>Paso inductivo.</em> Por HI la suma hasta <span class="math inline">\(F_{2n-1}\)</span> es <span class="math inline">\(F_{2n}\)</span>. Al sumar el siguiente término impar <span class="math inline">\(F_{2n+1}\)</span>: <span class="math display">\[F_{2n}+F_{2n+1}=F_{2n+2}=F_{2(n+1)}. \qquad \blacksquare\]</span></p>
+</div>
+</div>
+</div>
+<p><strong>Problema 10.</strong> ⭐⭐⭐ Demostrar la identidad de Cassini: <span class="math display">\[F_{n-1}F_{n+1} - F_n^2 = (-1)^n \quad (n \ge 1, \ F_0 = 0).\]</span></p>
+<div class="callout callout-style-default callout-caution callout-titled" title="Ver solución">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Precaución</span>Ver solución
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><em>Base.</em> <span class="math inline">\(n=1\)</span>: <span class="math inline">\(F_0 F_2 - F_1^2 = 0 - 1 = -1 = (-1)^1\)</span>.</p>
+<p><em>Paso inductivo.</em> Suponiendo <span class="math inline">\(F_{n-1}F_{n+1}-F_n^2=(-1)^n\)</span>, usamos <span class="math inline">\(F_{n+2}=F_{n+1}+F_n\)</span>: <span class="math display">\[
+\begin{align*}
+F_n F_{n+2} - F_{n+1}^2 &amp;= F_n(F_{n+1}+F_n) - F_{n+1}^2 = F_n^2 - F_{n+1}(F_{n+1}-F_n) \\
+&amp;= F_n^2 - F_{n+1}F_{n-1} = -\big(F_{n-1}F_{n+1}-F_n^2\big) = -(-1)^n = (-1)^{n+1}.
+\end{align*}
+\]</span> Por inducción, la identidad vale para todo <span class="math inline">\(n \ge 1\)</span>. <span class="math inline">\(\blacksquare\)</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="progresiones" class="level2" data-number="11.6">
+<h2 data-number="11.6" class="anchored" data-anchor-id="progresiones"><span class="header-section-number">11.6</span> Progresiones</h2>
+<p><strong>Problema 11.</strong> ⭐ En una progresión aritmética, <span class="math inline">\(a_3 = 7\)</span> y <span class="math inline">\(a_8 = 22\)</span>. Calcular <span class="math inline">\(a_1\)</span>, la diferencia <span class="math inline">\(d\)</span> y la suma de los primeros <span class="math inline">\(20\)</span> términos.</p>
+<div class="callout callout-style-default callout-caution callout-titled" title="Ver solución">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Precaución</span>Ver solución
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>De <span class="math inline">\(a_8 - a_3 = 5d = 22 - 7 = 15\)</span> se obtiene <span class="math inline">\(d = 3\)</span>. Luego <span class="math inline">\(a_3 = a_1 + 2d \Rightarrow 7 = a_1 + 6 \Rightarrow a_1 = 1\)</span>. El término <span class="math inline">\(20\)</span> es <span class="math inline">\(a_{20} = 1 + 19\cdot 3 = 58\)</span>, y <span class="math display">\[S_{20} = \frac{20(1+58)}{2} = 10\cdot 59 = 590. \qquad \blacksquare\]</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="problemas-de-competencias-oficiales" class="level2" data-number="11.7">
+<h2 data-number="11.7" class="anchored" data-anchor-id="problemas-de-competencias-oficiales"><span class="header-section-number">11.7</span> Problemas de competencias oficiales</h2>
+<p>Los siguientes enunciados se dejan <strong>sin solución</strong> como desafío. Corresponden a problemas reales de competencias.</p>
+<p><strong>OMC — Olimpiada Nacional de Matemáticas (Chile), Nivel Mayor 2016, Problema 2.</strong> Determinar todas las sucesiones de enteros positivos <span class="math inline">\((a_n)_{n\ge 1}\)</span> que satisfacen una relación recursiva dada junto con una condición inicial. (El enunciado completo y oficial está disponible en el banco de problemas de la <a href="https://www.olimpiadadematematica.cl">Olimpiada Nacional de Matemáticas de Chile</a>.)</p>
+<p><strong>IMO 1977 — Problema 1.</strong> En el plano, sean <span class="math inline">\(ABCD\)</span> un cuadrado y, sobre sus lados, se construyen triángulos equiláteros hacia el interior. Demostrar que los puntos medios de los segmentos que unen los vértices de esos triángulos forman un dodecágono regular. (Enunciado oficial completo en <a href="https://www.imo-official.org">IMO Official</a>.)</p>
 
 
 </section>

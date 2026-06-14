@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -42,14 +42,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-d94f5170875b5f4e5e85b640af280440.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-8643a97c649ad291516e98d9f79c0f71.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-d94f5170875b5f4e5e85b640af280440.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-6d55e81a42a89dd3690061c0dc3512a0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-e28859dc7ca6002e82041f7faca5f3dd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-6d55e81a42a89dd3690061c0dc3512a0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -512,9 +512,11 @@ window.Quarto = {
    
   <ul>
   <li><a href="#presentación" id="toc-presentación" class="nav-link active" data-scroll-target="#presentación">Presentación</a></li>
-  <li><a href="#problema-1-divisibilidad-y-factorización" id="toc-problema-1-divisibilidad-y-factorización" class="nav-link" data-scroll-target="#problema-1-divisibilidad-y-factorización">Problema 1: divisibilidad y factorización</a></li>
-  <li><a href="#problema-2-conteo-con-simetría" id="toc-problema-2-conteo-con-simetría" class="nav-link" data-scroll-target="#problema-2-conteo-con-simetría">Problema 2: conteo con simetría</a></li>
-  <li><a href="#problema-3-geometría-métrica" id="toc-problema-3-geometría-métrica" class="nav-link" data-scroll-target="#problema-3-geometría-métrica">Problema 3: geometría métrica</a></li>
+  <li><a href="#teoría-de-números" id="toc-teoría-de-números" class="nav-link" data-scroll-target="#teoría-de-números">Teoría de Números</a></li>
+  <li><a href="#inducción-y-sucesiones" id="toc-inducción-y-sucesiones" class="nav-link" data-scroll-target="#inducción-y-sucesiones">Inducción y Sucesiones</a></li>
+  <li><a href="#combinatoria" id="toc-combinatoria" class="nav-link" data-scroll-target="#combinatoria">Combinatoria</a></li>
+  <li><a href="#análisis" id="toc-análisis" class="nav-link" data-scroll-target="#análisis">Análisis</a></li>
+  <li><a href="#geometría" id="toc-geometría" class="nav-link" data-scroll-target="#geometría">Geometría</a></li>
   </ul>
 </nav>
     </div>
@@ -543,10 +545,12 @@ window.Quarto = {
 
 <section id="presentación" class="level2">
 <h2 class="anchored" data-anchor-id="presentación">Presentación</h2>
-<p>Este capítulo reúne problemas más extensos, pensados para consolidar técnicas de varias áreas a la vez.</p>
+<p>Este capítulo reúne problemas más extensos, pensados para consolidar técnicas de varias áreas a la vez. A diferencia de los ejemplos que aparecen dentro de cada capítulo temático, aquí buscamos que el lector vea el proceso completo de resolución: cómo se explora un problema, qué estrategia se elige y por qué, y cómo se redacta una solución rigurosa.</p>
+<p>Los problemas están organizados por área temática. Recomendamos intentar cada enunciado por cuenta propia antes de mirar la solución: el verdadero aprendizaje ocurre durante la búsqueda, no durante la lectura de la respuesta.</p>
+<hr>
 </section>
-<section id="problema-1-divisibilidad-y-factorización" class="level2">
-<h2 class="anchored" data-anchor-id="problema-1-divisibilidad-y-factorización">Problema 1: divisibilidad y factorización</h2>
+<section id="teoría-de-números" class="level2">
+<h2 class="anchored" data-anchor-id="teoría-de-números">Teoría de Números</h2>
 <div class="callout callout-style-default callout-warning callout-titled" title="Problema resuelto">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -558,14 +562,133 @@ window.Quarto = {
 </div>
 <div class="callout-body-container callout-body">
 <p><strong>Problema:</strong> demostrar que si <span class="math inline">\(n\)</span> es impar, entonces <span class="math inline">\(n^2-1\)</span> es múltiplo de <span class="math inline">\(8\)</span>.</p>
-<p><strong>Solución:</strong> si <span class="math inline">\(n=2k+1\)</span>, entonces</p>
-<p><span class="math display">\[n^2-1=(2k+1)^2-1=4k(k+1).\]</span></p>
-<p>Como uno de <span class="math inline">\(k\)</span> y <span class="math inline">\(k+1\)</span> es par, el producto es múltiplo de <span class="math inline">\(8\)</span>.</p>
+<p><strong>Solución:</strong> si <span class="math inline">\(n\)</span> es impar, escribimos <span class="math inline">\(n=2k+1\)</span> con <span class="math inline">\(k \in \mathbb{Z}\)</span>. Entonces</p>
+<p><span class="math display">\[n^2-1=(2k+1)^2-1 = 4k^2+4k = 4k(k+1).\]</span></p>
+<p>Ahora observamos que <span class="math inline">\(k\)</span> y <span class="math inline">\(k+1\)</span> son enteros consecutivos, de modo que uno de ellos es par. Luego <span class="math inline">\(k(k+1)\)</span> es múltiplo de <span class="math inline">\(2\)</span>, y por lo tanto <span class="math inline">\(4k(k+1)\)</span> es múltiplo de <span class="math inline">\(8\)</span>. Concluimos que <span class="math inline">\(8 \mid n^2-1\)</span>.</p>
+<p><strong>Generalización:</strong> el mismo argumento muestra que el producto de dos enteros consecutivos siempre es par, hecho que se usa con frecuencia en problemas de divisibilidad.</p>
 </div>
 </div>
+<div class="callout callout-style-default callout-warning callout-titled" title="Problema resuelto">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>Problema resuelto
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Problema:</strong> hallar todos los enteros positivos <span class="math inline">\(n\)</span> tales que <span class="math inline">\(n+1 \mid n^2+1\)</span>.</p>
+<p><strong>Solución:</strong> la idea es reducir <span class="math inline">\(n^2+1\)</span> módulo <span class="math inline">\(n+1\)</span>. Como <span class="math inline">\(n \equiv -1 \pmod{n+1}\)</span>, tenemos</p>
+<p><span class="math display">\[n^2+1 \equiv (-1)^2 + 1 = 2 \pmod{n+1}.\]</span></p>
+<p>Por lo tanto <span class="math inline">\(n+1 \mid n^2+1\)</span> si y solo si <span class="math inline">\(n+1 \mid 2\)</span>. Los divisores positivos de <span class="math inline">\(2\)</span> son <span class="math inline">\(1\)</span> y <span class="math inline">\(2\)</span>, lo que da <span class="math inline">\(n+1 \in \{1, 2\}\)</span>, es decir <span class="math inline">\(n \in \{0, 1\}\)</span>. Como pedimos <span class="math inline">\(n\)</span> entero positivo, la única solución es</p>
+<p><span class="math display">\[n = 1.\]</span></p>
+<p>En efecto, <span class="math inline">\(n^2+1 = 2\)</span> y <span class="math inline">\(n+1 = 2\)</span>, que en efecto divide a <span class="math inline">\(2\)</span>.</p>
+<p><strong>Comentario:</strong> el truco de escribir <span class="math inline">\(n^2+1\)</span> en términos de <span class="math inline">\((n+1)\)</span> mediante división polinomial, <span class="math inline">\(n^2+1 = (n+1)(n-1) + 2\)</span>, conduce al mismo resto <span class="math inline">\(2\)</span> y es útil cuando el divisor no es lineal en <span class="math inline">\(n\)</span>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled" title="Problema resuelto">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>Problema resuelto
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Problema:</strong> demostrar que <span class="math inline">\(\gcd(a, b) \cdot \text{mcm}(a, b) = ab\)</span> para todo par de enteros positivos <span class="math inline">\(a, b\)</span>.</p>
+<p><strong>Solución:</strong> sea <span class="math inline">\(d = \gcd(a, b)\)</span>. Por definición de máximo común divisor, podemos escribir <span class="math inline">\(a = d\,x\)</span> y <span class="math inline">\(b = d\,y\)</span> con <span class="math inline">\(x, y\)</span> enteros positivos tales que <span class="math inline">\(\gcd(x, y) = 1\)</span> (de lo contrario <span class="math inline">\(d\)</span> no sería el mayor divisor común).</p>
+<p>Afirmamos que <span class="math inline">\(\text{mcm}(a, b) = d\,x\,y\)</span>. En efecto:</p>
+<ul>
+<li><span class="math inline">\(d\,x\,y = a\,y = b\,x\)</span>, así que es múltiplo tanto de <span class="math inline">\(a\)</span> como de <span class="math inline">\(b\)</span>.</li>
+<li>Si <span class="math inline">\(m\)</span> es un múltiplo común de <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span>, entonces <span class="math inline">\(a \mid m\)</span> implica <span class="math inline">\(dx \mid m\)</span>, y <span class="math inline">\(b \mid m\)</span> implica <span class="math inline">\(dy \mid m\)</span>. Como <span class="math inline">\(\gcd(x, y) = 1\)</span>, se sigue que <span class="math inline">\(dxy \mid m\)</span>, de modo que <span class="math inline">\(dxy\)</span> es el menor de los múltiplos comunes positivos.</li>
+</ul>
+<p>Por lo tanto</p>
+<p><span class="math display">\[\gcd(a,b) \cdot \text{mcm}(a,b) = d \cdot (d x y) = (dx)(dy) = ab.\]</span></p>
+<p><strong>Comentario:</strong> esta identidad permite calcular el mcm rápidamente una vez conocido el mcd vía el algoritmo de Euclides, sin necesidad de factorizar.</p>
+</div>
+</div>
+<hr>
 </section>
-<section id="problema-2-conteo-con-simetría" class="level2">
-<h2 class="anchored" data-anchor-id="problema-2-conteo-con-simetría">Problema 2: conteo con simetría</h2>
+<section id="inducción-y-sucesiones" class="level2">
+<h2 class="anchored" data-anchor-id="inducción-y-sucesiones">Inducción y Sucesiones</h2>
+<div class="callout callout-style-default callout-warning callout-titled" title="Problema resuelto">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>Problema resuelto
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Problema:</strong> demostrar por inducción que <span class="math inline">\(\sum_{k=1}^{n} k^2 = \dfrac{n(n+1)(2n+1)}{6}\)</span> para todo <span class="math inline">\(n \geq 1\)</span>.</p>
+<p><strong>Solución:</strong> procedemos por inducción sobre <span class="math inline">\(n\)</span>.</p>
+<p><em>Caso base</em> (<span class="math inline">\(n=1\)</span>): el lado izquierdo es <span class="math inline">\(1^2 = 1\)</span> y el lado derecho es <span class="math inline">\(\dfrac{1 \cdot 2 \cdot 3}{6} = 1\)</span>. La igualdad se cumple.</p>
+<p><em>Paso inductivo:</em> supongamos que la fórmula vale para algún <span class="math inline">\(n \geq 1\)</span>, es decir</p>
+<p><span class="math display">\[\sum_{k=1}^{n} k^2 = \frac{n(n+1)(2n+1)}{6}.\]</span></p>
+<p>Queremos probarla para <span class="math inline">\(n+1\)</span>. Sumamos <span class="math inline">\((n+1)^2\)</span> a ambos lados:</p>
+<p><span class="math display">\[\begin{align*}
+\sum_{k=1}^{n+1} k^2 &amp;= \frac{n(n+1)(2n+1)}{6} + (n+1)^2 \\
+&amp;= \frac{(n+1)\big[ n(2n+1) + 6(n+1) \big]}{6} \\
+&amp;= \frac{(n+1)(2n^2 + 7n + 6)}{6} \\
+&amp;= \frac{(n+1)(n+2)(2n+3)}{6}.
+\end{align*}\]</span></p>
+<p>Esta es exactamente la fórmula evaluada en <span class="math inline">\(n+1\)</span>, ya que <span class="math inline">\(2(n+1)+1 = 2n+3\)</span>. Por el principio de inducción, la igualdad vale para todo <span class="math inline">\(n \geq 1\)</span>.</p>
+<p><strong>Comentario:</strong> la factorización <span class="math inline">\(2n^2+7n+6 = (n+2)(2n+3)\)</span> es el paso clave; conviene factorizar primero <span class="math inline">\((n+1)\)</span> y luego el cuadrático restante.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled" title="Problema resuelto">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>Problema resuelto
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Problema:</strong> la sucesión de Fibonacci se define por <span class="math inline">\(F_1 = F_2 = 1\)</span> y <span class="math inline">\(F_{n+2} = F_{n+1} + F_n\)</span>. Demostrar que <span class="math inline">\(\sum_{k=1}^{n} F_k = F_{n+2} - 1\)</span>.</p>
+<p><strong>Solución:</strong> usamos inducción sobre <span class="math inline">\(n\)</span>.</p>
+<p><em>Caso base</em> (<span class="math inline">\(n=1\)</span>): el lado izquierdo es <span class="math inline">\(F_1 = 1\)</span> y el lado derecho es <span class="math inline">\(F_3 - 1 = 2 - 1 = 1\)</span>. Coincide.</p>
+<p><em>Paso inductivo:</em> supongamos <span class="math inline">\(\sum_{k=1}^{n} F_k = F_{n+2} - 1\)</span>. Entonces</p>
+<p><span class="math display">\[\begin{align*}
+\sum_{k=1}^{n+1} F_k &amp;= \left( \sum_{k=1}^{n} F_k \right) + F_{n+1} \\
+&amp;= (F_{n+2} - 1) + F_{n+1} \\
+&amp;= (F_{n+1} + F_{n+2}) - 1 \\
+&amp;= F_{n+3} - 1,
+\end{align*}\]</span></p>
+<p>donde la última igualdad usa la recurrencia <span class="math inline">\(F_{n+3} = F_{n+2} + F_{n+1}\)</span>. Esto es la fórmula para <span class="math inline">\(n+1\)</span>, lo que completa la inducción.</p>
+<p><strong>Comentario:</strong> muchas identidades de Fibonacci se demuestran de forma análoga: el caso base es inmediato y la recurrencia hace casi todo el trabajo en el paso inductivo.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled" title="Problema resuelto">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>Problema resuelto
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Problema:</strong> demostrar que para todo entero <span class="math inline">\(n \geq 1\)</span>, el número <span class="math inline">\(n^3 + 2n\)</span> es divisible por <span class="math inline">\(3\)</span>.</p>
+<p><strong>Solución:</strong> inducción sobre <span class="math inline">\(n\)</span>.</p>
+<p><em>Caso base</em> (<span class="math inline">\(n=1\)</span>): <span class="math inline">\(1^3 + 2\cdot 1 = 3\)</span>, divisible por <span class="math inline">\(3\)</span>.</p>
+<p><em>Paso inductivo:</em> supongamos que <span class="math inline">\(3 \mid n^3 + 2n\)</span>. Calculamos la expresión para <span class="math inline">\(n+1\)</span>:</p>
+<p><span class="math display">\[\begin{align*}
+(n+1)^3 + 2(n+1) &amp;= n^3 + 3n^2 + 3n + 1 + 2n + 2 \\
+&amp;= (n^3 + 2n) + 3(n^2 + n + 1).
+\end{align*}\]</span></p>
+<p>El primer sumando es divisible por <span class="math inline">\(3\)</span> por hipótesis inductiva, y el segundo es un múltiplo explícito de <span class="math inline">\(3\)</span>. La suma de dos múltiplos de <span class="math inline">\(3\)</span> es múltiplo de <span class="math inline">\(3\)</span>, así que <span class="math inline">\(3 \mid (n+1)^3 + 2(n+1)\)</span>. Por inducción, la propiedad vale para todo <span class="math inline">\(n \geq 1\)</span>.</p>
+<p><strong>Comentario:</strong> alternativamente, <span class="math inline">\(n^3 + 2n = n^3 - n + 3n = (n-1)n(n+1) + 3n\)</span>, y el producto de tres enteros consecutivos es múltiplo de <span class="math inline">\(3\)</span>. Es buena práctica conocer ambos enfoques.</p>
+</div>
+</div>
+<hr>
+</section>
+<section id="combinatoria" class="level2">
+<h2 class="anchored" data-anchor-id="combinatoria">Combinatoria</h2>
 <div class="callout callout-style-default callout-warning callout-titled" title="Problema resuelto">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -577,12 +700,121 @@ window.Quarto = {
 </div>
 <div class="callout-body-container callout-body">
 <p><strong>Problema:</strong> ¿de cuántas maneras se pueden elegir dos vértices de un hexágono regular que no sean consecutivos?</p>
-<p><strong>Solución:</strong> hay <span class="math inline">\(\binom{6}{2}=15\)</span> pares de vértices y <span class="math inline">\(6\)</span> pares consecutivos. Luego el número pedido es <span class="math inline">\(15-6=9\)</span>.</p>
+<p><strong>Solución:</strong> un hexágono tiene <span class="math inline">\(6\)</span> vértices, de modo que hay <span class="math inline">\(\binom{6}{2} = 15\)</span> pares de vértices en total. De estos, los pares consecutivos corresponden a los lados del hexágono, que son <span class="math inline">\(6\)</span>. Restando los pares prohibidos:</p>
+<p><span class="math display">\[15 - 6 = 9.\]</span></p>
+<p>Hay <span class="math inline">\(9\)</span> maneras de elegir dos vértices no consecutivos. (Estos <span class="math inline">\(9\)</span> pares son precisamente las diagonales del hexágono.)</p>
+<p><strong>Comentario:</strong> la estrategia de “contar todo y restar lo prohibido” (conteo complementario) es una de las más eficaces en combinatoria cuando lo prohibido es más fácil de contar que lo permitido.</p>
 </div>
 </div>
+<div class="callout callout-style-default callout-warning callout-titled" title="Problema resuelto">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>Problema resuelto
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Problema:</strong> demostrar que entre cualesquiera <span class="math inline">\(5\)</span> enteros existen dos cuya diferencia es divisible por <span class="math inline">\(4\)</span>.</p>
+<p><strong>Solución:</strong> este es un problema clásico del principio del palomar. Al dividir un entero por <span class="math inline">\(4\)</span>, el resto pertenece al conjunto <span class="math inline">\(\{0, 1, 2, 3\}\)</span>, que tiene <span class="math inline">\(4\)</span> elementos posibles (las “casillas”).</p>
+<p>Tenemos <span class="math inline">\(5\)</span> enteros (las “palomas”) y solo <span class="math inline">\(4\)</span> restos posibles. Por el principio del palomar, al menos dos de los enteros, digamos <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span>, dejan el mismo resto al dividirse por <span class="math inline">\(4\)</span>, es decir <span class="math inline">\(a \equiv b \pmod 4\)</span>. Entonces</p>
+<p><span class="math display">\[4 \mid (a - b).\]</span></p>
+<p>Hemos encontrado dos enteros cuya diferencia es divisible por <span class="math inline">\(4\)</span>.</p>
+<p><strong>Generalización:</strong> entre cualesquiera <span class="math inline">\(n+1\)</span> enteros, hay dos cuya diferencia es divisible por <span class="math inline">\(n\)</span>. La demostración es idéntica usando los <span class="math inline">\(n\)</span> restos posibles módulo <span class="math inline">\(n\)</span>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled" title="Problema resuelto">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>Problema resuelto
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Problema:</strong> demostrar la identidad de Pascal <span class="math inline">\(\binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}\)</span> para <span class="math inline">\(1 \leq k \leq n-1\)</span> mediante un argumento combinatorio.</p>
+<p><strong>Solución:</strong> <span class="math inline">\(\binom{n}{k}\)</span> cuenta el número de subconjuntos de tamaño <span class="math inline">\(k\)</span> de un conjunto <span class="math inline">\(X = \{x_1, x_2, \dots, x_n\}\)</span> de <span class="math inline">\(n\)</span> elementos. Fijemos un elemento particular, digamos <span class="math inline">\(x_n\)</span>, y clasifiquemos los subconjuntos de tamaño <span class="math inline">\(k\)</span> según contengan o no a <span class="math inline">\(x_n\)</span>.</p>
+<ul>
+<li><em>Subconjuntos que contienen a <span class="math inline">\(x_n\)</span>:</em> basta elegir los <span class="math inline">\(k-1\)</span> elementos restantes entre los <span class="math inline">\(n-1\)</span> elementos distintos de <span class="math inline">\(x_n\)</span>. Hay <span class="math inline">\(\binom{n-1}{k-1}\)</span> de ellos.</li>
+<li><em>Subconjuntos que no contienen a <span class="math inline">\(x_n\)</span>:</em> todos sus <span class="math inline">\(k\)</span> elementos provienen de los <span class="math inline">\(n-1\)</span> elementos distintos de <span class="math inline">\(x_n\)</span>. Hay <span class="math inline">\(\binom{n-1}{k}\)</span> de ellos.</li>
+</ul>
+<p>Estas dos clases son disjuntas y cubren todos los subconjuntos de tamaño <span class="math inline">\(k\)</span>. Por la regla de la suma,</p>
+<p><span class="math display">\[\binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}.\]</span></p>
+<p><strong>Comentario:</strong> esta es la identidad que genera el triángulo de Pascal. El argumento “fijar un elemento y separar en casos” es una técnica de conteo fundamental conocida como demostración biyectiva o por doble conteo.</p>
+</div>
+</div>
+<hr>
 </section>
-<section id="problema-3-geometría-métrica" class="level2">
-<h2 class="anchored" data-anchor-id="problema-3-geometría-métrica">Problema 3: geometría métrica</h2>
+<section id="análisis" class="level2">
+<h2 class="anchored" data-anchor-id="análisis">Análisis</h2>
+<div class="callout callout-style-default callout-warning callout-titled" title="Problema resuelto">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>Problema resuelto
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Problema:</strong> demostrar que <span class="math inline">\(\sqrt{2}\)</span> es irracional.</p>
+<p><strong>Solución:</strong> procedemos por reducción al absurdo. Supongamos que <span class="math inline">\(\sqrt{2}\)</span> es racional, de modo que existen enteros <span class="math inline">\(p, q\)</span> con <span class="math inline">\(q \neq 0\)</span> tales que</p>
+<p><span class="math display">\[\sqrt{2} = \frac{p}{q}, \qquad \gcd(p, q) = 1,\]</span></p>
+<p>es decir, la fracción está en su forma irreducible. Elevando al cuadrado,</p>
+<p><span class="math display">\[2 = \frac{p^2}{q^2} \quad \Longrightarrow \quad p^2 = 2 q^2.\]</span></p>
+<p>Entonces <span class="math inline">\(p^2\)</span> es par, lo que obliga a que <span class="math inline">\(p\)</span> sea par (si <span class="math inline">\(p\)</span> fuera impar, <span class="math inline">\(p^2\)</span> sería impar). Escribimos <span class="math inline">\(p = 2m\)</span>. Sustituyendo:</p>
+<p><span class="math display">\[(2m)^2 = 2q^2 \quad \Longrightarrow \quad 4m^2 = 2q^2 \quad \Longrightarrow \quad q^2 = 2m^2.\]</span></p>
+<p>Por el mismo razonamiento, <span class="math inline">\(q^2\)</span> es par, así que <span class="math inline">\(q\)</span> también es par. Pero entonces <span class="math inline">\(2 \mid p\)</span> y <span class="math inline">\(2 \mid q\)</span>, lo que contradice <span class="math inline">\(\gcd(p, q) = 1\)</span>. La contradicción muestra que la suposición era falsa, así que <span class="math inline">\(\sqrt{2}\)</span> es irracional.</p>
+<p><strong>Generalización:</strong> el mismo argumento prueba que <span class="math inline">\(\sqrt{n}\)</span> es irracional siempre que <span class="math inline">\(n\)</span> no sea un cuadrado perfecto, usando el teorema fundamental de la aritmética para analizar las paridades de los exponentes en la factorización.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled" title="Problema resuelto">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>Problema resuelto
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Problema:</strong> sumar la serie geométrica <span class="math inline">\(\sum_{k=0}^{\infty} \dfrac{1}{3^k}\)</span>.</p>
+<p><strong>Solución:</strong> se trata de una serie geométrica de razón <span class="math inline">\(r = \tfrac{1}{3}\)</span>, con <span class="math inline">\(|r| &lt; 1\)</span>. Recordemos primero la suma parcial finita: para <span class="math inline">\(r \neq 1\)</span>,</p>
+<p><span class="math display">\[S_n = \sum_{k=0}^{n} r^k = \frac{1 - r^{n+1}}{1 - r}.\]</span></p>
+<p>Esta fórmula se verifica multiplicando <span class="math inline">\(S_n\)</span> por <span class="math inline">\((1-r)\)</span> y observando la cancelación telescópica. Con <span class="math inline">\(r = \tfrac{1}{3}\)</span>,</p>
+<p><span class="math display">\[S_n = \frac{1 - (1/3)^{n+1}}{1 - 1/3} = \frac{3}{2}\left( 1 - \frac{1}{3^{n+1}} \right).\]</span></p>
+<p>Como <span class="math inline">\(|r| &lt; 1\)</span>, el término <span class="math inline">\((1/3)^{n+1} \to 0\)</span> cuando <span class="math inline">\(n \to \infty\)</span>. Por lo tanto</p>
+<p><span class="math display">\[\sum_{k=0}^{\infty} \frac{1}{3^k} = \lim_{n \to \infty} S_n = \frac{3}{2}.\]</span></p>
+<p><strong>Comentario:</strong> en general, <span class="math inline">\(\sum_{k=0}^{\infty} r^k = \dfrac{1}{1-r}\)</span> siempre que <span class="math inline">\(|r| &lt; 1\)</span>. Esta fórmula aparece constantemente al trabajar con representaciones decimales periódicas y con funciones generatrices.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled" title="Problema resuelto">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>Problema resuelto
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Problema:</strong> demostrar la desigualdad entre las medias aritmética y geométrica para dos números: si <span class="math inline">\(a, b \geq 0\)</span>, entonces <span class="math inline">\(\dfrac{a+b}{2} \geq \sqrt{ab}\)</span>, con igualdad si y solo si <span class="math inline">\(a = b\)</span>.</p>
+<p><strong>Solución:</strong> partimos de un hecho elemental: todo cuadrado real es no negativo. En particular, como <span class="math inline">\(a, b \geq 0\)</span>, los números <span class="math inline">\(\sqrt{a}\)</span> y <span class="math inline">\(\sqrt{b}\)</span> están bien definidos y</p>
+<p><span class="math display">\[\left( \sqrt{a} - \sqrt{b} \right)^2 \geq 0.\]</span></p>
+<p>Desarrollando el cuadrado,</p>
+<p><span class="math display">\[a - 2\sqrt{a}\sqrt{b} + b \geq 0 \quad \Longrightarrow \quad a + b \geq 2\sqrt{ab}.\]</span></p>
+<p>Dividiendo por <span class="math inline">\(2\)</span> obtenemos</p>
+<p><span class="math display">\[\frac{a+b}{2} \geq \sqrt{ab}.\]</span></p>
+<p>La igualdad se alcanza exactamente cuando <span class="math inline">\(\left( \sqrt{a} - \sqrt{b} \right)^2 = 0\)</span>, es decir, cuando <span class="math inline">\(\sqrt{a} = \sqrt{b}\)</span>, lo que equivale a <span class="math inline">\(a = b\)</span>.</p>
+<p><strong>Generalización:</strong> para <span class="math inline">\(n\)</span> números no negativos <span class="math inline">\(x_1, \dots, x_n\)</span> se cumple <span class="math inline">\(\dfrac{x_1 + \cdots + x_n}{n} \geq \sqrt[n]{x_1 \cdots x_n}\)</span>, con igualdad si y solo si todos los <span class="math inline">\(x_i\)</span> son iguales. Es una de las desigualdades más útiles en olimpiadas.</p>
+</div>
+</div>
+<hr>
+</section>
+<section id="geometría" class="level2">
+<h2 class="anchored" data-anchor-id="geometría">Geometría</h2>
 <div class="callout callout-style-default callout-warning callout-titled" title="Problema resuelto">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -594,7 +826,51 @@ window.Quarto = {
 </div>
 <div class="callout-body-container callout-body">
 <p><strong>Problema:</strong> en un triángulo rectángulo con hipotenusa <span class="math inline">\(10\)</span> y un cateto <span class="math inline">\(6\)</span>, hallar el otro cateto y el área.</p>
-<p><strong>Solución:</strong> por Pitágoras, el otro cateto es <span class="math inline">\(8\)</span> y el área vale <span class="math inline">\(24\)</span>.</p>
+<p><strong>Solución:</strong> sean los catetos <span class="math inline">\(a = 6\)</span> y <span class="math inline">\(b\)</span>, y la hipotenusa <span class="math inline">\(c = 10\)</span>. Por el teorema de Pitágoras,</p>
+<p><span class="math display">\[a^2 + b^2 = c^2 \quad \Longrightarrow \quad 36 + b^2 = 100 \quad \Longrightarrow \quad b^2 = 64,\]</span></p>
+<p>de donde <span class="math inline">\(b = 8\)</span> (tomamos la raíz positiva por ser una longitud). El área de un triángulo rectángulo es la mitad del producto de los catetos:</p>
+<p><span class="math display">\[\text{Área} = \frac{1}{2} \cdot a \cdot b = \frac{1}{2} \cdot 6 \cdot 8 = 24.\]</span></p>
+<p><strong>Comentario:</strong> el triángulo <span class="math inline">\((6, 8, 10)\)</span> es un múltiplo del triángulo pitagórico básico <span class="math inline">\((3, 4, 5)\)</span>. Reconocer estas ternas ahorra cálculos.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled" title="Problema resuelto">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>Problema resuelto
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Problema:</strong> demostrar que en cualquier triángulo, la suma de sus ángulos interiores es <span class="math inline">\(180^\circ\)</span>.</p>
+<p><strong>Solución:</strong> sea <span class="math inline">\(ABC\)</span> un triángulo con ángulos interiores <span class="math inline">\(\alpha\)</span>, <span class="math inline">\(\beta\)</span> y <span class="math inline">\(\gamma\)</span> en los vértices <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span> y <span class="math inline">\(C\)</span>, respectivamente. Tracemos por el vértice <span class="math inline">\(A\)</span> una recta <span class="math inline">\(\ell\)</span> paralela al lado <span class="math inline">\(BC\)</span>.</p>
+<p>La recta <span class="math inline">\(AB\)</span> es transversal a las paralelas <span class="math inline">\(\ell\)</span> y <span class="math inline">\(BC\)</span>, de modo que el ángulo que forma <span class="math inline">\(\ell\)</span> con <span class="math inline">\(AB\)</span> del lado de <span class="math inline">\(B\)</span> es igual a <span class="math inline">\(\beta\)</span> por ser ángulos alternos internos. Análogamente, usando la transversal <span class="math inline">\(AC\)</span>, el ángulo que forma <span class="math inline">\(\ell\)</span> con <span class="math inline">\(AC\)</span> del lado de <span class="math inline">\(C\)</span> es igual a <span class="math inline">\(\gamma\)</span>.</p>
+<p>Ahora bien, en el vértice <span class="math inline">\(A\)</span> los tres ángulos —el que mide <span class="math inline">\(\beta\)</span>, el ángulo <span class="math inline">\(\alpha\)</span> del triángulo, y el que mide <span class="math inline">\(\gamma\)</span>— se disponen sobre la recta <span class="math inline">\(\ell\)</span> y juntos forman un ángulo llano. Por lo tanto</p>
+<p><span class="math display">\[\beta + \alpha + \gamma = 180^\circ.\]</span></p>
+<p><strong>Comentario:</strong> este resultado depende del postulado de las paralelas; en geometrías no euclidianas la suma de los ángulos puede ser distinta de <span class="math inline">\(180^\circ\)</span>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled" title="Problema resuelto">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>Problema resuelto
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Problema:</strong> demostrar el teorema del ángulo inscrito: un ángulo inscrito en una circunferencia mide la mitad del ángulo central que subtiende el mismo arco.</p>
+<p><strong>Solución:</strong> consideremos una circunferencia de centro <span class="math inline">\(O\)</span> y un ángulo inscrito <span class="math inline">\(\angle BAC\)</span> con vértice <span class="math inline">\(A\)</span> sobre la circunferencia, que subtiende el arco <span class="math inline">\(BC\)</span>. Probamos primero el caso en que uno de los lados del ángulo pasa por el centro <span class="math inline">\(O\)</span> (digamos que <span class="math inline">\(A\)</span>, <span class="math inline">\(O\)</span>, <span class="math inline">\(B\)</span> están alineados); los demás casos se reducen a este.</p>
+<p>El triángulo <span class="math inline">\(OAC\)</span> es isósceles, pues <span class="math inline">\(OA = OC\)</span> son radios. Por lo tanto sus ángulos en la base son iguales:</p>
+<p><span class="math display">\[\angle OAC = \angle OCA = \theta.\]</span></p>
+<p>El ángulo <span class="math inline">\(\angle BOC\)</span> es exterior al triángulo <span class="math inline">\(OAC\)</span> en el vértice <span class="math inline">\(O\)</span>, de modo que es igual a la suma de los dos ángulos interiores no adyacentes:</p>
+<p><span class="math display">\[\angle BOC = \angle OAC + \angle OCA = \theta + \theta = 2\theta.\]</span></p>
+<p>Pero <span class="math inline">\(\angle BOC\)</span> es el ángulo central que subtiende el arco <span class="math inline">\(BC\)</span> y <span class="math inline">\(\angle BAC = \theta\)</span> es el ángulo inscrito. Por lo tanto</p>
+<p><span class="math display">\[\angle BAC = \frac{1}{2}\,\angle BOC.\]</span></p>
+<p>Para el caso general (cuando el centro <span class="math inline">\(O\)</span> queda dentro o fuera del ángulo inscrito), se descompone <span class="math inline">\(\angle BAC\)</span> como suma o diferencia de dos ángulos del tipo anterior trazando el diámetro desde <span class="math inline">\(A\)</span>, y el resultado se sigue por adición o sustracción.</p>
+<p><strong>Comentario:</strong> una consecuencia inmediata es que todos los ángulos inscritos que subtienden el mismo arco son iguales, y que un ángulo inscrito en una semicircunferencia es recto (teorema de Tales).</p>
 </div>
 </div>
 

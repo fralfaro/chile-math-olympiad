@@ -6,10 +6,10 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-acf12a64177840b8d86f2d4f01b2e9fb.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.9.37">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-de63f62b328812d8e578a4d74e282472.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.38">
 
-  <title>Presentaciones - Matematica Olimpica – Análisis</title>
+  <title>Presentaciones - Matematica Olimpica – Elementos de Análisis</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -129,18 +129,212 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Análisis</h1>
+  <h1 class="title">Elementos de Análisis</h1>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="placeholder" class="slide level2">
-<h2>Placeholder</h2>
-<p>Presentación pendiente para análisis elemental.</p>
-
+<section>
+<section id="elementos-de-análisis" class="title-slide slide level1 center">
+<h1>Elementos de Análisis</h1>
+<p>Racionales, reales, series y bases numéricas</p>
+<p><em>Olimpiadas Matemáticas de Chile</em></p>
+</section>
+<section id="es-sqrt2-una-fracción" class="slide level2">
+<h2>¿Es <span class="math inline">\(\sqrt{2}\)</span> una fracción?</h2>
+<p>La diagonal de un cuadrado de lado <span class="math inline">\(1\)</span> mide <span class="math inline">\(\sqrt{2}\)</span>.</p>
+<p>¿Existen enteros <span class="math inline">\(a, b\)</span> tales que <span class="math display">\[\sqrt{2} = \frac{a}{b}\,?\]</span></p>
+<p>Esta pregunta tan simple esconde una de las primeras grandes sorpresas de la matemática.</p>
+</section></section>
+<section>
+<section id="racionales-y-densidad" class="title-slide slide level1 center">
+<h1>Racionales y densidad</h1>
 
 </section>
+<section id="los-números-racionales" class="slide level2">
+<h2>Los números racionales</h2>
+<p>Un <strong>racional</strong> es un número de la forma <span class="math display">\[\frac{a}{b}, \qquad a, b \in \mathbb{Z}, \ b \neq 0.\]</span></p>
+<p>El conjunto se denota <span class="math inline">\(\mathbb{Q}\)</span>.</p>
+<p>Su orden se hereda de <span class="math inline">\(\mathbb{Z}\)</span>: si <span class="math inline">\(b, d &gt; 0\)</span>, <span class="math display">\[\frac{a}{b} &lt; \frac{c}{d} \iff ad &lt; bc.\]</span></p>
+</section>
+<section id="mathbbq-es-denso-en-sí-mismo" class="slide level2">
+<h2><span class="math inline">\(\mathbb{Q}\)</span> es denso en sí mismo</h2>
+<p>Entre dos racionales distintos <span class="math inline">\(r &lt; s\)</span> <strong>siempre</strong> cabe otro.</p>
+<p>Basta tomar el promedio <span class="math display">\[m = \frac{r+s}{2},\]</span></p>
+<p>que cumple <span class="math inline">\(r &lt; m &lt; s\)</span>. Repitiendo, hay <strong>infinitos</strong> racionales entre <span class="math inline">\(r\)</span> y <span class="math inline">\(s\)</span>.</p>
+</section></section>
+<section>
+<section id="irracionalidad" class="title-slide slide level1 center">
+<h1>Irracionalidad</h1>
+
+</section>
+<section id="sqrt2-es-irracional" class="slide level2">
+<h2><span class="math inline">\(\sqrt{2}\)</span> es irracional</h2>
+<p>Supongamos <span class="math inline">\(\sqrt{2} = \dfrac{a}{b}\)</span> con <span class="math inline">\(\gcd(a,b)=1\)</span>. Elevando al cuadrado: <span class="math display">\[a^2 = 2b^2.\]</span></p>
+<p>Entonces <span class="math inline">\(a\)</span> es par, <span class="math inline">\(a = 2k\)</span>, y <span class="math inline">\(b^2 = 2k^2\)</span>, así que <span class="math inline">\(b\)</span> también es par.</p>
+<p>Pero <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span> pares contradice <span class="math inline">\(\gcd(a,b)=1\)</span>. Luego <span class="math inline">\(\sqrt{2} \notin \mathbb{Q}\)</span>. <span class="math inline">\(\blacksquare\)</span></p>
+</section>
+<section id="cuidado-con-el-argumento-decimal" class="slide level2">
+<h2>Cuidado con el argumento decimal</h2>
+<div title="Error frecuente">
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Error frecuente</strong></p>
+</div>
+<div class="callout-content">
+<p><span class="math inline">\(\sqrt{2}\)</span> <strong>no</strong> es irracional “porque su decimal es infinito”.</p>
+<p>Muchos racionales tienen decimal infinito, como <span class="math display">\[\tfrac{1}{3} = 0,\overline{3}.\]</span></p>
+<p>Lo que caracteriza a un irracional es un decimal infinito <strong>no periódico</strong>. La irracionalidad se <strong>demuestra</strong>.</p>
+</div>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="reales-y-completitud" class="title-slide slide level1 center">
+<h1>Reales y completitud</h1>
+
+</section>
+<section id="el-supremo" class="slide level2">
+<h2>El supremo</h2>
+<p>Los racionales tienen “agujeros”: no contienen a <span class="math inline">\(\sqrt{2}\)</span>. Los reales <span class="math inline">\(\mathbb{R}\)</span> los llenan.</p>
+<p>Para <span class="math inline">\(A \subseteq \mathbb{R}\)</span> no vacío y acotado superiormente:</p>
+<ul>
+<li>una <strong>cota superior</strong> <span class="math inline">\(M\)</span> cumple <span class="math inline">\(x \le M\)</span> para todo <span class="math inline">\(x \in A\)</span>;</li>
+<li>el <strong>supremo</strong> <span class="math inline">\(\sup A\)</span> es la <strong>menor</strong> de las cotas superiores.</li>
+</ul>
+</section>
+<section id="axioma-de-completitud" class="slide level2">
+<h2>Axioma de completitud</h2>
+<p>Todo <span class="math inline">\(A \subseteq \mathbb{R}\)</span> no vacío y acotado superiormente posee un <strong>supremo en <span class="math inline">\(\mathbb{R}\)</span></strong>.</p>
+<p>Esto distingue <span class="math inline">\(\mathbb{R}\)</span> de <span class="math inline">\(\mathbb{Q}\)</span>: el conjunto <span class="math display">\[A = \{ x \in \mathbb{Q} : x^2 &lt; 2 \}\]</span></p>
+<p>es acotado, pero su supremo sería <span class="math inline">\(\sqrt{2}\)</span>, que <strong>no</strong> está en <span class="math inline">\(\mathbb{Q}\)</span>.</p>
+</section></section>
+<section>
+<section id="series-geométricas" class="title-slide slide level1 center">
+<h1>Series geométricas</h1>
+
+</section>
+<section id="serie-geométrica-finita" class="slide level2">
+<h2>Serie geométrica finita</h2>
+<p>Para <span class="math inline">\(r \neq 1\)</span>: <span class="math display">\[\sum_{k=0}^{n} r^k = 1 + r + r^2 + \cdots + r^n = \frac{r^{n+1}-1}{r-1}.\]</span></p>
+<p><em>Idea:</em> si <span class="math inline">\(S\)</span> es la suma, entonces <span class="math inline">\(rS - S = r^{n+1} - 1\)</span>, y se despeja <span class="math inline">\(S\)</span>.</p>
+</section>
+<section id="serie-geométrica-infinita" class="slide level2">
+<h2>Serie geométrica infinita</h2>
+<p>Si <span class="math inline">\(|r| &lt; 1\)</span>, las potencias <span class="math inline">\(r^{n+1} \to 0\)</span> y la suma <strong>converge</strong>: <span class="math display">\[\sum_{k=0}^{\infty} a r^k = \frac{a}{1-r}.\]</span></p>
+<div title="Solo si $|r| < 1$">
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Solo si <span class="math inline">\(|r| &lt; 1\)</span></strong></p>
+</div>
+<div class="callout-content">
+<p>Con <span class="math inline">\(|r| \ge 1\)</span> la serie <strong>no</strong> converge: los términos no tienden a <span class="math inline">\(0\)</span>.</p>
+</div>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="decimales-y-bases" class="title-slide slide level1 center">
+<h1>Decimales y bases</h1>
+
+</section>
+<section id="decimal-periódico-leftrightarrow-fracción" class="slide level2">
+<h2>Decimal periódico <span class="math inline">\(\leftrightarrow\)</span> fracción</h2>
+<p>Un real es racional <strong>si y solo si</strong> su decimal es finito o periódico.</p>
+<p>Truco: para <span class="math inline">\(x = 0,\overline{12}\)</span>, multiplicar por <span class="math inline">\(10^2\)</span> y restar: <span class="math display">\[100x = 12,\overline{12} \implies 99x = 12 \implies x = \frac{12}{99} = \frac{4}{33}.\]</span></p>
+</section>
+<section id="representación-en-base-p-1" class="slide level2">
+<h2>Representación en base <span class="math inline">\(p &gt; 1\)</span></h2>
+<p>Todo entero <span class="math inline">\(N \ge 1\)</span> se escribe de forma <strong>única</strong> como <span class="math display">\[N = a_k p^k + \cdots + a_1 p + a_0, \qquad 0 \le a_i &lt; p.\]</span></p>
+<p>Se obtiene por <strong>divisiones sucesivas</strong> por <span class="math inline">\(p\)</span>; los restos, leídos de abajo hacia arriba, son los dígitos. Ejemplo: <span class="math inline">\(45 = (101101)_2\)</span>.</p>
+</section></section>
+<section>
+<section id="desigualdad-am-gm" class="title-slide slide level1 center">
+<h1>Desigualdad AM-GM</h1>
+
+</section>
+<section id="media-aritmética-y-geométrica" class="slide level2">
+<h2>Media aritmética y geométrica</h2>
+<p>Para reales no negativos <span class="math inline">\(x, y \ge 0\)</span>: <span class="math display">\[\frac{x+y}{2} \ge \sqrt{xy},\]</span></p>
+<p>con igualdad <strong>si y solo si</strong> <span class="math inline">\(x = y\)</span>.</p>
+<p><em>Idea:</em> parte de <span class="math inline">\(\left(\sqrt{x}-\sqrt{y}\right)^2 \ge 0\)</span> y desarrolla.</p>
+<p>En general, <span class="math inline">\(\dfrac{x_1+\cdots+x_n}{n} \ge \sqrt[n]{x_1 \cdots x_n}\)</span>.</p>
+</section></section>
+<section>
+<section id="un-ejemplo-completo" class="title-slide slide level1 center">
+<h1>Un ejemplo completo</h1>
+
+</section>
+<section id="problema-y-estrategia" class="slide level2">
+<h2>Problema y estrategia</h2>
+<div title="Problema">
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Problema</strong></p>
+</div>
+<div class="callout-content">
+<p>Entre todos los rectángulos de perímetro <span class="math inline">\(20\)</span>, ¿cuál tiene <strong>área máxima</strong>?</p>
+</div>
+</div>
+</div>
+</div>
+<p><strong>Estrategia:</strong> los lados <span class="math inline">\(x, y\)</span> cumplen <span class="math inline">\(x + y = 10\)</span> (suma fija), y el área es <span class="math inline">\(A = xy\)</span> (producto). AM-GM relaciona suma y producto.</p>
+</section>
+<section id="solución-por-pasos" class="slide level2">
+<h2>Solución por pasos</h2>
+<p>De <span class="math inline">\(2(x+y) = 20\)</span> obtenemos <span class="math inline">\(x + y = 10\)</span>.</p>
+<div class="fragment">
+<p>Por AM-GM, <span class="math display">\[\sqrt{xy} \le \frac{x+y}{2} = 5 \implies xy \le 25.\]</span></p>
+</div>
+<div class="fragment">
+<p>La igualdad ocurre cuando <span class="math inline">\(x = y = 5\)</span>.</p>
+</div>
+<div class="fragment">
+<p>El área máxima es <span class="math inline">\(25\)</span>, lograda por el <strong>cuadrado</strong> de lado <span class="math inline">\(5\)</span>. <span class="math inline">\(\blacksquare\)</span></p>
+</div>
+</section></section>
+<section>
+<section id="cierre" class="title-slide slide level1 center">
+<h1>Cierre</h1>
+
+</section>
+<section id="ideas-clave" class="slide level2">
+<h2>Ideas clave</h2>
+<ul>
+<li>Entre dos racionales hay infinitos: <span class="math inline">\(\mathbb{Q}\)</span> es <strong>denso</strong>.</li>
+<li>La irracionalidad se <strong>demuestra</strong> (reducción al absurdo), no se observa.</li>
+<li>La <strong>completitud</strong> (supremo) distingue <span class="math inline">\(\mathbb{R}\)</span> de <span class="math inline">\(\mathbb{Q}\)</span>.</li>
+<li>Serie geométrica infinita: <span class="math inline">\(\sum_{k=0}^{\infty} a r^k = \dfrac{a}{1-r}\)</span> solo si <span class="math inline">\(|r|&lt;1\)</span>.</li>
+<li>Racional <span class="math inline">\(\iff\)</span> decimal finito o periódico; AM-GM conecta sumas y productos.</li>
+</ul>
+</section>
+<section id="para-practicar" class="slide level2">
+<h2>Para practicar</h2>
+<ol type="1">
+<li>Convierte <span class="math inline">\(0,\overline{27}\)</span> en fracción irreducible.</li>
+<li>Escribe <span class="math inline">\(200\)</span> en base <span class="math inline">\(7\)</span> por divisiones sucesivas.</li>
+<li>Demuestra que <span class="math inline">\(\sqrt{3}\)</span> es irracional.</li>
+<li>Prueba que <span class="math inline">\(x + \dfrac{1}{x} \ge 2\)</span> para todo <span class="math inline">\(x &gt; 0\)</span>.</li>
+<li>🏆 Demuestra que <span class="math inline">\(\log_2 3\)</span> es irracional.</li>
+</ol>
+
+
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
