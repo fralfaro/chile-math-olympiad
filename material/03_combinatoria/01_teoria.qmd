@@ -2,60 +2,441 @@
 title: "Teoría: contar, ordenar y seleccionar"
 ---
 
-## Principios combinatorios básicos
+## Introducción
 
-::: {.callout-note title="Principio aditivo"}
+Contar parece trivial hasta que los objetos se cuentan por millones. La
+combinatoria nos da reglas que reducen un conteo enorme a un puñado de
+multiplicaciones. La estrategia general es siempre la misma: **descomponer** una
+configuración complicada en decisiones sucesivas o independientes, contar cada
+decisión por separado y combinar los resultados con dos principios elementales.
+A partir de ahí construiremos variaciones, permutaciones, combinaciones, el
+binomio de Newton, el conteo de configuraciones simétricas (Burnside) y el
+principio del palomar.
+
+## Conceptos previos
+
+- Conjuntos finitos y cardinalidad $|A|$.
+- Funciones inyectivas, sobreyectivas y biyectivas.
+- Factorial $n!$ y sumatoria $\sum$.
+- Nociones mínimas de grupo (para la sección de Burnside).
+
+## Principios de la suma y del producto
+
+Toda la combinatoria enumerativa descansa sobre dos ideas: cuando las opciones
+son **alternativas excluyentes** se suman, y cuando son **etapas sucesivas** se
+multiplican.
+
+::: {.callout-note title="Definición: principio de la suma"}
 Si una tarea puede realizarse de $m$ maneras en un caso y de $n$ maneras en otro,
-y ambos casos no se superponen, entonces puede realizarse de $m+n$ maneras.
+y ambos casos son **mutuamente excluyentes** (no se superponen), entonces la tarea
+puede realizarse de $m+n$ maneras. En general, si $A_1,\dots,A_r$ son conjuntos
+finitos disjuntos dos a dos, entonces
+
+$$\left| \bigcup_{i=1}^{r} A_i \right| = \sum_{i=1}^{r} |A_i|.$$
 :::
 
-::: {.callout-note title="Principio multiplicativo"}
-Si una tarea consta de dos etapas independientes, con $m$ opciones en la primera
-y $n$ en la segunda, entonces hay $mn$ formas de completar la tarea.
+::: {.callout-note title="Definición: principio del producto"}
+Si una tarea consta de etapas sucesivas e independientes, con $n_1$ opciones en la
+primera, $n_2$ en la segunda, ..., $n_r$ en la $r$-ésima, entonces el número total
+de formas de completar la tarea es
+
+$$n_1 \cdot n_2 \cdots n_r = \prod_{i=1}^{r} n_i.$$
 :::
 
-## Variaciones y permutaciones
+::: {.callout-tip title="Teorema: número de funciones y de subconjuntos"}
+Sean $A$ y $B$ conjuntos finitos con $|A| = k$ y $|B| = n$. Entonces:
 
-::: {.callout-note title="Definición: variaciones"}
-Las variaciones de $n$ elementos tomados de $k$ en $k$ son arreglos ordenados de
-$k$ elementos distintos elegidos entre $n$. Su número es
+1. El número de funciones $f : A \to B$ es $n^k$.
+2. El número de subconjuntos de un conjunto de $n$ elementos es $2^n$.
 
-$$V(n,k)=n(n-1)\cdots(n-k+1).$$
+**Demostración:** Para (1), cada uno de los $k$ elementos de $A$ debe asignarse a
+alguno de los $n$ elementos de $B$, y estas elecciones son independientes. Por el
+principio del producto hay $\underbrace{n \cdot n \cdots n}_{k} = n^k$ funciones.
+
+Para (2), elegir un subconjunto $S \subseteq B$ equivale a decidir, para cada
+elemento de $B$, si pertenece o no a $S$: dos opciones por elemento, $n$ elementos
+independientes. Por el principio del producto hay $2^n$ subconjuntos. Equivale a
+contar las funciones $B \to \{0,1\}$ (funciones indicadoras), que por (1) son
+$2^n$. $\blacksquare$
 :::
 
-::: {.callout-note title="Definición: permutación"}
-Una permutación de $n$ objetos distintos es un ordenamiento completo de esos
-objetos. Su número es
+## Variaciones (con y sin repetición)
 
-$$n! = n(n-1)(n-2)\cdots 2 \cdot 1.$$
+Cuando el **orden importa** pero no usamos todos los elementos, hablamos de
+variaciones.
+
+::: {.callout-note title="Definición: variaciones sin repetición"}
+Las **variaciones** de $n$ elementos tomados de $k$ en $k$ son los arreglos
+**ordenados** de $k$ elementos **distintos** elegidos entre $n$. Su número es
+
+$$V(n,k) = n(n-1)(n-2)\cdots(n-k+1) = \frac{n!}{(n-k)!}, \qquad 0 \le k \le n.$$
+:::
+
+::: {.callout-note title="Definición: variaciones con repetición"}
+Las **variaciones con repetición** de $n$ elementos tomados de $k$ en $k$ son los
+arreglos ordenados de $k$ elementos elegidos entre $n$, donde **se permite repetir**.
+Su número es
+
+$$VR(n,k) = n^k.$$
+:::
+
+::: {.callout-tip title="Teorema: fórmula de las variaciones sin repetición"}
+El número de variaciones de $n$ elementos tomados de $k$ en $k$ es
+$V(n,k) = \frac{n!}{(n-k)!}$.
+
+**Demostración:** Construimos un arreglo ordenado eligiendo posición a posición.
+Para la primera posición hay $n$ candidatos; elegido uno, para la segunda quedan
+$n-1$; para la tercera $n-2$, y así hasta la $k$-ésima posición, donde quedan
+$n-(k-1) = n-k+1$ candidatos. Por el principio del producto,
+
+$$V(n,k) = n(n-1)\cdots(n-k+1) = \frac{n(n-1)\cdots(n-k+1)\,(n-k)!}{(n-k)!} = \frac{n!}{(n-k)!}. \qquad \blacksquare$$
+:::
+
+## Permutaciones (lineales, cíclicas y con repetición)
+
+Una permutación es un caso particular de variación en el que usamos **todos** los
+elementos. Distinguimos tres situaciones según cómo se disponen y si hay repetidos.
+
+::: {.callout-note title="Definición: permutación lineal"}
+Una **permutación** de $n$ objetos distintos es un ordenamiento completo de esos
+objetos en fila. Su número es
+
+$$P(n) = n! = n(n-1)(n-2)\cdots 2 \cdot 1, \qquad 0! = 1.$$
+:::
+
+::: {.callout-note title="Definición: permutación cíclica"}
+Una **permutación cíclica** de $n$ objetos distintos es un ordenamiento alrededor
+de un círculo, donde dos disposiciones que se obtienen por rotación se consideran
+iguales. Su número es
+
+$$(n-1)!.$$
+:::
+
+::: {.callout-note title="Definición: permutación con repetición"}
+Si tenemos $n$ objetos de los cuales hay $n_1$ iguales de un tipo, $n_2$ de otro,
+..., $n_r$ del último (con $n_1 + n_2 + \cdots + n_r = n$), el número de
+ordenamientos **distinguibles** es el **coeficiente multinomial**
+
+$$\binom{n}{n_1, n_2, \dots, n_r} = \frac{n!}{n_1!\, n_2! \cdots n_r!}.$$
+:::
+
+::: {.callout-tip title="Teorema: número de permutaciones cíclicas"}
+El número de disposiciones distintas de $n$ objetos distintos alrededor de un
+círculo, identificando rotaciones, es $(n-1)!$.
+
+**Demostración:** Hay $n!$ ordenamientos lineales. Al cerrar la fila en círculo,
+cada disposición circular puede leerse comenzando por cualquiera de sus $n$
+posiciones, de modo que cada configuración circular corresponde exactamente a $n$
+ordenamientos lineales (sus $n$ rotaciones). Por tanto el número de disposiciones
+circulares es $\frac{n!}{n} = (n-1)!$. $\blacksquare$
 :::
 
 ## Combinaciones
 
+Cuando el **orden no importa** y elegimos un subconjunto, hablamos de combinaciones.
+
 ::: {.callout-note title="Definición: combinación"}
 El número de subconjuntos de $k$ elementos que pueden elegirse de un conjunto de
-$n$ elementos es
+$n$ elementos (sin importar el orden) es el **coeficiente binomial**
 
-$$\binom{n}{k}=\frac{n!}{k!(n-k)!}.$$
+$$\binom{n}{k} = \frac{n!}{k!\,(n-k)!}, \qquad 0 \le k \le n.$$
 :::
 
-## Binomio de Newton
+::: {.callout-note title="Definición: combinaciones con repetición"}
+El número de formas de elegir $k$ elementos de entre $n$ tipos, permitiendo
+repetición y sin importar el orden (las llamadas **combinaciones con repetición**),
+es
+
+$$\binom{n+k-1}{k}.$$
+:::
+
+::: {.callout-tip title="Teorema: relación entre combinaciones y variaciones"}
+Se cumple $V(n,k) = \binom{n}{k} \cdot k!$, y por tanto
+$\binom{n}{k} = \frac{n!}{k!\,(n-k)!}$.
+
+**Demostración:** Formar un arreglo ordenado de $k$ elementos distintos de un total
+de $n$ puede hacerse en dos etapas: primero elegir **qué** $k$ elementos usamos
+($\binom{n}{k}$ formas) y luego **ordenarlos** ($k!$ formas). Por el principio del
+producto, $V(n,k) = \binom{n}{k}\cdot k!$. Despejando y usando
+$V(n,k) = \frac{n!}{(n-k)!}$,
+
+$$\binom{n}{k} = \frac{V(n,k)}{k!} = \frac{n!}{k!\,(n-k)!}. \qquad \blacksquare$$
+:::
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** Una clase de $10$ estudiantes debe formar una delegación de $4$ y,
+dentro de ella, elegir un vocero. ¿De cuántas maneras puede hacerse?
+
+**Estrategia:** Separar la elección en dos etapas y aplicar el principio del
+producto: primero el subconjunto (orden irrelevante, combinación), luego el cargo
+(una posición distinguida).
+
+**Solución:** Elegir los $4$ integrantes se hace de $\binom{10}{4} = 210$ formas;
+elegir el vocero entre ellos, de $4$ formas. Por el principio del producto,
+
+$$\binom{10}{4} \cdot 4 = 210 \cdot 4 = 840.$$
+
+Hay $840$ delegaciones posibles con vocero designado.
+:::
+
+## Binomio de Newton e identidades binomiales
+
+Los coeficientes binomiales aparecen al desarrollar potencias de un binomio y
+satisfacen identidades elegantes que son auténticas armas olímpicas.
 
 ::: {.callout-tip title="Teorema: binomio de Newton"}
-Para todo $n \in \mathbb{N}$,
+Para todo $n \in \mathbb{N}$ y todos $a, b$,
 
-$$ (a+b)^n=\sum_{k=0}^{n}\binom{n}{k}a^{n-k}b^k. $$
+$$(a+b)^n = \sum_{k=0}^{n} \binom{n}{k} a^{n-k} b^{k}.$$
+
+**Demostración:** Al expandir $(a+b)^n = \underbrace{(a+b)(a+b)\cdots(a+b)}_{n}$,
+cada término del desarrollo se obtiene eligiendo, en cada uno de los $n$ factores,
+o bien $a$ o bien $b$. Un término de la forma $a^{n-k}b^{k}$ surge cada vez que
+elegimos $b$ en exactamente $k$ de los $n$ factores; el número de maneras de hacer
+esa elección es $\binom{n}{k}$. Sumando sobre todos los valores posibles de $k$ se
+obtiene la fórmula. $\blacksquare$
 :::
 
-## Principio del palomar
+::: {.callout-tip title="Teorema: regla de Pascal"}
+Para $1 \le k \le n$,
 
-::: {.callout-note title="Principio del palomar"}
-Si se distribuyen $N$ objetos en $k$ cajas y $N>k$, entonces al menos una caja
-contiene dos o más objetos.
+$$\binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}.$$
+
+**Demostración (combinatoria):** Contemos los subconjuntos de tamaño $k$ de
+$\{1,2,\dots,n\}$. Fijemos el elemento $n$. Hay dos clases disjuntas de
+subconjuntos: los que **contienen** a $n$ (basta completar con $k-1$ elementos de
+los $n-1$ restantes: $\binom{n-1}{k-1}$ formas) y los que **no contienen** a $n$
+(se eligen $k$ de los $n-1$ restantes: $\binom{n-1}{k}$ formas). Por el principio
+de la suma, el total es $\binom{n-1}{k-1} + \binom{n-1}{k}$, que es $\binom{n}{k}$.
+$\blacksquare$
 :::
 
-Su forma reforzada afirma que alguna caja contiene al menos
+::: {.callout-tip title="Teorema: suma de una fila del triángulo de Pascal"}
+Para todo $n \ge 0$,
+
+$$\sum_{k=0}^{n} \binom{n}{k} = 2^{n}.$$
+
+**Demostración:** Evaluamos el binomio de Newton con $a = b = 1$:
+
+$$2^{n} = (1+1)^{n} = \sum_{k=0}^{n} \binom{n}{k} 1^{n-k} 1^{k} = \sum_{k=0}^{n} \binom{n}{k}.$$
+
+Alternativamente, ambos lados cuentan el número total de subconjuntos de un
+conjunto de $n$ elementos: la izquierda agrupándolos por tamaño $k$, la derecha
+por el principio de elegir/descartar cada elemento. $\blacksquare$
+:::
+
+::: {.callout-tip title="Teorema: identidad de Vandermonde"}
+Para enteros no negativos $m, n, r$,
+
+$$\binom{m+n}{r} = \sum_{k=0}^{r} \binom{m}{k}\binom{n}{r-k}.$$
+
+**Demostración (doble conteo):** Tenemos un grupo con $m$ mujeres y $n$ hombres,
+$m+n$ personas en total, y queremos formar un comité de $r$. Por la derecha,
+contamos directamente: $\binom{m+n}{r}$. Por la izquierda, clasificamos los
+comités según cuántas mujeres $k$ contienen ($0 \le k \le r$): elegir $k$ mujeres
+de $m$ y $r-k$ hombres de $n$ da $\binom{m}{k}\binom{n}{r-k}$ comités, y sumamos
+sobre $k$. Ambos conteos cuentan lo mismo, luego son iguales. $\blacksquare$
+:::
+
+## Lema de Burnside y fórmula de Pólya
+
+A veces dos configuraciones que parecen distintas son "la misma" salvo una
+simetría: collares que solo difieren por una rotación, o coloreos de un dado que
+coinciden al girarlo. Para contar configuraciones **distintas salvo simetría**
+modelamos las simetrías como un **grupo** $G$ que **actúa** sobre el conjunto $X$
+de configuraciones. Dos configuraciones son equivalentes si una se obtiene de la
+otra por algún elemento de $G$; las clases de equivalencia se llaman **órbitas**.
+
+::: {.callout-note title="Definición: acción de grupo, órbita y puntos fijos"}
+Un **grupo** $G$ **actúa** sobre un conjunto $X$ si a cada $g \in G$ se le asocia
+una permutación de $X$ tal que la identidad actúa trivialmente y la composición es
+compatible con el producto del grupo. Para $g \in G$, el conjunto de **puntos
+fijos** es
+
+$$\mathrm{Fij}(g) = \{ x \in X : g \cdot x = x \}.$$
+
+La **órbita** de $x$ es $\{ g \cdot x : g \in G \}$. El número de órbitas es el
+número de configuraciones distintas salvo la simetría dada por $G$.
+:::
+
+::: {.callout-tip title="Teorema: Lema de Burnside (conteo de órbitas)"}
+Si un grupo finito $G$ actúa sobre un conjunto finito $X$, el número de órbitas es
+el promedio del número de puntos fijos de los elementos de $G$:
+
+$$\#\text{órbitas} = \frac{1}{|G|} \sum_{g \in G} |\mathrm{Fij}(g)|.$$
+
+**Demostración:** Contamos de dos formas el conjunto de pares
+$P = \{ (g, x) \in G \times X : g \cdot x = x \}$.
+
+Sumando primero sobre $g$:
+$\displaystyle |P| = \sum_{g \in G} |\mathrm{Fij}(g)|$.
+
+Sumando primero sobre $x$, y llamando $\mathrm{Est}(x) = \{ g : g\cdot x = x \}$ al
+estabilizador:
+$\displaystyle |P| = \sum_{x \in X} |\mathrm{Est}(x)|$.
+
+Por el **teorema órbita-estabilizador**, $|\mathrm{Est}(x)| = |G| / |\text{órbita de } x|$.
+Si una órbita $\mathcal{O}$ tiene $|\mathcal{O}|$ elementos, cada uno aporta
+$|G|/|\mathcal{O}|$, de modo que toda la órbita aporta
+$|\mathcal{O}|\cdot \frac{|G|}{|\mathcal{O}|} = |G|$. Por tanto
+
+$$\sum_{x \in X} |\mathrm{Est}(x)| = |G| \cdot \#\text{órbitas}.$$
+
+Igualando las dos expresiones de $|P|$ y dividiendo por $|G|$ se obtiene la
+fórmula. $\blacksquare$
+:::
+
+La **fórmula de Pólya** refina el lema de Burnside: cuando coloreamos las
+posiciones de una figura con $c$ colores y el grupo de simetrías $G$ actúa, el
+número de coloreos distintos es
+
+$$\frac{1}{|G|} \sum_{g \in G} c^{\,\ell(g)},$$
+
+donde $\ell(g)$ es el número de **ciclos** en que $g$ descompone las posiciones
+(cada ciclo debe pintarse de un único color para quedar fijo). Es exactamente
+Burnside aplicado al conjunto de coloreos.
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** ¿Cuántos collares distintos pueden formarse con $4$ cuentas en
+círculo si cada cuenta puede ser de $2$ colores y solo consideramos rotaciones?
+
+**Estrategia:** El grupo es el de rotaciones del cuadrado, $G = \{r_0, r_1, r_2,
+r_3\}$ con $|G| = 4$. Aplicamos Pólya contando los ciclos de cada rotación.
+
+**Solución:** Las rotaciones de $4$ posiciones se descomponen en ciclos así:
+$r_0$ (identidad) deja $4$ ciclos; $r_1$ y $r_3$ (giro de una posición) forman un
+único ciclo de longitud $4$, es decir $1$ ciclo; $r_2$ (giro de dos posiciones)
+forma $2$ ciclos de longitud $2$. Con $c = 2$ colores,
+
+$$\frac{1}{4}\left( 2^{4} + 2^{1} + 2^{2} + 2^{1} \right) = \frac{16 + 2 + 4 + 2}{4} = \frac{24}{4} = 6.$$
+
+Hay $6$ collares distintos.
+:::
+
+## Principio del palomar (Pigeonhole)
+
+Quizás el principio más simple de enunciar y más fértil para demostrar: si hay
+más palomas que palomares, algún palomar aloja a más de una paloma.
+
+::: {.callout-note title="Definición: principio del palomar (forma simple)"}
+Si se distribuyen $N$ objetos en $k$ cajas y $N > k$, entonces al menos una caja
+contiene **dos o más** objetos.
+:::
+
+::: {.callout-tip title="Teorema: principio del palomar generalizado"}
+Si se distribuyen $N$ objetos en $k$ cajas, entonces al menos una caja contiene al
+menos
 
 $$\left\lceil \frac{N}{k} \right\rceil$$
 
 objetos.
+
+**Demostración:** Razonamos por contradicción. Supongamos que **toda** caja
+contiene a lo sumo $\left\lceil \frac{N}{k} \right\rceil - 1$ objetos. Como
+$\lceil N/k \rceil < \frac{N}{k} + 1$, se tiene
+$\lceil N/k \rceil - 1 < \frac{N}{k}$. Entonces el total de objetos sería a lo sumo
+
+$$k \left( \left\lceil \tfrac{N}{k} \right\rceil - 1 \right) < k \cdot \frac{N}{k} = N,$$
+
+es decir, **menos** de $N$ objetos, contradiciendo que hay exactamente $N$. Por
+tanto alguna caja contiene al menos $\lceil N/k \rceil$ objetos. $\blacksquare$
+:::
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** Demostrar que entre cualesquiera $13$ enteros hay dos cuya diferencia
+es múltiplo de $12$.
+
+**Estrategia:** Usar las clases de residuo módulo $12$ como cajas y los enteros
+como objetos.
+
+**Solución:** Al dividir por $12$ solo hay $12$ residuos posibles
+$\{0, 1, \dots, 11\}$, que tomamos como $12$ cajas. Distribuimos los $13$ enteros
+según su residuo. Como $13 > 12$, por el principio del palomar dos enteros caen en
+la misma caja, es decir, son congruentes módulo $12$. Su diferencia es entonces un
+múltiplo de $12$. $\blacksquare$
+:::
+
+## Problemas resueltos
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** ¿De cuántas maneras pueden sentarse $6$ personas alrededor de una
+mesa redonda si dos disposiciones se consideran iguales cuando una es rotación de
+la otra?
+
+**Estrategia:** Es un conteo de permutaciones cíclicas.
+
+**Solución:** Por el teorema de permutaciones cíclicas, el número es
+
+$$(6-1)! = 5! = 120.$$
+:::
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** Hallar el coeficiente del término en $x^{2}y^{3}$ del desarrollo de
+$(2x + 3y)^{5}$.
+
+**Estrategia:** Aplicar el binomio de Newton con $a = 2x$, $b = 3y$ y aislar el
+término con exponentes $2$ y $3$.
+
+**Solución:** El término general es
+$\binom{5}{k}(2x)^{5-k}(3y)^{k}$. Para obtener $x^{2}y^{3}$ necesitamos $k = 3$:
+
+$$\binom{5}{3}(2x)^{2}(3y)^{3} = 10 \cdot 4x^{2} \cdot 27 y^{3} = 1080\, x^{2} y^{3}.$$
+
+El coeficiente buscado es $1080$.
+:::
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** ¿Cuántas "palabras" distintas (no necesariamente con sentido) pueden
+formarse reordenando las letras de **MATEMATICA**?
+
+**Estrategia:** Es una permutación con repetición; contamos las letras repetidas.
+
+**Solución:** La palabra tiene $10$ letras: $A$ aparece $3$ veces, $M$ aparece $2$
+veces, $T$ aparece $2$ veces, y $E, I, C$ una vez cada una. Por la fórmula del
+coeficiente multinomial,
+
+$$\frac{10!}{3!\,2!\,2!} = \frac{3\,628\,800}{6 \cdot 2 \cdot 2} = \frac{3\,628\,800}{24} = 151\,200.$$
+:::
+
+## Ejercicios propuestos
+
+**Ejercicio 1 (⭐).** ¿Cuántos números de cuatro cifras pueden formarse con los
+dígitos $0,1,\dots,9$ si la primera cifra no puede ser $0$ y se permite repetir?
+
+**Ejercicio 2 (⭐).** ¿De cuántas formas pueden ordenarse en una fila $3$ libros de
+álgebra y $4$ de geometría si los de cada materia deben quedar juntos?
+
+**Ejercicio 3 (⭐⭐).** Demostrar, mediante un argumento combinatorio (doble conteo),
+la identidad $\displaystyle k\binom{n}{k} = n\binom{n-1}{k-1}$.
+
+**Ejercicio 4 (⭐⭐).** ¿Cuántos collares distintos de $6$ cuentas en círculo pueden
+formarse con $3$ colores si solo se consideran iguales las rotaciones? (Sugerencia:
+fórmula de Pólya sobre el grupo cíclico de $6$ rotaciones.)
+
+**Ejercicio 5 (⭐⭐⭐).** Probar que si se eligen $51$ números del conjunto
+$\{1,2,\dots,100\}$, entonces necesariamente hay dos de ellos tales que uno divide
+al otro. (Sugerencia: escribir cada número como $2^{a}\cdot m$ con $m$ impar y
+aplicar palomar a la parte impar.)
+
+**Ejercicio 6 (🏆).** Sea $n \ge 2$. Demostrar que en cualquier subconjunto de
+$n+1$ elementos de $\{1, 2, \dots, 2n\}$ existen dos elementos coprimos y, por
+separado, dos elementos uno múltiplo del otro.
+
+## Referencias del capítulo
+
+- **Sociedad de Matemáticas de Chile (Somachi) (1994).** *Matemática y Olimpíadas*,
+  Capítulo III "Elementos de Combinatoria", §III.5. Fuente primaria del
+  repositorio; de aquí provienen los principios de conteo y los ejemplos base.
+- **Andreescu, T. & Feng, Z. (2004).** *A Path to Combinatorics for
+  Undergraduates*. Birkhäuser. Excelente puente entre el conteo elemental y el
+  nivel olímpico; trata variaciones, combinaciones e identidades binomiales con
+  numerosos problemas resueltos.
+- **Stanley, R. (2011).** *Enumerative Combinatorics, Vol. 1* (2ª ed.). Cambridge
+  University Press. Referencia de fondo para el conteo riguroso, el doble conteo y
+  los coeficientes multinomiales.
+- **van Lint, J. H. & Wilson, R. M. (2001).** *A Course in Combinatorics* (2ª ed.).
+  Cambridge University Press. Tratamiento claro del Lema de Burnside y la teoría de
+  conteo de Pólya bajo acciones de grupo.
+- **Engel, A. (1998).** *Problem Solving Strategies*. Springer. Clásico olímpico
+  con un capítulo dedicado al principio del palomar y sus aplicaciones a teoría de
+  números y combinatoria.

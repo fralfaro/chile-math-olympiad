@@ -5,35 +5,387 @@ title: "Capítulo VI: Problemas Resueltos"
 ## Presentación
 
 Este capítulo reúne problemas más extensos, pensados para consolidar técnicas de
-varias áreas a la vez.
+varias áreas a la vez. A diferencia de los ejemplos que aparecen dentro de cada
+capítulo temático, aquí buscamos que el lector vea el proceso completo de
+resolución: cómo se explora un problema, qué estrategia se elige y por qué, y
+cómo se redacta una solución rigurosa.
 
-## Problema 1: divisibilidad y factorización
+Los problemas están organizados por área temática. Recomendamos intentar cada
+enunciado por cuenta propia antes de mirar la solución: el verdadero aprendizaje
+ocurre durante la búsqueda, no durante la lectura de la respuesta.
+
+---
+
+## Teoría de Números
 
 ::: {.callout-warning title="Problema resuelto"}
 **Problema:** demostrar que si $n$ es impar, entonces $n^2-1$ es múltiplo de $8$.
 
-**Solución:** si $n=2k+1$, entonces
+**Solución:** si $n$ es impar, escribimos $n=2k+1$ con $k \in \mathbb{Z}$. Entonces
 
-$$n^2-1=(2k+1)^2-1=4k(k+1).$$
+$$n^2-1=(2k+1)^2-1 = 4k^2+4k = 4k(k+1).$$
 
-Como uno de $k$ y $k+1$ es par, el producto es múltiplo de $8$.
+Ahora observamos que $k$ y $k+1$ son enteros consecutivos, de modo que uno de
+ellos es par. Luego $k(k+1)$ es múltiplo de $2$, y por lo tanto $4k(k+1)$ es
+múltiplo de $8$. Concluimos que $8 \mid n^2-1$.
+
+**Generalización:** el mismo argumento muestra que el producto de dos enteros
+consecutivos siempre es par, hecho que se usa con frecuencia en problemas de
+divisibilidad.
 :::
 
-## Problema 2: conteo con simetría
+::: {.callout-warning title="Problema resuelto"}
+**Problema:** hallar todos los enteros positivos $n$ tales que $n+1 \mid n^2+1$.
+
+**Solución:** la idea es reducir $n^2+1$ módulo $n+1$. Como $n \equiv -1 \pmod{n+1}$, tenemos
+
+$$n^2+1 \equiv (-1)^2 + 1 = 2 \pmod{n+1}.$$
+
+Por lo tanto $n+1 \mid n^2+1$ si y solo si $n+1 \mid 2$. Los divisores positivos
+de $2$ son $1$ y $2$, lo que da $n+1 \in \{1, 2\}$, es decir $n \in \{0, 1\}$.
+Como pedimos $n$ entero positivo, la única solución es
+
+$$n = 1.$$
+
+En efecto, $n^2+1 = 2$ y $n+1 = 2$, que en efecto divide a $2$.
+
+**Comentario:** el truco de escribir $n^2+1$ en términos de $(n+1)$ mediante
+división polinomial, $n^2+1 = (n+1)(n-1) + 2$, conduce al mismo resto $2$ y es
+útil cuando el divisor no es lineal en $n$.
+:::
+
+::: {.callout-warning title="Problema resuelto"}
+**Problema:** demostrar que $\gcd(a, b) \cdot \text{mcm}(a, b) = ab$ para todo par
+de enteros positivos $a, b$.
+
+**Solución:** sea $d = \gcd(a, b)$. Por definición de máximo común divisor,
+podemos escribir $a = d\,x$ y $b = d\,y$ con $x, y$ enteros positivos tales que
+$\gcd(x, y) = 1$ (de lo contrario $d$ no sería el mayor divisor común).
+
+Afirmamos que $\text{mcm}(a, b) = d\,x\,y$. En efecto:
+
+- $d\,x\,y = a\,y = b\,x$, así que es múltiplo tanto de $a$ como de $b$.
+- Si $m$ es un múltiplo común de $a$ y $b$, entonces $a \mid m$ implica $dx \mid m$,
+  y $b \mid m$ implica $dy \mid m$. Como $\gcd(x, y) = 1$, se sigue que $dxy \mid m$,
+  de modo que $dxy$ es el menor de los múltiplos comunes positivos.
+
+Por lo tanto
+
+$$\gcd(a,b) \cdot \text{mcm}(a,b) = d \cdot (d x y) = (dx)(dy) = ab.$$
+
+**Comentario:** esta identidad permite calcular el mcm rápidamente una vez
+conocido el mcd vía el algoritmo de Euclides, sin necesidad de factorizar.
+:::
+
+---
+
+## Inducción y Sucesiones
+
+::: {.callout-warning title="Problema resuelto"}
+**Problema:** demostrar por inducción que $\sum_{k=1}^{n} k^2 = \dfrac{n(n+1)(2n+1)}{6}$ para todo $n \geq 1$.
+
+**Solución:** procedemos por inducción sobre $n$.
+
+*Caso base* ($n=1$): el lado izquierdo es $1^2 = 1$ y el lado derecho es
+$\dfrac{1 \cdot 2 \cdot 3}{6} = 1$. La igualdad se cumple.
+
+*Paso inductivo:* supongamos que la fórmula vale para algún $n \geq 1$, es decir
+
+$$\sum_{k=1}^{n} k^2 = \frac{n(n+1)(2n+1)}{6}.$$
+
+Queremos probarla para $n+1$. Sumamos $(n+1)^2$ a ambos lados:
+
+$$\begin{align*}
+\sum_{k=1}^{n+1} k^2 &= \frac{n(n+1)(2n+1)}{6} + (n+1)^2 \\
+&= \frac{(n+1)\big[ n(2n+1) + 6(n+1) \big]}{6} \\
+&= \frac{(n+1)(2n^2 + 7n + 6)}{6} \\
+&= \frac{(n+1)(n+2)(2n+3)}{6}.
+\end{align*}$$
+
+Esta es exactamente la fórmula evaluada en $n+1$, ya que $2(n+1)+1 = 2n+3$. Por
+el principio de inducción, la igualdad vale para todo $n \geq 1$.
+
+**Comentario:** la factorización $2n^2+7n+6 = (n+2)(2n+3)$ es el paso clave;
+conviene factorizar primero $(n+1)$ y luego el cuadrático restante.
+:::
+
+::: {.callout-warning title="Problema resuelto"}
+**Problema:** la sucesión de Fibonacci se define por $F_1 = F_2 = 1$ y
+$F_{n+2} = F_{n+1} + F_n$. Demostrar que $\sum_{k=1}^{n} F_k = F_{n+2} - 1$.
+
+**Solución:** usamos inducción sobre $n$.
+
+*Caso base* ($n=1$): el lado izquierdo es $F_1 = 1$ y el lado derecho es
+$F_3 - 1 = 2 - 1 = 1$. Coincide.
+
+*Paso inductivo:* supongamos $\sum_{k=1}^{n} F_k = F_{n+2} - 1$. Entonces
+
+$$\begin{align*}
+\sum_{k=1}^{n+1} F_k &= \left( \sum_{k=1}^{n} F_k \right) + F_{n+1} \\
+&= (F_{n+2} - 1) + F_{n+1} \\
+&= (F_{n+1} + F_{n+2}) - 1 \\
+&= F_{n+3} - 1,
+\end{align*}$$
+
+donde la última igualdad usa la recurrencia $F_{n+3} = F_{n+2} + F_{n+1}$. Esto
+es la fórmula para $n+1$, lo que completa la inducción.
+
+**Comentario:** muchas identidades de Fibonacci se demuestran de forma análoga:
+el caso base es inmediato y la recurrencia hace casi todo el trabajo en el paso
+inductivo.
+:::
+
+::: {.callout-warning title="Problema resuelto"}
+**Problema:** demostrar que para todo entero $n \geq 1$, el número $n^3 + 2n$ es
+divisible por $3$.
+
+**Solución:** inducción sobre $n$.
+
+*Caso base* ($n=1$): $1^3 + 2\cdot 1 = 3$, divisible por $3$.
+
+*Paso inductivo:* supongamos que $3 \mid n^3 + 2n$. Calculamos la expresión para
+$n+1$:
+
+$$\begin{align*}
+(n+1)^3 + 2(n+1) &= n^3 + 3n^2 + 3n + 1 + 2n + 2 \\
+&= (n^3 + 2n) + 3(n^2 + n + 1).
+\end{align*}$$
+
+El primer sumando es divisible por $3$ por hipótesis inductiva, y el segundo es
+un múltiplo explícito de $3$. La suma de dos múltiplos de $3$ es múltiplo de $3$,
+así que $3 \mid (n+1)^3 + 2(n+1)$. Por inducción, la propiedad vale para todo
+$n \geq 1$.
+
+**Comentario:** alternativamente, $n^3 + 2n = n^3 - n + 3n = (n-1)n(n+1) + 3n$, y
+el producto de tres enteros consecutivos es múltiplo de $3$. Es buena práctica
+conocer ambos enfoques.
+:::
+
+---
+
+## Combinatoria
 
 ::: {.callout-warning title="Problema resuelto"}
 **Problema:** ¿de cuántas maneras se pueden elegir dos vértices de un hexágono
 regular que no sean consecutivos?
 
-**Solución:** hay $\binom{6}{2}=15$ pares de vértices y $6$ pares consecutivos.
-Luego el número pedido es $15-6=9$.
+**Solución:** un hexágono tiene $6$ vértices, de modo que hay
+$\binom{6}{2} = 15$ pares de vértices en total. De estos, los pares consecutivos
+corresponden a los lados del hexágono, que son $6$. Restando los pares prohibidos:
+
+$$15 - 6 = 9.$$
+
+Hay $9$ maneras de elegir dos vértices no consecutivos. (Estos $9$ pares son
+precisamente las diagonales del hexágono.)
+
+**Comentario:** la estrategia de "contar todo y restar lo prohibido" (conteo
+complementario) es una de las más eficaces en combinatoria cuando lo prohibido
+es más fácil de contar que lo permitido.
 :::
 
-## Problema 3: geometría métrica
+::: {.callout-warning title="Problema resuelto"}
+**Problema:** demostrar que entre cualesquiera $5$ enteros existen dos cuya
+diferencia es divisible por $4$.
+
+**Solución:** este es un problema clásico del principio del palomar. Al dividir
+un entero por $4$, el resto pertenece al conjunto $\{0, 1, 2, 3\}$, que tiene $4$
+elementos posibles (las "casillas").
+
+Tenemos $5$ enteros (las "palomas") y solo $4$ restos posibles. Por el principio
+del palomar, al menos dos de los enteros, digamos $a$ y $b$, dejan el mismo resto
+al dividirse por $4$, es decir $a \equiv b \pmod 4$. Entonces
+
+$$4 \mid (a - b).$$
+
+Hemos encontrado dos enteros cuya diferencia es divisible por $4$.
+
+**Generalización:** entre cualesquiera $n+1$ enteros, hay dos cuya diferencia es
+divisible por $n$. La demostración es idéntica usando los $n$ restos posibles
+módulo $n$.
+:::
+
+::: {.callout-warning title="Problema resuelto"}
+**Problema:** demostrar la identidad de Pascal
+$\binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}$ para $1 \leq k \leq n-1$
+mediante un argumento combinatorio.
+
+**Solución:** $\binom{n}{k}$ cuenta el número de subconjuntos de tamaño $k$ de un
+conjunto $X = \{x_1, x_2, \dots, x_n\}$ de $n$ elementos. Fijemos un elemento
+particular, digamos $x_n$, y clasifiquemos los subconjuntos de tamaño $k$ según
+contengan o no a $x_n$.
+
+- *Subconjuntos que contienen a $x_n$:* basta elegir los $k-1$ elementos
+  restantes entre los $n-1$ elementos distintos de $x_n$. Hay $\binom{n-1}{k-1}$
+  de ellos.
+- *Subconjuntos que no contienen a $x_n$:* todos sus $k$ elementos provienen de
+  los $n-1$ elementos distintos de $x_n$. Hay $\binom{n-1}{k}$ de ellos.
+
+Estas dos clases son disjuntas y cubren todos los subconjuntos de tamaño $k$. Por
+la regla de la suma,
+
+$$\binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}.$$
+
+**Comentario:** esta es la identidad que genera el triángulo de Pascal. El
+argumento "fijar un elemento y separar en casos" es una técnica de conteo
+fundamental conocida como demostración biyectiva o por doble conteo.
+:::
+
+---
+
+## Análisis
+
+::: {.callout-warning title="Problema resuelto"}
+**Problema:** demostrar que $\sqrt{2}$ es irracional.
+
+**Solución:** procedemos por reducción al absurdo. Supongamos que $\sqrt{2}$ es
+racional, de modo que existen enteros $p, q$ con $q \neq 0$ tales que
+
+$$\sqrt{2} = \frac{p}{q}, \qquad \gcd(p, q) = 1,$$
+
+es decir, la fracción está en su forma irreducible. Elevando al cuadrado,
+
+$$2 = \frac{p^2}{q^2} \quad \Longrightarrow \quad p^2 = 2 q^2.$$
+
+Entonces $p^2$ es par, lo que obliga a que $p$ sea par (si $p$ fuera impar, $p^2$
+sería impar). Escribimos $p = 2m$. Sustituyendo:
+
+$$(2m)^2 = 2q^2 \quad \Longrightarrow \quad 4m^2 = 2q^2 \quad \Longrightarrow \quad q^2 = 2m^2.$$
+
+Por el mismo razonamiento, $q^2$ es par, así que $q$ también es par. Pero entonces
+$2 \mid p$ y $2 \mid q$, lo que contradice $\gcd(p, q) = 1$. La contradicción
+muestra que la suposición era falsa, así que $\sqrt{2}$ es irracional.
+
+**Generalización:** el mismo argumento prueba que $\sqrt{n}$ es irracional siempre
+que $n$ no sea un cuadrado perfecto, usando el teorema fundamental de la
+aritmética para analizar las paridades de los exponentes en la factorización.
+:::
+
+::: {.callout-warning title="Problema resuelto"}
+**Problema:** sumar la serie geométrica $\sum_{k=0}^{\infty} \dfrac{1}{3^k}$.
+
+**Solución:** se trata de una serie geométrica de razón $r = \tfrac{1}{3}$, con
+$|r| < 1$. Recordemos primero la suma parcial finita: para $r \neq 1$,
+
+$$S_n = \sum_{k=0}^{n} r^k = \frac{1 - r^{n+1}}{1 - r}.$$
+
+Esta fórmula se verifica multiplicando $S_n$ por $(1-r)$ y observando la
+cancelación telescópica. Con $r = \tfrac{1}{3}$,
+
+$$S_n = \frac{1 - (1/3)^{n+1}}{1 - 1/3} = \frac{3}{2}\left( 1 - \frac{1}{3^{n+1}} \right).$$
+
+Como $|r| < 1$, el término $(1/3)^{n+1} \to 0$ cuando $n \to \infty$. Por lo tanto
+
+$$\sum_{k=0}^{\infty} \frac{1}{3^k} = \lim_{n \to \infty} S_n = \frac{3}{2}.$$
+
+**Comentario:** en general, $\sum_{k=0}^{\infty} r^k = \dfrac{1}{1-r}$ siempre que
+$|r| < 1$. Esta fórmula aparece constantemente al trabajar con representaciones
+decimales periódicas y con funciones generatrices.
+:::
+
+::: {.callout-warning title="Problema resuelto"}
+**Problema:** demostrar la desigualdad entre las medias aritmética y geométrica
+para dos números: si $a, b \geq 0$, entonces $\dfrac{a+b}{2} \geq \sqrt{ab}$, con
+igualdad si y solo si $a = b$.
+
+**Solución:** partimos de un hecho elemental: todo cuadrado real es no negativo.
+En particular, como $a, b \geq 0$, los números $\sqrt{a}$ y $\sqrt{b}$ están bien
+definidos y
+
+$$\left( \sqrt{a} - \sqrt{b} \right)^2 \geq 0.$$
+
+Desarrollando el cuadrado,
+
+$$a - 2\sqrt{a}\sqrt{b} + b \geq 0 \quad \Longrightarrow \quad a + b \geq 2\sqrt{ab}.$$
+
+Dividiendo por $2$ obtenemos
+
+$$\frac{a+b}{2} \geq \sqrt{ab}.$$
+
+La igualdad se alcanza exactamente cuando $\left( \sqrt{a} - \sqrt{b} \right)^2 = 0$,
+es decir, cuando $\sqrt{a} = \sqrt{b}$, lo que equivale a $a = b$.
+
+**Generalización:** para $n$ números no negativos $x_1, \dots, x_n$ se cumple
+$\dfrac{x_1 + \cdots + x_n}{n} \geq \sqrt[n]{x_1 \cdots x_n}$, con igualdad si y
+solo si todos los $x_i$ son iguales. Es una de las desigualdades más útiles en
+olimpiadas.
+:::
+
+---
+
+## Geometría
 
 ::: {.callout-warning title="Problema resuelto"}
 **Problema:** en un triángulo rectángulo con hipotenusa $10$ y un cateto $6$,
 hallar el otro cateto y el área.
 
-**Solución:** por Pitágoras, el otro cateto es $8$ y el área vale $24$.
+**Solución:** sean los catetos $a = 6$ y $b$, y la hipotenusa $c = 10$. Por el
+teorema de Pitágoras,
+
+$$a^2 + b^2 = c^2 \quad \Longrightarrow \quad 36 + b^2 = 100 \quad \Longrightarrow \quad b^2 = 64,$$
+
+de donde $b = 8$ (tomamos la raíz positiva por ser una longitud). El área de un
+triángulo rectángulo es la mitad del producto de los catetos:
+
+$$\text{Área} = \frac{1}{2} \cdot a \cdot b = \frac{1}{2} \cdot 6 \cdot 8 = 24.$$
+
+**Comentario:** el triángulo $(6, 8, 10)$ es un múltiplo del triángulo
+pitagórico básico $(3, 4, 5)$. Reconocer estas ternas ahorra cálculos.
+:::
+
+::: {.callout-warning title="Problema resuelto"}
+**Problema:** demostrar que en cualquier triángulo, la suma de sus ángulos
+interiores es $180^\circ$.
+
+**Solución:** sea $ABC$ un triángulo con ángulos interiores $\alpha$, $\beta$ y
+$\gamma$ en los vértices $A$, $B$ y $C$, respectivamente. Tracemos por el vértice
+$A$ una recta $\ell$ paralela al lado $BC$.
+
+La recta $AB$ es transversal a las paralelas $\ell$ y $BC$, de modo que el ángulo
+que forma $\ell$ con $AB$ del lado de $B$ es igual a $\beta$ por ser ángulos
+alternos internos. Análogamente, usando la transversal $AC$, el ángulo que forma
+$\ell$ con $AC$ del lado de $C$ es igual a $\gamma$.
+
+Ahora bien, en el vértice $A$ los tres ángulos —el que mide $\beta$, el ángulo
+$\alpha$ del triángulo, y el que mide $\gamma$— se disponen sobre la recta $\ell$
+y juntos forman un ángulo llano. Por lo tanto
+
+$$\beta + \alpha + \gamma = 180^\circ.$$
+
+**Comentario:** este resultado depende del postulado de las paralelas; en
+geometrías no euclidianas la suma de los ángulos puede ser distinta de
+$180^\circ$.
+:::
+
+::: {.callout-warning title="Problema resuelto"}
+**Problema:** demostrar el teorema del ángulo inscrito: un ángulo inscrito en una
+circunferencia mide la mitad del ángulo central que subtiende el mismo arco.
+
+**Solución:** consideremos una circunferencia de centro $O$ y un ángulo inscrito
+$\angle BAC$ con vértice $A$ sobre la circunferencia, que subtiende el arco $BC$.
+Probamos primero el caso en que uno de los lados del ángulo pasa por el centro
+$O$ (digamos que $A$, $O$, $B$ están alineados); los demás casos se reducen a este.
+
+El triángulo $OAC$ es isósceles, pues $OA = OC$ son radios. Por lo tanto sus
+ángulos en la base son iguales:
+
+$$\angle OAC = \angle OCA = \theta.$$
+
+El ángulo $\angle BOC$ es exterior al triángulo $OAC$ en el vértice $O$, de modo
+que es igual a la suma de los dos ángulos interiores no adyacentes:
+
+$$\angle BOC = \angle OAC + \angle OCA = \theta + \theta = 2\theta.$$
+
+Pero $\angle BOC$ es el ángulo central que subtiende el arco $BC$ y
+$\angle BAC = \theta$ es el ángulo inscrito. Por lo tanto
+
+$$\angle BAC = \frac{1}{2}\,\angle BOC.$$
+
+Para el caso general (cuando el centro $O$ queda dentro o fuera del ángulo
+inscrito), se descompone $\angle BAC$ como suma o diferencia de dos ángulos del
+tipo anterior trazando el diámetro desde $A$, y el resultado se sigue por adición
+o sustracción.
+
+**Comentario:** una consecuencia inmediata es que todos los ángulos inscritos que
+subtienden el mismo arco son iguales, y que un ángulo inscrito en una
+semicircunferencia es recto (teorema de Tales).
 :::

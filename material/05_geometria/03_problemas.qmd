@@ -1,41 +1,135 @@
 ---
 title: "Problemas de práctica"
+format:
+  html:
+    toc: true
+    toc-depth: 2
 ---
 
-**Problema 1.** Probar que los ángulos de la base de un triángulo isósceles son
-iguales.
+Los siguientes problemas cubren todo el capítulo. Intenta resolver cada uno antes
+de desplegar la solución. El nivel de dificultad se indica con estrellas (⭐ a 🏆,
+según la convención de `SKILLS.md`).
+
+**Problema 1.** (⭐) Probar que los ángulos de la base de un triángulo isósceles
+son iguales.
 
 ::: {.callout-caution collapse="true" title="Ver solución"}
-Se comparan triángulos congruentes construidos sobre los lados iguales, o se usa
-simetría. Resulta $\angle B=\angle C$.
+Sea $\triangle ABC$ con $AB=AC$. Considera la bisectriz de $\angle A$, que corta a
+$\overline{BC}$ en $D$. Los triángulos $\triangle ABD$ y $\triangle ACD$ son
+congruentes por el criterio LAL ($AB=AC$, $\angle BAD=\angle CAD$, lado común
+$AD$). Por tanto $\angle B=\angle C$. $\blacksquare$
 :::
 
-**Problema 2.** Demostrar que la mediatriz de un segmento es el lugar geométrico
-de los puntos equidistantes de sus extremos.
+**Problema 2.** (⭐) Demostrar que la mediatriz de un segmento es el lugar
+geométrico de los puntos equidistantes de sus extremos.
 
 ::: {.callout-caution collapse="true" title="Ver solución"}
-Un punto en la mediatriz forma dos triángulos congruentes con los extremos, y la
-recíproca se obtiene invirtiendo el argumento.
+Sea $M$ el punto medio de $\overline{AB}$ y $\ell$ la perpendicular a
+$\overline{AB}$ por $M$. Si $P\in\ell$, los triángulos $\triangle PMA$ y
+$\triangle PMB$ son congruentes (LAL: $MA=MB$, ángulo recto común, lado $PM$
+común), luego $PA=PB$. Recíprocamente, si $PA=PB$, el triángulo $\triangle PAB$ es
+isósceles y su altura desde $P$ pasa por $M$, de modo que $P\in\ell$.
+$\blacksquare$
 :::
 
-**Problema 3.** En un triángulo rectángulo de catetos $3$ y $4$, hallar el radio
-de la circunferencia inscrita.
+**Problema 3.** (⭐) En un triángulo rectángulo de catetos $3$ y $4$, hallar el
+radio de la circunferencia inscrita.
 
 ::: {.callout-caution collapse="true" title="Ver solución"}
-La hipotenusa es $5$ y el área es $6$. Como $A=rs$ con semiperímetro $s=6$,
-resulta $r=1$.
+La hipotenusa es $5$ y el área es $6$. Como $[ABC]=r\,s$ con semiperímetro
+$s=\tfrac{3+4+5}{2}=6$, resulta $6=6r$, es decir $r=1$. $\blacksquare$
 :::
 
-**Problema 4.** Probar que en todo triángulo las tres medianas son concurrentes.
+**Problema 4.** (⭐⭐) Probar que en todo triángulo las tres medianas son
+concurrentes.
 
 ::: {.callout-caution collapse="true" title="Ver solución"}
-Se aplica Ceva a los puntos medios de los tres lados.
+Sean $D,E,F$ los puntos medios de los lados. Las razones de Ceva valen
+$\frac{BD}{DC}=\frac{CE}{EA}=\frac{AF}{FB}=1$, luego su producto es $1$. Por el
+teorema de Ceva, las medianas $AD,BE,CF$ concurren (en el baricentro).
+$\blacksquare$
+:::
+
+**Problema 5.** (⭐⭐) Sea $ABCD$ un cuadrilátero cíclico con $\angle A=70^\circ$.
+Hallar $\angle C$.
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+En un cuadrilátero cíclico los ángulos opuestos son suplementarios:
+$\angle A+\angle C=180^\circ$. Entonces $\angle C=180^\circ-70^\circ=110^\circ$.
+$\blacksquare$
+:::
+
+**Problema 6.** (⭐⭐) Desde un punto $P$ exterior a una circunferencia se traza una
+tangente $PT$ de longitud $6$ y una secante que corta a la circunferencia en $X$ e
+$Y$ con $PX=4$. Hallar $PY$.
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+Por la potencia del punto $P$, $PT^2=PX\cdot PY$. Entonces
+$36=4\cdot PY$, de donde $PY=9$. (La cuerda $XY$ mide $PY-PX=5$.) $\blacksquare$
+:::
+
+**Problema 7.** (⭐⭐⭐) En $\triangle ABC$, las cevianas concurrentes
+$AD,BE,CF$ cumplen $\frac{BD}{DC}=2$ y $\frac{CE}{EA}=\frac{1}{2}$. Hallar
+$\frac{AF}{FB}$.
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+Por el teorema de Ceva,
+$$\frac{BD}{DC}\cdot\frac{CE}{EA}\cdot\frac{AF}{FB}=1
+\;\Longrightarrow\; 2\cdot\frac12\cdot\frac{AF}{FB}=1.$$
+Como $2\cdot\tfrac12=1$, queda $\frac{AF}{FB}=1$, es decir $F$ es el punto medio de
+$\overline{AB}$. $\blacksquare$
+:::
+
+**Problema 8.** (⭐⭐⭐) Sea $\triangle ABC$ equilátero inscrito en una
+circunferencia y $P$ un punto del arco $BC$ (que no contiene a $A$). Probar que
+$PA=PB+PC$.
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+El cuadrilátero $ABPC$ es cíclico. Por el teorema de Ptolomeo,
+$$PA\cdot BC = PB\cdot AC + PC\cdot AB.$$
+Como el triángulo es equilátero, $AB=BC=CA$; dividiendo por ese lado común se
+obtiene $PA=PB+PC$. $\blacksquare$
+:::
+
+**Problema 9.** (⭐⭐⭐) En $\triangle ABC$ con circuncentro $O$, baricentro $G$ y
+ortocentro $H$, probar que $H$, $G$, $O$ están alineados y que $HG=2\,GO$.
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+Tomando $O$ como origen, los vértices cumplen $|A|=|B|=|C|=R$. Se verifica que
+$H=A+B+C$ es el ortocentro: $H-A=B+C$ y $(B+C)\cdot(C-B)=|C|^2-|B|^2=0$, luego
+$AH\perp BC$ (igual para los otros lados). Como $G=\tfrac13(A+B+C)=\tfrac13 H$, los
+puntos $O,G,H$ son colineales y $\overrightarrow{OH}=3\,\overrightarrow{OG}$, de
+donde $HG=2\,GO$. Esta es la recta de Euler. $\blacksquare$
+:::
+
+**Problema 10.** (🏆) Sea $H$ el ortocentro de $\triangle ABC$. Probar que el
+reflejo de $H$ respecto del lado $\overline{BC}$ pertenece a la circunferencia
+circunscrita.
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+Sea $H'$ el reflejo de $H$ respecto de $\overline{BC}$. Una persecución de ángulos
+muestra que $\angle BHC=180^\circ-\angle A$ (los lados de $\angle BHC$ son
+perpendiculares a $AC$ y $AB$). Como la reflexión preserva ángulos,
+$\angle BH'C=\angle BHC=180^\circ-\angle A$, de modo que
+$\angle BH'C+\angle A=180^\circ$. Entonces $A,B,H',C$ son concíclicos, es decir
+$H'$ está en la circunferencia circunscrita a $\triangle ABC$. $\blacksquare$
 :::
 
 ## Problemas de competencias oficiales
 
-**OMC 2019 — Problema 3:** demostrar una relación angular en una configuración
-con circunferencia.
+Los siguientes problemas se proponen **sin solución**, para practicar con
+enunciados reales de competencia.
 
-**IMO 1962 — Problema 5:** estudiar una condición geométrica equivalente a una
-concurrencia notable.
+**OMC (Olimpiada de Matemáticas de Chile) — Nivel Mayor.** En un triángulo
+$\triangle ABC$, sea $I$ el incentro y sean $D,E,F$ los puntos de tangencia de la
+circunferencia inscrita con los lados $\overline{BC},\overline{CA},\overline{AB}$.
+Demostrar que las rectas $AD,BE,CF$ son concurrentes (el punto de concurrencia es
+el llamado punto de Gergonne). *Indicación:* usar el teorema de Ceva con las
+tangentes desde cada vértice.
+
+**IMO 1962 — Problema 6.** Considérese un triángulo isósceles. Sea $r$ el radio de
+su circunferencia circunscrita y $\rho$ el radio de su circunferencia inscrita.
+Probar que la distancia $d$ entre los centros de estas dos circunferencias es
+$$d=\sqrt{r(r-2\rho)}.$$
+(Este resultado es un caso particular del teorema de Euler sobre la distancia entre
+incentro y circuncentro.)

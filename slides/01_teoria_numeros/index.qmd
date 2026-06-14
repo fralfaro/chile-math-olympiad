@@ -1,8 +1,226 @@
 ---
 title: "Teoría de Números"
-format: revealjs
 ---
 
-## Placeholder
+## Teoría de Números {.center}
 
-Presentación pendiente para teoría de números.
+**Divisibilidad, primos y congruencias**
+
+La rama más antigua de la matemática y, a la vez, una fuente inagotable de
+problemas olímpicos: fáciles de enunciar, difíciles de resolver.
+
+::: {.fragment}
+*Matemática Olímpica — Capítulo I*
+:::
+
+## ¿Por qué importa? {.center}
+
+::: {.callout-note title="Problema motivador"}
+Halla las **dos últimas cifras** de $7^{2024}$.
+:::
+
+. . .
+
+No queremos calcular el número completo (¡tiene más de $1700$ dígitos!).
+
+. . .
+
+Solo nos interesa su resto módulo $100$. La teoría de números nos dará el
+lenguaje y las herramientas para responder en pocas líneas.
+
+# Divisibilidad
+
+## Divisibilidad
+
+::: {.callout-tip title="Definición"}
+Sean $a,b \in \mathbb{Z}$ con $a \neq 0$. Decimos que $a \mid b$ si existe
+$k \in \mathbb{Z}$ tal que $b = ak$.
+:::
+
+Propiedades clave:
+
+- $a \mid b$ y $b \mid c$ $\Rightarrow$ $a \mid c$ (transitividad).
+- $a \mid b$ y $a \mid c$ $\Rightarrow$ $a \mid (bx + cy)$ para todo $x,y \in \mathbb{Z}$.
+
+## Algoritmo de la división
+
+::: {.callout-note title="Teorema I.2"}
+Dados $a \in \mathbb{Z}$ y $b > 0$, existen **únicos** $q, r \in \mathbb{Z}$
+tales que
+$$a = bq + r, \qquad 0 \le r < b.$$
+:::
+
+El resto $r$ es lo que sobra al repartir $a$ en grupos de $b$. Es el cimiento de
+todo lo que sigue: Euclides y la aritmética modular.
+
+# MCD y Euclides
+
+## Máximo común divisor
+
+$\gcd(a,b)$ es el mayor entero positivo que divide a $a$ y a $b$ simultáneamente.
+
+. . .
+
+::: {.callout-note title="Lema de Euclides para el MCD"}
+Si $a = bq + r$, entonces
+$$\gcd(a,b) = \gcd(b,r).$$
+:::
+
+Esto permite reemplazar un par grande por uno más chico sin perder el MCD.
+
+## Algoritmo de Euclides
+
+Dividir, reemplazar $(a,b)$ por $(b,r)$ y repetir hasta resto $0$. El último
+resto no nulo es el MCD.
+
+. . .
+
+$$
+\begin{align*}
+1071 &= 2 \cdot 462 + 147,\\
+462  &= 3 \cdot 147 + 21,\\
+147  &= 7 \cdot 21 + 0.
+\end{align*}
+$$
+
+. . .
+
+Luego $\gcd(1071, 462) = 21$.
+
+## Identidad de Bézout
+
+::: {.callout-tip title="Teorema I.5"}
+Para $a, b$ no ambos nulos, existen $x, y \in \mathbb{Z}$ tales que
+$$ax + by = \gcd(a,b).$$
+:::
+
+Además, $\gcd(a,b)$ es el **menor** entero positivo expresable como $ax + by$.
+Es quizás la herramienta más usada en olimpiada.
+
+# Primos
+
+## Números primos e infinitud
+
+Un entero $p > 1$ es **primo** si sus únicos divisores positivos son $1$ y $p$.
+
+. . .
+
+::: {.callout-note title="Teorema I.7 (Euclides)"}
+Existen **infinitos** primos.
+:::
+
+*Idea:* si solo hubiera $p_1,\dots,p_n$, entonces $N = p_1 \cdots p_n + 1$ no
+sería divisible por ninguno de ellos. Contradicción.
+
+## Teorema Fundamental de la Aritmética
+
+::: {.callout-tip title="TFA"}
+Todo entero $n > 1$ se escribe de forma **única** (salvo orden) como
+$$n = p_1^{\alpha_1} p_2^{\alpha_2} \cdots p_k^{\alpha_k}.$$
+:::
+
+Los primos son los "átomos" de los enteros. De la factorización se leen
+directamente:
+$$\gcd(n,m) = \prod_i p_i^{\min(\alpha_i,\beta_i)}, \quad
+\operatorname{mcm}(n,m) = \prod_i p_i^{\max(\alpha_i,\beta_i)}.$$
+
+# Congruencias
+
+## Aritmética modular
+
+::: {.callout-tip title="Definición"}
+$a \equiv b \pmod{n}$ significa que $n \mid (a - b)$; equivalentemente, $a$ y $b$
+dejan el mismo resto al dividir por $n$.
+:::
+
+Las congruencias respetan suma, resta, producto y potencias:
+$$a \equiv b,\; c \equiv d \pmod{n} \;\Rightarrow\; a + c \equiv b + d,\;\; ac \equiv bd.$$
+
+## Inverso modular
+
+**Cuidado:** no siempre se puede cancelar. De $ac \equiv bc \pmod n$ solo
+deducimos $a \equiv b$ cuando $\gcd(c,n) = 1$.
+
+. . .
+
+::: {.callout-note title="Teorema I.10"}
+$a$ tiene inverso módulo $n$ (existe $x$ con $ax \equiv 1 \pmod n$) si y solo si
+$\gcd(a,n) = 1$.
+:::
+
+La demostración es Bézout: $ax + ny = 1$.
+
+## Pequeño Teorema de Fermat
+
+::: {.callout-tip title="Teorema I.11"}
+Si $p$ es primo y $p \nmid a$, entonces
+$$a^{p-1} \equiv 1 \pmod{p}.$$
+En general, $a^p \equiv a \pmod p$ para todo $a$.
+:::
+
+Permite reducir exponentes gigantes módulo $p$. Su versión general es el
+**Teorema de Euler**: $a^{\varphi(n)} \equiv 1 \pmod n$ cuando $\gcd(a,n)=1$.
+
+# Ejemplo resuelto
+
+## Problema y estrategia
+
+::: {.callout-important title="Problema"}
+Hallar el resto de $3^{100}$ al dividir por $7$.
+:::
+
+. . .
+
+**Estrategia:** $7$ es primo y $7 \nmid 3$, así que por el Pequeño Teorema de
+Fermat $3^6 \equiv 1 \pmod 7$. Reducimos el exponente $100$ módulo $6$.
+
+## Solución
+
+Como $3^6 \equiv 1 \pmod 7$, escribimos $100 = 6 \cdot 16 + 4$.
+
+. . .
+
+$$3^{100} = (3^6)^{16} \cdot 3^4 \equiv 1^{16} \cdot 3^4 \pmod 7.$$
+
+. . .
+
+$$3^4 = 81 = 11 \cdot 7 + 4 \equiv 4 \pmod 7.$$
+
+. . .
+
+El resto es $\boxed{4}$.
+
+# Diofánticas
+
+## Ecuaciones diofánticas lineales
+
+::: {.callout-tip title="Teorema I.13"}
+La ecuación $ax + by = c$ tiene soluciones enteras si y solo si
+$d = \gcd(a,b) \mid c$. Si $(x_0, y_0)$ es una solución, todas son
+$$x = x_0 + \tfrac{b}{d}\,t, \qquad y = y_0 - \tfrac{a}{d}\,t, \qquad t \in \mathbb{Z}.$$
+:::
+
+. . .
+
+*Ejemplo:* $15x + 21y = 12$. Como $\gcd(15,21) = 3 \mid 12$, hay solución:
+$x = -2 + 7t,\; y = 2 - 5t$.
+
+## Ideas clave {.center}
+
+- **Algoritmo de la división:** todo se reduce a entender el resto.
+- **Euclides + Bézout:** el MCD y su escritura $ax + by = \gcd(a,b)$.
+- **TFA:** los primos son los átomos de $\mathbb{Z}$.
+- **Congruencias:** lenguaje de los restos; cuidado al cancelar.
+- **Fermat / Euler:** reducen exponentes enormes módulo $n$.
+
+## Para practicar {.center}
+
+::: {.callout-caution title="Problemas propuestos"}
+1. Demuestra que $n^3 - n$ es divisible por $6$ para todo $n \in \mathbb{Z}$.
+2. Halla las dos últimas cifras de $7^{2024}$ (¡el problema inicial!).
+3. Prueba que $n^4 + 4$ es compuesto para todo entero $n > 1$.
+:::
+
+. . .
+
+**¡A resolver!** $\quad \gcd(\text{esfuerzo},\text{práctica}) = \text{éxito}.$

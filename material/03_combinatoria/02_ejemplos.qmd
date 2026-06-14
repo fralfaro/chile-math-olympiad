@@ -2,45 +2,167 @@
 title: "Ejemplos resueltos"
 ---
 
-## Ejemplo 1: principio multiplicativo
+Esta página desarrolla en detalle los ejemplos de la sección III.5 de *Matemática
+y Olimpíadas* (Somachi, 1994). Cada ejemplo expone primero la **estrategia** y
+luego la **solución** paso a paso, de modo que se pueda reproducir el razonamiento
+y no solo memorizar el resultado.
+
+## Ejemplo 1: principio del producto
 
 ::: {.callout-warning title="Ejemplo resuelto"}
-**Problema:** ¿cuántos números de tres cifras distintas pueden formarse con los
+**Problema:** ¿Cuántos números de tres cifras **distintas** pueden formarse con los
 dígitos $1,2,3,4,5$?
 
-**Solución:** para la centena hay $5$ opciones, para la decena quedan $4$ y para
-la unidad quedan $3$. Por tanto,
+**Estrategia:** Construir el número posición a posición y multiplicar las opciones,
+descontando en cada paso las cifras ya usadas.
+
+**Solución:** Para la centena hay $5$ opciones; elegida una, para la decena quedan
+$4$; para la unidad quedan $3$. Por el principio del producto,
 
 $$5 \cdot 4 \cdot 3 = 60.$$
+
+Se forman $60$ números.
 :::
 
-## Ejemplo 2: combinaciones
+## Ejemplo 2: principio de la suma combinado con el producto
 
 ::: {.callout-warning title="Ejemplo resuelto"}
-**Problema:** de un grupo de $8$ estudiantes, ¿de cuántas maneras puede elegirse
-una comisión de $3$ personas?
+**Problema:** ¿Cuántos números de tres cifras (de $100$ a $999$) son **pares**?
 
-**Solución:** el orden no importa, así que
+**Estrategia:** Separar por etapas. La condición de paridad afecta solo a la
+última cifra, así que la tratamos aparte.
 
-$$\binom{8}{3}=56.$$
+**Solución:** La centena puede ser cualquiera de $1,\dots,9$ ($9$ opciones), la
+decena cualquiera de $0,\dots,9$ ($10$ opciones) y la unidad debe ser par,
+$\{0,2,4,6,8\}$ ($5$ opciones). Por el principio del producto,
+
+$$9 \cdot 10 \cdot 5 = 450.$$
+
+Hay $450$ números pares de tres cifras.
 :::
 
-## Ejemplo 3: binomio de Newton
+## Ejemplo 3: permutaciones circulares
 
 ::: {.callout-warning title="Ejemplo resuelto"}
-**Problema:** encontrar el coeficiente de $x^3$ en $(1+x)^7$.
+**Problema:** En una mesa redonda se sientan $5$ amigos. ¿De cuántas formas pueden
+ordenarse si dos disposiciones que difieren en una rotación se consideran iguales?
+¿Y si además dos amigos en particular deben quedar juntos?
 
-**Solución:** por el binomio de Newton el coeficiente es
+**Estrategia:** Aplicar la fórmula de permutaciones cíclicas $(n-1)!$ y, para la
+segunda parte, tratar a la pareja como un único bloque.
 
-$$\binom{7}{3}=35.$$
+**Solución:** Sin restricciones, el número de disposiciones circulares es
+
+$$(5-1)! = 4! = 24.$$
+
+Si dos amigos deben quedar juntos, los unimos en un "bloque", quedando $4$ objetos
+a disponer en círculo: $(4-1)! = 3! = 6$ formas. Dentro del bloque, los dos amigos
+pueden ordenarse de $2! = 2$ maneras. Por el producto,
+
+$$3! \cdot 2! = 6 \cdot 2 = 12.$$
 :::
 
-## Ejemplo 4: principio del palomar
+## Ejemplo 4: combinaciones
 
 ::: {.callout-warning title="Ejemplo resuelto"}
-**Problema:** probar que entre cualesquiera $13$ enteros hay dos cuya diferencia
-es múltiplo de $12$.
+**Problema:** De un grupo de $8$ estudiantes, ¿de cuántas maneras puede elegirse una
+comisión de $3$ personas? ¿Y si uno de los $8$, llamado Ana, debe formar parte de
+la comisión?
 
-**Solución:** solo hay $12$ residuos posibles módulo $12$. Si tenemos $13$
-enteros, dos comparten el mismo residuo y su diferencia es múltiplo de $12$.
+**Estrategia:** El orden no importa, así que se trata de combinaciones. En la
+segunda parte fijamos a Ana y elegimos los restantes.
+
+**Solución:** Sin restricciones,
+
+$$\binom{8}{3} = \frac{8!}{3!\,5!} = 56.$$
+
+Si Ana debe estar, solo quedan por elegir $2$ personas de las $7$ restantes:
+
+$$\binom{7}{2} = 21.$$
+:::
+
+## Ejemplo 5: binomio de Newton
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** Encontrar el coeficiente de $x^{3}$ en $(1+x)^{7}$ y, además, el
+término independiente de $x$ en $\left( x + \frac{1}{x} \right)^{6}$.
+
+**Estrategia:** Usar el término general del binomio de Newton e imponer el
+exponente requerido.
+
+**Solución:** Para $(1+x)^{7}$, el término general es $\binom{7}{k} x^{k}$; con
+$k = 3$ el coeficiente de $x^{3}$ es
+
+$$\binom{7}{3} = 35.$$
+
+Para $\left( x + \frac{1}{x} \right)^{6}$, el término general es
+
+$$\binom{6}{k} x^{6-k} \left( \frac{1}{x} \right)^{k} = \binom{6}{k} x^{6-2k}.$$
+
+El término independiente exige $6 - 2k = 0$, es decir $k = 3$, y vale
+$\binom{6}{3} = 20$.
+:::
+
+## Ejemplo 6: combinaciones con repetición
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** ¿De cuántas formas pueden repartirse $10$ caramelos **idénticos**
+entre $4$ niños (algún niño puede quedarse sin caramelos)?
+
+**Estrategia:** Es el modelo de "barras y estrellas": repartir objetos idénticos en
+cajas equivale a elegir con repetición. La fórmula es $\binom{n+k-1}{k}$ con $n=4$
+tipos (niños) y $k=10$ objetos.
+
+**Solución:** Representamos los $10$ caramelos como estrellas y usamos $3$ barras
+para separarlos en $4$ grupos. Cada reparto es una sucesión de $10$ estrellas y $3$
+barras, y elegir las posiciones de las barras determina el reparto:
+
+$$\binom{10 + 4 - 1}{4 - 1} = \binom{13}{3} = 286.$$
+
+Hay $286$ repartos posibles.
+:::
+
+## Ejemplo 7: principio del palomar
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** En una reunión hay $30$ personas. Demostrar que al menos $3$ nacieron
+el mismo mes.
+
+**Estrategia:** Las $12$ meses son las cajas y las personas los objetos; aplicamos
+la versión generalizada del palomar.
+
+**Solución:** Distribuimos las $30$ personas en $12$ meses. Por el principio del
+palomar generalizado, algún mes contiene al menos
+
+$$\left\lceil \frac{30}{12} \right\rceil = \lceil 2.5 \rceil = 3$$
+
+personas. Por tanto, hay al menos $3$ personas nacidas el mismo mes. $\blacksquare$
+:::
+
+## Ejemplo 8: Lema de Burnside (collares)
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** ¿Cuántos collares distintos de $6$ cuentas dispuestas en círculo
+pueden formarse con $2$ colores, considerando iguales los que difieren por una
+rotación?
+
+**Estrategia:** Aplicar la fórmula de Pólya sobre el grupo cíclico $C_6$ de las $6$
+rotaciones, contando los ciclos de cada rotación. Una rotación de $d$ posiciones
+sobre $6$ cuentas descompone las posiciones en $\gcd(6,d)$ ciclos.
+
+**Solución:** Para cada rotación $r_d$ ($d = 0,1,\dots,5$), el número de ciclos es
+$\gcd(6,d)$:
+
+$$
+\begin{array}{c|cccccc}
+d & 0 & 1 & 2 & 3 & 4 & 5 \\ \hline
+\gcd(6,d) & 6 & 1 & 2 & 3 & 2 & 1
+\end{array}
+$$
+
+Con $c = 2$ colores, por la fórmula de Pólya el número de collares es
+
+$$\frac{1}{6}\left( 2^{6} + 2^{1} + 2^{2} + 2^{3} + 2^{2} + 2^{1} \right) = \frac{64 + 2 + 4 + 8 + 4 + 2}{6} = \frac{84}{6} = 14.$$
+
+Hay $14$ collares distintos.
 :::

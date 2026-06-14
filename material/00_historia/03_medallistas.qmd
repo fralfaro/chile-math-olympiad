@@ -4,70 +4,128 @@ title: "Medallistas y participantes chilenos en la IMO"
 
 ## Chile en la IMO
 
-Chile comenzó a participar en la **Olimpiada Internacional de Matemáticas (IMO)**
-en la edición de **2005** (Mérida, México). Desde entonces, ha enviado equipos
-con regularidad y ha obtenido diversas distinciones.
+Chile ha participado en la **Olimpiada Internacional de Matemáticas (IMO)** enviando
+equipos formados por estudiantes de enseñanza media, seleccionados a partir de su
+desempeño en la olimpiada nacional y en las competencias internacionales de
+entrenamiento. Representar al país en la IMO es el logro más alto al que puede aspirar
+un olimpista chileno.
 
 ::: {.callout-note title="Contexto"}
-La selección chilena para la IMO se elige de los mejores participantes en la
-OMC y la OIM. El equipo está formado por hasta 6 estudiantes, acompañados de un
-líder y un observador de la Somachi.
+La selección chilena para la IMO se elige entre los mejores participantes de la OMC y
+la Iberoamericana. El equipo está formado por **hasta seis estudiantes**, acompañados
+de un líder (*team leader*) y un líder adjunto u observador, encargados de defender los
+puntajes de sus alumnos ante el jurado internacional.
+:::
+
+::: {.callout-warning title="⚠️ Sobre los datos de esta página"}
+Esta página describe la trayectoria chilena en términos **generales y verificables**,
+sin atribuir medallas a nombres, años o sedes específicas. El palmarés exacto de Chile
+—participantes, puntajes, medallas y menciones honoríficas año por año— está disponible
+de forma oficial y actualizada en el sitio de la IMO. **No tomes como definitivo ningún
+dato puntual que no provenga de esa fuente.**
 :::
 
 ---
 
-## Participaciones y resultados
+## ¿Qué significan las medallas y menciones?
 
-A continuación se presentan algunas de las participaciones más destacadas
-del equipo chileno en la IMO:
+En la IMO, cada participante compite de manera **individual**: las medallas se otorgan
+a personas, no a países (aunque informalmente se comparen los puntajes por equipos).
+La cantidad de medallas se decide cada año en función de los puntajes obtenidos, según
+estas reglas generales:
 
-| Año | Sede | Medallas/Menciones chilenas |
-|---|---|---|
-| 2005 | Mérida, México | Primera participación |
-| 2007 | Hanói, Vietnam | Mención honorífica |
-| 2010 | Astana, Kazajistán | Mención honorífica |
-| 2013 | Santa Marta, Colombia | Medalla de bronce |
-| 2015 | Chiang Mai, Tailandia | Mención honorífica |
-| 2018 | Cluj-Napoca, Rumania | Medalla de bronce |
-| 2019 | Bath, Reino Unido | Medalla de bronce |
-| 2022 | Oslo, Noruega | Mención honorífica |
-| 2023 | Chiba, Japón | Participación oficial |
-| 2024 | Bath, Reino Unido | Participación oficial |
+- **Medalla de oro, plata y bronce:** se reparten de modo que, a lo más, **la mitad**
+  de todos los concursantes obtenga alguna medalla. La proporción aproximada entre oro,
+  plata y bronce es de $1:2:3$.
+- **Mención honorífica:** se otorga a quien **no** obtiene medalla pero resuelve de
+  forma perfecta al menos un problema (es decir, logra los 7 puntos en algún problema).
 
-::: {.callout-warning title="Nota de precisión"}
-Los datos presentados son referenciales. Para la lista oficial y completa de
-resultados, consulta el sitio [www.imo-official.org](https://www.imo-official.org)
-y el registro de Somachi en [www.olimpiadadematematica.cl](https://www.olimpiadadematematica.cl).
+::: {.callout-tip title="📖 Por qué una mención honorífica ya es un gran logro"}
+Resolver perfectamente **un solo** problema de la IMO no es poca cosa: los seis
+problemas de cada edición están entre los más difíciles que se plantean a estudiantes
+de enseñanza media en todo el mundo. Por eso, para un país en desarrollo olímpico, una
+mención honorífica representa un avance real y un motivo legítimo de orgullo.
+:::
+
+### El significado de cada distinción para Chile
+
+Para un país como Chile, cuyo programa olímpico es más joven que el de las grandes
+potencias, conviene entender las distinciones en una escala de progreso:
+
+| Distinción | Qué representa en el camino de un país |
+|---|---|
+| **Participación oficial** | El estudiante rinde la prueba completa de la IMO; ya es parte de un grupo muy selecto. |
+| **Mención honorífica** | Al menos un problema resuelto de forma perfecta; primer gran hito competitivo. |
+| **Medalla de bronce** | Desempeño que supera el umbral de medalla; consolidación del nivel. |
+| **Medalla de plata u oro** | Resultado de élite mundial; meta de largo plazo de cualquier programa. |
+
+---
+
+## La evolución del desempeño chileno
+
+Más que centrarse en resultados aislados, conviene mirar la **tendencia**. La historia
+olímpica chilena puede describirse, de forma general y verificable, en estas etapas:
+
+1. **Incorporación internacional.** Tras consolidar su olimpiada nacional, Chile
+   comenzó a enviar equipos a competencias internacionales, primero regionales y
+   iberoamericanas, y luego a la IMO.
+2. **Aprendizaje y primeras distinciones.** En las primeras participaciones, el
+   objetivo fue ganar experiencia frente al altísimo nivel mundial; las primeras
+   distinciones individuales (menciones honoríficas) marcaron avances importantes.
+3. **Consolidación gradual.** Con un sistema de entrenamiento más estable —campamentos,
+   profesores entrenadores y material de estudio—, el rendimiento del país ha tendido a
+   hacerse más sostenido en el tiempo.
+
+Esta evolución refleja un fenómeno común en el mundo olímpico: **los resultados son
+fruto de la continuidad del programa**, no de talentos aislados. Cuando un país sostiene
+sus campamentos y su comunidad de entrenadores año tras año, los logros aparecen con el
+tiempo.
+
+::: {.callout-tip title="📖 ¿Dónde ver el palmarés oficial?"}
+El sitio oficial de la IMO mantiene el registro completo de **todos** los países y
+participantes desde 1959: años, sedes, puntajes individuales, medallas y menciones.
+Es la fuente definitiva para conocer la trayectoria exacta de Chile:
+
+- **IMO oficial:** [www.imo-official.org](https://www.imo-official.org) — busca a Chile
+  en la sección de países (*country results*).
+- **Somachi:** [www.olimpiadadematematica.cl](https://www.olimpiadadematematica.cl) —
+  información nacional, convocatorias y problemas.
 :::
 
 ---
 
 ## Sobre la selección chilena
 
-El proceso de selección es riguroso y tiene varias etapas:
+El proceso de selección es riguroso y consta de varias etapas:
 
-1. **OMC nacional:** los mejores resultados en la olimpiada nacional
-2. **Entrenamiento intensivo:** campamentos matemáticos organizados por Somachi
-3. **OIM:** participación en la Olimpiada Iberoamericana como entrenamiento
-4. **Selección final:** pruebas de selección para definir los 6 miembros del equipo IMO
+1. **OMC nacional:** los mejores resultados en la olimpiada nacional.
+2. **Entrenamiento intensivo:** campamentos matemáticos de preparación.
+3. **Competencias internacionales de entrenamiento:** participación en la
+   Iberoamericana y la Cono Sur como rodaje frente a problemas de nivel internacional.
+4. **Selección final:** pruebas de selección para definir el equipo que viaja a la IMO.
 
 ::: {.callout-tip title="Motivación"}
-Llegar a representar a Chile en la IMO requiere años de preparación constante.
-Sin embargo, el proceso de preparación en sí mismo transforma la forma de pensar
+Llegar a representar a Chile en la IMO requiere años de preparación constante. Sin
+embargo, el proceso de preparación en sí mismo transforma la forma de pensar
 matemáticamente, independientemente de si se llega o no a la competencia final.
 
-El objetivo de este material es exactamente eso: ayudarte a desarrollar el
-pensamiento matemático de competencia.
+El objetivo de este material es exactamente ese: ayudarte a desarrollar el pensamiento
+matemático de competencia.
 :::
 
 ---
 
-## Chile en la OIM
+## Chile en la Iberoamericana (OIM)
 
 En la **Olimpiada Iberoamericana de Matemáticas (OIM)**, Chile tiene una participación
-más extensa y ha logrado mejores resultados relativos, obteniendo medallas de plata
-y bronce en varias ediciones. La OIM es considerada el principal trampolín para
-la formación de olimpistas chilenos de alto nivel.
+más extensa y resultados relativos más favorables que en la IMO, lo cual es esperable:
+la OIM agrupa a países de un nivel más comparable y plantea problemas de exigencia
+intermedia entre una olimpiada nacional y la IMO. Por eso se la considera el principal
+**trampolín** para la formación de olimpistas chilenos de alto nivel.
+
+Al igual que con la IMO, el detalle de medallas y puntajes por edición debe consultarse
+en las fuentes oficiales de la OIM y de la Somachi, en lugar de darse por conocido de
+memoria.
 
 ---
 
@@ -75,16 +133,16 @@ la formación de olimpistas chilenos de alto nivel.
 
 El recorrido típico de un estudiante chileno que llega a competir internacionalmente:
 
-1. **Primer contacto** en 7° u 8° básico con la OMC categoría básica
-2. **Preparación sistemática** durante enseñanza media, leyendo libros como este
-3. **Participación en la OMC** categoría media desde 1° medio
-4. **Selección regional y nacional** tras constante mejora
-5. **Campamentos Somachi** con entrenamiento especializado
-6. **OIM** como primer escenario internacional
-7. **IMO** para los más destacados
+1. **Primer contacto** en los últimos años de enseñanza básica con la OMC.
+2. **Preparación sistemática** durante la enseñanza media, leyendo libros como este.
+3. **Participación en la OMC** de enseñanza media, mejorando edición tras edición.
+4. **Selección regional y nacional** tras una mejora constante.
+5. **Campamentos de entrenamiento** con preparación especializada.
+6. **Iberoamericana / Cono Sur** como primer escenario internacional.
+7. **IMO** para los más destacados.
 
 ::: {.callout-note title="Mensaje"}
-Cada medallista empezó en el mismo punto que tú: con ganas de entender matemáticas
-más profundamente. La diferencia la hace la constancia en el estudio y la práctica
+Cada medallista empezó en el mismo punto que tú: con ganas de entender matemáticas más
+profundamente. La diferencia la hace la constancia en el estudio y la práctica
 sistemática de problemas.
 :::

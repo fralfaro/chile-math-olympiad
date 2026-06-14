@@ -1,8 +1,212 @@
 ---
-title: "Combinatoria"
-format: revealjs
+title: "Elementos de Combinatoria"
 ---
 
-## Placeholder
+# Combinatoria: contar sin enumerar
 
-Presentación pendiente para combinatoria.
+**Capítulo III — Olimpiadas Matemáticas**
+
+Contar, ordenar y seleccionar.
+
+La idea central: **descomponer** una configuración complicada en decisiones
+simples y combinar los resultados.
+
+## Un problema para empezar
+
+> Repartimos $30$ personas según su mes de nacimiento. ¿Podemos garantizar
+> que **al menos $3$** nacieron el mismo mes?
+
+. . .
+
+Sí, y no necesitamos conocer ningún cumpleaños.
+
+. . .
+
+Hay $12$ meses (cajas) y $30$ personas (objetos): algún mes alberga al menos
+$\lceil 30/12 \rceil = 3$ personas. Es el **principio del palomar**.
+
+# Los dos principios fundamentales
+
+## Principio de la suma
+
+Opciones que son **alternativas excluyentes** se **suman**.
+
+Si $A_1,\dots,A_r$ son conjuntos finitos disjuntos dos a dos:
+
+$$\left| \bigcup_{i=1}^{r} A_i \right| = \sum_{i=1}^{r} |A_i|.$$
+
+*Ejemplo:* elegir un postre del menu, sea de los $3$ pasteles o de las $2$
+frutas: $3 + 2 = 5$ opciones.
+
+## Principio del producto
+
+Etapas **sucesivas e independientes** se **multiplican**.
+
+Con $n_1$ opciones en la primera etapa, $n_2$ en la segunda, ..., $n_r$ en la
+$r$-ésima:
+
+$$n_1 \cdot n_2 \cdots n_r = \prod_{i=1}^{r} n_i.$$
+
+*Consecuencia:* hay $n^k$ funciones $f:A\to B$ con $|A|=k$, $|B|=n$, y $2^n$
+subconjuntos de un conjunto de $n$ elementos.
+
+# Ordenar y seleccionar
+
+## Variaciones
+
+El **orden importa** y no usamos todos los elementos.
+
+**Sin repetición** (elementos distintos):
+
+$$V(n,k) = n(n-1)\cdots(n-k+1) = \frac{n!}{(n-k)!}.$$
+
+**Con repetición** (se permite repetir):
+
+$$VR(n,k) = n^k.$$
+
+## Permutaciones lineales
+
+Ordenamiento completo de $n$ objetos distintos en fila:
+
+$$P(n) = n! = n(n-1)\cdots 2 \cdot 1, \qquad 0! = 1.$$
+
+Es el caso $k = n$ de las variaciones: usamos **todos** los elementos.
+
+## Permutaciones cíclicas y con repetición
+
+**Cíclicas** ($n$ objetos en círculo, rotaciones iguales):
+
+$$(n-1)!.$$
+
+**Con repetición** ($n_1$ iguales de un tipo, ..., $n_r$ del último,
+$\sum n_i = n$) — coeficiente multinomial:
+
+$$\binom{n}{n_1,\dots,n_r} = \frac{n!}{n_1!\,n_2!\cdots n_r!}.$$
+
+## Combinaciones
+
+El **orden no importa**: elegimos un subconjunto de $k$ entre $n$.
+
+$$\binom{n}{k} = \frac{n!}{k!\,(n-k)!}, \qquad 0 \le k \le n.$$
+
+**Con repetición** (barras y estrellas), elegir $k$ entre $n$ tipos:
+
+$$\binom{n+k-1}{k}.$$
+
+Relación clave: $V(n,k) = \binom{n}{k}\cdot k!$.
+
+# El binomio de Newton
+
+## Desarrollo del binomio
+
+Para todo $n \in \mathbb{N}$ y todos $a, b$:
+
+$$(a+b)^n = \sum_{k=0}^{n} \binom{n}{k}\, a^{n-k} b^{k}.$$
+
+Cada término $a^{n-k}b^k$ surge al elegir $b$ en exactamente $k$ de los $n$
+factores: hay $\binom{n}{k}$ maneras.
+
+## Identidades binomiales útiles
+
+**Regla de Pascal:**
+$$\binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}.$$
+
+**Suma de una fila:**
+$$\sum_{k=0}^{n} \binom{n}{k} = 2^{n}.$$
+
+**Vandermonde:**
+$$\binom{m+n}{r} = \sum_{k=0}^{r} \binom{m}{k}\binom{n}{r-k}.$$
+
+# Ejemplo: el binomio en acción
+
+## Problema y estrategia
+
+**Problema:** hallar el coeficiente del término en $x^{2}y^{3}$ del desarrollo
+de $(2x + 3y)^{5}$.
+
+. . .
+
+**Estrategia:** aplicar el binomio de Newton con $a = 2x$, $b = 3y$ y aislar el
+término con los exponentes pedidos.
+
+## Solución por pasos
+
+El término general es $\binom{5}{k}(2x)^{5-k}(3y)^{k}$.
+
+. . .
+
+Para obtener $x^{2}y^{3}$ necesitamos $k = 3$:
+
+. . .
+
+$$\binom{5}{3}(2x)^{2}(3y)^{3} = 10 \cdot 4x^{2}\cdot 27 y^{3} = 1080\, x^{2}y^{3}.$$
+
+. . .
+
+El coeficiente buscado es $\boxed{1080}$.
+
+# El principio del palomar
+
+## Enunciado
+
+**Forma simple:** si se distribuyen $N$ objetos en $k$ cajas y $N > k$, alguna
+caja contiene **dos o más** objetos.
+
+**Forma generalizada:** alguna caja contiene al menos
+
+$$\left\lceil \frac{N}{k} \right\rceil$$
+
+objetos. Simple de enunciar, pero sorprendentemente potente.
+
+## Ejemplo del palomar
+
+**Problema:** entre cualesquiera $13$ enteros, hay dos cuya diferencia es
+múltiplo de $12$.
+
+. . .
+
+**Estrategia:** usar los residuos módulo $12$ como cajas.
+
+. . .
+
+Solo hay $12$ residuos $\{0,1,\dots,11\}$ y tenemos $13$ enteros. Como
+$13 > 12$, dos caen en la misma caja: son congruentes módulo $12$ y su
+diferencia es múltiplo de $12$. $\blacksquare$
+
+# Contar salvo simetría
+
+## Lema de Burnside
+
+A veces dos configuraciones son "la misma" salvo una simetría (rotar un
+collar, girar un dado). Modelamos las simetrías como un grupo $G$ que actúa
+sobre el conjunto $X$.
+
+El número de configuraciones distintas (órbitas) es el **promedio de puntos
+fijos**:
+
+$$\#\text{órbitas} = \frac{1}{|G|} \sum_{g \in G} |\mathrm{Fij}(g)|.$$
+
+*Caso típico (Pólya):* collares de $6$ cuentas y $2$ colores bajo rotación dan
+$\tfrac{1}{6}(2^6+2+2^2+2^3+2^2+2) = 14$ collares.
+
+# Cierre
+
+## Ideas clave
+
+- **Suma** para alternativas excluyentes; **producto** para etapas sucesivas.
+- **Orden importa** $\Rightarrow$ variaciones / permutaciones; **no importa**
+  $\Rightarrow$ combinaciones $\binom{n}{k}$.
+- El **binomio de Newton** y la regla de Pascal conectan álgebra y conteo.
+- El **palomar** demuestra existencia sin construir el ejemplo.
+- **Burnside/Pólya** cuenta configuraciones distintas salvo simetría.
+
+## Problemas para practicar
+
+1. ¿Cuántos números de $4$ cifras hay si la primera no es $0$ y se permite
+   repetir?
+2. Demostrar por doble conteo que $k\binom{n}{k} = n\binom{n-1}{k-1}$.
+3. ¿Cuántos collares de $6$ cuentas con $3$ colores hay salvo rotación?
+4. Probar que al elegir $51$ números de $\{1,\dots,100\}$, uno divide a otro.
+5. Reordenamientos distintos de las letras de **MATEMATICA**.
+
+*¡A contar!*

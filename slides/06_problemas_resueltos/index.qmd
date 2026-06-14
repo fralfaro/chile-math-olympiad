@@ -1,8 +1,187 @@
 ---
 title: "Problemas Resueltos"
-format: revealjs
 ---
 
-## Placeholder
+## Resolver, paso a paso
 
-Presentación pendiente para problemas resueltos.
+En esta sesión recorremos **cinco problemas** representativos, uno por cada gran área del libro.
+
+. . .
+
+La idea no es solo ver la respuesta, sino el **proceso completo**:
+
+- explorar el enunciado,
+- elegir una estrategia (y entender por qué),
+- redactar una solución rigurosa.
+
+. . .
+
+::: {.callout-tip}
+Intenta cada problema por tu cuenta **antes** de pasar al slide de la solución.
+:::
+
+# Problema 1 — Teoría de Números
+
+## Enunciado y estrategia
+
+::: {.callout-warning title="Problema 1"}
+Hallar todos los enteros positivos $n$ tales que $n+1 \mid n^2+1$.
+:::
+
+. . .
+
+**Estrategia.** Reducir $n^2+1$ módulo $n+1$. Como $n \equiv -1 \pmod{n+1}$, el resto se vuelve un número fijo y el problema se traduce en una condición de divisibilidad simple.
+
+## Solución
+
+Trabajamos módulo $n+1$. Observamos que $n \equiv -1 \pmod{n+1}$.
+
+. . .
+
+Entonces
+$$n^2+1 \equiv (-1)^2 + 1 = 2 \pmod{n+1}.$$
+
+. . .
+
+Luego $n+1 \mid n^2+1$ **si y solo si** $n+1 \mid 2$, es decir $n+1 \in \{1, 2\}$.
+
+. . .
+
+Como $n$ es entero positivo, la única solución es
+$$n = 1.$$
+En efecto, $n^2+1 = 2$ y $n+1 = 2 \mid 2$. $\blacksquare$
+
+# Problema 2 — Inducción
+
+## Enunciado y estrategia
+
+::: {.callout-warning title="Problema 2"}
+Demostrar que $\displaystyle\sum_{k=1}^{n} k^2 = \frac{n(n+1)(2n+1)}{6}$ para todo $n \geq 1$.
+:::
+
+. . .
+
+**Estrategia.** Inducción sobre $n$. En el paso inductivo, sumar $(n+1)^2$ y **factorizar primero** $(n+1)$, luego el cuadrático restante.
+
+## Solución
+
+**Caso base** ($n=1$): el lado izquierdo es $1^2 = 1$ y el derecho $\frac{1 \cdot 2 \cdot 3}{6} = 1$. Coincide.
+
+. . .
+
+**Paso inductivo.** Suponemos la fórmula para $n$ y sumamos $(n+1)^2$:
+$$\begin{align*}
+\sum_{k=1}^{n+1} k^2 &= \frac{n(n+1)(2n+1)}{6} + (n+1)^2 \\
+&= \frac{(n+1)\big[\, n(2n+1) + 6(n+1) \,\big]}{6}.
+\end{align*}$$
+
+. . .
+
+Factorizando $2n^2+7n+6 = (n+2)(2n+3)$:
+$$\sum_{k=1}^{n+1} k^2 = \frac{(n+1)(n+2)(2n+3)}{6},$$
+que es la fórmula en $n+1$, pues $2(n+1)+1 = 2n+3$. $\blacksquare$
+
+# Problema 3 — Combinatoria
+
+## Enunciado y estrategia
+
+::: {.callout-warning title="Problema 3"}
+Demostrar la **identidad de Pascal**
+$$\binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}, \qquad 1 \leq k \leq n-1.$$
+:::
+
+. . .
+
+**Estrategia.** Argumento combinatorio (doble conteo): fijar un elemento y clasificar los subconjuntos según lo contengan o no.
+
+## Solución
+
+$\binom{n}{k}$ cuenta los subconjuntos de tamaño $k$ de $X = \{x_1, \dots, x_n\}$. Fijamos $x_n$.
+
+. . .
+
+**Caso A — contienen a $x_n$:** elegimos los $k-1$ restantes entre $n-1$ elementos. Hay $\binom{n-1}{k-1}$.
+
+. . .
+
+**Caso B — no contienen a $x_n$:** los $k$ elementos salen de los otros $n-1$. Hay $\binom{n-1}{k}$.
+
+. . .
+
+Las dos clases son **disjuntas** y cubren todos los subconjuntos. Por la regla de la suma,
+$$\binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}. \qquad \blacksquare$$
+
+# Problema 4 — Análisis
+
+## Enunciado y estrategia
+
+::: {.callout-warning title="Problema 4"}
+Demostrar que $\sqrt{2}$ es irracional.
+:::
+
+. . .
+
+**Estrategia.** Reducción al absurdo: suponer $\sqrt{2} = p/q$ irreducible y llegar a que $p$ y $q$ son ambos pares, contradiciendo $\gcd(p,q)=1$.
+
+## Solución
+
+Supongamos $\sqrt{2} = \dfrac{p}{q}$ con $\gcd(p,q)=1$. Elevando al cuadrado:
+$$p^2 = 2q^2.$$
+
+. . .
+
+Entonces $p^2$ es par $\Rightarrow$ $p$ es par. Escribimos $p = 2m$:
+$$4m^2 = 2q^2 \;\Longrightarrow\; q^2 = 2m^2.$$
+
+. . .
+
+Luego $q^2$ es par $\Rightarrow$ $q$ es par. Así $2 \mid p$ y $2 \mid q$, contradiciendo $\gcd(p,q)=1$.
+
+. . .
+
+La contradicción prueba que $\sqrt{2}$ es **irracional**. $\blacksquare$
+
+# Problema 5 — Geometría
+
+## Enunciado y estrategia
+
+::: {.callout-warning title="Problema 5"}
+Demostrar que en cualquier triángulo la suma de los ángulos interiores es $180^\circ$.
+:::
+
+. . .
+
+**Estrategia.** Trazar por un vértice una recta paralela al lado opuesto y usar **ángulos alternos internos**.
+
+## Solución
+
+Sea $ABC$ con ángulos $\alpha, \beta, \gamma$ en $A, B, C$. Trazamos por $A$ una recta $\ell \parallel BC$.
+
+. . .
+
+Con $AB$ transversal: el ángulo de $\ell$ con $AB$ (lado de $B$) vale $\beta$ (alternos internos).
+
+. . .
+
+Con $AC$ transversal: el ángulo de $\ell$ con $AC$ (lado de $C$) vale $\gamma$.
+
+. . .
+
+En el vértice $A$, los ángulos $\beta$, $\alpha$ y $\gamma$ se disponen sobre $\ell$ formando un ángulo llano:
+$$\alpha + \beta + \gamma = 180^\circ. \qquad \blacksquare$$
+
+# Cierre
+
+## Técnicas clave aprendidas
+
+- **Reducir módulo el divisor:** convierte una divisibilidad en una condición sobre un resto fijo.
+- **Inducción con factorización:** en el paso inductivo, factoriza primero el término común.
+- **Doble conteo:** fijar un elemento y separar en casos demuestra identidades combinatorias.
+- **Reducción al absurdo:** muy potente para resultados de irracionalidad.
+- **Construcciones auxiliares:** una paralela bien trazada revela ángulos iguales.
+
+. . .
+
+::: {.callout-tip}
+El verdadero aprendizaje ocurre **durante la búsqueda**, no al leer la respuesta. ¡A practicar!
+:::

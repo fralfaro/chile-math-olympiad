@@ -1,5 +1,10 @@
 ---
 title: "Capítulo II: Inducción Matemática"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
 ---
 
 ## Presentación
@@ -8,17 +13,60 @@ La inducción matemática convierte una observación repetitiva en una demostrac
 general. Es la herramienta natural cuando aparecen sumas, progresiones,
 divisibilidad recursiva o sucesiones definidas por etapas.
 
+Imaginemos una fila infinita de fichas de dominó. Si logramos garantizar dos
+cosas —que la primera ficha cae, y que cada ficha al caer empuja a la
+siguiente— entonces podemos afirmar con total certeza que **todas** las fichas
+caerán, aunque sean infinitas. La inducción matemática formaliza exactamente
+esta intuición y la convierte en uno de los métodos de demostración más
+poderosos y frecuentes en las olimpiadas.
+
+En este capítulo veremos que la inducción no es un truco aislado, sino la
+expresión visible de una propiedad profunda de los números naturales: el
+**Principio del Buen Orden**. A partir de él construiremos el principio de
+inducción débil, su versión fuerte, y varias variantes útiles en competencias.
+Aplicaremos todo esto a sumas notables, progresiones aritméticas y geométricas,
+y a la siempre fascinante sucesión de Fibonacci.
+
 ## Objetivos del capítulo
 
-- Comprender el principio de inducción débil y fuerte.
-- Demostrar identidades de sumas y desigualdades.
-- Estudiar progresiones aritméticas y geométricas.
-- Analizar la sucesión de Fibonacci y variantes.
+- Comprender el Principio del Buen Orden como fundamento de la inducción.
+- Dominar el principio de inducción débil, fuerte y sus variantes.
+- Demostrar identidades de sumas, desigualdades y resultados de divisibilidad.
+- Estudiar progresiones aritméticas y geométricas, incluida la serie geométrica finita.
+- Analizar la sucesión de Fibonacci y demostrar identidades como la de Cassini y la fórmula de Binet.
+
+## Subtemas
+
+1. Principio del Buen Orden.
+2. Principio de inducción débil.
+3. Inducción fuerte (o completa).
+4. Variantes: paso base múltiple e inducción hacia atrás.
+5. Progresiones aritméticas y su suma.
+6. Progresiones geométricas y la serie geométrica finita.
+7. Sucesión de Fibonacci e identidades demostrables por inducción.
+
+## Prerrequisitos
+
+Para aprovechar este capítulo conviene manejar:
+
+- Operaciones elementales con enteros y fracciones.
+- Manipulación algebraica básica (factorización, distributividad).
+- Notación de sumatorias $\sum_{k=1}^{n} a_k$ y productorias $\prod_{k=1}^{n} a_k$.
+- Nociones iniciales de divisibilidad en $\mathbb{Z}$ (ver
+  [Capítulo I: Teoría de Números](../01_teoria_numeros/index.qmd)).
 
 ## Contenidos
 
 | Sección | Enfoque |
 |---|---|
-| [Teoría](01_teoria.qmd) | Progresiones, inducción y sucesiones |
+| [Teoría](01_teoria.qmd) | Buen Orden, inducción, progresiones y Fibonacci |
 | [Ejemplos](02_ejemplos.qmd) | Demostraciones y aplicaciones modelo |
 | [Problemas](03_problemas.qmd) | Entrenamiento con soluciones colapsadas |
+
+## Sobre el libro base
+
+Este capítulo adapta y amplía el material del Capítulo II de
+*Matemática y Olimpíadas* (Sociedad de Matemáticas de Chile, Somachi, 1994),
+texto base del repositorio. Se respeta el espíritu del original —rigor accesible
+para estudiantes de enseñanza media— y se complementa con ejemplos y problemas
+de competencias nacionales e internacionales.

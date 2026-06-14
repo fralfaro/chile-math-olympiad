@@ -1,8 +1,239 @@
 ---
-title: "Inducción"
-format: revealjs
+title: "Inducción Matemática"
 ---
 
-## Placeholder
+# Inducción Matemática
 
-Presentación pendiente para inducción matemática.
+**Capítulo II — Olimpiadas Matemáticas**
+
+*Cómo demostrar infinitas afirmaciones con un argumento finito.*
+
+---
+
+## Motivación: el dominó infinito
+
+Imagina una fila infinita de fichas de dominó. ¿Cómo garantizar que **todas** caerán?
+
+. . .
+
+Basta con dos cosas:
+
+1. La **primera** ficha cae.
+2. Cada ficha, al caer, **empuja a la siguiente**.
+
+. . .
+
+Esa es exactamente la idea de la inducción matemática.
+
+---
+
+## El problema de fondo
+
+Muchas afirmaciones tienen la forma:
+
+$$\text{"para todo } n \in \mathbb{N}, \text{ ocurre } P(n)\text{"}.$$
+
+. . .
+
+No podemos verificarlas una por una: los naturales son **infinitos**.
+
+La inducción nos da una estrategia finita para cubrir infinitos casos.
+
+# Fundamentos
+
+## Principio del Buen Orden
+
+::: {.callout-note title="Principio del Buen Orden (PBO)"}
+Todo subconjunto **no vacío** $S \subseteq \mathbb{N}$ posee un elemento mínimo:
+existe $m \in S$ con $m \le s$ para todo $s \in S$.
+:::
+
+No se puede "descender" infinitamente dentro de $\mathbb{N}$.
+
+Es el axioma sobre el que descansa toda la inducción.
+
+---
+
+## Inducción débil
+
+::: {.callout-note title="Principio de inducción débil"}
+Sea $P(n)$ definida para $n \ge n_0$. Si
+
+1. **Paso base:** $P(n_0)$ es verdadera, y
+2. **Paso inductivo:** $P(k) \Rightarrow P(k+1)$ para todo $k \ge n_0$,
+
+entonces $P(n)$ es verdadera para todo $n \ge n_0$.
+:::
+
+A "$P(k)$ es verdadera" se le llama **hipótesis inductiva (HI)**.
+
+---
+
+## El caso base no es opcional
+
+Sin el paso base, el paso inductivo solo encadena afirmaciones que **podrían ser todas falsas**.
+
+. . .
+
+Es la primera ficha de dominó: si nadie la empuja, ninguna cae.
+
+Verificarlo es lo primero que debes hacer siempre.
+
+---
+
+## Inducción fuerte
+
+::: {.callout-note title="Principio de inducción fuerte"}
+Si $P(n_0)$ es verdadera y, para todo $k \ge n_0$,
+
+$$P(n_0), P(n_0+1), \dots, P(k) \ \Rightarrow\ P(k+1),$$
+
+entonces $P(n)$ vale para todo $n \ge n_0$.
+:::
+
+Útil cuando para probar $P(k+1)$ necesitamos **toda la historia previa**, no solo $P(k)$.
+
+---
+
+## Variantes útiles
+
+- **Paso base múltiple:** si la recurrencia usa los $j$ términos previos
+  (ej. $a_n = a_{n-1}+a_{n-2}$), se verifican $j$ casos base.
+
+. . .
+
+- **Inducción hacia atrás (Cauchy):** se prueba $P(n)$ para infinitos valores
+  (ej. $n = 2^m$) y luego $P(n) \Rightarrow P(n-1)$.
+
+. . .
+
+Esta última es la base de la demostración clásica de **AM–GM**.
+
+# Aplicaciones
+
+## Progresión aritmética
+
+::: {.callout-note title="Definición"}
+$(a_n)$ es aritmética si $a_{n+1} = a_n + d$, con diferencia común $d$.
+Término general: $a_n = a_1 + (n-1)d$.
+:::
+
+. . .
+
+Suma de los primeros $n$ términos (truco de Gauss):
+
+$$S_n = \sum_{k=1}^{n} a_k = \frac{n\,(a_1 + a_n)}{2}.$$
+
+---
+
+## Progresión geométrica
+
+::: {.callout-note title="Definición"}
+$(g_n)$ es geométrica si $g_{n+1} = r\,g_n$, con razón $r \neq 0$.
+Término general: $g_n = g_1 r^{n-1}$.
+:::
+
+. . .
+
+Suma geométrica finita (para $r \neq 1$):
+
+$$\sum_{k=0}^{n-1} g_1 r^{k} = g_1\,\frac{r^{n}-1}{r-1}.$$
+
+---
+
+## La sucesión de Fibonacci
+
+::: {.callout-note title="Definición"}
+$$F_1 = 1,\quad F_2 = 1,\quad F_{n+2} = F_{n+1} + F_n.$$
+:::
+
+Primeros términos: $1, 1, 2, 3, 5, 8, 13, 21, 34, \dots$
+
+. . .
+
+Un terreno de juego ideal para la inducción: infinidad de identidades elegantes,
+como la suma $\sum_{k=1}^{n} F_k = F_{n+2} - 1$.
+
+# Ejemplos resueltos
+
+## Ejemplo 1 — Problema y estrategia
+
+**Problema:** Demostrar que la suma de los primeros $n$ impares es un cuadrado:
+
+$$\sum_{k=1}^{n} (2k-1) = n^2, \qquad n \ge 1.$$
+
+. . .
+
+**Estrategia:** Inducción débil sobre $n$, sumando el siguiente impar a la HI.
+
+---
+
+## Ejemplo 1 — Solución
+
+**Base.** $n=1$: $\ 2\cdot 1 - 1 = 1 = 1^2$. Verdadero.
+
+. . .
+
+**Paso inductivo.** Supongamos $\displaystyle\sum_{k=1}^{n} (2k-1) = n^2$ (HI). Entonces
+
+. . .
+
+$$\sum_{k=1}^{n+1}(2k-1) = \underbrace{n^2}_{\text{HI}} + \big(2(n+1)-1\big) = n^2 + 2n + 1.$$
+
+. . .
+
+$$= (n+1)^2. \qquad \blacksquare$$
+
+---
+
+## Ejemplo 2 — Problema y estrategia
+
+**Problema:** La sucesión $a_1 = 1$, $a_2 = 3$, $\ a_{n+2} = 3a_{n+1} - 2a_n$
+cumple
+
+$$a_n = 2^n - 1 \quad \text{para todo } n \ge 1.$$
+
+. . .
+
+**Estrategia:** La recurrencia usa **dos** términos previos: verificamos dos casos
+base y aplicamos inducción fuerte con paso base múltiple.
+
+---
+
+## Ejemplo 2 — Solución
+
+**Base.** $a_1 = 1 = 2^1 - 1$ y $a_2 = 3 = 2^2 - 1$. Verdadero.
+
+. . .
+
+**Paso inductivo.** Supongamos $a_k = 2^k - 1$ y $a_{k+1} = 2^{k+1} - 1$ (HI).
+
+. . .
+
+$$a_{k+2} = 3(2^{k+1}-1) - 2(2^k - 1) = 3\cdot 2^{k+1} - 2^{k+1} - 1.$$
+
+. . .
+
+$$= 2\cdot 2^{k+1} - 1 = 2^{k+2} - 1. \qquad \blacksquare$$
+
+# Cierre
+
+## Ideas clave
+
+- La inducción demuestra infinitas afirmaciones con un argumento finito.
+- Toda inducción descansa en el **Principio del Buen Orden**.
+- Siempre se necesitan **paso base** y **paso inductivo**: ninguno es opcional.
+- La inducción **fuerte** usa todos los casos anteriores; las variantes
+  (paso base múltiple, hacia atrás) se adaptan a cada recurrencia.
+- Progresiones y Fibonacci son aplicaciones naturales.
+
+---
+
+## Para practicar
+
+1. ⭐ $\displaystyle\sum_{k=1}^{n} k = \frac{n(n+1)}{2}$.
+2. ⭐⭐ $2^n > n$ para todo $n \ge 1$.
+3. ⭐⭐ $\displaystyle\sum_{k=1}^{n} F_k^{\,2} = F_n\,F_{n+1}$.
+4. ⭐⭐⭐ Desigualdad de Bernoulli: $(1+x)^n \ge 1 + nx$ para $x \ge -1$.
+5. 🏆 Si $a_1 = 1$ y $a_{n+1} = \sqrt{2 + a_n}$, probar que $a_n < 2$ y que
+   la sucesión es creciente.

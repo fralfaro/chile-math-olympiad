@@ -6,21 +6,37 @@ title: "Capítulo I: Teoría de Números"
 
 La teoría de números estudia las propiedades aritméticas de los enteros. En
 olimpiadas es una de las áreas más frecuentes porque combina ideas simples con
-argumentos muy creativos.
+argumentos muy creativos. Problemas que se enuncian en una línea —"demuestra que
+$n^4+4$ nunca es primo para $n>1$"— pueden esconder razonamientos profundos y
+elegantes.
 
 Antes de cada definición importante conviene preguntarse por qué surgió el
 concepto. La divisibilidad nació al intentar entender cuándo una cantidad puede
 descomponerse exactamente; las congruencias, en cambio, aparecieron al estudiar
-restos y periodicidad.
+restos y periodicidad. Esta motivación es la que convierte una técnica mecánica
+en una herramienta para resolver problemas.
 
-## Objetivos del capítulo
+A lo largo del capítulo construiremos, de menor a mayor sofisticación, las
+herramientas centrales: divisibilidad, el algoritmo de la división, el máximo
+común divisor, los números primos, las congruencias y, finalmente, los grandes
+teoremas (Fermat, Wilson) y las funciones aritméticas.
 
-- Reconocer y usar criterios de divisibilidad.
-- Calcular $\gcd(a,b)$ y $\operatorname{mcm}(a,b)$ con soltura.
-- Trabajar con números primos y factorización.
-- Resolver congruencias y ecuaciones diofánticas elementales.
+## Objetivos de aprendizaje
 
-## Contenidos
+Al terminar este capítulo, esperamos que seas capaz de:
+
+- Reconocer y aplicar la definición de divisibilidad y sus propiedades.
+- Usar el algoritmo de la división y el algoritmo de Euclides con soltura.
+- Calcular $\gcd(a,b)$ y $\operatorname{mcm}(a,b)$, y expresarlos mediante la
+  identidad de Bézout.
+- Comprender el papel de los números primos y el Teorema Fundamental de la
+  Aritmética.
+- Operar con congruencias y resolver congruencias lineales.
+- Aplicar el Pequeño Teorema de Fermat y el Teorema de Wilson.
+- Resolver ecuaciones diofánticas lineales.
+- Calcular las funciones aritméticas $\tau(n)$, $\sigma(n)$ y $\varphi(n)$.
+
+## Subtemas
 
 | Sección | Enfoque |
 |---|---|
@@ -28,8 +44,30 @@ restos y periodicidad.
 | [Ejemplos](02_ejemplos.qmd) | Modelos de resolución paso a paso |
 | [Problemas](03_problemas.qmd) | Práctica guiada y problemas de competencias |
 
+En la teoría desarrollamos, en orden:
+
+1. Divisibilidad.
+2. Algoritmo de la división.
+3. Máximo común divisor, mínimo común múltiplo y algoritmo de Euclides.
+4. Números coprimos e identidad de Bézout.
+5. Números primos y Teorema Fundamental de la Aritmética.
+6. Congruencias y aritmética modular.
+7. Pequeño Teorema de Fermat y Teorema de Wilson.
+8. Ecuaciones diofánticas lineales.
+9. Funciones aritméticas ($\tau$, $\sigma$, $\varphi$).
+
+## Prerrequisitos
+
+Para aprovechar este capítulo conviene manejar:
+
+- Operaciones elementales con enteros en $\mathbb{Z}$.
+- Manipulación algebraica básica (factorización, productos notables).
+- El principio del buen orden y la inducción matemática (Capítulo II), que
+  usaremos en algunas demostraciones.
+
 ::: {.callout-note title="Referencia"}
 Este capítulo sigue el espíritu del Capítulo I de *Matemática y Olimpíadas*
-(Somachi, 1994), ampliando explicaciones intermedias para un primer curso de
-entrenamiento olímpico.
+(Somachi, 1994), ampliando las explicaciones intermedias y los ejemplos para un
+primer curso de entrenamiento olímpico. Las demostraciones se presentan
+completas para que sirvan también como modelo de redacción matemática.
 :::

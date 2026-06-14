@@ -1,48 +1,156 @@
 ---
 title: "Ejemplos resueltos"
+format:
+  html:
+    toc: true
+    toc-depth: 2
 ---
+
+Reunimos aquí una batería de ejemplos resueltos que siguen la sección V.13 del
+libro base. Cada uno explicita primero la **estrategia** y luego desarrolla la
+**solución** paso a paso. La idea es que el lector reconozca *qué herramienta*
+elegir antes de calcular.
 
 ## Ejemplo 1: ángulo inscrito
 
 ::: {.callout-warning title="Ejemplo resuelto"}
-**Problema:** en una circunferencia, el arco $AB$ mide $80^\circ$. ¿Cuánto mide
-un ángulo inscrito que intercepta ese arco?
+**Problema:** En una circunferencia, el arco $AB$ mide $80^\circ$. ¿Cuánto mide un
+ángulo inscrito que intercepta ese arco?
 
-**Solución:** mide
+**Estrategia:** Aplicar directamente el teorema del ángulo inscrito: el inscrito es
+la mitad del central, y el central mide lo mismo que el arco.
 
-$$40^\circ.$$
+**Solución:** El ángulo central que abarca el arco $AB$ mide $80^\circ$. Un ángulo
+inscrito que intercepta el mismo arco mide la mitad:
+$$\frac{80^\circ}{2}=40^\circ.$$
+Por tanto, el ángulo inscrito mide $40^\circ$. $\blacksquare$
 :::
 
-## Ejemplo 2: baricentro
+## Ejemplo 2: semejanza y altura a la hipotenusa
 
 ::: {.callout-warning title="Ejemplo resuelto"}
-**Problema:** en el triángulo $ABC$, las medianas se cortan en $G$. Si la mediana
-$AM$ mide $12$, hallar $AG$ y $GM$.
-
-**Solución:** como el baricentro divide en razón $2:1$,
-
-$$AG=8, \qquad GM=4.$$
-:::
-
-## Ejemplo 3: altura a la hipotenusa
-
-::: {.callout-warning title="Ejemplo resuelto"}
-**Problema:** en un triángulo rectángulo, la altura a la hipotenusa divide a esta
+**Problema:** En un triángulo rectángulo, la altura a la hipotenusa divide a esta
 en segmentos de longitudes $4$ y $9$. Hallar la altura.
 
-**Solución:** por semejanza,
+**Estrategia:** La altura a la hipotenusa genera dos triángulos semejantes al
+original; la altura es media geométrica de los segmentos.
 
-$$h^2=4\cdot 9=36,$$
-
-luego $h=6$.
+**Solución:** Sea $h$ la altura y sean $p=4$, $q=9$ los segmentos. Los triángulos
+$\triangle ABD$ y $\triangle CBD$ (con $D$ pie de la altura) son semejantes, lo que
+da $\frac{h}{p}=\frac{q}{h}$. Entonces
+$$h^2=p\cdot q=4\cdot 9=36 \quad\Longrightarrow\quad h=6.$$
+La altura mide $6$. $\blacksquare$
 :::
 
-## Ejemplo 4: medianas concurrentes
+## Ejemplo 3: semejanza y teorema de la bisectriz
 
 ::: {.callout-warning title="Ejemplo resuelto"}
-**Problema:** justificar que las medianas de un triángulo son concurrentes usando
-Ceva.
+**Problema:** En $\triangle ABC$, $AB=8$, $AC=6$ y $BC=7$. La bisectriz interna de
+$\angle A$ corta a $\overline{BC}$ en $D$. Hallar $BD$ y $DC$.
 
-**Solución:** si $D,E,F$ son puntos medios, entonces las tres razones del producto
-de Ceva son iguales a $1$, así que las medianas concurren.
+**Estrategia:** Aplicar el teorema de la bisectriz interior, que relaciona la razón
+$\frac{BD}{DC}$ con los lados adyacentes.
+
+**Solución:** Por el teorema de la bisectriz,
+$$\frac{BD}{DC}=\frac{AB}{AC}=\frac{8}{6}=\frac{4}{3}.$$
+Como $BD+DC=BC=7$, escribimos $BD=4k$, $DC=3k$ con $7k=7$, de donde $k=1$. Por
+tanto $BD=4$ y $DC=3$. $\blacksquare$
+:::
+
+## Ejemplo 4: baricentro
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** En el triángulo $ABC$, las medianas se cortan en $G$. Si la mediana
+$AM$ mide $12$, hallar $AG$ y $GM$.
+
+**Estrategia:** Usar que el baricentro divide cada mediana en razón $2:1$ desde el
+vértice.
+
+**Solución:** El baricentro divide $\overline{AM}$ de modo que
+$AG:GM=2:1$. Entonces $AG=\tfrac23\cdot 12=8$ y $GM=\tfrac13\cdot 12=4$:
+$$AG=8, \qquad GM=4.$$
+$\blacksquare$
+:::
+
+## Ejemplo 5: Ceva (medianas concurrentes)
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** Justificar que las medianas de un triángulo son concurrentes usando
+el teorema de Ceva.
+
+**Estrategia:** Calcular las tres razones que definen las medianas y verificar que
+su producto vale $1$.
+
+**Solución:** Sean $D,E,F$ los puntos medios de $\overline{BC},\overline{CA},
+\overline{AB}$. Por ser puntos medios,
+$$\frac{BD}{DC}=1, \qquad \frac{CE}{EA}=1, \qquad \frac{AF}{FB}=1.$$
+El producto de Ceva es $1\cdot 1\cdot 1=1$, así que las medianas $AD,BE,CF$
+concurren. Su punto de concurrencia es el baricentro. $\blacksquare$
+:::
+
+## Ejemplo 6: Menelao
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** En $\triangle ABC$, una recta corta a $\overline{AB}$ en $F$ con
+$\frac{AF}{FB}=\frac{1}{2}$, a $\overline{CA}$ en $E$ con $\frac{CE}{EA}=3$, y a la
+recta $BC$ en $D$. Hallar $\frac{BD}{DC}$.
+
+**Estrategia:** Como los tres puntos son colineales, aplicar el teorema de Menelao
+(en valor absoluto, producto $=1$).
+
+**Solución:** Por Menelao,
+$$\frac{BD}{DC}\cdot \frac{CE}{EA}\cdot \frac{AF}{FB}=1.$$
+Sustituyendo $\frac{CE}{EA}=3$ y $\frac{AF}{FB}=\tfrac12$:
+$$\frac{BD}{DC}\cdot 3\cdot \frac12=1 \quad\Longrightarrow\quad
+\frac{BD}{DC}=\frac{2}{3}.$$
+Así $D$ divide externamente a $BC$ en razón $2:3$. $\blacksquare$
+:::
+
+## Ejemplo 7: Ptolomeo
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** Sea $\triangle ABC$ un triángulo equilátero inscrito en una
+circunferencia y $P$ un punto del arco $BC$ que no contiene a $A$. Probar que
+$PA=PB+PC$.
+
+**Estrategia:** El cuadrilátero $ABPC$ es cíclico; aplicar el teorema de Ptolomeo y
+usar que el triángulo es equilátero.
+
+**Solución:** En el cuadrilátero cíclico $ABPC$, Ptolomeo da
+$$PA\cdot BC = PB\cdot AC + PC\cdot AB.$$
+Como $\triangle ABC$ es equilátero, $AB=BC=CA=\ell$. Dividiendo por $\ell$:
+$$PA = PB + PC.$$
+La distancia del punto $P$ al vértice opuesto es la suma de las distancias a los
+otros dos vértices. $\blacksquare$
+:::
+
+## Ejemplo 8: puntos notables (incentro y área)
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** En un triángulo rectángulo de catetos $3$ y $4$, hallar el radio $r$
+de la circunferencia inscrita usando la relación de área.
+
+**Estrategia:** Usar $[ABC]=r\,s$, con $s$ el semiperímetro.
+
+**Solución:** La hipotenusa es $\sqrt{3^2+4^2}=5$. El área es
+$[ABC]=\tfrac12\cdot 3\cdot 4=6$ y el semiperímetro es
+$s=\tfrac{3+4+5}{2}=6$. De $[ABC]=r\,s$:
+$$6=r\cdot 6 \quad\Longrightarrow\quad r=1.$$
+El inradio es $1$. (Para el triángulo rectángulo vale además la fórmula directa
+$r=\tfrac{a+b-c}{2}=\tfrac{3+4-5}{2}=1$.) $\blacksquare$
+:::
+
+## Ejemplo 9: circuncentro y ángulo central
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** En $\triangle ABC$ inscrito en una circunferencia de centro $O$, se
+sabe que $\angle BAC=50^\circ$. Hallar el ángulo central $\angle BOC$.
+
+**Estrategia:** El ángulo central es el doble del ángulo inscrito que subtiende el
+mismo arco $BC$.
+
+**Solución:** $\angle BAC$ es inscrito y subtiende el arco $BC$; $\angle BOC$ es el
+central sobre el mismo arco. Por el teorema del ángulo inscrito,
+$$\angle BOC = 2\,\angle BAC = 2\cdot 50^\circ = 100^\circ.$$
+$\blacksquare$
 :::

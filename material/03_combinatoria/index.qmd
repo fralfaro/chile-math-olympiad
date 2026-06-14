@@ -6,14 +6,48 @@ title: "Capítulo III: Combinatoria"
 
 La combinatoria enseña a contar sin enumerar uno por uno. En olimpiadas es un
 campo central porque transforma situaciones aparentemente caóticas en estructuras
-ordenadas.
+ordenadas y permite responder preguntas del tipo "¿de cuántas maneras...?" sin
+listar todos los casos a mano.
+
+A diferencia de otras ramas, la combinatoria recompensa la creatividad: el mismo
+problema admite a menudo varias soluciones igual de válidas, y aprender a *contar
+de dos formas distintas* (la técnica del **doble conteo**) es una de las
+herramientas más poderosas que ofrece. Este capítulo construye, desde los
+principios más elementales, todo el andamiaje que un competidor necesita: reglas
+de conteo, arreglos ordenados y no ordenados, el binomio de Newton, las simetrías
+del conteo bajo acciones de grupo (Burnside) y el siempre sorprendente principio
+del palomar.
 
 ## Objetivos del capítulo
 
-- Manejar principios básicos de conteo.
-- Diferenciar variaciones, permutaciones y combinaciones.
-- Usar el binomio de Newton con soltura.
-- Aplicar el principio del palomar en demostraciones.
+- Dominar los principios de la suma y del producto como base de todo conteo.
+- Diferenciar con claridad **variaciones**, **permutaciones** y **combinaciones**,
+  distinguiendo cuándo el orden importa y cuándo se permiten repeticiones.
+- Usar el **binomio de Newton** y las identidades binomiales (Pascal, suma de
+  fila, Vandermonde) con soltura.
+- Contar objetos "salvo simetría" mediante el **Lema de Burnside** y la **fórmula
+  de Pólya**.
+- Aplicar el **principio del palomar**, en su versión simple y general, como
+  herramienta de demostración.
+
+## Prerrequisitos
+
+- Manejo básico de conjuntos y funciones (inyectiva, sobreyectiva, biyectiva).
+- Operaciones con factoriales y notación de sumatoria $\sum$.
+- Familiaridad con congruencias módulo $n$ (Capítulo I) para los argumentos de
+  palomar.
+- Nociones elementales de grupos (operación, identidad, inverso) para la sección
+  de Burnside; se introducen lo justo para autocontenerse.
+
+## Subtemas
+
+- Principios de la suma y del producto.
+- Variaciones con y sin repetición.
+- Permutaciones lineales, cíclicas y con repetición.
+- Combinaciones y coeficientes binomiales.
+- Binomio de Newton e identidades binomiales.
+- Lema de Burnside y fórmula de Pólya (conteo de órbitas).
+- Principio del palomar (simple y general).
 
 ## Contenidos
 
@@ -22,3 +56,13 @@ ordenadas.
 | [Teoría](01_teoria.qmd) | Herramientas fundamentales de conteo |
 | [Ejemplos](02_ejemplos.qmd) | Resolución paso a paso |
 | [Problemas](03_problemas.qmd) | Práctica olímpica inicial |
+
+## Referencia del libro base
+
+El contenido de este capítulo sigue y amplía el **Capítulo III, "Elementos de
+Combinatoria"** de *Matemática y Olimpíadas* (Sociedad de Matemáticas de Chile,
+Somachi, 1994), libro base del repositorio. Los ejemplos de la sección III.5 del
+texto se desarrollan en detalle en la página de [Ejemplos](02_ejemplos.qmd). Para
+los temas que el libro trata de forma breve (fórmula de Pólya, identidad de
+Vandermonde) se incluyen referencias complementarias al final de la página de
+[Teoría](01_teoria.qmd).

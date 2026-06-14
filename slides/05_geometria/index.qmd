@@ -1,8 +1,195 @@
 ---
-title: "Geometría"
-format: revealjs
+title: "Elementos de Geometría"
 ---
 
-## Placeholder
+## Geometría sintética del plano {.center}
 
-Presentación pendiente para geometría.
+Triángulos, circunferencias y centros notables.
+
+El arte de *ver* la relación correcta: un ángulo que se repite, una circunferencia que pasa por cuatro puntos, tres cevianas que concurren.
+
+::: {.fragment}
+El reto rara vez está en la cuenta difícil, sino en elegir la herramienta adecuada.
+:::
+
+## Un problema elegante {.center}
+
+::: {.callout-warning title="Problema (triángulo equilátero)"}
+Sea $\triangle ABC$ equilátero inscrito en una circunferencia y $P$ un punto del arco $BC$ que no contiene a $A$. Probar que
+$$PA = PB + PC.$$
+:::
+
+. . .
+
+¿Cómo conectar tres distancias a los vértices con una sola igualdad? La clave estará en un cuadrilátero cíclico.
+
+# Conceptos básicos
+
+## Ángulos y persecución {.center}
+
+- La suma de los ángulos interiores de un triángulo es $180^\circ$.
+- Entre dos paralelas cortadas por una transversal: los **alternos internos** y los **correspondientes** son iguales.
+
+. . .
+
+Esta única propiedad es la base de casi toda la *persecución de ángulos* (angle chasing).
+
+## Congruencia {.center}
+
+Dos triángulos son **congruentes** ($\triangle ABC \cong \triangle A'B'C'$) si lados y ángulos correspondientes coinciden.
+
+Criterios clásicos:
+
+- **LLL** — los tres lados.
+- **LAL** — dos lados y el ángulo comprendido.
+- **ALA** — dos ángulos y el lado común.
+
+## Semejanza {.center}
+
+Dos triángulos son **semejantes** ($\triangle ABC \sim \triangle A'B'C'$) si sus ángulos son iguales y sus lados proporcionales:
+$$\frac{A'B'}{AB}=\frac{B'C'}{BC}=\frac{C'A'}{CA}=k.$$
+
+. . .
+
+Criterios: **AA**, **LAL** proporcional y **LLL** proporcional. La razón $k$ controla las longitudes.
+
+# Pitágoras y Tales
+
+## Teorema de Pitágoras {.center}
+
+En un triángulo rectángulo de catetos $a,b$ e hipotenusa $c$:
+$$a^2+b^2=c^2.$$
+
+. . .
+
+**Idea (por áreas):** cuatro copias del triángulo en un cuadrado de lado $a+b$ dejan al centro un cuadrado de lado $c$. Igualando áreas, $(a+b)^2 = 2ab + c^2$.
+
+## Teorema de Tales {.center}
+
+Si en $\triangle ABC$ una recta paralela a $\overline{BC}$ corta a $\overline{AB}$ en $D$ y a $\overline{AC}$ en $E$:
+$$\frac{AD}{DB}=\frac{AE}{EC}.$$
+
+. . .
+
+Sale de la semejanza $\triangle ADE \sim \triangle ABC$ (criterio AA): las paralelas crean ángulos iguales.
+
+# La circunferencia
+
+## Ángulo inscrito {.center}
+
+Un ángulo **inscrito** mide la mitad del ángulo **central** que subtiende el mismo arco.
+
+. . .
+
+Consecuencia decisiva: todos los ángulos inscritos que abarcan un mismo arco son **iguales**. Por eso aparecen igualdades de ángulos "gratis" en cada circunferencia.
+
+## Cuadriláteros cíclicos {.center}
+
+Un cuadrilátero convexo $ABCD$ es **cíclico** si y solo si sus ángulos opuestos son suplementarios:
+$$\angle A + \angle C = 180^\circ.$$
+
+. . .
+
+Equivalente útil: $\angle ACB = \angle ADB$ (ven el mismo segmento $\overline{AB}$ desde el mismo lado). Detectar un cíclico es la mitad del problema.
+
+# Puntos notables
+
+## Los cuatro centros {.center}
+
+- **Baricentro** $G$: corte de las **medianas**; divide cada una en razón $2:1$ desde el vértice.
+- **Incentro** $I$: corte de las **bisectrices internas**; centro del incírculo.
+- **Circuncentro** $O$: corte de las **mediatrices**; centro del circuncírculo.
+- **Ortocentro** $H$: corte de las **alturas**.
+
+## Área e inradio {.center}
+
+Si $[ABC]$ es el área, $s$ el semiperímetro y $r$ el inradio:
+$$[ABC] = r\,s.$$
+
+. . .
+
+Se ve uniendo $I$ con los tres vértices: el triángulo queda partido en tres de bases $a,b,c$ y altura común $r$.
+
+# Ceva y Menelao
+
+## Teorema de Ceva {.center}
+
+Para $D,E,F$ en los lados $\overline{BC},\overline{CA},\overline{AB}$ de $\triangle ABC$, las cevianas $AD,BE,CF$ **concurren** si y solo si
+$$\frac{BD}{DC}\cdot \frac{CE}{EA}\cdot \frac{AF}{FB}=1.$$
+
+La herramienta reina de los problemas de **concurrencia**.
+
+## Teorema de Menelao {.center}
+
+Si una recta corta a los lados (o prolongaciones) en $D,E,F$, con longitudes dirigidas:
+$$\frac{BD}{DC}\cdot \frac{CE}{EA}\cdot \frac{AF}{FB}=-1.$$
+
+. . .
+
+Mismo producto que Ceva, pero el **signo** $-1$ distingue **colinealidad** de concurrencia.
+
+# Ptolomeo, Euler y nueve puntos
+
+## Teorema de Ptolomeo {.center}
+
+En un cuadrilátero cíclico $ABCD$:
+$$AC \cdot BD = AB \cdot CD + BC \cdot AD.$$
+
+. . .
+
+En general vale la **desigualdad** $AC\cdot BD \le AB\cdot CD + BC\cdot AD$, con igualdad si y solo si $ABCD$ es cíclico.
+
+## Recta de Euler y nueve puntos {.center}
+
+En todo triángulo no equilátero, $H$, $G$ y $O$ son **colineales** (recta de Euler), con
+$$HG = 2\,GO.$$
+
+. . .
+
+La **circunferencia de los nueve puntos** pasa por los puntos medios de los lados, los pies de las alturas y los puntos medios de $\overline{AH},\overline{BH},\overline{CH}$. Su centro $N$ es el punto medio de $\overline{OH}$ y su radio es $R/2$.
+
+# Ejemplo trabajado
+
+## Problema y estrategia {.center}
+
+::: {.callout-warning title="Problema"}
+$\triangle ABC$ equilátero inscrito en una circunferencia; $P$ está en el arco $BC$ que no contiene a $A$. Probar que $PA = PB + PC$.
+:::
+
+. . .
+
+**Estrategia:** el cuadrilátero $ABPC$ es **cíclico**. Aplicamos **Ptolomeo** y usamos que el triángulo es equilátero.
+
+## Solución {.center}
+
+Por Ptolomeo en el cíclico $ABPC$:
+$$PA\cdot BC = PB\cdot AC + PC\cdot AB.$$
+
+. . .
+
+Como $\triangle ABC$ es equilátero, $AB=BC=CA=\ell$:
+$$PA\cdot \ell = PB\cdot \ell + PC\cdot \ell.$$
+
+. . .
+
+Dividiendo por $\ell$:
+$$PA = PB + PC. \qquad \blacksquare$$
+
+## Ideas clave {.center}
+
+- La **persecución de ángulos** convierte una figura en igualdades.
+- En una circunferencia, ángulos inscritos sobre un mismo arco son iguales.
+- Detectar un **cuadrilátero cíclico** suele desbloquear el problema.
+- **Ceva** $\Rightarrow$ concurrencia; **Menelao** $\Rightarrow$ colinealidad.
+- $H$, $G$, $O$ viven en la **recta de Euler** con $HG=2\,GO$.
+
+## Para practicar {.center}
+
+1. ⭐ Mediana a la hipotenusa de un triángulo rectángulo de catetos $5$ y $12$.
+2. ⭐⭐ Con la bisectriz: si $AB=6$, $AC=4$, $BC=8$, hallar $BD$ y $DC$.
+3. ⭐⭐⭐ Cevianas con $\frac{BD}{DC}=2$ y $\frac{CE}{EA}=3$: hallar $\frac{AF}{FB}$.
+4. 🏆 Probar que el reflejo del ortocentro $H$ respecto de un lado está en el circuncírculo.
+
+::: {.fragment}
+*¡A dibujar y a perseguir ángulos!*
+:::

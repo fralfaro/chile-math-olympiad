@@ -2,7 +2,15 @@
 title: "Problemas de práctica"
 ---
 
-**Problema 1.** Probar que si $a \mid b$ y $b \mid a$ con $a,b>0$, entonces $a=b$.
+Los siguientes problemas permiten practicar las técnicas del capítulo. Intenta
+resolver cada uno antes de desplegar la solución. Al final encontrarás problemas
+de competencias oficiales, presentados **sin** solución, para que los abordes por
+tu cuenta.
+
+## Problemas con solución
+
+**Problema 1.** Probar que si $a \mid b$ y $b \mid a$ con $a,b>0$, entonces
+$a=b$.
 
 ::: {.callout-caution collapse="true" title="Ver solución"}
 De $a \mid b$ existe $m$ con $b=am$. De $b \mid a$ existe $n$ con $a=bn$.
@@ -13,21 +21,16 @@ se obtiene $m=n=1$ y por tanto $a=b$.
 **Problema 2.** Hallar el residuo de $3^{100}$ al dividir por $7$.
 
 ::: {.callout-caution collapse="true" title="Ver solución"}
-Como $3^6 \equiv 1 \pmod{7}$ y $100=6\cdot 16+4$, se tiene
+Como $3^6 \equiv 1 \pmod{7}$ (Pequeño Teorema de Fermat) y $100=6\cdot 16+4$,
 
 $$3^{100}\equiv 3^4=81 \equiv 4 \pmod{7}.$$
 :::
 
-**Problema 3.** Resolver en enteros
-
-$$12x+18y=30.$$
+**Problema 3.** Resolver en enteros $12x+18y=30$.
 
 ::: {.callout-caution collapse="true" title="Ver solución"}
-Tenemos $\gcd(12,18)=6$ y $6 \mid 30$. Al dividir por $6$ queda
-
-$$2x+3y=5.$$
-
-Una solución es $(1,1)$, y todas las soluciones son
+Tenemos $\gcd(12,18)=6$ y $6 \mid 30$. Al dividir por $6$ queda $2x+3y=5$. Una
+solución es $(1,1)$, y todas las soluciones son
 
 $$x=1+3t, \qquad y=1-2t, \qquad t \in \mathbb{Z}.$$
 :::
@@ -36,20 +39,85 @@ $$x=1+3t, \qquad y=1-2t, \qquad t \in \mathbb{Z}.$$
 siempre es un cuadrado perfecto.
 
 ::: {.callout-caution collapse="true" title="Ver solución"}
-Se tiene
+Agrupamos convenientemente:
 
 $$n(n+1)(n+2)(n+3)+1=[n(n+3)][(n+1)(n+2)]+1.$$
 
-Si $m=n^2+3n$, entonces la expresión vale
+Si $m=n^2+3n$, entonces $n(n+3)=m$ y $(n+1)(n+2)=m+2$, así la expresión vale
 
-$$m(m+2)+1=(m+1)^2.$$
+$$m(m+2)+1=(m+1)^2,$$
+
+que es un cuadrado perfecto.
+:::
+
+**Problema 5.** Demostrar que para todo entero $n$, $6 \mid n^3-n$.
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+Factorizamos $n^3-n=(n-1)n(n+1)$, producto de tres enteros consecutivos. Entre
+tres consecutivos siempre hay un múltiplo de $2$ y uno de $3$; como $2$ y $3$
+son coprimos, el producto es divisible por $6$.
+:::
+
+**Problema 6.** Hallar el menor entero positivo $x$ tal que
+$x \equiv 2 \pmod 3$, $x \equiv 3 \pmod 5$ y $x \equiv 2 \pmod 7$.
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+De $x \equiv 2 \pmod 3$ y $x \equiv 2 \pmod 7$ se deduce
+$x \equiv 2 \pmod{21}$, es decir $x=2+21k$. Imponemos $x\equiv 3\pmod 5$:
+$2+21k\equiv 3\pmod 5$, o sea $k\equiv 1\pmod 5$ (pues $21\equiv 1$). Tomando
+$k=1$ obtenemos $x=23$. Se comprueba: $23\equiv 2\pmod 3$, $23\equiv 3\pmod 5$,
+$23\equiv 2\pmod 7$. El menor positivo es $x=23$.
+:::
+
+**Problema 7.** Demostrar que si $p$ es primo y $p>3$, entonces
+$24 \mid p^2-1$.
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+Escribimos $p^2-1=(p-1)(p+1)$. Como $p$ es impar, $p-1$ y $p+1$ son pares
+consecutivos, luego uno es múltiplo de $4$ y el otro de $2$: su producto es
+divisible por $8$. Además, entre los tres consecutivos $p-1,p,p+1$ hay un
+múltiplo de $3$, y como $p>3$ no es ese múltiplo, lo es $p-1$ o $p+1$; así
+$3 \mid p^2-1$. Como $8$ y $3$ son coprimos, $24 \mid p^2-1$.
+:::
+
+**Problema 8.** Demostrar que $\gcd(2^a-1,\,2^b-1)=2^{\gcd(a,b)}-1$ para enteros
+positivos $a,b$.
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+Sea $d=\gcd(a,b)$. Como $d \mid a$, se tiene $2^d-1 \mid 2^a-1$ (porque
+$x-1 \mid x^k-1$ con $x=2^d$), y análogamente $2^d-1 \mid 2^b-1$; luego $2^d-1$
+es divisor común. Para ver que es el mayor, se imita el algoritmo de Euclides:
+si $a=bq+r$, entonces
+$2^a-1\equiv 2^r-1 \pmod{2^b-1}$, de modo que
+$\gcd(2^a-1,2^b-1)=\gcd(2^b-1,2^r-1)$. Repitiendo los pasos del algoritmo de
+Euclides sobre los exponentes, el proceso termina en
+$\gcd(2^d-1,2^0-1)=2^d-1$.
+:::
+
+**Problema 9.** Demostrar que existen infinitos primos de la forma $4k+3$.
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+Supongamos que solo hay finitos: $p_1,\dots,p_n$ (incluyendo $3$). Consideremos
+
+$$N=4p_1p_2\cdots p_n-1.$$
+
+$N$ es de la forma $4k+3$ y mayor que $1$. Todo número de esa forma tiene al
+menos un factor primo $\equiv 3 \pmod 4$ (porque el producto de primos
+$\equiv 1\pmod 4$ es $\equiv 1$). Ese factor no puede ser ninguno de los $p_i$,
+pues dividiría a $N+1=4p_1\cdots p_n$ y a $N$, luego dividiría a $1$.
+Contradicción.
 :::
 
 ## Problemas de competencias oficiales
 
-**OMC 2012 — Problema 3:** determinar todos los enteros $n$ tales que
+Los siguientes problemas provienen de competencias reales y se presentan sin
+solución. Indica siempre la fuente al estudiarlos.
+
+**OMC 2012 — Problema 3.** Determinar todos los enteros $n$ tales que
 $n^2+n+1$ divide a $n^4+n^2+1$.
 
-**IMO 1988 — Problema 6:** sea $a,b$ enteros positivos tales que
-$ab+1$ divide a $a^2+b^2$. Probar que $\frac{a^2+b^2}{ab+1}$ es un cuadrado
-perfecto.
+**IMO 1988 — Problema 6.** Sean $a,b$ enteros positivos tales que $ab+1$ divide
+a $a^2+b^2$. Probar que $\frac{a^2+b^2}{ab+1}$ es un cuadrado perfecto.
+
+**IMO 1959 — Problema 1.** Demostrar que la fracción $\frac{21n+4}{14n+3}$ es
+irreducible para todo número natural $n$.

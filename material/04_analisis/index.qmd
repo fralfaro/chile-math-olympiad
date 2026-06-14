@@ -6,19 +6,53 @@ title: "Capítulo IV: Análisis Elemental"
 
 En olimpíadas, el análisis elemental no se centra en límites complicados, sino
 en comprender con precisión a los números racionales y reales, sus desarrollos
-decimales y distintas representaciones.
+decimales y distintas representaciones. Muchos problemas que parecen difíciles
+se vuelven transparentes cuando entendemos bien qué es un número racional,
+por qué $\sqrt{2}$ no lo es, o cómo una suma infinita puede dar un valor finito.
+
+Este capítulo cubre la sección de análisis del libro base *Matemática y
+Olimpíadas* (Sociedad de Matemáticas de Chile, Somachi, 1994), enfatizando las
+herramientas que aparecen una y otra vez en competencias: densidad de
+$\mathbb{Q}$, irracionalidad, series geométricas, expansiones decimales,
+representación en base $p$ y desigualdades clásicas como AM-GM.
 
 ## Objetivos del capítulo
 
-- Entender el orden en $\mathbb{Q}$ y en $\mathbb{R}$.
-- Trabajar con series geométricas y expansiones decimales.
-- Estudiar representaciones en distintas bases.
-- Aplicar estas ideas a problemas de estimación.
+- Entender el orden en $\mathbb{Q}$ y demostrar la densidad de los racionales.
+- Demostrar la irracionalidad de $\sqrt{2}$ y reconocer el método.
+- Comprender la completitud de $\mathbb{R}$ mediante supremo e ínfimo.
+- Trabajar con series geométricas finitas e infinitas y el criterio $|r|<1$.
+- Convertir entre expansiones decimales periódicas y fracciones.
+- Estudiar la representación de un número en base $p>1$.
+- Aplicar la desigualdad AM-GM a problemas de estimación y optimización.
+
+## Subtemas
+
+- Números racionales y su orden; densidad de $\mathbb{Q}$.
+- Irracionalidad: el caso de $\sqrt{2}$.
+- Números reales y completitud: supremo e ínfimo.
+- Series geométricas (finita e infinita).
+- Aproximaciones decimales y decimales periódicos.
+- Representación de un número en base $p>1$.
+- Desigualdades clásicas: la media aritmética y la media geométrica.
+
+## Prerrequisitos
+
+- Operaciones con fracciones y manejo algebraico básico.
+- Nociones de divisibilidad y números primos (Capítulo I).
+- Principio de inducción matemática (Capítulo II), útil para series y desigualdades.
+- Familiaridad con el orden de los números y la recta numérica.
 
 ## Contenidos
 
 | Sección | Enfoque |
 |---|---|
-| [Teoría](01_teoria.qmd) | Números, orden y representaciones |
+| [Teoría](01_teoria.qmd) | Números, orden, completitud y representaciones |
 | [Ejemplos](02_ejemplos.qmd) | Cálculos y argumentos típicos |
 | [Problemas](03_problemas.qmd) | Práctica inicial y competencia |
+
+## Referencia al libro base
+
+Este capítulo adapta y amplía el **Capítulo IV — Elementos de Análisis** de
+*Matemática y Olimpíadas* (Sociedad de Matemáticas de Chile, Somachi, 1994),
+en particular la sección §IV.4 de problemas resueltos.

@@ -1,8 +1,187 @@
 ---
-title: "Historia"
-format: revealjs
+title: "Historia de las Olimpiadas Matemáticas"
 ---
 
-## Placeholder
+## Historia de las Olimpiadas Matemáticas
 
-Presentación pendiente para la sección de historia.
+### De Brașov a Chile: seis décadas de problemas
+
+Un recorrido por la IMO, la Putnam, la Iberoamericana y la olimpiada chilena.
+
+# ¿Por qué empezar por la historia?
+
+## Una pregunta para empezar
+
+Un estudiante de primero medio puede **entender** este problema:
+
+> Si $a$ y $b$ son enteros positivos y $ab + 1$ divide a $a^2 + b^2$, demuestra que
+> $\dfrac{a^2 + b^2}{ab + 1}$ es un cuadrado perfecto.
+
+. . .
+
+Fue el **Problema 6 de la IMO 1988** y se volvió legendario.
+
+Las olimpiadas son justamente eso: **fáciles de enunciar, difíciles de resolver**.
+
+## ¿Qué es una olimpiada matemática?
+
+Una competencia individual con **pocos problemas** (3 a 6), pero muy difíciles.
+
+- No se mide la velocidad de cálculo, sino la **calidad del razonamiento**.
+- Se exige una **demostración completa y rigurosa**, no solo la respuesta.
+- Las herramientas son el lápiz, el papel y las ideas: **sin calculadora**.
+
+. . .
+
+Cuatro grandes áreas: **teoría de números**, **combinatoria**, **geometría** y **álgebra**.
+
+# La IMO
+
+## La Olimpiada Internacional (IMO)
+
+La competencia matemática escolar **más prestigiosa del mundo**.
+
+- Fundada en **1959** por iniciativa de Rumania.
+- Primera edición en **Brașov**, con apenas **siete países** del bloque socialista.
+- Hoy reúne **más de 100 países** y cerca de **600 participantes** por edición.
+
+. . .
+
+Es la más antigua de las olimpiadas científicas internacionales y modelo de todas las demás.
+
+## El formato de la IMO
+
+Equipos de **hasta seis estudiantes** por país.
+
+- **Seis problemas** en dos días: tres por día, $4{,}5$ horas cada jornada.
+- Cada problema vale **7 puntos**; máximo total: **42 puntos**.
+- Los problemas 1 y 4 suelen ser los más accesibles; 3 y 6, los más difíciles.
+
+. . .
+
+A lo sumo la mitad de los concursantes obtiene medalla, en proporción aproximada $1:2:3$ (oro : plata : bronce).
+
+## Una competencia que cruzó la Guerra Fría
+
+Durante sus primeras décadas, la IMO fue uno de los pocos espacios donde
+estudiantes de **Oriente y Occidente** competían en igualdad de condiciones.
+
+. . .
+
+La matemática funcionó como un **lenguaje neutral** que unía a jóvenes de
+sistemas políticos opuestos en torno a la misma pasión: resolver problemas.
+
+Solo se interrumpió una vez, en **1980**, cuando ningún país asumió la organización.
+
+# La Putnam
+
+## La Competencia Putnam
+
+La competencia **universitaria** más importante de EE. UU. y Canadá.
+
+- Organizada por la *Mathematical Association of America* desde **1938**.
+- Dos sesiones de tres horas: **12 problemas**, máximo **120 puntos**.
+
+. . .
+
+Su dificultad es legendaria: la **mediana de puntaje** es con frecuencia
+**0 o 1 punto** sobre 120. Llegar a dos dígitos ya destaca al participante.
+
+# La Iberoamericana
+
+## La Olimpiada Iberoamericana (OIM)
+
+Reúne a países de **Iberoamérica** junto con **España y Portugal**.
+
+- Se celebra desde **1985**; primera edición en Colombia.
+- Equipos de hasta **cuatro** estudiantes (a diferencia de los seis de la IMO).
+- Enunciados oficiales en **español y portugués**.
+
+. . .
+
+Es un **paso natural** entre las olimpiadas nacionales y la IMO, tanto por su
+nivel intermedio como por su carácter formativo.
+
+# Chile
+
+## La OMC: la olimpiada chilena
+
+La **Olimpiada Nacional de Matemáticas de Chile** existe desde **1981**.
+
+- Ligada a la **Sociedad de Matemática de Chile (Somachi)**, fundada en 1968.
+- Sostenida por universidades que aportan sedes, académicos y entrenadores.
+- Su meta no es solo competir, sino **despertar el gusto por la matemática**.
+
+. . .
+
+De ese contexto nació, en **1994**, el libro *Matemática y Olimpíadas*: la base de este sitio.
+
+## Cómo se organiza la OMC
+
+La competencia avanza por **etapas eliminatorias**:
+
+1. Etapa **local / comunal**
+2. Etapa **regional**
+3. Etapa **nacional**
+4. **Selección y entrenamiento** para competencias internacionales
+
+. . .
+
+El camino natural del olimpista chileno: **OMC → Cono Sur / OIM → IMO**.
+
+## Chile en el mundo
+
+Chile participa tanto en la **IMO** como en la **Iberoamericana**.
+
+- En la **OIM** tiene participación más extensa y mejores resultados relativos.
+- En la **IMO** envía equipos de hasta seis estudiantes con líder y observador.
+
+. . .
+
+::: {.callout-tip title="📖 El palmarés exacto"}
+El registro oficial de Chile —años, puntajes, medallas y menciones— está en
+[imo-official.org](https://www.imo-official.org). Esa es la fuente definitiva.
+:::
+
+## ¿Qué significan las medallas?
+
+En la IMO se compite de forma **individual**; las medallas son para personas.
+
+- **Oro, plata y bronce** para a lo más la mitad de los concursantes.
+- **Mención honorífica** para quien resuelve **un** problema con puntaje perfecto.
+
+. . .
+
+Resolver perfectamente **un solo** problema de la IMO ya es un gran logro:
+están entre los más difíciles del mundo para estudiantes de enseñanza media.
+
+## El camino de un olimpista
+
+Cada medallista empezó en el mismo punto que tú: con ganas de entender.
+
+. . .
+
+1. Primer contacto con la OMC en la enseñanza básica.
+2. Preparación sistemática durante la enseñanza media.
+3. Mejora edición tras edición hasta la selección nacional.
+4. Campamentos de entrenamiento.
+5. Iberoamericana o Cono Sur, y luego la IMO para los más destacados.
+
+. . .
+
+La diferencia la hace la **constancia**, no el talento aislado.
+
+# Para cerrar
+
+## Ideas clave
+
+- Las olimpiadas nacieron en **1959** (IMO) y crecieron de 7 a más de 100 países.
+- Existen escenarios para cada etapa: **OMC**, **Cono Sur**, **OIM**, **IMO**.
+- Los problemas son **fáciles de enunciar y difíciles de resolver**.
+- Lo que se evalúa es el **razonamiento riguroso**, no el cálculo veloz.
+- En Chile, la **Somachi** y las universidades sostienen el programa desde 1981.
+
+. . .
+
+**Ahora sigue tú:** explora los capítulos de teoría de números, inducción,
+combinatoria, análisis y geometría. ¡La práctica constante es el camino!

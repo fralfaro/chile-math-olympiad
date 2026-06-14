@@ -2,7 +2,10 @@
 title: "Problemas de práctica"
 ---
 
-**Problema 1.** Convertir $0,\overline{142857}$ en fracción irreducible.
+Resuelve cada problema antes de desplegar la solución. Los niveles van desde
+aplicación directa (⭐) hasta dificultad olímpica.
+
+**Problema 1.** ⭐⭐ Convertir $0,\overline{142857}$ en fracción irreducible.
 
 ::: {.callout-caution collapse="true" title="Ver solución"}
 Si $x=0,\overline{142857}$, entonces $10^6x=142857,\overline{142857}$.
@@ -11,37 +14,126 @@ Restando se obtiene $999999x=142857$, luego
 $$x=\frac{142857}{999999}=\frac{1}{7}.$$
 :::
 
-**Problema 2.** Probar que la suma de una serie geométrica infinita con
-$|r|<1$ es $\frac{a}{1-r}$.
+**Problema 2.** ⭐⭐ Probar que la suma de una serie geométrica infinita con
+término inicial $a$ y razón $|r|<1$ es $\frac{a}{1-r}$.
 
 ::: {.callout-caution collapse="true" title="Ver solución"}
-La suma parcial es
+La suma parcial de los primeros $n+1$ términos es
 
-$$S_n=a\frac{1-r^{n+1}}{1-r}.$$
+$$S_n=a\,\frac{1-r^{n+1}}{1-r}.$$
 
-Como $r^{n+1}\to 0$, se obtiene el resultado.
+Como $|r|<1$, se tiene $r^{n+1}\to 0$ cuando $n$ crece, de modo que
+
+$$S_n \to \frac{a(1-0)}{1-r}=\frac{a}{1-r}.$$
 :::
 
-**Problema 3.** Escribir $100$ en base $3$.
+**Problema 3.** ⭐ Escribir $100$ en base $3$.
 
 ::: {.callout-caution collapse="true" title="Ver solución"}
-Dividiendo sucesivamente por $3$ se obtienen restos $1,0,2,0,1$, luego
+Dividiendo sucesivamente por $3$:
 
-$$100=(10201)_3.$$
+$$\begin{align*}
+100 &= 3\cdot 33 + 1\\
+33 &= 3\cdot 11 + 0\\
+11 &= 3\cdot 3 + 2\\
+3 &= 3\cdot 1 + 0\\
+1 &= 3\cdot 0 + 1
+\end{align*}$$
+
+Leyendo los restos de abajo hacia arriba, $100=(10201)_3$.
+(Verificación: $81+18+1=100$.)
 :::
 
-**Problema 4.** Demostrar que entre dos números reales distintos siempre existe
-un número irracional.
+**Problema 4.** ⭐⭐ Demostrar que entre dos números reales distintos siempre
+existe un número irracional.
 
 ::: {.callout-caution collapse="true" title="Ver solución"}
-Tomando un racional $q$ del intervalo y perturbándolo con $\frac{\sqrt{2}}{n}$
-para $n$ grande, se obtiene un irracional dentro del mismo intervalo.
+Sean $a<b$ reales. Por densidad de $\mathbb{Q}$ existe un racional $q$ con
+$a<q<b$. Tomemos $n$ entero suficientemente grande para que
+$\frac{\sqrt{2}}{n}<b-q$. Entonces
+
+$$q < q+\frac{\sqrt{2}}{n} < b.$$
+
+El número $q+\frac{\sqrt{2}}{n}$ es irracional: si fuera racional, $\sqrt{2}=n(\,\cdot\,-q)$
+sería racional, contradicción. Así hallamos un irracional en $(a,b)$.
+:::
+
+**Problema 5.** ⭐⭐ Demostrar que $\sqrt{3}$ es irracional.
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+Supongamos $\sqrt{3}=\frac{a}{b}$ con $\gcd(a,b)=1$. Entonces $a^2=3b^2$, así que
+$3\mid a^2$ y, como $3$ es primo, $3\mid a$. Escribiendo $a=3k$ se obtiene
+$9k^2=3b^2$, es decir, $b^2=3k^2$, luego $3\mid b$. Pero entonces $3$ divide a
+$a$ y a $b$, contradiciendo $\gcd(a,b)=1$. Por lo tanto $\sqrt{3}$ es irracional.
+:::
+
+**Problema 6.** ⭐⭐ Calcular la suma
+
+$$\sum_{k=1}^{\infty}\frac{3}{4^k}.$$
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+Factorizando, la serie es geométrica con primer término $a=\frac{3}{4}$ y razón
+$r=\frac{1}{4}$:
+
+$$\sum_{k=1}^{\infty}\frac{3}{4^k}=\frac{3/4}{1-\frac{1}{4}}=\frac{3/4}{3/4}=1.$$
+:::
+
+**Problema 7.** ⭐⭐⭐ Sea $0,\overline{a_1a_2\cdots a_p}$ un decimal periódico de
+período $p$. Demostrar que es igual a la fracción cuyo numerador es el bloque
+$a_1a_2\cdots a_p$ y cuyo denominador es $\underbrace{99\cdots9}_{p}$.
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+Sea $x=0,\overline{a_1\cdots a_p}$ y sea $N=(a_1a_2\cdots a_p)$ el entero formado
+por el bloque. Multiplicando por $10^p$,
+
+$$10^p x = a_1\cdots a_p{,}\overline{a_1\cdots a_p} = N + x.$$
+
+Restando $x$,
+
+$$(10^p-1)x = N \quad\Longrightarrow\quad x=\frac{N}{10^p-1}=\frac{N}{\underbrace{99\cdots9}_{p}}.$$
+:::
+
+**Problema 8.** ⭐⭐ Demostrar, usando AM-GM, que para todos $a,b,c>0$ se cumple
+
+$$(a+b)(b+c)(c+a)\ge 8abc.$$
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+Por AM-GM aplicada a cada factor:
+
+$$a+b\ge 2\sqrt{ab}, \quad b+c\ge 2\sqrt{bc}, \quad c+a\ge 2\sqrt{ca}.$$
+
+Multiplicando las tres desigualdades (todos los lados son positivos),
+
+$$(a+b)(b+c)(c+a)\ge 8\sqrt{ab}\sqrt{bc}\sqrt{ca}=8\sqrt{a^2b^2c^2}=8abc.$$
+
+La igualdad se alcanza cuando $a=b=c$.
+:::
+
+**Problema 9.** ⭐⭐⭐ Determinar todos los enteros positivos $n$ tales que la
+representación de $n$ en base $2$ y en base $5$ tengan la misma cantidad de
+dígitos, sabiendo que esa cantidad es $2$.
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+Tener $2$ dígitos en base $2$ significa $2\le n\le 3$ (números $(10)_2$ y
+$(11)_2$). Tener $2$ dígitos en base $5$ significa $5\le n\le 24$. La
+intersección de $\{2,3\}$ con $\{5,\ldots,24\}$ es **vacía**, por lo que no
+existe ningún $n$ con esa propiedad. (El problema enseña a traducir "cantidad de
+dígitos en base $p$" a rangos $p^{k-1}\le n< p^{k}$.)
 :::
 
 ## Problemas de competencias oficiales
 
-**OMC 2014 — Problema 4:** estudiar una expresión decimal periódica y relacionarla
-con una fracción.
+Los siguientes problemas se dejan **sin solución** para práctica autónoma.
 
-**IMO 1967 — Problema 3:** comparar números definidos por radicales y
-aproximaciones racionales.
+**IMO 1965 — Problema 1.** Determinar todos los valores de $x$ en el intervalo
+$0 \le x \le 2\pi$ que satisfacen la desigualdad
+
+$$2\cos x \le \left| \sqrt{1+\sin 2x} - \sqrt{1-\sin 2x} \,\right| \le \sqrt{2}.$$
+
+**IMO 1985 — Problema 6.** Para todo real $x_1$, se construye la sucesión
+$x_1, x_2, \ldots$ mediante
+
+$$x_{n+1} = x_n\left(x_n + \frac{1}{n}\right) \quad (n = 1, 2, \ldots).$$
+
+Demostrar que existe exactamente un valor de $x_1$ para el cual
+$0 < x_n < x_{n+1} < 1$ para todo $n$.

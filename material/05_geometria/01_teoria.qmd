@@ -1,59 +1,425 @@
 ---
 title: "Teoría: triángulos, circunferencias y centros notables"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
 ---
 
-## Conceptos básicos
+## Introducción
+
+La geometría sintética del plano es uno de los pilares de las olimpiadas. A
+diferencia de otras áreas, aquí el reto no suele estar en una cuenta difícil, sino
+en *ver* la relación correcta: un ángulo que se repite, una circunferencia que
+pasa por cuatro puntos, tres cevianas que concurren. En este capítulo
+construiremos, desde los conceptos más básicos, un repertorio de teoremas que
+permiten transformar una figura en igualdades manejables. Veremos que cada
+resultado clásico —Pitágoras, Tales, el ángulo inscrito, Ceva, Menelao,
+Ptolomeo— es una herramienta que, combinada con las demás, abre la puerta a
+configuraciones sorprendentes como la recta de Euler y la circunferencia de los
+nueve puntos.
+
+## Conceptos previos
+
+- Ángulos, rectas paralelas y perpendiculares.
+- Triángulos: lados, vértices, ángulos interiores y exteriores.
+- Proporciones y razones entre segmentos.
+- Nociones elementales de área.
+
+## Conceptos básicos: ángulos, congruencia y semejanza
+
+Antes de cualquier teorema, fijemos el lenguaje. Un **ángulo** $\angle ABC$ es la
+región determinada por dos semirrectas con origen común $B$. Dos resultados
+elementales gobiernan casi todo el capítulo: la suma de ángulos de un triángulo y
+el comportamiento de los ángulos entre paralelas.
 
 ::: {.callout-note title="Hecho básico"}
 La suma de los ángulos interiores de un triángulo es $180^\circ$.
 :::
 
-## Teoremas clásicos del triángulo
-
-- Teorema de Pitágoras.
-- Criterios de congruencia y semejanza.
-- Teorema de la bisectriz interior.
-- Desigualdad triangular.
-
-## Circunferencia
-
-::: {.callout-note title="Teorema del ángulo inscrito"}
-Un ángulo inscrito mide la mitad del arco que intercepta.
+::: {.callout-note title="Definición: ángulos entre paralelas"}
+Si dos rectas paralelas son cortadas por una transversal, los **ángulos alternos
+internos** son iguales y los **ángulos correspondientes** son iguales. Esta
+propiedad es la base de casi toda persecución de ángulos (*angle chasing*).
 :::
 
-## Centros notables
+La igualdad o proporcionalidad de figuras se formaliza con dos conceptos centrales.
 
-- **Baricentro:** intersección de las medianas.
-- **Incentro:** intersección de las bisectrices internas.
-- **Circuncentro:** intersección de las mediatrices.
-- **Ortocentro:** intersección de las alturas.
+::: {.callout-note title="Definición: congruencia de triángulos"}
+Dos triángulos son **congruentes** ($\triangle ABC \cong \triangle A'B'C'$) si
+existe una correspondencia entre sus vértices que hace iguales los lados y los
+ángulos correspondientes. Los criterios clásicos de congruencia son:
 
-::: {.callout-note title="Baricentro"}
-El baricentro divide cada mediana en razón $2:1$, contando desde el vértice.
+- **LLL** (lado-lado-lado): los tres pares de lados son iguales.
+- **LAL** (lado-ángulo-lado): dos lados y el ángulo comprendido.
+- **ALA** (ángulo-lado-ángulo): dos ángulos y el lado común.
+- **LLA$_>$**: dos lados y el ángulo opuesto al mayor de ellos.
 :::
 
-## Teoremas de Ceva y Menelao
+::: {.callout-note title="Definición: semejanza de triángulos"}
+Dos triángulos son **semejantes** ($\triangle ABC \sim \triangle A'B'C'$) si sus
+ángulos correspondientes son iguales y sus lados correspondientes son
+proporcionales:
+$$\frac{A'B'}{AB}=\frac{B'C'}{BC}=\frac{C'A'}{CA}=k.$$
+El número $k$ es la **razón de semejanza**. Criterios: **AA** (dos ángulos
+iguales), **LAL** proporcional y **LLL** proporcional.
+:::
 
-::: {.callout-tip title="Teorema de Ceva"}
-Sean $D,E,F$ puntos en los lados $BC,CA,AB$ de un triángulo $ABC$. Entonces las
-rectas $AD$, $BE$ y $CF$ son concurrentes si y solo si
+::: {.callout-tip title="Teorema: bisectriz interior"}
+En el triángulo $\triangle ABC$, la bisectriz interior del ángulo $\angle A$ corta
+al lado $\overline{BC}$ en un punto $D$ tal que
+$$\frac{BD}{DC}=\frac{AB}{AC}.$$
 
+**Demostración:** Trazamos por $C$ la paralela a la bisectriz $AD$, que corta a la
+recta $AB$ en $E$. Como $AD \parallel CE$, los ángulos $\angle BAD$ y $\angle AEC$
+son correspondientes y $\angle DAC$ y $\angle ACE$ son alternos internos; ambos
+iguales a la mitad de $\angle A$. Entonces $\triangle ACE$ es isósceles con
+$AE=AC$. Aplicando el teorema de Tales al triángulo $\triangle BCE$ con la paralela
+$AD$ se obtiene $\frac{BD}{DC}=\frac{BA}{AE}=\frac{AB}{AC}$. $\blacksquare$
+:::
+
+## Teoremas clásicos: Pitágoras y Tales (Thales)
+
+Estos dos teoremas son los más antiguos y más usados del capítulo. Pitágoras
+relaciona longitudes en el triángulo rectángulo; Tales gobierna la
+proporcionalidad creada por paralelas.
+
+::: {.callout-tip title="Teorema: de Pitágoras"}
+En un triángulo rectángulo de catetos $a,b$ e hipotenusa $c$ se cumple
+$$a^2+b^2=c^2.$$
+
+**Demostración (por áreas):** Disponemos cuatro copias del triángulo dentro de un
+cuadrado de lado $a+b$, dejando en el centro un cuadrado de lado $c$. El área
+total es $(a+b)^2$ y también vale $4\cdot \tfrac{ab}{2}+c^2$. Igualando,
+$(a+b)^2 = 2ab + c^2$, es decir $a^2+2ab+b^2=2ab+c^2$, de donde $a^2+b^2=c^2$.
+$\blacksquare$
+:::
+
+::: {.callout-tip title="Teorema: de Tales (Thales) sobre paralelas"}
+Si tres o más rectas paralelas son cortadas por dos transversales, los segmentos
+determinados sobre una transversal son proporcionales a los correspondientes sobre
+la otra. En particular, si en $\triangle ABC$ una recta paralela a $\overline{BC}$
+corta a $\overline{AB}$ en $D$ y a $\overline{AC}$ en $E$, entonces
+$$\frac{AD}{DB}=\frac{AE}{EC}.$$
+
+**Demostración (esbozo):** Los triángulos $\triangle ADE$ y $\triangle ABC$ son
+semejantes por el criterio AA, pues $\angle A$ es común y $\angle ADE=\angle ABC$
+(correspondientes entre las paralelas $DE \parallel BC$). De la semejanza,
+$\frac{AD}{AB}=\frac{AE}{AC}$, y un despeje algebraico da la proporción enunciada.
+$\blacksquare$
+:::
+
+::: {.callout-tip title="Teorema: de Thales sobre el semicírculo"}
+Si $\overline{AB}$ es un diámetro de una circunferencia y $C$ es otro punto de
+ella, entonces $\angle ACB = 90^\circ$.
+
+**Demostración:** El centro $O$ es punto medio de $\overline{AB}$, luego
+$OA=OB=OC$ (radios). Los triángulos $\triangle OAC$ y $\triangle OBC$ son isósceles,
+de modo que $\angle OCA=\angle OAC=\alpha$ y $\angle OCB=\angle OBC=\beta$. Como la
+suma de ángulos de $\triangle ABC$ es $180^\circ$, tenemos
+$\alpha+\beta+(\alpha+\beta)=180^\circ$, es decir $\angle ACB=\alpha+\beta=90^\circ$.
+$\blacksquare$
+:::
+
+## La circunferencia: ángulos y cuadriláteros cíclicos
+
+La circunferencia es la protagonista de la geometría olímpica. Su poder reside en
+una sola idea: los ángulos inscritos que subtienden el mismo arco son iguales.
+
+::: {.callout-note title="Definición: ángulo central y ángulo inscrito"}
+Un **ángulo central** tiene su vértice en el centro de la circunferencia; mide lo
+mismo que el arco que abarca. Un **ángulo inscrito** tiene su vértice sobre la
+circunferencia y sus lados son cuerdas.
+:::
+
+::: {.callout-tip title="Teorema: del ángulo inscrito"}
+Un ángulo inscrito mide la mitad del ángulo central que subtiende el mismo arco.
+En consecuencia, todos los ángulos inscritos que abarcan un mismo arco son iguales.
+
+**Demostración (caso con un lado por el centro):** Sea $\angle BAC$ inscrito con
+$A,B,C$ en la circunferencia de centro $O$, y supongamos que $O$ está sobre
+$\overline{AB}$. El triángulo $\triangle OAC$ es isósceles ($OA=OC$), luego
+$\angle OAC=\angle OCA=\alpha$. El ángulo central $\angle BOC$ es exterior a ese
+triángulo, así que $\angle BOC=\alpha+\alpha=2\alpha$. Por tanto el inscrito
+$\angle BAC=\alpha=\tfrac12\angle BOC$. Los demás casos (centro dentro o fuera del
+ángulo) se reducen a este sumando o restando ángulos. $\blacksquare$
+:::
+
+::: {.callout-tip title="Teorema: cuadrilátero cíclico"}
+Un cuadrilátero convexo $ABCD$ es **cíclico** (sus cuatro vértices están en una
+circunferencia) si y solo si sus ángulos opuestos son suplementarios:
+$$\angle A + \angle C = 180^\circ, \qquad \angle B + \angle D = 180^\circ.$$
+Equivalentemente, $ABCD$ es cíclico si y solo si $\angle ACB=\angle ADB$ (ángulos
+que ven el mismo segmento $\overline{AB}$ desde el mismo lado).
+
+**Demostración (ida):** Si los cuatro puntos están en la circunferencia, los
+ángulos $\angle A$ y $\angle C$ son inscritos que subtienden arcos
+complementarios cuya suma es toda la circunferencia ($360^\circ$). Por el teorema
+del ángulo inscrito, $\angle A+\angle C=\tfrac12\cdot 360^\circ=180^\circ$. La
+recíproca se prueba por reducción al absurdo: si $D$ no estuviera en la
+circunferencia que pasa por $A,B,C$, la igualdad angular fallaría. $\blacksquare$
+:::
+
+::: {.callout-tip title="Teorema: potencia de un punto"}
+Dado un punto $P$ y una circunferencia, para cualquier recta por $P$ que la corte
+en $X,Y$ el producto $PX\cdot PY$ es constante (con signo). Si $P$ es exterior y
+$PT$ es tangente, entonces $PT^2=PX\cdot PY$.
+
+**Demostración (esbozo):** Para dos cuerdas $XY$ y $UV$ por $P$, los triángulos
+$\triangle PXU$ y $\triangle PVY$ son semejantes por el teorema del ángulo
+inscrito (comparten el ángulo en $P$ y tienen ángulos inscritos iguales). De la
+semejanza $\frac{PX}{PV}=\frac{PU}{PY}$, es decir $PX\cdot PY=PU\cdot PV$. El caso
+tangente se obtiene tomando $U=V=T$. $\blacksquare$
+:::
+
+## Puntos notables del triángulo
+
+Las cuatro rectas notables del triángulo concurren cada una en un punto. Estos
+centros, junto con los excentros, organizan casi toda la geometría del triángulo.
+
+::: {.callout-note title="Definición: centros clásicos"}
+- **Baricentro** $G$: intersección de las **medianas** (vértice a punto medio
+  opuesto).
+- **Incentro** $I$: intersección de las **bisectrices internas**; centro de la
+  circunferencia inscrita, tangente a los tres lados.
+- **Circuncentro** $O$: intersección de las **mediatrices**; centro de la
+  circunferencia circunscrita, que pasa por los tres vértices.
+- **Ortocentro** $H$: intersección de las **alturas**.
+:::
+
+::: {.callout-tip title="Teorema: del baricentro"}
+Las tres medianas de un triángulo concurren en un punto $G$ que divide cada
+mediana en razón $2:1$ contando desde el vértice.
+
+**Demostración (esbozo):** La concurrencia se sigue del teorema de Ceva aplicado a
+los puntos medios (las tres razones valen $1$, su producto es $1$). Para la razón,
+sean $M$ y $N$ los puntos medios de $\overline{BC}$ y $\overline{CA}$. El segmento
+$\overline{MN}$ es paralelo a $\overline{AB}$ y mide su mitad (base media). Los
+triángulos $\triangle ABG$ y $\triangle MNG$ son semejantes con razón $2:1$, de
+donde $AG=2\,GM$. $\blacksquare$
+:::
+
+::: {.callout-note title="Definición: excentros y circunferencias exinscritas"}
+La bisectriz interna de un vértice y las bisectrices externas de los otros dos
+concurren en un **excentro** $I_A$ (análogamente $I_B$, $I_C$). Cada excentro es el
+centro de una **circunferencia exinscrita**, tangente a un lado del triángulo y a
+las prolongaciones de los otros dos. Si $r$ es el inradio, $r_A,r_B,r_C$ los
+exradios y $s$ el semiperímetro, se cumple la relación
+$$\frac{1}{r}=\frac{1}{r_A}+\frac{1}{r_B}+\frac{1}{r_C}.$$
+:::
+
+::: {.callout-tip title="Teorema: relaciones de área e inradio"}
+Si $[ABC]$ denota el área, $s$ el semiperímetro y $r$ el inradio, entonces
+$$[ABC]=r\,s.$$
+Para cada excírculo, $[ABC]=r_A(s-a)=r_B(s-b)=r_C(s-c)$.
+
+**Demostración:** Uniendo el incentro $I$ con los tres vértices se descompone el
+triángulo en tres triángulos de bases $a,b,c$ y altura común $r$ (la distancia de
+$I$ a cada lado). Entonces $[ABC]=\tfrac12 r(a+b+c)=r\,s$. La versión con
+exradios es análoga usando el excentro correspondiente. $\blacksquare$
+:::
+
+## Teoremas de Ceva, Menelao y Carnot
+
+Estos teoremas son la columna vertebral de los problemas de concurrencia
+(Ceva) y colinealidad (Menelao). Carnot añade una herramienta métrica sobre
+perpendiculares.
+
+::: {.callout-tip title="Teorema: de Ceva"}
+Sean $D,E,F$ puntos en los lados $\overline{BC},\overline{CA},\overline{AB}$ de
+$\triangle ABC$. Las rectas $AD$, $BE$ y $CF$ son **concurrentes** si y solo si
 $$\frac{BD}{DC}\cdot \frac{CE}{EA}\cdot \frac{AF}{FB}=1.$$
+
+**Demostración (esbozo, vía áreas):** Si las cevianas concurren en $P$, entonces
+$\frac{BD}{DC}=\frac{[ABP]}{[ACP]}$, porque ambos triángulos tienen igual altura
+desde $P$ sobre la recta $BC$ y bases $BD,DC$. Análogamente para los otros dos
+cocientes. Multiplicando las tres igualdades, los términos se cancelan en cadena y
+el producto es $1$. La recíproca se obtiene fijando dos cevianas y mostrando que la
+tercera queda determinada por la condición. $\blacksquare$
 :::
 
-::: {.callout-tip title="Teorema de Menelao"}
-Si una recta corta a los lados $BC,CA,AB$ de un triángulo $ABC$ en $D,E,F$,
-respectivamente, entonces
+::: {.callout-tip title="Teorema: de Menelao"}
+Si una recta corta a los lados (o sus prolongaciones)
+$\overline{BC},\overline{CA},\overline{AB}$ de $\triangle ABC$ en $D,E,F$
+respectivamente, entonces, con **longitudes dirigidas**,
+$$\frac{BD}{DC}\cdot \frac{CE}{EA}\cdot \frac{AF}{FB}=-1.$$
+(En valor absoluto, el producto es $1$; el signo distingue Menelao de Ceva.)
 
-$$\frac{BD}{DC}\cdot \frac{CE}{EA}\cdot \frac{AF}{FB}=1,$$
-
-con longitudes dirigidas.
+**Demostración (esbozo):** Se trazan desde $A,B,C$ las perpendiculares
+$p_A,p_B,p_C$ a la recta transversal. Por semejanza de triángulos rectángulos,
+cada cociente del producto es igual a un cociente de esas distancias:
+$\frac{BD}{DC}=-\frac{p_B}{p_C}$, etc. Al multiplicar, todas las distancias se
+cancelan y el signo resultante es $-1$. $\blacksquare$
 :::
 
-## Ptolomeo y recta de Euler
+::: {.callout-tip title="Teorema: de Carnot"}
+Las perpendiculares trazadas desde tres puntos $D,E,F$ a los lados
+$\overline{BC},\overline{CA},\overline{AB}$ de $\triangle ABC$ son concurrentes si
+y solo si
+$$BD^2-DC^2+CE^2-EA^2+AF^2-FB^2=0.$$
 
-::: {.callout-note title="Teorema de Ptolomeo"}
+**Demostración (esbozo):** Si las tres perpendiculares concurren en $P$, basta
+aplicar el teorema de Pitágoras a los seis triángulos rectángulos que $P$ forma con
+los pies sobre cada lado. Por ejemplo, $BD^2-DC^2=PB^2-PC^2$. Sumando las tres
+relaciones análogas el lado derecho se telescopa a $0$. La recíproca usa que la
+condición determina un único pie sobre cada lado. $\blacksquare$
+:::
+
+## Teorema de Ptolomeo
+
+::: {.callout-tip title="Teorema: de Ptolomeo"}
 En un cuadrilátero cíclico $ABCD$ se cumple
-
 $$AC \cdot BD = AB \cdot CD + BC \cdot AD.$$
+Para un cuadrilátero cualquiera vale la **desigualdad de Ptolomeo**
+$AC\cdot BD \le AB\cdot CD+BC\cdot AD$, con igualdad si y solo si es cíclico.
+
+**Demostración (esbozo):** Sobre $\overline{AC}$ se toma el punto $K$ tal que
+$\angle ABK=\angle DBC$. Entonces $\triangle ABK \sim \triangle DBC$ (comparten un
+ángulo construido y otro por estar en arco común), lo que da
+$AK\cdot BD=AB\cdot CD$. Análogamente $\triangle KBC \sim \triangle ABD$ da
+$KC\cdot BD=BC\cdot AD$. Sumando y usando $AK+KC=AC$ se obtiene la identidad.
+$\blacksquare$
 :::
+
+## Configuraciones avanzadas
+
+Reunimos ahora las joyas del capítulo: tres centros alineados, nueve puntos sobre
+una misma circunferencia y un pie de perpendiculares que resulta colineal.
+
+::: {.callout-tip title="Teorema: recta de Euler"}
+En todo triángulo no equilátero, el ortocentro $H$, el baricentro $G$ y el
+circuncentro $O$ son **colineales**, y además
+$$\overrightarrow{OH}=3\,\overrightarrow{OG}, \qquad HG=2\,GO.$$
+
+**Demostración (esbozo, vectorial):** Tomando $O$ como origen, se prueba que el
+punto $H'=A+B+C$ (suma vectorial de los vértices) cumple las propiedades del
+ortocentro: $H'-A=B+C$ es perpendicular a $\overline{BC}$ porque
+$(B+C)\cdot(C-B)=|C|^2-|B|^2=0$ (los vértices equidistan de $O$). Así $H=A+B+C$.
+Como $G=\tfrac13(A+B+C)$, resulta $H=3G$ respecto de $O$, es decir
+$\overrightarrow{OH}=3\,\overrightarrow{OG}$, lo que prueba la colinealidad y la
+razón. $\blacksquare$
+:::
+
+::: {.callout-tip title="Teorema: circunferencia de los nueve puntos"}
+En todo triángulo existe una circunferencia que pasa por **nueve puntos notables**:
+los tres puntos medios de los lados, los tres pies de las alturas y los tres puntos
+medios de los segmentos que unen cada vértice con el ortocentro. Su centro $N$ es
+el punto medio de $\overline{OH}$ (sobre la recta de Euler) y su radio es la mitad
+del circunradio $R$.
+
+**Demostración (esbozo):** Una homotecia de centro $G$ y razón $-\tfrac12$ envía el
+triángulo $\triangle ABC$ en su triángulo medial y, en particular, la circunferencia
+circunscrita (radio $R$) en una circunferencia de radio $R/2$ que pasa por los
+puntos medios de los lados. Un análisis adicional muestra que esa misma
+circunferencia contiene los pies de las alturas y los puntos de Euler, y que su
+centro $N$ queda en el punto medio de $\overline{OH}$. $\blacksquare$
+:::
+
+::: {.callout-tip title="Teorema: recta de Simson"}
+Sea $P$ un punto de la circunferencia circunscrita a $\triangle ABC$. Los pies de
+las perpendiculares trazadas desde $P$ a las tres rectas que contienen los lados
+son **colineales**. La recta que los contiene es la **recta de Simson** de $P$.
+
+**Demostración (esbozo):** Sean $X,Y,Z$ los pies sobre $BC,CA,AB$. Los
+cuadriláteros $PXCY$ y $PZAY$ resultan cíclicos (tienen ángulos rectos que ven un
+mismo segmento). Una persecución de ángulos usando esos cíclicos y el hecho de que
+$ABPC$ es cíclico muestra que $\angle ZYP=\angle XYP$ son suplementarios o iguales
+según el caso, forzando que $X,Y,Z$ estén alineados. $\blacksquare$
+:::
+
+## Problemas resueltos
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** En $\triangle ABC$, los puntos medios de $\overline{AB}$ y
+$\overline{AC}$ son $M$ y $N$. Probar que $\overline{MN}\parallel\overline{BC}$ y
+$MN=\tfrac12 BC$.
+
+**Estrategia:** Usar el criterio de semejanza LAL proporcional con el ángulo común
+en $A$.
+
+**Solución:** En los triángulos $\triangle AMN$ y $\triangle ABC$, el ángulo
+$\angle A$ es común, y $\frac{AM}{AB}=\frac{AN}{AC}=\tfrac12$ por ser $M,N$ puntos
+medios. Por el criterio LAL, $\triangle AMN \sim \triangle ABC$ con razón
+$\tfrac12$. Luego $\angle AMN=\angle ABC$ (correspondientes), de donde
+$\overline{MN}\parallel\overline{BC}$, y $MN=\tfrac12 BC$. $\blacksquare$
+:::
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** Sea $ABCD$ un cuadrilátero cíclico con $\angle BAC=40^\circ$ y
+$\angle BDC=40^\circ$. Verificar que es consistente y hallar $\angle BXC$, donde
+$X=AC\cap BD$.
+
+**Estrategia:** Usar que ángulos inscritos sobre el mismo arco son iguales y el
+ángulo exterior de un triángulo.
+
+**Solución:** $\angle BAC$ y $\angle BDC$ subtienden ambos el arco $BC$, así que su
+igualdad confirma que $A,B,C,D$ están en una circunferencia. Sea
+$\angle ABD=\angle ACD=\beta$ (subtienden arco $AD$). En el triángulo
+$\triangle BXC$, el ángulo $\angle BXC$ es exterior al triángulo $\triangle AXB$ y
+$$\angle BXC=\angle XAB+\angle XBA=\angle CAB+\angle DBA=40^\circ+\beta.$$
+El valor concreto depende de $\beta$, pero la relación
+$\angle BXC=40^\circ+\angle ABD$ queda establecida. $\blacksquare$
+:::
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** Probar con el teorema de Ceva que las tres alturas de un triángulo
+acutángulo son concurrentes (existe el ortocentro).
+
+**Estrategia:** Calcular las razones que las alturas determinan sobre los lados y
+verificar que el producto de Ceva es $1$.
+
+**Solución:** Sea $D$ el pie de la altura desde $A$ sobre $\overline{BC}$. En los
+triángulos rectángulos resultantes, $BD=AB\cos B=c\cos B$ y $DC=AC\cos C=b\cos C$,
+de modo que $\frac{BD}{DC}=\frac{c\cos B}{b\cos C}$. Análogamente,
+$$\frac{CE}{EA}=\frac{a\cos C}{c\cos A}, \qquad \frac{AF}{FB}=\frac{b\cos A}{a\cos B}.$$
+El producto es
+$$\frac{c\cos B}{b\cos C}\cdot\frac{a\cos C}{c\cos A}\cdot\frac{b\cos A}{a\cos B}=1,$$
+pues cada longitud y cada coseno aparece una vez en el numerador y una en el
+denominador. Por el teorema de Ceva, las alturas concurren. $\blacksquare$
+:::
+
+## Ejercicios propuestos
+
+1. ⭐ En un triángulo rectángulo de catetos $5$ y $12$, hallar la longitud de la
+   mediana relativa a la hipotenusa.
+
+2. ⭐ Demostrar que en un cuadrilátero cíclico la suma de dos ángulos opuestos es
+   $180^\circ$, partiendo del teorema del ángulo inscrito.
+
+3. ⭐⭐ En $\triangle ABC$ la bisectriz de $\angle A$ corta a $\overline{BC}$ en
+   $D$. Si $AB=6$, $AC=4$ y $BC=8$, hallar $BD$ y $DC$.
+
+4. ⭐⭐ Usando el teorema de Menelao, probar que en $\triangle ABC$ una recta
+   paralela a $\overline{BC}$ que corta a los otros dos lados los divide en la
+   misma razón.
+
+5. ⭐⭐⭐ Sea $P$ un punto interior de $\triangle ABC$ tal que las cevianas
+   $AP,BP,CP$ cortan a los lados en $D,E,F$. Si $\frac{BD}{DC}=2$ y
+   $\frac{CE}{EA}=3$, hallar $\frac{AF}{FB}$.
+
+6. ⭐⭐⭐ En un cuadrilátero cíclico $ABCD$ con $AB=BC=CD=2$ y $AD=3$, usar el
+   teorema de Ptolomeo para hallar la longitud de la diagonal $AC$ en términos de
+   $BD$, sabiendo que $AC=BD$ por simetría.
+
+7. 🏆 (IMO-style) Demostrar que el reflejo del ortocentro $H$ de $\triangle ABC$
+   respecto de un lado pertenece a la circunferencia circunscrita.
+
+## Referencias del capítulo
+
+- **Coxeter, H. S. M. & Greitzer, S. L. (1967). *Geometry Revisited*. MAA.**
+  Clásico accesible que desarrolla con elegancia los teoremas de Ceva, Menelao,
+  la recta de Euler y la circunferencia de los nueve puntos. Ideal como segunda
+  lectura tras este capítulo.
+
+- **Chen, E. (2016). *Euclidean Geometry in Mathematical Olympiads*. MAA.**
+  Texto moderno orientado a olimpiadas; cubre persecución de ángulos, cíclicos,
+  potencia de un punto y técnicas avanzadas con abundantes problemas IMO.
+
+- **Prasolov, V. V. (2001). *Problems in Plane Geometry*. Moscú: Nauka.**
+  Enorme colección de problemas resueltos, organizada por temas (potencia,
+  semejanza, circunferencias), excelente para profundizar y practicar.
+
+- **Sociedad de Matemáticas de Chile (1994). *Matemática y Olimpíadas*.
+  Santiago.** Libro base del repositorio; el Capítulo V es la fuente de la
+  selección y el orden de estos contenidos.

@@ -1,118 +1,478 @@
 ---
 title: "Teoría: divisibilidad, primos y congruencias"
+subtitle: "Divisibilidad, máximo común divisor, primos y aritmética modular"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
 ---
+
+## Introducción
+
+La teoría de números es, en cierto sentido, la rama más antigua de la
+matemática: ya los griegos estudiaban primos y divisibilidad. Sin embargo, sigue
+siendo una fuente inagotable de problemas difíciles y bellos, y por eso ocupa un
+lugar central en toda olimpiada.
+
+En este desarrollo construimos las herramientas paso a paso. Comenzamos por la
+divisibilidad, la relación más elemental entre enteros, y de ella derivamos el
+algoritmo de la división. Sobre esa base levantamos el máximo común divisor, el
+algoritmo de Euclides y la identidad de Bézout, que son el motor de casi todos
+los argumentos posteriores. Luego estudiamos los números primos y el Teorema
+Fundamental de la Aritmética, que nos da una "estructura atómica" de los enteros.
+Con las congruencias entramos en la aritmética modular, lenguaje natural para
+hablar de restos, y culminamos con los teoremas de Fermat y Wilson, las
+ecuaciones diofánticas y las funciones aritméticas.
+
+Cada definición se acompaña de una motivación, y cada teorema importante incluye
+su demostración: en olimpiada no basta saber qué es cierto, hay que saber por
+qué.
+
+## Conceptos previos
+
+Para seguir este capítulo conviene recordar:
+
+- Las operaciones y el orden en $\mathbb{Z}$.
+- El **principio del buen orden**: todo subconjunto no vacío de $\mathbb{N}$
+  tiene un mínimo. Lo usaremos repetidamente.
+- Manipulación algebraica básica (factorización, productos notables).
 
 ## Divisibilidad
 
 La primera idea natural en aritmética es decidir cuándo un entero contiene a
-otro una cantidad exacta de veces.
+otro una cantidad exacta de veces. Esta relación, la divisibilidad, es la base
+de todo lo que sigue.
 
 ::: {.callout-note title="Definición: divisibilidad"}
-Sean $a,b \in \mathbb{Z}$ con $a \neq 0$. Decimos que $a$ divide a $b$ y
-escribimos $a \mid b$ si existe $k \in \mathbb{Z}$ tal que $b = ak$.
+Sean $a,b \in \mathbb{Z}$ con $a \neq 0$. Decimos que $a$ **divide** a $b$ y
+escribimos $a \mid b$ si existe $k \in \mathbb{Z}$ tal que $b = ak$. Si $a$ no
+divide a $b$, escribimos $a \nmid b$.
+
+En tal caso $a$ es un **divisor** (o factor) de $b$, y $b$ es un **múltiplo** de
+$a$.
 :::
 
-De la definición se deducen propiedades básicas:
+De la definición se deducen propiedades básicas que usaremos sin mencionar.
 
-- Si $a \mid b$ y $a \mid c$, entonces $a \mid (b+c)$ y $a \mid (b-c)$.
-- Si $a \mid b$, entonces $a \mid bc$ para todo $c \in \mathbb{Z}$.
-- Si $a \mid b$ y $b \mid c$, entonces $a \mid c$.
+::: {.callout-tip title="Teorema I.1: propiedades de la divisibilidad"}
+Sean $a,b,c \in \mathbb{Z}$ con los divisores distintos de cero. Entonces:
 
-::: {.callout-tip title="Teorema: algoritmo de la división"}
-Dados enteros $a$ y $b>0$, existen únicos enteros $q$ y $r$ tales que
+1. $a \mid a$ (reflexividad) y $1 \mid b$ para todo $b$.
+2. Si $a \mid b$ y $b \mid c$, entonces $a \mid c$ (transitividad).
+3. Si $a \mid b$ y $a \mid c$, entonces $a \mid (bx+cy)$ para todo
+   $x,y \in \mathbb{Z}$.
+4. Si $a \mid b$ y $b \mid a$ con $a,b>0$, entonces $a=b$.
+5. Si $a \mid b$ y $b \neq 0$, entonces $|a| \le |b|$.
+
+**Demostración:** las propiedades 1 y 2 son inmediatas: si $b=am$ y $c=bn$,
+entonces $c=a(mn)$. Para la propiedad 3, escribimos $b=am_1$ y $c=am_2$; entonces
+$bx+cy=a(m_1x+m_2y)$, que es múltiplo de $a$. Para la 4: de $b=am$ y $a=bn$ se
+sigue $a=amn$, luego $mn=1$ con $m,n$ enteros positivos, así $m=n=1$ y $a=b$.
+Para la 5: si $b=ak$ con $b \neq 0$, entonces $k \neq 0$, luego $|k| \ge 1$ y
+$|b|=|a||k| \ge |a|$.
+:::
+
+## Algoritmo de la división
+
+Cuando una división no es exacta, queda un resto. Formalizar esta idea —y
+asegurar que el cociente y el resto son **únicos**— es el cimiento del algoritmo
+de Euclides y de toda la aritmética modular.
+
+::: {.callout-tip title="Teorema I.2: algoritmo de la división"}
+Dados enteros $a$ y $b>0$, existen únicos enteros $q$ (cociente) y $r$ (resto)
+tales que
 
 $$a=bq+r, \qquad 0 \le r < b.$$
 
-**Demostración:** consideremos el conjunto de números de la forma $a-bq$ que son
-no negativos. Por el principio del buen orden tiene un mínimo, que llamamos $r$.
-Si $r \ge b$, entonces $r-b$ sería un no negativo más pequeño de la misma forma,
-lo que es imposible. La unicidad se prueba comparando dos expresiones posibles.
+**Demostración:** consideremos el conjunto
+
+$$S=\{a-bq : q \in \mathbb{Z},\; a-bq \ge 0\}.$$
+
+$S$ es no vacío (tomando $q$ suficientemente negativo, $a-bq$ es positivo) y está
+formado por enteros no negativos. Por el principio del buen orden, $S$ tiene un
+mínimo $r=a-bq$. Afirmamos que $r<b$: si fuera $r \ge b$, entonces
+$a-b(q+1)=r-b \ge 0$ pertenecería a $S$ y sería menor que $r$, contradicción.
+Esto prueba la existencia.
+
+Para la unicidad, supongamos $a=bq_1+r_1=bq_2+r_2$ con $0 \le r_1,r_2 < b$.
+Restando, $b(q_1-q_2)=r_2-r_1$, de modo que $b \mid (r_2-r_1)$. Pero
+$|r_2-r_1|<b$, así que $r_2-r_1=0$, es decir $r_1=r_2$, y por tanto $q_1=q_2$.
 :::
 
-## Máximo común divisor y mínimo común múltiplo
+Los **criterios de divisibilidad** que se aprenden en el colegio (por $2$, $3$,
+$5$, $9$, $11$) son consecuencias directas de mirar el resto al dividir; los
+reencontraremos al estudiar congruencias.
+
+## Máximo común divisor y algoritmo de Euclides
+
+Entre todos los divisores comunes de dos enteros, el mayor de ellos concentra
+toda la información sobre cómo se relacionan aritméticamente. Es la cantidad más
+importante de este capítulo.
 
 ::: {.callout-note title="Definición: máximo común divisor"}
-El máximo común divisor de $a$ y $b$, denotado $\gcd(a,b)$, es el mayor entero
-positivo que divide simultáneamente a $a$ y a $b$.
+El **máximo común divisor** de $a$ y $b$ (no ambos nulos), denotado
+$\gcd(a,b)$, es el mayor entero positivo que divide simultáneamente a $a$ y a
+$b$. Cuando no haya ambigüedad usaremos la notación del libro base, $(a;b)$.
 :::
 
-El algoritmo de Euclides se basa en la observación
+::: {.callout-note title="Definición: mínimo común múltiplo"}
+El **mínimo común múltiplo** de $a$ y $b$ (ambos no nulos), denotado
+$\operatorname{mcm}(a,b)$, es el menor entero positivo que es múltiplo de $a$ y
+de $b$ a la vez.
+:::
 
-$$\gcd(a,b)=\gcd(b,r), \quad \text{si } a=bq+r.$$
+El cálculo eficiente del máximo común divisor se basa en una observación simple
+pero poderosa.
 
-::: {.callout-tip title="Identidad de Bézout"}
-Existen enteros $x,y$ tales que
+::: {.callout-tip title="Teorema I.3: lema de Euclides para el MCD"}
+Si $a=bq+r$, entonces
+
+$$\gcd(a,b)=\gcd(b,r).$$
+
+**Demostración:** sea $d=\gcd(a,b)$ y $e=\gcd(b,r)$. Como $d \mid a$ y $d \mid b$,
+de $r=a-bq$ se sigue $d \mid r$; luego $d$ es divisor común de $b$ y $r$, así
+$d \le e$. Recíprocamente, como $e \mid b$ y $e \mid r$, de $a=bq+r$ se sigue
+$e \mid a$; luego $e$ es divisor común de $a$ y $b$, así $e \le d$. Por tanto
+$d=e$.
+:::
+
+Aplicando este lema repetidamente obtenemos el **algoritmo de Euclides**: se
+divide, se reemplaza el par $(a,b)$ por $(b,r)$ y se repite hasta que el resto
+sea cero. El último resto no nulo es el máximo común divisor.
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** calcular $\gcd(1071,462)$ con el algoritmo de Euclides.
+
+**Estrategia:** aplicar el algoritmo de la división sucesivamente hasta llegar a
+resto $0$; el último resto no nulo es el MCD.
+
+**Solución:**
+
+$$
+\begin{align*}
+1071 &= 2 \cdot 462 + 147,\\
+462  &= 3 \cdot 147 + 21,\\
+147  &= 7 \cdot 21 + 0.
+\end{align*}
+$$
+
+El último resto no nulo es $21$, así que $\gcd(1071,462)=21$.
+:::
+
+El máximo común divisor y el mínimo común múltiplo están ligados por una
+identidad fundamental.
+
+::: {.callout-tip title="Teorema I.4: relación entre MCD y MCM"}
+Para enteros positivos $a$ y $b$,
+
+$$\gcd(a,b)\cdot \operatorname{mcm}(a,b)=ab.$$
+
+**Demostración:** sea $d=\gcd(a,b)$ y escribamos $a=da'$, $b=db'$ con
+$\gcd(a',b')=1$. Un múltiplo común de $a$ y $b$ debe ser múltiplo de $da'$ y de
+$db'$; como $a'$ y $b'$ son coprimos, el menor de tales múltiplos positivos es
+$da'b'$. Entonces
+
+$$\operatorname{mcm}(a,b)=da'b'=\frac{(da')(db')}{d}=\frac{ab}{d},$$
+
+de donde $d \cdot \operatorname{mcm}(a,b)=ab$.
+:::
+
+## Números coprimos e identidad de Bézout
+
+Cuando dos enteros no comparten más divisor común que el $1$, se comportan de
+forma especialmente cómoda. Este caso es tan importante que merece un nombre.
+
+::: {.callout-note title="Definición: números coprimos"}
+Dos enteros $a$ y $b$ son **coprimos** (o primos entre sí) si $\gcd(a,b)=1$.
+:::
+
+El resultado siguiente, conocido como identidad de Bézout, es probablemente la
+herramienta más utilizada en olimpiada para problemas de divisibilidad.
+
+::: {.callout-tip title="Teorema I.5: identidad de Bézout"}
+Para enteros $a,b$ no ambos nulos, existen enteros $x,y$ tales que
 
 $$ax+by=\gcd(a,b).$$
+
+Además, $\gcd(a,b)$ es el menor entero positivo que puede escribirse en la forma
+$ax+by$.
+
+**Demostración:** sea
+
+$$S=\{ax+by : x,y \in \mathbb{Z},\; ax+by>0\}.$$
+
+$S$ es no vacío (por ejemplo $a^2+b^2>0$ está en $S$). Por el principio del buen
+orden, $S$ tiene un mínimo $d=ax_0+by_0$. Veamos que $d \mid a$: por el algoritmo
+de la división, $a=dq+r$ con $0 \le r < d$; entonces
+
+$$r=a-dq=a-(ax_0+by_0)q=a(1-x_0q)+b(-y_0q),$$
+
+que es de la forma $ax+by$. Si $r>0$, sería un elemento de $S$ menor que $d$,
+contradicción; luego $r=0$ y $d \mid a$. Análogamente $d \mid b$, así que $d$ es
+divisor común. Por otro lado, todo divisor común de $a$ y $b$ divide a
+$ax_0+by_0=d$, luego $d=\gcd(a,b)$.
 :::
 
-## Números primos
+::: {.callout-tip title="Corolario I.6: lema de Euclides"}
+Si $a \mid bc$ y $\gcd(a,b)=1$, entonces $a \mid c$.
+
+**Demostración:** por Bézout existen $x,y$ con $ax+by=1$. Multiplicando por $c$,
+
+$$acx+bcy=c.$$
+
+Como $a \mid acx$ (evidente) y $a \mid bcy$ (porque $a \mid bc$), se sigue que
+$a$ divide a la suma $c$.
+:::
+
+Este corolario es la pieza clave para demostrar la unicidad de la factorización.
+
+## Números primos y Teorema Fundamental de la Aritmética
+
+Los números primos son los "ladrillos" con que se construyen todos los enteros.
+Entender su comportamiento es entender la aritmética entera.
 
 ::: {.callout-note title="Definición: número primo"}
-Un entero $p>1$ es **primo** si sus únicos divisores positivos son $1$ y $p$.
-Si un entero mayor que $1$ no es primo, se llama **compuesto**.
+Un entero $p>1$ es **primo** si sus únicos divisores positivos son $1$ y $p$. Un
+entero mayor que $1$ que no es primo se llama **compuesto**.
 :::
 
-::: {.callout-tip title="Teorema: infinitud de los primos"}
+::: {.callout-tip title="Teorema I.7: infinitud de los primos (Euclides)"}
 Existen infinitos números primos.
 
-**Demostración:** si existieran solo finitos primos $p_1,\dots,p_n$, entonces
+**Demostración:** supongamos, por reducción al absurdo, que solo hubiera
+finitos primos $p_1,p_2,\dots,p_n$. Consideremos
 
-$$N=p_1p_2\cdots p_n+1$$
+$$N=p_1p_2\cdots p_n+1.$$
 
-no sería divisible por ninguno de ellos, contradicción.
+Como $N>1$, tiene al menos un divisor primo $p$. Pero $p$ debe ser alguno de los
+$p_i$, y entonces $p \mid N$ y $p \mid p_1\cdots p_n$, de donde
+$p \mid (N-p_1\cdots p_n)=1$, lo cual es imposible. La contradicción muestra que
+los primos son infinitos.
 :::
 
-::: {.callout-tip title="Teorema fundamental de la aritmética"}
-Todo entero $n>1$ puede expresarse de manera única, salvo orden, como producto
-de primos.
+::: {.callout-tip title="Teorema I.8: Teorema Fundamental de la Aritmética"}
+Todo entero $n>1$ se expresa de manera **única**, salvo el orden de los factores,
+como producto de primos:
+
+$$n=p_1^{\alpha_1}p_2^{\alpha_2}\cdots p_k^{\alpha_k}.$$
+
+**Demostración:** la *existencia* se prueba por inducción fuerte. Si $n$ es
+primo, ya está. Si es compuesto, $n=ab$ con $1<a,b<n$; por hipótesis inductiva
+$a$ y $b$ son productos de primos, y por tanto $n$ también.
+
+Para la *unicidad*, supongamos dos factorizaciones de $n$ en primos. Tomemos un
+primo $p$ de la primera. Como $p \mid n$, $p$ divide al producto de los primos de
+la segunda factorización; por el lema de Euclides (Corolario I.6, aplicado
+repetidamente), $p$ divide a alguno de esos primos, y al ser ambos primos,
+coincide con él. Cancelamos ese factor en ambos lados y repetimos. Concluimos
+que las dos factorizaciones tienen exactamente los mismos primos con los mismos
+exponentes.
 :::
 
-## Congruencias
+Una consecuencia útil: si $n=p_1^{\alpha_1}\cdots p_k^{\alpha_k}$ y
+$m=p_1^{\beta_1}\cdots p_k^{\beta_k}$ (admitiendo exponentes nulos), entonces
+
+$$\gcd(n,m)=\prod_i p_i^{\min(\alpha_i,\beta_i)}, \qquad
+\operatorname{mcm}(n,m)=\prod_i p_i^{\max(\alpha_i,\beta_i)}.$$
+
+## Congruencias y aritmética modular
+
+Muchas veces no nos interesa el valor exacto de un número, sino solo su resto al
+dividir por cierto módulo. Las congruencias, introducidas por Gauss, son el
+lenguaje preciso para hablar de esto.
 
 ::: {.callout-note title="Definición: congruencia módulo $n$"}
-Sean $a,b \in \mathbb{Z}$ y $n \ge 2$. Decimos que
+Sean $a,b \in \mathbb{Z}$ y $n \ge 2$. Decimos que $a$ es **congruente** con $b$
+módulo $n$, y escribimos
 
-$$a \equiv b \pmod{n}$$
+$$a \equiv b \pmod{n},$$
 
-si $n \mid (a-b)$.
+si $n \mid (a-b)$; equivalentemente, si $a$ y $b$ dejan el mismo resto al dividir
+por $n$.
 :::
 
-Las congruencias respetan suma, resta y producto.
+::: {.callout-tip title="Teorema I.9: propiedades de las congruencias"}
+Las congruencias módulo $n$ forman una relación de equivalencia y son
+compatibles con las operaciones. Si $a \equiv b \pmod{n}$ y
+$c \equiv d \pmod{n}$, entonces:
 
-::: {.callout-tip title="Teorema: inverso modular"}
-El entero $a$ tiene inverso módulo $n$ si y solo si $\gcd(a,n)=1$.
+1. $a+c \equiv b+d \pmod{n}$,
+2. $a-c \equiv b-d \pmod{n}$,
+3. $ac \equiv bd \pmod{n}$,
+4. $a^m \equiv b^m \pmod{n}$ para todo $m \ge 1$.
 
-**Demostración:** si $\gcd(a,n)=1$, por Bézout existen $x,y$ tales que
-$ax+ny=1$. Reduciendo módulo $n$ obtenemos $ax \equiv 1 \pmod{n}$.
+**Demostración:** por hipótesis $n \mid (a-b)$ y $n \mid (c-d)$. Para la suma,
+$(a+c)-(b+d)=(a-b)+(c-d)$ es múltiplo de $n$. Para el producto,
+
+$$ac-bd=ac-bc+bc-bd=c(a-b)+b(c-d),$$
+
+que es múltiplo de $n$. Las propiedades 2 y 4 se siguen de las anteriores (la 4
+por inducción sobre $m$).
+:::
+
+Una advertencia importante: **no siempre se puede cancelar**. De
+$ac \equiv bc \pmod{n}$ solo podemos deducir $a \equiv b \pmod{n}$ cuando
+$\gcd(c,n)=1$. Esto motiva la noción de inverso.
+
+::: {.callout-tip title="Teorema I.10: inverso modular"}
+El entero $a$ tiene inverso módulo $n$ (esto es, existe $x$ con
+$ax \equiv 1 \pmod{n}$) si y solo si $\gcd(a,n)=1$.
+
+**Demostración:** si $\gcd(a,n)=1$, por Bézout existen $x,y$ con $ax+ny=1$;
+reduciendo módulo $n$ obtenemos $ax \equiv 1 \pmod{n}$. Recíprocamente, si
+$ax \equiv 1 \pmod{n}$, entonces $ax-1=ny$ para algún $y$, es decir
+$ax-ny=1$; todo divisor común de $a$ y $n$ divide a $1$, luego $\gcd(a,n)=1$.
+:::
+
+## Pequeño Teorema de Fermat y Teorema de Wilson
+
+Dos resultados clásicos describen el comportamiento de las potencias y los
+factoriales módulo un primo. Son armas frecuentes en problemas de competencia.
+
+::: {.callout-tip title="Teorema I.11: Pequeño Teorema de Fermat"}
+Si $p$ es primo y $p \nmid a$, entonces
+
+$$a^{p-1} \equiv 1 \pmod{p}.$$
+
+En general, para todo entero $a$, $a^{p} \equiv a \pmod{p}$.
+
+**Demostración:** consideremos los múltiplos $a,2a,3a,\dots,(p-1)a$ módulo $p$.
+Como $\gcd(a,p)=1$, ninguno es $\equiv 0$, y dos de ellos no pueden ser
+congruentes entre sí (si $ia \equiv ja \pmod p$ con $0<i<j<p$, al cancelar $a$
+resultaría $i \equiv j$, imposible). Por tanto $\{a,2a,\dots,(p-1)a\}$ es, módulo
+$p$, una reordenación de $\{1,2,\dots,p-1\}$. Multiplicando todos,
+
+$$a^{p-1}(p-1)! \equiv (p-1)! \pmod{p}.$$
+
+Como $\gcd((p-1)!,p)=1$, cancelamos $(p-1)!$ y obtenemos
+$a^{p-1} \equiv 1 \pmod{p}$.
+:::
+
+::: {.callout-tip title="Teorema I.12: Teorema de Wilson"}
+Un entero $p>1$ es primo si y solo si
+
+$$(p-1)! \equiv -1 \pmod{p}.$$
+
+**Demostración (de la implicación principal):** sea $p$ primo. Para cada
+$a \in \{1,\dots,p-1\}$ existe un único inverso $a^{-1}$ en ese conjunto. Los
+únicos elementos que son su propio inverso son los que cumplen
+$a^2 \equiv 1 \pmod p$, es decir $a \equiv 1$ o $a \equiv p-1$. Los demás
+$p-3$ elementos se emparejan en pares $\{a,a^{-1}\}$ cuyo producto es
+$\equiv 1$. Por tanto
+
+$$(p-1)! \equiv 1 \cdot (p-1) \cdot 1 \equiv -1 \pmod{p}.$$
 :::
 
 ## Ecuaciones diofánticas lineales
 
-::: {.callout-note title="Teorema: ecuación $ax+by=c$"}
-La ecuación lineal
+Las ecuaciones diofánticas piden soluciones **enteras**. El caso lineal en dos
+variables se resuelve por completo gracias a Bézout.
+
+::: {.callout-tip title="Teorema I.13: ecuación $ax+by=c$"}
+Sean $a,b,c \in \mathbb{Z}$ con $a,b$ no ambos nulos, y $d=\gcd(a,b)$. La
+ecuación
 
 $$ax+by=c$$
 
-tiene solución entera si y solo si $\gcd(a,b) \mid c$.
-:::
-
-Si $(x_0,y_0)$ es una solución particular y $d=\gcd(a,b)$, entonces todas las
-soluciones están dadas por
+tiene soluciones enteras si y solo si $d \mid c$. En tal caso, si $(x_0,y_0)$ es
+una solución particular, todas las soluciones son
 
 $$x=x_0+\frac{b}{d}t, \qquad y=y_0-\frac{a}{d}t, \qquad t \in \mathbb{Z}.$$
 
-## Funciones aritméticas
-
-::: {.callout-note title="Definición: funciones aritméticas"}
-Una función aritmética es una aplicación definida sobre $\mathbb{N}$ y con valores
-numéricos, como $\tau(n)$ o $\varphi(n)$.
+**Demostración:** como todo valor de $ax+by$ es múltiplo de $d$, si hay solución
+entonces $d \mid c$. Recíprocamente, si $d \mid c$, por Bézout existen $x_1,y_1$
+con $ax_1+by_1=d$; multiplicando por $c/d$ obtenemos una solución particular. Si
+$(x,y)$ y $(x_0,y_0)$ son soluciones, restando se tiene $a(x-x_0)=-b(y-y_0)$;
+dividiendo por $d$ y usando $\gcd(a/d,b/d)=1$ con el lema de Euclides, se llega a
+la forma general indicada.
 :::
 
-Si
+## Funciones aritméticas
 
-$$n=p_1^{\alpha_1}p_2^{\alpha_2}\cdots p_k^{\alpha_k},$$
+Asociar a cada entero un número que mida alguna de sus propiedades (cuántos
+divisores tiene, cuánto suman, cuántos enteros le son coprimos) da lugar a las
+funciones aritméticas, omnipresentes en olimpiada.
 
-entonces
+::: {.callout-note title="Definición: funciones aritméticas $\tau$, $\sigma$ y $\varphi$"}
+Sea $n \ge 1$ un entero.
 
-$$\tau(n)=(\alpha_1+1)(\alpha_2+1)\cdots(\alpha_k+1).$$
+- $\tau(n)$ es el número de divisores positivos de $n$.
+- $\sigma(n)$ es la suma de los divisores positivos de $n$.
+- $\varphi(n)$, la **función de Euler**, es la cantidad de enteros en
+  $\{1,2,\dots,n\}$ que son coprimos con $n$.
+:::
+
+A partir de la factorización $n=p_1^{\alpha_1}\cdots p_k^{\alpha_k}$, estas
+funciones se calculan explícitamente.
+
+::: {.callout-tip title="Teorema I.14: fórmulas para $\tau$, $\sigma$ y $\varphi$"}
+Si $n=p_1^{\alpha_1}p_2^{\alpha_2}\cdots p_k^{\alpha_k}$, entonces
+
+$$
+\begin{align*}
+\tau(n)    &= (\alpha_1+1)(\alpha_2+1)\cdots(\alpha_k+1),\\[2pt]
+\sigma(n)  &= \prod_{i=1}^{k}\frac{p_i^{\alpha_i+1}-1}{p_i-1},\\[2pt]
+\varphi(n) &= n\prod_{i=1}^{k}\left(1-\frac{1}{p_i}\right)
+            = \prod_{i=1}^{k} p_i^{\alpha_i-1}(p_i-1).
+\end{align*}
+$$
+
+**Demostración (de $\tau$):** un divisor de $n$ tiene la forma
+$p_1^{e_1}\cdots p_k^{e_k}$ con $0 \le e_i \le \alpha_i$. Hay $\alpha_i+1$
+opciones para cada exponente $e_i$, y por la regla del producto el total de
+divisores es $\prod_i(\alpha_i+1)$. Las fórmulas de $\sigma$ y $\varphi$ se
+obtienen de manera análoga usando que las tres funciones son **multiplicativas**:
+si $\gcd(m,n)=1$, entonces $f(mn)=f(m)f(n)$.
+:::
+
+::: {.callout-tip title="Teorema I.15: Teorema de Euler"}
+Si $\gcd(a,n)=1$, entonces
+
+$$a^{\varphi(n)} \equiv 1 \pmod{n}.$$
+
+Este resultado generaliza el Pequeño Teorema de Fermat, que corresponde al caso
+$n=p$ primo, donde $\varphi(p)=p-1$.
+
+**Demostración:** sean $r_1,\dots,r_{\varphi(n)}$ los enteros entre $1$ y $n$
+coprimos con $n$. Como $\gcd(a,n)=1$, los productos $ar_1,\dots,ar_{\varphi(n)}$
+son, módulo $n$, una reordenación de los mismos $r_i$. Multiplicando todos,
+
+$$a^{\varphi(n)}\prod_i r_i \equiv \prod_i r_i \pmod{n};$$
+
+como $\prod_i r_i$ es coprimo con $n$, lo cancelamos y queda
+$a^{\varphi(n)} \equiv 1 \pmod{n}$.
+:::
+
+## Ejercicios propuestos
+
+1. **(⭐)** Determina todos los divisores positivos de $84$ y verifica que su
+   cantidad coincide con $\tau(84)$.
+2. **(⭐)** Calcula $\gcd(252,198)$ y $\operatorname{mcm}(252,198)$, y comprueba
+   que su producto es $252 \cdot 198$.
+3. **(⭐⭐)** Halla enteros $x,y$ tales que $252x+198y=\gcd(252,198)$.
+4. **(⭐⭐)** Demuestra que para todo entero $n$, el número $n^3-n$ es divisible
+   por $6$.
+5. **(⭐⭐)** Encuentra el resto de $2^{1000}$ al dividir por $13$ usando el
+   Pequeño Teorema de Fermat.
+6. **(⭐⭐⭐)** Demuestra que si $p$ es primo y $p \nmid a$, entonces
+   $a^{p^2} \equiv a^{p} \pmod{p}$.
+7. **(⭐⭐⭐)** Prueba que $\varphi(n)$ es par para todo $n>2$.
+
+## Referencias del capítulo
+
+- **Somachi (1994). *Matemática y Olimpíadas*, Cap. I.** Libro base del
+  repositorio; presenta la divisibilidad, el algoritmo de Euclides, las
+  congruencias y las funciones aritméticas con enfoque olímpico chileno.
+- **Hardy, G. H. & Wright, E. M. (2008). *An Introduction to the Theory of
+  Numbers* (6ª ed.). Oxford University Press.** Tratado clásico y exhaustivo;
+  excelente para profundizar en primos y funciones aritméticas (Caps. 1–5).
+- **Niven, I.; Zuckerman, H. S. & Montgomery, H. L. (1991). *An Introduction to
+  the Theory of Numbers* (5ª ed.). Wiley.** Texto introductorio muy claro;
+  buen tratamiento de congruencias y la función $\varphi$ (Cap. 2).
+- **Engel, A. (1998). *Problem Solving Strategies*. Springer.** Clásico
+  olímpico; el capítulo de teoría de números reúne técnicas y problemas de
+  competencia con sus soluciones.
+- **Andreescu, T. & Gelca, R. (2009). *Mathematical Olympiad Challenges*
+  (2ª ed.). Birkhäuser.** Amplia colección de problemas de divisibilidad,
+  congruencias y diofánticas con dificultad creciente.

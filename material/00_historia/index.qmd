@@ -9,25 +9,108 @@ matemáticas a nivel mundial y nacional. Antes de entrar en la teoría y los pro
 es fundamental entender de dónde vienen estas olimpiadas, qué representan y cómo
 Chile participa en ellas.
 
-## Contenidos
+Las matemáticas de competencia no son una versión "más difícil" de las matemáticas
+del colegio: son una invitación a pensar distinto. En vez de aplicar fórmulas
+conocidas a ejercicios rutinarios, se trata de enfrentar problemas cuya solución
+no es evidente y que exigen creatividad, perseverancia y una idea ingeniosa. Esa
+es exactamente la habilidad que las olimpiadas buscan cultivar.
+
+## ¿Qué son las olimpiadas matemáticas?
+
+Una **olimpiada matemática** es una competencia individual en la que los participantes
+resuelven, en un tiempo limitado, un conjunto reducido de problemas de gran dificultad.
+A diferencia de una prueba escolar:
+
+- Los problemas son **pocos** (entre 3 y 6), pero cada uno puede tomar una hora o más.
+- No se evalúa la velocidad de cálculo, sino la **calidad del razonamiento**.
+- Se exige una **demostración completa y rigurosa**, no solo la respuesta final.
+- No se permite calculadora: las herramientas son el lápiz, el papel y las ideas.
+
+Los temas clásicos de olimpiada se agrupan en cuatro grandes áreas: **teoría de
+números**, **combinatoria**, **geometría** y **álgebra** (incluyendo desigualdades
+y ecuaciones funcionales). Estos cuatro pilares estructuran la mayoría de las
+competencias del mundo, desde el nivel escolar hasta la Olimpiada Internacional.
+
+::: {.callout-tip title="📖 El origen de las olimpiadas"}
+Las primeras competencias matemáticas escolares organizadas se remontan a fines
+del siglo XIX. La **Competencia Eötvös**, en Hungría, comenzó en 1894 y suele
+citarse como precursora directa del modelo olímpico moderno. Hungría desarrolló una
+fuerte tradición de competencias matemáticas que influyó decisivamente en la creación
+de la Olimpiada Internacional de Matemáticas (IMO) en 1959.
+:::
+
+## ¿Para quién es este material?
+
+Este sitio está pensado para tres tipos de lectores:
+
+- **Estudiantes de enseñanza media** que quieren prepararse para la OMC, la
+  Iberoamericana o, eventualmente, la IMO.
+- **Profesores guía** que acompañan a sus estudiantes y buscan material organizado
+  para sus talleres y círculos matemáticos.
+- **Preparadores olímpicos** que necesitan una referencia en español, alineada con
+  el currículo chileno y con el libro base del proyecto.
+
+No se requiere un talento extraordinario para empezar: se requiere **curiosidad y
+constancia**. La preparación olímpica es, ante todo, un hábito de estudio.
+
+## ¿Cómo estudiar este material?
+
+La preparación olímpica recompensa la práctica deliberada por sobre la lectura pasiva.
+Recomendamos:
+
+1. **Lee la teoría con lápiz en mano.** Reproduce las demostraciones por tu cuenta
+   antes de mirar la solución completa.
+2. **Intenta cada problema antes de ver la solución.** Dedícale al menos 20–30
+   minutos de esfuerzo honesto. El valor está en el intento, no en la respuesta.
+3. **Estudia las soluciones que ya resolviste.** Compara tu enfoque con el propuesto:
+   muchas veces hay caminos distintos igual de válidos.
+4. **Lleva un cuaderno de ideas.** Anota las técnicas recurrentes (principio del
+   palomar, descenso infinito, invariantes) para reconocerlas más rápido.
+5. **Practica con regularidad.** Es mejor media hora diaria que cinco horas un solo
+   día a la semana.
+
+::: {.callout-tip title="📖 Un consejo de los grandes"}
+Una idea repetida por entrenadores olímpicos de todo el mundo es que **equivocarse
+es parte del método**. Un problema que no logras resolver, pero al que dedicaste
+esfuerzo real, te enseña más que diez ejercicios mecánicos. La frustración productiva
+es el motor del aprendizaje matemático.
+:::
+
+## Contenidos del libro base
+
+Este sitio se organiza siguiendo los cinco capítulos temáticos del libro
+*Matemática y Olimpíadas* (Somachi, Santiago 1994), complementados con material
+adicional y problemas resueltos. La siguiente tabla resume las secciones del libro
+y los capítulos correspondientes de este sitio:
+
+| Capítulo del libro | Tema | Contenidos principales |
+|---|---|---|
+| Capítulo I | **Teoría de Números** | Divisibilidad, MCD/MCM, primos, congruencias, ecuaciones diofánticas |
+| Capítulo II | **Inducción Matemática** | Inducción débil y fuerte, progresiones, principio del buen orden |
+| Capítulo III | **Combinatoria** | Principio del palomar, conteo, permutaciones, binomio de Newton |
+| Capítulo IV | **Análisis** | Racionales e irracionales, reales, series, desigualdades |
+| Capítulo V | **Geometría** | Triángulos, circunferencia, puntos notables, teoremas clásicos |
+| Capítulos VI–VIII | **Problemas** | Problemas resueltos y propuestos, mixtos por área |
+
+## Secciones de este capítulo
 
 | Sección | Tema |
 |---|---|
 | [La IMO y otras competencias](01_mundial.qmd) | Historia de la Olimpiada Internacional de Matemáticas desde 1959, la Putnam y la Iberoamericana |
 | [La OMC en Chile](02_chile.qmd) | La Olimpiada Nacional de Matemáticas: Somachi, historia y organización actual |
-| [Medallistas chilenos](03_medallistas.qmd) | Participantes y medallistas chilenos destacados en la IMO |
+| [Medallistas chilenos](03_medallistas.qmd) | Participación de Chile en la IMO y la Iberoamericana, y qué significan las medallas |
 
 ## ¿Por qué estudiar historia?
 
 Conocer la historia de las olimpiadas te ayuda a:
 
-- Entender el nivel de dificultad esperado en cada competencia
-- Conocer los tipos de problemas que se han pedido históricamente
-- Encontrar motivación en los logros de otros estudiantes chilenos
-- Conectar los temas matemáticos con su desarrollo histórico
+- Entender el nivel de dificultad esperado en cada competencia.
+- Conocer los tipos de problemas que se han pedido históricamente.
+- Encontrar motivación en la trayectoria de otros estudiantes chilenos.
+- Conectar los temas matemáticos con su desarrollo histórico y humano.
 
 ::: {.callout-note title="Libro base"}
 Este capítulo es una introducción propia, no tiene correspondencia directa con el
-libro *Matemática y Olimpíadas* (Somachi, 1994). Los capítulos siguientes sí siguen
-fielmente el contenido del libro.
+libro *Matemática y Olimpíadas* (Somachi, Santiago 1994). Los capítulos siguientes sí
+siguen fielmente el contenido del libro.
 :::

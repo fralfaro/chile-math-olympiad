@@ -6,19 +6,61 @@ title: "Capítulo V: Geometría"
 
 La geometría olímpica exige mirar con precisión una figura y traducir esa mirada
 en relaciones métricas o angulares. Es una disciplina visual, pero también muy
-formal.
+formal: cada afirmación debe poder justificarse con un teorema, una congruencia o
+una cuenta exacta. Quien aprende a "ver" una circunferencia escondida, un
+cuadrilátero cíclico o tres rectas que se cortan en un punto, ya tiene gran parte
+del camino recorrido.
+
+Este capítulo sigue de cerca el Capítulo V de *Matemática y Olimpíadas* (Somachi,
+1994), donde la geometría se presenta como un repertorio de herramientas
+clásicas que, bien combinadas, resuelven configuraciones aparentemente
+inabordables. Partimos de lo elemental —ángulos, congruencia y semejanza— y
+ascendemos hasta resultados que articulan toda la teoría: las rectas de Euler y de
+Simson, la circunferencia de los nueve puntos y los grandes teoremas de
+concurrencia y colinealidad.
 
 ## Objetivos del capítulo
 
-- Recordar conceptos básicos de triángulos y circunferencias.
-- Estudiar centros notables y teoremas clásicos.
-- Aplicar Ceva, Menelao y Ptolomeo.
-- Resolver configuraciones elementales con argumentos limpios.
+- Dominar los conceptos básicos: ángulos, criterios de congruencia y semejanza.
+- Aplicar con soltura los teoremas clásicos de Pitágoras y de Tales (Thales).
+- Manejar la circunferencia: ángulo inscrito, ángulo central y cuadriláteros
+  cíclicos.
+- Conocer los puntos notables del triángulo —baricentro, incentro, circuncentro,
+  ortocentro, excentros— y sus circunferencias asociadas.
+- Aplicar los teoremas de Ptolomeo, Carnot, Ceva y Menelao.
+- Reconocer las configuraciones avanzadas: circunferencia de los nueve puntos,
+  recta de Euler y recta de Simson.
+
+## Subtemas
+
+| Tema | Idea central |
+|---|---|
+| Conceptos básicos | Ángulos, congruencia, semejanza |
+| Teoremas clásicos | Pitágoras, Tales (Thales) |
+| Circunferencia | Ángulo inscrito y central, cíclicos |
+| Puntos notables | Baricentro, incentro, circuncentro, ortocentro, excentros |
+| Concurrencia y colinealidad | Ceva, Menelao, Carnot |
+| Cuadriláteros cíclicos | Ptolomeo |
+| Configuraciones avanzadas | Nueve puntos, recta de Euler, recta de Simson |
+
+## Prerrequisitos
+
+- Geometría elemental de la enseñanza media: ángulos, paralelas, triángulos.
+- Manejo algebraico de proporciones y razones (Capítulo IV de este material).
+- Nociones básicas de trigonometría (seno, coseno) para algunos teoremas.
+- Lectura cómoda de demostraciones encadenadas.
 
 ## Contenidos
 
 | Sección | Enfoque |
 |---|---|
 | [Teoría](01_teoria.qmd) | Resultados fundamentales del capítulo |
-| [Ejemplos](02_ejemplos.qmd) | Aplicaciones guiadas |
+| [Ejemplos](02_ejemplos.qmd) | Aplicaciones guiadas paso a paso |
 | [Problemas](03_problemas.qmd) | Práctica con soluciones colapsadas |
+
+::: {.callout-tip title="📖 Sobre el libro base"}
+El desarrollo de este capítulo está basado en el Capítulo V de *Matemática y
+Olimpíadas* (Sociedad de Matemáticas de Chile, Somachi, 1994), complementado con
+referencias clásicas de geometría olímpica que se listan al final de la sección
+de teoría.
+:::

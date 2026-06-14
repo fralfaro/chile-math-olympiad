@@ -1,8 +1,164 @@
 ---
 title: "Problemas Propuestos"
-format: revealjs
 ---
 
-## Placeholder
+# Bienvenida al desafío
 
-Presentación pendiente para problemas propuestos.
+## Problemas para resolver solo
+
+A diferencia de los capítulos anteriores, **estos problemas no traen solución**.
+
+La idea es que los uses para:
+
+- practicar y equivocarte sin red de seguridad,
+- volver a intentar y consolidar técnicas,
+- entrenar exactamente lo que enfrentarás en competencia.
+
+> Un problema pensado a fondo, aunque "fallado", enseña más que diez resueltos de memoria.
+
+## Los niveles de dificultad
+
+Cada problema lleva un indicador de nivel:
+
+- ⭐ &nbsp; **Calentamiento** — aplica directo una definición o un resultado.
+- ⭐⭐ &nbsp; **Intermedio** — combina dos ideas o un razonamiento no inmediato.
+- ⭐⭐⭐ &nbsp; **Olímpico** — nivel regional o nacional.
+- 🏆 &nbsp; **Desafío** — nivel IMO o Iberoamericana.
+
+Te recomendamos **no saltar** a los más difíciles: el calentamiento construye la intuición que luego necesitarás.
+
+# Nivel ⭐ — Calentamiento
+
+## ⭐ Primeros pasos
+
+1. **(Números)** Probar que la suma de tres enteros consecutivos es siempre múltiplo de $3$.
+
+2. **(Números)** Hallar todas las parejas de enteros positivos $(x, y)$ tales que $xy = 2x + 3y$.
+
+3. **(Combinatoria)** Demostrar que en cualquier grupo de $5$ enteros siempre hay dos con la misma paridad.
+
+## ⭐ Más calentamiento
+
+1. **(Análisis)** Convertir el decimal periódico $0,\overline{54}$ en una fracción irreducible.
+
+2. **(Geometría)** En un triángulo isósceles, probar que la altura trazada a la base es también mediana y bisectriz de ese vértice.
+
+3. **(Números)** Determinar el resto de dividir $7^{100}$ por $5$.
+
+# Nivel ⭐⭐ — Intermedio
+
+## ⭐⭐ Combinando ideas
+
+1. **(Números)** Demostrar que el producto de cuatro enteros consecutivos, aumentado en $1$, es un cuadrado perfecto.
+
+2. **(Inducción)** Probar que $n^3 - n$ es divisible por $6$ para todo $n \in \mathbb{N}$.
+
+3. **(Combinatoria)** ¿De cuántas maneras se pueden distribuir $10$ caramelos idénticos entre $4$ niños, si cada uno puede recibir cero o más?
+
+## ⭐⭐ Un paso más
+
+1. **(Análisis)** Demostrar que $\sqrt{2} + \sqrt{3}$ es irracional.
+
+2. **(Geometría)** En el triángulo $ABC$, sea $M$ el punto medio de $BC$. Probar que
+$$AB^2 + AC^2 = 2\,AM^2 + \tfrac{1}{2}\,BC^2.$$
+
+3. **(Números)** Hallar todos los enteros positivos $n$ tales que $n + 1$ divide a $n^2 + 1$.
+
+# Nivel ⭐⭐⭐ — Olímpico
+
+## ⭐⭐⭐ Nivel nacional
+
+1. **(Números)** Determinar todos los enteros positivos $n$ tales que $2^n + 1$ es divisible por $3$.
+
+2. **(Combinatoria)** En un torneo de $n$ jugadores cada par juega una partida (sin empates). Probar que existe un jugador $J$ tal que todo otro jugador perdió contra $J$, o perdió contra alguien que perdió contra $J$.
+
+3. **(Geometría)** Sea $ABC$ un triángulo con $D$, $E$, $F$ los pies de las alturas. Probar que $AD$, $BE$, $CF$ concurren en un punto (el ortocentro).
+
+## ⭐⭐⭐ Olímpico fino
+
+1. **(Análisis)** Para reales positivos $a_1, \ldots, a_n$, demostrar la desigualdad AM-GM
+$$\frac{a_1 + \cdots + a_n}{n} \geq \sqrt[n]{a_1 \cdots a_n},$$
+y determinar cuándo se alcanza la igualdad.
+
+2. **(Números)** Probar que los números de Fermat $F_n = 2^{2^n} + 1$ y $F_m$ son coprimos siempre que $m \neq n$.
+
+3. **(Números)** Hallar todas las soluciones enteras positivas de $x^2 - y^2 = 2024$.
+
+# Nivel 🏆 — Desafío
+
+## 🏆 Nivel IMO / Ibero
+
+1. **(Números)** Determinar todos los pares de enteros positivos $(a, b)$ con $a \neq b$ tales que $a^b = b^a$.
+
+2. **(Geometría)** Sea $ABC$ un triángulo con incentro $I$. La recta $AI$ corta de nuevo a la circunferencia circunscrita en $M$. Probar que
+$$MB = MC = MI.$$
+
+3. **(Desigualdades)** Para reales positivos $a, b, c$ con $a + b + c = 3$, demostrar que
+$$\frac{a}{b+c} + \frac{b}{c+a} + \frac{c}{a+b} \geq \frac{3}{2}.$$
+
+## 🏆 El último escalón
+
+1. **(Combinatoria)** Sea $S$ un conjunto de $n \geq 2$ puntos del plano, no todos colineales. Probar que existe una recta que pasa exactamente por dos puntos de $S$ (Sylvester–Gallai).
+
+2. **(Números)** Sea $p$ un primo impar. Probar que
+$$1^{p-1} + 2^{p-1} + \cdots + (p-1)^{p-1} \equiv -1 \pmod{p}.$$
+
+3. **(Funcional)** Hallar todas las funciones $f : \mathbb{R} \to \mathbb{R}$ tales que para todos $x, y$:
+$$f(x+y) = f(x) + f(y) \quad \text{y} \quad f(xy) = f(x)\,f(y).$$
+
+# Fáciles de enunciar, difíciles de resolver
+
+## La matemática está viva
+
+Los siguientes **no** son ejercicios de práctica: son problemas cuyo enunciado se entiende con conocimientos elementales, pero cuya resolución ha desafiado a las mejores mentes de la historia.
+
+Varios siguen **abiertos** hoy. Están aquí para mostrarte que detrás de enunciados simples se esconden océanos de profundidad.
+
+> ¡Disfruta su belleza, pero no te frustres si no salen!
+
+## 📖 Conjetura de Collatz ($3n+1$)
+
+Toma cualquier entero positivo $n$. Si es par, divídelo por $2$; si es impar, reemplázalo por $3n + 1$. Repite.
+
+La conjetura afirma que, partiendo de **cualquier** número, la sucesión llega al $1$.
+
+Por ejemplo, desde $6$:
+$$6 \to 3 \to 10 \to 5 \to 16 \to 8 \to 4 \to 2 \to 1.$$
+
+**Estatus:** abierto. Propuesta por Lothar Collatz en 1937; verificada por computadora para números enormes, pero sin demostración general.
+
+## 📖 Conjetura de Goldbach
+
+Todo número entero par mayor que $2$ se puede escribir como suma de **dos primos**.
+
+Por ejemplo:
+$$4 = 2 + 2, \quad 10 = 3 + 7, \quad 28 = 5 + 23.$$
+
+**Estatus:** abierto. Formulada por Christian Goldbach en una carta a Euler en 1742; verificada computacionalmente para números muy grandes, pero sin demostración general.
+
+## 📖 Primos gemelos
+
+Los *primos gemelos* difieren en $2$, como $(3,5)$, $(11,13)$ o $(17,19)$.
+
+La conjetura afirma que existen **infinitos** pares de primos gemelos.
+
+**Estatus:** abierto. En 2013, Yitang Zhang probó que hay infinitos pares de primos a distancia acotada; el proyecto Polymath redujo esa cota a $246$, pero el caso de la diferencia $2$ sigue sin resolverse.
+
+## 📖 Números perfectos impares
+
+Un número es *perfecto* si es igual a la suma de sus divisores propios:
+$$6 = 1 + 2 + 3, \qquad 28 = 1 + 2 + 4 + 7 + 14.$$
+
+Todos los perfectos conocidos son **pares**. ¿Existe alguno **impar**?
+
+**Estatus:** abierto. No se conoce ninguno; se ha probado que, de existir, debe superar $10^{1500}$, pero no se ha demostrado que sea imposible.
+
+# Cierre
+
+## Atrévete a intentarlo
+
+- La práctica real es **resolver sin solución a la vista**: equivocarse es parte del camino.
+- Sube de nivel poco a poco: el calentamiento construye la intuición del desafío.
+- Las grandes conjeturas nos recuerdan que la matemática **sigue viva** y espera nuevas ideas.
+
+> El próximo problema abierto podría empezar con una pregunta tuya. ¡A trabajar!

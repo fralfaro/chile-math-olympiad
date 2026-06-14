@@ -1,72 +1,341 @@
 ---
 title: "Teoría: progresiones e inducción"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
 ---
 
-## Progresiones aritméticas
+## Introducción
 
-::: {.callout-note title="Definición: progresión aritmética"}
-Una sucesión $(a_n)$ es aritmética si existe una constante $d$ tal que
+Muchas afirmaciones matemáticas tienen la forma "para todo número natural $n$,
+ocurre $P(n)$". No podemos verificarlas una por una porque los naturales son
+infinitos. La **inducción matemática** resuelve este problema: nos permite
+demostrar infinitas afirmaciones con un argumento finito. En esta sección
+partimos de la base lógica —el Principio del Buen Orden— y construimos sobre
+ella el principio de inducción y sus variantes, para luego aplicarlos a
+progresiones y a la sucesión de Fibonacci.
 
-$$a_{n+1}=a_n+d.$$
+## Conceptos previos
 
-Entonces
+- Notación de sumatoria: $\sum_{k=1}^{n} a_k = a_1 + a_2 + \cdots + a_n$.
+- Divisibilidad: $a \mid b$ significa que existe $c \in \mathbb{Z}$ con $b = ac$.
+- Manipulación algebraica de fracciones y factorización.
 
-$$a_n=a_1+(n-1)d.$$
+## Principio del Buen Orden
+
+Todo el edificio de la inducción descansa sobre una propiedad aparentemente
+modesta de los números naturales: no se puede "descender" infinitamente dentro
+de $\mathbb{N}$.
+
+::: {.callout-note title="Definición: Principio del Buen Orden (PBO)"}
+Todo subconjunto **no vacío** $S \subseteq \mathbb{N}$ posee un elemento
+mínimo; es decir, existe $m \in S$ tal que $m \le s$ para todo $s \in S$.
 :::
 
-La suma de los primeros $n$ términos es
+El PBO se toma como axioma de los naturales (o se deduce de los axiomas de
+Peano). De él se desprenden tanto la inducción débil como la fuerte, lo que
+muestra que todos estos principios son, en el fondo, equivalentes.
 
-$$S_n=\frac{n(a_1+a_n)}{2}.$$
+::: {.callout-tip title="Teorema: el PBO implica la inducción"}
+Si $P(n_0)$ es verdadera y $P(k) \Rightarrow P(k+1)$ para todo $k \ge n_0$,
+entonces $P(n)$ es verdadera para todo $n \ge n_0$.
 
-## Progresiones geométricas
-
-::: {.callout-note title="Definición: progresión geométrica"}
-Una sucesión $(g_n)$ es geométrica si existe una constante $r$ tal que
-
-$$g_{n+1}=rg_n.$$
-
-Entonces
-
-$$g_n=g_1r^{n-1}.$$
+**Demostración:** Supongamos, por contradicción, que el conjunto
+$$S = \{\, n \ge n_0 : P(n) \text{ es falsa} \,\}$$
+es no vacío. Por el PBO, $S$ tiene un mínimo $m$. Como $P(n_0)$ es verdadera,
+$m \neq n_0$, luego $m > n_0$ y $m - 1 \ge n_0$. Por minimalidad de $m$, el
+número $m-1$ no está en $S$, así que $P(m-1)$ es verdadera. Pero la hipótesis
+$P(m-1) \Rightarrow P(m)$ obligaría a que $P(m)$ fuese verdadera, contradiciendo
+$m \in S$. Por lo tanto $S$ es vacío y $P(n)$ vale para todo $n \ge n_0$. $\blacksquare$
 :::
-
-Si $r \neq 1$,
-
-$$g_1+g_1r+\cdots+g_1r^{n-1}=g_1\frac{r^n-1}{r-1}.$$
 
 ## Principio de inducción
 
-::: {.callout-note title="Principio de inducción débil"}
+La técnica de las fichas de dominó: comprobamos el caso inicial (la primera
+ficha cae) y el paso inductivo (cada ficha empuja a la siguiente).
+
+::: {.callout-note title="Definición: Principio de inducción débil"}
 Sea $P(n)$ una proposición definida para todo $n \ge n_0$. Si
 
-1. $P(n_0)$ es verdadera.
-2. Para todo $k \ge n_0$, de $P(k)$ se deduce $P(k+1)$.
+1. **Caso base:** $P(n_0)$ es verdadera.
+2. **Paso inductivo:** para todo $k \ge n_0$, de $P(k)$ se deduce $P(k+1)$.
 
 Entonces $P(n)$ es verdadera para todo $n \ge n_0$.
+:::
+
+A la suposición "$P(k)$ es verdadera" se le llama **hipótesis inductiva (HI)**.
+El error más común es olvidar verificar el caso base: sin él, el paso inductivo
+solo encadena afirmaciones que podrían ser todas falsas.
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** Demostrar que $\displaystyle \sum_{k=1}^{n} (2k-1) = n^2$ para
+todo $n \ge 1$ (la suma de los primeros $n$ impares es un cuadrado perfecto).
+
+**Estrategia:** Inducción débil sobre $n$, sumando el siguiente impar a la HI.
+
+**Solución:**
+*Base.* Para $n=1$: $2\cdot 1 - 1 = 1 = 1^2$. Verdadero.
+
+*Paso inductivo.* Supongamos $\sum_{k=1}^{k} (2k-1) = n^2$ válido para $n$ (HI).
+Entonces
+$$\sum_{k=1}^{n+1}(2k-1) = \underbrace{\sum_{k=1}^{n}(2k-1)}_{=\,n^2 \text{ por HI}} + \big(2(n+1)-1\big) = n^2 + 2n + 1 = (n+1)^2.$$
+Por inducción, la identidad vale para todo $n \ge 1$. $\blacksquare$
 :::
 
 ## Inducción fuerte
 
-::: {.callout-note title="Principio de inducción fuerte"}
-Si
+A veces para probar $P(k+1)$ no basta con $P(k)$: necesitamos varios (o todos)
+los casos anteriores. La inducción fuerte permite usar toda la historia previa.
 
-1. $P(n_0)$ es verdadera.
-2. Para todo $k \ge n_0$, de la veracidad de
-   $P(n_0),P(n_0+1),\dots,P(k)$ se deduce $P(k+1)$.
+::: {.callout-note title="Definición: Principio de inducción fuerte"}
+Sea $P(n)$ una proposición definida para todo $n \ge n_0$. Si
+
+1. **Caso base:** $P(n_0)$ es verdadera.
+2. **Paso inductivo:** para todo $k \ge n_0$, de la veracidad de
+   $P(n_0), P(n_0+1), \dots, P(k)$ se deduce $P(k+1)$.
 
 Entonces $P(n)$ es verdadera para todo $n \ge n_0$.
 :::
 
+::: {.callout-tip title="Teorema: todo entero $n \ge 2$ es producto de primos"}
+Para todo entero $n \ge 2$ existen primos $p_1, p_2, \dots, p_r$ (no
+necesariamente distintos) tales que $n = p_1 p_2 \cdots p_r$.
+
+**Demostración:** (inducción fuerte sobre $n$). El caso base $n=2$ es directo:
+$2$ es primo. Sea $n > 2$ y supongamos que todo entero $m$ con $2 \le m < n$ es
+producto de primos (HI). Si $n$ es primo, ya está. Si $n$ es compuesto, existe
+una factorización $n = a \cdot b$ con $2 \le a, b < n$. Por la HI, tanto $a$
+como $b$ son productos de primos; concatenando ambas factorizaciones obtenemos
+$n$ como producto de primos. $\blacksquare$
+:::
+
+Observemos que aquí la inducción débil no sirve: para factorizar $n$ usamos
+$a$ y $b$, que pueden estar muy por debajo de $n-1$.
+
+## Variantes de la inducción
+
+### Inducción con paso base múltiple
+
+Cuando una recurrencia depende de los $j$ términos anteriores (por ejemplo,
+$a_{n} = a_{n-1} + a_{n-2}$ depende de dos), conviene verificar **varios** casos
+base.
+
+::: {.callout-note title="Definición: inducción con paso base múltiple"}
+Sea $P(n)$ definida para $n \ge n_0$ y supongamos que el paso inductivo usa los
+$j$ casos inmediatamente anteriores. Si
+
+1. $P(n_0), P(n_0+1), \dots, P(n_0+j-1)$ son todos verdaderos, y
+2. para todo $k \ge n_0+j-1$, de $P(k-j+1), \dots, P(k)$ se deduce $P(k+1)$,
+
+entonces $P(n)$ es verdadera para todo $n \ge n_0$.
+:::
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** La sucesión $a_1 = 1$, $a_2 = 3$, $a_{n+2} = 3a_{n+1} - 2a_n$
+satisface $a_n = 2^n - 1$ para todo $n \ge 1$.
+
+**Estrategia:** La recurrencia usa dos términos previos; verificamos dos casos
+base y aplicamos inducción fuerte con paso base múltiple.
+
+**Solución:**
+*Base.* $a_1 = 1 = 2^1 - 1$ y $a_2 = 3 = 2^2 - 1$. Verdadero.
+
+*Paso inductivo.* Supongamos $a_k = 2^k - 1$ y $a_{k+1} = 2^{k+1} - 1$ (HI).
+Entonces
+$$a_{k+2} = 3a_{k+1} - 2a_k = 3(2^{k+1}-1) - 2(2^k - 1) = 3\cdot 2^{k+1} - 2^{k+1} - 1 = 2\cdot 2^{k+1} - 1 = 2^{k+2}-1.$$
+Por inducción, $a_n = 2^n - 1$ para todo $n \ge 1$. $\blacksquare$
+:::
+
+### Inducción hacia atrás
+
+La técnica de Cauchy: se demuestra la propiedad para una sucesión infinita de
+valores (por ejemplo, las potencias de $2$) y luego se "desciende" un paso para
+cubrir los huecos.
+
+::: {.callout-note title="Definición: inducción hacia atrás (Cauchy)"}
+Para probar $P(n)$ para todo $n \ge 1$, basta mostrar que
+
+1. $P(n)$ vale para una sucesión no acotada de valores (típicamente $n = 2^m$), y
+2. $P(n) \Rightarrow P(n-1)$ (paso descendente).
+
+Entonces $P(n)$ vale para todo $n$.
+:::
+
+Esta variante es la que se usa en la demostración clásica de la desigualdad
+**media aritmética–media geométrica (AM–GM)** para $n$ números.
+
+## Progresiones aritméticas
+
+::: {.callout-note title="Definición: progresión aritmética"}
+Una sucesión $(a_n)$ es aritmética si existe una constante $d$ (la **diferencia
+común**) tal que
+
+$$a_{n+1}=a_n+d.$$
+
+Entonces el término general es
+
+$$a_n=a_1+(n-1)d.$$
+:::
+
+La suma de los primeros $n$ términos admite una fórmula cerrada elegante.
+
+::: {.callout-tip title="Teorema: suma de una progresión aritmética"}
+Si $(a_n)$ es aritmética, entonces
+$$S_n = \sum_{k=1}^{n} a_k = \frac{n(a_1+a_n)}{2}.$$
+
+**Demostración:** Escribimos la suma en orden directo y luego invertido:
+$$
+\begin{align*}
+S_n &= a_1 + a_2 + \cdots + a_n, \\
+S_n &= a_n + a_{n-1} + \cdots + a_1.
+\end{align*}
+$$
+Sumando ambas igualdades término a término, cada par suma $a_1 + a_n$ (porque
+$a_k + a_{n-k+1} = a_1 + a_n$ es constante en una progresión aritmética), y hay
+$n$ pares:
+$$2S_n = n\,(a_1 + a_n) \quad\Longrightarrow\quad S_n = \frac{n(a_1+a_n)}{2}.$$
+Este es el famoso truco atribuido a Gauss. $\blacksquare$
+:::
+
+## Progresiones geométricas
+
+::: {.callout-note title="Definición: progresión geométrica"}
+Una sucesión $(g_n)$ es geométrica si existe una constante $r \neq 0$ (la
+**razón**) tal que
+
+$$g_{n+1}=rg_n.$$
+
+Entonces el término general es
+
+$$g_n=g_1r^{n-1}.$$
+:::
+
+::: {.callout-tip title="Teorema: suma geométrica finita"}
+Si $r \neq 1$, la suma de los primeros $n$ términos es
+$$\sum_{k=0}^{n-1} g_1 r^{k} = g_1 + g_1 r + \cdots + g_1 r^{n-1} = g_1\,\frac{r^{n}-1}{r-1}.$$
+
+**Demostración:** Sea $S = g_1(1 + r + \cdots + r^{n-1})$ y llamemos
+$T = 1 + r + \cdots + r^{n-1}$. Multiplicando por $r$:
+$$rT = r + r^2 + \cdots + r^{n}.$$
+Restando $T$ de $rT$, los términos intermedios se cancelan:
+$$rT - T = r^{n} - 1 \quad\Longrightarrow\quad (r-1)T = r^{n}-1 \quad\Longrightarrow\quad T = \frac{r^{n}-1}{r-1}.$$
+Multiplicando por $g_1$ se obtiene la fórmula. $\blacksquare$
+:::
+
+Cuando $|r| < 1$ y $n \to \infty$, el término $r^n \to 0$ y la serie geométrica
+**infinita** converge a $\dfrac{g_1}{1-r}$. En este capítulo nos centramos en la
+serie finita; la infinita se trata con detalle en el
+[Capítulo IV: Análisis](../04_analisis/index.qmd).
+
 ## Sucesión de Fibonacci
 
-::: {.callout-note title="Definición: Fibonacci"}
-La sucesión de Fibonacci está dada por
+La sucesión de Fibonacci es un terreno de juego ideal para la inducción:
+infinidad de identidades sorprendentes se demuestran con ella.
 
-$$F_1=1,\quad F_2=1,\quad F_{n+2}=F_{n+1}+F_n.$$
+::: {.callout-note title="Definición: sucesión de Fibonacci"}
+La sucesión de Fibonacci $(F_n)$ está dada por
+$$F_1=1,\quad F_2=1,\quad F_{n+2}=F_{n+1}+F_n \ \ (n \ge 1).$$
+Sus primeros términos son $1, 1, 2, 3, 5, 8, 13, 21, 34, \dots$
 :::
 
-::: {.callout-tip title="Identidad útil"}
+### Suma de los primeros Fibonacci
+
+::: {.callout-tip title="Teorema: suma de Fibonacci"}
 Para todo $n \ge 1$,
+$$\sum_{k=1}^{n} F_k = F_1+F_2+\cdots+F_n = F_{n+2}-1.$$
 
-$$F_1+F_2+\cdots+F_n=F_{n+2}-1.$$
+**Demostración:** (inducción débil).
+*Base.* $n=1$: $F_1 = 1 = 2 - 1 = F_3 - 1$. Verdadero.
+
+*Paso inductivo.* Supongamos $\sum_{k=1}^{n} F_k = F_{n+2}-1$ (HI). Entonces
+$$\sum_{k=1}^{n+1} F_k = (F_{n+2}-1) + F_{n+1} = (F_{n+1}+F_{n+2}) - 1 = F_{n+3}-1,$$
+usando la recurrencia $F_{n+1}+F_{n+2}=F_{n+3}$. $\blacksquare$
 :::
+
+### Identidad de Cassini
+
+::: {.callout-tip title="Teorema: identidad de Cassini"}
+Para todo $n \ge 1$,
+$$F_{n-1}\,F_{n+1} - F_n^{\,2} = (-1)^{n},$$
+con la convención $F_0 = 0$.
+
+**Demostración:** (inducción débil sobre $n$).
+*Base.* $n=1$: $F_0 F_2 - F_1^2 = 0\cdot 1 - 1 = -1 = (-1)^1$. Verdadero.
+
+*Paso inductivo.* Supongamos $F_{n-1}F_{n+1} - F_n^2 = (-1)^n$ (HI). Queremos
+$F_n F_{n+2} - F_{n+1}^2 = (-1)^{n+1}$. Usando $F_{n+2}=F_{n+1}+F_n$:
+$$
+\begin{align*}
+F_n F_{n+2} - F_{n+1}^2 &= F_n(F_{n+1}+F_n) - F_{n+1}^2 \\
+&= F_n F_{n+1} + F_n^2 - F_{n+1}^2 \\
+&= F_n^2 - F_{n+1}(F_{n+1}-F_n) \\
+&= F_n^2 - F_{n+1}F_{n-1} \\
+&= -\big(F_{n-1}F_{n+1} - F_n^2\big) \\
+&= -(-1)^n = (-1)^{n+1}.
+\end{align*}
+$$
+Por inducción, la identidad vale para todo $n \ge 1$. $\blacksquare$
+:::
+
+### Fórmula de Binet
+
+Una de las joyas de la teoría: una fórmula *cerrada* para $F_n$ usando el
+número áureo $\varphi$.
+
+::: {.callout-tip title="Teorema: fórmula de Binet"}
+Sean $\varphi = \dfrac{1+\sqrt 5}{2}$ y $\psi = \dfrac{1-\sqrt 5}{2}$ las dos
+raíces de $x^2 = x + 1$. Entonces, para todo $n \ge 1$,
+$$F_n = \frac{\varphi^{\,n} - \psi^{\,n}}{\sqrt 5}.$$
+
+**Demostración:** (inducción fuerte con paso base doble). Como
+$\varphi$ y $\psi$ satisfacen $x^2 = x+1$, cumplen
+$\varphi^{n+2} = \varphi^{n+1} + \varphi^{n}$ y análogamente para $\psi$.
+
+*Base.* Para $n=1$: $\dfrac{\varphi - \psi}{\sqrt 5} = \dfrac{\sqrt 5}{\sqrt 5} = 1 = F_1$.
+Para $n=2$: $\varphi^2 - \psi^2 = (\varphi+\psi)(\varphi-\psi) = 1\cdot\sqrt 5$,
+luego $\dfrac{\varphi^2-\psi^2}{\sqrt 5} = 1 = F_2$. Verdadero.
+
+*Paso inductivo.* Supongamos la fórmula válida para $n$ y $n+1$ (HI). Entonces
+$$
+\begin{align*}
+F_{n+2} &= F_{n+1} + F_n = \frac{\varphi^{n+1}-\psi^{n+1}}{\sqrt 5} + \frac{\varphi^{n}-\psi^{n}}{\sqrt 5} \\
+&= \frac{(\varphi^{n+1}+\varphi^{n}) - (\psi^{n+1}+\psi^{n})}{\sqrt 5} = \frac{\varphi^{n+2}-\psi^{n+2}}{\sqrt 5}.
+\end{align*}
+$$
+Por inducción, la fórmula vale para todo $n \ge 1$. $\blacksquare$
+:::
+
+::: {.callout-warning title="⚠️ Error frecuente"}
+Aunque la fórmula de Binet contiene $\sqrt 5$, el resultado $F_n$ es **siempre
+un entero**: los términos irracionales se cancelan. No conviene usarla para
+calcular $F_n$ numéricamente sin cuidado (los errores de redondeo se acumulan);
+su valor es teórico.
+:::
+
+## Ejercicios propuestos
+
+1. ⭐ Demostrar por inducción que $\displaystyle \sum_{k=1}^{n} k = \frac{n(n+1)}{2}$.
+2. ⭐ Probar que $\displaystyle \sum_{k=1}^{n} k^3 = \left(\frac{n(n+1)}{2}\right)^2$.
+3. ⭐⭐ Demostrar que $2^n > n$ para todo $n \ge 1$.
+4. ⭐⭐ Probar la identidad $\displaystyle \sum_{k=1}^{n} F_k^{\,2} = F_n\,F_{n+1}$
+   para la sucesión de Fibonacci.
+5. ⭐⭐⭐ Demostrar la **desigualdad de Bernoulli**: si $x \ge -1$, entonces
+   $(1+x)^n \ge 1 + nx$ para todo $n \ge 1$.
+6. 🏆 Sea $(a_n)$ definida por $a_1 = 1$ y $a_{n+1} = \sqrt{2 + a_n}$. Probar por
+   inducción que $a_n < 2$ para todo $n$ y que la sucesión es creciente.
+
+## Referencias del capítulo
+
+- **Sociedad de Matemáticas de Chile (Somachi) (1994).** *Matemática y
+  Olimpíadas.* Santiago. Capítulo II. Fuente base de este capítulo;
+  desarrolla inducción, progresiones y Fibonacci a nivel escolar chileno.
+- **Engel, A. (1998).** *Problem Solving Strategies.* Springer. Clásico
+  olímpico; el capítulo sobre inducción ofrece numerosos problemas graduados y
+  la técnica de inducción hacia atrás de Cauchy.
+- **Andreescu, T. & Feng, Z. (2004).** *A Path to Combinatorics for
+  Undergraduates.* Birkhäuser. Excelente para identidades de sumas y
+  recurrencias demostradas por inducción.
+- **Larson, L. C. (1983).** *Problem Solving Through Problems.* Springer.
+  Incluye una sección dedicada al principio del buen orden y al descenso infinito.

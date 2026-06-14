@@ -2,10 +2,17 @@
 title: "Ejemplos resueltos"
 ---
 
+Estos ejemplos siguen la sección §IV.4 del libro base *Matemática y Olimpíadas*
+(Somachi, 1994). Cada uno explicita primero la estrategia y luego la solución
+detallada.
+
 ## Ejemplo 1: decimal periódico a fracción
 
 ::: {.callout-warning title="Ejemplo resuelto"}
 **Problema:** convertir $0,\overline{12}$ en fracción.
+
+**Estrategia:** multiplicar por una potencia de $10$ que alinee el período y
+restar para eliminarlo.
 
 **Solución:** si $x=0,\overline{12}$, entonces $100x=12,\overline{12}$.
 Restando, $99x=12$, luego
@@ -20,7 +27,11 @@ $$x=\frac{12}{99}=\frac{4}{33}.$$
 
 $$1+\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\cdots.$$
 
-**Solución:** es una serie geométrica de razón $\frac{1}{2}$, así que la suma es
+**Estrategia:** reconocer una serie geométrica con $|r|<1$ y aplicar la fórmula
+$\frac{a}{1-r}$.
+
+**Solución:** es una serie geométrica de término inicial $a=1$ y razón
+$r=\frac{1}{2}$, así que la suma es
 
 $$\frac{1}{1-\frac{1}{2}}=2.$$
 :::
@@ -30,19 +41,146 @@ $$\frac{1}{1-\frac{1}{2}}=2.$$
 ::: {.callout-warning title="Ejemplo resuelto"}
 **Problema:** escribir $(101101)_2$ en base diez.
 
+**Estrategia:** expandir según las potencias de $2$ correspondientes a cada
+dígito $1$.
+
 **Solución:**
 
-$$ (101101)_2=2^5+2^3+2^2+1=45. $$
+$$(101101)_2=2^5+2^3+2^2+2^0=32+8+4+1=45.$$
 :::
 
 ## Ejemplo 4: racional entre dos reales
 
 ::: {.callout-warning title="Ejemplo resuelto"}
-**Problema:** encontrar un racional entre $\sqrt{2}$ y $1.5$.
+**Problema:** encontrar un racional entre $\sqrt{2}$ y $1{,}5$.
 
-**Solución:** por ejemplo,
+**Estrategia:** usar la densidad de $\mathbb{Q}$ en $\mathbb{R}$; basta hallar un
+decimal entre las dos cotas.
 
-$$\frac{29}{20}=1.45,$$
+**Solución:** como $\sqrt{2} \approx 1{,}41421$, cualquier fracción en el
+intervalo sirve, por ejemplo
 
-y satisface $\sqrt{2}<1.45<1.5$.
+$$\frac{29}{20}=1{,}45,$$
+
+que satisface $\sqrt{2}<1{,}45<1{,}5$.
+:::
+
+## Ejemplo 5: irracionalidad de $\sqrt{2}+\sqrt{3}$
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** demostrar que $\sqrt{2}+\sqrt{3}$ es irracional.
+
+**Estrategia:** suponer que es racional, elevar al cuadrado y reducir el problema
+a la irracionalidad ya conocida de un radical.
+
+**Solución:** supongamos que $r=\sqrt{2}+\sqrt{3}\in\mathbb{Q}$. Elevando al
+cuadrado,
+
+$$r^2 = 2 + 2\sqrt{6} + 3 = 5 + 2\sqrt{6}.$$
+
+Despejando,
+
+$$\sqrt{6} = \frac{r^2 - 5}{2}.$$
+
+El lado derecho sería racional, luego $\sqrt{6}$ lo sería. Pero $\sqrt{6}$ es
+irracional (mismo argumento que $\sqrt{2}$: si $\sqrt{6}=a/b$ irreducible,
+entonces $6b^2=a^2$, $2\mid a$ y $3\mid a$ llevan a contradicción con
+$\gcd(a,b)=1$). Esta contradicción prueba que $\sqrt{2}+\sqrt{3}$ es irracional.
+:::
+
+## Ejemplo 6: decimal periódico mixto a fracción
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** convertir $0{,}1\overline{6}$ en fracción irreducible.
+
+**Estrategia:** el número tiene parte no periódica ("anteperíodo") y parte
+periódica; multiplicamos por las potencias de $10$ que alinean ambas y restamos.
+
+**Solución:** sea $x = 0{,}1\overline{6}$. Entonces
+
+$$10x = 1{,}\overline{6}, \qquad 100x = 16{,}\overline{6}.$$
+
+Restando,
+
+$$100x - 10x = 16{,}\overline{6} - 1{,}\overline{6} = 15 \quad\Longrightarrow\quad 90x = 15,$$
+
+luego
+
+$$x = \frac{15}{90} = \frac{1}{6}.$$
+:::
+
+## Ejemplo 7: conversión a base $p$
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** escribir el número $45$ en base $2$ y el número $156$ en base $5$.
+
+**Estrategia:** aplicar el algoritmo de divisiones sucesivas; los restos leídos
+de abajo hacia arriba son los dígitos.
+
+**Solución:** para $45$ en base $2$:
+
+$$\begin{align*}
+45 &= 2\cdot 22 + 1\\
+22 &= 2\cdot 11 + 0\\
+11 &= 2\cdot 5 + 1\\
+5 &= 2\cdot 2 + 1\\
+2 &= 2\cdot 1 + 0\\
+1 &= 2\cdot 0 + 1
+\end{align*}$$
+
+Leyendo los restos de abajo hacia arriba, $45=(101101)_2$.
+
+Para $156$ en base $5$:
+
+$$\begin{align*}
+156 &= 5\cdot 31 + 1\\
+31 &= 5\cdot 6 + 1\\
+6 &= 5\cdot 1 + 1\\
+1 &= 5\cdot 0 + 1
+\end{align*}$$
+
+Por lo tanto $156=(1111)_5$. (Verificación: $125+25+5+1=156$.)
+:::
+
+## Ejemplo 8: densidad de los racionales
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** exhibir explícitamente tres racionales distintos entre
+$\frac{1}{3}$ y $\frac{1}{2}$.
+
+**Estrategia:** llevar las fracciones a un denominador común grande para que
+"quepan" enteros entre los numeradores.
+
+**Solución:** con denominador común $12$,
+
+$$\frac{1}{3} = \frac{4}{12}, \qquad \frac{1}{2} = \frac{6}{12}.$$
+
+Solo cabe $\frac{5}{12}$. Para hallar más, refinamos a denominador $24$:
+
+$$\frac{1}{3} = \frac{8}{24}, \qquad \frac{1}{2} = \frac{12}{24},$$
+
+y entre ellos están $\frac{9}{24}=\frac{3}{8}$, $\frac{10}{24}=\frac{5}{12}$ y
+$\frac{11}{24}$. Así, tres racionales válidos son
+
+$$\frac{3}{8}, \qquad \frac{5}{12}, \qquad \frac{11}{24}.$$
+
+Esto ilustra que entre cualesquiera dos racionales hay infinitos.
+:::
+
+## Ejemplo 9: aplicación de AM-GM
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** entre todos los rectángulos de perímetro $20$, ¿cuál tiene área
+máxima?
+
+**Estrategia:** expresar el área en términos de los lados $x, y$ y aplicar la
+desigualdad AM-GM, que relaciona suma (perímetro) y producto (área).
+
+**Solución:** si los lados son $x, y > 0$, el perímetro $2(x+y)=20$ da
+$x+y=10$. El área es $A=xy$. Por AM-GM,
+
+$$\sqrt{xy} \le \frac{x+y}{2} = 5 \quad\Longrightarrow\quad xy \le 25.$$
+
+La igualdad se alcanza cuando $x=y$, es decir, $x=y=5$. Por lo tanto el área
+máxima es $25$, lograda por el **cuadrado** de lado $5$.
 :::

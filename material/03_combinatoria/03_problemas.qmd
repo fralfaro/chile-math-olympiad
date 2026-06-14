@@ -2,45 +2,123 @@
 title: "Problemas de práctica"
 ---
 
-**Problema 1.** ¿Cuántas diagonales tiene un polígono convexo de $n$ lados?
+Resuelve cada problema por tu cuenta antes de abrir la solución. Las dificultades
+van de ⭐ (aplicación directa) a 🏆 (nivel IMO / Iberoamericana).
+
+**Problema 1 (⭐).** ¿Cuántas diagonales tiene un polígono convexo de $n$ lados?
 
 ::: {.callout-caution collapse="true" title="Ver solución"}
-Hay $\binom{n}{2}$ pares de vértices y $n$ de ellos forman lados. Por tanto,
+Hay $\binom{n}{2}$ pares de vértices y $n$ de ellos forman lados. Las diagonales
+son los pares restantes:
 
-$$\binom{n}{2}-n=\frac{n(n-3)}{2}.$$
+$$\binom{n}{2} - n = \frac{n(n-1)}{2} - n = \frac{n(n-3)}{2}.$$
 :::
 
-**Problema 2.** Demostrar que de cualquier conjunto de $6$ personas siempre hay
-tres que se conocen mutuamente o tres que no se conocen mutuamente.
+**Problema 2 (⭐).** ¿De cuántas maneras se pueden colocar $5$ libros distintos en
+una estantería?
 
 ::: {.callout-caution collapse="true" title="Ver solución"}
-Es el caso clásico $R(3,3)=6$. Se fija una persona y se aplica palomar sobre sus
-cinco relaciones posibles.
+Es una permutación lineal de $5$ objetos distintos:
+
+$$5! = 120.$$
 :::
 
-**Problema 3.** Calcular
-
-$$\sum_{k=0}^{n}\binom{n}{k}.$$
+**Problema 3 (⭐).** Calcular $\displaystyle \sum_{k=0}^{n}\binom{n}{k}$.
 
 ::: {.callout-caution collapse="true" title="Ver solución"}
-Usando $(1+1)^n$ se obtiene
+Evaluando el binomio de Newton con $a = b = 1$ se obtiene $(1+1)^n$, de modo que
 
-$$\sum_{k=0}^{n}\binom{n}{k}=2^n.$$
+$$\sum_{k=0}^{n}\binom{n}{k} = 2^{n}.$$
 :::
 
-**Problema 4.** Probar que entre cualesquiera $n+1$ enteros elegidos del conjunto
-$\{1,2,\dots,2n\}$ hay dos coprimos entre sí.
+**Problema 4 (⭐⭐).** ¿De cuántas maneras pueden formarse "palabras" reordenando
+las letras de **OLIMPIADA**?
 
 ::: {.callout-caution collapse="true" title="Ver solución"}
-Se agrupa en parejas consecutivas $(1,2),(3,4),\dots,(2n-1,2n)$. Por palomar,
-dos elegidos quedan en la misma pareja y por tanto son consecutivos, luego
-coprimos.
+La palabra tiene $9$ letras, con $I$ repetida $2$ veces y $A$ repetida $2$ veces;
+las demás ($O, L, M, P, D$) aparecen una vez. Por permutaciones con repetición,
+
+$$\frac{9!}{2!\,2!} = \frac{362\,880}{4} = 90\,720.$$
+:::
+
+**Problema 5 (⭐⭐).** Demostrar que de cualquier conjunto de $6$ personas siempre
+hay tres que se conocen mutuamente o tres que se desconocen mutuamente.
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+Es el caso clásico $R(3,3) = 6$. Fijemos una persona $P$. De las otras $5$, por el
+principio del palomar, al menos $3$ están en la misma relación con $P$ (conocidas o
+desconocidas); digamos que $P$ conoce a $A, B, C$. Si alguna pareja entre
+$A, B, C$ se conoce, junto con $P$ forman un trío de conocidos. Si ninguna pareja
+entre ellos se conoce, entonces $A, B, C$ son tres mutuos desconocidos. En ambos
+casos existe el trío buscado. $\blacksquare$
+:::
+
+**Problema 6 (⭐⭐).** Probar que entre cualesquiera $n+1$ enteros elegidos del
+conjunto $\{1, 2, \dots, 2n\}$ hay dos coprimos entre sí.
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+Agrupamos $\{1,\dots,2n\}$ en $n$ parejas de consecutivos:
+$(1,2), (3,4), \dots, (2n-1, 2n)$. Al elegir $n+1$ números, por el principio del
+palomar dos caen en la misma pareja y por tanto son **consecutivos**. Dos enteros
+consecutivos son siempre coprimos (su MCD divide a la diferencia $1$). $\blacksquare$
+:::
+
+**Problema 7 (⭐⭐⭐).** Probar que si se eligen $51$ números del conjunto
+$\{1, 2, \dots, 100\}$, entonces hay dos tales que uno divide al otro.
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+Escribimos cada número como $2^{a}\cdot m$ con $m$ impar. Las partes impares
+posibles son $1, 3, 5, \dots, 99$, que son exactamente $50$ valores (las cajas). Al
+elegir $51$ números, por el palomar dos comparten la misma parte impar $m$:
+digamos $2^{a}m$ y $2^{b}m$ con $a < b$. Entonces $2^{a}m \mid 2^{b}m$, es decir,
+uno divide al otro. $\blacksquare$
+:::
+
+**Problema 8 (⭐⭐⭐).** ¿Cuántas formas hay de elegir $3$ números del conjunto
+$\{1, 2, \dots, 20\}$ de modo que **no haya dos consecutivos**?
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+Sea la elección ordenada $a_1 < a_2 < a_3$ con la condición $a_{i+1} - a_i \ge 2$.
+Definamos $b_1 = a_1$, $b_2 = a_2 - 1$, $b_3 = a_3 - 2$. Entonces
+$b_1 < b_2 < b_3$ sin restricción de separación, con $b_i \in \{1, \dots, 18\}$.
+La correspondencia es biyectiva, de modo que el número de elecciones es
+
+$$\binom{20 - 3 + 1}{3} = \binom{18}{3} = 816.$$
+:::
+
+**Problema 9 (🏆).** Sea $n \ge 1$. Demostrar la identidad
+$\displaystyle \sum_{k=0}^{n} \binom{n}{k}^{2} = \binom{2n}{n}$.
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+Es un caso de la identidad de Vandermonde con $m = n$ y $r = n$:
+
+$$\binom{2n}{n} = \sum_{k=0}^{n} \binom{n}{k}\binom{n}{n-k}.$$
+
+Como $\binom{n}{n-k} = \binom{n}{k}$, el sumando es $\binom{n}{k}^{2}$, luego
+
+$$\sum_{k=0}^{n} \binom{n}{k}^{2} = \binom{2n}{n}.$$
+
+Interpretación combinatoria: elegir $n$ personas de un grupo de $n$ hombres y $n$
+mujeres ($\binom{2n}{n}$) equivale a elegir $k$ hombres y $n-k$ mujeres y sumar
+sobre $k$. $\blacksquare$
 :::
 
 ## Problemas de competencias oficiales
 
-**OMC 2018 — Problema 1:** contar configuraciones sujetas a restricciones de
-paridad y selección.
+Los siguientes enunciados se proponen **sin solución** para que sirvan de desafío.
+Corresponden a competencias reales; se indica competencia, año y número.
 
-**IMO 1987 — Problema 1:** demostrar una propiedad combinatoria de un tablero
-utilizando conteo doble.
+**OMC (Olimpiada de Matemática de Chile) — Nivel Mayor.** En un torneo participan
+varios equipos y cada par de equipos juega exactamente una vez. Demuestra, usando
+conteo y el principio del palomar, propiedades sobre el número de partidos y los
+empates posibles. (Problema de combinatoria de selección nacional; consulta el
+banco histórico en
+[olimpiadadematematica.cl](https://www.olimpiadadematematica.cl).)
+
+**IMO 1987 — Problema 1.** Sea $p_n(k)$ el número de permutaciones del conjunto
+$\{1, 2, \dots, n\}$ que tienen exactamente $k$ puntos fijos. Demuestra que
+
+$$\sum_{k=0}^{n} k\, p_n(k) = n!.$$
+
+(Olimpiada Internacional de Matemática, La Habana, 1987, Problema 1. El enunciado
+oficial está disponible en [imo-official.org](https://www.imo-official.org).)

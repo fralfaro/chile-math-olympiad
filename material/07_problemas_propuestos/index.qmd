@@ -4,21 +4,176 @@ title: "Capítulo VII y VIII: Problemas Propuestos"
 
 ## Presentación
 
-Aquí reunimos problemas para trabajo autónomo. Algunos son directos y otros están
-pensados para obligarte a combinar ideas de varios capítulos.
+Aquí reunimos problemas para el trabajo autónomo. A diferencia de los capítulos
+anteriores, **estos problemas NO traen solución**: la idea es que los uses para
+practicar, equivocarte, volver a intentar y consolidar las técnicas que
+estudiaste. Resolver sin red de seguridad es exactamente lo que enfrentarás en
+una competencia.
 
-## Problemas propuestos
+Los problemas están organizados **por dificultad** según los indicadores del
+repositorio:
 
-1. Probar que la suma de tres enteros consecutivos es múltiplo de $3$.
-2. Hallar todas las parejas de enteros positivos $(x,y)$ tales que $xy=2x+3y$.
-3. Demostrar que en cualquier grupo de $5$ enteros siempre hay dos con la misma
-   paridad.
-4. En un triángulo isósceles, probar que la altura a la base también es mediana
-   y bisectriz.
-5. Convertir $0,\overline{54}$ en fracción irreducible.
+- ⭐ — Directo, aplica una definición o un resultado del capítulo.
+- ⭐⭐ — Requiere combinar dos ideas o un razonamiento no inmediato.
+- ⭐⭐⭐ — Nivel olímpico regional o nacional.
+- 🏆 — Nivel IMO o Iberoamericana.
 
-## Fáciles de enunciar y difíciles de resolver
+Cada nivel mezcla las cinco áreas del libro: **teoría de números, inducción,
+combinatoria, análisis y geometría**. Te recomendamos no saltar directo a los
+problemas más difíciles: el calentamiento construye la intuición que después
+necesitarás.
 
-- ¿Existen infinitos primos de la forma $4n+3$?
-- ¿Cuántas regiones determinan $n$ rectas en posición general?
-- ¿Puede una suma de dos cuadrados ser congruente con $3$ módulo $4$?
+::: {.callout-caution title="Cómo trabajar estos problemas"}
+Dedica tiempo real a cada problema antes de buscar pistas externas. Si te
+trabas, escribe lo que sí sabes, prueba casos pequeños y vuelve más tarde. Un
+problema "fallado" pero pensado a fondo enseña más que diez resueltos de
+memoria.
+:::
+
+## Nivel ⭐ — Calentamiento
+
+1. **(Números)** Probar que la suma de tres enteros consecutivos es siempre
+   múltiplo de $3$.
+2. **(Números)** Hallar todas las parejas de enteros positivos $(x, y)$ tales
+   que $xy = 2x + 3y$.
+3. **(Combinatoria)** Demostrar que en cualquier grupo de $5$ enteros siempre
+   hay dos con la misma paridad.
+4. **(Análisis)** Convertir el decimal periódico $0,\overline{54}$ en una
+   fracción irreducible.
+5. **(Geometría)** En un triángulo isósceles, probar que la altura trazada a la
+   base es también mediana y bisectriz de ese mismo vértice.
+6. **(Inducción)** Demostrar que para todo $n \in \mathbb{N}$ se cumple
+   $$1 + 2 + 3 + \cdots + n = \frac{n(n+1)}{2}.$$
+7. **(Números)** Determinar el resto de dividir $7^{100}$ por $5$.
+
+## Nivel ⭐⭐ — Intermedio
+
+1. **(Números)** Demostrar que el producto de cuatro enteros consecutivos
+   cualesquiera, aumentado en $1$, es un cuadrado perfecto.
+2. **(Inducción)** Probar por inducción que $n^3 - n$ es divisible por $6$ para
+   todo $n \in \mathbb{N}$.
+3. **(Combinatoria)** ¿De cuántas maneras se pueden distribuir $10$ caramelos
+   idénticos entre $4$ niños, si cada niño puede recibir cero o más caramelos?
+4. **(Análisis)** Demostrar que $\sqrt{2} + \sqrt{3}$ es un número irracional.
+5. **(Geometría)** En un triángulo $ABC$, sea $M$ el punto medio del lado $BC$.
+   Probar que la mediana $AM$ satisface
+   $$AB^2 + AC^2 = 2\,AM^2 + \frac{1}{2}\,BC^2.$$
+6. **(Combinatoria)** Se eligen $7$ números distintos del conjunto
+   $\{1, 2, \ldots, 12\}$. Probar que entre ellos hay dos cuya suma es $13$.
+7. **(Números)** Hallar todos los enteros positivos $n$ tales que $n + 1$
+   divide a $n^2 + 1$.
+
+## Nivel ⭐⭐⭐ — Olímpico
+
+1. **(Números)** Determinar todos los enteros positivos $n$ tales que $2^n + 1$
+   es divisible por $3$.
+2. **(Combinatoria)** En un torneo de $n$ jugadores cada par juega exactamente
+   una partida (no hay empates). Probar que existe un jugador $J$ tal que todo
+   otro jugador o bien perdió contra $J$, o bien perdió contra alguien que
+   perdió contra $J$.
+3. **(Geometría)** Sea $ABC$ un triángulo y sean $D$, $E$, $F$ los pies de las
+   alturas. Probar que las alturas $AD$, $BE$, $CF$ concurren en un único punto
+   (el ortocentro).
+4. **(Análisis)** Sean $a_1, a_2, \ldots, a_n$ reales positivos. Demostrar la
+   desigualdad entre la media aritmética y la media geométrica:
+   $$\frac{a_1 + a_2 + \cdots + a_n}{n} \geq \sqrt[n]{a_1 a_2 \cdots a_n},$$
+   y determinar cuándo se alcanza la igualdad.
+5. **(Inducción / Números)** Probar que para todo $n \in \mathbb{N}$ el número
+   $$F_n = 2^{2^n} + 1$$
+   y $F_m$ son coprimos siempre que $m \neq n$.
+6. **(Combinatoria)** Cada punto del plano se pinta de rojo o azul. Probar que
+   existe un rectángulo cuyos cuatro vértices tienen el mismo color.
+7. **(Números)** Hallar todas las soluciones enteras positivas de la ecuación
+   $$x^2 - y^2 = 2024.$$
+
+## Nivel 🏆 — Desafío
+
+1. **(Números)** Determinar todos los pares de enteros positivos $(a, b)$ tales
+   que $a^b = b^a$ con $a \neq b$.
+2. **(Geometría)** Sea $ABC$ un triángulo con incentro $I$. La recta $AI$ corta
+   de nuevo a la circunferencia circunscrita en $M$. Probar que
+   $$MB = MC = MI.$$
+3. **(Análisis / Desigualdades)** Para reales positivos $a, b, c$ con
+   $a + b + c = 3$, demostrar que
+   $$\frac{a}{b+c} + \frac{b}{c+a} + \frac{c}{a+b} \geq \frac{3}{2}.$$
+4. **(Combinatoria)** Sea $S$ un conjunto de $n \geq 2$ puntos en el plano, no
+   todos colineales. Probar que existe una recta que pasa exactamente por dos
+   puntos de $S$ (problema de Sylvester–Gallai).
+5. **(Números)** Sea $p$ un primo impar. Probar que
+   $$1^{p-1} + 2^{p-1} + \cdots + (p-1)^{p-1} \equiv -1 \pmod{p}.$$
+6. **(Funcional)** Hallar todas las funciones $f : \mathbb{R} \to \mathbb{R}$
+   tales que para todos $x, y \in \mathbb{R}$ se cumple
+   $$f(x + y) = f(x) + f(y) \quad \text{y} \quad f(xy) = f(x)\,f(y).$$
+
+## Fáciles de enunciar, difíciles de resolver
+
+El Capítulo VIII del libro reúne problemas con una característica fascinante: su
+enunciado se entiende con conocimientos elementales, pero su resolución ha
+desafiado (o sigue desafiando) a las mejores mentes de la historia.
+
+::: {.callout-caution title="No son ejercicios de práctica"}
+Los siguientes son **problemas abiertos** o demostraciones extremadamente
+difíciles. No están aquí para que los resuelvas, sino para mostrarte que la
+matemática está viva y que detrás de enunciados simples se esconden océanos de
+profundidad. ¡Disfruta su belleza, pero no te frustres si no salen!
+:::
+
+::: {.callout-tip title="📖 Conjetura de Collatz (problema 3n + 1)"}
+Toma cualquier entero positivo $n$. Si es par, divídelo por $2$; si es impar,
+reemplázalo por $3n + 1$. Repite el proceso. La conjetura afirma que, partiendo
+de **cualquier** número inicial, la sucesión termina llegando al $1$.
+
+Por ejemplo, partiendo de $6$: $\;6 \to 3 \to 10 \to 5 \to 16 \to 8 \to 4 \to 2 \to 1$.
+
+**Estatus:** abierto. Verificado por computadora para números enormes, pero
+nadie ha logrado demostrarlo en general. Propuesto por Lothar Collatz en 1937.
+:::
+
+::: {.callout-tip title="📖 Conjetura de Goldbach"}
+Todo número entero par mayor que $2$ se puede escribir como la suma de **dos
+números primos**. Por ejemplo, $4 = 2 + 2$, $\;10 = 3 + 7$, $\;28 = 5 + 23$.
+
+**Estatus:** abierto. Formulada por Christian Goldbach en una carta a Euler en
+1742. Verificada computacionalmente para números muy grandes, pero sin
+demostración general.
+:::
+
+::: {.callout-tip title="📖 Conjetura de los primos gemelos"}
+Se llaman *primos gemelos* a dos primos que difieren en $2$, como
+$(3, 5)$, $(11, 13)$ o $(17, 19)$. La conjetura afirma que **existen infinitos**
+pares de primos gemelos.
+
+**Estatus:** abierto. En 2013, Yitang Zhang demostró que existen infinitos pares
+de primos que difieren en a lo más una cantidad acotada; el trabajo posterior
+del proyecto Polymath redujo esa cota a $246$, pero el caso de la diferencia $2$
+sigue sin resolverse.
+:::
+
+::: {.callout-tip title="📖 Números perfectos impares"}
+Un número es *perfecto* si es igual a la suma de sus divisores propios. Por
+ejemplo, $6 = 1 + 2 + 3$ y $28 = 1 + 2 + 4 + 7 + 14$. Todos los números
+perfectos conocidos son **pares**. La pregunta abierta es: ¿existe algún número
+perfecto **impar**?
+
+**Estatus:** abierto. No se conoce ninguno, y se ha verificado que, de existir,
+debe ser mayor que $10^{1500}$, pero no se ha demostrado que sea imposible.
+:::
+
+::: {.callout-tip title="📖 Último Teorema de Fermat (resuelto)"}
+No existen enteros positivos $x, y, z$ que satisfagan
+$$x^n + y^n = z^n$$
+cuando el exponente entero $n$ es mayor que $2$.
+
+**Estatus:** resuelto. Fermat lo anotó al margen de un libro hacia 1637
+afirmando tener una "demostración maravillosa". Permaneció abierto por más de
+350 años hasta que Andrew Wiles lo demostró en 1994, usando herramientas
+profundas de geometría aritmética muy lejos de lo elemental.
+:::
+
+::: {.callout-tip title="📖 Conjetura de los primos de la forma n² + 1"}
+¿Existen **infinitos** primos de la forma $n^2 + 1$? Por ejemplo,
+$2 = 1^2 + 1$, $\;5 = 2^2 + 1$, $\;17 = 4^2 + 1$, $\;37 = 6^2 + 1$.
+
+**Estatus:** abierto. Es uno de los célebres problemas de Landau (1912) sobre
+primos, todos ellos aún sin resolver pese a su enunciado elemental.
+:::

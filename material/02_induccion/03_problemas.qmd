@@ -1,50 +1,162 @@
 ---
 title: "Problemas de práctica"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
 ---
 
-**Problema 1.** Demostrar por inducción que
+Estos problemas refuerzan las técnicas del capítulo. Intenta resolver cada uno
+antes de abrir la solución colapsada. El nivel va de aplicación directa (⭐) a
+nivel olímpico (🏆).
 
-$$1^2+2^2+\cdots+n^2=\frac{n(n+1)(2n+1)}{6}.$$
+## Sumas e identidades
+
+**Problema 1.** ⭐ Demostrar por inducción que
+$$\sum_{k=1}^{n} k^2 = 1^2+2^2+\cdots+n^2=\frac{n(n+1)(2n+1)}{6}.$$
 
 ::: {.callout-caution collapse="true" title="Ver solución"}
-Se verifica la base y luego se suma $(k+1)^2$ a la hipótesis inductiva hasta
-obtener
-
-$$\frac{(k+1)(k+2)(2k+3)}{6}.$$
+Se verifica la base $n=1$ y luego se suma $(k+1)^2$ a la hipótesis inductiva:
+$$\frac{k(k+1)(2k+1)}{6} + (k+1)^2 = \frac{(k+1)\big[k(2k+1)+6(k+1)\big]}{6} = \frac{(k+1)(k+2)(2k+3)}{6},$$
+que es la fórmula evaluada en $k+1$. $\blacksquare$
 :::
 
-**Problema 2.** Probar que $6 \mid (n^3-n)$ para todo entero $n$.
+**Problema 2.** ⭐⭐ Demostrar que
+$$\sum_{k=1}^{n} \frac{1}{k(k+1)} = \frac{n}{n+1}.$$
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+*Base.* $n=1$: $\frac{1}{1\cdot 2} = \frac{1}{2} = \frac{1}{2}$. Verdadero.
+
+*Paso inductivo.* Por HI la suma hasta $n$ es $\frac{n}{n+1}$. Entonces
+$$\frac{n}{n+1} + \frac{1}{(n+1)(n+2)} = \frac{n(n+2)+1}{(n+1)(n+2)} = \frac{(n+1)^2}{(n+1)(n+2)} = \frac{n+1}{n+2}.$$
+(También se resuelve por telescopaje: $\frac{1}{k(k+1)} = \frac1k - \frac1{k+1}$.) $\blacksquare$
+:::
+
+## Desigualdades
+
+**Problema 3.** ⭐⭐ Probar que $n! > 2^n$ para todo $n \ge 4$.
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+*Base.* $n=4$: $4! = 24 > 16 = 2^4$. Verdadero.
+
+*Paso inductivo.* Supongamos $k! > 2^k$ con $k \ge 4$. Entonces
+$$(k+1)! = (k+1)\,k! > (k+1)\,2^k > 2\cdot 2^k = 2^{k+1},$$
+ya que $k+1 \ge 5 > 2$. $\blacksquare$
+:::
+
+**Problema 4.** ⭐⭐⭐ Demostrar que para todo $n \ge 1$,
+$$\sum_{k=1}^{n} \frac{1}{k^2} \le 2 - \frac{1}{n}.$$
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+*Base.* $n=1$: $1 \le 2 - 1 = 1$. Igualdad, válido.
+
+*Paso inductivo.* Por HI, $\sum_{k=1}^{n}\frac1{k^2} \le 2 - \frac1n$. Basta ver que
+$$\left(2 - \frac1n\right) + \frac{1}{(n+1)^2} \le 2 - \frac{1}{n+1}.$$
+Esto equivale a $\frac{1}{(n+1)^2} \le \frac1n - \frac1{n+1} = \frac{1}{n(n+1)}$,
+que es cierto porque $(n+1)^2 \ge n(n+1)$. $\blacksquare$
+:::
+
+## Divisibilidad
+
+**Problema 5.** ⭐ Probar que $6 \mid (n^3-n)$ para todo entero $n$.
 
 ::: {.callout-caution collapse="true" title="Ver solución"}
 Se factoriza
-
 $$n^3-n=n(n-1)(n+1).$$
-
-Son tres enteros consecutivos; uno es par y uno es múltiplo de $3$.
+Son tres enteros consecutivos: entre ellos hay siempre un múltiplo de $2$ y uno
+de $3$, luego el producto es divisible por $6$. (También por inducción:
+$(n+1)^3-(n+1) = (n^3-n) + 3n(n+1)$, y $3n(n+1)$ es múltiplo de $6$.) $\blacksquare$
 :::
 
-**Problema 3.** Demostrar que todo entero $n \ge 2$ puede escribirse como
+**Problema 6.** ⭐⭐ Demostrar que $9 \mid (4^n + 6n - 1)$ para todo $n \ge 1$.
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+*Base.* $n=1$: $4 + 6 - 1 = 9$. Divisible por $9$.
+
+*Paso inductivo.* Supongamos $9 \mid (4^k + 6k - 1)$. Entonces
+$$4^{k+1} + 6(k+1) - 1 = 4\cdot 4^k + 6k + 5 = 4(4^k + 6k - 1) + (6 - 18k + 9) = 4(4^k+6k-1) + 9(1 - 2k).$$
+Ambos sumandos son múltiplos de $9$, luego la expresión también. $\blacksquare$
+:::
+
+## Inducción fuerte
+
+**Problema 7.** ⭐⭐ Demostrar que todo entero $n \ge 2$ puede escribirse como
 producto de números primos.
 
 ::: {.callout-caution collapse="true" title="Ver solución"}
-Se usa inducción fuerte. Si $n$ es compuesto, se escribe como producto de dos
-enteros menores y se aplica la hipótesis a ambos.
+Se usa inducción fuerte. La base $n=2$ es directa. Si $n$ es primo, listo. Si
+$n$ es compuesto, se escribe $n = a\cdot b$ con $2 \le a, b < n$; por hipótesis
+inductiva tanto $a$ como $b$ son productos de primos, y al concatenar se obtiene
+$n$ como producto de primos. $\blacksquare$
 :::
 
-**Problema 4.** Probar que
-
-$$F_1+F_3+\cdots+F_{2n-1}=F_{2n}.$$
+**Problema 8.** ⭐⭐⭐ La sucesión cumple $a_0 = 2$, $a_1 = 3$ y
+$a_{n+1} = 3a_n - 2a_{n-1}$. Demostrar que $a_n = 2^n + 1$ para todo $n \ge 0$.
 
 ::: {.callout-caution collapse="true" title="Ver solución"}
-Si vale para $n=k$, al sumar $F_{2k+1}$ resulta
+Inducción fuerte con paso base doble.
+*Base.* $a_0 = 2 = 2^0 + 1$, $a_1 = 3 = 2^1 + 1$. Verdadero.
 
-$$F_{2k}+F_{2k+1}=F_{2k+2}.$$
+*Paso inductivo.* Supongamos $a_{n-1} = 2^{n-1}+1$ y $a_n = 2^n + 1$. Entonces
+$$a_{n+1} = 3(2^n+1) - 2(2^{n-1}+1) = 3\cdot 2^n - 2^n + 3 - 2 = 2\cdot 2^n + 1 = 2^{n+1}+1. \qquad \blacksquare$$
+:::
+
+## Fibonacci
+
+**Problema 9.** ⭐⭐ Probar que
+$$F_1+F_3+\cdots+F_{2n-1}=\sum_{k=1}^{n} F_{2k-1}=F_{2n}.$$
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+*Base.* $n=1$: $F_1 = 1 = F_2$. Verdadero.
+
+*Paso inductivo.* Por HI la suma hasta $F_{2n-1}$ es $F_{2n}$. Al sumar el
+siguiente término impar $F_{2n+1}$:
+$$F_{2n}+F_{2n+1}=F_{2n+2}=F_{2(n+1)}. \qquad \blacksquare$$
+:::
+
+**Problema 10.** ⭐⭐⭐ Demostrar la identidad de Cassini:
+$$F_{n-1}F_{n+1} - F_n^2 = (-1)^n \quad (n \ge 1, \ F_0 = 0).$$
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+*Base.* $n=1$: $F_0 F_2 - F_1^2 = 0 - 1 = -1 = (-1)^1$.
+
+*Paso inductivo.* Suponiendo $F_{n-1}F_{n+1}-F_n^2=(-1)^n$, usamos
+$F_{n+2}=F_{n+1}+F_n$:
+$$
+\begin{align*}
+F_n F_{n+2} - F_{n+1}^2 &= F_n(F_{n+1}+F_n) - F_{n+1}^2 = F_n^2 - F_{n+1}(F_{n+1}-F_n) \\
+&= F_n^2 - F_{n+1}F_{n-1} = -\big(F_{n-1}F_{n+1}-F_n^2\big) = -(-1)^n = (-1)^{n+1}.
+\end{align*}
+$$
+Por inducción, la identidad vale para todo $n \ge 1$. $\blacksquare$
+:::
+
+## Progresiones
+
+**Problema 11.** ⭐ En una progresión aritmética, $a_3 = 7$ y $a_8 = 22$.
+Calcular $a_1$, la diferencia $d$ y la suma de los primeros $20$ términos.
+
+::: {.callout-caution collapse="true" title="Ver solución"}
+De $a_8 - a_3 = 5d = 22 - 7 = 15$ se obtiene $d = 3$. Luego
+$a_3 = a_1 + 2d \Rightarrow 7 = a_1 + 6 \Rightarrow a_1 = 1$. El término $20$ es
+$a_{20} = 1 + 19\cdot 3 = 58$, y
+$$S_{20} = \frac{20(1+58)}{2} = 10\cdot 59 = 590. \qquad \blacksquare$$
 :::
 
 ## Problemas de competencias oficiales
 
-**OMC 2016 — Problema 2:** encontrar todas las sucesiones de enteros positivos
-que satisfacen una relación recursiva simple y una condición inicial.
+Los siguientes enunciados se dejan **sin solución** como desafío. Corresponden a
+problemas reales de competencias.
 
-**IMO 1977 — Problema 1:** demostrar una identidad de sumas finitas usando
-técnicas elementales de inducción y factorización.
+**OMC — Olimpiada Nacional de Matemáticas (Chile), Nivel Mayor 2016, Problema 2.**
+Determinar todas las sucesiones de enteros positivos $(a_n)_{n\ge 1}$ que
+satisfacen una relación recursiva dada junto con una condición inicial. (El
+enunciado completo y oficial está disponible en el banco de problemas de la
+[Olimpiada Nacional de Matemáticas de Chile](https://www.olimpiadadematematica.cl).)
+
+**IMO 1977 — Problema 1.** En el plano, sean $ABCD$ un cuadrado y, sobre sus
+lados, se construyen triángulos equiláteros hacia el interior. Demostrar que los
+puntos medios de los segmentos que unen los vértices de esos triángulos forman
+un dodecágono regular. (Enunciado oficial completo en
+[IMO Official](https://www.imo-official.org).)

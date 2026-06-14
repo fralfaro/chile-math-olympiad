@@ -7,7 +7,13 @@ title: "La IMO y otras competencias internacionales"
 La **Olimpiada Internacional de Matemáticas** (IMO, por sus siglas en inglés) es la
 competencia matemática más prestigiosa del mundo para estudiantes de enseñanza media.
 Fue fundada en 1959 por iniciativa de Rumania y se celebra anualmente en un país
-diferente.
+diferente. Es la más antigua de las olimpiadas científicas internacionales y sirve
+de modelo a todas las demás.
+
+La primera edición, en 1959, se realizó en la ciudad rumana de **Brașov** y reunió
+a apenas siete países, todos del bloque socialista de Europa del Este. Lo que comenzó
+como un encuentro regional se transformó, a lo largo de seis décadas, en un evento
+con más de un centenar de países participantes y cientos de concursantes cada año.
 
 ::: {.callout-note title="Definición: IMO"}
 La IMO reúne a equipos de hasta seis estudiantes por país, quienes deben resolver
@@ -15,73 +21,127 @@ seis problemas en dos días (tres problemas por día, cuatro horas y media cada 
 Los problemas abarcan álgebra, combinatoria, geometría y teoría de números.
 :::
 
-### Historia resumida
+### Historia y crecimiento
+
+La IMO se interrumpió solo una vez, en 1980, año en que ningún país asumió la
+organización. Salvo esa excepción, se ha celebrado de forma ininterrumpida cada año
+desde 1959, lo que la convierte en una de las competencias internacionales más
+estables del mundo.
 
 | Período | Hitos |
 |---|---|
-| 1959–1966 | Ediciones solo entre países del bloque socialista (Rumania, Hungría, URSS, etc.) |
-| 1967–1980 | Apertura progresiva a países occidentales y latinoamericanos |
-| 1981–2000 | Expansión global; se consolidan las grandes potencias matemáticas (China, EE. UU., URSS/Rusia) |
-| 2001–hoy | Más de 100 países participantes; Chile participa regularmente desde 2005 |
+| 1959–1966 | Ediciones casi exclusivamente entre países del bloque socialista (Rumania, Hungría, URSS, Bulgaria, Polonia, etc.) |
+| 1967–1979 | Apertura progresiva a países occidentales; el Reino Unido, Francia y otros se incorporan |
+| 1980 | Única edición no realizada en la historia de la IMO |
+| 1981–2000 | Expansión global; ingreso de EE. UU., China y muchos más; se consolidan las grandes potencias |
+| 2001–hoy | Más de 100 países y alrededor de 600 participantes por edición |
+
+::: {.callout-tip title="📖 Una competencia que cruzó la Guerra Fría"}
+Durante sus primeras décadas, la IMO fue uno de los pocos espacios donde estudiantes
+de Oriente y Occidente competían en igualdad de condiciones, en plena Guerra Fría.
+La matemática funcionaba como un lenguaje neutral que unía a jóvenes de sistemas
+políticos opuestos en torno a la misma pasión por resolver problemas.
+:::
 
 ### Formato del examen
 
 Cada problema tiene un valor de **7 puntos**, para un total de **42 puntos**:
 
-- **Medalla de oro:** típicamente 28–42 puntos (aproximadamente el 8% superior)
-- **Medalla de plata:** típicamente 19–27 puntos
-- **Medalla de bronce:** típicamente 12–18 puntos
-- **Mención honorífica:** solución perfecta en al menos un problema, sin medalla
+- **Medalla de oro:** los participantes con mejor puntaje (aproximadamente el 1/12
+  superior, es decir cerca del 8%).
+- **Medalla de plata:** el siguiente grupo (aproximadamente el 2/12 siguiente).
+- **Medalla de bronce:** el siguiente grupo (aproximadamente el 3/12 siguiente).
+- **Mención honorífica:** para quien, sin obtener medalla, resuelve perfectamente
+  al menos un problema (7 puntos en él).
+
+Por reglamento, a lo sumo la mitad de los concursantes obtiene alguna medalla, y
+estas se reparten en una proporción aproximada de $1:2:3$ entre oro, plata y bronce.
+Los puntos de corte exactos cambian cada año según la dificultad de la prueba.
 
 ::: {.callout-tip title="Consejo"}
 Los problemas 1 y 4 suelen ser los más accesibles, mientras que los problemas 3 y 6
 son los más difíciles. Dominar los primeros es el objetivo inicial para cualquier
-participante.
+participante, ya que aseguran una base de puntaje antes de atacar los más exigentes.
 :::
 
 ### Países destacados históricamente
 
-- **China:** potencia dominante desde los años 80; múltiples primeros puestos
-- **Estados Unidos:** campeón en varias ocasiones; programa de entrenamiento muy sólido
-- **Rusia/URSS:** tradición histórica de excelencia matemática
-- **Corea del Sur, Rumania, Vietnam:** fuerzas emergentes con medallas consistentes
-- **Brasil:** el país latinoamericano con mejor desempeño histórico en la región
+- **China:** potencia dominante desde fines de los años 80; ha encabezado el medallero
+  por equipos en numerosas ocasiones.
+- **Estados Unidos:** campeón en varias ediciones; cuenta con un programa de
+  entrenamiento muy sólido y masivo.
+- **Rusia/URSS:** larga tradición de excelencia matemática y de formación olímpica.
+- **Corea del Sur, Rumania, Vietnam:** fuerzas consistentes que disputan los primeros
+  lugares.
+- **Brasil:** históricamente el país latinoamericano con mejor desempeño en la región,
+  con medallas de oro a su haber.
+
+::: {.callout-tip title="📖 El problema 6 de 1988 y un récord juvenil"}
+El célebre **Problema 6 de la IMO 1988** pedía demostrar que, si $a$ y $b$ son enteros
+positivos tales que $ab + 1$ divide a $a^2 + b^2$, entonces $\frac{a^2 + b^2}{ab + 1}$
+es un cuadrado perfecto. Su elegante solución mediante la técnica del **descenso de
+Vieta** (o *Vieta jumping*) lo volvió legendario entre los olimpistas. Por otro lado,
+varios participantes han ganado medallas de oro siendo muy jóvenes, lo que muestra que
+el talento matemático puede manifestarse temprano si se cultiva con dedicación.
+:::
 
 ---
 
 ## La Competencia Putnam
 
 La **William Lowell Putnam Mathematical Competition** es la competencia universitaria
-más importante de América del Norte, organizada por la Mathematical Association of
-America (MAA) desde 1938.
+más importante de Estados Unidos y Canadá, organizada por la *Mathematical Association
+of America* (MAA) desde 1938. Está dirigida a estudiantes de pregrado y se rinde el
+primer sábado de diciembre.
 
-::: {.callout-note title="Dato"}
-La Putnam es famosa por su dificultad extrema: la mediana histórica de puntaje
-es frecuentemente 0 o 1 punto sobre 120. Resolverla bien requiere creatividad
-matemática de alto nivel.
+::: {.callout-note title="Formato de la Putnam"}
+- Dos sesiones de tres horas (mañana y tarde), con seis problemas cada una: 12 en total.
+- Cada problema vale 10 puntos, para un máximo de **120 puntos**.
+- Es una competencia individual, aunque también se reconoce a las mejores instituciones.
 :::
 
-Aunque no es directamente relevante para la OMC, muchos problemas de la Putnam
-tienen estructura similar a los de olimpiadas y constituyen excelente material
-de estudio avanzado.
+::: {.callout-tip title="📖 Una dificultad legendaria"}
+La Putnam es famosa por su dificultad extrema: pese a que la rinden algunos de los
+mejores estudiantes universitarios de Norteamérica, la **mediana de puntaje es con
+frecuencia 0 o 1 punto sobre 120**. Obtener un puntaje de dos dígitos ya ubica al
+participante muy por encima del promedio. Cada año se reconoce a los cinco mejores
+como *Putnam Fellows*, y varios de ellos se han convertido luego en matemáticos de
+renombre, incluyendo futuros medallistas Fields.
+:::
+
+Aunque no es directamente relevante para la OMC, muchos problemas de la Putnam tienen
+estructura similar a los de olimpiadas y constituyen excelente material de estudio
+avanzado para quienes ya dominan lo básico.
 
 ---
 
 ## La Olimpiada Iberoamericana de Matemáticas (OIM)
 
-La **OIM** se celebra desde 1985 y reúne a países hispanohablantes y lusófonos de
-Iberoamérica y la Península Ibérica. Es un paso natural entre las olimpiadas nacionales
-y la IMO.
+La **Olimpiada Iberoamericana de Matemáticas (OIM)** se celebra desde **1985** y reúne
+a países hispanohablantes y lusófonos de Iberoamérica junto con España y Portugal. Su
+primera edición se realizó en Colombia. Es un paso natural entre las olimpiadas
+nacionales y la IMO, tanto por su nivel como por su carácter formativo.
 
 ::: {.callout-note title="Formato de la OIM"}
-- Participan países de América Latina, España y Portugal
-- Dos días de competencia, tres problemas cada día
-- Temas: álgebra, combinatoria, geometría, teoría de números
-- Chile participa regularmente y ha obtenido medallas
+- Participan países de América Latina, además de España y Portugal.
+- Dos días de competencia, con tres problemas cada día (seis en total).
+- Temas: álgebra, combinatoria, geometría y teoría de números.
+- A diferencia de la IMO, cada país envía equipos de hasta **cuatro** estudiantes.
+- Chile participa regularmente y ha obtenido medallas.
 :::
 
 La OIM utiliza problemas de nivel intermedio entre una olimpiada nacional y la IMO,
-lo que la convierte en una referencia excelente para preparación.
+lo que la convierte en una referencia excelente para la preparación. Una particularidad
+de la OIM es la **Copa Puerto Rico**, premio que reconoce al país que muestra el mayor
+progreso relativo respecto de su participación del año anterior, incentivando así a los
+equipos en desarrollo.
+
+::: {.callout-tip title="📖 Una olimpiada en español y portugués"}
+La OIM es de las pocas competencias internacionales de primer nivel en las que los
+enunciados oficiales se entregan en **español y portugués**, las lenguas de la región.
+Para el estudiante chileno, esto significa enfrentar problemas de altísimo nivel sin la
+barrera del idioma, lo que la vuelve un escenario internacional especialmente cercano.
+:::
 
 ---
 
@@ -91,12 +151,16 @@ lo que la convierte en una referencia excelente para preparación.
 |---|---|---|
 | USAMO (EE. UU.) | Nacional, nivel olímpico | 1972 |
 | APMO (Asia-Pacífico) | Regional | 1989 |
-| Olimpiada Cono Sur | Sudamérica | 1989 |
-| Olimpiada Matemática Rioplatense | Argentina, Chile, Uruguay | 1997 |
-| Olimpiada Matemática Chilena (OMC) | Nacional | 1981 |
+| Olimpiada Cono Sur | Sudamérica (estudiantes más jóvenes) | 1989 |
+| Olimpiada Matemática Rioplatense | Argentina, Chile, Uruguay y otros | 1994 |
+| Olimpiada Nacional de Matemáticas (OMC) | Nacional, Chile | 1981 |
+
+La **Olimpiada Cono Sur** merece una mención especial para el estudiante chileno: está
+orientada a participantes más jóvenes (hasta cierta edad límite) y suele ser el primer
+contacto internacional de muchos olimpistas de la región, antes de la OIM.
 
 ::: {.callout-tip title="Para el estudiante chileno"}
-El camino natural de preparación es: **OMC → OIM → IMO**.
-Este material está diseñado principalmente para la OMC, pero los temas cubiertos
-son igualmente válidos para la OIM y sirven de base para la IMO.
+El camino natural de preparación es: **OMC → Cono Sur / OIM → IMO**.
+Este material está diseñado principalmente para la OMC, pero los temas cubiertos son
+igualmente válidos para la OIM y sirven de base para la IMO.
 :::

@@ -1,8 +1,173 @@
 ---
-title: "Análisis"
-format: revealjs
+title: "Elementos de Análisis"
 ---
 
-## Placeholder
+# Elementos de Análisis
 
-Presentación pendiente para análisis elemental.
+Racionales, reales, series y bases numéricas
+
+*Olimpiadas Matemáticas de Chile*
+
+## ¿Es $\sqrt{2}$ una fracción?
+
+La diagonal de un cuadrado de lado $1$ mide $\sqrt{2}$.
+
+¿Existen enteros $a, b$ tales que
+$$\sqrt{2} = \frac{a}{b}\,?$$
+
+Esta pregunta tan simple esconde una de las primeras grandes sorpresas de la matemática.
+
+# Racionales y densidad
+
+## Los números racionales
+
+Un **racional** es un número de la forma
+$$\frac{a}{b}, \qquad a, b \in \mathbb{Z}, \ b \neq 0.$$
+
+El conjunto se denota $\mathbb{Q}$.
+
+Su orden se hereda de $\mathbb{Z}$: si $b, d > 0$,
+$$\frac{a}{b} < \frac{c}{d} \iff ad < bc.$$
+
+## $\mathbb{Q}$ es denso en sí mismo
+
+Entre dos racionales distintos $r < s$ **siempre** cabe otro.
+
+Basta tomar el promedio
+$$m = \frac{r+s}{2},$$
+
+que cumple $r < m < s$. Repitiendo, hay **infinitos** racionales entre $r$ y $s$.
+
+# Irracionalidad
+
+## $\sqrt{2}$ es irracional
+
+Supongamos $\sqrt{2} = \dfrac{a}{b}$ con $\gcd(a,b)=1$. Elevando al cuadrado:
+$$a^2 = 2b^2.$$
+
+Entonces $a$ es par, $a = 2k$, y $b^2 = 2k^2$, así que $b$ también es par.
+
+Pero $a$ y $b$ pares contradice $\gcd(a,b)=1$. Luego $\sqrt{2} \notin \mathbb{Q}$. $\blacksquare$
+
+## Cuidado con el argumento decimal
+
+::: {.callout-warning title="Error frecuente"}
+$\sqrt{2}$ **no** es irracional "porque su decimal es infinito".
+
+Muchos racionales tienen decimal infinito, como
+$$\tfrac{1}{3} = 0,\overline{3}.$$
+
+Lo que caracteriza a un irracional es un decimal infinito **no periódico**. La irracionalidad se **demuestra**.
+:::
+
+# Reales y completitud
+
+## El supremo
+
+Los racionales tienen "agujeros": no contienen a $\sqrt{2}$. Los reales $\mathbb{R}$ los llenan.
+
+Para $A \subseteq \mathbb{R}$ no vacío y acotado superiormente:
+
+- una **cota superior** $M$ cumple $x \le M$ para todo $x \in A$;
+- el **supremo** $\sup A$ es la **menor** de las cotas superiores.
+
+## Axioma de completitud
+
+Todo $A \subseteq \mathbb{R}$ no vacío y acotado superiormente posee un **supremo en $\mathbb{R}$**.
+
+Esto distingue $\mathbb{R}$ de $\mathbb{Q}$: el conjunto
+$$A = \{ x \in \mathbb{Q} : x^2 < 2 \}$$
+
+es acotado, pero su supremo sería $\sqrt{2}$, que **no** está en $\mathbb{Q}$.
+
+# Series geométricas
+
+## Serie geométrica finita
+
+Para $r \neq 1$:
+$$\sum_{k=0}^{n} r^k = 1 + r + r^2 + \cdots + r^n = \frac{r^{n+1}-1}{r-1}.$$
+
+*Idea:* si $S$ es la suma, entonces $rS - S = r^{n+1} - 1$, y se despeja $S$.
+
+## Serie geométrica infinita
+
+Si $|r| < 1$, las potencias $r^{n+1} \to 0$ y la suma **converge**:
+$$\sum_{k=0}^{\infty} a r^k = \frac{a}{1-r}.$$
+
+::: {.callout-warning title="Solo si $|r| < 1$"}
+Con $|r| \ge 1$ la serie **no** converge: los términos no tienden a $0$.
+:::
+
+# Decimales y bases
+
+## Decimal periódico $\leftrightarrow$ fracción
+
+Un real es racional **si y solo si** su decimal es finito o periódico.
+
+Truco: para $x = 0,\overline{12}$, multiplicar por $10^2$ y restar:
+$$100x = 12,\overline{12} \implies 99x = 12 \implies x = \frac{12}{99} = \frac{4}{33}.$$
+
+## Representación en base $p > 1$
+
+Todo entero $N \ge 1$ se escribe de forma **única** como
+$$N = a_k p^k + \cdots + a_1 p + a_0, \qquad 0 \le a_i < p.$$
+
+Se obtiene por **divisiones sucesivas** por $p$; los restos, leídos de abajo hacia arriba, son los dígitos. Ejemplo: $45 = (101101)_2$.
+
+# Desigualdad AM-GM
+
+## Media aritmética y geométrica
+
+Para reales no negativos $x, y \ge 0$:
+$$\frac{x+y}{2} \ge \sqrt{xy},$$
+
+con igualdad **si y solo si** $x = y$.
+
+*Idea:* parte de $\left(\sqrt{x}-\sqrt{y}\right)^2 \ge 0$ y desarrolla.
+
+En general, $\dfrac{x_1+\cdots+x_n}{n} \ge \sqrt[n]{x_1 \cdots x_n}$.
+
+# Un ejemplo completo
+
+## Problema y estrategia
+
+::: {.callout-important title="Problema"}
+Entre todos los rectángulos de perímetro $20$, ¿cuál tiene **área máxima**?
+:::
+
+**Estrategia:** los lados $x, y$ cumplen $x + y = 10$ (suma fija), y el área es $A = xy$ (producto). AM-GM relaciona suma y producto.
+
+## Solución por pasos
+
+De $2(x+y) = 20$ obtenemos $x + y = 10$.
+
+. . .
+
+Por AM-GM,
+$$\sqrt{xy} \le \frac{x+y}{2} = 5 \implies xy \le 25.$$
+
+. . .
+
+La igualdad ocurre cuando $x = y = 5$.
+
+. . .
+
+El área máxima es $25$, lograda por el **cuadrado** de lado $5$. $\blacksquare$
+
+# Cierre
+
+## Ideas clave
+
+- Entre dos racionales hay infinitos: $\mathbb{Q}$ es **denso**.
+- La irracionalidad se **demuestra** (reducción al absurdo), no se observa.
+- La **completitud** (supremo) distingue $\mathbb{R}$ de $\mathbb{Q}$.
+- Serie geométrica infinita: $\sum_{k=0}^{\infty} a r^k = \dfrac{a}{1-r}$ solo si $|r|<1$.
+- Racional $\iff$ decimal finito o periódico; AM-GM conecta sumas y productos.
+
+## Para practicar
+
+1. Convierte $0,\overline{27}$ en fracción irreducible.
+2. Escribe $200$ en base $7$ por divisiones sucesivas.
+3. Demuestra que $\sqrt{3}$ es irracional.
+4. Prueba que $x + \dfrac{1}{x} \ge 2$ para todo $x > 0$.
+5. 🏆 Demuestra que $\log_2 3$ es irracional.

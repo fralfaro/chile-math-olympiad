@@ -2,70 +2,175 @@
 title: "Ejemplos resueltos"
 ---
 
+En esta página desarrollamos ejemplos paso a paso que ilustran las técnicas del
+capítulo. Cada uno indica primero la **estrategia** y luego la **solución**, para
+que el lector pueda intentar el problema antes de leer el desarrollo.
+
 ## Ejemplo 1: algoritmo de Euclides
 
 ::: {.callout-warning title="Ejemplo resuelto"}
 **Problema:** calcular $\gcd(414, 662)$.
 
+**Estrategia:** aplicar el algoritmo de la división de forma sucesiva,
+reemplazando el par $(a,b)$ por $(b,r)$ hasta obtener resto $0$.
+
 **Solución:** aplicamos divisiones sucesivas:
 
-$$662 = 414 \cdot 1 + 248,$$
-$$414 = 248 \cdot 1 + 166,$$
-$$248 = 166 \cdot 1 + 82,$$
-$$166 = 82 \cdot 2 + 2,$$
-$$82 = 2 \cdot 41 + 0.$$
+$$
+\begin{align*}
+662 &= 414 \cdot 1 + 248,\\
+414 &= 248 \cdot 1 + 166,\\
+248 &= 166 \cdot 1 + 82,\\
+166 &= 82 \cdot 2 + 2,\\
+82  &= 2 \cdot 41 + 0.
+\end{align*}
+$$
 
-El último resto no nulo es $2$, luego
-
-$$\gcd(414,662)=2.$$
+El último resto no nulo es $2$, luego $\gcd(414,662)=2$.
 :::
 
 ## Ejemplo 2: identidad de Bézout
 
 ::: {.callout-warning title="Ejemplo resuelto"}
-**Problema:** escribir $2$ como combinación lineal de $414$ y $662$.
+**Problema:** escribir $\gcd(414,662)=2$ como combinación lineal entera de $414$
+y $662$.
 
-**Solución:** retrocediendo en el algoritmo anterior se obtiene
+**Estrategia:** recorrer el algoritmo de Euclides **hacia atrás**, despejando el
+resto en cada paso y sustituyendo.
 
-$$2=8\cdot 414-5\cdot 662.$$
+**Solución:** del Ejemplo 1, partimos de $2=166-82\cdot 2$ y sustituimos los
+restos previos:
+
+$$
+\begin{align*}
+2 &= 166 - 2\cdot 82\\
+  &= 166 - 2\cdot(248-166) = 3\cdot 166 - 2\cdot 248\\
+  &= 3\cdot(414-248) - 2\cdot 248 = 3\cdot 414 - 5\cdot 248\\
+  &= 3\cdot 414 - 5\cdot(662-414) = 8\cdot 414 - 5\cdot 662.
+\end{align*}
+$$
+
+Por tanto $2 = 8\cdot 414 - 5\cdot 662$.
 :::
 
-## Ejemplo 3: congruencia lineal
+## Ejemplo 3: divisibilidad y factorización
 
 ::: {.callout-warning title="Ejemplo resuelto"}
-**Problema:** resolver
+**Problema:** demostrar que para todo entero $n$, el número $n^5-n$ es divisible
+por $30$.
 
-$$7x \equiv 3 \pmod{11}.$$
+**Estrategia:** factorizar y probar la divisibilidad por $2$, $3$ y $5$ por
+separado, ya que $30=2\cdot 3\cdot 5$ y estos factores son coprimos dos a dos.
 
-**Solución:** como $7 \cdot 8 = 56 \equiv 1 \pmod{11}$, multiplicamos por $8$ y
-obtenemos
+**Solución:** factorizamos
 
-$$x \equiv 2 \pmod{11}.$$
+$$n^5-n=n(n^4-1)=n(n-1)(n+1)(n^2+1).$$
+
+Como $(n-1)n(n+1)$ son tres enteros consecutivos, el producto es divisible por
+$2$ y por $3$. Para el $5$: si $5 \mid n$, listo. Si no, por el Pequeño Teorema de
+Fermat $n^4 \equiv 1 \pmod 5$, luego $5 \mid (n^4-1)$. En cualquier caso
+$5 \mid n^5-n$. Como $2,3,5$ son coprimos dos a dos, su producto $30$ divide a
+$n^5-n$.
 :::
 
-## Ejemplo 4: ecuación diofántica
+## Ejemplo 4: número de divisores
 
 ::: {.callout-warning title="Ejemplo resuelto"}
-**Problema:** hallar todas las soluciones enteras de
+**Problema:** ¿cuántos divisores positivos tiene $360$? ¿Cuánto suman?
 
-$$15x+21y=12.$$
+**Estrategia:** factorizar en primos y aplicar las fórmulas de $\tau$ y
+$\sigma$.
+
+**Solución:** factorizamos $360=2^3\cdot 3^2 \cdot 5$. Entonces
+
+$$\tau(360)=(3+1)(2+1)(1+1)=24,$$
+
+y
+
+$$\sigma(360)=\frac{2^4-1}{2-1}\cdot\frac{3^3-1}{3-1}\cdot\frac{5^2-1}{5-1}
+=15\cdot 13\cdot 6=1170.$$
+
+Así $360$ tiene $24$ divisores positivos, que suman $1170$.
+:::
+
+## Ejemplo 5: congruencia lineal
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** resolver $7x \equiv 3 \pmod{11}$.
+
+**Estrategia:** hallar el inverso de $7$ módulo $11$ y multiplicar ambos lados
+por él.
+
+**Solución:** buscamos el inverso de $7$: como $7\cdot 8 = 56 = 5\cdot 11 + 1
+\equiv 1 \pmod{11}$, el inverso es $8$. Multiplicando la congruencia por $8$,
+
+$$x \equiv 8\cdot 3 = 24 \equiv 2 \pmod{11}.$$
+
+La solución es $x \equiv 2 \pmod{11}$.
+:::
+
+## Ejemplo 6: Pequeño Teorema de Fermat
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** hallar el resto de $3^{100}$ al dividir por $7$.
+
+**Estrategia:** usar el Pequeño Teorema de Fermat para reducir el exponente
+módulo $6=7-1$.
+
+**Solución:** como $7$ es primo y $7 \nmid 3$, Fermat da
+$3^{6} \equiv 1 \pmod{7}$. Escribimos $100 = 6\cdot 16 + 4$, luego
+
+$$3^{100}=(3^6)^{16}\cdot 3^4 \equiv 1^{16}\cdot 3^4 = 81 \equiv 4 \pmod{7}.$$
+
+El resto es $4$.
+:::
+
+## Ejemplo 7: ecuación diofántica lineal
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** hallar todas las soluciones enteras de $15x+21y=12$.
+
+**Estrategia:** verificar la condición $\gcd(a,b) \mid c$, simplificar y dar una
+solución particular para construir la general.
 
 **Solución:** como $\gcd(15,21)=3$ y $3 \mid 12$, hay soluciones. Dividiendo por
-$3$ queda $5x+7y=4$. Una solución es $(x_0,y_0)=(-2,2)$, así que
+$3$ queda $5x+7y=4$. Probando, $(x_0,y_0)=(-2,2)$ funciona: $5(-2)+7(2)=4$. La
+solución general es
 
 $$x=-2+7t, \qquad y=2-5t, \qquad t \in \mathbb{Z}.$$
 :::
 
-## Ejemplo 5: contar divisores
+## Ejemplo 8: Teorema de Euler con módulo compuesto
 
 ::: {.callout-warning title="Ejemplo resuelto"}
-**Problema:** ¿cuántos divisores positivos tiene $360$?
+**Problema:** hallar las dos últimas cifras de $7^{2024}$.
 
-**Solución:** factorizamos
+**Estrategia:** las dos últimas cifras corresponden al valor módulo $100$.
+Usaremos el Teorema de Euler con $n=100$.
 
-$$360=2^3\cdot 3^2 \cdot 5,$$
+**Solución:** como $\gcd(7,100)=1$, calculamos
+$\varphi(100)=\varphi(2^2)\varphi(5^2)=2\cdot 20=40$. Por el Teorema de Euler,
+$7^{40}\equiv 1 \pmod{100}$. Como $2024=40\cdot 50+24$,
 
-luego
+$$7^{2024}\equiv 7^{24}\pmod{100}.$$
 
-$$\tau(360)=(3+1)(2+1)(1+1)=24.$$
+Ahora reducimos por pasos: $7^2=49$, $7^4=49^2=2401\equiv 1\pmod{100}$. Entonces
+$7^{24}=(7^4)^6\equiv 1^6=1\pmod{100}$. Las dos últimas cifras son $01$.
+:::
+
+## Ejemplo 9: primalidad y factorización algebraica
+
+::: {.callout-warning title="Ejemplo resuelto"}
+**Problema:** demostrar que $n^4+4$ es compuesto para todo entero $n>1$.
+
+**Estrategia:** usar la identidad de Sophie Germain para factorizar la
+expresión.
+
+**Solución:** completamos un cuadrado:
+
+$$n^4+4 = n^4+4n^2+4 - 4n^2 = (n^2+2)^2-(2n)^2=(n^2-2n+2)(n^2+2n+2).$$
+
+Para $n>1$, ambos factores son mayores que $1$ (en particular
+$n^2-2n+2=(n-1)^2+1\ge 2$), de modo que $n^4+4$ es producto de dos enteros
+mayores que $1$ y por tanto compuesto.
 :::
